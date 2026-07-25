@@ -1,0 +1,294 @@
+{
+  "ec0a341213a88dbb": {
+    "urls": [
+      "https://ised-isde.canada.ca/site/corporations-canada/en/email-notices-subscription",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices"
+    ],
+    "page_hash": "78454156819a45a1",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "4cd564d77e0f40f3": {
+    "urls": [
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html",
+      "https://www.canada.ca/en/department-finance/corporate/laws-regulations.html",
+      "https://www.canada.ca/en/department-finance/news.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentfinance&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-07-23&pick=3&format=atom&atomtitle=Department%20of%20Finance%20Canada",
+      "https://www.canada.ca/en/department-finance/programs/consultations.html"
+    ],
+    "page_hash": "f0d162e7f5601dcb",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "124c5dfca7e2a6ba": {
+    "urls": [],
+    "page_hash": "aa67b27ba3da4b07",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "4fe93aa505d1fadc": {
+    "urls": [
+      "https://international.canada.ca/en/global-affairs/consultations",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&sort=publishedDate&orderBy=desc&publishedDate>=2015-01-01&pick=1000&format=atom&atomtitle=Global Affairs Canada news",
+      "https://international.canada.ca/en/global-affairs/news"
+    ],
+    "page_hash": "95cacde22bf4deac",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "0b2f34be4eab71ab": {
+    "urls": [],
+    "page_hash": "c9650ba0f53130ed",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "5ff2d47b8a294f80": {
+    "urls": [
+      "https://ised-isde.canada.ca/site/ised/en/newsletter-gc-business-insights?utm_campaign=ised-isde-gc-business-insights-24-25&utm_medium=link&utm_source=canada-ca-business-eng&utm_content=en-ised-landing-page",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofindustry&sort=publishedDate&orderBy=desc&publishedDate>=2020-08-09&pick=100&format=atom&atomtitle=Canada News Centre - Innovation, Science and Economic Development Canada",
+      "https://www.canada.ca/en/services/business/permits.html",
+      "https://www.canada.ca/en/services/business/permits/federallyregulatedindustrysectors/broadcastingtelecommunicationsregulation.html"
+    ],
+    "page_hash": "c442380d102c80b2",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "ce45881654ec7201": {
+    "urls": [
+      "https://www.justice.gc.ca/eng/trans/ar-lr/index.html",
+      "https://www.justice.gc.ca/eng/cons/index.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentjustice&type=newsreleases,statements,readouts&sort=publishedDate&orderBy=desc&publishedDate>=2019-11-09&pick=100&format=atom&atomtitle=Canada News Centre - Justice Canada, News Releases"
+    ],
+    "page_hash": "23ba24be0e1f7f8c",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "944b0397c5d05cab": {
+    "urls": [
+      "https://www.publicsafety.gc.ca/cnt/trnsprnc/cts-rgltns/index-en.aspx",
+      "https://www.canada.ca/en/public-safety-canada/consultations/stakeholder-survey-initiative-take-action-against-gun-gang-violence.html",
+      "https://www.statcan.gc.ca/en/consultation/2024/flood-awareness",
+      "https://www.publicsafety.gc.ca/cnt/nws/nws-rlss/index-en.aspx",
+      "https://www.publicsafety.gc.ca/cnt/trnsprnc/index-en.aspx",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=publicsafetycanada&start=&end=",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=publicsafetycanada&type=newsreleases,statements&sort=publishedDate&orderBy=desc&pick=3&format=atom&atomtitle=Canada%20News%20Centre%20-%20Public%20Safety%20Canada"
+    ],
+    "page_hash": "77196c1d7921203d",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "7ebfa5b911a7abda": {
+    "urls": [
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=canadiansecurityintelligenceservice&sort=publishedDate&orderBy=desc&publishedDate%3E=2019-01-08&format=atom&atomtitle=Canada%20News%20Centre%20-%20Canadian%20Security%20Intelligence%20Service",
+      "https://www.canada.ca/en/security-intelligence-service/news/2025/11/the-canadian-security-intelligence-service-directors-annual-speech.html"
+    ],
+    "page_hash": "98fec4a97036c46a",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "770c677fab3bff47": {
+    "urls": [
+      "https://www.canada.ca/en/communications-security/news/2026/06/communications-security-establishment-canada-releases-its-2025-2026-annual-report.html",
+      "https://www.canada.ca/en/communications-security/news/2025/11/joint-statement-on-malicious-cyber-activity-targeting-canadian-critical-infrastructure.html",
+      "https://www.canada.ca/en/communications-security/news/2025/11/backgrounder-malicious-cyber-activity-targeting-canadian-critical-infrastructure.html"
+    ],
+    "page_hash": "d204514190445dda",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "97d0792e51f573af": {
+    "urls": [
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1497361263934&dprtmnt=financialconsumeragency",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=financialconsumeragency&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Financial%20Consumer%20Agency%20of%20Canada",
+      "https://e1.envoke.com/ext/pages/a858f35bbfd282c5cd16255808da573c",
+      "https://www.canada.ca/en/financial-consumer-agency/news/newsletters/jaspal-matharu.html"
+    ],
+    "page_hash": "d751be29952abfc8",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "dd3c68962646d923": {
+    "urls": [
+      "https://fintrac-canafe.canada.ca/notices-avis/avs/2026-07-15-eng",
+      "https://fintrac-canafe.canada.ca/new-neuf/1-eng",
+      "https://www.ottawapolice.ca/en/news/joint-human-trafficking-investigation-leads-to-three-arrests-police-seek-additional-victims.aspx",
+      "https://fintrac-canafe.canada.ca/intel/bulletins/csad-dsac-eng",
+      "https://www.tps.ca/media-centre/news-releases/66292/",
+      "https://fintrac-canafe.canada.ca/act-loi/1-eng"
+    ],
+    "page_hash": "58027704afa38646",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "d23031e239233581": {
+    "urls": [
+      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
+      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/news/independent-review-supports-32nd-actuarial-report-canada-pension-plan",
+      "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
+      "https://www.osfi-bsif.gc.ca/en/news/speaking-engagements-0",
+      "https://www.osfi-bsif.gc.ca/en/consultations",
+      "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
+      "https://www.osfi-bsif.gc.ca/en/news?type=5",
+      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/risks/technology-cyber-risk-management/technology-risk-bulletin"
+    ],
+    "page_hash": "325114306c503ccd",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "3ecf4f4a0a36c8cf": {
+    "urls": [
+      "https://www.canada.ca/en/public-safety-canada/campaigns/wildfires.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentoftheenvironment&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Environment%20and%20Climate%20Change%20Canada",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1670427638856&dprtmnt=departmentoftheenvironment&start=&end="
+    ],
+    "page_hash": "c3dd30604c8cb5ee",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "21f8563ce2539d6d": {
+    "urls": [
+      "https://www.canada.ca/en/impact-assessment-agency/news/media-room.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=impactassessmentagency&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Impact%20Assessment%20Agency%20of%20Canada",
+      "https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations.html",
+      "https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations/red-tape-progress-report.html"
+    ],
+    "page_hash": "abb3c4a2be54117e",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "063f830a6d577f9c": {
+    "urls": [
+      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/listening_tour-tournee_consultations.aspx?lang=eng",
+      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/privacy_statement-enonce_confidentialite.aspx?lang=eng",
+      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/memoire_loi_s-211_bill_brief.aspx?lang=eng",
+      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/news-nouvelles/index.aspx?lang=eng",
+      "https://www.canada.ca/en/government/system/laws.html"
+    ],
+    "page_hash": "d75899266b88d3eb",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "04b02c3edd32e2a3": {
+    "urls": [
+      "https://www.bankofcanada.ca/press/speeches/",
+      "https://www.bankofcanada.ca/press/announcements/",
+      "https://www.bankofcanada.ca/2026/07/sparks-at-bank-article-2026-17/",
+      "https://www.bankofcanada.ca/2026/05/what-is-a-central-bank/",
+      "https://www.bankofcanada.ca/2026/06/bank-canada-begin-publishing-notices-violation-payment-service-providers/",
+      "https://www.bankofcanada.ca/press/selected-media-activities/",
+      "https://www.bankofcanada.ca/2026/07/summary-of-comments-spring-2026-debt-management-strategy-consultations/",
+      "https://www.bankofcanada.ca/press/press-releases/",
+      "https://www.bankofcanada.ca/feed/?content_type=notices&post_type[0]=post&post_type[1]=page",
+      "https://www.bankofcanada.ca/2026/06/change-government-canada-bond-auction-schedule/",
+      "https://www.bankofcanada.ca/research/research-newsletters/",
+      "https://www.bankofcanada.ca/regulatory-oversight/regulatory-news/?content_type%5B%5D=23000",
+      "https://www.bankofcanada.ca/feed/?utility=news&post_type[0]=post&post_type[1]=page",
+      "https://www.bankofcanada.ca/2026/07/updates-government-canada-cash-management-bond-buyback-program/",
+      "https://www.bankofcanada.ca/press/media-advisories/",
+      "https://www.bankofcanada.ca/press/upcoming-events/",
+      "https://www.bankofcanada.ca/2026/07/release-market-participants-survey-july-27-2026/",
+      "https://www.bankofcanada.ca/markets/market-notices/?content_type%5B%5D=388",
+      "https://www.bankofcanada.ca/multimedia/press-conference-monetary-policy-report-july-2026/",
+      "https://www.bankofcanada.ca/feed/?content_type=regulatory-news&post_type[0]=post&post_type[1]=page",
+      "https://www.bankofcanada.ca/2026/07/opening-statement-2026-07-15/",
+      "https://www.bankofcanada.ca/press/contacts/",
+      "https://www.bankofcanada.ca/search/?content_type[]=press-releases",
+      "https://www.bankofcanada.ca/press/browse/",
+      "https://www.bankofcanada.ca/2026/07/fad-press-release-2026-07-15/"
+    ],
+    "page_hash": "d98b5bbc1cb75f62",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "62d7530e2402ed95": {
+    "urls": [
+      "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._368/index.html",
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/stakeholder-engagement",
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/notices-licensed-insolvency-trustees",
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/directives-and-circulars",
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/public-consultations"
+    ],
+    "page_hash": "28a591dddebf2d38",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "c37836047d14c14a": {
+    "urls": [
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html",
+      "https://www.canada.ca/en/canadian-heritage/corporate/public-consultations/official-languages-consultations-2026.html?utm_campaign=pch-pch-consultationslo-2026-2027&utm_medium=canada-ca&utm_source=canada-homepage&utm_content=web-promos-en-260713",
+      "https://www.canada.ca/en/news/media-contacts.html",
+      "https://www.pm.gc.ca/en/news",
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
+      "https://www.canada.ca/en/news/search/advanced-search.html?sort=descending&allq=&dprtmnt=&declaredtype=&startdate=&enddate=",
+      "https://www.canada.ca/en/news/subscribe-emails.html"
+    ],
+    "page_hash": "c43ca4da7b1020dc",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "630f01a6672272de": {
+    "urls": [
+      "https://www.canada.ca/en/canadian-heritage/corporate/public-consultations/official-languages-consultations-2026.html",
+      "https://inspection.canada.ca/en/exporting-food-plants-animals/plant-exports/international-plant-protection",
+      "https://www.canada.ca/en/health-canada/services/consumer-product-safety/pesticides-pest-management/public/consultations/canada-gazette-regulations-amending-pest-control-products-regulations-exemptions-authorizations.html",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-1/",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/building-canada-strong-for-all--powered-by-canadas-workers-targeted-second-phase--consultation-document.html",
+      "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/list-permitted-food-colours-jagua-genipin-glycine-blue.html",
+      "https://www.canada.ca/en/environment-climate-change/corporate/transparency/priorities-management/policies-guidelines/red-tape-reduction-report.html",
+      "https://species-registry.canada.ca/index-en.html",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-3/",
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/public-consultations",
+      "https://open.canada.ca/data/en/dataset/7c03f039-3753-4093-af60-74b0f7b2385d",
+      "https://ised-isde.canada.ca/site/ised/en/have-your-say-advancing-ai-transparency-canada",
+      "https://www.statcan.gc.ca/en/consultation/2025/crdc",
+      "https://www.statcan.gc.ca/en/consultation/2025/crdc/results-report",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc3-2-2/",
+      "https://www.canada.ca/en/health-canada/programs/draft-consultation-quality-natural-health-products-guide.html",
+      "https://www.canada.ca/en/government/system/consultations.html",
+      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+      "https://www.canada.ca/fr/environnement-changement-climatique/services/application-lois-environnementales/reglement-contraventions-consultation-2026.html",
+      "https://www.canada.ca/en/health-canada/programs/consultation-potential-amendments-industrial-hemp-regulations.html",
+      "https://consultations.tc.canada.ca/en/consultation/let-s-talk-oceans-protection-plan",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-2/",
+      "https://www.cer-rec.gc.ca/en/consultation-engagement/stakeholder-engagement/regulated-industry-engagement/index.html",
+      "https://www.canada.ca/en/health-canada/programs/consultation-proposal-amend-childrens-sleepwear-regulations.html",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/published/html/regdoc3-1-2-v1-1/"
+    ],
+    "page_hash": "990bf6bade57ecdb",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "262d49f8e2a9883d": {
+    "urls": [
+      "https://www.canada.ca/en/health-canada/news/2026/07/government-of-canada-to-make-announcement-in-support-of-youth-mental-health-in-quebec.html",
+      "https://www.canada.ca/en/health-canada/news/2026/06/government-of-canada-approves-new-technology-to-support-farmers-and-a-more-sustainable-use-of-pest-management-products.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/improving-access-to-community-based-mental-health-services-for-nova-scotia-youth.html",
+      "https://www.canada.ca/en/news/archive-search.html",
+      "https://www.canada.ca/en/health-canada/news/2026/06/government-of-canada-invests-over-17-million-to-address-health-impacts-from-climate-change.html",
+      "https://www.canada.ca/en/health-canada/news/2026/06/canada-approves-first-generic-semaglutide-for-weight-loss.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/statement-from-the-minister-of-health-and-the-minister-of-industry-on-advancing-canadas-pharmaceutical-and-life-sciences-sector.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/canada-and-quebec-build-on-partnership-to-strengthen-youth-mental-health.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/government-of-canada-to-make-announcement-in-support-of-youth-mental-health-in-nova-scotia.html",
+      "https://www.canada.ca/en/news/media-contacts.html",
+      "https://www.pm.gc.ca/en/news",
+      "https://www.canada.ca/en/news/subscribe-emails.html",
+      "https://www.canada.ca/en/news/advanced-news-search.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/helping-canadians-access-safe-effective-treatments-and-medicines-faster.html",
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/drugs-and-medical-devices-authorized-april-1-to-june-30-2026.html"
+    ],
+    "page_hash": "6ae31b83095621d5",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  },
+  "d5c2bc434afb45dc": {
+    "urls": [
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-194/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-66/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-86-259/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2015-97/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-152/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-137/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-132/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-166/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-178/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-82/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-193/index.html",
+      "https://www.canada.ca/en/health-canada/corporate/about-health-canada/legislation-guidelines/acts-regulations.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-101/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2025-88/page-1.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-269/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-169/index.html/",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-83/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2020-231/page-1.html",
+      "http://lois.justice.gc.ca/eng/regulations/SOR-2016-103/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-192/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-90-341/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-97/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-177/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2013-101/page-1.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-165/index.html"
+    ],
+    "page_hash": "1a325576ba55c31d",
+    "last_ok": "2026-07-25T14:18:36.857405+00:00"
+  }
+}

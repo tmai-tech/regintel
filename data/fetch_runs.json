@@ -1,0 +1,272 @@
+[
+  {
+    "source_url": "https://ised-isde.canada.ca/site/corporations-canada/en",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Corporations Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "78454156819a45a1",
+    "item_count": 2,
+    "new_items": 2
+  },
+  {
+    "source_url": "https://www.canada.ca/en/department-finance.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Department of Finance",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "f0d162e7f5601dcb",
+    "item_count": 5,
+    "new_items": 5
+  },
+  {
+    "source_url": "https://www.securities-administrators.ca/",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 307,
+    "content_hash": "aa67b27ba3da4b07",
+    "item_count": 0,
+    "new_items": 0
+  },
+  {
+    "source_url": "https://international.canada.ca/en/global-affairs",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Global Affairs Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "95cacde22bf4deac",
+    "item_count": 3,
+    "new_items": 3
+  },
+  {
+    "source_url": "https://www.international.gc.ca/trade-commerce/rbc-cre",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Global Affairs Canada – Responsible Business Conduct",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "c9650ba0f53130ed",
+    "item_count": 0,
+    "new_items": 0
+  },
+  {
+    "source_url": "https://ised-isde.canada.ca/site/ised/en",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Innovation, Science and Economic Development Canada (ISED)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "c442380d102c80b2",
+    "item_count": 4,
+    "new_items": 4
+  },
+  {
+    "source_url": "https://www.justice.gc.ca/eng/",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Department of Justice",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "23ba24be0e1f7f8c",
+    "item_count": 3,
+    "new_items": 3
+  },
+  {
+    "source_url": "https://www.competition-bureau.canada.ca",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Competition Bureau",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "error",
+    "error": "[Errno -2] Name or service not known"
+  },
+  {
+    "source_url": "https://www.publicsafety.gc.ca/index-en.aspx",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Public Safety Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "77196c1d7921203d",
+    "item_count": 7,
+    "new_items": 7
+  },
+  {
+    "source_url": "https://www.canada.ca/en/security-intelligence-service.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Canadian Security Intelligence Service",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "98fec4a97036c46a",
+    "item_count": 2,
+    "new_items": 2
+  },
+  {
+    "source_url": "https://www.cse-cst.gc.ca/en",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Communications Security Establishment (CSE)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "d204514190445dda",
+    "item_count": 3,
+    "new_items": 3
+  },
+  {
+    "source_url": "https://www.canada.ca/en/financial-consumer-agency.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Financial Consumer Agency of Canada (FCAC)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "d751be29952abfc8",
+    "item_count": 4,
+    "new_items": 4
+  },
+  {
+    "source_url": "https://fintrac-canafe.canada.ca/intro-eng",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "58027704afa38646",
+    "item_count": 6,
+    "new_items": 6
+  },
+  {
+    "source_url": "https://www.osfi-bsif.gc.ca/en",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Office of the Superintendent of Financial Institutions (OSFI)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "325114306c503ccd",
+    "item_count": 8,
+    "new_items": 8
+  },
+  {
+    "source_url": "https://www.canada.ca/en/environment-climate-change.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Environment and Climate Change Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "c3dd30604c8cb5ee",
+    "item_count": 3,
+    "new_items": 3
+  },
+  {
+    "source_url": "https://www.frascanada.ca/en",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Financial Reporting and Assurance Standards Canada (FRAS Canada)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "http_error",
+    "http_status": 403,
+    "content_hash": "504fa91384de4673",
+    "item_count": 0
+  },
+  {
+    "source_url": "https://www.canada.ca/en/impact-assessment-agency.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Impact Assessment Agency of Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "abb3c4a2be54117e",
+    "item_count": 4,
+    "new_items": 4
+  },
+  {
+    "source_url": "https://core-ombuds.canada.ca/index.aspx?lang=eng",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Canadian Ombudsperson for Responsible Enterprise (CORE)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "d75899266b88d3eb",
+    "item_count": 5,
+    "new_items": 5
+  },
+  {
+    "source_url": "https://www.bankofcanada.ca/",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Bank of Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "d98b5bbc1cb75f62",
+    "item_count": 25,
+    "new_items": 25
+  },
+  {
+    "source_url": "https://www.ciro.ca/",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Canadian Investment Regulatory Organization (CIRO)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "http_error",
+    "http_status": 403,
+    "content_hash": "199f7c7bd14426a7",
+    "item_count": 0
+  },
+  {
+    "source_url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Office of the Superintendent of Bankruptcy (OSB)",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "28a591dddebf2d38",
+    "item_count": 5,
+    "new_items": 5
+  },
+  {
+    "source_url": "https://www.canada.ca/en/news.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Government of Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "c43ca4da7b1020dc",
+    "item_count": 7,
+    "new_items": 7
+  },
+  {
+    "source_url": "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Government of Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "990bf6bade57ecdb",
+    "item_count": 25,
+    "new_items": 25
+  },
+  {
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1715886804157&dprtmnt=departmentofhealth&start=&end=",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Health Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "6ae31b83095621d5",
+    "item_count": 16,
+    "new_items": 16
+  },
+  {
+    "source_url": "https://www.canada.ca/en/health-canada/corporate/about-health-canada/legislation-guidelines/acts-regulations/list-acts-regulations.html",
+    "jurisdiction": "Canada - Federal",
+    "authority": "Health Canada",
+    "started_at": "2026-07-25T14:18:36.857405+00:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_hash": "1a325576ba55c31d",
+    "item_count": 25,
+    "new_items": 25
+  }
+]

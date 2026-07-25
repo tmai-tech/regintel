@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-07-25T14:15:21.329835Z",
+  "counts": {
+    "primary_sources": 1330,
+    "tracking_records": 114,
+    "gazette_sources": 67,
+    "secondary_sources": 68,
+    "detailed_plan_rows": 85,
+    "updates": 156
+  },
+  "last_collector_run": "2026-07-25T14:18:36.857405+00:00",
+  "last_collector_stats": {
+    "sources_attempted": 25,
+    "ok": 22,
+    "fail": 3,
+    "new_updates": 162,
+    "total_updates": 156
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BCI RegIntel — Regulatory Tracking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">⚖️</div>
+        <div>
+          <h1>BCI RegIntel</h1>
+          <p class="subtitle">Legal act &amp; regulatory data collection · tracking console</p>
+        </div>
+      </div>
+      <div class="meta-bar" id="metaBar">Loading catalog…</div>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="tracking">Tracking log</button>
+      <button class="tab" data-tab="primary">Primary sources</button>
+      <button class="tab" data-tab="updates">Collector updates</button>
+      <button class="tab" data-tab="gazette">Gazette &amp; bills</button>
+      <button class="tab" data-tab="secondary">Secondary sources</button>
+      <button class="tab" data-tab="plan">Detailed plan</button>
+    </nav>
+
+    <section class="panel">
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Search all columns…" autocomplete="off" />
+        <select id="filter1"></select>
+        <select id="filter2"></select>
+        <select id="filter3"></select>
+        <div class="toolbar-right">
+          <span id="rowCount" class="muted"></span>
+          <button id="btnExport" class="btn">Export CSV</button>
+          <button id="btnRefresh" class="btn ghost">Refresh</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="dataTable">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="pager">
+        <button id="prevPage" class="btn ghost">← Prev</button>
+        <span id="pageInfo" class="muted"></span>
+        <button id="nextPage" class="btn ghost">Next →</button>
+        <label class="muted page-size">Rows
+          <select id="pageSize">
+            <option>25</option>
+            <option selected>50</option>
+            <option>100</option>
+            <option>250</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>Source: BCI Tracking Plan · Daily collector via GitHub Actions</span>
+      <a id="repoLink" href="https://github.com/tmai-tech/regintel" target="_blank" rel="noopener">GitHub repo</a>
+    </footer>
+  </div>
+
+  <dialog id="detailDialog">
+    <form method="dialog" class="dialog-body">
+      <header>
+        <h2 id="detailTitle">Detail</h2>
+        <button value="cancel" class="btn ghost">Close</button>
+      </header>
+      <pre id="detailBody"></pre>
+    </form>
+  </dialog>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

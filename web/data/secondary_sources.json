@@ -1,0 +1,478 @@
+[
+  {
+    "name": "Lexology",
+    "url": "https://www.lexology.com/search/?o=&ps=50&j=14&from=&to=",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "IBFD",
+    "url": "https://research.ibfd.org/#/search?N=3+10+4293760385&Ne=7487&Nu=global_rollup_key&Np=2&Ns=sort_news_date|1||sort_country_one|0||sort_country_two|0||file-name|0",
+    "coverage_area": "Taxation",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Data Guidance",
+    "url": "https://www.dataguidance.com/search/news",
+    "coverage_area": "Data Privacy/Cybersecurity/AI",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Vlex",
+    "url": "https://identity.vlex.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fresponse_type%3Dcode%26client_id%3Dvlex-webapp%26redirect_uri%3Dhttp%253A%252F%252Flogin.vlex.com%252Fauth%252FvlexIdentityServer%252Fcallback%26response_mode%3Dquery%26state%3D75f5964cb32333fba161669836c54e37174b18422b47c1d3%26scope%3Dopenid%2520profile%2520offline_access",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Lexis Nexis",
+    "url": "https://www.lexismiddleeast.com/",
+    "coverage_area": "Employment/Tax and DP",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Bloomberg Law",
+    "url": "https://www.bloomberglaw.com/product/tax/search/results/ecb65c49038c244d78a712ce82e8b21a",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Expert HR",
+    "url": "https://www.xperthr.com/employment-law-guide/depositing-and-reporting-withheld-taxes-arkansas/1408/",
+    "coverage_area": "Employment",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "National Law Review",
+    "url": "https://www.natlawreview.com/Whats-Trending",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Legiscan",
+    "url": "http://legiscan.com/",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "BALglobal",
+    "url": "https://www.balglobal.com/",
+    "coverage_area": "Immigration",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Fragomen",
+    "url": "https://www.fragomen.com/insights/alerts",
+    "coverage_area": "Immigration",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "PwC Tax Summaries",
+    "url": "https://taxsummaries.pwc.com/",
+    "coverage_area": "Taxation",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Littler",
+    "url": "https://www.littler.com/",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Orbitax",
+    "url": "https://www.orbitax.com/taxhub/countrychapters/EC/Ecuador/c06c8ef5784b4a4f838cc0c82f0e9c19/Books-and-Records-576",
+    "coverage_area": "Taxation",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Osler, Hoskin & Harcourt LLP",
+    "url": "https://www.osler.com/en/resources",
+    "coverage_area": "Private & capital markets",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Blakes Insights",
+    "url": "https://www.blakes.com/insights/",
+    "coverage_area": "Private & capital markets",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "BLG",
+    "url": "https://www.blg.com/en/",
+    "coverage_area": "Canada specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Ropes & Gray",
+    "url": "https://www.ropesgray.com/en",
+    "coverage_area": "Canada & British Columbia specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "DLA Piper",
+    "url": "https://www.dlapiper.com/en/insights#t=All&sort=%40editorialdate%20descending&f:CountriesID=[Australia,China,Hong%20Kong%20SAR%20China,Japan,Korea,New%20Zealand,Singapore,Thailand]&f:RelatedCapabilityID=[Employment]",
+    "coverage_area": "All areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Employement Law worldwide",
+    "url": "https://www.employmentlawworldview.com/",
+    "coverage_area": "Employment",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Allen Overy",
+    "url": "https://www.allenovery.com/en-gb/global/publications?pageSize=0",
+    "coverage_area": "All",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "AVL",
+    "url": "https://www.avl.com.ec/entradas/",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Census",
+    "url": "https://censusconsultores.com.ec/blog/boletin-informativo/",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Lexis",
+    "url": "https://www.lexis.com.ec/noticias",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Lex Advisors",
+    "url": "https://lexadvisorecuador.com/noticias/",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "China Briefing",
+    "url": "https://www.china-briefing.com/",
+    "coverage_area": "China specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "DPC Brazil",
+    "url": "https://www.dpc.com.br/noticias/?lang=en",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Mondaq",
+    "url": "https://www.mondaq.com/1/Latin-America",
+    "coverage_area": "Capital & Private Markets",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Leglobal",
+    "url": "https://leglobal.law/news/",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Pagbam",
+    "url": "https://pagbam.com/news-2/",
+    "coverage_area": "LATAM specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Digital Policy Alert",
+    "url": "https://digitalpolicyalert.org/",
+    "coverage_area": "Crypto and digital assets",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Rajah & Tann Asia – eOASIS​",
+    "url": "https://www.rajahtannasia.com/eoasis/legal-updates?yr=2024&m=4",
+    "coverage_area": "APAC specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "ACA",
+    "url": "https://web.acaglobal.com/subscribe",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Practical Law UK",
+    "url": "https://uk.practicallaw.thomsonreuters.com/",
+    "coverage_area": "UK specific Updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Wolters Kluwer",
+    "url": "https://www.wolterskluwer.com/en/solutions/regulatory-news",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "McMillian",
+    "url": "https://mcmillan.ca/expertise/practices/financial-services/financial-services-regulatory/",
+    "coverage_area": "Canada specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Nishith Desai Associates",
+    "url": "http://www.nishithdesai.com/Research-and-Articles/Hotline/regulatory-digest",
+    "coverage_area": "India specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "McCarthy Tetrault",
+    "url": "https://www.mccarthy.ca/",
+    "coverage_area": "Canada specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Norton Rose Fulbright",
+    "url": "https://www.nortonrosefulbright.com/",
+    "coverage_area": "Global across law areas",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Lawson Lundell",
+    "url": "https://www.lawsonlundell.com/",
+    "coverage_area": "British Columbia specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Fasken",
+    "url": "https://www.fasken.com/en",
+    "coverage_area": "Canada specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "A&O Shearman",
+    "url": "https://www.aoshearman.com/en",
+    "coverage_area": "EU & Europe",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Blakes Insights",
+    "url": "https://www.blakes.com/insights/",
+    "coverage_area": "Canada specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "CSA News Alerts",
+    "url": "https://www.securities-administrators.ca/investor-alerts/",
+    "coverage_area": "Securities",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Clifford Chance",
+    "url": "https://www.cliffordchance.com/insights.html",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Hebert Smith Freehills",
+    "url": "https://www.hsfkramer.com/insights",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Benett Jones",
+    "url": "https://www.bennettjones.com/Knowledge",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Torys",
+    "url": "https://www.torys.com/our-latest-thinking?",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Morgan Lewis",
+    "url": "https://www.morganlewis.com/our-thinking",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Ecojustice",
+    "url": "https://ecojustice.ca/blog/",
+    "coverage_area": "ESG",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Eversheds",
+    "url": "https://www.eversheds-sutherland.com/en/United-Kingdom/resources/insights?countrysite=Global%7CUnited+Kingdom",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "FBD Bulletin",
+    "url": "https://transactions.freshfields.com/",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "International Association of Privacy Professionals (IAPP)",
+    "url": "https://iapp.org/news",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Allens",
+    "url": "https://www.allens.com.au/insights-news/",
+    "coverage_area": "Australia Updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Ogletree",
+    "url": "https://ogletree.com/insights-resources/?_gl=1*1g3jm6s*_up*MQ..*_ga*NjYyMTUyMjAyLjE3NjI0MDY0MDA.*_ga_V4WT9JNBFT*czE3NjI0MDYzOTkkbzEkZzAkdDE3NjI0MDYzOTkkajYwJGwwJGgw",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Cleary Gottelib",
+    "url": "https://www.clearygottlieb.com/news-and-insights/news-listing",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Debevoise",
+    "url": "https://www.debevoise.com/insights",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Mayber Brown",
+    "url": "https://www.mayerbrown.com/en/insights",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Skaden",
+    "url": "https://www.skadden.com/insights",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "King & Wood Malesons",
+    "url": "https://www.kwm.com/au/en/insights/latest-thinking.html",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Latham Watkins",
+    "url": "https://www.lw.com/en/insights-landing",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "LCA",
+    "url": "https://www.lcalex.it/enhttps:/www.lcalex.it/archivio-mag/",
+    "coverage_area": "EU Specific",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Sidley Austin",
+    "url": "https://www.sidley.com/en/global/insights/",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Strikeman Elliot",
+    "url": "https://stikeman.com/en-ca/kh",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Journal of Accountancy",
+    "url": "https://www.journalofaccountancy.com/news/",
+    "coverage_area": "US Tax specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "White& Case",
+    "url": "https://www.whitecase.com/insights",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Investment News",
+    "url": "https://www.investmentnews.com/ria-news",
+    "coverage_area": "Private/Capital Investment specific updates",
+    "source_kind": "secondary",
+    "status": "active"
+  },
+  {
+    "name": "Dechert",
+    "url": "https://www.dechert.com/knowledge.html",
+    "coverage_area": null,
+    "source_kind": "secondary",
+    "status": "active"
+  }
+]
