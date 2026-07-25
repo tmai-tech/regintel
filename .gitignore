@@ -8,3 +8,24 @@ data/snapshots/
 *.log
 .DS_Store
 .streamlit/secrets.toml
+
+# Android / IDE
+.idea/
+*.iml
+android/.gradle/
+android/local.properties
+android/app/build/
+android/build/
+android/key.properties
+*.jks
+*.keystore
+android/ci-upload.keystore
+
+# Firebase secrets (never commit)
+*-firebase-adminsdk-*.json
+*firebase-adminsdk*.json
+.secrets/
+.firebase/
+**/service-account*.json
+**/firebase-service-account.json
+dist/

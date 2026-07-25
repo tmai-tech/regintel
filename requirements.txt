@@ -6,3 +6,4 @@ lxml>=5.0.0
 streamlit>=1.40.0
 tenacity>=9.0.0
 sqlalchemy>=2.0.0
+firebase-admin>=6.5.0

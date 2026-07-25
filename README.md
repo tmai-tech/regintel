@@ -1,67 +1,59 @@
-# BCI RegIntel
+# RegIntel
 
-Regulatory / legal-act intelligence for BCI: catalog of **1,300+ primary sources**, gazette links, secondary sources, tracking log, plus a **scheduled daily collector** and a **web UI** with detailed filterable tables.
+BCI regulatory / legal-act intelligence: **Python collector** + **Kotlin Android app** on **Firebase App Distribution** (same pattern as [RoomCraft](https://github.com/tmai-tech/RoomCraft)).
 
-## Live UI
+## Firebase App Tester
 
-After GitHub Pages is enabled, open:
+| Item | Value |
+|------|--------|
+| Firebase project | `roomcraft-e1312` |
+| Package | `com.logicrequire.regintel` |
+| App ID | `1:768748224321:android:6646eb31cbd2270e0fabc0` |
+| Install | Firebase App Tester invite / [App Distribution console](https://console.firebase.google.com/project/roomcraft-e1312/appdistribution) |
 
-**https://tmai-tech.github.io/regintel/**
+See [docs/FIREBASE_APP_DISTRIBUTION.md](docs/FIREBASE_APP_DISTRIBUTION.md).
 
-Tabs:
-
-| Tab | Content |
-|-----|---------|
-| Tracking log | Analyst tracking sheet (country, law area, topic, relevancy, links) |
-| Primary sources | Full Primary Links catalog |
-| Collector updates | Items discovered by the daily Python job |
-| Gazette & bills | Parliament / gazette / legal DB URLs |
-| Secondary sources | Law firm & commercial watch sources |
-| Detailed plan | Workstream coverage & frequency |
-
-## Repo layout
+## Architecture
 
 ```
-regintel/
-├── BCI Tracking Plan.xlsx      # source workbook
-├── data/                       # JSON catalog + collector output
-├── web/                        # GitHub Pages UI
-├── collector/run_daily.py      # scheduled fetcher
-├── scripts/seed_from_excel.py  # Excel → JSON
-├── app/streamlit_app.py        # optional local Streamlit UI
-└── .github/workflows/          # daily collector + Pages deploy
+Python collector (daily CI)
+    → JSON in data/
+    → Firestore collections regintel_*
+Kotlin app (Compose)
+    → reads Firestore (fallback: bundled assets)
+    → detailed tables: Tracking / Primary / Updates / Gazette / Secondary
+CI Build APK
+    → Firebase App Distribution → App Tester
 ```
 
-## Local setup
+## Local Android build
 
 ```bash
-# Python 3.12+
-uv venv .venv
-uv pip install --python .venv/bin/python -r requirements.txt
-
-# Rebuild JSON from Excel
-.venv/bin/python scripts/seed_from_excel.py
-
-# Run collector (pilot: 40 sources)
-.venv/bin/python collector/run_daily.py --limit 40 --force
-
-# UI — either open web/index.html via a static server:
-.venv/bin/python -m http.server 8080 --directory web
-# → http://localhost:8080
-
-# or Streamlit:
-.venv/bin/streamlit run app/streamlit_app.py
+# JDK 17 + Android SDK required
+cd android
+./gradlew assembleDebug
+# APK: app/build/outputs/apk/debug/
 ```
 
-## GitHub Actions
+## Python collector + Firestore seed
 
-- **Deploy UI to GitHub Pages** — on push to `main` (web/data changes)
-- **Daily collector** — cron `0 6 * * *` UTC + manual `workflow_dispatch`
+```bash
+uv venv .venv
+uv pip install --python .venv/bin/python -r requirements.txt
+export GOOGLE_APPLICATION_CREDENTIALS=.secrets/roomcraft-e1312-firebase-adminsdk-fbsvc.json
 
-Enable **Settings → Pages → Source: GitHub Actions** once after the first push.
+.venv/bin/python scripts/seed_from_excel.py
+.venv/bin/python collector/run_daily.py --limit 40 --force
+.venv/bin/python collector/upload_firestore.py   # full catalog to Firestore
+```
 
-## Notes
+## CI
 
-- Collector uses polite rate limits and a clear User-Agent.
-- Paywalled secondary databases are listed for manual review; logins are not automated.
-- First collector pass seeds seen URLs so later runs only report **new** links.
+| Workflow | Purpose |
+|----------|---------|
+| **Build APK** | Debug APK → artifact + Firebase App Distribution |
+| **Daily collector** | Fetch sources → Firestore updates → commit JSON |
+
+## GitHub
+
+https://github.com/tmai-tech/regintel

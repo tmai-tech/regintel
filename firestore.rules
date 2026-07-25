@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ---- RoomCraft (existing) ----
+    match /users/{userId}/rooms/{roomId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    match /feedback/{reportId} {
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasAll(['id', 'category', 'message', 'appVersion'])
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() < 8000;
+      allow read, update, delete: if false;
+    }
+
+    // ---- RegIntel (public read for App Tester builds; Admin SDK writes) ----
+    match /regintel_meta/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /regintel_tracking/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /regintel_primary_sources/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /regintel_updates/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /regintel_gazette/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /regintel_secondary/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

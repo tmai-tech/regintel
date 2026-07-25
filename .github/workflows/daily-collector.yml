@@ -28,6 +28,16 @@ jobs:
           uv venv .venv
           uv pip install --python .venv/bin/python -r requirements.txt
 
+      - name: Write service account
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -n "${FIREBASE_SERVICE_ACCOUNT:-}" ]; then
+            mkdir -p .secrets
+            printf '%s\n' "${FIREBASE_SERVICE_ACCOUNT}" > .secrets/sa.json
+            echo "GOOGLE_APPLICATION_CREDENTIALS=$PWD/.secrets/sa.json" >> "$GITHUB_ENV"
+          fi
+
       - name: Seed from Excel (if present)
         run: |
           if [ -f "BCI Tracking Plan.xlsx" ]; then
@@ -40,11 +50,24 @@ jobs:
           LIMIT="${LIMIT:-50}"
           .venv/bin/python collector/run_daily.py --limit "$LIMIT" --force
 
+      - name: Upload to Firestore
+        run: |
+          if [ -n "${GOOGLE_APPLICATION_CREDENTIALS:-}" ]; then
+            .venv/bin/python collector/upload_firestore.py --only updates
+            .venv/bin/python collector/upload_firestore.py --only meta
+          else
+            echo "No FIREBASE_SERVICE_ACCOUNT — skip Firestore upload"
+          fi
+
       - name: Commit data updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data web/data || true
+          git add data web/data android/app/src/main/assets || true
+          # refresh assets from data
+          mkdir -p android/app/src/main/assets
+          cp -f data/*.json android/app/src/main/assets/ 2>/dev/null || true
+          git add data web/data android/app/src/main/assets || true
           if git diff --staged --quiet; then
             echo "No data changes"
           else
