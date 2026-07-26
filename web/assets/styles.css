@@ -164,3 +164,16 @@ dialog::backdrop { background: rgba(4,8,16,.65); backdrop-filter: blur(4px); }
   .table-wrap { max-height: none; }
   tbody td { max-width: 220px; }
 }
+
+.pdf-list { padding: 14px; display: grid; gap: 12px; max-height: none; }
+.pdf-card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 14px;
+  padding: 14px 16px;
+}
+.pdf-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.pdf-card p { margin: 8px 0; word-break: break-word; }
+.pdf-card .btn {
+  display: inline-block; margin-top: 4px; text-decoration: none;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  color: #081018; font-weight: 700; padding: 8px 14px; border-radius: 10px;
+}
