@@ -1,0 +1,414 @@
+[
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Environment Health & Safety (EHS)",
+    "FLR": "Anilabh, Darshana",
+    "SLR": "Sristy - COE",
+    "# of URLs": 34,
+    "Tracking Frequency": "Daily",
+    "Country Coverage": "Canada Federal, British Columbia, New York, UK, India"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Labour & Employment",
+    "# of URLs": 44,
+    "Country Coverage": "Canada Federal, British Columbia, New York, UK, India"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Modern Slavery",
+    "# of URLs": 31,
+    "Country Coverage": "Canada Federal, British Columbia, US Federal, New York, UK, Australia, California."
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "ESG",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Tracking Frequency": "Daily",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, California, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey."
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Corporate Governance",
+    "# of URLs": 76,
+    "Country Coverage": "Canada Federal, British Columbia, Ontario, Manitoba, US Federal, New York, Delaware, UK, India, Luxembourg, Cayman Islands"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Corporate/Entity Formation Laws/Transparency",
+    "Country Coverage": "Canada Federal, British Columbia, Ontario, Manitoba, US Federal, New York, Delaware, UK, India, Luxembourg, Cayman Islands,"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Directors Duties & D&O Insurance",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "Canada Federal, British Columbia, Ontario, Manitoba, US Federal, New York, Delaware, UK, India, Luxembourg, Cayman Islands."
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Shareholder Rights & Litigation",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey."
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Substantial Shareholding Disclosures",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, Ontario, US Federal, India, Australia, Japan, China, Hong Kong, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey, Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Netherlands, Poland, Portugal, Slovak Republic, Slovenia, Spain, Sweden, UK"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Take-Private / Take-Over Bid Rules",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, California, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Corporate Disputes & Arbitration",
+    "# of URLs": "Combined with Corporate governance",
+    "Country Coverage": "Canada Federal, British Columbia, US Federal, New York, UK, India"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Administrative Law & Statutory Interpretation",
+    "# of URLs": "Covered in all",
+    "Country Coverage": "Canada Federal, British Columbia"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Competition Act",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "Canada Federal, British Columbia"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "M&A, Merger Control, Anti-Trust",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Tracking Frequency": "Daily",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey."
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "National Security; Defense; Sensitive Information; Essential Infra",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Tracking Frequency": "Daily",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, Delaware, New York, California, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan,"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Foreign Direct Investment, National Security, Foreign Subsidies Regulation, Foreign, outbound investment restrictions, Foreign Beneficial Owners Disclosure and Corporate Transparency",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Tracking Frequency": "Daily",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, Delaware, New York, California, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Anti-Money Laundering & Know-Your-Client",
+    "# of URLs": 345,
+    "Tracking Frequency": "Daily",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, Delaware UK, India, Australia, Japan, China, Hongkong, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Austria, Belgium, Costa Rica, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Latvia, Lithuania, Luxembourg, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Anti-Bribery and Anti-Corruption; Anti-Terrorism",
+    "# of URLs": "Combined with AML",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, UK, India, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Austria, Belgium, Costa Rica, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Latvia, Lithuania, Luxembourg, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Lobbying / Foreign Influence Regulation",
+    "# of URLs": "Combined with AML",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, Delaware, California, UK, India, Australia"
+  },
+  {
+    "Country Coverage": "2.        Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Latvia, Lithuania, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Freedom of Information",
+    "# of URLs": 10,
+    "Country Coverage": "Canada Federal, British Columbia, US Federal, US New York, UK, India"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Sanctions",
+    "# of URLs": 16,
+    "Country Coverage": "Canada Federal, US Federal, UK, India"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Direct Tax",
+    "FLR": "Tanisha, Pragnya",
+    "SLR": "Amruta - COE",
+    "# of URLs": 288,
+    "Tracking Frequency": "Monthly",
+    "Country Coverage": "Canada Federal, British Columbia US Federal, New York, UK"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Indirect Tax",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, California, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Data Privacy & Cybersecurity",
+    "SLR": "Harshit/ Ekta - COE",
+    "# of URLs": 40,
+    "Tracking Frequency": "Monthly",
+    "Country Coverage": "Canada Federal, British Columbia, Ontario, US Federal, New York, California, UK, India."
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "AI & Cybersecurity",
+    "Country Coverage": "Canada Federal, British Columbia, Ontario, US Federal, New York, California, UK, India."
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "IPR (Intellectual Property Rights)",
+    "# of URLs": 12,
+    "Country Coverage": "Canada Federal, US Federal, UK, India"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Cryptocurrencies & Digital Assets",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, UK, China"
+  },
+  {
+    "Country Coverage": "2.        Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Latvia, Lithuania, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Records Management (Corp Sec.)",
+    "# of URLs": "Combined with Corporate governance",
+    "Country Coverage": "Canada Federal, British Columbia, US Federal, New York, UK, India"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Public Sector Pensions Plans Act (BC), PSPPA Client Regulations FAA, Pension Benefits Standards Act, Canada Federal and BC and other BC Crown and government agency laws",
+    "# of URLs": 3,
+    "Tracking Frequency": "Monthly",
+    "Country Coverage": "Canada Federal, British Columbia"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Securities Law Class Action",
+    "FLR": "Alisha",
+    "SLR": "Manudeep",
+    "Tracking Frequency": "Monthly",
+    "Country Coverage": "Canada Federal, British Columbia, US Federal, New York"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Derivatives Regulations (incl on-exchange derivatives)",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, UK, Australia, Japan, Switzerland"
+  },
+  {
+    "Country Coverage": "2.        Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Malta, Latvia, Lithuania, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Securities Regulation (Securities Issuances; Private Placements/PIPEs)",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, Ontario US Federal, UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan,"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania,  Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Security and perfection, bankruptcy and insolvency priorities and lender protections, usury and maximum interest, interest rate transition",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "Canada Federal, British Columbia, New York, UK"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Manager Regulation & Private Funds Rules",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "# of URLs": "Done",
+    "Country Coverage": "US Federal, British Columbia Luxembourg, Cayman Islands"
+  },
+  {
+    "Workstream": "Private Markets",
+    "Sub-Categories": "Foreign Investor Rules",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "# of URLs": "Done",
+    "Country Coverage": "1.        Canada Federal, British Columbia, US Federal, New York, California UK, India, Luxembourg, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan,"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania,  Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Public and OTC Market Trade Execution:  securities lending, repo trade execution, private placement, take-over rules",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "1.        Canada Federal, British Columbia, Ontario, US Federal, UK, India, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Cyprus, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Luxembourg, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Country Coverage": "5.        Egypt, Indonesia, Malaysia, Philippines, Qatar, Saudi Arabia, Thailand and Vietnam"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "California Financing Law (CFL) & DFPI",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Country Coverage": "California"
+  },
+  {
+    "Workstream": "Capital Markets",
+    "Sub-Categories": "Market Abuse Regulations & Material Non-Public Information",
+    "FLR": "Alisha, Simran",
+    "SLR": "Manudeep",
+    "Tracking Frequency": "Monthly",
+    "Country Coverage": "1.        Canada Federal, British Columbia, Ontario, US Federal, UK, India, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Cyprus, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Luxembourg, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Israel, New Zealand, Norway, Switzerland, Turkey"
+  },
+  {
+    "Country Coverage": "5.        Egypt, Indonesia, Malaysia, Philippines, Qatar, Saudi Arabia, Thailand and Vietnam"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Procurement and Trade Obligations",
+    "# of URLs": 14,
+    "Country Coverage": "Canada Federal, British Columbia"
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Contract Law",
+    "# of URLs": "Combined with Corporate governance",
+    "Country Coverage": "1.        Canada Federal, British Columbia, Ontario US Federal, New York, Delaware India, Australia, Japan, China, Hongkong, Singapore, Brazil, Peru, Chile, Colombia, Mexico, UAE, Korea, Taiwan,"
+  },
+  {
+    "Country Coverage": "2.        Bulgaria, Croatia, Cyprus, Romania, Malta"
+  },
+  {
+    "Country Coverage": "3.        Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden"
+  },
+  {
+    "Country Coverage": "4.        Costa Rica, Iceland, Israel, Japan, New Zealand, Norway, Switzerland, Turkey, UK."
+  },
+  {
+    "Workstream": "Enterprise",
+    "Sub-Categories": "Notarization; Apostille; Authentication of Documents",
+    "# of URLs": 5,
+    "Country Coverage": "Canada Federal, British Columbia"
+  }
+]

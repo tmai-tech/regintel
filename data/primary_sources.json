@@ -11101,7 +11101,7 @@
     "topics": [
       "Indirect Tax"
     ],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -11114,7 +11114,7 @@
     "frequency": null,
     "segment": "Enterprise",
     "topics": [],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -11454,7 +11454,7 @@
     "frequency": null,
     "segment": "Enterprise",
     "topics": [],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -11806,7 +11806,7 @@
     "frequency": null,
     "segment": "Enterprise",
     "topics": [],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -12372,7 +12372,7 @@
       "Anti-Bribery and Anti-Corruption; Anti-Terrorism",
       "Anti-Money Laundering & Know-Your-Client"
     ],
-    "status": "missing_url",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -16018,7 +16018,7 @@
     "topics": [
       "Anti-Money Laundering & Know-Your-Client"
     ],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -16343,7 +16343,7 @@
       "Anti-Money Laundering & Know-Your-Client",
       "Anti-Bribery and Anti-Corruption; Anti-Terrorism"
     ],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -19031,7 +19031,7 @@
     "topics": [
       "Labour and Employment"
     ],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
@@ -19739,7 +19739,7 @@
     "topics": [
       "Indirect Tax"
     ],
-    "status": "active",
+    "status": "broken",
     "source_kind": "primary"
   },
   {
