@@ -1,0 +1,20 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // RoomCraft feedback screenshots
+    match /feedback/{reportId}/{fileName} {
+      allow write: if request.auth != null
+        && request.resource.size < 8 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+      allow read: if false;
+    }
+    // RegIntel bill/amendment PDFs — public read for App Tester
+    match /regintel/pdfs/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

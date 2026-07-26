@@ -30,6 +30,7 @@ class RegIntelRepository(
                     gazetteSources = (snap.getLong("gazette_sources") ?: 0L).toInt(),
                     secondarySources = (snap.getLong("secondary_sources") ?: 0L).toInt(),
                     updates = (snap.getLong("updates") ?: 0L).toInt(),
+                    pdfCount = (snap.getLong("pdf_count") ?: 0L).toInt(),
                     source = "firestore",
                 )
             } else {
@@ -143,6 +144,53 @@ class RegIntelRepository(
         if (remote.isNotEmpty()) remote else loadSecondaryFromAssets()
     }
 
+
+    suspend fun loadPdfs(limit: Long = 2000): List<PdfDoc> = withContext(Dispatchers.IO) {
+        val remote = runCatching {
+            db.collection(COL_PDFS).limit(limit).get().await().documents.map { d ->
+                PdfDoc(
+                    id = d.id,
+                    title = d.getString("title"),
+                    filename = d.getString("filename"),
+                    jurisdiction = d.getString("jurisdiction"),
+                    sourceKind = d.getString("source_kind"),
+                    sourcePage = d.getString("source_page"),
+                    openUrl = d.getString("open_url") ?: d.getString("download_url") ?: d.getString("url"),
+                    url = d.getString("url"),
+                    bytes = d.getLong("bytes") ?: 0L,
+                    downloadedAt = d.getString("downloaded_at"),
+                )
+            }
+        }.getOrDefault(emptyList())
+        if (remote.isNotEmpty()) {
+            remote.sortedByDescending { it.downloadedAt ?: "" }
+        } else {
+            loadPdfsFromAssets()
+        }
+    }
+
+    private fun loadPdfsFromAssets(): List<PdfDoc> {
+        val text = runCatching { assetText("pdfs_catalog.json") }.getOrNull() ?: return emptyList()
+        val arr = gson.fromJson(text, com.google.gson.JsonArray::class.java)
+        return arr.mapIndexed { i, el ->
+            val o = el.asJsonObject
+            fun s(k: String) = if (o.has(k) && !o.get(k).isJsonNull) o.get(k).asString else null
+            fun n(k: String) = if (o.has(k) && !o.get(k).isJsonNull) o.get(k).asLong else 0L
+            PdfDoc(
+                id = s("id") ?: "local-$i",
+                title = s("title"),
+                filename = s("filename"),
+                jurisdiction = s("jurisdiction"),
+                sourceKind = s("source_kind"),
+                sourcePage = s("source_page"),
+                openUrl = s("open_url") ?: s("download_url") ?: s("url"),
+                url = s("url"),
+                bytes = n("bytes"),
+                downloadedAt = s("downloaded_at"),
+            )
+        }
+    }
+
     private fun assetText(name: String): String =
         context.assets.open(name).bufferedReader().use { it.readText() }
 
@@ -157,6 +205,7 @@ class RegIntelRepository(
             gazetteSources = c?.get("gazette_sources")?.asInt ?: 0,
             secondarySources = c?.get("secondary_sources")?.asInt ?: 0,
             updates = c?.get("updates")?.asInt ?: 0,
+            pdfCount = c?.get("pdfs")?.asInt ?: c?.get("pdf_count")?.asInt ?: 0,
             source = "assets",
         )
     }
@@ -267,5 +316,6 @@ class RegIntelRepository(
         const val COL_UPDATES = "regintel_updates"
         const val COL_GAZETTE = "regintel_gazette"
         const val COL_SECONDARY = "regintel_secondary"
+        const val COL_PDFS = "regintel_pdfs"
     }
 }

@@ -2,6 +2,25 @@
 const DATA_BASE = "data";
 
 const TABS = {
+  pdfs: {
+    file: "pdfs_catalog.json",
+    label: "PDFs",
+    filters: [
+      { key: "jurisdiction", label: "All jurisdictions" },
+      { key: "source_kind", label: "All source kinds" },
+      { key: "_none", label: "—" },
+    ],
+    columns: [
+      { key: "title", label: "Title" },
+      { key: "jurisdiction", label: "Jurisdiction" },
+      { key: "source_kind", label: "Source" },
+      { key: "filename", label: "File" },
+      { key: "bytes", label: "Bytes" },
+      { key: "downloaded_at", label: "Downloaded" },
+      { key: "open_url", label: "Open PDF", type: "url" },
+      { key: "url", label: "Source URL", type: "url" },
+    ],
+  },
   tracking: {
     file: "tracking.json",
     label: "Tracking log",
@@ -118,7 +137,7 @@ const TABS = {
 };
 
 const state = {
-  tab: "tracking",
+  tab: "pdfs",
   cache: {},
   meta: null,
   sortKey: null,
@@ -230,6 +249,7 @@ function renderStats() {
     ["Gazette", c.gazette_sources ?? "—"],
     ["Secondary", c.secondary_sources ?? "—"],
     ["Collector updates", c.updates ?? "—", true],
+    ["Bill/amendment PDFs", c.pdfs ?? c.pdf_count ?? "—", true],
   ];
   $("#stats").innerHTML = stats
     .map(
@@ -385,7 +405,7 @@ async function boot() {
     state.meta = { counts: {} };
   }
   renderStats();
-  await loadTab("tracking");
+  await loadTab("pdfs");
 }
 
 document.querySelectorAll(".tab").forEach((btn) => {

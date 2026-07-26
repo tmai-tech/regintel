@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.OpenInNew
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.PictureAsPdf
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -60,10 +61,12 @@ import com.logicrequire.regintel.data.PrimarySource
 import com.logicrequire.regintel.data.RegIntelRepository
 import com.logicrequire.regintel.data.SecondarySource
 import com.logicrequire.regintel.data.TrackingRow
+import com.logicrequire.regintel.data.PdfDoc
 import com.logicrequire.regintel.data.UpdateRow
 import kotlinx.coroutines.launch
 
 private enum class TabKind(val label: String) {
+    Pdfs("PDFs"),
     Tracking("Tracking"),
     Primary("Primary"),
     Updates("Updates"),
@@ -87,6 +90,7 @@ fun RegIntelAppRoot() {
     var updates by remember { mutableStateOf<List<UpdateRow>>(emptyList()) }
     var gazette by remember { mutableStateOf<List<GazetteRow>>(emptyList()) }
     var secondary by remember { mutableStateOf<List<SecondarySource>>(emptyList()) }
+    var pdfs by remember { mutableStateOf<List<PdfDoc>>(emptyList()) }
     var query by remember { mutableStateOf("") }
     var filter by remember { mutableStateOf("All") }
 
@@ -101,6 +105,7 @@ fun RegIntelAppRoot() {
                 updates = repo.loadUpdates()
                 gazette = repo.loadGazette()
                 secondary = repo.loadSecondary()
+                pdfs = repo.loadPdfs()
             }.onFailure {
                 error = it.message ?: "Load failed"
             }
@@ -121,7 +126,7 @@ fun RegIntelAppRoot() {
                         Text("RegIntel", fontWeight = FontWeight.Bold)
                         Text(
                             text = meta?.let {
-                                "src=${it.source} · track=${it.trackingRecords} · primary=${it.primarySources} · updates=${it.updates}"
+                                "src=${it.source} · pdfs=${it.pdfCount.coerceAtLeast(pdfs.size)} · track=${it.trackingRecords} · updates=${it.updates}"
                             } ?: "BCI regulatory tracking",
                             style = MaterialTheme.typography.bodySmall,
                             maxLines = 1,
@@ -172,6 +177,7 @@ fun RegIntelAppRoot() {
             )
 
             val filterOptions = when (current) {
+                TabKind.Pdfs -> listOf("All") + pdfs.mapNotNull { it.jurisdiction }.distinct().sorted()
                 TabKind.Tracking -> listOf("All") + tracking.mapNotNull { it.country }.distinct().sorted()
                 TabKind.Primary -> listOf("All") + primary.mapNotNull { it.region }.distinct().sorted()
                 TabKind.Updates -> listOf("All") + updates.mapNotNull { it.country }.distinct().sorted()
@@ -207,6 +213,37 @@ fun RegIntelAppRoot() {
                 else -> {
                     val q = query.trim().lowercase()
                     when (current) {
+                        TabKind.Pdfs -> {
+                            val rows = pdfs.filter { row ->
+                                (filter == "All" || row.jurisdiction == filter) &&
+                                    (q.isEmpty() || listOf(
+                                        row.title, row.filename, row.jurisdiction,
+                                        row.sourceKind, row.openUrl, row.url,
+                                    ).joinToString(" ").lowercase().contains(q))
+                            }
+                            CountBar(rows.size)
+                            LazyColumn(
+                                contentPadding = PaddingValues(12.dp),
+                                verticalArrangement = Arrangement.spacedBy(8.dp),
+                            ) {
+                                items(rows, key = { it.id }) { row ->
+                                    val sizeKb = if (row.bytes > 0) "${row.bytes / 1024} KB" else null
+                                    DetailCard(
+                                        title = row.title ?: row.filename ?: "PDF",
+                                        subtitle = listOfNotNull(row.jurisdiction, row.sourceKind, sizeKb)
+                                            .joinToString(" · "),
+                                        chips = listOfNotNull(row.filename, row.downloadedAt?.take(10)),
+                                        body = buildString {
+                                            if (!row.sourcePage.isNullOrBlank()) {
+                                                appendLine("Source page: ${row.sourcePage}")
+                                            }
+                                            appendLine("File: ${row.filename ?: "—"}")
+                                        },
+                                        link = row.openUrl ?: row.url,
+                                    )
+                                }
+                            }
+                        }
                         TabKind.Tracking -> {
                             val rows = tracking.filter { row ->
                                 (filter == "All" || row.country == filter) &&

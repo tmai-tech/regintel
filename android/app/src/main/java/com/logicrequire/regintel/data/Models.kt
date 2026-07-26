@@ -70,5 +70,20 @@ data class CatalogMeta(
     val gazetteSources: Int = 0,
     val secondarySources: Int = 0,
     val updates: Int = 0,
+    val pdfCount: Int = 0,
     val source: String = "unknown",
+)
+
+
+data class PdfDoc(
+    val id: String = "",
+    val title: String? = null,
+    val filename: String? = null,
+    val jurisdiction: String? = null,
+    val sourceKind: String? = null,
+    val sourcePage: String? = null,
+    val openUrl: String? = null,
+    val url: String? = null,
+    val bytes: Long = 0,
+    val downloadedAt: String? = null,
 )

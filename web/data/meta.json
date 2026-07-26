@@ -6,7 +6,8 @@
     "gazette_sources": 67,
     "secondary_sources": 68,
     "detailed_plan_rows": 85,
-    "updates": 435
+    "updates": 435,
+    "pdfs": 254
   },
   "last_collector_run": "2026-07-26T08:05:02.889637+00:00",
   "last_collector_stats": {
