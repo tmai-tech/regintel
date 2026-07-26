@@ -29,3 +29,8 @@ android/ci-upload.keystore
 **/service-account*.json
 **/firebase-service-account.json
 dist/
+
+# Downloaded gazette/bill PDFs (manifest is tracked)
+data/pdfs/**
+!data/pdfs/manifest.json
+!data/pdfs/*.log

@@ -57,3 +57,17 @@ export GOOGLE_APPLICATION_CREDENTIALS=.secrets/roomcraft-e1312-firebase-adminsdk
 ## GitHub
 
 https://github.com/tmai-tech/regintel
+
+## Gazette bill / amendment PDFs
+
+Scrape the **Gazette & Parliament Bills** links from the tracking plan and download PDFs:
+
+```bash
+.venv/bin/python collector/download_gazette_pdfs.py
+# or pilot:
+.venv/bin/python collector/download_gazette_pdfs.py --jurisdiction India --jurisdiction "USA Federal"
+```
+
+PDFs land in `data/pdfs/<jurisdiction>/…` with inventory in `data/pdfs/manifest.json`.  
+See [docs/GAZETTE_PDF_COLLECTOR.md](docs/GAZETTE_PDF_COLLECTOR.md).
+
