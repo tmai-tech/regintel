@@ -28,8 +28,8 @@ android {
         applicationId = "com.logicrequire.regintel"
         minSdk = 26
         targetSdk = 35
-        versionCode = 3
-        versionName = "0.2.0-beta.1"
+        versionCode = 4
+        versionName = "0.2.0-beta.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -95,6 +95,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.compose.foundation:foundation")
     implementation("com.google.android.material:material:1.12.0")
 
     // Firebase (same stack pattern as RoomCraft)

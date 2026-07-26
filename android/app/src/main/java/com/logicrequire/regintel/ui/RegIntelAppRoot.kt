@@ -79,9 +79,9 @@ fun RegIntelAppRoot() {
 
     LaunchedEffect(Unit) { reload() }
 
-    if (selected != null) {
+    selected?.let { doc ->
         PdfViewerScreen(
-            doc = selected!!,
+            doc = doc,
             repo = repo,
             onBack = { selected = null },
         )
@@ -185,7 +185,16 @@ fun RegIntelAppRoot() {
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     items(filtered, key = { it.id }) { doc ->
-                        PdfListItem(doc = doc, onOpen = { selected = doc })
+                        PdfListItem(
+                            doc = doc,
+                            onOpen = {
+                                if (doc.pdfUrl.isNullOrBlank()) {
+                                    error = "This item has no PDF URL"
+                                } else {
+                                    selected = doc
+                                }
+                            },
+                        )
                     }
                 }
             }
