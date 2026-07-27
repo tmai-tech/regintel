@@ -1,5 +1,35 @@
 [
   {
+    "id": "1cb808653a8b4c77",
+    "discovered_at": "2026-07-27T09:25:48.025537+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Private; Capital",
+    "topical_relevance": "Take Private/ Over Rules, Shareholder Rights, Crypto/ Digital Assets, Merger Control, M&A, ESG, Subs. Shareholding Disclosure, Derivatives, Securities Regulations, Public & OTC Market, Market Conduct ",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/",
+    "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "a912df2e1ee9d664",
+    "discovered_at": "2026-07-27T09:25:48.025537+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Office of the Superintendent of Financial Institutions (OSFI)",
+    "law_area": "Private; Capital",
+    "topical_relevance": "Crypto/ Digital Assets, ESG, Derivatives, Public & OTC Market",
+    "title": "Independent review supports 32nd Actuarial Report on the Canada Pension Plan July 3, 2026",
+    "link": "https://www.osfi-bsif.gc.ca/en/news/independent-review-supports-32nd-actuarial-report-canada-pension-plan",
+    "source_url": "https://www.osfi-bsif.gc.ca/en",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
     "id": "ab7c59379b0e6bc7",
     "discovered_at": "2026-07-26T08:05:02.889637+00:00",
     "country": "Canada - Federal",
