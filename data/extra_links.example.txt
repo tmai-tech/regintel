@@ -1,0 +1,11 @@
+# Example trial links for the generic crawler.
+# Copy to data/extra_links.txt and run:
+#   scripts/crawl_sources.sh --from-file data/extra_links.txt --url-only --max 0
+#
+# Formats:
+#   https://example.gov/bills
+#   Jurisdiction | https://example.gov/gazette
+#   Jurisdiction | source_kind | https://example.gov/page
+
+# USA Federal | official_gazette | https://www.federalregister.gov
+# Singapore | parliamentary_bills | https://www.parliament.gov.sg/parliamentary-business/bills-introduced

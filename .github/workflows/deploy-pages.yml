@@ -29,8 +29,30 @@ jobs:
 
       - name: Sync data into web/
         run: |
+          set -euo pipefail
           mkdir -p web/data
+          # Catalog JSON lives primarily under web/data (index_pdfs_firestore.py).
+          # Also merge any root data/*.json so Pages stays in sync with collector output.
           cp -f data/*.json web/data/ 2>/dev/null || true
+          # Rebuild enriched laws catalog (country, federal/state, summaries, authorities)
+          if [ -f scripts/build_laws_catalog.py ]; then
+            python3 scripts/build_laws_catalog.py
+          fi
+          if [ ! -f web/data/pdfs_catalog.json ]; then
+            echo "::warning::web/data/pdfs_catalog.json missing — UI will show load error until catalog is generated."
+          else
+            echo "pdfs_catalog.json: $(wc -c < web/data/pdfs_catalog.json) bytes"
+          fi
+          if [ ! -f web/data/laws_catalog.json ]; then
+            echo "::warning::web/data/laws_catalog.json missing — Laws tab will use fallback merge."
+          else
+            echo "laws_catalog.json: $(wc -c < web/data/laws_catalog.json) bytes"
+          fi
+          # Sanity: required static files for iOS web client
+          for f in web/index.html web/manifest.webmanifest web/assets/app.js web/assets/styles.css; do
+            test -f "$f" || { echo "::error::Missing $f"; exit 1; }
+          done
+          ls -la web web/assets web/data | head -80
 
       - uses: actions/configure-pages@v5
 
@@ -40,3 +62,11 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Print share URL
+        run: |
+          echo "### iOS / web share URL" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**https://tmai-tech.github.io/regintel/**" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Deployed page_url: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"

@@ -2,31 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RegIntel — Bill & Amendment PDFs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="RegIntel — regulatory laws and updates by country, with authority links. Works on iPhone Safari." />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="RegIntel" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icon-180.png" />
+  <title>RegIntel — Laws &amp; Regulatory Updates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <div class="app">
     <header class="top">
       <div class="brand">
-        <div class="logo">📄</div>
+        <div class="logo" aria-hidden="true">⚖️</div>
         <div>
-          <h1>RegIntel PDFs</h1>
-          <p class="subtitle">Bills &amp; amendments extracted from gazette / parliament links</p>
+          <h1>RegIntel</h1>
+          <p class="subtitle">Laws, updates &amp; bill PDFs — filter by country and level</p>
         </div>
       </div>
-      <div class="meta-bar" id="metaBar">Loading…</div>
+      <div class="meta-bar" id="metaBar" role="status">Loading…</div>
     </header>
-    <section class="panel">
-      <div class="toolbar">
-        <input type="search" id="search" placeholder="Search title, jurisdiction, source link…" />
-        <select id="filterJ"></select>
-        <span id="rowCount" class="muted"></span>
+
+    <aside class="install-banner" id="installBanner" hidden>
+      <div class="install-banner-text">
+        <strong>iPhone tip</strong>
+        <span>Share → <em>Add to Home Screen</em> for an app-like icon.</span>
       </div>
-      <div id="list" class="pdf-list"></div>
+      <button type="button" class="btn ghost" id="dismissInstall" aria-label="Dismiss">Got it</button>
+    </aside>
+
+    <nav class="tabs" role="tablist" aria-label="Main views">
+      <button type="button" class="tab active" role="tab" id="tabLaws" aria-selected="true" aria-controls="panelLaws" data-tab="laws">Laws</button>
+      <button type="button" class="tab" role="tab" id="tabPdfs" aria-selected="false" aria-controls="panelPdfs" data-tab="pdfs">PDFs</button>
+      <button type="button" class="tab" role="tab" id="tabCrawl" aria-selected="false" aria-controls="panelCrawl" data-tab="crawl">Crawl</button>
+    </nav>
+
+    <!-- Laws / regulatory updates -->
+    <section class="panel" id="panelLaws" role="tabpanel" aria-labelledby="tabLaws" aria-label="Laws catalog">
+      <div class="toolbar sticky-toolbar">
+        <label class="sr-only" for="lawSearch">Search by name of the law</label>
+        <input
+          type="search"
+          id="lawSearch"
+          enterkeyhint="search"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+          placeholder="Search by name of the law…"
+        />
+        <label class="sr-only" for="filterCountry">Filter by country</label>
+        <select id="filterCountry" aria-label="Country filter"></select>
+        <label class="sr-only" for="filterLevel">Filter by federal or state</label>
+        <select id="filterLevel" aria-label="Federal or state filter">
+          <option value="All levels">All levels</option>
+          <option value="Federal">Federal</option>
+          <option value="State">State / province</option>
+        </select>
+        <label class="sr-only" for="filterLawArea">Filter by law area</label>
+        <select id="filterLawArea" aria-label="Law area filter"></select>
+        <label class="sr-only" for="filterLawKind">Filter by record type</label>
+        <select id="filterLawKind" aria-label="Record type filter">
+          <option value="All types">All types</option>
+        </select>
+        <span id="lawRowCount" class="muted row-count" aria-live="polite"></span>
+      </div>
+      <div id="lawList" class="pdf-list" role="list"></div>
+      <div id="lawEmpty" class="empty" hidden>No laws match your filters.</div>
     </section>
+
+    <!-- Crawl status -->
+    <section class="panel" id="panelCrawl" role="tabpanel" aria-labelledby="tabCrawl" aria-label="Crawl status" hidden>
+      <div class="toolbar sticky-toolbar">
+        <span class="muted" id="crawlUpdated">Loading crawl status…</span>
+        <button type="button" class="btn ghost" id="crawlRefresh">Refresh</button>
+      </div>
+      <div id="crawlBody" class="crawl-panel"></div>
+    </section>
+
+    <!-- PDF catalog (existing) -->
+    <section class="panel" id="panelPdfs" role="tabpanel" aria-labelledby="tabPdfs" aria-label="PDF catalog" hidden>
+      <div class="toolbar sticky-toolbar">
+        <label class="sr-only" for="search">Search PDFs</label>
+        <input
+          type="search"
+          id="search"
+          enterkeyhint="search"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+          placeholder="Search title, jurisdiction, law type, link…"
+        />
+        <label class="sr-only" for="filterJ">Filter by jurisdiction / location</label>
+        <select id="filterJ" aria-label="Jurisdiction filter"></select>
+        <label class="sr-only" for="filterLaw">Filter by law type</label>
+        <select id="filterLaw" aria-label="Law type filter"></select>
+        <label class="sr-only" for="filterYear">Filter by year of latest update</label>
+        <select id="filterYear" aria-label="Year filter"></select>
+        <label class="sr-only" for="filterKind">Filter by source kind</label>
+        <select id="filterKind" aria-label="Source kind filter"></select>
+        <span id="rowCount" class="muted row-count" aria-live="polite"></span>
+      </div>
+      <div id="list" class="pdf-list" role="list"></div>
+      <div id="empty" class="empty" hidden>No PDFs match your filters.</div>
+    </section>
+
+    <footer class="foot">
+      <span>Open on any phone browser · data from RegIntel collector</span>
+      <a href="https://github.com/tmai-tech/regintel" rel="noopener">GitHub</a>
+    </footer>
   </div>
-  <script src="assets/app.js"></script>
+  <script src="assets/app.js" defer></script>
 </body>
 </html>

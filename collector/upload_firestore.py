@@ -79,7 +79,16 @@ def main():
     p.add_argument("--wipe", action="store_true", help="Delete existing collection docs first")
     p.add_argument(
         "--only",
-        choices=["all", "tracking", "primary", "updates", "gazette", "secondary", "meta"],
+        choices=[
+            "all",
+            "tracking",
+            "primary",
+            "updates",
+            "laws",
+            "gazette",
+            "secondary",
+            "meta",
+        ],
         default="all",
     )
     args = p.parse_args()
@@ -113,6 +122,25 @@ def main():
         print("Uploading updates…")
         batch_set(db, "regintel_updates", docs, args.wipe)
 
+    if only in ("all", "laws"):
+        laws_path = DATA / "laws_catalog.json"
+        if not laws_path.exists():
+            # build on the fly if missing
+            import subprocess
+            import sys
+
+            subprocess.check_call(
+                [sys.executable, str(ROOT / "scripts" / "build_laws_catalog.py")],
+                cwd=str(ROOT),
+            )
+        laws = load("laws_catalog.json")
+        docs = []
+        for r in laws:
+            did = r.get("id") or doc_id("lw", r.get("link") or "", r.get("name") or "")
+            docs.append((did, r))
+        print("Uploading laws catalog…")
+        batch_set(db, "regintel_laws", docs, args.wipe or only == "laws")
+
     if only in ("all", "gazette"):
         gazette = load("gazette.json")
         docs = []
@@ -132,8 +160,11 @@ def main():
         batch_set(db, "regintel_secondary", docs, args.wipe)
 
     if only in ("all", "meta"):
-        meta = load("meta.json")
+        meta = load("meta.json") if (DATA / "meta.json").exists() else {}
         counts = meta.get("counts") or {}
+        laws_n = 0
+        if (DATA / "laws_catalog.json").exists():
+            laws_n = len(load("laws_catalog.json"))
         payload = {
             "generated_at": meta.get("generated_at"),
             "last_collector_run": meta.get("last_collector_run"),
@@ -142,6 +173,7 @@ def main():
             "gazette_sources": counts.get("gazette_sources", 0),
             "secondary_sources": counts.get("secondary_sources", 0),
             "updates": counts.get("updates", 0),
+            "laws": laws_n or counts.get("laws", 0),
             "last_collector_stats": meta.get("last_collector_stats"),
         }
         db.collection("regintel_meta").document("catalog").set(payload, merge=True)

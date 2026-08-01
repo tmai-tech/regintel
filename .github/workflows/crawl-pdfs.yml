@@ -1,0 +1,157 @@
+# Long-running, resume-safe PDF crawl on GitHub Actions.
+# GHA jobs max ~6h → we run in chunks with --time-budget-minutes and resume via manifest.
+# Live site updates: crawler commits web/data/pdfs_catalog.json + crawl_status.json;
+# deploy-pages.yml runs on those path pushes.
+name: Crawl gazette PDFs
+
+on:
+  schedule:
+    # Keep crawling until the sheet is exhausted (resume-safe).
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: "BFS pages per source URL"
+        required: false
+        default: "300"
+      time_budget_minutes:
+        description: "Stop after N minutes (leave headroom under 6h job limit)"
+        required: false
+        default: "280"
+      max_pdfs_per_source:
+        description: "0 = unlimited new PDFs per source"
+        required: false
+        default: "0"
+      delay:
+        description: "Seconds between requests"
+        required: false
+        default: "0.35"
+      include_legal_db:
+        description: "Also crawl legal_databases column (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl-pdfs
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          # JS fallback for SPA gazette sites (optional if install fails)
+          playwright install chromium --with-deps || echo "playwright browser install skipped"
+
+      - name: Ensure dirs
+        run: |
+          mkdir -p data/pdfs web/data android/app/src/main/assets
+          # empty manifest if missing so crawl can start
+          if [ ! -f data/pdfs/manifest.json ]; then
+            echo '{"downloads":[],"errors":[],"source_reports":[],"stats":{}}' > data/pdfs/manifest.json
+          fi
+
+      - name: Crawl (resume-safe, live publish)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          set -euo pipefail
+          MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          MAX_PAGES="${MAX_PAGES:-300}"
+          BUDGET="${{ github.event.inputs.time_budget_minutes }}"
+          BUDGET="${BUDGET:-280}"
+          MAX_PDFS="${{ github.event.inputs.max_pdfs_per_source }}"
+          MAX_PDFS="${MAX_PDFS:-0}"
+          DELAY="${{ github.event.inputs.delay }}"
+          DELAY="${DELAY:-0.35}"
+          LEGAL="${{ github.event.inputs.include_legal_db }}"
+          LEGAL="${LEGAL:-false}"
+
+          # git identity for live_publish pushes during the run
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          EXTRA=()
+          if [ "$LEGAL" = "true" ]; then
+            EXTRA+=(--include-legal-db)
+          fi
+
+          python -u collector/download_gazette_pdfs.py \
+            --max-pages "$MAX_PAGES" \
+            --max-pdfs-per-source "$MAX_PDFS" \
+            --time-budget-minutes "$BUDGET" \
+            --live-publish-every 5 \
+            --git-push \
+            --delay "$DELAY" \
+            "${EXTRA[@]+"${EXTRA[@]}"}"
+
+      - name: Final catalog + status publish
+        if: always()
+        env:
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python collector/live_publish.py || true
+          # force one more commit of any leftover files
+          git add -f data/pdfs/manifest.json data/pdfs/crawl_status.json \
+            web/data/pdfs_catalog.json web/data/crawl_status.json \
+            android/app/src/main/assets/pdfs_catalog.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No final data changes"
+          else
+            git pull --rebase origin main || true
+            git commit -m "chore: crawl chunk complete $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin HEAD:main || true
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          python <<'PY'
+          import json, os
+          from pathlib import Path
+          m = json.loads(Path("data/pdfs/manifest.json").read_text()) if Path("data/pdfs/manifest.json").exists() else {}
+          n = len(m.get("downloads") or [])
+          s = {}
+          if Path("web/data/crawl_status.json").exists():
+              s = json.loads(Path("web/data/crawl_status.json").read_text())
+          lines = [
+              "### Crawl chunk summary",
+              "",
+              f"- **PDFs in catalog**: {n}",
+              f"- **Phase**: {s.get('phase')}",
+              f"- **Message**: {s.get('message')}",
+              "- **Site**: https://tmai-tech.github.io/regintel/",
+              "- Open the **Crawl** tab for live status",
+              "",
+          ]
+          text = "\n".join(lines) + "\n"
+          print(text)
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as f:
+                  f.write(text)
+          PY

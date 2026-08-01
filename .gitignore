@@ -30,7 +30,7 @@ android/ci-upload.keystore
 **/firebase-service-account.json
 dist/
 
-# Downloaded gazette/bill PDFs (manifest is tracked)
+# Downloaded gazette/bill PDFs (manifest + status are tracked for CI resume / live site)
 data/pdfs/**
 !data/pdfs/manifest.json
-!data/pdfs/*.log
+!data/pdfs/crawl_status.json

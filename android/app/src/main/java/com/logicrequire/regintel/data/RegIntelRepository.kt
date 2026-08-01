@@ -212,8 +212,321 @@ class RegIntelRepository(
         }
     }
 
+    /**
+     * Load laws: Firestore `regintel_laws` → bundled `laws_catalog.json` →
+     * legacy merge of updates/tracking/primary assets.
+     */
+    suspend fun loadLaws(limit: Long = 5000): List<LawDoc> = withContext(Dispatchers.IO) {
+        val remote = runCatching {
+            db.collection(COL_LAWS).limit(limit).get().await().documents.mapNotNull { d ->
+                runCatching { lawFromMap(d.id, d.data) }.getOrNull()
+            }
+        }.onFailure { Log.e(TAG, "Firestore laws load failed", it) }
+            .getOrDefault(emptyList())
+
+        val list = when {
+            remote.isNotEmpty() -> remote
+            else -> {
+                val fromCatalog = loadLawsFromCatalogAsset()
+                if (fromCatalog.isNotEmpty()) fromCatalog else loadLawsLegacyFromAssets()
+            }
+        }
+        list.sortedWith(
+            compareBy<LawDoc> {
+                when (it.source) {
+                    "collector" -> 0
+                    "tracking" -> 1
+                    else -> 2
+                }
+            }.thenByDescending { it.date }
+                .thenBy { it.country }
+                .thenBy { it.name },
+        )
+    }
+
+    private fun lawFromMap(id: String, data: Map<String, Any?>?): LawDoc? {
+        if (data == null) return null
+        fun s(key: String): String {
+            val v = data[key] ?: return ""
+            return when (v) {
+                is String -> v
+                is Number -> v.toString()
+                else -> v.toString()
+            }.trim()
+        }
+        val name = s("name").ifBlank { s("title") }.ifBlank { return null }
+        val link = s("link")
+        return LawDoc(
+            id = id.ifBlank { s("id") }.ifBlank { "law-${name.hashCode()}" },
+            name = name,
+            summary = s("summary"),
+            country = s("country"),
+            level = s("level").ifBlank { "Federal" },
+            levelDetail = s("level_detail").ifBlank { s("levelDetail") }.ifBlank { s("level") },
+            lawArea = s("law_area").ifBlank { s("lawArea") },
+            topic = s("topic").ifBlank { s("topical_relevance") },
+            link = link,
+            authority = s("authority"),
+            authorityUrl = s("authority_url").ifBlank { s("authorityUrl") }.ifBlank { s("source_url") },
+            source = s("source").ifBlank { "catalog" },
+            date = s("date").ifBlank { s("discovered_at") },
+        )
+    }
+
+    private fun loadLawsFromCatalogAsset(): List<LawDoc> {
+        val arr = loadJsonArray("laws_catalog.json")
+        if (arr.size() == 0) return emptyList()
+        return arr.mapIndexedNotNull { i, el ->
+            runCatching {
+                val o = el.asJsonObject
+                val map = o.entrySet().associate { (k, v) ->
+                    k to if (v.isJsonNull) null else {
+                        when {
+                            v.isJsonPrimitive && v.asJsonPrimitive.isString -> v.asString
+                            v.isJsonPrimitive && v.asJsonPrimitive.isNumber -> v.asNumber
+                            else -> v.toString()
+                        }
+                    }
+                }
+                lawFromMap(o.get("id")?.takeIf { !it.isJsonNull }?.asString ?: "local-$i", map)
+            }.getOrNull()
+        }
+    }
+
+    /** Fallback when laws_catalog.json is missing from the APK. */
+    private fun loadLawsLegacyFromAssets(): List<LawDoc> {
+        val updates = loadJsonArray("updates.json")
+        val tracking = loadJsonArray("tracking.json")
+        val sources = loadJsonArray("primary_sources.json")
+        val authByHost = buildAuthorityIndex(sources)
+        val seen = linkedSetOf<String>()
+        val out = mutableListOf<LawDoc>()
+
+        updates.forEachIndexed { i, el ->
+            runCatching {
+                val o = el.asJsonObject
+                fun s(k: String) =
+                    if (o.has(k) && !o.get(k).isJsonNull) o.get(k).asString else null
+                val title = s("title")?.trim().orEmpty().ifBlank { "Untitled update" }
+                val link = s("link")?.trim().orEmpty()
+                val key = (link.ifBlank { title }).lowercase()
+                if (!seen.add(key)) return@runCatching
+                val parsed = parseJurisdiction(s("country"))
+                val topic = s("topical_relevance")?.trim().orEmpty()
+                val area = normalizeLawArea(s("law_area"))
+                out += LawDoc(
+                    id = s("id") ?: "upd-$i",
+                    name = title,
+                    summary = listOfNotNull(topic, area.takeIf { it.isNotBlank() }?.let { "Law area: $it" })
+                        .joinToString(" · ").ifBlank { "Regulatory update." },
+                    country = parsed.country,
+                    level = parsed.level.ifBlank { "Federal" },
+                    levelDetail = parsed.levelDetail,
+                    lawArea = area,
+                    topic = topic,
+                    link = link,
+                    authority = s("authority")?.trim().orEmpty(),
+                    authorityUrl = s("source_url")?.trim().orEmpty(),
+                    source = "collector",
+                    date = s("discovered_at").orEmpty(),
+                )
+            }
+        }
+
+        tracking.forEachIndexed { i, el ->
+            runCatching {
+                val o = el.asJsonObject
+                fun s(k: String) =
+                    if (o.has(k) && !o.get(k).isJsonNull) o.get(k).asString else null
+                val remarks = s("remarks")?.trim().orEmpty()
+                val topic = s("topical_relevance")?.trim().orEmpty()
+                val name = remarks.ifBlank { topic.ifBlank { "Tracked update" } }
+                val link = s("link")?.trim().orEmpty()
+                val key = (link.ifBlank { name }).lowercase()
+                if (!seen.add(key)) return@runCatching
+                val levelRaw = s("federal_or_state")?.trim().orEmpty()
+                val level = if (levelRaw.isNotBlank() && !levelRaw.equals("Federal", true)) {
+                    "State"
+                } else {
+                    "Federal"
+                }
+                val matched = matchAuthority(authByHost, link)
+                out += LawDoc(
+                    id = "trk-$i",
+                    name = name,
+                    summary = listOfNotNull(
+                        remarks.takeIf { it.isNotBlank() && it != name },
+                        topic.takeIf { it.isNotBlank() },
+                        s("law_area")?.let { "Law area: $it" },
+                    ).joinToString(" · ").ifBlank { "Tracked regulatory item." },
+                    country = s("country")?.trim().orEmpty(),
+                    level = level,
+                    levelDetail = levelRaw.ifBlank { level },
+                    lawArea = normalizeLawArea(s("law_area")),
+                    topic = topic,
+                    link = link,
+                    authority = matched?.first.orEmpty(),
+                    authorityUrl = matched?.second.orEmpty(),
+                    source = "tracking",
+                    date = s("date_of_publication") ?: s("date_of_tracking").orEmpty(),
+                )
+            }
+        }
+
+        sources.forEachIndexed { i, el ->
+            runCatching {
+                val o = el.asJsonObject
+                fun s(k: String) =
+                    if (o.has(k) && !o.get(k).isJsonNull) o.get(k).asString else null
+                val name = s("authority")?.trim().orEmpty()
+                val link = s("url")?.trim().orEmpty()
+                if (name.isBlank() || link.isBlank()) return@runCatching
+                val key = link.lowercase()
+                if (!seen.add(key)) return@runCatching
+                val parsed = parseJurisdiction(s("jurisdiction"))
+                val topics = if (o.has("topics") && o.get("topics").isJsonArray) {
+                    o.getAsJsonArray("topics").mapNotNull {
+                        if (it.isJsonPrimitive) it.asString else null
+                    }.joinToString(", ")
+                } else {
+                    ""
+                }
+                out += LawDoc(
+                    id = "src-$i",
+                    name = name,
+                    summary = listOfNotNull(
+                        s("authority_type")?.let { "$it authority" },
+                        s("segment")?.let { "Law area: $it" },
+                        topics.takeIf { it.isNotBlank() }?.let { "Topics: $it" },
+                    ).joinToString(" · ").ifBlank { "Regulatory authority." },
+                    country = parsed.country,
+                    level = parsed.level,
+                    levelDetail = parsed.levelDetail,
+                    lawArea = normalizeLawArea(s("segment")),
+                    topic = topics,
+                    link = link,
+                    authority = name,
+                    authorityUrl = link,
+                    source = "source",
+                    date = "",
+                )
+            }
+        }
+
+        return out
+    }
+
+    private fun loadJsonArray(assetName: String): JsonArray {
+        val text = runCatching {
+            context.assets.open(assetName).bufferedReader().use { it.readText() }
+        }.getOrNull() ?: return JsonArray()
+        return gson.fromJson(text, JsonArray::class.java) ?: JsonArray()
+    }
+
+    private fun buildAuthorityIndex(sources: JsonArray): Map<String, Pair<String, String>> {
+        val map = linkedMapOf<String, Pair<String, String>>()
+        sources.forEach { el ->
+            runCatching {
+                val o = el.asJsonObject
+                val name = o.get("authority")?.takeIf { !it.isJsonNull }?.asString?.trim().orEmpty()
+                val url = o.get("url")?.takeIf { !it.isJsonNull }?.asString?.trim().orEmpty()
+                val host = hostOf(url)
+                if (name.isNotBlank() && host.isNotBlank() && !map.containsKey(host)) {
+                    map[host] = name to url
+                }
+            }
+        }
+        return map
+    }
+
+    private fun matchAuthority(
+        index: Map<String, Pair<String, String>>,
+        link: String,
+    ): Pair<String, String>? {
+        val h = hostOf(link)
+        if (h.isBlank()) return null
+        index[h]?.let { return it }
+        val parts = h.split('.')
+        for (i in 1 until (parts.size - 1).coerceAtLeast(0)) {
+            val parent = parts.drop(i).joinToString(".")
+            index[parent]?.let { return it }
+        }
+        for ((key, value) in index) {
+            if (h.endsWith(".$key") || key.endsWith(".$h")) return value
+        }
+        return null
+    }
+
+    private fun hostOf(url: String?): String {
+        if (url.isNullOrBlank()) return ""
+        return try {
+            val u = java.net.URI(url.trim())
+            (u.host ?: "").removePrefix("www.").lowercase()
+        } catch (_: Exception) {
+            ""
+        }
+    }
+
+    private data class ParsedJurisdiction(
+        val country: String,
+        val level: String,
+        val levelDetail: String,
+    )
+
+    private fun parseJurisdiction(raw: String?): ParsedJurisdiction {
+        val s = raw?.trim().orEmpty()
+        if (s.isEmpty()) return ParsedJurisdiction("", "", "")
+        val fedMatch = Regex("^(.+?)\\s*[-–—]\\s*federal$", RegexOption.IGNORE_CASE).find(s)
+        if (fedMatch != null) {
+            return ParsedJurisdiction(fedMatch.groupValues[1].trim(), "Federal", "Federal")
+        }
+        if (Regex("\\bfederal\\b", RegexOption.IGNORE_CASE).containsMatchIn(s)) {
+            val country = s.replace(Regex("\\s*[-–—]?\\s*federal\\b", RegexOption.IGNORE_CASE), "")
+                .trim().ifBlank { s }
+            return ParsedJurisdiction(country, "Federal", "Federal")
+        }
+        val lower = s.lowercase()
+        if (lower in STATE_HINTS) {
+            val country = when {
+                lower in CA_PROVINCES -> "Canada"
+                lower in AU_STATES -> "Australia"
+                lower in UK_NATIONS -> "UK"
+                else -> "US"
+            }
+            return ParsedJurisdiction(country, "State", s)
+        }
+        return ParsedJurisdiction(s, "Federal", "Federal")
+    }
+
+    private fun normalizeLawArea(raw: String?): String {
+        if (raw.isNullOrBlank()) return ""
+        return raw.replace('\n', ' ').replace(';', ',').replace(Regex("\\s+"), " ").trim()
+    }
+
     companion object {
         const val COL_PDFS = "regintel_pdfs"
+        const val COL_LAWS = "regintel_laws"
         private const val TAG = "RegIntelRepo"
+
+        private val CA_PROVINCES = setOf(
+            "ontario", "quebec", "british columbia", "alberta", "manitoba", "saskatchewan",
+            "nova scotia", "new brunswick", "newfoundland", "prince edward island", "yukon",
+            "northwest territories", "nunavut",
+        )
+        private val AU_STATES = setOf(
+            "new south wales", "victoria", "queensland", "south australia", "western australia",
+            "tasmania", "australian capital territory", "northern territory",
+        )
+        private val UK_NATIONS = setOf("england", "scotland", "wales", "northern ireland")
+        private val STATE_HINTS = setOf(
+            "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut",
+            "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa",
+            "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan",
+            "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "new hampshire",
+            "new jersey", "new mexico", "new york", "north carolina", "north dakota", "ohio",
+            "oklahoma", "oregon", "pennsylvania", "rhode island", "south carolina", "south dakota",
+            "tennessee", "texas", "utah", "vermont", "virginia", "washington", "west virginia",
+            "wisconsin", "wyoming", "district of columbia", "dc",
+        ) + CA_PROVINCES + AU_STATES + UK_NATIONS
     }
 }

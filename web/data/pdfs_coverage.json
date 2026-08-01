@@ -1,0 +1,1653 @@
+{
+  "generated_at": "2026-08-01T08:13:17.207558+00:00",
+  "manifest_generated_at": "2026-08-01T08:13:08.557751+00:00",
+  "totals": {
+    "gazette_jurisdictions": 67,
+    "pdfs": 454,
+    "coverage_zero": 42,
+    "coverage_partial": 20,
+    "coverage_ok": 5,
+    "manifest_errors": 2314
+  },
+  "law_type_counts": {
+    "gazette": 183,
+    "bill": 77,
+    "amendment": 64,
+    "notice": 59,
+    "committee_report": 26,
+    "act": 16,
+    "regulation": 13,
+    "parliamentary_record": 9,
+    "procedural": 6,
+    "ordinance": 1
+  },
+  "year_counts": {
+    "2027": 10,
+    "2026": 411,
+    "2025": 9,
+    "2024": 3,
+    "2023": 10,
+    "2022": 5,
+    "2021": 3,
+    "2020": 3
+  },
+  "source_kind_counts": {
+    "official_gazette": 315,
+    "parliamentary_bills": 139
+  },
+  "zero_jurisdictions": [
+    "Canada Federal",
+    "British Columbia",
+    "Ontario",
+    "Manitoba",
+    "Hong Kong",
+    "Mexico",
+    "China",
+    "Japan",
+    "South Korea",
+    "New Zealand",
+    "Thailand",
+    "Philippines",
+    "Indonesia",
+    "Malaysia",
+    "Israel",
+    "Saudi Arabia",
+    "Qatar",
+    "Egypt",
+    "Brazil",
+    "Peru",
+    "Chile",
+    "Colombia",
+    "Costa Rica",
+    "Bulgaria",
+    "Croatia",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Estonia",
+    "Greece",
+    "Hungary",
+    "Iceland",
+    "Ireland",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Malta",
+    "Netherlands",
+    "Norway",
+    "Slovakia",
+    "Spain",
+    "Sweden"
+  ],
+  "partial_jurisdictions": [
+    "USA Federal",
+    "New York",
+    "Delaware",
+    "California",
+    "European Union",
+    "Luxembourg",
+    "India",
+    "Australia",
+    "Taiwan",
+    "Vietnam",
+    "Austria",
+    "Belgium",
+    "Finland",
+    "France",
+    "Germany",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Slovenia",
+    "Switzerland"
+  ],
+  "ok_jurisdictions": [
+    "UK",
+    "Singapore",
+    "UAE",
+    "Cayman Islands",
+    "Turkey"
+  ],
+  "top_error_hosts": [
+    {
+      "host": "publications.parliament.uk",
+      "count": 2208
+    },
+    {
+      "host": "committees.parliament.uk",
+      "count": 12
+    },
+    {
+      "host": "parlinfo.aph.gov.au",
+      "count": 6
+    },
+    {
+      "host": "bills.parliament.uk",
+      "count": 4
+    },
+    {
+      "host": "164.100.47.193",
+      "count": 4
+    },
+    {
+      "host": "parliament.gov.sg",
+      "count": 4
+    },
+    {
+      "host": "congress.gov",
+      "count": 4
+    },
+    {
+      "host": "egazette.nic.in",
+      "count": 3
+    },
+    {
+      "host": "legco.gov.hk",
+      "count": 3
+    },
+    {
+      "host": "leg.bc.ca",
+      "count": 3
+    },
+    {
+      "host": "bclaws.gov.bc.ca",
+      "count": 3
+    },
+    {
+      "host": "ris.bka.gv.at",
+      "count": 3
+    },
+    {
+      "host": "ola.org",
+      "count": 2
+    },
+    {
+      "host": "ontario.ca",
+      "count": 2
+    },
+    {
+      "host": "senado.gob.mx",
+      "count": 2
+    },
+    {
+      "host": "dof.gob.mx",
+      "count": 2
+    },
+    {
+      "host": "npc.gov.cn",
+      "count": 2
+    },
+    {
+      "host": "gov.cn",
+      "count": 2
+    },
+    {
+      "host": "g7.cdnchinhphu.vn",
+      "count": 2
+    },
+    {
+      "host": "camara.leg.br",
+      "count": 2
+    },
+    {
+      "host": "in.gov.br",
+      "count": 2
+    },
+    {
+      "host": "legifrance.gouv.fr",
+      "count": 2
+    },
+    {
+      "host": "recht.bund.de",
+      "count": 2
+    },
+    {
+      "host": "congreso.es",
+      "count": 2
+    },
+    {
+      "host": "aph.gov.au",
+      "count": 1
+    }
+  ],
+  "sites": [
+    {
+      "jurisdiction": "Canada Federal",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parl.ca/legisinfo",
+      "official_gazette_url": "https://www.gazette.gc.ca",
+      "legal_databases_url": "https://laws-lois.justice.gc.ca"
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.leg.bc.ca/parliamentary-business/legislation-debates-proceedings/legislation",
+      "official_gazette_url": "https://www.bclaws.gov.bc.ca/civix/document/id/public/bcgaz1/1",
+      "legal_databases_url": "https://www.bclaws.gov.bc.ca"
+    },
+    {
+      "jurisdiction": "Ontario",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.ola.org/en/legislative-business/bills",
+      "official_gazette_url": "https://www.ontario.ca/ontariogazette",
+      "legal_databases_url": "https://www.ontario.ca/laws"
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.gov.mb.ca/legislature/business/bills.html",
+      "official_gazette_url": "https://www.gov.mb.ca/legislature/hansard/gazette.html",
+      "legal_databases_url": "https://web2.gov.mb.ca/laws/statutes/index.php"
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "pdf_count": 232,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2027,
+        2026,
+        2020
+      ],
+      "law_types": [
+        "act",
+        "amendment",
+        "committee_report",
+        "gazette",
+        "notice",
+        "procedural",
+        "regulation"
+      ],
+      "parliamentary_bills_url": "https://www.congress.gov/bill",
+      "official_gazette_url": "https://www.federalregister.gov;\nhttps://www.ecfr.gov/",
+      "legal_databases_url": "https://www.govinfo.gov"
+    },
+    {
+      "jurisdiction": "New York",
+      "pdf_count": 1,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "procedural"
+      ],
+      "parliamentary_bills_url": "https://nyassembly.gov/leg/",
+      "official_gazette_url": "https://dos.ny.gov/state-register",
+      "legal_databases_url": "https://www.nysenate.gov/legislation"
+    },
+    {
+      "jurisdiction": "Delaware",
+      "pdf_count": 3,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2027,
+        2026,
+        2024
+      ],
+      "law_types": [
+        "amendment",
+        "bill",
+        "procedural"
+      ],
+      "parliamentary_bills_url": "https://legis.delaware.gov/",
+      "official_gazette_url": "https://regulations.delaware.gov/registers/",
+      "legal_databases_url": "https://delcode.delaware.gov/"
+    },
+    {
+      "jurisdiction": "California",
+      "pdf_count": 2,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2027,
+        2023
+      ],
+      "law_types": [
+        "gazette",
+        "regulation"
+      ],
+      "parliamentary_bills_url": "https://leginfo.legislature.ca.gov/",
+      "official_gazette_url": "https://oal.ca.gov/publications/notice_register/",
+      "legal_databases_url": "https://leginfo.legislature.ca.gov/"
+    },
+    {
+      "jurisdiction": "UK",
+      "pdf_count": 42,
+      "coverage": "ok",
+      "source_kinds_present": [
+        "official_gazette",
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [],
+      "years": [
+        2026,
+        2023
+      ],
+      "law_types": [
+        "amendment",
+        "bill",
+        "committee_report",
+        "gazette",
+        "ordinance"
+      ],
+      "parliamentary_bills_url": "https://bills.parliament.uk/",
+      "official_gazette_url": "https://www.thegazette.co.uk/",
+      "legal_databases_url": "https://www.legislation.gov.uk/"
+    },
+    {
+      "jurisdiction": "European Union",
+      "pdf_count": 3,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "parliamentary_record"
+      ],
+      "parliamentary_bills_url": "https://www.europarl.europa.eu/portal/en",
+      "official_gazette_url": "https://eur-lex.europa.eu/oj/direct-access.html",
+      "legal_databases_url": null
+    },
+    {
+      "jurisdiction": "Luxembourg",
+      "pdf_count": 2,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "act",
+        "bill"
+      ],
+      "parliamentary_bills_url": "https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Recherche/ProjetsDeLoi",
+      "official_gazette_url": "https://legilux.public.lu/",
+      "legal_databases_url": "https://legilux.public.lu/"
+    },
+    {
+      "jurisdiction": "India",
+      "pdf_count": 47,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "amendment",
+        "bill",
+        "committee_report",
+        "regulation"
+      ],
+      "parliamentary_bills_url": "https://prsindia.org/billtrack",
+      "official_gazette_url": "https://egazette.nic.in/",
+      "legal_databases_url": "https://legislative.gov.in/"
+    },
+    {
+      "jurisdiction": "Australia",
+      "pdf_count": 5,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "bill",
+        "committee_report"
+      ],
+      "parliamentary_bills_url": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation",
+      "official_gazette_url": "https://www.legislation.gov.au/Details/F2017C00286",
+      "legal_databases_url": "https://www.legislation.gov.au/"
+    },
+    {
+      "jurisdiction": "Singapore",
+      "pdf_count": 17,
+      "coverage": "ok",
+      "source_kinds_present": [
+        "official_gazette",
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [],
+      "years": [
+        2026,
+        2021
+      ],
+      "law_types": [
+        "amendment",
+        "bill",
+        "gazette",
+        "procedural"
+      ],
+      "parliamentary_bills_url": "https://www.parliament.gov.sg/parliamentary-business/bills-introduced",
+      "official_gazette_url": "https://sso.agc.gov.sg/Act/SL",
+      "legal_databases_url": "https://sso.agc.gov.sg/"
+    },
+    {
+      "jurisdiction": "Hong Kong",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.legco.gov.hk/en/legislation/bills.html",
+      "official_gazette_url": "https://www.gld.gov.hk/egazette/",
+      "legal_databases_url": "https://www.elegislation.gov.hk/"
+    },
+    {
+      "jurisdiction": "UAE",
+      "pdf_count": 3,
+      "coverage": "ok",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "official_gazette"
+      ],
+      "source_kinds_missing": [],
+      "years": [
+        2026,
+        2020
+      ],
+      "law_types": [
+        "gazette"
+      ],
+      "parliamentary_bills_url": null,
+      "official_gazette_url": "https://www.moj.gov.ae/en/laws-and-legislation/latest-legislations-and-laws.aspx#page=1",
+      "legal_databases_url": "https://elaws.moj.gov.ae/English.aspx?val=UAE-KaitEL1"
+    },
+    {
+      "jurisdiction": "Mexico",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.senado.gob.mx/64/gaceta_del_senado",
+      "official_gazette_url": "https://www.dof.gob.mx/",
+      "legal_databases_url": "https://www.diputados.gob.mx/LeyesBiblio/index.htm"
+    },
+    {
+      "jurisdiction": "China",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.npc.gov.cn",
+      "official_gazette_url": "https://www.gov.cn/gongbao",
+      "legal_databases_url": "https://flk.npc.gov.cn"
+    },
+    {
+      "jurisdiction": "Taiwan",
+      "pdf_count": 7,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://lis.ly.gov.tw",
+      "official_gazette_url": "https://gazette.nat.gov.tw",
+      "legal_databases_url": "https://law.moj.gov.tw"
+    },
+    {
+      "jurisdiction": "Japan",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.shugiin.go.jp",
+      "official_gazette_url": "https://kanpou.npb.go.jp",
+      "legal_databases_url": "https://elaws.e-gov.go.jp"
+    },
+    {
+      "jurisdiction": "South Korea",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://likms.assembly.go.kr/bill",
+      "official_gazette_url": "https://gwanbo.go.kr",
+      "legal_databases_url": "https://www.law.go.kr"
+    },
+    {
+      "jurisdiction": "New Zealand",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parliament.nz",
+      "official_gazette_url": "https://gazette.govt.nz",
+      "legal_databases_url": "https://www.legislation.govt.nz"
+    },
+    {
+      "jurisdiction": "Vietnam",
+      "pdf_count": 1,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://www.quochoi.vn",
+      "official_gazette_url": "https://congbao.chinhphu.vn",
+      "legal_databases_url": "https://vbpl.vn"
+    },
+    {
+      "jurisdiction": "Thailand",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parliament.go.th",
+      "official_gazette_url": "https://ratchakitcha.soc.go.th",
+      "legal_databases_url": "https://www.krisdika.go.th"
+    },
+    {
+      "jurisdiction": "Philippines",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.congress.gov.ph",
+      "official_gazette_url": "https://www.officialgazette.gov.ph",
+      "legal_databases_url": "https://lawphil.net"
+    },
+    {
+      "jurisdiction": "Indonesia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.dpr.go.id",
+      "official_gazette_url": "https://jdih.setneg.go.id",
+      "legal_databases_url": "https://peraturan.go.id"
+    },
+    {
+      "jurisdiction": "Malaysia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parlimen.gov.my",
+      "official_gazette_url": "https://www.federalgazette.agc.gov.my",
+      "legal_databases_url": "https://lom.agc.gov.my"
+    },
+    {
+      "jurisdiction": "Cayman Islands",
+      "pdf_count": 14,
+      "coverage": "ok",
+      "source_kinds_present": [
+        "official_gazette",
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [],
+      "years": [
+        2026,
+        2025,
+        2023
+      ],
+      "law_types": [
+        "act",
+        "bill",
+        "committee_report",
+        "parliamentary_record"
+      ],
+      "parliamentary_bills_url": "https://www.parliament.ky",
+      "official_gazette_url": "https://gazettes.gov.ky",
+      "legal_databases_url": "https://www.legislation.gov.ky"
+    },
+    {
+      "jurisdiction": "Turkey",
+      "pdf_count": 8,
+      "coverage": "ok",
+      "source_kinds_present": [
+        "official_gazette",
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "bill",
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://www.tbmm.gov.tr",
+      "official_gazette_url": "https://www.resmigazete.gov.tr",
+      "legal_databases_url": "https://www.mevzuat.gov.tr"
+    },
+    {
+      "jurisdiction": "Israel",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://main.knesset.gov.il",
+      "official_gazette_url": "https://www.gov.il/he/departments/units/reshumot",
+      "legal_databases_url": "https://www.nevo.co.il"
+    },
+    {
+      "jurisdiction": "Saudi Arabia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://shura.gov.sa",
+      "official_gazette_url": "https://uqn.gov.sa",
+      "legal_databases_url": "https://laws.boe.gov.sa"
+    },
+    {
+      "jurisdiction": "Qatar",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.shura.qa",
+      "official_gazette_url": "https://www.almeezan.qa",
+      "legal_databases_url": "https://www.almeezan.qa"
+    },
+    {
+      "jurisdiction": "Egypt",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parliament.gov.eg",
+      "official_gazette_url": null,
+      "legal_databases_url": null
+    },
+    {
+      "jurisdiction": "Brazil",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.camara.leg.br/propostas-legislativas",
+      "official_gazette_url": "https://www.in.gov.br",
+      "legal_databases_url": "https://www.planalto.gov.br"
+    },
+    {
+      "jurisdiction": "Peru",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.congreso.gob.pe",
+      "official_gazette_url": "https://elperuano.pe",
+      "legal_databases_url": "https://www.gob.pe/normas-legales"
+    },
+    {
+      "jurisdiction": "Chile",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.camara.cl",
+      "official_gazette_url": "https://www.diariooficial.interior.gob.cl",
+      "legal_databases_url": "https://www.bcn.cl/leychile"
+    },
+    {
+      "jurisdiction": "Colombia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.congreso.gov.co",
+      "official_gazette_url": "https://www.imprenta.gov.co",
+      "legal_databases_url": "https://www.suin-juriscol.gov.co"
+    },
+    {
+      "jurisdiction": "Costa Rica",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.asamblea.go.cr",
+      "official_gazette_url": "https://www.imprentanacional.go.cr/gaceta",
+      "legal_databases_url": "https://www.pgrweb.go.cr/scij"
+    },
+    {
+      "jurisdiction": "Austria",
+      "pdf_count": 3,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "act",
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://www.parlament.gv.at/",
+      "official_gazette_url": "https://www.ris.bka.gv.at/Bgbl-Auth/",
+      "legal_databases_url": "https://www.ris.bka.gv.at/"
+    },
+    {
+      "jurisdiction": "Belgium",
+      "pdf_count": 12,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2027,
+        2026
+      ],
+      "law_types": [
+        "bill",
+        "procedural"
+      ],
+      "parliamentary_bills_url": "https://www.dekamer.be/",
+      "official_gazette_url": "https://www.ejustice.just.fgov.be/",
+      "legal_databases_url": "https://www.senate.be/"
+    },
+    {
+      "jurisdiction": "Bulgaria",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parliament.bg/",
+      "official_gazette_url": "https://dv.parliament.bg/",
+      "legal_databases_url": "https://www.strategy.bg/"
+    },
+    {
+      "jurisdiction": "Croatia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.sabor.hr/",
+      "official_gazette_url": "https://narodne-novine.nn.hr/",
+      "legal_databases_url": null
+    },
+    {
+      "jurisdiction": "Cyprus",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parliament.cy/",
+      "official_gazette_url": "https://www.olc.gov.cy/",
+      "legal_databases_url": "https://www.cylaw.org/"
+    },
+    {
+      "jurisdiction": "Czech Republic",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.psp.cz/",
+      "official_gazette_url": "https://aplikace.mvcr.cz/sbirkazakonu/",
+      "legal_databases_url": "https://www.senat.cz/"
+    },
+    {
+      "jurisdiction": "Denmark",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.ft.dk/",
+      "official_gazette_url": "https://www.lovtidende.dk/",
+      "legal_databases_url": "https://www.retsinformation.dk/"
+    },
+    {
+      "jurisdiction": "Estonia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.riigikogu.ee/",
+      "official_gazette_url": "https://www.riigiteataja.ee/",
+      "legal_databases_url": "https://www.riigiteataja.ee/"
+    },
+    {
+      "jurisdiction": "Finland",
+      "pdf_count": 2,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://www.eduskunta.fi/",
+      "official_gazette_url": "https://www.finlex.fi/",
+      "legal_databases_url": "https://www.finlex.fi/"
+    },
+    {
+      "jurisdiction": "France",
+      "pdf_count": 3,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026,
+        2023
+      ],
+      "law_types": [
+        "bill"
+      ],
+      "parliamentary_bills_url": "https://www.assemblee-nationale.fr/",
+      "official_gazette_url": "https://www.legifrance.gouv.fr/jorf",
+      "legal_databases_url": "https://www.legifrance.gouv.fr/"
+    },
+    {
+      "jurisdiction": "Germany",
+      "pdf_count": 1,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2023
+      ],
+      "law_types": [
+        "parliamentary_record"
+      ],
+      "parliamentary_bills_url": "https://dip.bundestag.de/",
+      "official_gazette_url": "https://www.recht.bund.de/bgbl/",
+      "legal_databases_url": "https://www.gesetze-im-internet.de/"
+    },
+    {
+      "jurisdiction": "Greece",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.hellenicparliament.gr/",
+      "official_gazette_url": "https://www.et.gr/",
+      "legal_databases_url": null
+    },
+    {
+      "jurisdiction": "Hungary",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parlament.hu/",
+      "official_gazette_url": "https://magyarkozlony.hu/",
+      "legal_databases_url": "https://njt.hu/"
+    },
+    {
+      "jurisdiction": "Iceland",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.althingi.is/",
+      "official_gazette_url": "https://www.stjornartidindi.is/",
+      "legal_databases_url": "https://www.althingi.is/lagasafn/"
+    },
+    {
+      "jurisdiction": "Ireland",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.oireachtas.ie/en/bills/",
+      "official_gazette_url": "https://www.irisoifigiuil.ie/",
+      "legal_databases_url": "https://www.irishstatutebook.ie/"
+    },
+    {
+      "jurisdiction": "Italy",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.senato.it/",
+      "official_gazette_url": "https://www.gazzettaufficiale.it/",
+      "legal_databases_url": "https://www.normattiva.it/"
+    },
+    {
+      "jurisdiction": "Latvia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.saeima.lv/",
+      "official_gazette_url": "https://www.vestnesis.lv/",
+      "legal_databases_url": "https://likumi.lv/"
+    },
+    {
+      "jurisdiction": "Lithuania",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.lrs.lt/",
+      "official_gazette_url": "https://www.e-tar.lt/",
+      "legal_databases_url": "https://e-seimas.lrs.lt/"
+    },
+    {
+      "jurisdiction": "Malta",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.parlament.mt/",
+      "official_gazette_url": "https://www.gov.mt/en/Government/DOI/Pages/Government-Gazette.aspx",
+      "legal_databases_url": "https://legislation.mt/"
+    },
+    {
+      "jurisdiction": "Netherlands",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.tweedekamer.nl/",
+      "official_gazette_url": "https://www.officielebekendmakingen.nl/staatsblad",
+      "legal_databases_url": "https://wetten.overheid.nl/"
+    },
+    {
+      "jurisdiction": "Norway",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.stortinget.no/",
+      "official_gazette_url": "https://lovdata.no/",
+      "legal_databases_url": "https://lovdata.no/"
+    },
+    {
+      "jurisdiction": "Poland",
+      "pdf_count": 11,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "gazette",
+        "procedural"
+      ],
+      "parliamentary_bills_url": "https://www.sejm.gov.pl/",
+      "official_gazette_url": "https://dziennikustaw.gov.pl/",
+      "legal_databases_url": "https://isap.sejm.gov.pl/"
+    },
+    {
+      "jurisdiction": "Portugal",
+      "pdf_count": 5,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026
+      ],
+      "law_types": [
+        "bill"
+      ],
+      "parliamentary_bills_url": "https://www.parlamento.pt/",
+      "official_gazette_url": "https://dre.pt/",
+      "legal_databases_url": "https://dre.pt/"
+    },
+    {
+      "jurisdiction": "Romania",
+      "pdf_count": 12,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026,
+        2025,
+        2024,
+        2023,
+        2022,
+        2021,
+        2020
+      ],
+      "law_types": [
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://www.cdep.ro/pls/proiecte/upl_pck.home",
+      "official_gazette_url": "https://www.monitoruloficial.ro/",
+      "legal_databases_url": "https://legislatie.just.ro/"
+    },
+    {
+      "jurisdiction": "Slovakia",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.nrsr.sk/",
+      "official_gazette_url": "https://www.slov-lex.sk/",
+      "legal_databases_url": "https://www.slov-lex.sk/"
+    },
+    {
+      "jurisdiction": "Slovenia",
+      "pdf_count": 12,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "official_gazette"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills"
+      ],
+      "years": [
+        2026,
+        2025
+      ],
+      "law_types": [
+        "gazette"
+      ],
+      "parliamentary_bills_url": "https://www.dz-rs.si/",
+      "official_gazette_url": "https://www.uradni-list.si/",
+      "legal_databases_url": "https://www.pisrs.si/"
+    },
+    {
+      "jurisdiction": "Spain",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.congreso.es/proyectos-de-ley",
+      "official_gazette_url": "https://www.boe.es/",
+      "legal_databases_url": "https://www.boe.es/legislacion/"
+    },
+    {
+      "jurisdiction": "Sweden",
+      "pdf_count": 0,
+      "coverage": "zero",
+      "source_kinds_present": [],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "years": [],
+      "law_types": [],
+      "parliamentary_bills_url": "https://www.riksdagen.se/",
+      "official_gazette_url": "https://www.lagrummet.se/",
+      "legal_databases_url": "https://www.riksdagen.se/sv/dokument-lagar/"
+    },
+    {
+      "jurisdiction": "Switzerland",
+      "pdf_count": 6,
+      "coverage": "partial",
+      "source_kinds_present": [
+        "parliamentary_bills"
+      ],
+      "source_kinds_expected": [
+        "parliamentary_bills",
+        "official_gazette"
+      ],
+      "source_kinds_missing": [
+        "official_gazette"
+      ],
+      "years": [
+        2026,
+        2025,
+        2024
+      ],
+      "law_types": [
+        "bill"
+      ],
+      "parliamentary_bills_url": "https://www.parlament.ch/",
+      "official_gazette_url": "https://www.fedlex.admin.ch/",
+      "legal_databases_url": "https://www.fedlex.admin.ch/"
+    }
+  ]
+}

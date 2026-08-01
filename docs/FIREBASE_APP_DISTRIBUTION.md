@@ -46,7 +46,16 @@ Or push to `main` / `dev`.
 2. Open link on Android → install **Firebase App Tester** if prompted  
 3. Download **RegIntel** build  
 
+## iOS testers (no native IPA yet)
+
+Firebase App Distribution here is **Android-only** until a signed iOS app exists.
+For iPhone, use the web client deployed from git:
+
+- **https://tmai-tech.github.io/regintel/**
+- Docs: [IOS_WEB.md](./IOS_WEB.md)
+
 ## Console
 
 - App Distribution: https://console.firebase.google.com/project/roomcraft-e1312/appdistribution  
 - Firestore data: collections `regintel_*`  
+- Web (iOS): https://tmai-tech.github.io/regintel/  

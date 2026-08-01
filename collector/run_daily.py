@@ -262,6 +262,23 @@ def run(limit: int, force: bool, regions: list[str] | None):
     meta["counts"]["updates"] = len(dedup)
     save_json("meta.json", meta)
 
+    # Rebuild enriched laws catalog for web / Android / Firestore
+    try:
+        import subprocess
+        import sys
+
+        subprocess.check_call(
+            [sys.executable, str(ROOT / "scripts" / "build_laws_catalog.py")],
+            cwd=str(ROOT),
+        )
+        laws_path = DATA / "laws_catalog.json"
+        if laws_path.exists():
+            laws = json.loads(laws_path.read_text(encoding="utf-8"))
+            meta["counts"]["laws"] = len(laws)
+            save_json("meta.json", meta)
+    except Exception as e:
+        print(f"laws catalog rebuild skipped: {e}")
+
     print(json.dumps(meta["last_collector_stats"], indent=2))
 
 

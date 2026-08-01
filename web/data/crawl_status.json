@@ -1,0 +1,344 @@
+{
+  "updated_at": "2026-08-01T10:51:01.915459+00:00",
+  "phase": "paused",
+  "message": "local crawl handed off to GitHub Actions",
+  "run_id": null,
+  "github_run_url": null,
+  "totals": {
+    "pdfs": 546,
+    "errors": 2334,
+    "source_reports": 9,
+    "jurisdictions": 27
+  },
+  "by_jurisdiction": [
+    {
+      "jurisdiction": "USA Federal",
+      "count": 232
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "count": 88
+    },
+    {
+      "jurisdiction": "India",
+      "count": 47
+    },
+    {
+      "jurisdiction": "UK",
+      "count": 42
+    },
+    {
+      "jurisdiction": "Singapore",
+      "count": 17
+    },
+    {
+      "jurisdiction": "Cayman Islands",
+      "count": 14
+    },
+    {
+      "jurisdiction": "Belgium",
+      "count": 12
+    },
+    {
+      "jurisdiction": "Romania",
+      "count": 12
+    },
+    {
+      "jurisdiction": "Slovenia",
+      "count": 12
+    },
+    {
+      "jurisdiction": "Poland",
+      "count": 11
+    },
+    {
+      "jurisdiction": "Turkey",
+      "count": 8
+    },
+    {
+      "jurisdiction": "Taiwan",
+      "count": 7
+    },
+    {
+      "jurisdiction": "Switzerland",
+      "count": 6
+    },
+    {
+      "jurisdiction": "Australia",
+      "count": 5
+    },
+    {
+      "jurisdiction": "Portugal",
+      "count": 5
+    },
+    {
+      "jurisdiction": "Ontario",
+      "count": 4
+    },
+    {
+      "jurisdiction": "European Union",
+      "count": 3
+    },
+    {
+      "jurisdiction": "Delaware",
+      "count": 3
+    },
+    {
+      "jurisdiction": "UAE",
+      "count": 3
+    },
+    {
+      "jurisdiction": "Austria",
+      "count": 3
+    },
+    {
+      "jurisdiction": "France",
+      "count": 3
+    },
+    {
+      "jurisdiction": "California",
+      "count": 2
+    },
+    {
+      "jurisdiction": "Luxembourg",
+      "count": 2
+    },
+    {
+      "jurisdiction": "Finland",
+      "count": 2
+    },
+    {
+      "jurisdiction": "New York",
+      "count": 1
+    },
+    {
+      "jurisdiction": "Vietnam",
+      "count": 1
+    },
+    {
+      "jurisdiction": "Germany",
+      "count": 1
+    }
+  ],
+  "by_source_kind": [
+    {
+      "source_kind": "official_gazette",
+      "count": 315
+    },
+    {
+      "source_kind": "parliamentary_bills",
+      "count": 231
+    }
+  ],
+  "current_source": null,
+  "recent_pdfs": [
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.justice.gc.ca/fra/pr-rp/autre-other/rlddp-rsddp/pdf/c26.pdf",
+      "downloaded_at": "2026-08-01T10:50:32.246209+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://ccwestt-ccfsimt.org/wp-content/uploads/2026/02/2025-Au-dela-du-rapport-du-Sceau-rouge.pdf",
+      "downloaded_at": "2026-08-01T10:49:59.347455+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/honours/distinctions-honorifiques-canadiennes.pdf",
+      "downloaded_at": "2026-08-01T10:49:56.775357+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.noscommunes.ca/Content/Committee/441/FEWO/Reports/RP11878723/feworp04/feworp04-f.pdf",
+      "downloaded_at": "2026-08-01T10:49:51.492152+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://sencanada.ca/content/sen/committee/441/AGFO/reports/2024-06-06_CriticalGround_f.pdf",
+      "downloaded_at": "2026-08-01T10:49:47.450952+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.parl.ca/Content/Committee/441/AMAD/Reports/RP12815505/amadrp03/amadrp03-f.pdf",
+      "downloaded_at": "2026-08-01T10:49:34.363638+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.rapports-cac.ca/wp-content/uploads/2019/02/L%E2%80%99%C3%A9tat-des-connaissances-sur-l%E2%80%99aide-m%C3%A9dicale-%C3%A0-mourir-lorsqu%E2%80%99un-trouble-mental-est-le-seul-probl%C3%A8me-m%C3%A9dical-invoqu%C3%A9.pdf",
+      "downloaded_at": "2026-08-01T10:49:22.343079+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://childrenfirstcanada.org/wp-content/uploads/2021/04/CCCFinalNovember2018FRNv1.pdf",
+      "downloaded_at": "2026-08-01T10:49:14.376389+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://senmoodie.sencanada.ca/media/svddiebu/fr-nat-strategy-report.pdf",
+      "downloaded_at": "2026-08-01T10:49:10.949988+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.noscommunes.ca/Content/Committee/441/CHPC/Reports/RP13407455/chpcrp14/chpcrp14-f.pdf",
+      "downloaded_at": "2026-08-01T10:48:56.564224+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.noscommunes.ca/Content/Committee/421/HESA/Reports/RP9027245/hesarp11/hesarp11-f.pdf",
+      "downloaded_at": "2026-08-01T10:48:54.147894+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://sencanada.ca/content/sen/committee/432/RIDR/reports/2021-06-16_FederallySentenced_f.pdf",
+      "downloaded_at": "2026-08-01T10:48:51.294075+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_norm/%40ipec/documents/publication/wcms_854796.pdf",
+      "downloaded_at": "2026-08-01T10:48:45.289533+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://www.ourcommons.ca/Content/Committee/421/FAAE/Reports/RP8852462/faaerp07/faaerp07-f.pdf",
+      "downloaded_at": "2026-08-01T10:48:43.637330+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Canada Federal",
+      "url": "https://sencanada.ca/content/sen/committee/441/AEFA/reports/SEMAandMagnitsky_Final_rapport10_f.pdf",
+      "downloaded_at": "2026-08-01T10:48:32.881181+00:00",
+      "source_kind": "parliamentary_bills"
+    }
+  ],
+  "last_source_reports": [
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.congress.gov/bill",
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "list_pages": 0,
+      "follow_pages": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.federalregister.gov",
+      "pdfs_candidates": 1000,
+      "pdfs_downloaded": 500,
+      "list_pages": 1,
+      "follow_pages": 11,
+      "error": null
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.ecfr.gov/",
+      "pdfs_candidates": 1000,
+      "pdfs_downloaded": 500,
+      "list_pages": 1,
+      "follow_pages": 1,
+      "error": null
+    },
+    {
+      "jurisdiction": "Singapore",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.parliament.gov.sg/bills-introduced",
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "list_pages": 0,
+      "follow_pages": 0,
+      "error": "HTTP 404"
+    },
+    {
+      "jurisdiction": "Singapore",
+      "source_kind": "official_gazette",
+      "source_url": "https://sso.agc.gov.sg/Act/SL",
+      "pdfs_candidates": 15,
+      "pdfs_downloaded": 0,
+      "list_pages": 1,
+      "follow_pages": 15,
+      "error": null
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.congress.gov/bill",
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "list_pages": 0,
+      "follow_pages": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.federalregister.gov",
+      "pdfs_candidates": 1000,
+      "pdfs_downloaded": 200,
+      "list_pages": 1,
+      "follow_pages": 10,
+      "error": null
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.ecfr.gov/",
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "list_pages": 1,
+      "follow_pages": 1,
+      "error": null
+    },
+    {
+      "jurisdiction": "Singapore",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.parliament.gov.sg/parliamentary-business/bills-introduced",
+      "pages_crawled": 20,
+      "js_pages": 0,
+      "pdfs_candidates": 46,
+      "pdfs_downloaded": 31,
+      "error": null
+    }
+  ],
+  "stats": {
+    "sources_visited": 1,
+    "pages_crawled": 20,
+    "js_pages": 0,
+    "pdfs_discovered": 31,
+    "pdfs_downloaded": 0,
+    "pdfs_skipped_existing": 15,
+    "pdfs_capped": 0,
+    "errors": 0
+  },
+  "manifest_generated_at": "2026-08-01T10:50:32.251128+00:00"
+}

@@ -14,6 +14,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -54,6 +55,8 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -231,17 +234,34 @@ fun PdfViewerScreen(
                 }
 
                 ViewMode.Native -> {
+                    val uriHandler = LocalUriHandler.current
                     Column(Modifier.fillMaxSize()) {
-                        // source link banner
+                        // source link banner — tappable when a URL is present
+                        val source = doc.sourcePage
+                        val sourceIsUrl = !source.isNullOrBlank() &&
+                            (source.startsWith("http://", ignoreCase = true) ||
+                                source.startsWith("https://", ignoreCase = true))
                         Text(
-                            text = "From: ${doc.sourcePage ?: "—"}",
+                            text = "From: ${source ?: "—"}",
                             style = MaterialTheme.typography.labelSmall,
                             maxLines = 2,
                             overflow = TextOverflow.Ellipsis,
+                            color = if (sourceIsUrl) {
+                                MaterialTheme.colorScheme.primary
+                            } else {
+                                MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f)
+                            },
+                            textDecoration = if (sourceIsUrl) TextDecoration.Underline else TextDecoration.None,
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(horizontal = 12.dp, vertical = 6.dp),
-                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f),
+                                .padding(horizontal = 12.dp, vertical = 6.dp)
+                                .then(
+                                    if (sourceIsUrl) {
+                                        Modifier.clickable { uriHandler.openUri(source!!) }
+                                    } else {
+                                        Modifier
+                                    },
+                                ),
                         )
                         Box(
                             Modifier
@@ -310,6 +330,7 @@ fun PdfViewerScreen(
                 }
 
                 ViewMode.Error -> {
+                    val uriHandler = LocalUriHandler.current
                     Column(
                         Modifier
                             .fillMaxSize()
@@ -330,13 +351,25 @@ fun PdfViewerScreen(
                         )
                         Spacer(Modifier.height(12.dp))
                         Text(
-                            "Extracted from:\n${doc.sourcePage ?: "—"}",
-                            style = MaterialTheme.typography.bodySmall,
+                            "Extracted from:",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.55f),
+                        )
+                        ExternalLinkText(
+                            url = doc.sourcePage,
+                            emptyLabel = "—",
+                            onOpenUrl = { uriHandler.openUri(it) },
                         )
                         Spacer(Modifier.height(8.dp))
                         Text(
-                            "PDF link:\n${doc.pdfUrl ?: "—"}",
-                            style = MaterialTheme.typography.bodySmall,
+                            "PDF link:",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.55f),
+                        )
+                        ExternalLinkText(
+                            url = doc.pdfUrl,
+                            emptyLabel = "—",
+                            onOpenUrl = { uriHandler.openUri(it) },
                         )
                         Spacer(Modifier.height(16.dp))
                         Row {
@@ -405,6 +438,32 @@ private fun PdfWebView(pdfUrl: String, onFatal: () -> Unit) {
         },
         update = { webView ->
             // no-op
+        },
+    )
+}
+
+@Composable
+private fun ExternalLinkText(
+    url: String?,
+    emptyLabel: String,
+    onOpenUrl: (String) -> Unit,
+) {
+    val text = url?.takeIf { it.isNotBlank() }
+    if (text == null) {
+        Text(emptyLabel, style = MaterialTheme.typography.bodySmall)
+        return
+    }
+    val looksLikeUrl = text.startsWith("http://", ignoreCase = true) ||
+        text.startsWith("https://", ignoreCase = true)
+    Text(
+        text = text,
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.primary,
+        textDecoration = if (looksLikeUrl) TextDecoration.Underline else TextDecoration.None,
+        modifier = if (looksLikeUrl) {
+            Modifier.clickable { onOpenUrl(text) }
+        } else {
+            Modifier
         },
     )
 }

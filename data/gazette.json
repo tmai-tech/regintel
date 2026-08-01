@@ -92,7 +92,7 @@
   },
   {
     "jurisdiction": "Singapore",
-    "parliamentary_bills": "https://www.parliament.gov.sg/bills-introduced",
+    "parliamentary_bills": "https://www.parliament.gov.sg/parliamentary-business/bills-introduced",
     "official_gazette": "https://sso.agc.gov.sg/Act/SL",
     "legal_databases": "https://sso.agc.gov.sg/",
     "source_kind": "gazette"

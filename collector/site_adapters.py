@@ -37,36 +37,55 @@ def discover_extra_pdfs(
             url = urljoin(page_url, url)
         out.append({"url": url, "text": text[:300], "is_pdf": ".pdf" in url.lower()})
 
-    # --- UK Bills API ---
+    # --- UK Bills API (paginated — sites list hundreds of publications) ---
     if "bills.parliament.uk" in host or (
         "parliament.uk" in host and "bill" in page_url.lower()
     ):
-        api = "https://bills-api.parliament.uk/api/v1/Bills?Take=50&SortOrder=DateUpdatedDescending"
-        st, _, body, err = fetch(api)
-        time.sleep(delay)
-        data = _json(body) if body and not err and st and st < 400 else None
-        items = (data or {}).get("items") or []
-        for it in items:
-            bid = it.get("billId") or it.get("id")
-            title = it.get("shortTitle") or it.get("title") or f"Bill {bid}"
-            if not bid:
-                continue
-            pub_url = f"https://bills-api.parliament.uk/api/v1/Bills/{bid}/Publications"
-            st2, _, body2, err2 = fetch(pub_url)
+        take = 50
+        max_bills = 300  # ~300 bills × pubs each → can exceed 300+ PDFs on one site
+        skip = 0
+        bills_seen = 0
+        while bills_seen < max_bills:
+            api = (
+                "https://bills-api.parliament.uk/api/v1/Bills"
+                f"?Take={take}&Skip={skip}&SortOrder=DateUpdatedDescending"
+            )
+            st, _, body, err = fetch(api)
             time.sleep(delay)
-            pubs = _json(body2) if body2 and not err2 else None
-            if isinstance(pubs, dict):
-                pub_list = pubs.get("publications") or pubs.get("items") or []
-            else:
-                pub_list = pubs or []
-            for pub_item in pub_list:
-                for f in (pub_item.get("links") or []) + (pub_item.get("files") or []) + [pub_item]:
-                    if not isinstance(f, dict):
-                        continue
-                    url = f.get("url") or f.get("fileUrl") or f.get("downloadUrl")
-                    ctype = f"{f.get('contentType') or ''} {f.get('title') or ''}"
-                    if url and (".pdf" in str(url).lower() or "pdf" in ctype.lower()):
-                        add(url, f"{title} — {pub_item.get('title') or f.get('title')}")
+            data = _json(body) if body and not err and st and st < 400 else None
+            items = (data or {}).get("items") or []
+            if not items:
+                break
+            for it in items:
+                if bills_seen >= max_bills:
+                    break
+                bills_seen += 1
+                bid = it.get("billId") or it.get("id")
+                title = it.get("shortTitle") or it.get("title") or f"Bill {bid}"
+                if not bid:
+                    continue
+                pub_url = f"https://bills-api.parliament.uk/api/v1/Bills/{bid}/Publications"
+                st2, _, body2, err2 = fetch(pub_url)
+                time.sleep(delay)
+                pubs = _json(body2) if body2 and not err2 else None
+                if isinstance(pubs, dict):
+                    pub_list = pubs.get("publications") or pubs.get("items") or []
+                else:
+                    pub_list = pubs or []
+                for pub_item in pub_list:
+                    for f in (pub_item.get("links") or []) + (pub_item.get("files") or []) + [pub_item]:
+                        if not isinstance(f, dict):
+                            continue
+                        url = f.get("url") or f.get("fileUrl") or f.get("downloadUrl")
+                        ctype = f"{f.get('contentType') or ''} {f.get('title') or ''}"
+                        if url and (".pdf" in str(url).lower() or "pdf" in ctype.lower()):
+                            add(url, f"{title} — {pub_item.get('title') or f.get('title')}")
+            total = (data or {}).get("totalResults") or (data or {}).get("totalCount")
+            skip += take
+            if total is not None and skip >= int(total):
+                break
+            if len(items) < take:
+                break
 
     # --- legislation.gov.uk feeds ---
     if "legislation.gov.uk" in host or "thegazette.co.uk" in host:
@@ -75,6 +94,8 @@ def discover_extra_pdfs(
             "https://www.legislation.gov.uk/uksi/data.feed",
             "https://www.legislation.gov.uk/ukpga/data.feed",
             "https://www.legislation.gov.uk/ukla/data.feed",
+            "https://www.legislation.gov.uk/new/uksi/data.feed",
+            "https://www.thegazette.co.uk/all-notices/notice/data.feed",
         ):
             st, _, body, err = fetch(feed)
             time.sleep(delay)
@@ -95,23 +116,51 @@ def discover_extra_pdfs(
                         add(base + "/data.pdf", link["text"] or base)
                         add(base + "/pdfs/contents.pdf", link["text"] or base)
 
-    # --- US Federal Register ---
-    if "federalregister.gov" in host or "govinfo.gov" in host:
-        api = (
-            "https://www.federalregister.gov/api/v1/documents.json"
-            "?per_page=40&order=newest"
-            "&conditions%5Btype%5D%5B%5D=RULE"
-            "&conditions%5Btype%5D%5B%5D=PRORULE"
-            "&conditions%5Btype%5D%5B%5D=NOTICE"
-            "&conditions%5Btype%5D%5B%5D=PRESDOCU"
-        )
-        st, _, body, err = fetch(api)
-        time.sleep(delay)
-        data = _json(body) if body and not err and st and st < 400 else None
-        for doc in (data or {}).get("results") or []:
-            title = doc.get("title") or "Federal Register"
-            if doc.get("pdf_url"):
-                add(doc["pdf_url"], title)
+    # --- US Federal Register (paginated; one site alone can exceed 300 PDFs) ---
+    # Only attach the bulk FR API to federalregister.gov so ecfr/govinfo do not triple-count.
+    if "federalregister.gov" in host:
+        per_page = 100
+        max_pages = 10  # up to 1000 newest FR docs with PDFs
+        for page in range(1, max_pages + 1):
+            api = (
+                "https://www.federalregister.gov/api/v1/documents.json"
+                f"?per_page={per_page}&page={page}&order=newest"
+                "&conditions%5Btype%5D%5B%5D=RULE"
+                "&conditions%5Btype%5D%5B%5D=PRORULE"
+                "&conditions%5Btype%5D%5B%5D=NOTICE"
+                "&conditions%5Btype%5D%5B%5D=PRESDOCU"
+            )
+            st, _, body, err = fetch(api)
+            time.sleep(delay)
+            data = _json(body) if body and not err and st and st < 400 else None
+            results = (data or {}).get("results") or []
+            if not results:
+                break
+            for doc in results:
+                title = doc.get("title") or "Federal Register"
+                if doc.get("pdf_url"):
+                    add(doc["pdf_url"], title)
+            total_pages = (data or {}).get("total_pages")
+            if total_pages is not None and page >= int(total_pages):
+                break
+            if len(results) < per_page:
+                break
+
+    # Congress.gov / GovInfo listing pages
+    if "congress.gov" in host or "govinfo.gov" in host:
+        for u in (
+            "https://www.congress.gov/search?q=%7B%22source%22%3A%22legislation%22%7D&pageSort=latestAction%3Adesc",
+            "https://www.govinfo.gov/app/collection/bills",
+            "https://www.govinfo.gov/app/collection/fr",
+        ):
+            st, _, body, err = fetch(u)
+            time.sleep(delay)
+            if err or not body or (st and st >= 400):
+                continue
+            html = body.decode("utf-8", errors="replace")
+            for link in extract_links(u, html):
+                if link["is_pdf"] or looks_like_bill(link["url"], link["text"]):
+                    add(link["url"], link["text"])
 
     # --- Canada openparliament + LEGISinfo HTML mirrors ---
     if "parl.ca" in host or "canada.ca" in host or "gazette.gc.ca" in host:
