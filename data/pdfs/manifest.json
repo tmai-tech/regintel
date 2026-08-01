@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T23:12:47.782089+00:00",
+  "generated_at": "2026-08-01T23:23:44.632952+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -115986,6 +115986,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T15:32:48.942603+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/37th/1st/votes_028.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.gov.mb.ca/legislature/business/37th/37th_1st.html",
+      "title": "16",
+      "path": "data/pdfs/Manitoba/parliamentary_bills/votes_028.pdf",
+      "bytes": 190073,
+      "sha256": "5d280b9959190690",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T23:23:41.081029+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/37th/1st/votes_029.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.gov.mb.ca/legislature/business/37th/37th_1st.html",
+      "title": "17",
+      "path": "data/pdfs/Manitoba/parliamentary_bills/votes_029.pdf",
+      "bytes": 192759,
+      "sha256": "72ca48fc745e1391",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T23:23:41.967055+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/37th/1st/votes_030.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.gov.mb.ca/legislature/business/37th/37th_1st.html",
+      "title": "18",
+      "path": "data/pdfs/Manitoba/parliamentary_bills/votes_030.pdf",
+      "bytes": 193792,
+      "sha256": "c59b40292abfe29d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T23:23:42.884179+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/37th/1st/votes_031.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.gov.mb.ca/legislature/business/37th/37th_1st.html",
+      "title": "19",
+      "path": "data/pdfs/Manitoba/parliamentary_bills/votes_031.pdf",
+      "bytes": 214767,
+      "sha256": "fff50db8408210fe",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T23:23:43.756066+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/37th/1st/votes_032.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.gov.mb.ca/legislature/business/37th/37th_1st.html",
+      "title": "23",
+      "path": "data/pdfs/Manitoba/parliamentary_bills/votes_032.pdf",
+      "bytes": 165559,
+      "sha256": "4b60c0b75f71e0d2",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T23:23:44.632794+00:00"
     }
   ],
   "discovered": [
@@ -253345,17 +253410,161 @@
       "error": "HTTP 403",
       "stage": "download_pdf",
       "jurisdiction": "Ontario"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/about/pdf/manitobaday150.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/about/pdf/mbday_speaker_statement.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/about/february_17_2022.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/lapp_ar.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/41st/3rd/op_075.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/41st/3rd/op_060.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/41st/3rd/op_021.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_081-82.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_086-87.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_067-68.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_072-73.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_076-77.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_021.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=iso-8859-1)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/4th/op_022.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=iso-8859-1)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/3rd/op_56.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/3rd/op_57.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/3rd/op_58.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/3rd/op_59.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/3rd/op_37.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/op/38th/3rd/op_38.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_013.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_068.fr.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/42nd/4th/votes_036.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=iso-8859-1)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/41st/3rd/votes_010.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 1501,
-    "js_pages": 136,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 4401,
+    "sources_visited": 7,
+    "pages_crawled": 1801,
+    "js_pages": 144,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
+    "pdfs_skipped_existing": 8490,
     "pdfs_capped": 0,
-    "errors": 9598
+    "errors": 9622
   },
   "source_reports": [
     {
