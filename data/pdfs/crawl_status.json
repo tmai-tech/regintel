@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T15:06:00.061359+00:00",
+  "updated_at": "2026-08-01T15:08:01.749272+00:00",
   "phase": "running",
-  "message": "downloaded 6625 new this run",
+  "message": "downloaded 6755 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 7171,
-    "errors": 11953,
+    "pdfs": 7301,
+    "errors": 11955,
     "source_reports": 9,
     "jurisdictions": 29
   },
@@ -17,7 +17,7 @@
     },
     {
       "jurisdiction": "Manitoba",
-      "count": 2336
+      "count": 2466
     },
     {
       "jurisdiction": "British Columbia",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 3673
+      "count": 3803
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/43rd/43rd_3rd.html"
+    "url": "https://www.gov.mb.ca/legislature/business/43rd/43rd_1st.html"
   },
   "recent_pdfs": [
     {
-      "title": "7",
+      "title": "31",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_037.pdf",
-      "downloaded_at": "2026-08-01T15:05:59.079613+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_081.pdf",
+      "downloaded_at": "2026-08-01T15:08:00.754073+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "30",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_080.pdf",
+      "downloaded_at": "2026-08-01T15:08:00.189912+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "29",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_079.pdf",
+      "downloaded_at": "2026-08-01T15:07:59.582308+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "28",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_063.pdf",
-      "downloaded_at": "2026-08-01T15:05:58.407149+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_078.pdf",
+      "downloaded_at": "2026-08-01T15:07:58.997167+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "27",
+      "title": "17",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_062.pdf",
-      "downloaded_at": "2026-08-01T15:05:57.744103+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_077.pdf",
+      "downloaded_at": "2026-08-01T15:07:58.330250+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "26",
+      "title": "16",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_061.pdf",
-      "downloaded_at": "2026-08-01T15:05:57.150601+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_076.pdf",
+      "downloaded_at": "2026-08-01T15:07:56.564148+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "25",
+      "title": "15",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_060.pdf",
-      "downloaded_at": "2026-08-01T15:05:56.356516+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_075.pdf",
+      "downloaded_at": "2026-08-01T15:07:55.919076+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "21",
+      "title": "10",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_059.pdf",
-      "downloaded_at": "2026-08-01T15:05:54.526493+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_074.pdf",
+      "downloaded_at": "2026-08-01T15:07:55.337028+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "20",
+      "title": "9",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_058.pdf",
-      "downloaded_at": "2026-08-01T15:05:53.954030+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_073.pdf",
+      "downloaded_at": "2026-08-01T15:07:54.739943+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "19",
+      "title": "8",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_057.pdf",
-      "downloaded_at": "2026-08-01T15:05:53.285605+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "14",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_056.pdf",
-      "downloaded_at": "2026-08-01T15:05:52.530164+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "13",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_055.pdf",
-      "downloaded_at": "2026-08-01T15:05:51.880352+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "12",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_054.pdf",
-      "downloaded_at": "2026-08-01T15:05:50.042459+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "11",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_053.pdf",
-      "downloaded_at": "2026-08-01T15:05:49.452101+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_072.pdf",
+      "downloaded_at": "2026-08-01T15:07:54.110769+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "7",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_051.pdf",
-      "downloaded_at": "2026-08-01T15:05:48.722962+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_071.pdf",
+      "downloaded_at": "2026-08-01T15:07:52.174839+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "6",
+      "title": "3",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_050.pdf",
-      "downloaded_at": "2026-08-01T15:05:48.158813+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_070.pdf",
+      "downloaded_at": "2026-08-01T15:07:51.531148+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "5",
+      "title": "Inter-Sessional Reports",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/43rd/3rd/votes_049.pdf",
-      "downloaded_at": "2026-08-01T15:05:47.539830+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/intersessionallist_oct2.pdf",
+      "downloaded_at": "2026-08-01T15:07:50.913299+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "2",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_069.pdf",
+      "downloaded_at": "2026-08-01T15:07:50.242819+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "7",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/43rd/1st/votes_85.pdf",
+      "downloaded_at": "2026-08-01T15:07:49.652610+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 6625,
-    "pdfs_downloaded": 6625,
+    "pdfs_discovered": 6755,
+    "pdfs_downloaded": 6755,
     "pdfs_skipped_existing": 115,
     "pdfs_capped": 0,
-    "errors": 9619
+    "errors": 9621
   },
-  "manifest_generated_at": "2026-08-01T15:05:59.079718+00:00"
+  "manifest_generated_at": "2026-08-01T15:08:00.754162+00:00"
 }
