@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:44:18.743095+00:00",
+  "updated_at": "2026-08-01T11:46:20.200304+00:00",
   "phase": "running",
-  "message": "downloaded 3030 new this run",
+  "message": "downloaded 3165 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3576,
+    "pdfs": 3711,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 3118
+      "count": 3253
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 3122
+      "count": 3257
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p2/2000/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p3/2008/index-eng.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part II, volume 134, Extra number 2 ( 77KB)",
+      "title": "Part III, volume 31, number 2, chapter 16 to 33 (2.6MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2000/2000-12-14-x/pdf/g2-134x2.pdf",
-      "downloaded_at": "2026-08-01T11:44:18.314169+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2008/g3-03102.pdf",
+      "downloaded_at": "2026-08-01T11:46:19.766111+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 134, number 26 (1.1MB)",
+      "title": "Part III, volume 32, number 1, chapter 1 to 4 (4.0MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2000/2000-12-20/pdf/g2-13426.pdf",
-      "downloaded_at": "2026-08-01T11:44:17.897975+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2009/g3-03201.pdf",
+      "downloaded_at": "2026-08-01T11:46:18.965459+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to March 31, 2001 (4.5MB)",
+      "title": "Part III, volume 32, number 2, chapter 5 to 26 (6.8MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-03-31-c/pdf/g2-135q1.pdf",
-      "downloaded_at": "2026-08-01T11:44:17.338076+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2009/g3-03202.pdf",
+      "downloaded_at": "2026-08-01T11:46:17.978142+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to June 30, 2001 (4.6MB)",
+      "title": "Part III, volume 32, number 3, chapter 27 to 34 (1.8MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-06-30-c/pdf/g2-135q2.pdf",
-      "downloaded_at": "2026-08-01T11:44:16.258651+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2009/g3-03203.pdf",
+      "downloaded_at": "2026-08-01T11:46:16.515169+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to September 30, 2001 (4.7MB)",
+      "title": "Part III, volume 33, number 1, chapter 1 to 11 (1.9MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-09-30-c/pdf/g2-135q3.pdf",
-      "downloaded_at": "2026-08-01T11:44:15.181106+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2010/g3-03301.pdf",
+      "downloaded_at": "2026-08-01T11:46:15.759223+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to December 31, 2001 (4.6MB)",
+      "title": "Part III, volume 33, number 2, chapter 12 (4.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-12-31-c/pdf/g2-135q4.pdf",
-      "downloaded_at": "2026-08-01T11:44:13.538531+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2010/g3-03302.pdf",
+      "downloaded_at": "2026-08-01T11:46:14.530811+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 1 (1.6MB)",
+      "title": "Part III, volume 33, number 3, chapter 13 to 25 (3.9MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-01-03/pdf/g2-13501.pdf",
-      "downloaded_at": "2026-08-01T11:44:12.449272+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2010/g3-03303.pdf",
+      "downloaded_at": "2026-08-01T11:46:13.461979+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 2 (332KB)",
+      "title": "Part III, volume 34, number 1, chapter 1 to 14 (2.4MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-01-17/pdf/g2-13502.pdf",
-      "downloaded_at": "2026-08-01T11:44:11.816835+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2011/g3-03401.pdf",
+      "downloaded_at": "2026-08-01T11:46:12.454658+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 3 (714KB)",
+      "title": "Part III, volume 34, number 2, chapter 15 to 22 (2.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-01-31/pdf/g2-13503.pdf",
-      "downloaded_at": "2026-08-01T11:44:11.310443+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2011/g3-03402.pdf",
+      "downloaded_at": "2026-08-01T11:46:11.664155+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 4 (1.6MB)",
+      "title": "Part III, volume 34, number 3, chapter 23 to 26 (3.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-02-14/pdf/g2-13504.pdf",
-      "downloaded_at": "2026-08-01T11:44:10.775647+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2011/g3-03403.pdf",
+      "downloaded_at": "2026-08-01T11:46:10.906301+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 5 (835KB)",
+      "title": "Part III, volume 35, number 1, chapter 1 to 6 (2.0MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-02-28/pdf/g2-13505.pdf",
-      "downloaded_at": "2026-08-01T11:44:09.591186+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2012/g3-03501.pdf",
+      "downloaded_at": "2026-08-01T11:46:09.468616+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 6 (1.4MB)",
+      "title": "Part III, volume 35, number 2, chapter 7 to 20 (4.7MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-03-14/pdf/g2-13506.pdf",
-      "downloaded_at": "2026-08-01T11:44:09.082372+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2012/g3-03502.pdf",
+      "downloaded_at": "2026-08-01T11:46:08.754979+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 7 (791KB)",
+      "title": "Part III, volume 35, number 3, chapter 21 to 31 (4.0MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-03-28/pdf/g2-13507.pdf",
-      "downloaded_at": "2026-08-01T11:44:08.483901+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2012/g3-03503.pdf",
+      "downloaded_at": "2026-08-01T11:46:07.639938+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 8 (789KB)",
+      "title": "Part III, volume 36, number 1, chapter 1 to 19 (3.6MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-04-11/pdf/g2-13508.pdf",
-      "downloaded_at": "2026-08-01T11:44:07.964018+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2013/g3-03601.pdf",
+      "downloaded_at": "2026-08-01T11:46:06.590402+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 135, number 9 (741KB)",
+      "title": "Part III, volume 36, number 2, chapter 20 to 33 (3.6MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2001/2001-04-25/pdf/g2-13509.pdf",
-      "downloaded_at": "2026-08-01T11:44:07.455886+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p3/2013/g3-03602.pdf",
+      "downloaded_at": "2026-08-01T11:46:05.616004+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 3030,
-    "pdfs_downloaded": 3030,
+    "pdfs_discovered": 3165,
+    "pdfs_downloaded": 3165,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:44:18.314257+00:00"
+  "manifest_generated_at": "2026-08-01T11:46:19.766212+00:00"
 }
