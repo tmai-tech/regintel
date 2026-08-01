@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T13:55:48.369668+00:00",
+  "updated_at": "2026-08-01T14:05:54.176902+00:00",
   "phase": "running",
-  "message": "downloaded 3300 new this run",
+  "message": "downloaded 3460 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3846,
-    "errors": 11271,
+    "pdfs": 4006,
+    "errors": 11919,
     "source_reports": 9,
     "jurisdictions": 28
   },
@@ -20,16 +20,16 @@
       "count": 232
     },
     {
+      "jurisdiction": "British Columbia",
+      "count": 178
+    },
+    {
       "jurisdiction": "India",
       "count": 47
     },
     {
       "jurisdiction": "UK",
       "count": 42
-    },
-    {
-      "jurisdiction": "British Columbia",
-      "count": 18
     },
     {
       "jurisdiction": "Singapore",
@@ -131,118 +131,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 472
+      "count": 632
     }
   ],
   "current_source": {
     "jurisdiction": "British Columbia",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.leg.bc.ca/about/accountability/policy-suite"
+    "url": "https://www.leg.bc.ca/parliamentary-business/parliamentary-procedure/private-bills"
   },
   "recent_pdfs": [
     {
-      "title": "Creating and Updating Policies",
+      "title": "Example – Sample Private Bill",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/1100%20-%20Creating%20and%20Updating%20Policies.pdf",
-      "downloaded_at": "2026-08-01T13:55:47.832252+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Example-Sample-Private-Bill.pdf",
+      "downloaded_at": "2026-08-01T14:05:53.614825+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Business Continuity Management",
+      "title": "Example – Form of Petition",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/6300%20-%20Business%20Continuity%20Management.pdf",
-      "downloaded_at": "2026-08-01T13:55:47.437075+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Example-Form-of-Petition.pdf",
+      "downloaded_at": "2026-08-01T14:05:53.225030+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Legislative Assembly Policy Framework",
+      "title": "Downloadable PDF of Applying for a Private Bill",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/1000%20-%20Legislative%20Assembly%20Policy%20Framework.pdf",
-      "downloaded_at": "2026-08-01T13:55:40.125071+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Applying-for-Private-Bill.pdf",
+      "downloaded_at": "2026-08-01T14:05:52.108213+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Public Accounts",
+      "title": "Downloadable PDF of the Guidelines for Petitioning the Legislative Assembly",
       "jurisdiction": "British Columbia",
-      "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/government-finances/public-accounts/2024-25/pa-2024-25-crf-detailed-schedules-of-payments.pdf",
-      "downloaded_at": "2026-08-01T12:02:01.422381+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/PetitionGuidelinesApril2026.pdf",
+      "downloaded_at": "2026-08-01T14:05:51.688603+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "First Nations and the Legislative Assembly of British Columbia: A Record of Historical Actions, Decisions and Statements",
+      "title": "43rd Commonwealth Parliamentary Association Canadian Regional Parliamentary Seminar",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/first-nations-historical-record.pdf",
-      "downloaded_at": "2026-08-01T12:01:00.583363+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR-Activity-Report-2024-01-08-CPA-Cnd-Regional-Parliamentary-Seminar.pdf",
+      "downloaded_at": "2026-08-01T13:57:47.096359+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "news release",
+      "title": "38th Session of the Americas Regional Assembly of the Parliamentary Assembly of the Francophonie | 38e session de l’asse",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/reconciliation-action-plan-news-release.pdf",
-      "downloaded_at": "2026-08-01T12:00:59.520442+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR-Activity-Report-2023-10-20-APF-Louisiana.pdf",
+      "downloaded_at": "2026-08-01T13:57:45.976774+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Reconciliation Action Plan",
+      "title": "59th Commonwealth Parliamentary Association (CPA) Canadian Regional Conference and Commonwealth Women Parliamentarians (",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/reconciliation-action-plan.pdf",
-      "downloaded_at": "2026-08-01T12:00:59.109940+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR-Activity-Report-2023-10-28-CPA-Cnd-Regional-Conference-and-CWP-Canadian-Regional-Meeting.pdf",
+      "downloaded_at": "2026-08-01T13:57:45.587630+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Injunction order in respect of the Legislative Precinct",
+      "title": "49th Session of the Parliamentary Assembly of the Francophonie | 49e Session de l’assemblée parlementaire de la francoph",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Injunction_2020-02-13.pdf",
-      "downloaded_at": "2026-08-01T12:00:58.565692+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Interparliamentary-Activity-Report-APF-Montreal-2024.pdf",
+      "downloaded_at": "2026-08-01T13:57:45.182369+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2018 Year at a Glance",
+      "title": "60th Commonwealth Parliamentary Association (CPA) Canadian Regional Conference and Commonwealth Women Parliamentarians (",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2018.pdf",
-      "downloaded_at": "2026-08-01T12:00:58.113831+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR_2024_CPA-CWP-CRC.pdf",
+      "downloaded_at": "2026-08-01T13:57:44.792558+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2019 Year at a Glance",
+      "title": "Canadian Council of Public Accounts Committees Conference",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2019.pdf",
-      "downloaded_at": "2026-08-01T12:00:57.719233+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR_2024_CCPAC.pdf",
+      "downloaded_at": "2026-08-01T13:57:44.402754+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2020 Year at a Glance",
+      "title": "Interparliamentary Visit and Study Tour to the United Kingdom",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2020.pdf",
-      "downloaded_at": "2026-08-01T12:00:56.723509+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR%20Activity%20Report%20-%202025-06-17%20-%20Legislative%20Asssembly%20of%20BC%20Interparliamentary%20Visit%20to%20UK%20-%20Final.pdf",
+      "downloaded_at": "2026-08-01T13:57:43.307180+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2021 Year at a Glance",
+      "title": "40th Americas Regional Assembly of the Parliamentary Assembly of the Francophonie",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2021.pdf",
-      "downloaded_at": "2026-08-01T12:00:56.317338+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR%20Activity%20Report_AFP%20ARAM%202025_Final_2025-11-27.pdf",
+      "downloaded_at": "2026-08-01T13:57:41.526919+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2022 Year at a Glance",
+      "title": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-not-seeking-re-election_V2_2024-09-19.pdf",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2022.pdf",
-      "downloaded_at": "2026-08-01T12:00:55.909744+00:00",
+      "url": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-not-seeking-re-election_V2_2024-09-19.pdf",
+      "downloaded_at": "2026-08-01T13:57:39.700947+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2023 Year at a Glance",
+      "title": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-seeking-re-election_V2_2024-09-19.pdf",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2023.pdf",
-      "downloaded_at": "2026-08-01T12:00:55.509805+00:00",
+      "url": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-seeking-re-election_V2_2024-09-19.pdf",
+      "downloaded_at": "2026-08-01T13:57:39.319150+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2024 Year at a Glance",
+      "title": "https://members.leg.bc.ca/wp-content/uploads/2026/07/TG-Leave-Office.pdf",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2024.pdf",
-      "downloaded_at": "2026-08-01T12:00:55.111224+00:00",
+      "url": "https://members.leg.bc.ca/wp-content/uploads/2026/07/TG-Leave-Office.pdf",
+      "downloaded_at": "2026-08-01T13:57:38.840849+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -342,11 +342,11 @@
     "sources_visited": 3,
     "pages_crawled": 900,
     "js_pages": 119,
-    "pdfs_discovered": 3300,
-    "pdfs_downloaded": 3300,
+    "pdfs_discovered": 3460,
+    "pdfs_downloaded": 3460,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
-    "errors": 8937
+    "errors": 9585
   },
-  "manifest_generated_at": "2026-08-01T13:55:47.832341+00:00"
+  "manifest_generated_at": "2026-08-01T14:05:53.614916+00:00"
 }
