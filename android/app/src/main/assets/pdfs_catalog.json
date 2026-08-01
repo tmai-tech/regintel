@@ -1,5 +1,29 @@
 [
   {
+    "id": "875f4a29831a718e",
+    "title": "Chamber seating plan (PDF)",
+    "filename": "chamber-seating-plan-en.pdf",
+    "jurisdiction": "Ontario",
+    "source_kind": "parliamentary_bills",
+    "law_type": "bill",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "ola.org",
+    "filename_tags": [],
+    "source_page": "https://www.ola.org/en/members",
+    "url": "https://www.ola.org/sites/default/files/common/pdf/chamber-seating-plan-en.pdf",
+    "open_url": "https://www.ola.org/sites/default/files/common/pdf/chamber-seating-plan-en.pdf",
+    "download_url": null,
+    "bytes": 654645,
+    "sha256": "875f4a29831a718e",
+    "downloaded_at": "2026-08-01T14:17:10.909418+00:00",
+    "local_path": "data/pdfs/Ontario/parliamentary_bills/chamber-seating-plan-en.pdf"
+  },
+  {
     "id": "431b9b11455a6935",
     "title": "Volume 21, Number 11 November 1990",
     "filename": "350813_Vol21_no11_Nov.pdf",

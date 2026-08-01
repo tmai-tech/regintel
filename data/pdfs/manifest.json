@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T14:13:25.993252+00:00",
+  "generated_at": "2026-08-01T14:17:10.909505+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -60840,6 +60840,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T14:13:16.440183+00:00"
+    },
+    {
+      "url": "https://www.ola.org/sites/default/files/common/pdf/chamber-seating-plan-en.pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.ola.org/en/members",
+      "title": "Chamber seating plan (PDF)",
+      "path": "data/pdfs/Ontario/parliamentary_bills/chamber-seating-plan-en.pdf",
+      "bytes": 654645,
+      "sha256": "875f4a29831a718e",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:17:10.909418+00:00"
     }
   ],
   "discovered": [
@@ -140427,12 +140440,12 @@
     }
   ],
   "stats": {
-    "sources_visited": 4,
-    "pages_crawled": 901,
-    "js_pages": 120,
-    "pdfs_discovered": 4134,
-    "pdfs_downloaded": 4134,
-    "pdfs_skipped_existing": 109,
+    "sources_visited": 5,
+    "pages_crawled": 1201,
+    "js_pages": 126,
+    "pdfs_discovered": 4135,
+    "pdfs_downloaded": 4135,
+    "pdfs_skipped_existing": 111,
     "pdfs_capped": 0,
     "errors": 9593
   },
