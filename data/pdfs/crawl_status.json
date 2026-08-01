@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T14:35:33.956931+00:00",
+  "updated_at": "2026-08-01T14:37:37.464899+00:00",
   "phase": "running",
-  "message": "downloaded 4605 new this run",
+  "message": "downloaded 4695 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 5151,
+    "pdfs": 5241,
     "errors": 11936,
     "source_reports": 9,
     "jurisdictions": 29
@@ -21,7 +21,7 @@
     },
     {
       "jurisdiction": "Manitoba",
-      "count": 316
+      "count": 406
     },
     {
       "jurisdiction": "USA Federal",
@@ -135,118 +135,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1653
+      "count": 1743
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/about/lamc.html"
+    "url": "https://www.gov.mb.ca/legislature/members/remuneration.html"
   },
   "recent_pdfs": [
     {
-      "title": "December 21, 2016",
+      "title": "February 2022",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/december_21_2016.pdf",
-      "downloaded_at": "2026-08-01T14:35:33.219568+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_feb22.pdf",
+      "downloaded_at": "2026-08-01T14:37:36.713286+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "January 9, 2017",
+      "title": "December 2023",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_9_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:32.613167+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_dec22.pdf.pdf",
+      "downloaded_at": "2026-08-01T14:37:35.899126+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "January 18, 2017",
+      "title": "December 2024",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_18_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:32.010412+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_dec09.pdf",
+      "downloaded_at": "2026-08-01T14:37:35.329538+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Janurary 30, 2017",
+      "title": "February 2025",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_30_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:31.530128+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_feb25.pdf",
+      "downloaded_at": "2026-08-01T14:37:34.718268+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "March 3, 2017",
+      "title": "June 2025",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/march_3_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:30.849422+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_jun03.pdf",
+      "downloaded_at": "2026-08-01T14:37:34.019236+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "April 10, 2017",
+      "title": "Members' Allowances Regulation",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/april_10_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:29.393086+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulation.pdf",
+      "downloaded_at": "2026-08-01T14:37:32.410935+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "May 15, 2017",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/42ndleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/may_15_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:28.786711+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/42ndleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:31.666414+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "May 29, 2017",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/41stleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/may_29_ 2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:28.208201+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/41stleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:28.028137+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "August 29, 2017",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/40thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/august_29_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:27.636138+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/40thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:26.877642+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "October 11, 2017",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/39thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/october_11_2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:27.012517+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/39thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:25.926589+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "December 11, 2017",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/38thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/december_11_ 2017.pdf",
-      "downloaded_at": "2026-08-01T14:35:24.813272+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/38thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:22.880530+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "January 23, 2018",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/37thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_23_2018.pdf",
-      "downloaded_at": "2026-08-01T14:35:24.135382+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/37thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:20.807716+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "May 14, 2018",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/36thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/may_14_2018.pdf",
-      "downloaded_at": "2026-08-01T14:35:23.576313+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/36thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:19.327434+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "September 13, 2018",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/35thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/september_13_2018.pdf",
-      "downloaded_at": "2026-08-01T14:35:22.731760+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/35thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:17.189172+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "October 23, 2018",
+      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/34thleg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/about/lamc/october_23_2018.pdf",
-      "downloaded_at": "2026-08-01T14:35:22.160316+00:00",
+      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/34thleg.pdf",
+      "downloaded_at": "2026-08-01T14:37:14.772357+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 4605,
-    "pdfs_downloaded": 4605,
+    "pdfs_discovered": 4695,
+    "pdfs_downloaded": 4695,
     "pdfs_skipped_existing": 115,
     "pdfs_capped": 0,
     "errors": 9602
   },
-  "manifest_generated_at": "2026-08-01T14:35:33.219659+00:00"
+  "manifest_generated_at": "2026-08-01T14:37:36.713377+00:00"
 }
