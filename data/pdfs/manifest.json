@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T11:07:11.385458+00:00",
+  "generated_at": "2026-08-01T11:09:47.790024+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -9997,6 +9997,32 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T11:07:11.337774+00:00"
+    },
+    {
+      "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/pdf/g1-16031.pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/index-eng.html",
+      "title": "Part I, volume 160, number 31 (784KB)",
+      "path": "data/pdfs/Canada_Federal/official_gazette/g1-16031.pdf",
+      "bytes": 802800,
+      "sha256": "fe6129ec3d6e46a9",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:09:47.373710+00:00"
+    },
+    {
+      "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/pdf/g1-160x6.pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/index-eng.html",
+      "title": "Part I, volume 160, Extra number 6 (190KB)",
+      "path": "data/pdfs/Canada_Federal/official_gazette/g1-160x6.pdf",
+      "bytes": 194063,
+      "sha256": "492a5f02b8dcd971",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:09:47.789907+00:00"
     }
   ],
   "discovered": [
@@ -32141,11 +32167,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 300,
-    "js_pages": 83,
-    "pdfs_discovered": 223,
-    "pdfs_downloaded": 223,
+    "sources_visited": 2,
+    "pages_crawled": 600,
+    "js_pages": 86,
+    "pdfs_discovered": 225,
+    "pdfs_downloaded": 225,
     "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
     "errors": 20

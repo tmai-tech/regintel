@@ -1,5 +1,53 @@
 [
   {
+    "id": "492a5f02b8dcd971",
+    "title": "Part I, volume 160, Extra number 6 (190KB)",
+    "filename": "g1-160x6.pdf",
+    "jurisdiction": "Canada Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "gazette.gc.ca",
+    "filename_tags": [],
+    "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/index-eng.html",
+    "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/pdf/g1-160x6.pdf",
+    "open_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/pdf/g1-160x6.pdf",
+    "download_url": null,
+    "bytes": 194063,
+    "sha256": "492a5f02b8dcd971",
+    "downloaded_at": "2026-08-01T11:09:47.789907+00:00",
+    "local_path": "data/pdfs/Canada_Federal/official_gazette/g1-160x6.pdf"
+  },
+  {
+    "id": "fe6129ec3d6e46a9",
+    "title": "Part I, volume 160, number 31 (784KB)",
+    "filename": "g1-16031.pdf",
+    "jurisdiction": "Canada Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "gazette.gc.ca",
+    "filename_tags": [],
+    "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/index-eng.html",
+    "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/pdf/g1-16031.pdf",
+    "open_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/pdf/g1-16031.pdf",
+    "download_url": null,
+    "bytes": 802800,
+    "sha256": "fe6129ec3d6e46a9",
+    "downloaded_at": "2026-08-01T11:09:47.373710+00:00",
+    "local_path": "data/pdfs/Canada_Federal/official_gazette/g1-16031.pdf"
+  },
+  {
     "id": "d0b2143629207e0a",
     "title": "quoted-path",
     "filename": "LOP_TimelineBroch_FR.pdf",

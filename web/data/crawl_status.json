@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:07:11.520876+00:00",
+  "updated_at": "2026-08-01T11:09:47.930065+00:00",
   "phase": "running",
-  "message": "finished Canada Federal / parliamentary_bills: +223 PDFs",
+  "message": "downloaded 225 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 769,
+    "pdfs": 771,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 311
+      "count": 313
     },
     {
       "jurisdiction": "USA Federal",
@@ -127,17 +127,29 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 315
+      "count": 317
     }
   ],
   "current_source": {
     "jurisdiction": "Canada Federal",
-    "source_kind": "parliamentary_bills",
-    "url": "https://www.parl.ca/legisinfo",
-    "pdfs_downloaded": 223,
-    "pdfs_candidates": 350
+    "source_kind": "official_gazette",
+    "url": "https://gazette.gc.ca/rp-pr/p1/2026/index-eng.html"
   },
   "recent_pdfs": [
+    {
+      "title": "Part I, volume 160, Extra number 6 (190KB)",
+      "jurisdiction": "Canada Federal",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/pdf/g1-160x6.pdf",
+      "downloaded_at": "2026-08-01T11:09:47.789907+00:00",
+      "source_kind": "official_gazette"
+    },
+    {
+      "title": "Part I, volume 160, number 31 (784KB)",
+      "jurisdiction": "Canada Federal",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/pdf/g1-16031.pdf",
+      "downloaded_at": "2026-08-01T11:09:47.373710+00:00",
+      "source_kind": "official_gazette"
+    },
     {
       "title": "quoted-path",
       "jurisdiction": "Canada Federal",
@@ -227,20 +239,6 @@
       "jurisdiction": "Canada Federal",
       "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 40-3.pdf",
       "downloaded_at": "2026-08-01T11:06:51.232243+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Liste des rapports et états – 41e législature, 1re session (2011-06-02)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 41-1.pdf",
-      "downloaded_at": "2026-08-01T11:06:49.825808+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Liste des rapports et états – 41e législature, 2e session",
-      "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 41-2.pdf",
-      "downloaded_at": "2026-08-01T11:06:48.321932+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -337,14 +335,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 300,
-    "js_pages": 83,
-    "pdfs_discovered": 223,
-    "pdfs_downloaded": 223,
+    "sources_visited": 2,
+    "pages_crawled": 600,
+    "js_pages": 86,
+    "pdfs_discovered": 225,
+    "pdfs_downloaded": 225,
     "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:07:11.385458+00:00"
+  "manifest_generated_at": "2026-08-01T11:09:47.790024+00:00"
 }
