@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-01T11:06:25.275281+00:00",
+  "updated_at": "2026-08-01T11:07:11.520876+00:00",
   "phase": "running",
-  "message": "downloaded 190 new this run",
+  "message": "finished Canada Federal / parliamentary_bills: +223 PDFs",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 736,
-    "errors": 2353,
+    "pdfs": 769,
+    "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 278
+      "count": 311
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 421
+      "count": 454
     },
     {
       "source_kind": "official_gazette",
@@ -133,112 +133,114 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "parliamentary_bills",
-    "url": "https://bdp.parl.ca/sites/ParlInfo/default/fr_CA/SiteInformation/atoz"
+    "url": "https://www.parl.ca/legisinfo",
+    "pdfs_downloaded": 223,
+    "pdfs_candidates": 350
   },
   "recent_pdfs": [
     {
-      "title": "2018",
+      "title": "quoted-path",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/About/ReportToCanadians/2018/f_2018-RTC.pdf",
-      "downloaded_at": "2026-08-01T11:06:25.142347+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/Learn/Documents/ParliamentaryPrimer/LOP_TimelineBroch_FR.pdf",
+      "downloaded_at": "2026-08-01T11:07:11.337774+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "2019",
+      "title": "Lire en ligne (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/About/ReportToCanadians/2019/ReportToCanadians2019-FR-150.pdf",
-      "downloaded_at": "2026-08-01T11:06:12.386478+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/LOP-OCOP-French-Final-forTagging FINAL-ua.pdf",
+      "downloaded_at": "2026-08-01T11:07:09.032257+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "2020",
+      "title": "Lire en ligne (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/About/ReportToCanadians/2020/ReportToCanadians_2020_Fre.pdf",
-      "downloaded_at": "2026-08-01T11:06:03.365749+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Le_Senat_en_action.pdf",
+      "downloaded_at": "2026-08-01T11:07:05.153438+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "2021",
+      "title": "Lire en ligne (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/content/reporttocanadians/pdf/rapportauxcanadiens-2021.pdf",
-      "downloaded_at": "2026-08-01T11:05:59.913186+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/GetToKnowHOC_FR_Final_AODA.pdf",
+      "downloaded_at": "2026-08-01T11:07:04.213752+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Rapport annuel 2015-2016",
+      "title": "Lire en ligne (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/Content/Misc/2015-2016-PreventionReport-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:59.454959+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/GetToKnowTheSenate-fr.pdf",
+      "downloaded_at": "2026-08-01T11:07:03.124785+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Rapport annuel 2016-2017",
+      "title": "Télécharger la version PDF",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/Content/Misc/2016-2017-PreventionReport-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:58.874109+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/OurCountryOurParliament/LOP_OCOP_FR.pdf",
+      "downloaded_at": "2026-08-01T11:06:59.834543+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Rapport annuel 2017-2018",
+      "title": "Liste des rapports et états – 37e législature, 2e session",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/Content/Misc/2017-2018-PreventionReport-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:58.349374+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 37-2.pdf",
+      "downloaded_at": "2026-08-01T11:06:57.427340+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Rapport annuel 2019-2020",
+      "title": "Liste des rapports et états – 37e législature, 3e session",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/Content/Misc/2019-2020-PreventionReport-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:57.533310+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 37-3.pdf",
+      "downloaded_at": "2026-08-01T11:06:56.607532+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Rapport annuel 2020-2021",
+      "title": "Liste des rapports et états – 38e législature, 1re session",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/Content/Misc/2020-2021-PreventionReport-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:57.137789+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 38-1.pdf",
+      "downloaded_at": "2026-08-01T11:06:55.525094+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Plan stratégique 2019-2023",
+      "title": "Liste des rapports et états – 39e législature, 1re session",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/About/StrategicOutlook/2019-2023f.pdf",
-      "downloaded_at": "2026-08-01T11:05:55.825550+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 39-1.pdf",
+      "downloaded_at": "2026-08-01T11:06:54.863777+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Plan stratégique",
+      "title": "Liste des rapports et états – 39e législature, 2e session",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/About/StrategicOutlook/2016-2019-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:54.771623+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 39-2.pdf",
+      "downloaded_at": "2026-08-01T11:06:53.787711+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Les états financiers 2004-2005",
+      "title": "Liste des rapports et états – 40e législature, 2e session",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/About/BOIE/pdf/FinancialStatements-2004-2005-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:53.336501+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 40-2.pdf",
+      "downloaded_at": "2026-08-01T11:06:52.375769+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Les états financiers 2005-2006",
+      "title": "Liste des rapports et états - 40e législature, 3e session (2010-03-03)",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/About/BOIE/pdf/FinancialStatements-2005-2006-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:52.783923+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 40-3.pdf",
+      "downloaded_at": "2026-08-01T11:06:51.232243+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Les états financiers 2006-2007",
+      "title": "Liste des rapports et états – 41e législature, 1re session (2011-06-02)",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/About/BOIE/pdf/FinancialStatements-2006-2007-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:52.262380+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 41-1.pdf",
+      "downloaded_at": "2026-08-01T11:06:49.825808+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Les états financiers 2007-2008",
+      "title": "Liste des rapports et états – 41e législature, 2e session",
       "jurisdiction": "Canada Federal",
-      "url": "http://www.noscommunes.ca/About/BOIE/pdf/FinancialStatements-2007-2008-f.pdf",
-      "downloaded_at": "2026-08-01T11:05:51.126586+00:00",
+      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 41-2.pdf",
+      "downloaded_at": "2026-08-01T11:06:48.321932+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -338,11 +340,11 @@
     "sources_visited": 1,
     "pages_crawled": 300,
     "js_pages": 83,
-    "pdfs_discovered": 190,
-    "pdfs_downloaded": 190,
-    "pdfs_skipped_existing": 104,
+    "pdfs_discovered": 223,
+    "pdfs_downloaded": 223,
+    "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
-    "errors": 19
+    "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:06:25.142461+00:00"
+  "manifest_generated_at": "2026-08-01T11:07:11.385458+00:00"
 }
