@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:21:55.346302+00:00",
+  "updated_at": "2026-08-01T11:23:55.979693+00:00",
   "phase": "running",
-  "message": "downloaded 1235 new this run",
+  "message": "downloaded 1420 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 1781,
+    "pdfs": 1966,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 1323
+      "count": 1508
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 1327
+      "count": 1512
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p1/2011/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p1/2008/index-eng.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part I, volume 145, number 11 (1.1MB)",
+      "title": "Part I, volume 142, number 21 (779KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-03-12/pdf/g1-14511.pdf",
-      "downloaded_at": "2026-08-01T11:21:55.105895+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-05-24/pdf/g1-14221.pdf",
+      "downloaded_at": "2026-08-01T11:23:55.716285+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 12 (1.6MB)",
+      "title": "Part I, volume 142, number 22 (1.5MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-03-19/pdf/g1-14512.pdf",
-      "downloaded_at": "2026-08-01T11:21:54.511165+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-05-31/pdf/g1-14222.pdf",
+      "downloaded_at": "2026-08-01T11:23:55.160269+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 13 (1.9MB)",
+      "title": "Part I, volume 142, number 23 (863KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-03-26/pdf/g1-14513.pdf",
-      "downloaded_at": "2026-08-01T11:21:53.768743+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-06-07/pdf/g1-14223.pdf",
+      "downloaded_at": "2026-08-01T11:23:54.518072+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, Extra number 1 (491KB)",
+      "title": "Part I, volume 142, number 24 (1.0MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-01-x1/pdf/g1-145x1.pdf",
-      "downloaded_at": "2026-08-01T11:21:53.042203+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-06-14/pdf/g1-14224.pdf",
+      "downloaded_at": "2026-08-01T11:23:53.944571+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 14 (1.2MB)",
+      "title": "Part I, volume 142, number 25 (1.0MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-02/pdf/g1-14514.pdf",
-      "downloaded_at": "2026-08-01T11:21:52.553811+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-06-21/pdf/g1-14225.pdf",
+      "downloaded_at": "2026-08-01T11:23:53.365846+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 15 (678KB)",
+      "title": "Part I, volume 142, number 26 (1.9MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-09/pdf/g1-14515.pdf",
-      "downloaded_at": "2026-08-01T11:21:51.640293+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-06-28/pdf/g1-14226.pdf",
+      "downloaded_at": "2026-08-01T11:23:52.454579+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 16 (1.1MB)",
+      "title": "Part I, volume 142, number 27 (1.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-16/pdf/g1-14516.pdf",
-      "downloaded_at": "2026-08-01T11:21:51.134682+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-07-05/pdf/g1-14227.pdf",
+      "downloaded_at": "2026-08-01T11:23:51.748198+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 17 (1.1MB)",
+      "title": "Part I, volume 142, number 28 (528KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-23/pdf/g1-14517.pdf",
-      "downloaded_at": "2026-08-01T11:21:50.536242+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-07-12/pdf/g1-14228.pdf",
+      "downloaded_at": "2026-08-01T11:23:51.108203+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, Extra number 2 (492KB)",
+      "title": "Part I, volume 142, number 29 (433KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-25-x2/pdf/g1-145x2.pdf",
-      "downloaded_at": "2026-08-01T11:21:49.949338+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-07-19/pdf/g1-14229.pdf",
+      "downloaded_at": "2026-08-01T11:23:50.600107+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 18 (1.0MB)",
+      "title": "Part I, volume 142, number 30 (846KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-04-30/pdf/g1-14518.pdf",
-      "downloaded_at": "2026-08-01T11:21:49.439523+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-07-26/pdf/g1-14230.pdf",
+      "downloaded_at": "2026-08-01T11:23:50.095484+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 19 (607KB)",
+      "title": "Part I, volume 142, number 4, Extra ( 78KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-05-07/pdf/g1-14519.pdf",
-      "downloaded_at": "2026-08-01T11:21:48.560960+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-08-01-x4/pdf/g1-142x4.pdf",
+      "downloaded_at": "2026-08-01T11:23:49.220123+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, number 20 (1.5MB)",
+      "title": "Part I, volume 142, number 31 (697KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-05-14/pdf/g1-14520.pdf",
-      "downloaded_at": "2026-08-01T11:21:48.020450+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-08-02/pdf/g1-14231.pdf",
+      "downloaded_at": "2026-08-01T11:23:48.788507+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, Extra number 3 (474KB)",
+      "title": "Part I, volume 142, number 32 (535KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-05-16-x3/pdf/g1-145x3.pdf",
-      "downloaded_at": "2026-08-01T11:21:47.332735+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-08-09/pdf/g1-14232.pdf",
+      "downloaded_at": "2026-08-01T11:23:48.248600+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, Extra number 4 (477KB)",
+      "title": "Part I, volume 142, number 33 (494KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-05-17-x4/pdf/g1-145x4.pdf",
-      "downloaded_at": "2026-08-01T11:21:46.828774+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-08-16/pdf/g1-14233.pdf",
+      "downloaded_at": "2026-08-01T11:23:47.725976+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 145, Extra number 5 (479KB)",
+      "title": "Part I, volume 142, number 5, Extra ( 77KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2011/2011-05-19-x5/pdf/g1-145x5.pdf",
-      "downloaded_at": "2026-08-01T11:21:46.312055+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2008/2008-08-22-x5/pdf/g1-142x5.pdf",
+      "downloaded_at": "2026-08-01T11:23:47.220744+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 1235,
-    "pdfs_downloaded": 1235,
+    "pdfs_discovered": 1420,
+    "pdfs_downloaded": 1420,
     "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:21:55.106013+00:00"
+  "manifest_generated_at": "2026-08-01T11:23:55.716387+00:00"
 }
