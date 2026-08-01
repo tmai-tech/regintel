@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T15:32:49.111747+00:00",
+  "generated_at": "2026-08-01T15:32:53.961356+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -195852,6 +195852,76 @@
       "js_pages": 0,
       "pdfs_candidates": 46,
       "pdfs_downloaded": 31,
+      "error": null
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.parl.ca/legisinfo",
+      "pages_crawled": 300,
+      "js_pages": 83,
+      "pdfs_candidates": 350,
+      "pdfs_downloaded": 223,
+      "error": null
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.gazette.gc.ca",
+      "pages_crawled": 300,
+      "js_pages": 3,
+      "pdfs_candidates": 3068,
+      "pdfs_downloaded": 3059,
+      "error": null
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.leg.bc.ca/parliamentary-business/legislation-debates-proceedings/legislation",
+      "pages_crawled": 300,
+      "js_pages": 33,
+      "pdfs_candidates": 10418,
+      "pdfs_downloaded": 852,
+      "error": null
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.bclaws.gov.bc.ca/civix/document/id/public/bcgaz1/1",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Ontario",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.ola.org/en/legislative-business/bills",
+      "pages_crawled": 300,
+      "js_pages": 6,
+      "pdfs_candidates": 37,
+      "pdfs_downloaded": 31,
+      "error": null
+    },
+    {
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.ontario.ca/ontariogazette",
+      "pages_crawled": 300,
+      "js_pages": 12,
+      "pdfs_candidates": 128,
+      "pdfs_downloaded": 124,
+      "error": null
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.gov.mb.ca/legislature/business/bills.html",
+      "pages_crawled": 300,
+      "js_pages": 8,
+      "pdfs_candidates": 6289,
+      "pdfs_downloaded": 4087,
       "error": null
     }
   ]

@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-01T15:32:50.264431+00:00",
-  "phase": "running",
-  "message": "finished Manitoba / parliamentary_bills: +4087 PDFs",
+  "updated_at": "2026-08-01T15:32:55.121829+00:00",
+  "phase": "paused",
+  "message": "crawl finished or paused",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
     "pdfs": 8922,
     "errors": 11957,
-    "source_reports": 9,
+    "source_reports": 16,
     "jurisdictions": 29
   },
   "by_jurisdiction": [
@@ -138,13 +138,7 @@
       "count": 3498
     }
   ],
-  "current_source": {
-    "jurisdiction": "Manitoba",
-    "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/bills.html",
-    "pdfs_downloaded": 4087,
-    "pdfs_candidates": 6289
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "15",
@@ -254,46 +248,6 @@
   ],
   "last_source_reports": [
     {
-      "jurisdiction": "USA Federal",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://www.congress.gov/bill",
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "list_pages": 0,
-      "follow_pages": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "jurisdiction": "USA Federal",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.federalregister.gov",
-      "pdfs_candidates": 1000,
-      "pdfs_downloaded": 500,
-      "list_pages": 1,
-      "follow_pages": 11,
-      "error": null
-    },
-    {
-      "jurisdiction": "USA Federal",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.ecfr.gov/",
-      "pdfs_candidates": 1000,
-      "pdfs_downloaded": 500,
-      "list_pages": 1,
-      "follow_pages": 1,
-      "error": null
-    },
-    {
-      "jurisdiction": "Singapore",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://www.parliament.gov.sg/bills-introduced",
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "list_pages": 0,
-      "follow_pages": 0,
-      "error": "HTTP 404"
-    },
-    {
       "jurisdiction": "Singapore",
       "source_kind": "official_gazette",
       "source_url": "https://sso.agc.gov.sg/Act/SL",
@@ -342,6 +296,76 @@
       "pdfs_candidates": 46,
       "pdfs_downloaded": 31,
       "error": null
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.parl.ca/legisinfo",
+      "pages_crawled": 300,
+      "js_pages": 83,
+      "pdfs_candidates": 350,
+      "pdfs_downloaded": 223,
+      "error": null
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.gazette.gc.ca",
+      "pages_crawled": 300,
+      "js_pages": 3,
+      "pdfs_candidates": 3068,
+      "pdfs_downloaded": 3059,
+      "error": null
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.leg.bc.ca/parliamentary-business/legislation-debates-proceedings/legislation",
+      "pages_crawled": 300,
+      "js_pages": 33,
+      "pdfs_candidates": 10418,
+      "pdfs_downloaded": 852,
+      "error": null
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.bclaws.gov.bc.ca/civix/document/id/public/bcgaz1/1",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Ontario",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.ola.org/en/legislative-business/bills",
+      "pages_crawled": 300,
+      "js_pages": 6,
+      "pdfs_candidates": 37,
+      "pdfs_downloaded": 31,
+      "error": null
+    },
+    {
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.ontario.ca/ontariogazette",
+      "pages_crawled": 300,
+      "js_pages": 12,
+      "pdfs_candidates": 128,
+      "pdfs_downloaded": 124,
+      "error": null
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.gov.mb.ca/legislature/business/bills.html",
+      "pages_crawled": 300,
+      "js_pages": 8,
+      "pdfs_candidates": 6289,
+      "pdfs_downloaded": 4087,
+      "error": null
     }
   ],
   "stats": {
@@ -354,5 +378,5 @@
     "pdfs_capped": 0,
     "errors": 9623
   },
-  "manifest_generated_at": "2026-08-01T15:32:49.111747+00:00"
+  "manifest_generated_at": "2026-08-01T15:32:53.961356+00:00"
 }
