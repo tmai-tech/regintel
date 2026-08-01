@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:40:11.613232+00:00",
+  "updated_at": "2026-08-01T11:42:15.879568+00:00",
   "phase": "running",
-  "message": "downloaded 2690 new this run",
+  "message": "downloaded 2860 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3236,
+    "pdfs": 3406,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 2778
+      "count": 2948
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 2782
+      "count": 2952
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p2/2009/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p2/2004/index-eng.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part II, volume 143, number 21 (1.5MB)",
+      "title": "Part II, volume 138, number 25 (1.8MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-10-14/pdf/g2-14321.pdf",
-      "downloaded_at": "2026-08-01T11:40:11.225068+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2004/2004-12-15/pdf/g2-13825.pdf",
+      "downloaded_at": "2026-08-01T11:42:15.469182+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 143, number 22 (727KB)",
+      "title": "Part II, volume 138, number 26 (2.1MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-10-28/pdf/g2-14322.pdf",
-      "downloaded_at": "2026-08-01T11:40:10.593544+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2004/2004-12-29/pdf/g2-13826.pdf",
+      "downloaded_at": "2026-08-01T11:42:14.785224+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 143, number 23 (1.0MB)",
+      "title": "Consolidated index to March 31, 2005 (4.1MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-11-11/pdf/g2-14323.pdf",
-      "downloaded_at": "2026-08-01T11:40:10.086283+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-03-31-c/pdf/g2-139q1.pdf",
+      "downloaded_at": "2026-08-01T11:42:14.076812+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 143, number 24 (1.2MB)",
+      "title": "Consolidated index to June 30, 2005 (4.1MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-11-25/pdf/g2-14324.pdf",
-      "downloaded_at": "2026-08-01T11:40:09.543423+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-06-30-c/pdf/g2-139q2.pdf",
+      "downloaded_at": "2026-08-01T11:42:13.073958+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 143, number 25 (2.3MB)",
+      "title": "Consolidated index to September 30, 2005 (4.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-12-09/pdf/g2-14325.pdf",
-      "downloaded_at": "2026-08-01T11:40:08.983661+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-09-30-c/pdf/g2-139q3.pdf",
+      "downloaded_at": "2026-08-01T11:42:12.070320+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 143, number 26 (3.6MB)",
+      "title": "Consolidated index to December 31, 2005 (4.3MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-12-23/pdf/g2-14326.pdf",
-      "downloaded_at": "2026-08-01T11:40:07.755254+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-12-31-c/pdf/g2-139q4.pdf",
+      "downloaded_at": "2026-08-01T11:42:10.526918+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 143, Extra number 3 (485KB)",
+      "title": "Part II, volume 139, number 1 (489KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-12-31-x3/pdf/g2-143x3.pdf",
-      "downloaded_at": "2026-08-01T11:40:06.820845+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-01-12/pdf/g2-13901.pdf",
+      "downloaded_at": "2026-08-01T11:42:09.480763+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to March 31, 2010 (2.4MB)",
+      "title": "Part II, volume 139, number 2 (662KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-03-31-c1/pdf/g2-144c1-eng.pdf",
-      "downloaded_at": "2026-08-01T11:40:06.299614+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-01-26/pdf/g2-13902.pdf",
+      "downloaded_at": "2026-08-01T11:42:08.993169+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to June 30, 2010 (2.9MB)",
+      "title": "Part II, volume 139, Extra number 1 ( 94KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-06-30-c2/pdf/g2-144c2-eng.pdf",
-      "downloaded_at": "2026-08-01T11:40:05.545291+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-01-31-x1/pdf/g2-139x1.pdf",
+      "downloaded_at": "2026-08-01T11:42:08.436836+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to September 30, 2010 (2.6MB)",
+      "title": "Part II, volume 139, number 3 (228KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-09-30-c3/pdf/g2-144c3-eng.pdf",
-      "downloaded_at": "2026-08-01T11:40:04.703263+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-02-09/pdf/g2-13903.pdf",
+      "downloaded_at": "2026-08-01T11:42:08.022478+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to December 31, 2010 (2.6MB)",
+      "title": "Part II, volume 139, number 4 (1.6MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-12-31-c4/pdf/g2-144c4-eng.pdf",
-      "downloaded_at": "2026-08-01T11:40:03.425999+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-02-23/pdf/g2-13904.pdf",
+      "downloaded_at": "2026-08-01T11:42:07.074823+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 144, number 1 (700KB)",
+      "title": "Part II, volume 139, number 5 (812KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-01-06/pdf/g2-14401.pdf",
-      "downloaded_at": "2026-08-01T11:40:02.631481+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-03-09/pdf/g2-13905.pdf",
+      "downloaded_at": "2026-08-01T11:42:06.442655+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 144, number 2 (555KB)",
+      "title": "Part II, volume 139, number 6 (497KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-01-20/pdf/g2-14402.pdf",
-      "downloaded_at": "2026-08-01T11:40:02.127488+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-03-23/pdf/g2-13906.pdf",
+      "downloaded_at": "2026-08-01T11:42:05.916535+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 144, Extra number 1 (754KB)",
+      "title": "Part II, volume 139, Extra number 2 (141KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-01-22-x1/pdf/g2-144x1.pdf",
-      "downloaded_at": "2026-08-01T11:40:01.632082+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-03-31-x2/pdf/g2-139x2.pdf",
+      "downloaded_at": "2026-08-01T11:42:05.445708+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 144, number 3 (764KB)",
+      "title": "Part II, volume 139, number 7 (1.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-02-03/pdf/g2-14403.pdf",
-      "downloaded_at": "2026-08-01T11:40:01.098043+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2005/2005-04-06/pdf/g2-13907.pdf",
+      "downloaded_at": "2026-08-01T11:42:05.013073+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 2690,
-    "pdfs_downloaded": 2690,
-    "pdfs_skipped_existing": 107,
+    "pdfs_discovered": 2860,
+    "pdfs_downloaded": 2860,
+    "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:40:11.225156+00:00"
+  "manifest_generated_at": "2026-08-01T11:42:15.469272+00:00"
 }
