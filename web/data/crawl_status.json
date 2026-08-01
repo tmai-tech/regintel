@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-01T23:25:48.030838+00:00",
+  "updated_at": "2026-08-01T23:27:53.321994+00:00",
   "phase": "running",
-  "message": "downloaded 115 new this run",
+  "message": "downloaded 220 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 9037,
-    "errors": 21579,
+    "pdfs": 9142,
+    "errors": 21585,
     "source_reports": 16,
     "jurisdictions": 29
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 4202
+      "count": 4307
     },
     {
       "jurisdiction": "Canada Federal",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 5539
+      "count": 5644
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/36th/36th_4th.html"
+    "url": "https://www.gov.mb.ca/legislature/business/index_41st/index_41st_2nd.html"
   },
   "recent_pdfs": [
     {
-      "title": "21",
+      "title": "Appendix-B - Private Bills",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP51.pdf",
-      "downloaded_at": "2026-08-01T23:25:46.765581+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/2nd/appendix_b.pdf",
+      "downloaded_at": "2026-08-01T23:27:52.050725+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "20",
+      "title": "Appendix-A - Bills assented to",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP50.pdf",
-      "downloaded_at": "2026-08-01T23:25:46.086103+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/2nd/appendix_a.pdf",
+      "downloaded_at": "2026-08-01T23:27:51.435598+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "19",
+      "title": "Index",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP49.pdf",
-      "downloaded_at": "2026-08-01T23:25:45.374986+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/2nd/index_2nd_41st.pdf",
+      "downloaded_at": "2026-08-01T23:27:50.578281+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "14",
+      "title": "Appendix-J - Ministerial Statements",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP48.pdf",
-      "downloaded_at": "2026-08-01T23:25:44.692333+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_j.pdf",
+      "downloaded_at": "2026-08-01T23:27:49.645789+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "13",
+      "title": "Appendix-I - Members' Statements",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP47.pdf",
-      "downloaded_at": "2026-08-01T23:25:43.991165+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_i.pdf",
+      "downloaded_at": "2026-08-01T23:27:48.968197+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "12",
+      "title": "Appendix-H - Petitions",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP46.pdf",
-      "downloaded_at": "2026-08-01T23:25:41.699480+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_h.pdf",
+      "downloaded_at": "2026-08-01T23:27:46.628043+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "11",
+      "title": "Appendix-G - Sessional Papers",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP45.pdf",
-      "downloaded_at": "2026-08-01T23:25:40.965537+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_g.pdf",
+      "downloaded_at": "2026-08-01T23:27:45.807036+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "7",
+      "title": "Appendix-F - Intersessional Papers",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP44.pdf",
-      "downloaded_at": "2026-08-01T23:25:40.284026+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_f.pdf",
+      "downloaded_at": "2026-08-01T23:27:45.004335+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "6",
+      "title": "Appendix-E - Tabled Papers",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP43.pdf",
-      "downloaded_at": "2026-08-01T23:25:39.404265+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_e.pdf",
+      "downloaded_at": "2026-08-01T23:27:44.322596+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "5",
+      "title": "Appendix-D - Bill Status",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP42.pdf",
-      "downloaded_at": "2026-08-01T23:25:38.721498+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_d.pdf",
+      "downloaded_at": "2026-08-01T23:27:43.252303+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "4",
+      "title": "Appendix-C - Bills not assented to",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP41.pdf",
-      "downloaded_at": "2026-08-01T23:25:36.463648+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_c.pdf",
+      "downloaded_at": "2026-08-01T23:27:40.825633+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "29",
+      "title": "Appendix-B - Private Bills",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP72.pdf",
-      "downloaded_at": "2026-08-01T23:25:35.767647+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_b.pdf",
+      "downloaded_at": "2026-08-01T23:27:40.086292+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "25",
+      "title": "Appendix-A - Bills assented to",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP71.pdf",
-      "downloaded_at": "2026-08-01T23:25:34.877777+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/appendix_a.pdf",
+      "downloaded_at": "2026-08-01T23:27:39.404029+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "24",
+      "title": "Index",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP70.pdf",
-      "downloaded_at": "2026-08-01T23:25:34.007782+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/3rd/index_3rd_41st.pdf",
+      "downloaded_at": "2026-08-01T23:27:38.593840+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "23",
+      "title": "Appendix-J - Ministerial Statements",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/36th/4th/VP69.pdf",
-      "downloaded_at": "2026-08-01T23:25:33.266018+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_41st/4th/appendix_j.pdf",
+      "downloaded_at": "2026-08-01T23:27:37.696172+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 144,
-    "pdfs_discovered": 115,
-    "pdfs_downloaded": 115,
+    "pdfs_discovered": 220,
+    "pdfs_downloaded": 220,
     "pdfs_skipped_existing": 8490,
     "pdfs_capped": 0,
-    "errors": 9622
+    "errors": 9628
   },
-  "manifest_generated_at": "2026-08-01T23:25:46.765687+00:00"
+  "manifest_generated_at": "2026-08-01T23:27:52.050813+00:00"
 }
