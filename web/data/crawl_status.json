@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T23:44:21.886157+00:00",
+  "updated_at": "2026-08-01T23:46:27.988032+00:00",
   "phase": "running",
-  "message": "downloaded 1025 new this run",
+  "message": "downloaded 1125 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 9947,
+    "pdfs": 10047,
     "errors": 21586,
     "source_reports": 16,
     "jurisdictions": 29
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 5112
+      "count": 5212
     },
     {
       "jurisdiction": "Canada Federal",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 6449
+      "count": 6549
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://web2.gov.mb.ca/bills/42-2/index.php"
+    "url": "https://web2.gov.mb.ca/bills/41-4/index.php"
   },
   "recent_pdfs": [
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b028.pdf",
-      "downloaded_at": "2026-08-01T23:44:20.515326+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b219.pdf",
+      "downloaded_at": "2026-08-01T23:46:26.572087+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b027.pdf",
-      "downloaded_at": "2026-08-01T23:44:19.655831+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b217.pdf",
+      "downloaded_at": "2026-08-01T23:46:25.691813+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b026.pdf",
-      "downloaded_at": "2026-08-01T23:44:18.881195+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b216.pdf",
+      "downloaded_at": "2026-08-01T23:46:24.815516+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b025.pdf",
-      "downloaded_at": "2026-08-01T23:44:17.890867+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b215.pdf",
+      "downloaded_at": "2026-08-01T23:46:23.873753+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b023.pdf",
-      "downloaded_at": "2026-08-01T23:44:16.938878+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b213.pdf",
+      "downloaded_at": "2026-08-01T23:46:22.948362+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b022.pdf",
-      "downloaded_at": "2026-08-01T23:44:14.209139+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b212.pdf",
+      "downloaded_at": "2026-08-01T23:46:20.227457+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b021.pdf",
-      "downloaded_at": "2026-08-01T23:44:13.396554+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b211.pdf",
+      "downloaded_at": "2026-08-01T23:46:19.418409+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b020.pdf",
-      "downloaded_at": "2026-08-01T23:44:12.420508+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b210.pdf",
+      "downloaded_at": "2026-08-01T23:46:18.466826+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b019.pdf",
-      "downloaded_at": "2026-08-01T23:44:11.606870+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b208.pdf",
+      "downloaded_at": "2026-08-01T23:46:17.611686+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b018.pdf",
-      "downloaded_at": "2026-08-01T23:44:10.464135+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b207.pdf",
+      "downloaded_at": "2026-08-01T23:46:16.809397+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b017.pdf",
-      "downloaded_at": "2026-08-01T23:44:07.899434+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b206.pdf",
+      "downloaded_at": "2026-08-01T23:46:14.296520+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b016.pdf",
-      "downloaded_at": "2026-08-01T23:44:07.094624+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b205.pdf",
+      "downloaded_at": "2026-08-01T23:46:13.502888+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b015.pdf",
-      "downloaded_at": "2026-08-01T23:44:06.287124+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b204.pdf",
+      "downloaded_at": "2026-08-01T23:46:12.532097+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b014.pdf",
-      "downloaded_at": "2026-08-01T23:44:05.492378+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b202.pdf",
+      "downloaded_at": "2026-08-01T23:46:11.740061+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/42-2/pdf/b013.pdf",
-      "downloaded_at": "2026-08-01T23:44:04.681325+00:00",
+      "url": "https://web2.gov.mb.ca/bills/41-4/pdf/b201.pdf",
+      "downloaded_at": "2026-08-01T23:46:10.941458+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 144,
-    "pdfs_discovered": 1025,
-    "pdfs_downloaded": 1025,
-    "pdfs_skipped_existing": 8490,
+    "pdfs_discovered": 1125,
+    "pdfs_downloaded": 1125,
+    "pdfs_skipped_existing": 8492,
     "pdfs_capped": 0,
     "errors": 9629
   },
-  "manifest_generated_at": "2026-08-01T23:44:20.515423+00:00"
+  "manifest_generated_at": "2026-08-01T23:46:26.572162+00:00"
 }
