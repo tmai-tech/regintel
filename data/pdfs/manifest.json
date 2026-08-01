@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T20:27:24.065203+00:00",
+  "generated_at": "2026-08-01T20:32:25.581351+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -195872,17 +195872,68 @@
       "error": "HTTP 404",
       "stage": "download_pdf",
       "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://gazette.gc.ca/rp-pr/p3/1999/g3-02204.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/en/pub/89-657-x/89-657-x2017001-eng.pdf?st=vO-gUo1G",
+      "error": "missing %PDF magic (ct=text/html; charset=UTF-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.canada.ca/content/dam/fin/consultations/2021/acob-ccsbo-eng.pdf",
+      "error": "The read operation timed out",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2024/sc-hc/H144-51-2018-eng.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/fr/pub/89-657-x/89-657-x2017001-fra.pdf?st=6vF6SzT9",
+      "error": "missing %PDF magic (ct=text/html; charset=UTF-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.canada.ca/content/dam/fin/consultations/2021/acob-ccsbo-fra.pdf",
+      "error": "The read operation timed out",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2024/sc-hc/H144-51-2018-fra.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90464/90552/889384/4445358/4445359/4445363/4607603/C37235-1_Commission_-_Report_OH-001-2024_-_Pouce_Coup%C3%A9_Pipe_Line_Ltd._-_Application_for_the_Taylor_to_Gordondale_Pipeline_Project_-_A9Q9S7.pdf?nodeid=4607116&vernum=-2",
+      "error": "[Errno 104] Connection reset by peer",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette"
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 300,
-    "js_pages": 82,
+    "sources_visited": 2,
+    "pages_crawled": 600,
+    "js_pages": 85,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 329,
+    "pdfs_skipped_existing": 3389,
     "pdfs_capped": 0,
-    "errors": 20
+    "errors": 28
   },
   "source_reports": [
     {
