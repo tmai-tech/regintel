@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-01T11:46:20.200304+00:00",
+  "updated_at": "2026-08-01T11:48:21.404397+00:00",
   "phase": "running",
-  "message": "downloaded 3165 new this run",
+  "message": "downloaded 3220 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3711,
-    "errors": 2354,
+    "pdfs": 3766,
+    "errors": 2358,
     "source_reports": 9,
     "jurisdictions": 27
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 3253
+      "count": 3308
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 3257
+      "count": 3312
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p3/2008/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p2/2023/index-fra.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part III, volume 31, number 2, chapter 16 to 33 (2.6MB)",
+      "title": "Index codifié jusqu’au 30 juin 2023 (7.2Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2008/g3-03102.pdf",
-      "downloaded_at": "2026-08-01T11:46:19.766111+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-06-30-c2/pdf/g2-157c2-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:20.940585+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 32, number 1, chapter 1 to 4 (4.0MB)",
+      "title": "Index codifié jusqu'au 30 septembre 2023 (7.4Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2009/g3-03201.pdf",
-      "downloaded_at": "2026-08-01T11:46:18.965459+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-09-30-c3/pdf/g2-157c3-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:18.740191+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 32, number 2, chapter 5 to 26 (6.8MB)",
+      "title": "Index codifié jusqu'au 31 décembre 2023 (7.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2009/g3-03202.pdf",
-      "downloaded_at": "2026-08-01T11:46:17.978142+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-12-31-c4/pdf/g2-157c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:16.335964+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 32, number 3, chapter 27 to 34 (1.8MB)",
+      "title": "Index codifié jusqu’au 31 mars 2024 (7.6Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2009/g3-03203.pdf",
-      "downloaded_at": "2026-08-01T11:46:16.515169+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-03-31-c1/pdf/g2-158c1-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:13.996542+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 33, number 1, chapter 1 to 11 (1.9MB)",
+      "title": "Index codifié jusqu’au 30 juin 2024 (8.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2010/g3-03301.pdf",
-      "downloaded_at": "2026-08-01T11:46:15.759223+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-06-30-c2/pdf/g2-158c2-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:11.681342+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 33, number 2, chapter 12 (4.2MB)",
+      "title": "Index codifié jusqu'au 30 septembre 2024 (7.7Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2010/g3-03302.pdf",
-      "downloaded_at": "2026-08-01T11:46:14.530811+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-09-30-c3/pdf/g2-158c3-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:08.618670+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 33, number 3, chapter 13 to 25 (3.9MB)",
+      "title": "Index codifié jusqu'au 31 décembre 2024 (7.8Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2010/g3-03303.pdf",
-      "downloaded_at": "2026-08-01T11:46:13.461979+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-12-31-c4/pdf/g2-158c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:06.266545+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 34, number 1, chapter 1 to 14 (2.4MB)",
+      "title": "Index codifié jusqu’au 31 mars 2025 ( 17Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2011/g3-03401.pdf",
-      "downloaded_at": "2026-08-01T11:46:12.454658+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-31-c1/pdf/g2-159c1-fra.pdf",
+      "downloaded_at": "2026-08-01T11:48:03.699700+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 34, number 2, chapter 15 to 22 (2.2MB)",
+      "title": "Index codifié jusqu’au 30 juin 2025 ( 17Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2011/g3-03402.pdf",
-      "downloaded_at": "2026-08-01T11:46:11.664155+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-06-30-c2/pdf/g2-159c2-fra.pdf",
+      "downloaded_at": "2026-08-01T11:47:59.199172+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 34, number 3, chapter 23 to 26 (3.2MB)",
+      "title": "Index codifié jusqu'au 30 septembre 2025 ( 27Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2011/g3-03403.pdf",
-      "downloaded_at": "2026-08-01T11:46:10.906301+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-09-30-c3/pdf/g2-159c3-fra.pdf",
+      "downloaded_at": "2026-08-01T11:47:54.482836+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 35, number 1, chapter 1 to 6 (2.0MB)",
+      "title": "Index codifié jusqu'au 31 décembre 2025 ( 16Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2012/g3-03501.pdf",
-      "downloaded_at": "2026-08-01T11:46:09.468616+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-12-31-c4/pdf/g2-159c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:47:45.529070+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 35, number 2, chapter 7 to 20 (4.7MB)",
+      "title": "Index codifié jusqu’au 31 mars 2026 ( 16Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2012/g3-03502.pdf",
-      "downloaded_at": "2026-08-01T11:46:08.754979+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2026/2026-03-31-c1/pdf/g2-160c1-fra.pdf",
+      "downloaded_at": "2026-08-01T11:47:41.246131+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 35, number 3, chapter 21 to 31 (4.0MB)",
+      "title": "Heavy fuel in the Arctic (Phase 1) (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2012/g3-03503.pdf",
-      "downloaded_at": "2026-08-01T11:46:07.639938+00:00",
+      "url": "https://www.pame.is/images/03_Projects/HFO/HFO_in_the_Artic_Phase_I.pdf",
+      "downloaded_at": "2026-08-01T11:47:34.971190+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 36, number 1, chapter 1 to 19 (3.6MB)",
+      "title": "North American Emission Control Area (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2013/g3-03601.pdf",
-      "downloaded_at": "2026-08-01T11:46:06.590402+00:00",
+      "url": "https://nepis.epa.gov/Exe/ZyPDF.cgi/P100AU0I.PDF?Dockey=P100AU0I.PDF",
+      "downloaded_at": "2026-08-01T11:47:31.525298+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part III, volume 36, number 2, chapter 20 to 33 (3.6MB)",
+      "title": "Nunavut Land Claims Agreement Act (PDF)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p3/2013/g3-03602.pdf",
-      "downloaded_at": "2026-08-01T11:46:05.616004+00:00",
+      "url": "https://laws-lois.justice.gc.ca/PDF/N-28.7.pdf",
+      "downloaded_at": "2026-08-01T11:47:30.323590+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 3165,
-    "pdfs_downloaded": 3165,
+    "pdfs_discovered": 3220,
+    "pdfs_downloaded": 3220,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
-    "errors": 20
+    "errors": 24
   },
-  "manifest_generated_at": "2026-08-01T11:46:19.766212+00:00"
+  "manifest_generated_at": "2026-08-01T11:48:20.940680+00:00"
 }
