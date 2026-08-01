@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T14:22:26.414088+00:00",
+  "generated_at": "2026-08-01T14:29:23.811025+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -62855,6 +62855,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T14:22:26.295441+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/estimatesorder.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.gov.mb.ca/legislature/business/bills.html",
+      "title": "Estimates Order",
+      "path": "data/pdfs/Manitoba/parliamentary_bills/estimatesorder.pdf",
+      "bytes": 174088,
+      "sha256": "d64b991258bfe2b4",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:29:23.810907+00:00"
     }
   ],
   "discovered": [
@@ -142479,11 +142492,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 1501,
-    "js_pages": 138,
-    "pdfs_discovered": 4289,
-    "pdfs_downloaded": 4289,
+    "sources_visited": 7,
+    "pages_crawled": 1801,
+    "js_pages": 146,
+    "pdfs_discovered": 4290,
+    "pdfs_downloaded": 4290,
     "pdfs_skipped_existing": 113,
     "pdfs_capped": 0,
     "errors": 9599

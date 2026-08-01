@@ -1,5 +1,29 @@
 [
   {
+    "id": "d64b991258bfe2b4",
+    "title": "Estimates Order",
+    "filename": "estimatesorder.pdf",
+    "jurisdiction": "Manitoba",
+    "source_kind": "parliamentary_bills",
+    "law_type": "bill",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "gov.mb.ca",
+    "filename_tags": [],
+    "source_page": "https://www.gov.mb.ca/legislature/business/bills.html",
+    "url": "https://www.gov.mb.ca/legislature/business/estimatesorder.pdf",
+    "open_url": "https://www.gov.mb.ca/legislature/business/estimatesorder.pdf",
+    "download_url": null,
+    "bytes": 174088,
+    "sha256": "d64b991258bfe2b4",
+    "downloaded_at": "2026-08-01T14:29:23.810907+00:00",
+    "local_path": "data/pdfs/Manitoba/parliamentary_bills/estimatesorder.pdf"
+  },
+  {
     "id": "24f3cb03f96ee32a",
     "title": "Institution & Program Approval Application form",
     "filename": "tcont003568.pdf",

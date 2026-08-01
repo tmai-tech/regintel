@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-01T14:22:27.092346+00:00",
+  "updated_at": "2026-08-01T14:29:24.512744+00:00",
   "phase": "running",
-  "message": "finished Ontario / official_gazette: +124 PDFs",
+  "message": "downloaded 4290 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 4835,
+    "pdfs": 4836,
     "errors": 11933,
     "source_reports": 9,
-    "jurisdictions": 28
+    "jurisdictions": 29
   },
   "by_jurisdiction": [
     {
@@ -122,6 +122,10 @@
     {
       "jurisdiction": "Germany",
       "count": 1
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "count": 1
     }
   ],
   "by_source_kind": [
@@ -131,17 +135,22 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1337
+      "count": 1338
     }
   ],
   "current_source": {
-    "jurisdiction": "Ontario",
-    "source_kind": "official_gazette",
-    "url": "https://www.ontario.ca/ontariogazette",
-    "pdfs_downloaded": 124,
-    "pdfs_candidates": 128
+    "jurisdiction": "Manitoba",
+    "source_kind": "parliamentary_bills",
+    "url": "https://www.gov.mb.ca/legislature/business/bills.html"
   },
   "recent_pdfs": [
+    {
+      "title": "Estimates Order",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/estimatesorder.pdf",
+      "downloaded_at": "2026-08-01T14:29:23.810907+00:00",
+      "source_kind": "parliamentary_bills"
+    },
     {
       "title": "Institution & Program Approval Application form",
       "jurisdiction": "Ontario",
@@ -239,13 +248,6 @@
       "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-sp-2023-01-10.pdf",
       "downloaded_at": "2026-08-01T14:22:17.002856+00:00",
       "source_kind": "official_gazette"
-    },
-    {
-      "title": "Russian",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-ru-2023-01-10.pdf",
-      "downloaded_at": "2026-08-01T14:22:15.766596+00:00",
-      "source_kind": "official_gazette"
     }
   ],
   "last_source_reports": [
@@ -341,14 +343,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 1501,
-    "js_pages": 138,
-    "pdfs_discovered": 4289,
-    "pdfs_downloaded": 4289,
+    "sources_visited": 7,
+    "pages_crawled": 1801,
+    "js_pages": 146,
+    "pdfs_discovered": 4290,
+    "pdfs_downloaded": 4290,
     "pdfs_skipped_existing": 113,
     "pdfs_capped": 0,
     "errors": 9599
   },
-  "manifest_generated_at": "2026-08-01T14:22:26.414088+00:00"
+  "manifest_generated_at": "2026-08-01T14:29:23.811025+00:00"
 }
