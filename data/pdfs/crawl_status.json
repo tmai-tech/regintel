@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T14:37:37.464899+00:00",
+  "updated_at": "2026-08-01T14:39:37.640420+00:00",
   "phase": "running",
-  "message": "downloaded 4695 new this run",
+  "message": "downloaded 4805 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 5241,
-    "errors": 11936,
+    "pdfs": 5351,
+    "errors": 11937,
     "source_reports": 9,
     "jurisdictions": 29
   },
@@ -21,7 +21,7 @@
     },
     {
       "jurisdiction": "Manitoba",
-      "count": 406
+      "count": 516
     },
     {
       "jurisdiction": "USA Federal",
@@ -135,118 +135,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1743
+      "count": 1853
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/members/remuneration.html"
+    "url": "https://www.gov.mb.ca/legislature/hansard/hansard_archive.html"
   },
   "recent_pdfs": [
     {
-      "title": "February 2022",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_feb22.pdf",
-      "downloaded_at": "2026-08-01T14:37:36.713286+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/31st_4th/hansardpdf/31st_4th_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:36.871119+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "December 2023",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_dec22.pdf.pdf",
-      "downloaded_at": "2026-08-01T14:37:35.899126+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/31st_5th/hansardpdf/31st_5th_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:31.468184+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "December 2024",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_dec09.pdf",
-      "downloaded_at": "2026-08-01T14:37:35.329538+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/31st_5th/hansardpdf/31st_5th_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:30.711016+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "February 2025",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_feb25.pdf",
-      "downloaded_at": "2026-08-01T14:37:34.718268+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_1st/hansardpdf/32nd_1st_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:29.391312+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "June 2025",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulationamendment_jun03.pdf",
-      "downloaded_at": "2026-08-01T14:37:34.019236+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_1st/hansardpdf/32nd_1st_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:28.706671+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Members' Allowances Regulation",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/regulations/membersallowancesregulation.pdf",
-      "downloaded_at": "2026-08-01T14:37:32.410935+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_2nd/hansardpdf/32nd_2nd_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:26.379731+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/42ndleg.pdf",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/42ndleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:31.666414+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_2nd/hansardpdf/32nd_2nd_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:25.669077+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/41stleg.pdf",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/41stleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:28.028137+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_3rd/hansardpdf/32nd_3rd_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:23.900267+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/40thleg.pdf",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/40thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:26.877642+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_3rd/hansardpdf/32nd_3rd_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:23.169202+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/39thleg.pdf",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/39thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:25.926589+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_4th/hansardpdf/32nd_4th_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:22.441478+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/38thleg.pdf",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/38thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:22.880530+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_4th/hansardpdf/32nd_4th_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:20.833659+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/37thleg.pdf",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/37thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:20.807716+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_1st/hansardpdf/33rd_1st_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:19.675667+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/36thleg.pdf",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/36thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:19.327434+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_1st/hansardpdf/33rd_1st_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:18.960037+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/35thleg.pdf",
+      "title": "Committee",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/35thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:17.189172+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_2nd/hansardpdf/33rd_2nd_committee_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:18.104387+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/members/leg_photos/34thleg.pdf",
+      "title": "House",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/members/leg_photos/34thleg.pdf",
-      "downloaded_at": "2026-08-01T14:37:14.772357+00:00",
+      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_2nd/hansardpdf/33rd_2nd_index.pdf",
+      "downloaded_at": "2026-08-01T14:39:17.359331+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 4695,
-    "pdfs_downloaded": 4695,
+    "pdfs_discovered": 4805,
+    "pdfs_downloaded": 4805,
     "pdfs_skipped_existing": 115,
     "pdfs_capped": 0,
-    "errors": 9602
+    "errors": 9603
   },
-  "manifest_generated_at": "2026-08-01T14:37:36.713377+00:00"
+  "manifest_generated_at": "2026-08-01T14:39:36.871221+00:00"
 }
