@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T20:15:08.814719+00:00",
+  "generated_at": "2026-08-01T20:27:24.065203+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -195751,17 +195751,138 @@
       "error": "missing %PDF magic (ct=text/html)",
       "stage": "download_pdf",
       "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.ourcommons.ca/Content/Misc/2018-19AnnualReportPreventingHarassmentFINAL-EN.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2024/ccn-ncc/W93-114-2015-eng.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.oag-bvg.gc.ca/internet/docs/parl_cesd_202511_06_e.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2025/rncan-nrcan/M154-174-2024-eng.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2022/sc-hc/H164-303-2022-eng.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://researchbriefings.files.parliament.uk/documents/CBP-9121/CBP-9121.pdf",
+      "error": "HTTP 403",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.oag-bvg.gc.ca/internet/docs/parl_cesd_202511_06_f.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2024/ccn-ncc/W93-114-2015-fra.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2025/rncan-nrcan/M154-174-2024-fra.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.canada.ca/content/dam/fin/programs-programmes/fsp-psf/nira-neri/2025/nira-neri-2025-fra.pdf",
+      "error": "The read operation timed out",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2022/sc-hc/H164-303-2022-fra-1.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.digitalthinktankictc.com/ictc-admin/resources/admin/lenergie-propre-et-les-voies-vers-la-carboneutralite.pdf",
+      "error": "HTTP 520",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2017/bcp-pco/CP22-116-2013-eng.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://lop.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/how_cdn_govern_themselves_10th_ed-e.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://lop.parl.ca/staticfiles/Learn/assets/PDF/GuideToHOC/guide_canadian_house_of_commons-e.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://visitez.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Le_Sénat_en_action.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://visit.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Le_Sénat_en_action.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "http://www.parl.gc.ca/About/House/BOIE/pdf/MembersExpenses-2000-2001-f.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www.noscommunes.ca/Content/Misc/2018-19AnnualReportPreventingHarassmentFINAL-FR.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/GuideToHOC/guide_canadian_house_of_commons-f.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
+    "sources_visited": 1,
+    "pages_crawled": 300,
+    "js_pages": 82,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "pdfs_skipped_existing": 329,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 20
   },
   "source_reports": [
     {

@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T20:15:10.038240+00:00",
-  "phase": "starting",
-  "message": "crawl starting",
+  "updated_at": "2026-08-01T20:27:25.239816+00:00",
+  "phase": "running",
+  "message": "finished Canada Federal / parliamentary_bills: +0 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
     "pdfs": 8922,
-    "errors": 11957,
+    "errors": 11977,
     "source_reports": 16,
     "jurisdictions": 29
   },
@@ -138,7 +138,13 @@
       "count": 3498
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Canada Federal",
+    "source_kind": "parliamentary_bills",
+    "url": "https://www.parl.ca/legisinfo",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 349
+  },
   "recent_pdfs": [
     {
       "title": "15",
@@ -369,14 +375,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
+    "sources_visited": 1,
+    "pages_crawled": 300,
+    "js_pages": 82,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "pdfs_skipped_existing": 329,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T20:15:08.814719+00:00"
+  "manifest_generated_at": "2026-08-01T20:27:24.065203+00:00"
 }
