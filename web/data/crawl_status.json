@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T10:52:48.935160+00:00",
-  "phase": "starting",
-  "message": "crawl starting",
+  "updated_at": "2026-08-01T11:02:17.419230+00:00",
+  "phase": "running",
+  "message": "downloaded 5 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 546,
+    "pdfs": 551,
     "errors": 2334,
     "source_reports": 9,
     "jurisdictions": 27
@@ -17,7 +17,7 @@
     },
     {
       "jurisdiction": "Canada Federal",
-      "count": 88
+      "count": 93
     },
     {
       "jurisdiction": "India",
@@ -127,11 +127,50 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 231
+      "count": 236
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Canada Federal",
+    "source_kind": "parliamentary_bills",
+    "url": "https://lop.parl.ca/sites/Visit/default/en_CA/Senate"
+  },
   "recent_pdfs": [
+    {
+      "title": "Indigenous Art at Parliament",
+      "jurisdiction": "Canada Federal",
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/TeacherResources/Indigenous-Art-at-Parliament.pdf",
+      "downloaded_at": "2026-08-01T11:02:17.313728+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Welcome to Parliament Kids",
+      "jurisdiction": "Canada Federal",
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/LoP_WelcomeToParliament-KidsBooklet_English_Digital.pdf?pub=today",
+      "downloaded_at": "2026-08-01T11:02:16.123746+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "At Work in the Senate",
+      "jurisdiction": "Canada Federal",
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/At_Work_in_the_Senate.pdf",
+      "downloaded_at": "2026-08-01T11:02:15.007303+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Welcome to Parliament (French)",
+      "jurisdiction": "Canada Federal",
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Welcome_to_Parliament_FR_AODA_Final_2025.pdf?pub=today",
+      "downloaded_at": "2026-08-01T11:02:13.953084+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Welcome to Parliament",
+      "jurisdiction": "Canada Federal",
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Welcome_to_Parliament_EN_AODA_Final_2025.pdf?pub=today",
+      "downloaded_at": "2026-08-01T11:02:12.937552+00:00",
+      "source_kind": "parliamentary_bills"
+    },
     {
       "title": "embedded-url",
       "jurisdiction": "Canada Federal",
@@ -200,41 +239,6 @@
       "jurisdiction": "Canada Federal",
       "url": "https://www.noscommunes.ca/Content/Committee/441/CHPC/Reports/RP13407455/chpcrp14/chpcrp14-f.pdf",
       "downloaded_at": "2026-08-01T10:48:56.564224+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Canada Federal",
-      "url": "https://www.noscommunes.ca/Content/Committee/421/HESA/Reports/RP9027245/hesarp11/hesarp11-f.pdf",
-      "downloaded_at": "2026-08-01T10:48:54.147894+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Canada Federal",
-      "url": "https://sencanada.ca/content/sen/committee/432/RIDR/reports/2021-06-16_FederallySentenced_f.pdf",
-      "downloaded_at": "2026-08-01T10:48:51.294075+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Canada Federal",
-      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_norm/%40ipec/documents/publication/wcms_854796.pdf",
-      "downloaded_at": "2026-08-01T10:48:45.289533+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Canada Federal",
-      "url": "https://www.ourcommons.ca/Content/Committee/421/FAAE/Reports/RP8852462/faaerp07/faaerp07-f.pdf",
-      "downloaded_at": "2026-08-01T10:48:43.637330+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Canada Federal",
-      "url": "https://sencanada.ca/content/sen/committee/441/AEFA/reports/SEMAandMagnitsky_Final_rapport10_f.pdf",
-      "downloaded_at": "2026-08-01T10:48:32.881181+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -331,14 +335,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
+    "sources_visited": 1,
+    "pages_crawled": 300,
+    "js_pages": 83,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-01T10:52:48.798015+00:00"
+  "manifest_generated_at": "2026-08-01T11:02:17.313824+00:00"
 }

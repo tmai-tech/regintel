@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T10:52:48.798015+00:00",
+  "generated_at": "2026-08-01T11:02:17.313824+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -7098,6 +7098,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T10:50:32.246209+00:00"
+    },
+    {
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Welcome_to_Parliament_EN_AODA_Final_2025.pdf?pub=today",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://lop.parl.ca/sites/Visit/default/en_CA/Senate",
+      "title": "Welcome to Parliament",
+      "path": "data/pdfs/Canada_Federal/parliamentary_bills/Welcome_to_Parliament_EN_AODA_Final_2025.pdf",
+      "bytes": 4679111,
+      "sha256": "26c4cd2a84539d69",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:02:12.937552+00:00"
+    },
+    {
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Welcome_to_Parliament_FR_AODA_Final_2025.pdf?pub=today",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://lop.parl.ca/sites/Visit/default/en_CA/Senate",
+      "title": "Welcome to Parliament (French)",
+      "path": "data/pdfs/Canada_Federal/parliamentary_bills/Welcome_to_Parliament_FR_AODA_Final_2025.pdf",
+      "bytes": 4816902,
+      "sha256": "d6431632a083d9e6",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:02:13.953084+00:00"
+    },
+    {
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/At_Work_in_the_Senate.pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://lop.parl.ca/sites/Visit/default/en_CA/Senate",
+      "title": "At Work in the Senate",
+      "path": "data/pdfs/Canada_Federal/parliamentary_bills/At_Work_in_the_Senate.pdf",
+      "bytes": 2157657,
+      "sha256": "6fa14f76ba0b6bab",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:02:15.007303+00:00"
+    },
+    {
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/LoP_WelcomeToParliament-KidsBooklet_English_Digital.pdf?pub=today",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://lop.parl.ca/sites/Visit/default/en_CA/Senate",
+      "title": "Welcome to Parliament Kids",
+      "path": "data/pdfs/Canada_Federal/parliamentary_bills/LoP_WelcomeToParliament-KidsBooklet_English_Digital.pdf",
+      "bytes": 3258696,
+      "sha256": "26d140a0f4b16bab",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:02:16.123746+00:00"
+    },
+    {
+      "url": "https://learn.parl.ca/staticfiles/Learn/assets/PDF/TeacherResources/Indigenous-Art-at-Parliament.pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://lop.parl.ca/sites/Visit/default/en_CA/Senate",
+      "title": "Indigenous Art at Parliament",
+      "path": "data/pdfs/Canada_Federal/parliamentary_bills/Indigenous-Art-at-Parliament.pdf",
+      "bytes": 9726214,
+      "sha256": "fa36a7fb3d8d0233",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:02:17.313728+00:00"
     }
   ],
   "discovered": [
@@ -29121,11 +29186,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
+    "sources_visited": 1,
+    "pages_crawled": 300,
+    "js_pages": 83,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
