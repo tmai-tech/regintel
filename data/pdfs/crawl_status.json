@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T14:09:57.470712+00:00",
+  "updated_at": "2026-08-01T14:11:58.351274+00:00",
   "phase": "running",
-  "message": "downloaded 3825 new this run",
+  "message": "downloaded 4015 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 4371,
+    "pdfs": 4561,
     "errors": 11926,
     "source_reports": 9,
     "jurisdictions": 28
@@ -17,7 +17,7 @@
     },
     {
       "jurisdiction": "British Columbia",
-      "count": 543
+      "count": 733
     },
     {
       "jurisdiction": "USA Federal",
@@ -131,7 +131,7 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 997
+      "count": 1187
     }
   ],
   "current_source": {
@@ -141,108 +141,108 @@
   },
   "recent_pdfs": [
     {
-      "title": "Volume 47, Number 8 August 2016",
+      "title": "Volume 31, Number 10 October 2000",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No8_Aug2016.pdf",
-      "downloaded_at": "2026-08-01T14:09:56.844975+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2000/350813_Vol31_No10_Oct2000.pdf",
+      "downloaded_at": "2026-08-01T14:11:57.678862+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 47, Number 9 September 2016",
+      "title": "Volume 31, Number 11 November 2000",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No9_Sep2016.pdf",
-      "downloaded_at": "2026-08-01T14:09:56.400602+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2000/350813_Vol31_No11_Nov2000.pdf",
+      "downloaded_at": "2026-08-01T14:11:57.186483+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 47, Number 10 October 2016",
+      "title": "Volume 31, Number 12 December 2000",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No10_Oct2016.pdf",
-      "downloaded_at": "2026-08-01T14:09:55.953087+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2000/350813_Vol31_No12_Dec2000.pdf",
+      "downloaded_at": "2026-08-01T14:11:56.744745+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 47, Number 11 November 2016",
+      "title": "Volume 32, Number 1 January 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No11_Nov2016.pdf",
-      "downloaded_at": "2026-08-01T14:09:55.511313+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No1_Jan2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:56.290662+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 47, Number 12 December 2016",
+      "title": "Volume 32, Number 2 February 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No12_Dec2016.pdf",
-      "downloaded_at": "2026-08-01T14:09:55.061491+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No2_Feb2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:55.849402+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 1 January 2017",
+      "title": "Volume 32, Number 3 March 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No1_Jan2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:53.841574+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No3_Mar2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:54.603924+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 2 February 2017",
+      "title": "Volume 32, Number 4 April 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No2_Feb2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:53.404444+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No4_Apr2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:54.167024+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 3 March 2017",
+      "title": "Volume 32, Number 5 May 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No3_Mar2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:52.951255+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No5_May2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:53.678936+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 4 April 2017",
+      "title": "Volume 32, Number 6 June 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No4_Apr2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:52.394765+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No6_June2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:53.073090+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 5 May 2017",
+      "title": "Volume 32, Number 7 July 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No5_May2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:51.957847+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No7_July2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:52.630555+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 6 June 2017",
+      "title": "Volume 32, Number 8 August 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No6_June2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:50.750017+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No8_Aug2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:51.378625+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 7 July 2017",
+      "title": "Volume 32, Number 9 September 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No7_July2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:50.309044+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No9_Sep2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:50.937260+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 8 August 2017",
+      "title": "Volume 32, Number 10 October 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No8_Aug2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:49.863109+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No10_Oct2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:50.487901+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 9 September 2017",
+      "title": "Volume 32, Number 11 November 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No9_Sep2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:49.422569+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No11_Nov2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:50.047864+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 48, Number 10 October 2017",
+      "title": "Volume 32, Number 12 December 2001",
       "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No10_Oct2017.pdf",
-      "downloaded_at": "2026-08-01T14:09:48.984319+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2001/350813_Vol32_No12_Dec2001.pdf",
+      "downloaded_at": "2026-08-01T14:11:49.598016+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -342,11 +342,11 @@
     "sources_visited": 3,
     "pages_crawled": 900,
     "js_pages": 119,
-    "pdfs_discovered": 3825,
-    "pdfs_downloaded": 3825,
+    "pdfs_discovered": 4015,
+    "pdfs_downloaded": 4015,
     "pdfs_skipped_existing": 109,
     "pdfs_capped": 0,
     "errors": 9592
   },
-  "manifest_generated_at": "2026-08-01T14:09:56.845086+00:00"
+  "manifest_generated_at": "2026-08-01T14:11:57.678952+00:00"
 }
