@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T14:33:33.353862+00:00",
+  "updated_at": "2026-08-01T14:35:33.956931+00:00",
   "phase": "running",
-  "message": "downloaded 4510 new this run",
+  "message": "downloaded 4605 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 5056,
-    "errors": 11933,
+    "pdfs": 5151,
+    "errors": 11936,
     "source_reports": 9,
     "jurisdictions": 29
   },
@@ -20,12 +20,12 @@
       "count": 852
     },
     {
-      "jurisdiction": "USA Federal",
-      "count": 232
+      "jurisdiction": "Manitoba",
+      "count": 316
     },
     {
-      "jurisdiction": "Manitoba",
-      "count": 221
+      "jurisdiction": "USA Federal",
+      "count": 232
     },
     {
       "jurisdiction": "Ontario",
@@ -135,118 +135,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1558
+      "count": 1653
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/visiting/tour.html"
+    "url": "https://www.gov.mb.ca/legislature/about/lamc.html"
   },
   "recent_pdfs": [
     {
-      "title": "https://www.gov.mb.ca/legislature/visiting/docs/insidetheassembly.pdf",
+      "title": "December 21, 2016",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/docs/insidetheassembly.pdf",
-      "downloaded_at": "2026-08-01T14:33:32.636180+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/december_21_2016.pdf",
+      "downloaded_at": "2026-08-01T14:35:33.219568+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://www.gov.mb.ca/legislature/visiting/activities/fossil_hunt.pdf",
+      "title": "January 9, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/fossil_hunt.pdf",
-      "downloaded_at": "2026-08-01T14:33:11.461425+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_9_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:32.613167+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Plants of the Manitoba Legislative Grounds",
+      "title": "January 18, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/docs/garden_facts_of_the_leg.pdf",
-      "downloaded_at": "2026-08-01T14:33:09.932804+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_18_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:32.010412+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Senior Years Scavenger Hunt",
+      "title": "Janurary 30, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/outdoor_scavenger_hunt_highschool.pdf",
-      "downloaded_at": "2026-08-01T14:33:09.196962+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_30_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:31.530128+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Middle Years Scavenger Hunt",
+      "title": "March 3, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/outdoor_scavenger_hunt_middleyears.pdf",
-      "downloaded_at": "2026-08-01T14:33:08.484815+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/march_3_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:30.849422+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Early Years Scavenger Hunt",
+      "title": "April 10, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/outdoor_scavenger_hunt_elementary.pdf",
-      "downloaded_at": "2026-08-01T14:33:06.956579+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/april_10_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:29.393086+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Daycare Activity Sheets",
+      "title": "May 15, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/daycare_activity_sheets.pdf",
-      "downloaded_at": "2026-08-01T14:33:06.296944+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/may_15_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:28.786711+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Golden Boy Coloring page",
+      "title": "May 29, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/docs/golden_boy_colouring_page.pdf",
-      "downloaded_at": "2026-08-01T14:33:05.568975+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/may_29_ 2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:28.208201+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Golden Boy Factsheet",
+      "title": "August 29, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/docs/goldenboy_factsheet.pdf",
-      "downloaded_at": "2026-08-01T14:33:04.884883+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/august_29_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:27.636138+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Word Association - Heraldic Coat of Arms",
+      "title": "October 11, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/word_association_heraldic_coat_of_arms.pdf",
-      "downloaded_at": "2026-08-01T14:33:04.016681+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/october_11_2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:27.012517+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "White Spruce Maze",
+      "title": "December 11, 2017",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/white_spruce_maze.pdf",
-      "downloaded_at": "2026-08-01T14:33:02.475444+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/december_11_ 2017.pdf",
+      "downloaded_at": "2026-08-01T14:35:24.813272+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "The Augmented Coat of Arms Coloring Page",
+      "title": "January 23, 2018",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/augmented_coat_of_arms_coloring_page.pdf",
-      "downloaded_at": "2026-08-01T14:33:01.780383+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/january_23_2018.pdf",
+      "downloaded_at": "2026-08-01T14:35:24.135382+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Mosasaur Fact Sheet and Coloring Page",
+      "title": "May 14, 2018",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/mosasaur_factsheet_colouring_page.pdf",
-      "downloaded_at": "2026-08-01T14:33:01.063864+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/may_14_2018.pdf",
+      "downloaded_at": "2026-08-01T14:35:23.576313+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Mace Colouring Page",
+      "title": "September 13, 2018",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/mace.pdf",
-      "downloaded_at": "2026-08-01T14:33:00.445083+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/september_13_2018.pdf",
+      "downloaded_at": "2026-08-01T14:35:22.731760+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Prairie Crocus Colouring Page",
+      "title": "October 23, 2018",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/visiting/activities/crocus.pdf",
-      "downloaded_at": "2026-08-01T14:32:59.815413+00:00",
+      "url": "https://www.gov.mb.ca/legislature/about/lamc/october_23_2018.pdf",
+      "downloaded_at": "2026-08-01T14:35:22.160316+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 4510,
-    "pdfs_downloaded": 4510,
-    "pdfs_skipped_existing": 114,
+    "pdfs_discovered": 4605,
+    "pdfs_downloaded": 4605,
+    "pdfs_skipped_existing": 115,
     "pdfs_capped": 0,
-    "errors": 9599
+    "errors": 9602
   },
-  "manifest_generated_at": "2026-08-01T14:33:32.636300+00:00"
+  "manifest_generated_at": "2026-08-01T14:35:33.219659+00:00"
 }
