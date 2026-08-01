@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T14:17:11.577405+00:00",
+  "updated_at": "2026-08-01T14:17:39.271513+00:00",
   "phase": "running",
-  "message": "downloaded 4135 new this run",
+  "message": "finished Ontario / parliamentary_bills: +31 PDFs",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 4681,
-    "errors": 11927,
+    "pdfs": 4711,
+    "errors": 11929,
     "source_reports": 9,
     "jurisdictions": 28
   },
@@ -30,6 +30,10 @@
     {
       "jurisdiction": "UK",
       "count": 42
+    },
+    {
+      "jurisdiction": "Ontario",
+      "count": 35
     },
     {
       "jurisdiction": "Singapore",
@@ -73,10 +77,6 @@
     },
     {
       "jurisdiction": "Portugal",
-      "count": 5
-    },
-    {
-      "jurisdiction": "Ontario",
       "count": 5
     },
     {
@@ -131,118 +131,120 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1307
+      "count": 1337
     }
   ],
   "current_source": {
     "jurisdiction": "Ontario",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.ola.org/en/members"
+    "url": "https://www.ola.org/en/legislative-business/bills",
+    "pdfs_downloaded": 31,
+    "pdfs_candidates": 37
   },
   "recent_pdfs": [
     {
-      "title": "Chamber seating plan (PDF)",
+      "title": "2015–2016 Individual members’ expenditures (PDF)",
       "jurisdiction": "Ontario",
-      "url": "https://www.ola.org/sites/default/files/common/pdf/chamber-seating-plan-en.pdf",
-      "downloaded_at": "2026-08-01T14:17:10.909418+00:00",
+      "url": "https://www.ola.org/sites/default/files/2018-01/2015-2016-members-expenses-en.pdf",
+      "downloaded_at": "2026-08-01T14:17:37.598051+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 21, Number 11 November 1990",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1990/350813_Vol21_no11_Nov.pdf",
-      "downloaded_at": "2026-08-01T14:13:16.440183+00:00",
+      "title": "2016–2017 Individual members’ expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/2018-01/2016-2017-members-expenses-en.pdf",
+      "downloaded_at": "2026-08-01T14:17:36.996426+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 21, Number 12 December 1990",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1990/350813_Vol21_no12_Dec.pdf",
-      "downloaded_at": "2026-08-01T14:13:16.002854+00:00",
+      "title": "2017–2018 Individual members’ expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2017-2018-members-expenses-en.pdf",
+      "downloaded_at": "2026-08-01T14:17:36.372288+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 1 January 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No1_Jan.pdf",
-      "downloaded_at": "2026-08-01T14:13:15.568096+00:00",
+      "title": "2018–2019 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2018-2019-members-expenses-en.pdf",
+      "downloaded_at": "2026-08-01T14:17:35.777457+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 2 February 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No2_Feb.pdf",
-      "downloaded_at": "2026-08-01T14:13:15.133341+00:00",
+      "title": "2019-2020 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2019-2020-members-expenses-en.pdf",
+      "downloaded_at": "2026-08-01T14:17:35.183043+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 3 March 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No3_Mar.pdf",
-      "downloaded_at": "2026-08-01T14:13:13.851233+00:00",
+      "title": "2020–2021 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2020-2021%20Individual%20members'%20expenses.pdf",
+      "downloaded_at": "2026-08-01T14:17:33.758022+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 4 April 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No4_Apr.pdf",
-      "downloaded_at": "2026-08-01T14:13:13.407832+00:00",
+      "title": "2021–2022 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2021-2022-individual-members-expenses-en.pdf",
+      "downloaded_at": "2026-08-01T14:17:33.215624+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 5 May 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No5_May.pdf",
-      "downloaded_at": "2026-08-01T14:13:12.973319+00:00",
+      "title": "2022–2023 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2022-2023-individual-members-expenses.pdf",
+      "downloaded_at": "2026-08-01T14:17:32.586158+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 6 June 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No6_June.pdf",
-      "downloaded_at": "2026-08-01T14:13:12.406674+00:00",
+      "title": "2023–2024 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2023–2024-individual-members-expenditures.pdf",
+      "downloaded_at": "2026-08-01T14:17:32.128049+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 7 July 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No7_July.pdf",
-      "downloaded_at": "2026-08-01T14:13:11.967350+00:00",
+      "title": "2024–2025 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2024-2025-individual-members-expenditures.pdf",
+      "downloaded_at": "2026-08-01T14:17:31.564868+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 8 August 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No8_Aug.pdf",
-      "downloaded_at": "2026-08-01T14:13:10.679374+00:00",
+      "title": "2025–2026 Individual members' expenditures (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2025-2026-individual-members-expenditures.pdf",
+      "downloaded_at": "2026-08-01T14:17:30.248035+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 9 September 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No9_Sep.pdf",
-      "downloaded_at": "2026-08-01T14:13:10.242221+00:00",
+      "title": "Rapport sur l'accessibilité autocertifié 2014 (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/2014-Accessibility-Compliance-Report-French.pdf",
+      "downloaded_at": "2026-08-01T14:17:29.152454+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 10 October 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No10_Oct.pdf",
-      "downloaded_at": "2026-08-01T14:13:09.549488+00:00",
+      "title": "Quand les lois et règlements de l’Ontario entrent-ils en vigueur_0.pdf",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/node-files/llrs/document/pdf/2024/2024-02/Quand%20les%20lois%20et%20r%C3%A8glements%20de%20l%E2%80%99Ontario%20entrent-ils%20en%20vigueur_0.pdf",
+      "downloaded_at": "2026-08-01T14:17:28.644678+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 11 November 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No11_Nov.pdf",
-      "downloaded_at": "2026-08-01T14:13:09.103854+00:00",
+      "title": "Comment un projet de loi de l’Ontario devient loi.pdf",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/node-files/llrs/document/pdf/2023/2023-09/Comment%20un%20projet%20de%20loi%20de%20l%E2%80%99Ontario%20devient%20loi.pdf",
+      "downloaded_at": "2026-08-01T14:17:28.034874+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Volume 22, Number 12 December 1991",
-      "jurisdiction": "British Columbia",
-      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/1991/350813_Vol22_No12_Dec.pdf",
-      "downloaded_at": "2026-08-01T14:13:08.667276+00:00",
+      "title": "formulaire de demande (PDF)",
+      "jurisdiction": "Ontario",
+      "url": "https://www.ola.org/sites/default/files/common/pdf/Formule-de-demande-manifestations-activites-speciales-terrains-de-lassemblee-legislative-2024.pdf",
+      "downloaded_at": "2026-08-01T14:17:27.384730+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -342,11 +344,11 @@
     "sources_visited": 5,
     "pages_crawled": 1201,
     "js_pages": 126,
-    "pdfs_discovered": 4135,
-    "pdfs_downloaded": 4135,
-    "pdfs_skipped_existing": 111,
+    "pdfs_discovered": 4165,
+    "pdfs_downloaded": 4165,
+    "pdfs_skipped_existing": 113,
     "pdfs_capped": 0,
-    "errors": 9593
+    "errors": 9595
   },
-  "manifest_generated_at": "2026-08-01T14:17:10.909505+00:00"
+  "manifest_generated_at": "2026-08-01T14:17:38.582249+00:00"
 }
