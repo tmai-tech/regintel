@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:34:07.285367+00:00",
+  "updated_at": "2026-08-01T11:36:11.346310+00:00",
   "phase": "running",
-  "message": "downloaded 2285 new this run",
+  "message": "downloaded 2420 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 2831,
+    "pdfs": 2966,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 2373
+      "count": 2508
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 2377
+      "count": 2512
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p2/2021/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p2/2017/index-eng.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part II, volume 155, number 25 (4.1MB)",
+      "title": "Part II, volume 151, number 23 (1.8MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2021/2021-12-08/pdf/g2-15525.pdf",
-      "downloaded_at": "2026-08-01T11:34:06.924311+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2017/2017-11-15/pdf/g2-15123.pdf",
+      "downloaded_at": "2026-08-01T11:36:10.985019+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 155, number 26 (7.8MB)",
+      "title": "Part II, volume 151, number 24 (656KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2021/2021-12-22/pdf/g2-15526.pdf",
-      "downloaded_at": "2026-08-01T11:34:05.915530+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2017/2017-11-29/pdf/g2-15124.pdf",
+      "downloaded_at": "2026-08-01T11:36:10.319446+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to March 31, 2022 (7.6MB)",
+      "title": "Part II, volume 151, number 25 (3.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-31-c1/pdf/g2-156c1-eng.pdf",
-      "downloaded_at": "2026-08-01T11:34:04.326449+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2017/2017-12-13/pdf/g2-15125.pdf",
+      "downloaded_at": "2026-08-01T11:36:09.831408+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to June 30, 2022 (7.8MB)",
+      "title": "Part II, volume 151, number 26 (1.4MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-06-30-c2/pdf/g2-156c2-eng.pdf",
-      "downloaded_at": "2026-08-01T11:34:02.816564+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2017/2017-12-27/pdf/g2-15126.pdf",
+      "downloaded_at": "2026-08-01T11:36:08.963210+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to September 30, 2022 (7.5MB)",
+      "title": "Consolidated index to March 31, 2018 (6.4MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-09-30-c3/pdf/g2-156c3-eng.pdf",
-      "downloaded_at": "2026-08-01T11:34:01.203737+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-03-31-c1/pdf/g2-152c1-eng.pdf",
+      "downloaded_at": "2026-08-01T11:36:08.352238+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Consolidated index to December 31, 2022 (7.1MB)",
+      "title": "Consolidated index to June 30, 2018 (6.4MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-12-31-c4/pdf/g2-156c4-eng.pdf",
-      "downloaded_at": "2026-08-01T11:33:59.278805+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-06-30-c2/pdf/g2-152c2-eng.pdf",
+      "downloaded_at": "2026-08-01T11:36:06.534479+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 1 (4.0MB)",
+      "title": "Consolidated index to September 30, 2018 (6.6MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-01-05/pdf/g2-15601.pdf",
-      "downloaded_at": "2026-08-01T11:33:57.834874+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-09-30-c3/pdf/g2-152c3-eng.pdf",
+      "downloaded_at": "2026-08-01T11:36:05.206279+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 2 (1.3MB)",
+      "title": "Consolidated index to December 31, 2018 (7.5MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-01-19/pdf/g2-15602.pdf",
-      "downloaded_at": "2026-08-01T11:33:56.845926+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-12-31-c4/pdf/g2-152c4-eng.pdf",
+      "downloaded_at": "2026-08-01T11:36:03.789756+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 3 (658KB)",
+      "title": "Part II, volume 152, number 1 (1.1MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-02-02/pdf/g2-15603.pdf",
-      "downloaded_at": "2026-08-01T11:33:56.266920+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-01-10/pdf/g2-15201.pdf",
+      "downloaded_at": "2026-08-01T11:36:02.320744+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, Extra number 1 (303KB)",
+      "title": "Part II, volume 152, number 2 (586KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-02-15-x1/pdf/g2-156x1.pdf",
-      "downloaded_at": "2026-08-01T11:33:55.764662+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-01-24/pdf/g2-15202.pdf",
+      "downloaded_at": "2026-08-01T11:36:01.759772+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 4 (1.5MB)",
+      "title": "Part II, volume 152, number 3 (553KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-02-16/pdf/g2-15604.pdf",
-      "downloaded_at": "2026-08-01T11:33:54.886959+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-02-07/pdf/g2-15203.pdf",
+      "downloaded_at": "2026-08-01T11:36:00.817517+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, Extra number 2 (305KB)",
+      "title": "Part II, volume 152, number 4 (2.1MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-02-23-x2/pdf/g2-156x2.pdf",
-      "downloaded_at": "2026-08-01T11:33:54.270631+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-02-21/pdf/g2-15204.pdf",
+      "downloaded_at": "2026-08-01T11:36:00.285088+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 5 (2.9MB)",
+      "title": "Part II, volume 152, number 5 (558KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-02/pdf/g2-15605.pdf",
-      "downloaded_at": "2026-08-01T11:33:53.771628+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-03-07/pdf/g2-15205.pdf",
+      "downloaded_at": "2026-08-01T11:35:59.582131+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 6 (2.8MB)",
+      "title": "Part II, volume 152, number 6 (1.7MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/pdf/g2-15606.pdf",
-      "downloaded_at": "2026-08-01T11:33:52.943464+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-03-21/pdf/g2-15206.pdf",
+      "downloaded_at": "2026-08-01T11:35:59.094434+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part II, volume 156, number 7 (1.6MB)",
+      "title": "Part II, volume 152, number 7 (678KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-30/pdf/g2-15607.pdf",
-      "downloaded_at": "2026-08-01T11:33:52.122523+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2018/2018-04-04/pdf/g2-15207.pdf",
+      "downloaded_at": "2026-08-01T11:35:58.432368+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 2285,
-    "pdfs_downloaded": 2285,
+    "pdfs_discovered": 2420,
+    "pdfs_downloaded": 2420,
     "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:34:06.924398+00:00"
+  "manifest_generated_at": "2026-08-01T11:36:10.985107+00:00"
 }
