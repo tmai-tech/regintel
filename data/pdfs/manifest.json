@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T14:17:38.582249+00:00",
+  "generated_at": "2026-08-01T14:20:49.681457+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -61243,6 +61243,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T14:17:37.598051+00:00"
+    },
+    {
+      "url": "https://www.ontario.ca/files/2024-08/mlitsd-regulatory-requirements-for-ontario-businesses-ar-2024-08-15.pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.ontario.ca/page/business-and-economy",
+      "title": "Arabic",
+      "path": "data/pdfs/Ontario/official_gazette/mlitsd-regulatory-requirements-for-ontario-businesses-ar-2024-08-15.pdf",
+      "bytes": 97693,
+      "sha256": "42a6c2a27ba93fae",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:20:47.593781+00:00"
+    },
+    {
+      "url": "https://www.ontario.ca/files/2024-08/mlitsd-regulatory-requirements-for-ontario-businesses-zh-tw-2024-08-15.pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.ontario.ca/page/business-and-economy",
+      "title": "Chinese (Traditional)",
+      "path": "data/pdfs/Ontario/official_gazette/mlitsd-regulatory-requirements-for-ontario-businesses-zh-tw-2024-08-15.pdf",
+      "bytes": 212949,
+      "sha256": "b8e908d6cce56a2b",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:20:48.177062+00:00"
+    },
+    {
+      "url": "https://www.ontario.ca/files/2024-08/mlitsd-regulatory-requirements-for-ontario-businesses-zh-cn-2024-08-15.pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.ontario.ca/page/business-and-economy",
+      "title": "Chinese (Simplified)",
+      "path": "data/pdfs/Ontario/official_gazette/mlitsd-regulatory-requirements-for-ontario-businesses-zh-cn-2024-08-15.pdf",
+      "bytes": 261672,
+      "sha256": "1f87f802a77965c6",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:20:48.670759+00:00"
+    },
+    {
+      "url": "https://www.ontario.ca/files/2024-08/mlitsd-regulatory-requirements-for-ontario-businesses-en-2024-08-15.pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.ontario.ca/page/business-and-economy",
+      "title": "English",
+      "path": "data/pdfs/Ontario/official_gazette/mlitsd-regulatory-requirements-for-ontario-businesses-en-2024-08-15.pdf",
+      "bytes": 80373,
+      "sha256": "85699894bd11940d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:20:49.188226+00:00"
+    },
+    {
+      "url": "https://www.ontario.ca/files/2024-08/mlitsd-regulatory-requirements-for-ontario-businesses-fa-2024-08-15.pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.ontario.ca/page/business-and-economy",
+      "title": "Farsi",
+      "path": "data/pdfs/Ontario/official_gazette/mlitsd-regulatory-requirements-for-ontario-businesses-fa-2024-08-15.pdf",
+      "bytes": 89420,
+      "sha256": "741097c75f2d5438",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T14:20:49.681366+00:00"
     }
   ],
   "discovered": [
@@ -140842,11 +140907,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 1201,
-    "js_pages": 126,
-    "pdfs_discovered": 4165,
-    "pdfs_downloaded": 4165,
+    "sources_visited": 6,
+    "pages_crawled": 1501,
+    "js_pages": 138,
+    "pdfs_discovered": 4170,
+    "pdfs_downloaded": 4170,
     "pdfs_skipped_existing": 113,
     "pdfs_capped": 0,
     "errors": 9595
