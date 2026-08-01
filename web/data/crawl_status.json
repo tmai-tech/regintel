@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T23:29:55.776071+00:00",
+  "updated_at": "2026-08-01T23:31:56.012378+00:00",
   "phase": "running",
-  "message": "downloaded 325 new this run",
+  "message": "downloaded 430 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 9247,
+    "pdfs": 9352,
     "errors": 21585,
     "source_reports": 16,
     "jurisdictions": 29
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 4412
+      "count": 4517
     },
     {
       "jurisdiction": "Canada Federal",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 5749
+      "count": 5854
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/index_40th/index_40th_3rd.html"
+    "url": "https://www.gov.mb.ca/legislature/business/index_38th/index_38th_3rd.html"
   },
   "recent_pdfs": [
     {
-      "title": "Appendix-J - Ministerial Statements",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_j.pdf",
-      "downloaded_at": "2026-08-01T23:29:54.470512+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Appendix-I - Members' Statements",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_i.pdf",
-      "downloaded_at": "2026-08-01T23:29:53.755410+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Appendix-H - Petitions",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_h.pdf",
-      "downloaded_at": "2026-08-01T23:29:52.990624+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Appendix-G - Sessional Papers",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_g.pdf",
-      "downloaded_at": "2026-08-01T23:29:52.289819+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Appendix-F - Intersessional Papers",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_f.pdf",
-      "downloaded_at": "2026-08-01T23:29:51.361311+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
       "title": "Appendix-E - Tabled Papers",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_e.pdf",
-      "downloaded_at": "2026-08-01T23:29:49.035213+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/3rd/appendix_e.pdf",
+      "downloaded_at": "2026-08-01T23:31:54.709120+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-D - Bill Status",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_d.pdf",
-      "downloaded_at": "2026-08-01T23:29:48.194443+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/3rd/appendix_d.pdf",
+      "downloaded_at": "2026-08-01T23:31:53.971384+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-C - Bills not assented to",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_c.pdf",
-      "downloaded_at": "2026-08-01T23:29:47.379300+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/3rd/appendix_c.pdf",
+      "downloaded_at": "2026-08-01T23:31:53.165390+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-B - Private Bills",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_b.pdf",
-      "downloaded_at": "2026-08-01T23:29:46.690297+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/3rd/appendix_b.pdf",
+      "downloaded_at": "2026-08-01T23:31:52.445045+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-A - Bills assented to",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/appendix_a.pdf",
-      "downloaded_at": "2026-08-01T23:29:46.072547+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/3rd/appendix_a.pdf",
+      "downloaded_at": "2026-08-01T23:31:51.827548+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Index",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/3rd/index_3rd_40th.pdf",
-      "downloaded_at": "2026-08-01T23:29:43.669625+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/3rd/index_3rd_38th.pdf",
+      "downloaded_at": "2026-08-01T23:31:49.380999+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-J - Ministerial Statements",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/4th/appendix_j.pdf",
-      "downloaded_at": "2026-08-01T23:29:42.742350+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_j.pdf",
+      "downloaded_at": "2026-08-01T23:31:48.490542+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-I - Members' Statements",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/4th/appendix_i.pdf",
-      "downloaded_at": "2026-08-01T23:29:42.126829+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_i.pdf",
+      "downloaded_at": "2026-08-01T23:31:47.801881+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-H - Petitions",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/4th/appendix_h.pdf",
-      "downloaded_at": "2026-08-01T23:29:41.384425+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_h.pdf",
+      "downloaded_at": "2026-08-01T23:31:47.052674+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "Appendix-G - Sessional Papers",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/index_40th/4th/appendix_g.pdf",
-      "downloaded_at": "2026-08-01T23:29:40.442417+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_g.pdf",
+      "downloaded_at": "2026-08-01T23:31:46.072710+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Appendix-F - Intersessional Papers",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_f.pdf",
+      "downloaded_at": "2026-08-01T23:31:43.722953+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Appendix-E - Tabled Papers",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_e.pdf",
+      "downloaded_at": "2026-08-01T23:31:42.888537+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Appendix-D - Bill Status",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_d.pdf",
+      "downloaded_at": "2026-08-01T23:31:42.208006+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Appendix-C - Bills not assented to",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_c.pdf",
+      "downloaded_at": "2026-08-01T23:31:41.393135+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Appendix-B - Private Bills",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/index_38th/4th/appendix_b.pdf",
+      "downloaded_at": "2026-08-01T23:31:40.652211+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 144,
-    "pdfs_discovered": 325,
-    "pdfs_downloaded": 325,
+    "pdfs_discovered": 430,
+    "pdfs_downloaded": 430,
     "pdfs_skipped_existing": 8490,
     "pdfs_capped": 0,
     "errors": 9628
   },
-  "manifest_generated_at": "2026-08-01T23:29:54.470605+00:00"
+  "manifest_generated_at": "2026-08-01T23:31:54.709216+00:00"
 }
