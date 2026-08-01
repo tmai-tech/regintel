@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T11:50:23.565799+00:00",
+  "generated_at": "2026-08-01T11:51:08.642825+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -49738,6 +49738,32 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T11:50:23.565706+00:00"
+    },
+    {
+      "url": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-18/html/reg1-fra.html",
+      "title": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf (PDF)",
+      "path": "data/pdfs/Canada_Federal/official_gazette/Rapport-annuel-2023-2024.pdf",
+      "bytes": 8345064,
+      "sha256": "e7c61c9f42a4b9e4",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:50:42.124301+00:00"
+    },
+    {
+      "url": "https://ressources-naturelles.canada.ca/sites/nrcan/files/public-consultation/summary-engagement-indigenous-partners-2023-08-04-fra.pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/2026-06-20/html/reg4-fra.html",
+      "title": "Résumé de la mobilisation avec les partenaires autochtones (PDF)",
+      "path": "data/pdfs/Canada_Federal/official_gazette/summary-engagement-indigenous-partners-2023-08-04-fra.pdf",
+      "bytes": 624059,
+      "sha256": "8fcb2fb524772524",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T11:51:07.911368+00:00"
     }
   ],
   "discovered": [
@@ -71904,17 +71930,44 @@
       "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
       "stage": "download_pdf",
       "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/fr/pub/89-657-x/89-657-x2017001-fra.pdf?st=6vF6SzT9",
+      "error": "_ssl.c:993: The handshake operation timed out",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette"
+    },
+    {
+      "url": "https://www.canada.ca/content/dam/fin/consultations/2021/acob-ccsbo-fra.pdf",
+      "error": "The read operation timed out",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette"
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2024/sc-hc/H144-51-2018-fra.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal"
+    },
+    {
+      "url": "https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90464/90552/889384/4445358/4445359/4445363/4607603/C37235-1_Commission_-_Report_OH-001-2024_-_Pouce_Coup%C3%A9_Pipe_Line_Ltd._-_Application_for_the_Taylor_to_Gordondale_Pipeline_Project_-_A9Q9S7.pdf?nodeid=4607116&vernum=-2",
+      "error": "[Errno 104] Connection reset by peer",
+      "stage": "download_pdf",
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette"
     }
   ],
   "stats": {
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 3280,
-    "pdfs_downloaded": 3280,
+    "pdfs_discovered": 3282,
+    "pdfs_downloaded": 3282,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
-    "errors": 24
+    "errors": 28
   },
   "source_reports": [
     {

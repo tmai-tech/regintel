@@ -1,5 +1,55 @@
 [
   {
+    "id": "8fcb2fb524772524",
+    "title": "Résumé de la mobilisation avec les partenaires autochtones (PDF)",
+    "filename": "summary-engagement-indigenous-partners-2023-08-04-fra.pdf",
+    "jurisdiction": "Canada Federal",
+    "source_kind": "official_gazette",
+    "law_type": "consultation_paper",
+    "year": 2023,
+    "years": [
+      2023
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "ressources-naturelles.canada.ca",
+    "filename_tags": [],
+    "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/2026-06-20/html/reg4-fra.html",
+    "url": "https://ressources-naturelles.canada.ca/sites/nrcan/files/public-consultation/summary-engagement-indigenous-partners-2023-08-04-fra.pdf",
+    "open_url": "https://ressources-naturelles.canada.ca/sites/nrcan/files/public-consultation/summary-engagement-indigenous-partners-2023-08-04-fra.pdf",
+    "download_url": null,
+    "bytes": 624059,
+    "sha256": "8fcb2fb524772524",
+    "downloaded_at": "2026-08-01T11:51:07.911368+00:00",
+    "local_path": "data/pdfs/Canada_Federal/official_gazette/summary-engagement-indigenous-partners-2023-08-04-fra.pdf"
+  },
+  {
+    "id": "e7c61c9f42a4b9e4",
+    "title": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf (PDF)",
+    "filename": "Rapport-annuel-2023-2024.pdf",
+    "jurisdiction": "Canada Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2025,
+    "years": [
+      2025,
+      2024,
+      2023
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "languesofficielles.nb.ca",
+    "filename_tags": [],
+    "source_page": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-18/html/reg1-fra.html",
+    "url": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf",
+    "open_url": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf",
+    "download_url": null,
+    "bytes": 8345064,
+    "sha256": "e7c61c9f42a4b9e4",
+    "downloaded_at": "2026-08-01T11:50:42.124301+00:00",
+    "local_path": "data/pdfs/Canada_Federal/official_gazette/Rapport-annuel-2023-2024.pdf"
+  },
+  {
     "id": "bb8119b10622c91a",
     "title": "Index codifié jusqu’au 30 juin 2008 (2.5Mo)",
     "filename": "g2-142c2-f.pdf",
