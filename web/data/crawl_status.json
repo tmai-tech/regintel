@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:15:50.263660+00:00",
+  "updated_at": "2026-08-01T11:17:51.291292+00:00",
   "phase": "running",
-  "message": "downloaded 745 new this run",
+  "message": "downloaded 930 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 1291,
+    "pdfs": 1476,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 833
+      "count": 1018
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 837
+      "count": 1022
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p1/2018/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p1/2015/index-eng.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part I, volume 152, number 27 (770KB)",
+      "title": "Part I, volume 149, number 40 (294KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-07-07/pdf/g1-15227.pdf",
-      "downloaded_at": "2026-08-01T11:15:50.071298+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-03/pdf/g1-14940.pdf",
+      "downloaded_at": "2026-08-01T11:17:51.082192+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 28 (1.0MB)",
+      "title": "Part I, volume 149, number 41 (165KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-07-14/pdf/g1-15228.pdf",
-      "downloaded_at": "2026-08-01T11:15:49.504485+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-10/pdf/g1-14941.pdf",
+      "downloaded_at": "2026-08-01T11:17:50.591923+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, Extra number 3 (323KB)",
+      "title": "Part I, volume 149, Extra number 4 (191KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-07-19-x3/pdf/g1-152x3.pdf",
-      "downloaded_at": "2026-08-01T11:15:48.896440+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-13-x4/pdf/g1-149x4.pdf",
+      "downloaded_at": "2026-08-01T11:17:50.157508+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 29 (1.1MB)",
+      "title": "Part I, volume 149, number 42 (444KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-07-21/pdf/g1-15229.pdf",
-      "downloaded_at": "2026-08-01T11:15:48.423729+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-17/pdf/g1-14942.pdf",
+      "downloaded_at": "2026-08-01T11:17:49.706330+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 30 (736KB)",
+      "title": "Part I, volume 149, number 43 (296KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-07-28/pdf/g1-15230.pdf",
-      "downloaded_at": "2026-08-01T11:15:47.828336+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-24/pdf/g1-14943.pdf",
+      "downloaded_at": "2026-08-01T11:17:49.218927+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 31 (617KB)",
+      "title": "Part I, volume 149, Extra number 5 ( 92KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-08-04/pdf/g1-15231.pdf",
-      "downloaded_at": "2026-08-01T11:15:47.057820+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-30-x5/pdf/g1-149x5.pdf",
+      "downloaded_at": "2026-08-01T11:17:48.509174+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 32 (506KB)",
+      "title": "Part I, volume 149, number 44 (207KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-08-11/pdf/g1-15232.pdf",
-      "downloaded_at": "2026-08-01T11:15:46.549870+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-10-31/pdf/g1-14944.pdf",
+      "downloaded_at": "2026-08-01T11:17:48.076425+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 33 (701KB)",
+      "title": "Part I, volume 149, Extra number 6 (113KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-08-18/pdf/g1-15233.pdf",
-      "downloaded_at": "2026-08-01T11:15:46.062347+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-02-x6/pdf/g1-149x6.pdf",
+      "downloaded_at": "2026-08-01T11:17:47.587249+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 34 (780KB)",
+      "title": "Part I, volume 149, Extra number 7 (117KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-08-25/pdf/g1-15234.pdf",
-      "downloaded_at": "2026-08-01T11:15:45.552453+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-03-x7/pdf/g1-149x7.pdf",
+      "downloaded_at": "2026-08-01T11:17:47.137782+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 35 (776KB)",
+      "title": "Part I, volume 149, Extra number 8 (127KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-09-01/pdf/g1-15235.pdf",
-      "downloaded_at": "2026-08-01T11:15:45.009126+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-05-x8/pdf/g1-149x8.pdf",
+      "downloaded_at": "2026-08-01T11:17:46.704669+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 36 (558KB)",
+      "title": "Part I, volume 149, Extra number 9 (101KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-09-08/pdf/g1-15236.pdf",
-      "downloaded_at": "2026-08-01T11:15:44.237463+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-06-x9/pdf/g1-149x9.pdf",
+      "downloaded_at": "2026-08-01T11:17:46.002807+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 37 (785KB)",
+      "title": "Part I, volume 149, number 45 (1.0MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-09-15/pdf/g1-15237.pdf",
-      "downloaded_at": "2026-08-01T11:15:43.713594+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-07/pdf/g1-14945.pdf",
+      "downloaded_at": "2026-08-01T11:17:45.568724+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 38 (673KB)",
+      "title": "Part I, volume 149, Extra number 10 ( 91KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-09-22/pdf/g1-15238.pdf",
-      "downloaded_at": "2026-08-01T11:15:43.126310+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-09-x10/pdf/g1-149x10.pdf",
+      "downloaded_at": "2026-08-01T11:17:44.983794+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 39 (1.1MB)",
+      "title": "Part I, volume 149, Extra number 11 ( 90KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-09-29/pdf/g1-15239.pdf",
-      "downloaded_at": "2026-08-01T11:15:42.583375+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-13-x11/pdf/g1-149x11.pdf",
+      "downloaded_at": "2026-08-01T11:17:44.568827+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 152, number 40 (1.2MB)",
+      "title": "Part I, volume 149, number 46 (308KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2018/2018-10-06/pdf/g1-15240.pdf",
-      "downloaded_at": "2026-08-01T11:15:41.978622+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2015/2015-11-14/pdf/g1-14946.pdf",
+      "downloaded_at": "2026-08-01T11:17:44.155213+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 745,
-    "pdfs_downloaded": 745,
+    "pdfs_discovered": 930,
+    "pdfs_downloaded": 930,
     "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:15:50.071384+00:00"
+  "manifest_generated_at": "2026-08-01T11:17:51.082279+00:00"
 }
