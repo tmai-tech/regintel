@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T14:05:54.176902+00:00",
+  "updated_at": "2026-08-01T14:07:56.014084+00:00",
   "phase": "running",
-  "message": "downloaded 3460 new this run",
+  "message": "downloaded 3640 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 4006,
-    "errors": 11919,
+    "pdfs": 4186,
+    "errors": 11926,
     "source_reports": 9,
     "jurisdictions": 28
   },
@@ -16,12 +16,12 @@
       "count": 3370
     },
     {
-      "jurisdiction": "USA Federal",
-      "count": 232
+      "jurisdiction": "British Columbia",
+      "count": 358
     },
     {
-      "jurisdiction": "British Columbia",
-      "count": 178
+      "jurisdiction": "USA Federal",
+      "count": 232
     },
     {
       "jurisdiction": "India",
@@ -131,118 +131,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 632
+      "count": 812
     }
   ],
   "current_source": {
     "jurisdiction": "British Columbia",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.leg.bc.ca/parliamentary-business/parliamentary-procedure/private-bills"
+    "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/index.htm"
   },
   "recent_pdfs": [
     {
-      "title": "Example – Sample Private Bill",
+      "title": "Kootenay-Rockies",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Example-Sample-Private-Bill.pdf",
-      "downloaded_at": "2026-08-01T14:05:53.614825+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kootenay_Rockies_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:55.414423+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Example – Form of Petition",
+      "title": "Kootenay-Monashee",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Example-Form-of-Petition.pdf",
-      "downloaded_at": "2026-08-01T14:05:53.225030+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kootenay_Monashee_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:54.944250+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Downloadable PDF of Applying for a Private Bill",
+      "title": "Kootenay Central",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Applying-for-Private-Bill.pdf",
-      "downloaded_at": "2026-08-01T14:05:52.108213+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kootenay_Central_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:54.463028+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Downloadable PDF of the Guidelines for Petitioning the Legislative Assembly",
+      "title": "Kelowna-Mission",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/PetitionGuidelinesApril2026.pdf",
-      "downloaded_at": "2026-08-01T14:05:51.688603+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kelowna_Mission_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:53.834474+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "43rd Commonwealth Parliamentary Association Canadian Regional Parliamentary Seminar",
+      "title": "Kelowna-Lake Country-Coldstream",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR-Activity-Report-2024-01-08-CPA-Cnd-Regional-Parliamentary-Seminar.pdf",
-      "downloaded_at": "2026-08-01T13:57:47.096359+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kelowna_Lake_Country_Coldstream_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:53.366162+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "38th Session of the Americas Regional Assembly of the Parliamentary Assembly of the Francophonie | 38e session de l’asse",
+      "title": "Kelowna Centre",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR-Activity-Report-2023-10-20-APF-Louisiana.pdf",
-      "downloaded_at": "2026-08-01T13:57:45.976774+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kelowna_Centre_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:52.161126+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "59th Commonwealth Parliamentary Association (CPA) Canadian Regional Conference and Commonwealth Women Parliamentarians (",
+      "title": "Kamloops-North Thompson",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR-Activity-Report-2023-10-28-CPA-Cnd-Regional-Conference-and-CWP-Canadian-Regional-Meeting.pdf",
-      "downloaded_at": "2026-08-01T13:57:45.587630+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kamloops_North_Thompson_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:51.694175+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "49th Session of the Parliamentary Assembly of the Francophonie | 49e Session de l’assemblée parlementaire de la francoph",
+      "title": "Kamloops Centre",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Interparliamentary-Activity-Report-APF-Montreal-2024.pdf",
-      "downloaded_at": "2026-08-01T13:57:45.182369+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kamloops_Centre_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:51.228634+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "60th Commonwealth Parliamentary Association (CPA) Canadian Regional Conference and Commonwealth Women Parliamentarians (",
+      "title": "Juan de Fuca-Malahat",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR_2024_CPA-CWP-CRC.pdf",
-      "downloaded_at": "2026-08-01T13:57:44.792558+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Juan_de_Fuca_Malahat_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:50.768931+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Canadian Council of Public Accounts Committees Conference",
+      "title": "Fraser-Nicola",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR_2024_CCPAC.pdf",
-      "downloaded_at": "2026-08-01T13:57:44.402754+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Fraser-Nicola_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:50.301716+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Interparliamentary Visit and Study Tour to the United Kingdom",
+      "title": "Esquimalt-Colwood",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR%20Activity%20Report%20-%202025-06-17%20-%20Legislative%20Asssembly%20of%20BC%20Interparliamentary%20Visit%20to%20UK%20-%20Final.pdf",
-      "downloaded_at": "2026-08-01T13:57:43.307180+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Esquimalt_Colwood_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:49.089080+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "40th Americas Regional Assembly of the Parliamentary Assembly of the Francophonie",
+      "title": "Delta South",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/IPR%20Activity%20Report_AFP%20ARAM%202025_Final_2025-11-27.pdf",
-      "downloaded_at": "2026-08-01T13:57:41.526919+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Delta_South_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:48.623920+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-not-seeking-re-election_V2_2024-09-19.pdf",
+      "title": "Delta North",
       "jurisdiction": "British Columbia",
-      "url": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-not-seeking-re-election_V2_2024-09-19.pdf",
-      "downloaded_at": "2026-08-01T13:57:39.700947+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Delta_North_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:48.160092+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-seeking-re-election_V2_2024-09-19.pdf",
+      "title": "Cowichan Valley",
       "jurisdiction": "British Columbia",
-      "url": "https://members.leg.bc.ca/wp-content/uploads/2024/10/Transition-Guide_Members-seeking-re-election_V2_2024-09-19.pdf",
-      "downloaded_at": "2026-08-01T13:57:39.319150+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Cowichan_Valley_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:47.566837+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://members.leg.bc.ca/wp-content/uploads/2026/07/TG-Leave-Office.pdf",
+      "title": "Courtenay-Comox",
       "jurisdiction": "British Columbia",
-      "url": "https://members.leg.bc.ca/wp-content/uploads/2026/07/TG-Leave-Office.pdf",
-      "downloaded_at": "2026-08-01T13:57:38.840849+00:00",
+      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Courtenay_Comox_BC.pdf",
+      "downloaded_at": "2026-08-01T14:07:47.115483+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -342,11 +342,11 @@
     "sources_visited": 3,
     "pages_crawled": 900,
     "js_pages": 119,
-    "pdfs_discovered": 3460,
-    "pdfs_downloaded": 3460,
-    "pdfs_skipped_existing": 108,
+    "pdfs_discovered": 3640,
+    "pdfs_downloaded": 3640,
+    "pdfs_skipped_existing": 109,
     "pdfs_capped": 0,
-    "errors": 9585
+    "errors": 9592
   },
-  "manifest_generated_at": "2026-08-01T14:05:53.614916+00:00"
+  "manifest_generated_at": "2026-08-01T14:07:55.414510+00:00"
 }
