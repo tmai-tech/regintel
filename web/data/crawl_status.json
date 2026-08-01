@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:48:21.404397+00:00",
+  "updated_at": "2026-08-01T11:50:24.016650+00:00",
   "phase": "running",
-  "message": "downloaded 3220 new this run",
+  "message": "downloaded 3280 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3766,
+    "pdfs": 3826,
     "errors": 2358,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 3308
+      "count": 3368
     },
     {
       "jurisdiction": "USA Federal",
@@ -123,7 +123,7 @@
   "by_source_kind": [
     {
       "source_kind": "official_gazette",
-      "count": 3312
+      "count": 3372
     },
     {
       "source_kind": "parliamentary_bills",
@@ -133,112 +133,112 @@
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p2/2023/index-fra.html"
+    "url": "https://gazette.gc.ca/rp-pr/p2/2008/index-fra.html"
   },
   "recent_pdfs": [
     {
-      "title": "Index codifié jusqu’au 30 juin 2023 (7.2Mo)",
+      "title": "Index codifié jusqu’au 30 juin 2008 (2.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-06-30-c2/pdf/g2-157c2-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:20.940585+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2008/2008-06-30-c2/pdf/g2-142c2-f.pdf",
+      "downloaded_at": "2026-08-01T11:50:23.565706+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu'au 30 septembre 2023 (7.4Mo)",
+      "title": "Index codifié jusqu’au 30 septembre 2008 (2.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-09-30-c3/pdf/g2-157c3-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:18.740191+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2008/2008-09-30-c3/pdf/g2-142c3-f.pdf",
+      "downloaded_at": "2026-08-01T11:50:22.498424+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu'au 31 décembre 2023 (7.5Mo)",
+      "title": "Index codifié jusqu’au 31 décembre 2008 (2.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-12-31-c4/pdf/g2-157c4-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:16.335964+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2008/2008-12-31-c4/pdf/g2-142c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:21.367415+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu’au 31 mars 2024 (7.6Mo)",
+      "title": "Index codifié jusqu’au 31 mars 2009 (2.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-03-31-c1/pdf/g2-158c1-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:13.996542+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-03-31-c1/pdf/g2-143c1-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:20.292668+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu’au 30 juin 2024 (8.5Mo)",
+      "title": "Index codifié jusqu’au 30 juin 2009 (2.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-06-30-c2/pdf/g2-158c2-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:11.681342+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-06-30-c2/pdf/g2-143c2-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:19.219296+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu'au 30 septembre 2024 (7.7Mo)",
+      "title": "Index codifié jusqu’au 30 septembre 2009 (2.2Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-09-30-c3/pdf/g2-158c3-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:08.618670+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-09-30-c3/pdf/g2-143c3-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:17.522367+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu'au 31 décembre 2024 (7.8Mo)",
+      "title": "Index codifié jusqu’au 31 décembre 2009 (2.6Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2024/2024-12-31-c4/pdf/g2-158c4-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:06.266545+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-12-31-c4/pdf/g2-143c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:16.541733+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu’au 31 mars 2025 ( 17Mo)",
+      "title": "Index codifié jusqu’au 31 mars 2010 (2.4Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-31-c1/pdf/g2-159c1-fra.pdf",
-      "downloaded_at": "2026-08-01T11:48:03.699700+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-03-31-c1/pdf/g2-144c1-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:15.370670+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu’au 30 juin 2025 ( 17Mo)",
+      "title": "Index codifié jusqu’au 30 juin 2010 (3.2Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-06-30-c2/pdf/g2-159c2-fra.pdf",
-      "downloaded_at": "2026-08-01T11:47:59.199172+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-06-30-c2/pdf/g2-144c2-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:14.295775+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu'au 30 septembre 2025 ( 27Mo)",
+      "title": "Index codifié jusqu’au 30 septembre 2010 (2.4Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-09-30-c3/pdf/g2-159c3-fra.pdf",
-      "downloaded_at": "2026-08-01T11:47:54.482836+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-09-30-c3/pdf/g2-144c3-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:13.091330+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu'au 31 décembre 2025 ( 16Mo)",
+      "title": "Index codifié jusqu’au 31 décembre 2010 (2.9Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-12-31-c4/pdf/g2-159c4-fra.pdf",
-      "downloaded_at": "2026-08-01T11:47:45.529070+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-12-31-c4/pdf/g2-144c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:11.448360+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Index codifié jusqu’au 31 mars 2026 ( 16Mo)",
+      "title": "Index codifié jusqu’au 31 mars 2011 (2.5Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2026/2026-03-31-c1/pdf/g2-160c1-fra.pdf",
-      "downloaded_at": "2026-08-01T11:47:41.246131+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2011/2011-03-31-c1/pdf/g2-145c1-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:10.234522+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Heavy fuel in the Arctic (Phase 1) (PDF)",
+      "title": "Index codifié jusqu’au 30 juin 2011 (4.1Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://www.pame.is/images/03_Projects/HFO/HFO_in_the_Artic_Phase_I.pdf",
-      "downloaded_at": "2026-08-01T11:47:34.971190+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2011/2011-06-30-c2/pdf/g2-145c2-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:09.121058+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "North American Emission Control Area (PDF)",
+      "title": "Index codifié jusqu’au 30 septembre 2011 (3.3Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://nepis.epa.gov/Exe/ZyPDF.cgi/P100AU0I.PDF?Dockey=P100AU0I.PDF",
-      "downloaded_at": "2026-08-01T11:47:31.525298+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2011/2011-09-30-c3/pdf/g2-145c3-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:07.658383+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Nunavut Land Claims Agreement Act (PDF)",
+      "title": "Index codifié jusqu’au 31 décembre 2011 ( 11Mo)",
       "jurisdiction": "Canada Federal",
-      "url": "https://laws-lois.justice.gc.ca/PDF/N-28.7.pdf",
-      "downloaded_at": "2026-08-01T11:47:30.323590+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p2/2011/2011-12-31-c4/pdf/g2-145c4-fra.pdf",
+      "downloaded_at": "2026-08-01T11:50:06.409948+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 3220,
-    "pdfs_downloaded": 3220,
+    "pdfs_discovered": 3280,
+    "pdfs_downloaded": 3280,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
     "errors": 24
   },
-  "manifest_generated_at": "2026-08-01T11:48:20.940680+00:00"
+  "manifest_generated_at": "2026-08-01T11:50:23.565799+00:00"
 }
