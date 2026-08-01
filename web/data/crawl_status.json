@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T14:29:24.512744+00:00",
+  "updated_at": "2026-08-01T14:31:24.841356+00:00",
   "phase": "running",
-  "message": "downloaded 4290 new this run",
+  "message": "downloaded 4395 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 4836,
+    "pdfs": 4941,
     "errors": 11933,
     "source_reports": 9,
     "jurisdictions": 29
@@ -26,6 +26,10 @@
     {
       "jurisdiction": "Ontario",
       "count": 159
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "count": 106
     },
     {
       "jurisdiction": "India",
@@ -122,10 +126,6 @@
     {
       "jurisdiction": "Germany",
       "count": 1
-    },
-    {
-      "jurisdiction": "Manitoba",
-      "count": 1
     }
   ],
   "by_source_kind": [
@@ -135,119 +135,119 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1338
+      "count": 1443
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/bills.html"
+    "url": "https://web2.gov.mb.ca/bills/sess/index.php"
   },
   "recent_pdfs": [
     {
-      "title": "Estimates Order",
+      "title": "amendment(s) adopted at Committee Stage",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/estimatesorder.pdf",
-      "downloaded_at": "2026-08-01T14:29:23.810907+00:00",
+      "url": "https://web2.gov.mb.ca/bills/43-3/b002cs.pdf",
+      "downloaded_at": "2026-08-01T14:31:24.132546+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Institution & Program Approval Application form",
-      "jurisdiction": "Ontario",
-      "url": "https://osap.gov.on.ca/prodconsum/groups/forms/documents/forms/tcont003568.pdf",
-      "downloaded_at": "2026-08-01T14:22:26.295441+00:00",
-      "source_kind": "official_gazette"
+      "title": "Sample Petition",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/sample.pdf",
+      "downloaded_at": "2026-08-01T14:31:22.580764+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "free activity book to keep your child entertained and creatively engaged",
-      "jurisdiction": "Ontario",
-      "url": "https://www.ontario.ca/files/2025-05/edu-welcome-to-kindergarten-activity-book-en-2025-05-23.pdf",
-      "downloaded_at": "2026-08-01T14:22:25.570059+00:00",
-      "source_kind": "official_gazette"
+      "title": "Model Petition",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/model.pdf",
+      "downloaded_at": "2026-08-01T14:31:21.904036+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Amira’s first day of kindergarten",
-      "jurisdiction": "Ontario",
-      "url": "https://www.ontario.ca/files/2025-05/edu-welcome-to-kindergarten-amira-story-en-2025-05-23.pdf",
-      "downloaded_at": "2026-08-01T14:22:24.964140+00:00",
-      "source_kind": "official_gazette"
+      "title": "General Petition Guidelines",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/guildelines.pdf",
+      "downloaded_at": "2026-08-01T14:31:21.423411+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Amir’s first day of kindergarten",
-      "jurisdiction": "Ontario",
-      "url": "https://www.ontario.ca/files/2025-05/edu-welcome-to-kindergarten-amir-story-en-2025-05-23.pdf",
-      "downloaded_at": "2026-08-01T14:22:24.271926+00:00",
-      "source_kind": "official_gazette"
+      "title": "Index",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/rulebookindex.pdf",
+      "downloaded_at": "2026-08-01T14:31:20.762502+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "embedded-url",
-      "jurisdiction": "Ontario",
-      "url": "https://www.ontario.ca/files/2022-03/mto-emissions-directive-en-pdf-2022-03-28.pdf",
-      "downloaded_at": "2026-08-01T14:22:22.630572+00:00",
-      "source_kind": "official_gazette"
+      "title": "Rules of the Assembly",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/rulebook.pdf",
+      "downloaded_at": "2026-08-01T14:31:19.271571+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Passenger/Light Duty Vehicle Inspection Standard",
-      "jurisdiction": "Ontario",
-      "url": "https://ontario.ca/files/2022-03/mto-passenger-light-duty-vehicle-inspection-standard-en-2022-03-18.pdf",
-      "downloaded_at": "2026-08-01T14:22:22.073311+00:00",
-      "source_kind": "official_gazette"
+      "title": "Legislative Assembly of Manitoba Rules Summary – November 2024 – What Has Changed",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/house_rules_2024_changes.pdf",
+      "downloaded_at": "2026-08-01T14:31:18.336543+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Beginner driver education curriculum standards",
-      "jurisdiction": "Ontario",
-      "url": "https://www.ontario.ca/files/2022-03/mto-beginner-driver-education-curriculum-standards-en-2022-03-18.pdf",
-      "downloaded_at": "2026-08-01T14:22:21.425346+00:00",
-      "source_kind": "official_gazette"
+      "title": "Current Order Paper",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/orderpaper.pdf",
+      "downloaded_at": "2026-08-01T14:31:17.743042+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Download and print a one-page summary of motorcycle driver and rider responsibilities.",
-      "jurisdiction": "Ontario",
-      "url": "https://www.ontario.ca/files/2025-09/mto-motorcycle-safety-infocard-en-2025-09-09.pdf",
-      "downloaded_at": "2026-08-01T14:22:20.890430+00:00",
-      "source_kind": "official_gazette"
+      "title": "Sessional Information",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/about/sessionalinfo.pdf",
+      "downloaded_at": "2026-08-01T14:31:17.139183+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Vietnamese",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-vn-2023-01-10.pdf",
-      "downloaded_at": "2026-08-01T14:22:20.131794+00:00",
-      "source_kind": "official_gazette"
+      "title": "Sessional Order",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/sessionalorder2025.pdf",
+      "downloaded_at": "2026-08-01T14:31:16.407725+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Urdu",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-ur-2023-01-10.pdf",
-      "downloaded_at": "2026-08-01T14:22:18.842298+00:00",
-      "source_kind": "official_gazette"
+      "title": "Sessional Calendar",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/sessional_calendar.pdf",
+      "downloaded_at": "2026-08-01T14:31:14.942625+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Ukranian",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-uk-2023-01-10.pdf",
-      "downloaded_at": "2026-08-01T14:22:18.408256+00:00",
-      "source_kind": "official_gazette"
+      "title": "Code of Conduct for Gallery Visitors",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/visiting/docs/code_of_conduct.pdf",
+      "downloaded_at": "2026-08-01T14:31:14.383873+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Tamil",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-ta-2023-01-10.pdf",
-      "downloaded_at": "2026-08-01T14:22:17.978468+00:00",
-      "source_kind": "official_gazette"
+      "title": "Parking Map",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/visiting/docs/parking_map.pdf",
+      "downloaded_at": "2026-08-01T14:31:13.790578+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Swampy Cree",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto-ges-in-class-screening-scr-2023-06-26.pdf",
-      "downloaded_at": "2026-08-01T14:22:17.436428+00:00",
-      "source_kind": "official_gazette"
+      "title": "quoted-path",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/hansard/43rd_3rd/hansardpdf/47b.pdf",
+      "downloaded_at": "2026-08-01T14:31:13.226300+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Spanish",
-      "jurisdiction": "Ontario",
-      "url": "https://files.ontario.ca/mto_1/mto-ges-in-class-screening-sp-2023-01-10.pdf",
-      "downloaded_at": "2026-08-01T14:22:17.002856+00:00",
-      "source_kind": "official_gazette"
+      "title": "quoted-path",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/hansard/43rd_3rd/hansardpdf/47a.pdf",
+      "downloaded_at": "2026-08-01T14:31:11.939603+00:00",
+      "source_kind": "parliamentary_bills"
     }
   ],
   "last_source_reports": [
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 4290,
-    "pdfs_downloaded": 4290,
-    "pdfs_skipped_existing": 113,
+    "pdfs_discovered": 4395,
+    "pdfs_downloaded": 4395,
+    "pdfs_skipped_existing": 114,
     "pdfs_capped": 0,
     "errors": 9599
   },
-  "manifest_generated_at": "2026-08-01T14:29:23.811025+00:00"
+  "manifest_generated_at": "2026-08-01T14:31:24.132638+00:00"
 }
