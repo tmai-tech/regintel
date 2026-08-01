@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T12:00:52.494492+00:00",
+  "updated_at": "2026-08-01T13:55:48.369668+00:00",
   "phase": "running",
-  "message": "downloaded 3285 new this run",
+  "message": "downloaded 3300 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3831,
-    "errors": 2362,
+    "pdfs": 3846,
+    "errors": 11271,
     "source_reports": 9,
     "jurisdictions": 28
   },
@@ -26,6 +26,10 @@
     {
       "jurisdiction": "UK",
       "count": 42
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "count": 18
     },
     {
       "jurisdiction": "Singapore",
@@ -96,10 +100,6 @@
       "count": 3
     },
     {
-      "jurisdiction": "British Columbia",
-      "count": 3
-    },
-    {
       "jurisdiction": "California",
       "count": 2
     },
@@ -131,119 +131,119 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 457
+      "count": 472
     }
   ],
   "current_source": {
     "jurisdiction": "British Columbia",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.leg.bc.ca/parliamentary-business/parliamentary-calendar"
+    "url": "https://www.leg.bc.ca/about/accountability/policy-suite"
   },
   "recent_pdfs": [
     {
-      "title": "​2025 Year at a Glance",
+      "title": "Creating and Updating Policies",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2025-Amended-November-2025.pdf",
-      "downloaded_at": "2026-08-01T12:00:52.038391+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/1100%20-%20Creating%20and%20Updating%20Policies.pdf",
+      "downloaded_at": "2026-08-01T13:55:47.832252+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "​2026 Year at a Glance",
+      "title": "Business Continuity Management",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2026.pdf",
-      "downloaded_at": "2026-08-01T12:00:51.624264+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/6300%20-%20Business%20Continuity%20Management.pdf",
+      "downloaded_at": "2026-08-01T13:55:47.437075+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "broadcast schedule",
+      "title": "Legislative Assembly Policy Framework",
       "jurisdiction": "British Columbia",
-      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/hansard-broadcasting/Broadcast-Schedule.pdf",
-      "downloaded_at": "2026-08-01T12:00:51.144435+00:00",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/1000%20-%20Legislative%20Assembly%20Policy%20Framework.pdf",
+      "downloaded_at": "2026-08-01T13:55:40.125071+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Résumé de la mobilisation avec les partenaires autochtones (PDF)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://ressources-naturelles.canada.ca/sites/nrcan/files/public-consultation/summary-engagement-indigenous-partners-2023-08-04-fra.pdf",
-      "downloaded_at": "2026-08-01T11:51:07.911368+00:00",
-      "source_kind": "official_gazette"
+      "title": "Public Accounts",
+      "jurisdiction": "British Columbia",
+      "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/government-finances/public-accounts/2024-25/pa-2024-25-crf-detailed-schedules-of-payments.pdf",
+      "downloaded_at": "2026-08-01T12:02:01.422381+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf (PDF)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://languesofficielles.nb.ca/wp-content/uploads/2025/01/Rapport-annuel-2023-2024.pdf",
-      "downloaded_at": "2026-08-01T11:50:42.124301+00:00",
-      "source_kind": "official_gazette"
+      "title": "First Nations and the Legislative Assembly of British Columbia: A Record of Historical Actions, Decisions and Statements",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/first-nations-historical-record.pdf",
+      "downloaded_at": "2026-08-01T12:01:00.583363+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 30 juin 2008 (2.5Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2008/2008-06-30-c2/pdf/g2-142c2-f.pdf",
-      "downloaded_at": "2026-08-01T11:50:23.565706+00:00",
-      "source_kind": "official_gazette"
+      "title": "news release",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/reconciliation-action-plan-news-release.pdf",
+      "downloaded_at": "2026-08-01T12:00:59.520442+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 30 septembre 2008 (2.5Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2008/2008-09-30-c3/pdf/g2-142c3-f.pdf",
-      "downloaded_at": "2026-08-01T11:50:22.498424+00:00",
-      "source_kind": "official_gazette"
+      "title": "Reconciliation Action Plan",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/reconciliation-action-plan.pdf",
+      "downloaded_at": "2026-08-01T12:00:59.109940+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 31 décembre 2008 (2.5Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2008/2008-12-31-c4/pdf/g2-142c4-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:21.367415+00:00",
-      "source_kind": "official_gazette"
+      "title": "Injunction order in respect of the Legislative Precinct",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Injunction_2020-02-13.pdf",
+      "downloaded_at": "2026-08-01T12:00:58.565692+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 31 mars 2009 (2.5Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-03-31-c1/pdf/g2-143c1-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:20.292668+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2018 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2018.pdf",
+      "downloaded_at": "2026-08-01T12:00:58.113831+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 30 juin 2009 (2.5Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-06-30-c2/pdf/g2-143c2-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:19.219296+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2019 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2019.pdf",
+      "downloaded_at": "2026-08-01T12:00:57.719233+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 30 septembre 2009 (2.2Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-09-30-c3/pdf/g2-143c3-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:17.522367+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2020 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2020.pdf",
+      "downloaded_at": "2026-08-01T12:00:56.723509+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 31 décembre 2009 (2.6Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2009/2009-12-31-c4/pdf/g2-143c4-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:16.541733+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2021 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2021.pdf",
+      "downloaded_at": "2026-08-01T12:00:56.317338+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 31 mars 2010 (2.4Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-03-31-c1/pdf/g2-144c1-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:15.370670+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2022 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2022.pdf",
+      "downloaded_at": "2026-08-01T12:00:55.909744+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 30 juin 2010 (3.2Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-06-30-c2/pdf/g2-144c2-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:14.295775+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2023 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2023.pdf",
+      "downloaded_at": "2026-08-01T12:00:55.509805+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Index codifié jusqu’au 30 septembre 2010 (2.4Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-09-30-c3/pdf/g2-144c3-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:13.091330+00:00",
-      "source_kind": "official_gazette"
+      "title": "​2024 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2024.pdf",
+      "downloaded_at": "2026-08-01T12:00:55.111224+00:00",
+      "source_kind": "parliamentary_bills"
     }
   ],
   "last_source_reports": [
@@ -342,11 +342,11 @@
     "sources_visited": 3,
     "pages_crawled": 900,
     "js_pages": 119,
-    "pdfs_discovered": 3285,
-    "pdfs_downloaded": 3285,
+    "pdfs_discovered": 3300,
+    "pdfs_downloaded": 3300,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
-    "errors": 28
+    "errors": 8937
   },
-  "manifest_generated_at": "2026-08-01T12:00:52.038498+00:00"
+  "manifest_generated_at": "2026-08-01T13:55:47.832341+00:00"
 }
