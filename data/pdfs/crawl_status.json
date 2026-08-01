@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T11:09:47.930065+00:00",
+  "updated_at": "2026-08-01T11:11:48.482066+00:00",
   "phase": "running",
-  "message": "downloaded 225 new this run",
+  "message": "downloaded 420 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 771,
+    "pdfs": 966,
     "errors": 2354,
     "source_reports": 9,
     "jurisdictions": 27
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Canada Federal",
-      "count": 313
+      "count": 508
     },
     {
       "jurisdiction": "USA Federal",
@@ -122,124 +122,124 @@
   ],
   "by_source_kind": [
     {
-      "source_kind": "parliamentary_bills",
-      "count": 454
+      "source_kind": "official_gazette",
+      "count": 512
     },
     {
-      "source_kind": "official_gazette",
-      "count": 317
+      "source_kind": "parliamentary_bills",
+      "count": 454
     }
   ],
   "current_source": {
     "jurisdiction": "Canada Federal",
     "source_kind": "official_gazette",
-    "url": "https://gazette.gc.ca/rp-pr/p1/2026/index-eng.html"
+    "url": "https://gazette.gc.ca/rp-pr/p1/2023/index-eng.html"
   },
   "recent_pdfs": [
     {
-      "title": "Part I, volume 160, Extra number 6 (190KB)",
+      "title": "Part I, volume 157, number 31 (966KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/pdf/g1-160x6.pdf",
-      "downloaded_at": "2026-08-01T11:09:47.789907+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-08-05/pdf/g1-15731.pdf",
+      "downloaded_at": "2026-08-01T11:11:48.313852+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Part I, volume 160, number 31 (784KB)",
+      "title": "Part I, volume 157, number 32 (661KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/pdf/g1-16031.pdf",
-      "downloaded_at": "2026-08-01T11:09:47.373710+00:00",
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-08-12/pdf/g1-15732.pdf",
+      "downloaded_at": "2026-08-01T11:11:47.786008+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "Part I, volume 157, number 33 (3.1MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/Learn/Documents/ParliamentaryPrimer/LOP_TimelineBroch_FR.pdf",
-      "downloaded_at": "2026-08-01T11:07:11.337774+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-08-19/pdf/g1-15733.pdf",
+      "downloaded_at": "2026-08-01T11:11:47.291208+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Lire en ligne (PDF)",
+      "title": "Part I, volume 157, number 34 (426KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/LOP-OCOP-French-Final-forTagging FINAL-ua.pdf",
-      "downloaded_at": "2026-08-01T11:07:09.032257+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-08-26/pdf/g1-15734.pdf",
+      "downloaded_at": "2026-08-01T11:11:46.445223+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Lire en ligne (PDF)",
+      "title": "Part I, volume 157, number 35 (827KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/Le_Senat_en_action.pdf",
-      "downloaded_at": "2026-08-01T11:07:05.153438+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-09-02/pdf/g1-15735.pdf",
+      "downloaded_at": "2026-08-01T11:11:45.991453+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Lire en ligne (PDF)",
+      "title": "Part I, volume 157, number 36 (383KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/GetToKnowHOC_FR_Final_AODA.pdf",
-      "downloaded_at": "2026-08-01T11:07:04.213752+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-09-09/pdf/g1-15736.pdf",
+      "downloaded_at": "2026-08-01T11:11:45.294381+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Lire en ligne (PDF)",
+      "title": "Part I, volume 157, number 37 (731KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/ParliamentaryPrimer/GetToKnowTheSenate-fr.pdf",
-      "downloaded_at": "2026-08-01T11:07:03.124785+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-09-16/pdf/g1-15737.pdf",
+      "downloaded_at": "2026-08-01T11:11:44.840418+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Télécharger la version PDF",
+      "title": "Part I, volume 157, number 38 (464KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/Learn/assets/PDF/OurCountryOurParliament/LOP_OCOP_FR.pdf",
-      "downloaded_at": "2026-08-01T11:06:59.834543+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-09-23/pdf/g1-15738.pdf",
+      "downloaded_at": "2026-08-01T11:11:44.320468+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états – 37e législature, 2e session",
+      "title": "Part I, volume 157, number 39 (1.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 37-2.pdf",
-      "downloaded_at": "2026-08-01T11:06:57.427340+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-09-30/pdf/g1-15739.pdf",
+      "downloaded_at": "2026-08-01T11:11:43.865722+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états – 37e législature, 3e session",
+      "title": "Part I, volume 157, number 40 (448KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 37-3.pdf",
-      "downloaded_at": "2026-08-01T11:06:56.607532+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-10-07/pdf/g1-15740.pdf",
+      "downloaded_at": "2026-08-01T11:11:43.304917+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états – 38e législature, 1re session",
+      "title": "Part I, volume 157, number 41 (406KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 38-1.pdf",
-      "downloaded_at": "2026-08-01T11:06:55.525094+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-10-14/pdf/g1-15741.pdf",
+      "downloaded_at": "2026-08-01T11:11:42.663320+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états – 39e législature, 1re session",
+      "title": "Part I, volume 157, number 42 (576KB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 39-1.pdf",
-      "downloaded_at": "2026-08-01T11:06:54.863777+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-10-21/pdf/g1-15742.pdf",
+      "downloaded_at": "2026-08-01T11:11:42.212386+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états – 39e législature, 2e session",
+      "title": "Part I, volume 157, number 43 (2.5MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 39-2.pdf",
-      "downloaded_at": "2026-08-01T11:06:53.787711+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-10-28/pdf/g1-15743.pdf",
+      "downloaded_at": "2026-08-01T11:11:41.741125+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états – 40e législature, 2e session",
+      "title": "Part I, volume 157, number 44 (2.3MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 40-2.pdf",
-      "downloaded_at": "2026-08-01T11:06:52.375769+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-11-04/pdf/g1-15744.pdf",
+      "downloaded_at": "2026-08-01T11:11:40.995680+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Liste des rapports et états - 40e législature, 3e session (2010-03-03)",
+      "title": "Part I, volume 157, number 45 (1.2MB)",
       "jurisdiction": "Canada Federal",
-      "url": "https://bdp.parl.ca/staticfiles/ParlInfo/Documents/ReportsReturns/Liste des rapports et états 40-3.pdf",
-      "downloaded_at": "2026-08-01T11:06:51.232243+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://gazette.gc.ca/rp-pr/p1/2023/2023-11-11/pdf/g1-15745.pdf",
+      "downloaded_at": "2026-08-01T11:11:40.278190+00:00",
+      "source_kind": "official_gazette"
     }
   ],
   "last_source_reports": [
@@ -338,11 +338,11 @@
     "sources_visited": 2,
     "pages_crawled": 600,
     "js_pages": 86,
-    "pdfs_discovered": 225,
-    "pdfs_downloaded": 225,
+    "pdfs_discovered": 420,
+    "pdfs_downloaded": 420,
     "pdfs_skipped_existing": 107,
     "pdfs_capped": 0,
     "errors": 20
   },
-  "manifest_generated_at": "2026-08-01T11:09:47.790024+00:00"
+  "manifest_generated_at": "2026-08-01T11:11:48.313976+00:00"
 }
