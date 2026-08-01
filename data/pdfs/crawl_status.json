@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-01T11:51:09.111282+00:00",
+  "updated_at": "2026-08-01T12:00:52.494492+00:00",
   "phase": "running",
-  "message": "finished Canada Federal / official_gazette: +3059 PDFs",
+  "message": "downloaded 3285 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 3828,
+    "pdfs": 3831,
     "errors": 2362,
     "source_reports": 9,
-    "jurisdictions": 27
+    "jurisdictions": 28
   },
   "by_jurisdiction": [
     {
@@ -96,6 +96,10 @@
       "count": 3
     },
     {
+      "jurisdiction": "British Columbia",
+      "count": 3
+    },
+    {
       "jurisdiction": "California",
       "count": 2
     },
@@ -127,17 +131,36 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 454
+      "count": 457
     }
   ],
   "current_source": {
-    "jurisdiction": "Canada Federal",
-    "source_kind": "official_gazette",
-    "url": "https://www.gazette.gc.ca",
-    "pdfs_downloaded": 3059,
-    "pdfs_candidates": 3068
+    "jurisdiction": "British Columbia",
+    "source_kind": "parliamentary_bills",
+    "url": "https://www.leg.bc.ca/parliamentary-business/parliamentary-calendar"
   },
   "recent_pdfs": [
+    {
+      "title": "​2025 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2025-Amended-November-2025.pdf",
+      "downloaded_at": "2026-08-01T12:00:52.038391+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "​2026 Year at a Glance",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2026.pdf",
+      "downloaded_at": "2026-08-01T12:00:51.624264+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "broadcast schedule",
+      "jurisdiction": "British Columbia",
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/hansard-broadcasting/Broadcast-Schedule.pdf",
+      "downloaded_at": "2026-08-01T12:00:51.144435+00:00",
+      "source_kind": "parliamentary_bills"
+    },
     {
       "title": "Résumé de la mobilisation avec les partenaires autochtones (PDF)",
       "jurisdiction": "Canada Federal",
@@ -220,27 +243,6 @@
       "jurisdiction": "Canada Federal",
       "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-09-30-c3/pdf/g2-144c3-fra.pdf",
       "downloaded_at": "2026-08-01T11:50:13.091330+00:00",
-      "source_kind": "official_gazette"
-    },
-    {
-      "title": "Index codifié jusqu’au 31 décembre 2010 (2.9Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2010/2010-12-31-c4/pdf/g2-144c4-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:11.448360+00:00",
-      "source_kind": "official_gazette"
-    },
-    {
-      "title": "Index codifié jusqu’au 31 mars 2011 (2.5Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2011/2011-03-31-c1/pdf/g2-145c1-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:10.234522+00:00",
-      "source_kind": "official_gazette"
-    },
-    {
-      "title": "Index codifié jusqu’au 30 juin 2011 (4.1Mo)",
-      "jurisdiction": "Canada Federal",
-      "url": "https://gazette.gc.ca/rp-pr/p2/2011/2011-06-30-c2/pdf/g2-145c2-fra.pdf",
-      "downloaded_at": "2026-08-01T11:50:09.121058+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -337,14 +339,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 2,
-    "pages_crawled": 600,
-    "js_pages": 86,
-    "pdfs_discovered": 3282,
-    "pdfs_downloaded": 3282,
+    "sources_visited": 3,
+    "pages_crawled": 900,
+    "js_pages": 119,
+    "pdfs_discovered": 3285,
+    "pdfs_downloaded": 3285,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
     "errors": 28
   },
-  "manifest_generated_at": "2026-08-01T11:51:08.642825+00:00"
+  "manifest_generated_at": "2026-08-01T12:00:52.038498+00:00"
 }

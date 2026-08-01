@@ -1,5 +1,77 @@
 [
   {
+    "id": "df4428b685f09e6f",
+    "title": "​2025 Year at a Glance",
+    "filename": "Parliamentary-Calendar-2025-Amended-November-2025.pdf",
+    "jurisdiction": "British Columbia",
+    "source_kind": "parliamentary_bills",
+    "law_type": "amendment",
+    "year": 2025,
+    "years": [
+      2025
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "leg.bc.ca",
+    "filename_tags": [],
+    "source_page": "https://www.leg.bc.ca/parliamentary-business/parliamentary-calendar",
+    "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2025-Amended-November-2025.pdf",
+    "open_url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2025-Amended-November-2025.pdf",
+    "download_url": null,
+    "bytes": 188384,
+    "sha256": "df4428b685f09e6f",
+    "downloaded_at": "2026-08-01T12:00:52.038391+00:00",
+    "local_path": "data/pdfs/British_Columbia/parliamentary_bills/Parliamentary-Calendar-2025-Amended-November-2025.pdf"
+  },
+  {
+    "id": "0ccfc3c808bbfa0d",
+    "title": "​2026 Year at a Glance",
+    "filename": "Parliamentary-Calendar-2026.pdf",
+    "jurisdiction": "British Columbia",
+    "source_kind": "parliamentary_bills",
+    "law_type": "procedural",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "leg.bc.ca",
+    "filename_tags": [],
+    "source_page": "https://www.leg.bc.ca/parliamentary-business/parliamentary-calendar",
+    "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2026.pdf",
+    "open_url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2026.pdf",
+    "download_url": null,
+    "bytes": 188238,
+    "sha256": "0ccfc3c808bbfa0d",
+    "downloaded_at": "2026-08-01T12:00:51.624264+00:00",
+    "local_path": "data/pdfs/British_Columbia/parliamentary_bills/Parliamentary-Calendar-2026.pdf"
+  },
+  {
+    "id": "da4a420a5954ffce",
+    "title": "broadcast schedule",
+    "filename": "Broadcast-Schedule.pdf",
+    "jurisdiction": "British Columbia",
+    "source_kind": "parliamentary_bills",
+    "law_type": "procedural",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "leg.bc.ca",
+    "filename_tags": [],
+    "source_page": "https://www.leg.bc.ca/parliamentary-business/broadcasts-and-webcasts",
+    "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/hansard-broadcasting/Broadcast-Schedule.pdf",
+    "open_url": "https://www.leg.bc.ca/sites/default/files/images/pdf/hansard-broadcasting/Broadcast-Schedule.pdf",
+    "download_url": null,
+    "bytes": 84877,
+    "sha256": "da4a420a5954ffce",
+    "downloaded_at": "2026-08-01T12:00:51.144435+00:00",
+    "local_path": "data/pdfs/British_Columbia/parliamentary_bills/Broadcast-Schedule.pdf"
+  },
+  {
     "id": "8fcb2fb524772524",
     "title": "Résumé de la mobilisation avec les partenaires autochtones (PDF)",
     "filename": "summary-engagement-indigenous-partners-2023-08-04-fra.pdf",

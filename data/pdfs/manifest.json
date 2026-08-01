@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T11:51:08.642825+00:00",
+  "generated_at": "2026-08-01T12:00:52.038498+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -49764,6 +49764,45 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-01T11:51:07.911368+00:00"
+    },
+    {
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/hansard-broadcasting/Broadcast-Schedule.pdf",
+      "jurisdiction": "British Columbia",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.leg.bc.ca/parliamentary-business/broadcasts-and-webcasts",
+      "title": "broadcast schedule",
+      "path": "data/pdfs/British_Columbia/parliamentary_bills/Broadcast-Schedule.pdf",
+      "bytes": 84877,
+      "sha256": "da4a420a5954ffce",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T12:00:51.144435+00:00"
+    },
+    {
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2026.pdf",
+      "jurisdiction": "British Columbia",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.leg.bc.ca/parliamentary-business/parliamentary-calendar",
+      "title": "​2026 Year at a Glance",
+      "path": "data/pdfs/British_Columbia/parliamentary_bills/Parliamentary-Calendar-2026.pdf",
+      "bytes": 188238,
+      "sha256": "0ccfc3c808bbfa0d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T12:00:51.624264+00:00"
+    },
+    {
+      "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/clerk/Parliamentary-Calendar-2025-Amended-November-2025.pdf",
+      "jurisdiction": "British Columbia",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://www.leg.bc.ca/parliamentary-business/parliamentary-calendar",
+      "title": "​2025 Year at a Glance",
+      "path": "data/pdfs/British_Columbia/parliamentary_bills/Parliamentary-Calendar-2025-Amended-November-2025.pdf",
+      "bytes": 188384,
+      "sha256": "df4428b685f09e6f",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-01T12:00:52.038391+00:00"
     }
   ],
   "discovered": [
@@ -71960,11 +71999,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 2,
-    "pages_crawled": 600,
-    "js_pages": 86,
-    "pdfs_discovered": 3282,
-    "pdfs_downloaded": 3282,
+    "sources_visited": 3,
+    "pages_crawled": 900,
+    "js_pages": 119,
+    "pdfs_discovered": 3285,
+    "pdfs_downloaded": 3285,
     "pdfs_skipped_existing": 108,
     "pdfs_capped": 0,
     "errors": 28
