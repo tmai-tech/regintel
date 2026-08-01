@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T14:39:37.640420+00:00",
+  "updated_at": "2026-08-01T14:41:39.016428+00:00",
   "phase": "running",
-  "message": "downloaded 4805 new this run",
+  "message": "downloaded 4920 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 5351,
+    "pdfs": 5466,
     "errors": 11937,
     "source_reports": 9,
     "jurisdictions": 29
@@ -21,7 +21,7 @@
     },
     {
       "jurisdiction": "Manitoba",
-      "count": 516
+      "count": 631
     },
     {
       "jurisdiction": "USA Federal",
@@ -135,118 +135,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 1853
+      "count": 1968
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/hansard/hansard_archive.html"
+    "url": "https://www.gov.mb.ca/legislature/business/op/43rd/43rd_3rd.html"
   },
   "recent_pdfs": [
     {
-      "title": "House",
+      "title": "1",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/31st_4th/hansardpdf/31st_4th_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:36.871119+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_009.pdf",
+      "downloaded_at": "2026-08-01T14:41:38.240470+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "27",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/31st_5th/hansardpdf/31st_5th_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:31.468184+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_036.pdf",
+      "downloaded_at": "2026-08-01T14:41:37.641599+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "26",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/31st_5th/hansardpdf/31st_5th_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:30.711016+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_035.pdf",
+      "downloaded_at": "2026-08-01T14:41:36.956020+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "25",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_1st/hansardpdf/32nd_1st_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:29.391312+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_034.pdf",
+      "downloaded_at": "2026-08-01T14:41:36.388824+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "24",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_1st/hansardpdf/32nd_1st_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:28.706671+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_033.pdf",
+      "downloaded_at": "2026-08-01T14:41:35.827265+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "23",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_2nd/hansardpdf/32nd_2nd_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:26.379731+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_032.pdf",
+      "downloaded_at": "2026-08-01T14:41:34.206207+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "19",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_2nd/hansardpdf/32nd_2nd_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:25.669077+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_031.pdf",
+      "downloaded_at": "2026-08-01T14:41:33.526747+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "18",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_3rd/hansardpdf/32nd_3rd_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:23.900267+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_030.pdf",
+      "downloaded_at": "2026-08-01T14:41:32.773246+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "17",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_3rd/hansardpdf/32nd_3rd_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:23.169202+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_029.pdf",
+      "downloaded_at": "2026-08-01T14:41:32.142905+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "16",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_4th/hansardpdf/32nd_4th_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:22.441478+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_028.pdf",
+      "downloaded_at": "2026-08-01T14:41:31.532460+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "12",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/32nd_4th/hansardpdf/32nd_4th_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:20.833659+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_027.pdf",
+      "downloaded_at": "2026-08-01T14:41:29.915445+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "11",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_1st/hansardpdf/33rd_1st_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:19.675667+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_026.pdf",
+      "downloaded_at": "2026-08-01T14:41:29.357584+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "10",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_1st/hansardpdf/33rd_1st_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:18.960037+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_025.pdf",
+      "downloaded_at": "2026-08-01T14:41:28.762390+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Committee",
+      "title": "9",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_2nd/hansardpdf/33rd_2nd_committee_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:18.104387+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_024.pdf",
+      "downloaded_at": "2026-08-01T14:41:28.195958+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "House",
+      "title": "5",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/hansard/33rd_2nd/hansardpdf/33rd_2nd_index.pdf",
-      "downloaded_at": "2026-08-01T14:39:17.359331+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/op/43rd/3rd/op_023.pdf",
+      "downloaded_at": "2026-08-01T14:41:27.437685+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 4805,
-    "pdfs_downloaded": 4805,
+    "pdfs_discovered": 4920,
+    "pdfs_downloaded": 4920,
     "pdfs_skipped_existing": 115,
     "pdfs_capped": 0,
     "errors": 9603
   },
-  "manifest_generated_at": "2026-08-01T14:39:36.871221+00:00"
+  "manifest_generated_at": "2026-08-01T14:41:38.240563+00:00"
 }
