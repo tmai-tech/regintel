@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T15:24:16.954613+00:00",
+  "updated_at": "2026-08-01T15:26:18.927517+00:00",
   "phase": "running",
-  "message": "downloaded 7810 new this run",
+  "message": "downloaded 7950 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 8356,
+    "pdfs": 8496,
     "errors": 11957,
     "source_reports": 9,
     "jurisdictions": 29
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 3521
+      "count": 3661
     },
     {
       "jurisdiction": "Canada Federal",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 4858
+      "count": 4998
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/39th/39th_3rd.html"
+    "url": "https://www.gov.mb.ca/legislature/business/38th/38th_5th.html"
   },
   "recent_pdfs": [
     {
-      "title": "24",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_003.pdf",
-      "downloaded_at": "2026-08-01T15:24:15.840416+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "21",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_002.pdf",
-      "downloaded_at": "2026-08-01T15:24:15.246324+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Inter-Sessional Reports",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/intersessionallist_nov08.pdf",
-      "downloaded_at": "2026-08-01T15:24:14.738599+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "20",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_001.pdf",
-      "downloaded_at": "2026-08-01T15:24:14.248461+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "4",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_011.pdf",
-      "downloaded_at": "2026-08-01T15:24:13.668878+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "3",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_010.pdf",
-      "downloaded_at": "2026-08-01T15:24:11.717747+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "2",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_009.pdf",
-      "downloaded_at": "2026-08-01T15:24:11.182349+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "1",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_008.pdf",
-      "downloaded_at": "2026-08-01T15:24:10.416574+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "27",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_019.pdf",
-      "downloaded_at": "2026-08-01T15:24:09.860962+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "26",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_018.pdf",
-      "downloaded_at": "2026-08-01T15:24:09.334942+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Inter-Sessional Reports",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/intersessionallist_march09.pdf",
-      "downloaded_at": "2026-08-01T15:24:07.427346+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "25",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_017.pdf",
-      "downloaded_at": "2026-08-01T15:24:06.881227+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
       "title": "30",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_034.pdf",
-      "downloaded_at": "2026-08-01T15:24:06.306923+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_012.pdf",
+      "downloaded_at": "2026-08-01T15:26:17.796474+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "29",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_033.pdf",
-      "downloaded_at": "2026-08-01T15:24:05.762799+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_011.pdf",
+      "downloaded_at": "2026-08-01T15:26:17.251385+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "28",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/legislature/business/39th/3rd/votes_032.pdf",
-      "downloaded_at": "2026-08-01T15:24:05.225862+00:00",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_010.pdf",
+      "downloaded_at": "2026-08-01T15:26:16.710899+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "27",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_009.pdf",
+      "downloaded_at": "2026-08-01T15:26:16.167090+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "24",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_008.pdf",
+      "downloaded_at": "2026-08-01T15:26:15.619855+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "23",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_007.pdf",
+      "downloaded_at": "2026-08-01T15:26:13.690150+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "22",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_006.pdf",
+      "downloaded_at": "2026-08-01T15:26:13.174480+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "21",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_005.pdf",
+      "downloaded_at": "2026-08-01T15:26:12.462247+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "20",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_004.pdf",
+      "downloaded_at": "2026-08-01T15:26:11.906819+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "17",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_003.pdf",
+      "downloaded_at": "2026-08-01T15:26:11.371789+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "16",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_002.pdf",
+      "downloaded_at": "2026-08-01T15:26:09.461325+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Inter-Sessional Reports",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/intersessionallist_dec06.pdf",
+      "downloaded_at": "2026-08-01T15:26:08.920848+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "15",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_001.pdf",
+      "downloaded_at": "2026-08-01T15:26:08.375914+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "6",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_015.pdf",
+      "downloaded_at": "2026-08-01T15:26:07.817934+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "5",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/legislature/business/38th/5th/votes_014.pdf",
+      "downloaded_at": "2026-08-01T15:26:07.253921+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -346,11 +346,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 146,
-    "pdfs_discovered": 7810,
-    "pdfs_downloaded": 7810,
+    "pdfs_discovered": 7950,
+    "pdfs_downloaded": 7950,
     "pdfs_skipped_existing": 115,
     "pdfs_capped": 0,
     "errors": 9623
   },
-  "manifest_generated_at": "2026-08-01T15:24:15.840522+00:00"
+  "manifest_generated_at": "2026-08-01T15:26:17.796566+00:00"
 }
