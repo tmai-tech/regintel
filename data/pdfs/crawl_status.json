@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-01T23:08:55.093617+00:00",
+  "updated_at": "2026-08-01T23:12:49.067205+00:00",
   "phase": "running",
-  "message": "finished Ontario / parliamentary_bills: +0 PDFs",
+  "message": "finished Ontario / official_gazette: +0 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
     "pdfs": 8922,
-    "errors": 21551,
+    "errors": 21555,
     "source_reports": 16,
     "jurisdictions": 29
   },
@@ -140,10 +140,10 @@
   ],
   "current_source": {
     "jurisdiction": "Ontario",
-    "source_kind": "parliamentary_bills",
-    "url": "https://www.ola.org/en/legislative-business/bills",
+    "source_kind": "official_gazette",
+    "url": "https://www.ontario.ca/ontariogazette",
     "pdfs_downloaded": 0,
-    "pdfs_candidates": 37
+    "pdfs_candidates": 128
   },
   "recent_pdfs": [
     {
@@ -375,14 +375,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 1201,
-    "js_pages": 124,
+    "sources_visited": 6,
+    "pages_crawled": 1501,
+    "js_pages": 136,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 4277,
+    "pdfs_skipped_existing": 4401,
     "pdfs_capped": 0,
-    "errors": 9594
+    "errors": 9598
   },
-  "manifest_generated_at": "2026-08-01T23:08:53.845273+00:00"
+  "manifest_generated_at": "2026-08-01T23:12:47.782089+00:00"
 }

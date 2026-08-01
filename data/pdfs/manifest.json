@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T23:08:53.845273+00:00",
+  "generated_at": "2026-08-01T23:12:47.782089+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -253320,17 +253320,42 @@
       "error": "HTTP 404",
       "stage": "download_pdf",
       "jurisdiction": "Ontario"
+    },
+    {
+      "url": "https://www.ceaa-acee.gc.ca/ED4330AB-54FD-448B-B523-38B00187D618/Federal_Provincial_Guide_6260e.pdf",
+      "error": "[Errno -2] Name or service not known",
+      "stage": "download_pdf",
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette"
+    },
+    {
+      "url": "http://www.onebusiness.ca/sites/default/files/MEDI_Booklet_E-Commerce_accessible_E_final.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Ontario"
+    },
+    {
+      "url": "http://www.nwac.ca/wp-content/uploads/2015/05/NF228-NWAC_EntreTooKit_FNL.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=UTF-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Ontario"
+    },
+    {
+      "url": "https://www.workplacesafetynorth.ca/sites/default/files/resources/Ontario_Small_Business_Health_and_Safety_Booklet_2014.pdf",
+      "error": "HTTP 403",
+      "stage": "download_pdf",
+      "jurisdiction": "Ontario"
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 1201,
-    "js_pages": 124,
+    "sources_visited": 6,
+    "pages_crawled": 1501,
+    "js_pages": 136,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 4277,
+    "pdfs_skipped_existing": 4401,
     "pdfs_capped": 0,
-    "errors": 9594
+    "errors": 9598
   },
   "source_reports": [
     {
