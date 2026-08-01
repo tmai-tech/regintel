@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-01T14:07:56.014084+00:00",
+  "updated_at": "2026-08-01T14:09:57.470712+00:00",
   "phase": "running",
-  "message": "downloaded 3640 new this run",
+  "message": "downloaded 3825 new this run",
   "run_id": "30696544987",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30696544987",
   "totals": {
-    "pdfs": 4186,
+    "pdfs": 4371,
     "errors": 11926,
     "source_reports": 9,
     "jurisdictions": 28
@@ -17,7 +17,7 @@
     },
     {
       "jurisdiction": "British Columbia",
-      "count": 358
+      "count": 543
     },
     {
       "jurisdiction": "USA Federal",
@@ -131,118 +131,118 @@
     },
     {
       "source_kind": "parliamentary_bills",
-      "count": 812
+      "count": 997
     }
   ],
   "current_source": {
     "jurisdiction": "British Columbia",
     "source_kind": "parliamentary_bills",
-    "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/index.htm"
+    "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/index.htm"
   },
   "recent_pdfs": [
     {
-      "title": "Kootenay-Rockies",
+      "title": "Volume 47, Number 8 August 2016",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kootenay_Rockies_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:55.414423+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No8_Aug2016.pdf",
+      "downloaded_at": "2026-08-01T14:09:56.844975+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kootenay-Monashee",
+      "title": "Volume 47, Number 9 September 2016",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kootenay_Monashee_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:54.944250+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No9_Sep2016.pdf",
+      "downloaded_at": "2026-08-01T14:09:56.400602+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kootenay Central",
+      "title": "Volume 47, Number 10 October 2016",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kootenay_Central_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:54.463028+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No10_Oct2016.pdf",
+      "downloaded_at": "2026-08-01T14:09:55.953087+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kelowna-Mission",
+      "title": "Volume 47, Number 11 November 2016",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kelowna_Mission_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:53.834474+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No11_Nov2016.pdf",
+      "downloaded_at": "2026-08-01T14:09:55.511313+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kelowna-Lake Country-Coldstream",
+      "title": "Volume 47, Number 12 December 2016",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kelowna_Lake_Country_Coldstream_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:53.366162+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2016/350813_Vol47_No12_Dec2016.pdf",
+      "downloaded_at": "2026-08-01T14:09:55.061491+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kelowna Centre",
+      "title": "Volume 48, Number 1 January 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kelowna_Centre_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:52.161126+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No1_Jan2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:53.841574+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kamloops-North Thompson",
+      "title": "Volume 48, Number 2 February 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kamloops_North_Thompson_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:51.694175+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No2_Feb2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:53.404444+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Kamloops Centre",
+      "title": "Volume 48, Number 3 March 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Kamloops_Centre_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:51.228634+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No3_Mar2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:52.951255+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Juan de Fuca-Malahat",
+      "title": "Volume 48, Number 4 April 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Juan_de_Fuca_Malahat_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:50.768931+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No4_Apr2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:52.394765+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Fraser-Nicola",
+      "title": "Volume 48, Number 5 May 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Fraser-Nicola_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:50.301716+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No5_May2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:51.957847+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Esquimalt-Colwood",
+      "title": "Volume 48, Number 6 June 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Esquimalt_Colwood_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:49.089080+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No6_June2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:50.750017+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Delta South",
+      "title": "Volume 48, Number 7 July 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Delta_South_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:48.623920+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No7_July2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:50.309044+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Delta North",
+      "title": "Volume 48, Number 8 August 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Delta_North_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:48.160092+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No8_Aug2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:49.863109+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Cowichan Valley",
+      "title": "Volume 48, Number 9 September 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Cowichan_Valley_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:47.566837+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No9_Sep2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:49.422569+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Courtenay-Comox",
+      "title": "Volume 48, Number 10 October 2017",
       "jurisdiction": "British Columbia",
-      "url": "https://www.llbc.leg.bc.ca/public/pubdocs/bcdocs2023_2/730606/730606_Courtenay_Comox_BC.pdf",
-      "downloaded_at": "2026-08-01T14:07:47.115483+00:00",
+      "url": "http://www.llbc.leg.bc.ca/public/PubDocs/bcdocs2019_2/350813/2017/350813_Vol48_No10_Oct2017.pdf",
+      "downloaded_at": "2026-08-01T14:09:48.984319+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -342,11 +342,11 @@
     "sources_visited": 3,
     "pages_crawled": 900,
     "js_pages": 119,
-    "pdfs_discovered": 3640,
-    "pdfs_downloaded": 3640,
+    "pdfs_discovered": 3825,
+    "pdfs_downloaded": 3825,
     "pdfs_skipped_existing": 109,
     "pdfs_capped": 0,
     "errors": 9592
   },
-  "manifest_generated_at": "2026-08-01T14:07:55.414510+00:00"
+  "manifest_generated_at": "2026-08-01T14:09:56.845086+00:00"
 }
