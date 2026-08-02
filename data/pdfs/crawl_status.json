@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T17:07:56.919558+00:00",
+  "updated_at": "2026-08-02T17:11:39.340834+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - IA / ministry: +71 PDFs",
+  "message": "downloaded 80 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12400,
+    "pdfs": 12405,
     "errors": 21690,
     "source_reports": 30,
-    "jurisdictions": 32
+    "jurisdictions": 33
   },
   "by_jurisdiction": [
     {
@@ -100,6 +100,10 @@
       "count": 5
     },
     {
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "count": 5
+    },
+    {
       "jurisdiction": "Saudi Arabia - GOSI",
       "count": 4
     },
@@ -151,17 +155,50 @@
     },
     {
       "source_kind": "ministry",
-      "count": 155
+      "count": 160
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - IA",
+    "jurisdiction": "Saudi Arabia - MEWA",
     "source_kind": "ministry",
-    "url": "https://ia.gov.sa",
-    "pdfs_downloaded": 71,
-    "pdfs_candidates": 90
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx"
   },
   "recent_pdfs": [
+    {
+      "title": "download",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
+      "downloaded_at": "2026-08-02T17:11:37.537442+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "download",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
+      "downloaded_at": "2026-08-02T17:11:36.897772+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "click here",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/en/Ministry/initiatives/SectorStratigy/Documents/6.%20BAH-MEWA-KSA%20NES-CEDA%20Executive%20Summary%20v3%2020180221%20ENG.pdf",
+      "downloaded_at": "2026-08-02T17:11:36.288889+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "المفكرة الزراعية",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+      "downloaded_at": "2026-08-02T17:11:35.637373+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Here",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "downloaded_at": "2026-08-02T17:11:31.308918+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "المراجعة",
       "jurisdiction": "Saudi Arabia - IA",
@@ -230,41 +267,6 @@
       "jurisdiction": "Saudi Arabia - IA",
       "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d9%8a%d9%94%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%95%d8%b9%d8%a7%d8%af%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%d8%8c%20%d9%88%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1%d8%8c%20%d9%88%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a1%d8%a9%20%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
       "downloaded_at": "2026-08-02T17:07:14.985294+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d9%87%d9%8a%d9%8a%d9%94%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%20%d8%ad%d9%8a%d8%a7%d9%84%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a7%d9%95%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%a7%d9%95%d8%b9%d8%a7%d8%af%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%d8%8c%20%d9%88%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1%d8%8c%20%d9%88%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a1%d8%a9%20%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:10.020927+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "ملف منفصل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d8%ad%d9%8a%d8%a7%d9%84%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d9%84%d8%a7%d8%ad%d8%aa%d9%8a%d8%a7%d8%b7%d9%8a%d8%a7%d8%aa%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:09.136610+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%8a%d8%a7%d8%b7%d9%8a%d8%a7%d8%aa%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:06.790880+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "ملف منفصل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d8%ad%d9%8a%d8%a7%d9%84%20%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%aa%d8%b3%d8%b9%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202024%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:06:53.996555+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%aa%d8%b3%d8%b9%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202024%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:06:52.172983+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -391,14 +393,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 524,
-    "js_pages": 65,
-    "pdfs_discovered": 75,
-    "pdfs_downloaded": 75,
+    "sources_visited": 6,
+    "pages_crawled": 724,
+    "js_pages": 67,
+    "pdfs_discovered": 80,
+    "pdfs_downloaded": 80,
     "pdfs_skipped_existing": 20,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T17:07:55.117266+00:00"
+  "manifest_generated_at": "2026-08-02T17:11:37.537528+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T17:07:55.117266+00:00",
+  "generated_at": "2026-08-02T17:11:37.537528+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -161200,6 +161200,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T17:07:52.468152+00:00"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa",
+      "title": "Here",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "bytes": 216651,
+      "sha256": "d0e93fcff3cf7eec",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:11:31.308918+00:00"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa/ar/Ministry/AboutMinistry/ContactUs/Pages/default.aspx",
+      "title": "المفكرة الزراعية",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/agire3.pdf",
+      "bytes": 60066371,
+      "sha256": "3ffef15459d1607f",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:11:35.637373+00:00"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/en/Ministry/initiatives/SectorStratigy/Documents/6.%20BAH-MEWA-KSA%20NES-CEDA%20Executive%20Summary%20v3%2020180221%20ENG.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa/en/Ministry/initiatives/SectorStratigy/Pages/default.aspx",
+      "title": "click here",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/6. BAH-MEWA-KSA NES-CEDA Executive Summary v3 20180221 ENG.pdf",
+      "bytes": 2903967,
+      "sha256": "e168bb12ab1293a8",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:11:36.288889+00:00"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+      "title": "download",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/Implementing Regulations of The Agriculture Law.pdf",
+      "bytes": 659423,
+      "sha256": "38331146a4f3f7ad",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:11:36.897772+00:00"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+      "title": "download",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
+      "bytes": 1650723,
+      "sha256": "0660e4fdbc52a7cc",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:11:37.537442+00:00"
     }
   ],
   "discovered": [
@@ -299379,11 +299444,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 524,
-    "js_pages": 65,
-    "pdfs_discovered": 75,
-    "pdfs_downloaded": 75,
+    "sources_visited": 6,
+    "pages_crawled": 724,
+    "js_pages": 67,
+    "pdfs_discovered": 80,
+    "pdfs_downloaded": 80,
     "pdfs_skipped_existing": 20,
     "pdfs_capped": 0,
     "errors": 26
