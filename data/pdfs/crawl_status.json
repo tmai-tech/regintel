@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:00:43.639385+00:00",
+  "updated_at": "2026-08-02T00:02:43.853470+00:00",
   "phase": "running",
-  "message": "downloaded 1765 new this run",
+  "message": "downloaded 1860 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 10687,
+    "pdfs": 10782,
     "errors": 21591,
     "source_reports": 16,
     "jurisdictions": 29
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 5852
+      "count": 5947
     },
     {
       "jurisdiction": "Canada Federal",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7189
+      "count": 7284
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "parliamentary_bills",
-    "url": "https://web2.gov.mb.ca/bills/39-4/index.php"
+    "url": "https://web2.gov.mb.ca/bills/39-3/index.php"
   },
   "recent_pdfs": [
     {
-      "title": "PDF",
+      "title": "amendment(s) adopted at Committee Stage",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b010.pdf",
-      "downloaded_at": "2026-08-02T00:00:42.187080+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b011cs.pdf",
+      "downloaded_at": "2026-08-02T00:02:42.369382+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b009.pdf",
-      "downloaded_at": "2026-08-02T00:00:41.338101+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b010.pdf",
+      "downloaded_at": "2026-08-02T00:02:41.629239+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b008.pdf",
-      "downloaded_at": "2026-08-02T00:00:40.523813+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b009.pdf",
+      "downloaded_at": "2026-08-02T00:02:40.864536+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "amendment(s) adopted at Committee Stage",
+      "jurisdiction": "Manitoba",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b009cs.pdf",
+      "downloaded_at": "2026-08-02T00:02:39.914646+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b007.pdf",
-      "downloaded_at": "2026-08-02T00:00:39.724370+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b008.pdf",
+      "downloaded_at": "2026-08-02T00:02:39.179936+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b006.pdf",
-      "downloaded_at": "2026-08-02T00:00:38.922343+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b007.pdf",
+      "downloaded_at": "2026-08-02T00:02:36.541737+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "amendment(s) adopted at Report Stage",
+      "jurisdiction": "Manitoba",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b007rs.pdf",
+      "downloaded_at": "2026-08-02T00:02:35.651987+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "amendment(s) adopted at Committee Stage",
+      "jurisdiction": "Manitoba",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b007cs.pdf",
+      "downloaded_at": "2026-08-02T00:02:34.832229+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b005.pdf",
-      "downloaded_at": "2026-08-02T00:00:36.060567+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b006.pdf",
+      "downloaded_at": "2026-08-02T00:02:34.038748+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "amendment(s) adopted at Committee Stage",
+      "jurisdiction": "Manitoba",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b006cs.pdf",
+      "downloaded_at": "2026-08-02T00:02:33.161321+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b004.pdf",
-      "downloaded_at": "2026-08-02T00:00:35.242513+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b005.pdf",
+      "downloaded_at": "2026-08-02T00:02:30.315273+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "amendment(s) adopted at Report Stage",
+      "jurisdiction": "Manitoba",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b005rs.pdf",
+      "downloaded_at": "2026-08-02T00:02:29.503579+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "amendment(s) adopted at Committee Stage",
+      "jurisdiction": "Manitoba",
+      "url": "https://web2.gov.mb.ca/bills/39-3/b005cs.pdf",
+      "downloaded_at": "2026-08-02T00:02:28.726966+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b003.pdf",
-      "downloaded_at": "2026-08-02T00:00:34.446407+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b004.pdf",
+      "downloaded_at": "2026-08-02T00:02:27.963819+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "PDF",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/pdf/b002.pdf",
-      "downloaded_at": "2026-08-02T00:00:33.592319+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Status of bills",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-4/billstatus.en.pdf",
-      "downloaded_at": "2026-08-02T00:00:32.758110+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-5/pdf/b301.pdf",
-      "downloaded_at": "2026-08-02T00:00:30.156335+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-5/pdf/b300.pdf",
-      "downloaded_at": "2026-08-02T00:00:29.320758+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-5/pdf/b222.pdf",
-      "downloaded_at": "2026-08-02T00:00:28.505934+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-5/pdf/b221.pdf",
-      "downloaded_at": "2026-08-02T00:00:27.685499+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/39-5/pdf/b220.pdf",
-      "downloaded_at": "2026-08-02T00:00:26.883487+00:00",
+      "url": "https://web2.gov.mb.ca/bills/39-3/pdf/b003.pdf",
+      "downloaded_at": "2026-08-02T00:02:27.103066+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 7,
     "pages_crawled": 1801,
     "js_pages": 144,
-    "pdfs_discovered": 1765,
-    "pdfs_downloaded": 1765,
+    "pdfs_discovered": 1860,
+    "pdfs_downloaded": 1860,
     "pdfs_skipped_existing": 8535,
     "pdfs_capped": 0,
     "errors": 9634
   },
-  "manifest_generated_at": "2026-08-02T00:00:42.187168+00:00"
+  "manifest_generated_at": "2026-08-02T00:02:42.369472+00:00"
 }
