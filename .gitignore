@@ -34,3 +34,6 @@ dist/
 data/pdfs/**
 !data/pdfs/manifest.json
 !data/pdfs/crawl_status.json
+
+# Eva: keep jsonl of summaries (can grow large but needed for resume)
+# data/eva/ is tracked; large raw extracts are not stored

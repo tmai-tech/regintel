@@ -1,0 +1,101 @@
+# Eva: batch-summarize PDFs (extract text + SpaceXAI when XAI_API_KEY secret is set)
+name: Eva summarize PDFs
+
+on:
+  schedule:
+    - cron: "30 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max PDFs to summarize this run"
+        required: false
+        default: "40"
+      jurisdiction:
+        description: "Optional jurisdiction filter substring (e.g. Saudi)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: eva-summarize
+  cancel-in-progress: false
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Eva summarizer
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          set -euo pipefail
+          LIMIT="${{ github.event.inputs.limit }}"
+          LIMIT="${LIMIT:-40}"
+          JUR="${{ github.event.inputs.jurisdiction }}"
+          ARGS=(collector/eva_summarize.py --limit "$LIMIT" --delay 0.35)
+          if [ -n "$JUR" ]; then
+            ARGS+=(--jurisdiction "$JUR")
+          fi
+          # Prefer Saudi ministries first when no filter given
+          if [ -z "$JUR" ]; then
+            ARGS+=(--jurisdiction "Saudi")
+          fi
+          python -u "${ARGS[@]}" || true
+          # also fill remaining slots from general catalog if Saudi few
+          python -u collector/eva_summarize.py --limit "$LIMIT" --delay 0.35 || true
+
+      - name: Commit Eva index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p data/eva web/data
+          git add -f data/eva/summaries.jsonl web/data/eva_summaries.json web/data/eva_meta.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No Eva changes"
+          else
+            git pull --rebase origin main || true
+            git commit -m "chore: Eva PDF summaries $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin HEAD:main || true
+          fi
+
+  deploy-site:
+    needs: summarize
+    if: always()
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Prepare web
+        run: |
+          mkdir -p web/data
+          cp -f data/*.json web/data/ 2>/dev/null || true
+          test -f web/data/eva_summaries.json || echo '[]' > web/data/eva_summaries.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4

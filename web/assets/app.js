@@ -150,6 +150,7 @@
       pdfs: document.getElementById("panelPdfs"),
       crawl: document.getElementById("panelCrawl"),
       ministries: document.getElementById("panelMinistries"),
+      eva: document.getElementById("panelEva"),
     };
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -224,6 +225,166 @@
           : `<p class="muted">No PDFs extracted yet for this authority — crawl in progress.</p>`
       }
     </article>`;
+  }
+
+  function tokenizeEva(s) {
+    return String(s || "")
+      .toLowerCase()
+      .match(/[a-z0-9]{3,}/g) || [];
+  }
+
+  function retrieveEva(question, corpus, k) {
+    const q = new Set(tokenizeEva(question));
+    if (!q.size) return corpus.slice(0, k);
+    const scored = [];
+    for (const doc of corpus) {
+      const blob = [
+        doc.title,
+        doc.jurisdiction,
+        doc.summary,
+        ...(doc.key_points || []),
+        ...(doc.topics || []),
+      ]
+        .filter(Boolean)
+        .join(" ");
+      const dt = new Set(tokenizeEva(blob));
+      let score = 0;
+      q.forEach((t) => {
+        if (dt.has(t)) score += 1;
+      });
+      tokenizeEva(doc.title || "").forEach((t) => {
+        if (q.has(t)) score += 2;
+      });
+      if (score > 0) scored.push({ score, doc });
+    }
+    scored.sort((a, b) => b.score - a.score);
+    return scored.slice(0, k).map((x) => x.doc);
+  }
+
+  function evaAnswerLocal(question, hits) {
+    if (!hits.length) {
+      return {
+        answer:
+          "I don’t have a matching PDF summary yet. Eva is still indexing PDFs — try again after more summaries are published, or ask about a jurisdiction/title already in the list.",
+        citations: [],
+      };
+    }
+    const lines = [
+      `I found ${hits.length} relevant PDF summary(ies) in my index:`,
+      "",
+    ];
+    const citations = [];
+    hits.forEach((h, i) => {
+      const n = i + 1;
+      citations.push({
+        n,
+        title: h.title,
+        url: h.open_url || h.url,
+        jurisdiction: h.jurisdiction,
+      });
+      lines.push(`[${n}] ${h.title || "Untitled"} (${h.jurisdiction || "—"})`);
+      lines.push((h.summary || "").slice(0, 420));
+      if (h.key_points && h.key_points.length) {
+        lines.push("Key points: " + h.key_points.slice(0, 4).join("; "));
+      }
+      lines.push("");
+    });
+    lines.push("References:");
+    citations.forEach((c) => {
+      lines.push(`[${c.n}] ${c.title} — ${c.url || "—"}`);
+    });
+    return { answer: lines.join("\n"), citations };
+  }
+
+  function initEva(summaries, meta) {
+    const chat = document.getElementById("evaChat");
+    const form = document.getElementById("evaForm");
+    const input = document.getElementById("evaInput");
+    const metaEl = document.getElementById("evaMeta");
+    if (!chat || !form) return;
+
+    const corpus = Array.isArray(summaries) ? summaries : [];
+    const count = corpus.length;
+    const llmHint = meta && meta.llm_available ? "LLM summaries available" : "extractive / offline index";
+    if (metaEl) {
+      metaEl.textContent = `Eva · ${count} PDF summaries indexed · ${llmHint}`;
+    }
+
+    function addBubble(role, text, citations) {
+      const div = document.createElement("div");
+      div.className = "eva-bubble eva-" + role;
+      const body = document.createElement("div");
+      body.className = "eva-bubble-text";
+      body.textContent = text;
+      div.appendChild(body);
+      if (citations && citations.length) {
+        const ul = document.createElement("ul");
+        ul.className = "eva-cites";
+        citations.forEach((c) => {
+          const li = document.createElement("li");
+          const label = `[${c.n}] ${c.title || "PDF"}`;
+          if (isHttpUrl(c.url)) {
+            const a = document.createElement("a");
+            a.className = "link";
+            a.href = c.url;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = label;
+            li.appendChild(a);
+          } else {
+            li.textContent = label;
+          }
+          ul.appendChild(li);
+        });
+        div.appendChild(ul);
+      }
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    addBubble(
+      "bot",
+      count
+        ? `Hi, I’m Eva. I’ve indexed ${count} PDF summaries. Ask me about bills, regulations, or topics — I’ll answer with references to the source PDFs.`
+        : "Hi, I’m Eva. No PDF summaries are published yet. Run collector/eva_summarize.py (with optional XAI_API_KEY) to build my knowledge base.",
+    );
+
+    async function handleAsk(q) {
+      addBubble("user", q);
+      // Prefer optional local Eva API (LLM synthesis)
+      const apiBase =
+        (window.REGINTEL_EVA_API || localStorage.getItem("regintel_eva_api") || "").replace(
+          /\/$/,
+          "",
+        );
+      if (apiBase) {
+        try {
+          const res = await fetch(apiBase + "/api/eva/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question: q, k: 8 }),
+          });
+          if (res.ok) {
+            const data = await res.json();
+            addBubble("bot", data.answer || "No answer.", data.citations || []);
+            return;
+          }
+        } catch {
+          /* fall through to local retrieval */
+        }
+      }
+      const hits = retrieveEva(q, corpus, 6);
+      const out = evaAnswerLocal(q, hits);
+      addBubble("bot", out.answer, out.citations);
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const q = (input.value || "").trim();
+      if (!q) return;
+      input.value = "";
+      handleAsk(q);
+    });
   }
 
   function initMinistries(ministries, pdfs) {
@@ -688,11 +849,15 @@
     let pdfs = [];
 
     let ministries = [];
+    let evaSummaries = [];
+    let evaMeta = null;
     try {
-      const [lawsRes, pdfsRes, minRes] = await Promise.all([
+      const [lawsRes, pdfsRes, minRes, evaRes, evaMetaRes] = await Promise.all([
         fetchJson("data/laws_catalog.json").catch(() => null),
         fetchJson("data/pdfs_catalog.json"),
         fetchJson("data/saudi_ministries.json").catch(() => []),
+        fetchJson("data/eva_summaries.json").catch(() => []),
+        fetchJson("data/eva_meta.json").catch(() => null),
       ]);
       if (Array.isArray(lawsRes) && lawsRes.length) {
         laws = lawsRes;
@@ -712,6 +877,8 @@
       if (!Array.isArray(pdfsRes)) throw new Error("PDF catalog is not a list");
       pdfs = pdfsRes;
       ministries = Array.isArray(minRes) ? minRes : [];
+      evaSummaries = Array.isArray(evaRes) ? evaRes : [];
+      evaMeta = evaMetaRes;
     } catch (e) {
       metaBar.textContent = "Error";
       document.getElementById("lawList").innerHTML =
@@ -733,6 +900,7 @@
 
     initLaws(laws);
     initMinistries(ministries, pdfs);
+    initEva(evaSummaries, evaMeta);
     initPdfs(pdfs);
     initCrawl();
   }

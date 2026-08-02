@@ -72,6 +72,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=.secrets/roomcraft-e1312-firebase-adminsdk
 | **Deploy UI to GitHub Pages** | Publish `web/` → https://tmai-tech.github.io/regintel/ |
 | **Daily collector** | Fetch sources → Firestore updates → commit JSON |
 | **Crawl gazette PDFs** | Full-site BFS on GitHub Actions (resume-safe 4–6h chunks) → live catalog + **Crawl** tab |
+| **Eva summarize PDFs** | Reads PDFs → summaries → **Eva** Q&A tab with citations (`docs/EVA.md`) |
 
 ## GitHub
 
@@ -111,3 +112,17 @@ PDFs land in `data/pdfs/<jurisdiction>/…` with inventory in `data/pdfs/manifes
 | [docs/ADDING_SOURCES.md](docs/ADDING_SOURCES.md) | **Add new links → crawl checklist** (colleagues) |
 | [docs/GAZETTE_PDF_COLLECTOR.md](docs/GAZETTE_PDF_COLLECTOR.md) | Collector internals, caps, coverage notes |
 
+
+## Eva (PDF research agent)
+
+Eva reads bill/gazette PDFs, stores summaries, and answers questions **with references** to source PDFs.
+
+```bash
+export XAI_API_KEY=...   # optional but recommended (SpaceXAI / xAI)
+.venv/bin/python collector/eva_summarize.py --limit 50
+.venv/bin/python collector/eva_agent.py "What cyber or capital market rules are covered?"
+# optional local API for the website chat (LLM answers):
+.venv/bin/python tools/eva_server.py --port 8787
+```
+
+See [docs/EVA.md](docs/EVA.md). Site tab: **Eva**.

@@ -44,6 +44,7 @@
     <nav class="tabs" role="tablist" aria-label="Main views">
       <button type="button" class="tab active" role="tab" id="tabLaws" aria-selected="true" aria-controls="panelLaws" data-tab="laws">Laws</button>
       <button type="button" class="tab" role="tab" id="tabMinistries" aria-selected="false" aria-controls="panelMinistries" data-tab="ministries">Ministries</button>
+      <button type="button" class="tab" role="tab" id="tabEva" aria-selected="false" aria-controls="panelEva" data-tab="eva">Eva</button>
       <button type="button" class="tab" role="tab" id="tabPdfs" aria-selected="false" aria-controls="panelPdfs" data-tab="pdfs">PDFs</button>
       <button type="button" class="tab" role="tab" id="tabCrawl" aria-selected="false" aria-controls="panelCrawl" data-tab="crawl">Crawl</button>
     </nav>
@@ -96,6 +97,31 @@
       </div>
       <div id="ministryList" class="pdf-list" role="list"></div>
       <div id="ministryEmpty" class="empty" hidden>No ministries match.</div>
+    </section>
+
+    <!-- Eva: PDF research assistant -->
+    <section class="panel" id="panelEva" role="tabpanel" aria-labelledby="tabEva" aria-label="Eva assistant" hidden>
+      <div class="toolbar sticky-toolbar">
+        <span class="muted" id="evaMeta">Loading Eva…</span>
+      </div>
+      <div class="eva-layout">
+        <div class="eva-chat" id="evaChat" aria-live="polite"></div>
+        <form class="eva-compose" id="evaForm">
+          <label class="sr-only" for="evaInput">Ask Eva</label>
+          <input
+            type="text"
+            id="evaInput"
+            autocomplete="off"
+            placeholder="Ask Eva about bills, regulations, or any indexed PDF…"
+          />
+          <button type="submit" class="btn primary" id="evaSend">Ask Eva</button>
+        </form>
+        <p class="muted eva-hint">
+          Eva searches PDF summaries and answers with references (title + link).
+          Full LLM answers need the optional local Eva API
+          (<code>tools/eva_server.py</code> + <code>XAI_API_KEY</code>).
+        </p>
+      </div>
     </section>
 
     <!-- Crawl status -->
