@@ -57,10 +57,21 @@ def base_domain(netloc: str) -> str:
 
 
 def is_same_site(netloc: str, seed_domain: str) -> bool:
+    """True if netloc is the seed host or a subdomain of it.
+
+    Only allow child hosts of the seed (e.g. docs.example.gov under example.gov).
+    Do NOT treat sibling hosts under a shared public suffix as same-site
+    (e.g. other.gov.sa is NOT the same site as momah.gov.sa).
+    """
     a, b = base_domain(netloc), base_domain(seed_domain)
     if not a or not b:
         return False
-    return a == b or a.endswith("." + b) or b.endswith("." + a)
+    if a == b:
+        return True
+    # link host is subdomain of seed
+    if a.endswith("." + b):
+        return True
+    return False
 
 
 def has_doc_extension(url: str, extensions: tuple[str, ...] = DOC_EXTENSIONS) -> bool:

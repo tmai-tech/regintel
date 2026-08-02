@@ -180,15 +180,23 @@
 
   function ministryCardHtml(m, pdfs) {
     const related = pdfs.filter((p) => {
-      const j = (p.jurisdiction || "").toLowerCase();
+      const j = (p.jurisdiction || "").toLowerCase().trim();
       const h = hostOf(p.open_url || p.url || "");
       const mh = hostOf(m.url);
       const code = (m.code || "").toLowerCase();
-      return (
-        j.includes(code) ||
-        j.includes("saudi arabia - " + code) ||
-        (mh && (h === mh || h.endsWith("." + mh) || mh.endsWith("." + h)))
-      );
+      // Strict label: "Saudi Arabia - CODE" (never bare code — "ia" false-matches Columbia)
+      const labelOk =
+        j === "saudi arabia - " + code ||
+        j.startsWith("saudi arabia - " + code + " ") ||
+        j === code ||
+        j.endsWith(" - " + code);
+      // Host must be same site as the official ministry domain
+      const hostOk =
+        !!mh &&
+        !!h &&
+        (h === mh || h.endsWith("." + mh));
+      // Do NOT use reverse host match (mh.endsWith("." + h)) — too loose for .gov.sa
+      return labelOk || hostOk;
     });
     const pdfLinks = related
       .slice(0, 12)
