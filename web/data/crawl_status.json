@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T18:36:57.372371+00:00",
+  "updated_at": "2026-08-02T18:43:27.950974+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - MoC / ministry: +1 PDFs",
+  "message": "downloaded 225 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12546,
+    "pdfs": 12550,
     "errors": 22090,
     "source_reports": 30,
-    "jurisdictions": 35
+    "jurisdictions": 36
   },
   "by_jurisdiction": [
     {
@@ -112,6 +112,10 @@
       "count": 4
     },
     {
+      "jurisdiction": "Saudi Arabia - NCA",
+      "count": 4
+    },
+    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -163,17 +167,43 @@
     },
     {
       "source_kind": "ministry",
-      "count": 301
+      "count": 305
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - MoC",
+    "jurisdiction": "Saudi Arabia - NCA",
     "source_kind": "ministry",
-    "url": "https://mc.gov.sa",
-    "pdfs_downloaded": 1,
-    "pdfs_candidates": 313
+    "url": "https://nca.gov.sa"
   },
   "recent_pdfs": [
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/677a6cc9-e520-4f41-ade1-49851e3060ca_دليل-التوعية-السيبرانية-لأولياء-الأمور-.pdf",
+      "downloaded_at": "2026-08-02T18:43:26.102629+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4a51cfb0-fa32-4756-856c-01836c27c5a3_File-.pdf",
+      "downloaded_at": "2026-08-02T18:43:25.267519+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/b9454489-c625-47b4-8ebb-acda0bab720c_Accounts-Security.pdf",
+      "downloaded_at": "2026-08-02T18:43:24.419607+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/c5147e4d-9e2b-4d17-8702-39ef4ba169af_دليل-التوعية-السيبرانية-للتسوق-الآمن-عبر-الإنتـرنـت.pdf",
+      "downloaded_at": "2026-08-02T18:43:23.339614+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "سياسات حوكمة البيانات الوطنية.​",
       "jurisdiction": "Saudi Arabia - MoC",
@@ -249,34 +279,6 @@
       "jurisdiction": "Saudi Arabia - MOF",
       "url": "https://mof.gov.sa/financialreport/budget2020/Documents/Q4A2020V6.pdf",
       "downloaded_at": "2026-08-02T17:30:31.594190+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير نهاية العام المالي 2020م",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2020/Documents/END%20Bud-A%202020%20210527%20V1.pdf",
-      "downloaded_at": "2026-08-02T17:30:25.346612+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "نسخة المواطن",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/financialreport/budget2020/Documents/Citizen_Ver.pdf",
-      "downloaded_at": "2026-08-02T17:30:24.615384+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "البيان التمهيدي للميزانية 2020",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/Documents/BSA%20FY2020.pdf",
-      "downloaded_at": "2026-08-02T17:30:22.608735+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير نهاية العام المالي 2019",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2019/Documents/FY-A%202019.pdf",
-      "downloaded_at": "2026-08-02T17:30:19.790394+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -403,14 +405,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 10,
-    "pages_crawled": 1126,
+    "sources_visited": 11,
+    "pages_crawled": 1326,
     "js_pages": 246,
-    "pdfs_discovered": 221,
-    "pdfs_downloaded": 221,
+    "pdfs_discovered": 225,
+    "pdfs_downloaded": 225,
     "pdfs_skipped_existing": 56,
     "pdfs_capped": 0,
     "errors": 426
   },
-  "manifest_generated_at": "2026-08-02T18:36:55.548114+00:00"
+  "manifest_generated_at": "2026-08-02T18:43:26.102717+00:00"
 }

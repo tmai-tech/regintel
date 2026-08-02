@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T18:36:55.548114+00:00",
+  "generated_at": "2026-08-02T18:43:26.102717+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -163098,6 +163098,58 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T18:36:54.454143+00:00"
+    },
+    {
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/c5147e4d-9e2b-4d17-8702-39ef4ba169af_دليل-التوعية-السيبرانية-للتسوق-الآمن-عبر-الإنتـرنـت.pdf",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "source_kind": "ministry",
+      "source_page": "https://nca.gov.sa",
+      "title": "embedded-url",
+      "path": "data/pdfs/Saudi_Arabia_NCA/ministry/c5147e4d-9e2b-4d17-8702-39ef4ba169af_دليل-التوعية-السيبرانية-للتسوق-الآمن-عبر-الإنتـرنـت.pdf",
+      "bytes": 4012480,
+      "sha256": "522da63e12a6608b",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T18:43:23.339614+00:00"
+    },
+    {
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/b9454489-c625-47b4-8ebb-acda0bab720c_Accounts-Security.pdf",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "source_kind": "ministry",
+      "source_page": "https://nca.gov.sa",
+      "title": "embedded-url",
+      "path": "data/pdfs/Saudi_Arabia_NCA/ministry/b9454489-c625-47b4-8ebb-acda0bab720c_Accounts-Security.pdf",
+      "bytes": 4600155,
+      "sha256": "f8f848e9a383061d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T18:43:24.419607+00:00"
+    },
+    {
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4a51cfb0-fa32-4756-856c-01836c27c5a3_File-.pdf",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "source_kind": "ministry",
+      "source_page": "https://nca.gov.sa",
+      "title": "embedded-url",
+      "path": "data/pdfs/Saudi_Arabia_NCA/ministry/4a51cfb0-fa32-4756-856c-01836c27c5a3_File-.pdf",
+      "bytes": 5791296,
+      "sha256": "cd84d72841e4496e",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T18:43:25.267519+00:00"
+    },
+    {
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/677a6cc9-e520-4f41-ade1-49851e3060ca_دليل-التوعية-السيبرانية-لأولياء-الأمور-.pdf",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "source_kind": "ministry",
+      "source_page": "https://nca.gov.sa",
+      "title": "embedded-url",
+      "path": "data/pdfs/Saudi_Arabia_NCA/ministry/677a6cc9-e520-4f41-ade1-49851e3060ca_دليل-التوعية-السيبرانية-لأولياء-الأمور-.pdf",
+      "bytes": 4739196,
+      "sha256": "10aab9e4c5245c60",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T18:43:26.102629+00:00"
     }
   ],
   "discovered": [
@@ -303988,11 +304040,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 10,
-    "pages_crawled": 1126,
+    "sources_visited": 11,
+    "pages_crawled": 1326,
     "js_pages": 246,
-    "pdfs_discovered": 221,
-    "pdfs_downloaded": 221,
+    "pdfs_discovered": 225,
+    "pdfs_downloaded": 225,
     "pdfs_skipped_existing": 56,
     "pdfs_capped": 0,
     "errors": 426
