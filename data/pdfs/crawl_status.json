@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T17:13:41.943927+00:00",
+  "updated_at": "2026-08-02T17:13:54.733751+00:00",
   "phase": "running",
-  "message": "downloaded 150 new this run",
+  "message": "finished Saudi Arabia - MEWA / ministry: +76 PDFs",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12475,
+    "pdfs": 12476,
     "errors": 21690,
     "source_reports": 30,
     "jurisdictions": 33
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 75
+      "count": 76
     },
     {
       "jurisdiction": "Saudi Arabia - IA",
@@ -155,15 +155,24 @@
     },
     {
       "source_kind": "ministry",
-      "count": 230
+      "count": 231
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MEWA",
     "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/Pages/default.aspx"
+    "url": "https://www.mewa.gov.sa",
+    "pdfs_downloaded": 76,
+    "pdfs_candidates": 101
   },
   "recent_pdfs": [
+    {
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9..pdf",
+      "downloaded_at": "2026-08-02T17:13:52.690921+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثالث(2025)​​​.",
       "jurisdiction": "Saudi Arabia - MEWA",
@@ -260,13 +269,6 @@
       "jurisdiction": "Saudi Arabia - MEWA",
       "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%202019.pdf",
       "downloaded_at": "2026-08-02T17:13:26.515906+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%85%d9%88%d9%94%d8%b4%d8%b1%d8%a7%d8%aa",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%85%d9%88%d9%94%d8%b4%d8%b1%d8%a7%d8%aa%20%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1.pdf",
-      "downloaded_at": "2026-08-02T17:13:24.626831+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -396,11 +398,11 @@
     "sources_visited": 6,
     "pages_crawled": 724,
     "js_pages": 67,
-    "pdfs_discovered": 150,
-    "pdfs_downloaded": 150,
+    "pdfs_discovered": 151,
+    "pdfs_downloaded": 151,
     "pdfs_skipped_existing": 45,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T17:13:40.143329+00:00"
+  "manifest_generated_at": "2026-08-02T17:13:52.909384+00:00"
 }

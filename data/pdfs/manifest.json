@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T17:13:40.143329+00:00",
+  "generated_at": "2026-08-02T17:13:52.909384+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -162175,6 +162175,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T17:13:40.143245+00:00"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9..pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/Pages/default.aspx",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع..pdf",
+      "bytes": 1130434,
+      "sha256": "cdcb7fb5186e496d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:13:52.690921+00:00"
     }
   ],
   "discovered": [
@@ -300357,8 +300370,8 @@
     "sources_visited": 6,
     "pages_crawled": 724,
     "js_pages": 67,
-    "pdfs_discovered": 150,
-    "pdfs_downloaded": 150,
+    "pdfs_discovered": 151,
+    "pdfs_downloaded": 151,
     "pdfs_skipped_existing": 45,
     "pdfs_capped": 0,
     "errors": 26
