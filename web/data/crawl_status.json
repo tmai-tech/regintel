@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T15:16:11.837577+00:00",
+  "updated_at": "2026-08-02T15:18:17.888766+00:00",
   "phase": "running",
-  "message": "downloaded 5 new this run",
+  "message": "downloaded 30 new this run",
   "run_id": "30753616423",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30753616423",
   "totals": {
-    "pdfs": 12250,
+    "pdfs": 12275,
     "errors": 21662,
     "source_reports": 30,
     "jurisdictions": 30
@@ -46,6 +46,10 @@
     {
       "jurisdiction": "UK",
       "count": 42
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "count": 30
     },
     {
       "jurisdiction": "Singapore",
@@ -89,10 +93,6 @@
     },
     {
       "jurisdiction": "Portugal",
-      "count": 5
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MOMAH",
       "count": 5
     },
     {
@@ -143,119 +143,119 @@
     },
     {
       "source_kind": "ministry",
-      "count": 5
+      "count": 30
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MOMAH",
     "source_kind": "ministry",
-    "url": "https://momah.gov.sa/ar/regulations"
+    "url": "https://momah.gov.sa/ar/studies-library"
   },
   "recent_pdfs": [
     {
       "title": "عرض",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2026-06/%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D9%85%D8%BA%D8%A7%D8%B3%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%AA%D9%89.pdf",
-      "downloaded_at": "2026-08-02T15:16:09.869731+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2021-01/Construction%20Technologies.pdf",
+      "downloaded_at": "2026-08-02T15:18:15.952109+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "عرض",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2026-06/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%2026-01-2026%20-%20%D9%85%D8%B9%D8%AA%D9%85%D8%AF%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1.pdf",
-      "downloaded_at": "2026-08-02T15:16:02.418044+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/City%20Services%20-%20%2805%20May%202021%29%20.pdf",
+      "downloaded_at": "2026-08-02T15:18:07.750857+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "عرض",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2026-07/%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%B2%D8%A7%D8%B1%D9%8A%20%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D9%84%D9%81%20%D9%84%D9%84%D9%88%D8%AD%D8%AF%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:15:56.549938+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Communication%20and%20Information%20Technology.pdf",
+      "downloaded_at": "2026-08-02T15:18:05.007781+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF",
+      "title": "عرض",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%AF%D9%88%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%B9%D8%A7%D9%85%202018.pdf",
-      "downloaded_at": "2026-08-02T15:15:48.670336+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Engineering%20Office%20Sector.pdf",
+      "downloaded_at": "2026-08-02T15:18:01.565420+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF",
+      "title": "عرض",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%AA%D8%B5%D8%B1%D9%8A%D9%81%20%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%A7%D9%94%D9%85%D8%B7%D8%A7%D8%B1%202016.pdf",
-      "downloaded_at": "2026-08-02T15:15:48.064730+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/City%20Cleaning%20Technologies.pdf",
+      "downloaded_at": "2026-08-02T15:17:56.935901+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "General Tour Packet",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/onlineadulttourpacket.pdf?sfvrsn=9dcfb238_2",
-      "downloaded_at": "2026-08-02T00:56:44.986689+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Construction%20Sector.pdf",
+      "downloaded_at": "2026-08-02T15:17:49.305369+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Drink & Pastries Menu",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/cafeteria/coffeedrinkspastries11x17menu.pdf?sfvrsn=75928b38_3",
-      "downloaded_at": "2026-08-02T00:52:00.412005+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Maintenance%20%26%20Operations%20Sector.pdf",
+      "downloaded_at": "2026-08-02T15:17:42.320935+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Lunch Menu",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/cafeteria/lunchmenutrifold2026pdf.pdf?sfvrsn=51928b38_3",
-      "downloaded_at": "2026-08-02T00:51:59.429479+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-01/Popular%20Apps%20for%20Contractors.pdf",
+      "downloaded_at": "2026-08-02T15:17:37.171188+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Delaware General Assembly Media Credential Application",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/MediaCredentialingPolicy/DelawareGeneralAssemblyMediaCredentialApplication.pdf?sfvrsn=b213b338_0",
-      "downloaded_at": "2026-08-02T00:51:56.499325+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%84%D8%AD%D8%AF%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.pdf",
+      "downloaded_at": "2026-08-02T15:17:26.874204+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Public Participation Infographic",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/publicparticipationguideinfographic.pdf?sfvrsn=6bc68938_2",
-      "downloaded_at": "2026-08-02T00:51:55.947141+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A5%D8%B7%D8%A7%D8%B1%20%D8%B3%D9%86%D8%AF%D8%A7%D9%8A%20%D9%84%D9%84%D8%AD%D8%AF%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB%20%D9%84%D9%84%D9%81%D8%AA%D8%B1%D8%A9%20%D9%85%D9%86%202015%20%D9%80%D9%80%202030.pdf",
+      "downloaded_at": "2026-08-02T15:17:25.443543+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Public Participation Guide",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/publicparticipationguidewithcover.pdf?sfvrsn=57c68938_2",
-      "downloaded_at": "2026-08-02T00:51:55.457204+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AE%D8%B7%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AD%D8%AF%20%D9%85%D9%85%D8%A7%20%D9%8A%D9%88%D8%A7%D8%AC%D9%87%20%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A7%D8%B7%D8%B1.pdf",
+      "downloaded_at": "2026-08-02T15:17:20.968042+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Filling a Vacancy in the General Assembly",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/fillingavacancyinthegeneralassembly.pdf?sfvrsn=fcb28d38_2",
-      "downloaded_at": "2026-08-02T00:51:54.831301+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D8%B8%D9%88%D8%A7%D9%87%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9%20%D9%86%D8%AD%D9%88%20%D8%A8%D9%86%D8%A7%D8%A1%20%D8%AB%D9%82%D8%A7%D9%81%D8%A9%20%20%D8%A7%D9%84%D9%88%D9%82%D8%A7%D9%8A%D8%A9%20%D9%85%D9%86%20%D9%83%D9%88%D8%A7%D8%B1%D8%AB%D9%87%D8%A7%20%E2%80%93%20%D8%A7%D9%84%D8%A3%D9%85%D9%85%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9.pdf",
+      "downloaded_at": "2026-08-02T15:17:19.990099+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Senate Operations When a Vote is Equally Divided",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/senateoperationswhenavoteisequallydivided.pdf?sfvrsn=96b28d38_2",
-      "downloaded_at": "2026-08-02T00:51:54.297081+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB%20%D9%85%D9%86%20%D8%AE%D9%84%D8%A7%D9%84%20%D8%B1%D8%A4%D9%8A%D8%A9%20%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%E2%80%93%20%D8%A7%D9%84%D8%A3%D9%85%D9%85%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9.pdf",
+      "downloaded_at": "2026-08-02T15:17:15.934862+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Chamber Vote Requirements When Vacancy Occurs",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/chambervoterequirementswhenvacancyoccurs.pdf?sfvrsn=95828d38_2",
-      "downloaded_at": "2026-08-02T00:51:47.116768+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%20%D8%AD%D9%82%D8%A7%D8%A6%D9%82%20%D9%88%D8%A3%D8%B1%D9%82%D8%A7%D9%85%20%E2%80%93%20%D9%87%D9%8A%D8%A6%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.pdf",
+      "downloaded_at": "2026-08-02T15:17:12.610793+00:00",
+      "source_kind": "ministry"
     },
     {
-      "title": "Length of a General Assembly and a Legislator's Term of Office",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/lengthofageneralassemblyandalegislator%27stermofoffice.pdf?sfvrsn=77808d38_3",
-      "downloaded_at": "2026-08-02T00:51:46.614355+00:00",
-      "source_kind": "parliamentary_bills"
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A8%D8%B7%D8%A7%D9%82%D8%A9%20%D9%82%D9%8A%D8%A7%D8%B3%20%D8%B5%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D9%85%D8%AF%D9%86%20%D8%A3%D9%85%D8%A7%D9%85%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.pdf",
+      "downloaded_at": "2026-08-02T15:17:08.777670+00:00",
+      "source_kind": "ministry"
     }
   ],
   "last_source_reports": [
@@ -384,11 +384,11 @@
     "sources_visited": 1,
     "pages_crawled": 200,
     "js_pages": 8,
-    "pdfs_discovered": 5,
-    "pdfs_downloaded": 5,
+    "pdfs_discovered": 30,
+    "pdfs_downloaded": 30,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-02T15:16:09.869819+00:00"
+  "manifest_generated_at": "2026-08-02T15:18:15.952196+00:00"
 }
