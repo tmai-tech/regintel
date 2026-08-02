@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:49:44.637029+00:00",
+  "updated_at": "2026-08-02T00:51:48.825583+00:00",
   "phase": "running",
-  "message": "downloaded 3210 new this run",
+  "message": "downloaded 3315 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 12132,
+    "pdfs": 12237,
     "errors": 21634,
     "source_reports": 16,
     "jurisdictions": 29
@@ -34,6 +34,10 @@
     {
       "jurisdiction": "New York",
       "count": 128
+    },
+    {
+      "jurisdiction": "Delaware",
+      "count": 113
     },
     {
       "jurisdiction": "India",
@@ -66,10 +70,6 @@
     {
       "jurisdiction": "Poland",
       "count": 11
-    },
-    {
-      "jurisdiction": "Delaware",
-      "count": 8
     },
     {
       "jurisdiction": "Turkey",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7675
+      "count": 7780
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,112 @@
   "current_source": {
     "jurisdiction": "Delaware",
     "source_kind": "parliamentary_bills",
-    "url": "https://legis.delaware.gov/Chambers/Senate/senate-rules"
+    "url": "https://legis.delaware.gov/Offices/DivisionOfResearch/Publications"
   },
   "recent_pdfs": [
     {
-      "title": "General & Floor Procedures",
+      "title": "Chamber Vote Requirements When Vacancy Occurs",
       "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/senate/senategeneralfloorprocedures.pdf?sfvrsn=61ca8838_1",
-      "downloaded_at": "2026-08-02T00:49:42.917502+00:00",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/chambervoterequirementswhenvacancyoccurs.pdf?sfvrsn=95828d38_2",
+      "downloaded_at": "2026-08-02T00:51:47.116768+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Senate Rules",
+      "title": "Length of a General Assembly and a Legislator's Term of Office",
       "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/senate/senaterules.pdf?sfvrsn=35ca8838_1",
-      "downloaded_at": "2026-08-02T00:49:42.276651+00:00",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/lengthofageneralassemblyandalegislator%27stermofoffice.pdf?sfvrsn=77808d38_3",
+      "downloaded_at": "2026-08-02T00:51:46.614355+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://legis.delaware.gov/docs/default-source/publications/howabillbecomesalawweb.pdf?sfvrsn=ee138838_2",
+      "title": "Compensation Commission",
       "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/howabillbecomesalawweb.pdf?sfvrsn=ee138838_2",
-      "downloaded_at": "2026-08-02T00:49:41.763260+00:00",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/compensationcommission.pdf?sfvrsn=59d08d38_3",
+      "downloaded_at": "2026-08-02T00:51:45.892732+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "2024 Legislative Drafting Quick Guide",
+      "title": "Research Report - Sexual Assault Kit Tracking",
       "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/2024legislativedraftingquickguide.pdf?sfvrsn=98d8838_1",
-      "downloaded_at": "2026-08-02T00:49:41.224111+00:00",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-sexualassaultkittracking.pdf?sfvrsn=a7c18938_2",
+      "downloaded_at": "2026-08-02T00:51:45.017340+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "2024 Legislative Drafting Manual",
+      "title": "Research Report - Exploring Truth-In-Labeling Meat Laws",
       "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/legislative-drafting-manual.pdf?sfvrsn=74bcb138_7",
-      "downloaded_at": "2026-08-02T00:49:40.596529+00:00",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-exploringtruth-in-labelingmeatlaws.pdf?sfvrsn=41c68938_2",
+      "downloaded_at": "2026-08-02T00:51:44.258548+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Solicitation for Legal Services Announcement",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/comm/016/custom_modules/mission_faq/SolicitationforLegalServices.pdf",
-      "downloaded_at": "2026-08-02T00:41:53.004301+00:00",
+      "title": "Research Report - Exploring the Gas Tax and Mileage-Based User Fee",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-exploringthegastaxandmileage-baseduserfee.pdf?sfvrsn=7c68938_2",
+      "downloaded_at": "2026-08-02T00:51:41.544217+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Assembly Policy Prohibiting Fraternization With Student Interns",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/comm/016/custom_modules/mission_faq/ProhibitFraternizationPolicy.pdf",
-      "downloaded_at": "2026-08-02T00:41:52.575322+00:00",
+      "title": "Research Report - Prescription Drug Affordability Review Boards",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-prescriptiondrugaffordabilityreviewboards.pdf?sfvrsn=3b0f8838_2",
+      "downloaded_at": "2026-08-02T00:51:40.758889+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Assembly Policy Prohibiting Harassment, Discrimination and Retaliation",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/comm/016/custom_modules/mission_faq/ProhibitHarassmentPolicy.pdf?20250122",
-      "downloaded_at": "2026-08-02T00:41:52.146020+00:00",
+      "title": "Delaware School Districts and Public Schools Statistics",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/delawareschooldistrictsandpublicschoolsstatistics.pdf?sfvrsn=a2e58838_1",
+      "downloaded_at": "2026-08-02T00:51:40.118341+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://nyassembly.gov/Reports/WAM/2024economic_revenue/2024ecrev_report.pdf",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/Reports/WAM/2024economic_revenue/2024ecrev_report.pdf",
-      "downloaded_at": "2026-08-02T00:41:51.174717+00:00",
+      "title": "Exploring the Data Center Industry in the United States",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/exploringthedatacenterindustryintheunitedstates.pdf?sfvrsn=c0858b38_1",
+      "downloaded_at": "2026-08-02T00:51:39.276304+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://nyassembly.gov/Reports/WAM/AssemblyBudgetProposal/2024/2024AssemblySummary.pdf?t=1785631118",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/Reports/WAM/AssemblyBudgetProposal/2024/2024AssemblySummary.pdf?t=1785631118",
-      "downloaded_at": "2026-08-02T00:41:50.173310+00:00",
+      "title": "Autonomous Vehicles, Legislative Developments Across U.S. States",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/autonomousvehicleslegislativedevelopmentsacrossusstates.pdf?sfvrsn=d6f88b38_1",
+      "downloaded_at": "2026-08-02T00:51:37.221172+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "https://nyassembly.gov/Reports/WAM/2024summary_changes/summary_2024.pdf",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/Reports/WAM/2024summary_changes/summary_2024.pdf",
-      "downloaded_at": "2026-08-02T00:41:47.238981+00:00",
+      "title": "Pocket Veto Process",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/pocketvetoprocess.pdf?sfvrsn=33828d38_2",
+      "downloaded_at": "2026-08-02T00:51:34.186085+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2024/pdfs/20241104_0111972.pdf?v=1730751329",
-      "downloaded_at": "2026-08-02T00:41:46.298671+00:00",
+      "title": "Veto Override Procedures",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/vetooverrideprocedures.pdf?sfvrsn=ff828d38_2",
+      "downloaded_at": "2026-08-02T00:51:33.678531+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250227_0113133.pdf?v=1740688621",
-      "downloaded_at": "2026-08-02T00:41:45.347847+00:00",
+      "title": "Constitutional Amendments Explained",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/constitutionalamendmentsexplained.pdf?sfvrsn=87828d38_2",
+      "downloaded_at": "2026-08-02T00:51:33.114408+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250227_0113134.pdf?v=1740688687",
-      "downloaded_at": "2026-08-02T00:41:44.308817+00:00",
+      "title": "Considerations for Whether a Bill Raises Revenue (2023)",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/considerationsforwhetherabillraisesrevenue(2023).pdf?sfvrsn=3cc68938_2",
+      "downloaded_at": "2026-08-02T00:51:32.356055+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250228_0113139.pdf?v=1740759578",
-      "downloaded_at": "2026-08-02T00:41:43.262231+00:00",
+      "title": "Memo - Voting Method Laws in the U.S.",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/memo-votingmethodlawsintheus.pdf?sfvrsn=df138838_2",
+      "downloaded_at": "2026-08-02T00:51:31.774518+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 14,
     "pages_crawled": 2708,
     "js_pages": 184,
-    "pdfs_discovered": 3210,
-    "pdfs_downloaded": 3210,
+    "pdfs_discovered": 3315,
+    "pdfs_downloaded": 3315,
     "pdfs_skipped_existing": 8805,
     "pdfs_capped": 0,
     "errors": 9677
   },
-  "manifest_generated_at": "2026-08-02T00:49:42.917581+00:00"
+  "manifest_generated_at": "2026-08-02T00:51:47.116873+00:00"
 }
