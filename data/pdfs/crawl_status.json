@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T17:30:41.960353+00:00",
+  "updated_at": "2026-08-02T17:33:25.540353+00:00",
   "phase": "running",
-  "message": "downloaded 215 new this run",
+  "message": "finished Saudi Arabia - MOF / ministry: +69 PDFs",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12540,
-    "errors": 21700,
+    "pdfs": 12545,
+    "errors": 21779,
     "source_reports": 30,
     "jurisdictions": 34
   },
@@ -53,7 +53,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
-      "count": 64
+      "count": 69
     },
     {
       "jurisdiction": "India",
@@ -159,15 +159,52 @@
     },
     {
       "source_kind": "ministry",
-      "count": 295
+      "count": 300
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MOF",
     "source_kind": "ministry",
-    "url": "https://www.mof.gov.sa/budget/2021/Pages/default.aspx"
+    "url": "https://www.mof.gov.sa",
+    "pdfs_downloaded": 69,
+    "pdfs_candidates": 168
   },
   "recent_pdfs": [
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/2022/B2022/Documents/budgetA2022.pdf",
+      "downloaded_at": "2026-08-02T17:31:05.285804+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2008.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2008.pdf",
+      "downloaded_at": "2026-08-02T17:30:58.553564+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2009.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2009.pdf",
+      "downloaded_at": "2026-08-02T17:30:57.429425+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2010.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2010.pdf",
+      "downloaded_at": "2026-08-02T17:30:56.096128+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نسخة المواطن",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/2021/Documents/Citizen_Ver_2021.pdf",
+      "downloaded_at": "2026-08-02T17:30:54.492720+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "البيان التمهيدي",
       "jurisdiction": "Saudi Arabia - MOF",
@@ -236,41 +273,6 @@
       "jurisdiction": "Saudi Arabia - MOF",
       "url": "https://www.mof.gov.sa/financialreport/Documents/Bayan%20Tamhidi%20Ar%20Portrait.pdf",
       "downloaded_at": "2026-08-02T17:30:16.340208+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2012.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2012.pdf",
-      "downloaded_at": "2026-08-02T17:30:10.599868+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2013.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2013.pdf",
-      "downloaded_at": "2026-08-02T17:30:09.933073+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2014.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2014.pdf",
-      "downloaded_at": "2026-08-02T17:30:09.262981+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2015.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2015.pdf",
-      "downloaded_at": "2026-08-02T17:30:08.598581+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2016.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2016.pdf",
-      "downloaded_at": "2026-08-02T17:30:07.944496+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -400,11 +402,11 @@
     "sources_visited": 7,
     "pages_crawled": 924,
     "js_pages": 69,
-    "pdfs_discovered": 215,
-    "pdfs_downloaded": 215,
+    "pdfs_discovered": 220,
+    "pdfs_downloaded": 220,
     "pdfs_skipped_existing": 55,
     "pdfs_capped": 0,
-    "errors": 36
+    "errors": 115
   },
-  "manifest_generated_at": "2026-08-02T17:30:40.134120+00:00"
+  "manifest_generated_at": "2026-08-02T17:33:23.708652+00:00"
 }

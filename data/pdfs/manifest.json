@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T17:30:40.134120+00:00",
+  "generated_at": "2026-08-02T17:33:23.708652+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -163020,6 +163020,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T17:30:40.134037+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2021/Documents/Citizen_Ver_2021.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/budget/2021/Pages/default.aspx",
+      "title": "نسخة المواطن",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/Citizen_Ver_2021.pdf",
+      "bytes": 8042016,
+      "sha256": "1547ae3095f047ac",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:30:54.492720+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2010.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/budget/2022/Pages/archives.aspx",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2010.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/2010.pdf",
+      "bytes": 210135,
+      "sha256": "b00a91b4df90a6d2",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:30:56.096128+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2009.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/budget/2022/Pages/archives.aspx",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2009.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/2009.pdf",
+      "bytes": 179794,
+      "sha256": "900575c4339e52ad",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:30:57.429425+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2008.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/budget/2022/Pages/archives.aspx",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2008.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/2008.pdf",
+      "bytes": 188246,
+      "sha256": "67392f45d0066abe",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:30:58.553564+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2022/B2022/Documents/budgetA2022.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/budget/2022/B2022/Pages/default.aspx",
+      "title": "embedded-url",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/budgetA2022.pdf",
+      "bytes": 8213710,
+      "sha256": "d2210770ab19d3ef",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:31:05.285804+00:00"
     }
   ],
   "discovered": [
@@ -301256,17 +301321,491 @@
       "error": "missing %PDF magic (ct=text/html)",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2022/B2022/Pages/mof.gov.sa/budget/2022/B2022/Documents/budgetA2022.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2022/B2022/Pages/allPages.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Housing.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Justice.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/HR.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Education.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Health.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Tourism.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Industry.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2024/Documents/Communication.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0642\\u064a\\u0627\\u0633 \\u0648\\u0627\\u0644\\u0645\\u0639\\u0627\\u064a\\u0631\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0642\\u064a\\u0627\\u0633 \\u0648\\u0627\\u0644\\u0645\\u0639\\u0627\\u064a\\u0631\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0637\\u0627\\u0642 \\u062a\\u0637\\u0628\\u064a\\u0642 \\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0641\\u0633\\u0627\\u062a \\u0648\\u0627\\u0644\\u0645\\u0634\\u062a\\u0631\\u064a\\u0627\\u062a \\u0627\\u0644\\u062d\\u0643\\u0648\\u0645\\u064a\\u0629 \\u0648\\u0644\\u0627\\u0626\\u062d\\u062a\\u0647 \\u0627\\u0644\\u062a\\u0646\\u0641\\u064a\\u0630\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0637\\u0627\\u0642 \\u062a\\u0637\\u0628\\u064a\\u0642 \\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0641\\u0633\\u0627\\u062a \\u0648\\u0627\\u0644\\u0645\\u0634\\u062a\\u0631\\u064a\\u0627\\u062a \\u0627\\u0644\\u062d\\u0643\\u0648\\u0645\\u064a\\u0629 \\u0648\\u0644\\u0627\\u0626\\u062d\\u062a\\u0647 \\u0627\\u0644\\u062a\\u0646\\u0641\\u064a\\u0630\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0641\\u0633\\u0627\\u062a \\u0648\\u0627\\u0644\\u0645\\u0634\\u062a\\u0631\\u064a\\u0627\\u062a \\u0627\\u0644\\u062d\\u0643\\u0648\\u0645\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0641\\u0633\\u0627\\u062a \\u0648\\u0627\\u0644\\u0645\\u0634\\u062a\\u0631\\u064a\\u0627\\u062a \\u0627\\u0644\\u062d\\u0643\\u0648\\u0645\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u0625\\u064a\\u0630\\u0627\\u0621.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u0625\\u064a\\u0630\\u0627\\u0621.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u062a\\u0639\\u0627\\u0645\\u0644\\u0627\\u062a \\u0627\\u0644\\u0625\\u0644\\u0643\\u062a\\u0631\\u0648\\u0646\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u062a\\u0639\\u0627\\u0645\\u0644\\u0627\\u062a \\u0627\\u0644\\u0625\\u0644\\u0643\\u062a\\u0631\\u0648\\u0646\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0638\\u0627\\u0645 \\u0645\\u0643\\u0627\\u0641\\u062d\\u0629 \\u062c\\u0631\\u0627\\u0626\\u0645 \\u0627\\u0644\\u0645\\u0639\\u0644\\u0648\\u0645\\u0627\\u062a\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0638\\u0627\\u0645 \\u0645\\u0643\\u0627\\u0641\\u062d\\u0629 \\u062c\\u0631\\u0627\\u0626\\u0645 \\u0627\\u0644\\u0645\\u0639\\u0644\\u0648\\u0645\\u0627\\u062a\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0646\\u0638\\u0627\\u0645 \\u0645\\u0631\\u0627\\u0642\\u0628\\u0629 \\u0634\\u0631\\u0643\\u0627\\u062a \\u0627\\u0644\\u062a\\u0623\\u0645\\u064a\\u0646.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0646\\u0638\\u0627\\u0645 \\u0645\\u0631\\u0627\\u0642\\u0628\\u0629 \\u0634\\u0631\\u0643\\u0627\\u062a \\u0627\\u0644\\u062a\\u0623\\u0645\\u064a\\u0646.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u002fdocslibrary\\u002fRegulationsInstructions\\u002fDocLib\\u002f\\u0627\\u0644\\u0642\\u0631\\u0627\\u0631 \\u0627\\u0644\\u0648\\u0632\\u0627\\u0631\\u064a \\u0648\\u0627\\u0644\\u0644\\u0627\\u0626\\u062d\\u0629 \\u0627\\u0644\\u062a\\u0646\\u0641\\u064a\\u0630\\u064a\\u0629 \\u0644\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0641\\u0633\\u0627\\u062a \\u0648\\u0627\\u0644\\u0645\\u0634\\u062a\\u0631\\u064a\\u0627\\u062a \\u0627\\u0644\\u062d\\u0643\\u0648\\u0645\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/RegulationsInstructions/Pages/\\u0627\\u0644\\u0642\\u0631\\u0627\\u0631 \\u0627\\u0644\\u0648\\u0632\\u0627\\u0631\\u064a \\u0648\\u0627\\u0644\\u0644\\u0627\\u0626\\u062d\\u0629 \\u0627\\u0644\\u062a\\u0646\\u0641\\u064a\\u0630\\u064a\\u0629 \\u0644\\u0646\\u0638\\u0627\\u0645 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0641\\u0633\\u0627\\u062a \\u0648\\u0627\\u0644\\u0645\\u0634\\u062a\\u0631\\u064a\\u0627\\u062a \\u0627\\u0644\\u062d\\u0643\\u0648\\u0645\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f \\u0627\\u0644\\u0645\\u0634\\u0627\\u0631\\u0643\\u0629 \\u0641\\u064a \\u0627\\u0644\\u062f\\u062e\\u0644.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f \\u0627\\u0644\\u0645\\u0634\\u0627\\u0631\\u0643\\u0629 \\u0641\\u064a \\u0627\\u0644\\u062f\\u062e\\u0644.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f \\u0627\\u0644\\u062a\\u0648\\u0631\\u064a\\u062f \\u0639\\u0633\\u0643\\u0631\\u064a.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f \\u0627\\u0644\\u062a\\u0648\\u0631\\u064a\\u062f \\u0639\\u0633\\u0643\\u0631\\u064a.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f \\u0627\\u0644\\u062a\\u0634\\u063a\\u064a\\u0644 \\u0648\\u0627\\u0644\\u0635\\u064a\\u0627\\u0646\\u0629 \\u0644\\u0644\\u0645\\u0628\\u0627\\u0646\\u064a \\u0627\\u0644\\u0625\\u062f\\u0627\\u0631\\u064a\\u0629 - \\u0627\\u0644\\u062a\\u0639\\u0627\\u0642\\u062f \\u0627\\u0644\\u0642\\u0627\\u0626\\u0645 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0623\\u062f\\u0627\\u0621.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f \\u0627\\u0644\\u062a\\u0634\\u063a\\u064a\\u0644 \\u0648\\u0627\\u0644\\u0635\\u064a\\u0627\\u0646\\u0629 \\u0644\\u0644\\u0645\\u0628\\u0627\\u0646\\u064a \\u0627\\u0644\\u0625\\u062f\\u0627\\u0631\\u064a\\u0629 - \\u0627\\u0644\\u062a\\u0639\\u0627\\u0642\\u062f \\u0627\\u0644\\u0642\\u0627\\u0626\\u0645 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0623\\u062f\\u0627\\u0621.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0646\\u0638\\u0627\\u0641\\u0629 \\u0627\\u0644\\u0645\\u062f\\u0646).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0646\\u0638\\u0627\\u0641\\u0629 \\u0627\\u0644\\u0645\\u062f\\u0646).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0639\\u0627\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0639\\u0627\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629- \\u062f\\u0631\\u0627\\u0633\\u0629 \\u0627\\u0644\\u0633\\u0639\\u0629 \\u0648\\u0627\\u0644\\u0637\\u0644\\u0628).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629- \\u062f\\u0631\\u0627\\u0633\\u0629 \\u0627\\u0644\\u0633\\u0639\\u0629 \\u0648\\u0627\\u0644\\u0637\\u0644\\u0628).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629- \\u062a\\u0641\\u0639\\u064a\\u0644 \\u0645\\u0643\\u062a\\u0628 \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0634\\u0627\\u0631\\u064a\\u0639 \\u0648\\u062f\\u0631\\u0627\\u0633\\u0629 \\u0627\\u0644\\u0633\\u0639\\u0629 \\u0648\\u0627\\u0644\\u0637\\u0644\\u0628).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629- \\u062a\\u0641\\u0639\\u064a\\u0644 \\u0645\\u0643\\u062a\\u0628 \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0634\\u0627\\u0631\\u064a\\u0639 \\u0648\\u062f\\u0631\\u0627\\u0633\\u0629 \\u0627\\u0644\\u0633\\u0639\\u0629 \\u0648\\u0627\\u0644\\u0637\\u0644\\u0628).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0639\\u0627\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0639\\u0627\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0627\\u0644\\u0645\\u0633\\u062a\\u0644\\u0632\\u0645\\u0627\\u062a \\u0627\\u0644\\u0637\\u0628\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0627\\u0644\\u0645\\u0633\\u062a\\u0644\\u0632\\u0645\\u0627\\u062a \\u0627\\u0644\\u0637\\u0628\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0627\\u0644\\u0623\\u062f\\u0648\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0627\\u0644\\u0623\\u062f\\u0648\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0642\\u0646\\u064a\\u0629 \\u0627\\u0644\\u0645\\u0639\\u0644\\u0648\\u0645\\u0627\\u062a).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0642\\u0646\\u064a\\u0629 \\u0627\\u0644\\u0645\\u0639\\u0644\\u0648\\u0645\\u0627\\u062a).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0634\\u063a\\u064a\\u0644 \\u0648\\u0635\\u064a\\u0627\\u0646\\u0629 \\u0627\\u0644\\u0637\\u0631\\u0642).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u062a\\u0634\\u063a\\u064a\\u0644 \\u0648\\u0635\\u064a\\u0627\\u0646\\u0629 \\u0627\\u0644\\u0637\\u0631\\u0642).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0627\\u0644\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0644\\u0647\\u0646\\u062f\\u0633\\u064a\\u0629 \\u2013 \\u062a\\u0635\\u0645\\u064a\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0627\\u0644\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0644\\u0647\\u0646\\u062f\\u0633\\u064a\\u0629 \\u2013 \\u062a\\u0635\\u0645\\u064a\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0627\\u0644\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0644\\u0647\\u0646\\u062f\\u0633\\u064a\\u0629 \\u2013 \\u0625\\u0634\\u0631\\u0627\\u0641).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0627\\u0644\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0644\\u0647\\u0646\\u062f\\u0633\\u064a\\u0629 \\u2013 \\u0625\\u0634\\u0631\\u0627\\u0641).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0627\\u0644\\u062a\\u0634\\u063a\\u064a\\u0644 \\u0648\\u0627\\u0644\\u0635\\u064a\\u0627\\u0646\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0627\\u0644\\u062a\\u0634\\u063a\\u064a\\u0644 \\u0648\\u0627\\u0644\\u0635\\u064a\\u0627\\u0646\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0625\\u0646\\u0634\\u0627\\u0621\\u0627\\u062a \\u0639\\u0627\\u0645\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0625\\u0646\\u0634\\u0627\\u0621\\u0627\\u062a \\u0639\\u0627\\u0645\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0625\\u0646\\u0634\\u0627\\u0621 \\u0627\\u0644\\u0637\\u0631\\u0642).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0625\\u0646\\u0634\\u0627\\u0621 \\u0627\\u0644\\u0637\\u0631\\u0642).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u002fdocslibrary\\u002fContractsProjects\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0625\\u0639\\u0627\\u0634\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/ContractsProjects/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0639\\u0642\\u062f (\\u0625\\u0639\\u0627\\u0634\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u002fdocslibrary\\u002fStatisticalData\\u002fDocuments\\u002f\\u0643\\u062a\\u0627\\u0628 \\u0627\\u0644\\u062a\\u0628\\u0627\\u062f\\u0644 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a \\u0628\\u064a\\u0646 \\u0627\\u0644\\u0645\\u0645\\u0644\\u0643\\u0629 \\u0648 \\u0634\\u0631\\u0643\\u0627\\u0626\\u0647\\u0627 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a\\u064a\\u0646 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u064a\\u0646 1434-1435 \\u0647\\u0640.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u0643\\u062a\\u0627\\u0628 \\u0627\\u0644\\u062a\\u0628\\u0627\\u062f\\u0644 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a \\u0628\\u064a\\u0646 \\u0627\\u0644\\u0645\\u0645\\u0644\\u0643\\u0629 \\u0648 \\u0634\\u0631\\u0643\\u0627\\u0626\\u0647\\u0627 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a\\u064a\\u0646 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u064a\\u0646 1434-1435 \\u0647\\u0640.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u002fdocslibrary\\u002fStatisticalData\\u002fDocuments\\u002f\\u0627\\u0644\\u062a\\u0628\\u0627\\u062f\\u0644 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a \\u0628\\u064a\\u0646 \\u0627\\u0644\\u0645\\u0645\\u0644\\u0643\\u0629 \\u0648 \\u0634\\u0631\\u0643\\u0627\\u0626\\u0647\\u0627 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a\\u064a\\u0646 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u064a\\u0646.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u0627\\u0644\\u062a\\u0628\\u0627\\u062f\\u0644 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a \\u0628\\u064a\\u0646 \\u0627\\u0644\\u0645\\u0645\\u0644\\u0643\\u0629 \\u0648 \\u0634\\u0631\\u0643\\u0627\\u0626\\u0647\\u0627 \\u0627\\u0644\\u062a\\u062c\\u0627\\u0631\\u064a\\u064a\\u0646 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u064a\\u0646.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u002fdocslibrary\\u002fStatisticalData\\u002fDocuments\\u002f\\u0627\\u0644\\u0635\\u0627\\u062f\\u0631\\u0627\\u062a \\u0627\\u0644\\u0633\\u0644\\u0639\\u064a\\u0629 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u0629 .pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u0627\\u0644\\u0635\\u0627\\u062f\\u0631\\u0627\\u062a \\u0627\\u0644\\u0633\\u0644\\u0639\\u064a\\u0629 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u0629 .pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u002fdocslibrary\\u002fStatisticalData\\u002fDocuments\\u002f\\u0627\\u0644\\u0648\\u0627\\u0631\\u062f\\u0627\\u062a \\u0627\\u0644\\u0633\\u0644\\u0639\\u064a\\u0629 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/StatisticalData/Pages/\\u0627\\u0644\\u0648\\u0627\\u0631\\u062f\\u0627\\u062a \\u0627\\u0644\\u0633\\u0644\\u0639\\u064a\\u0629 \\u0627\\u0644\\u0631\\u0626\\u064a\\u0633\\u064a\\u0629.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Agreements/Pages/\\u002fdocslibrary\\u002fAgreements\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0627\\u062a\\u0641\\u0627\\u0642\\u064a\\u0629 \\u0625\\u0637\\u0627\\u0631\\u064a\\u0629 (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0639\\u0627\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Agreements/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0627\\u062a\\u0641\\u0627\\u0642\\u064a\\u0629 \\u0625\\u0637\\u0627\\u0631\\u064a\\u0629 (\\u062a\\u0648\\u0631\\u064a\\u062f \\u0639\\u0627\\u0645).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Agreements/Pages/\\u002fdocslibrary\\u002fAgreements\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0627\\u062a\\u0641\\u0627\\u0642\\u064a\\u0629 \\u0625\\u0637\\u0627\\u0631\\u064a\\u0629 (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Agreements/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0627\\u062a\\u0641\\u0627\\u0642\\u064a\\u0629 \\u0625\\u0637\\u0627\\u0631\\u064a\\u0629 (\\u062e\\u062f\\u0645\\u0627\\u062a \\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u064a\\u0629).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Agreements/Pages/\\u002fdocslibrary\\u002fAgreements\\u002fDocuments\\u002f\\u0646\\u0645\\u0648\\u0630\\u062c \\u0627\\u062a\\u0641\\u0627\\u0642\\u064a\\u0629 \\u0625\\u0637\\u0627\\u0631\\u064a\\u0629 (\\u062e\\u062f\\u0645\\u0627\\u062a).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/docslibrary/Agreements/Pages/\\u0646\\u0645\\u0648\\u0630\\u062c \\u0627\\u062a\\u0641\\u0627\\u0642\\u064a\\u0629 \\u0625\\u0637\\u0627\\u0631\\u064a\\u0629 (\\u062e\\u062f\\u0645\\u0627\\u062a).pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://www.mof.gov.sa/Arabic/OpenData/Documents/برنامج%20القروض%20المحلية.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MOF"
     }
   ],
   "stats": {
     "sources_visited": 7,
     "pages_crawled": 924,
     "js_pages": 69,
-    "pdfs_discovered": 215,
-    "pdfs_downloaded": 215,
+    "pdfs_discovered": 220,
+    "pdfs_downloaded": 220,
     "pdfs_skipped_existing": 55,
     "pdfs_capped": 0,
-    "errors": 36
+    "errors": 115
   },
   "source_reports": [
     {
