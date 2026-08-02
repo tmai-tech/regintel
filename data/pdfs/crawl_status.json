@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-02T00:14:06.221361+00:00",
+  "updated_at": "2026-08-02T00:16:09.428457+00:00",
   "phase": "running",
-  "message": "downloaded 2175 new this run",
+  "message": "downloaded 2230 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11097,
-    "errors": 21626,
+    "pdfs": 11152,
+    "errors": 21631,
     "source_reports": 16,
     "jurisdictions": 29
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 6262
+      "count": 6317
     },
     {
       "jurisdiction": "Canada Federal",
@@ -135,118 +135,118 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3554
+      "count": 3609
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "official_gazette",
-    "url": "https://www.gov.mb.ca/wildfire/reports_updates.html"
+    "url": "https://www.gov.mb.ca/fippa/annual_reports/index.html"
   },
   "recent_pdfs": [
     {
-      "title": "quoted-path",
+      "title": "embedded-url",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_fnsos.pdf",
-      "downloaded_at": "2026-08-02T00:14:04.699640+00:00",
+      "url": "https://manitoba.ca/asset_library/en/fippa/annual_reports/2022_2023_report.pdf",
+      "downloaded_at": "2026-08-02T00:16:07.907136+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "embedded-url",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ministerial_order_state_of_local_emergency.pdf",
-      "downloaded_at": "2026-08-02T00:14:03.807228+00:00",
+      "url": "https://manitoba.ca/asset_library/en/fippa/annual_reports/fippa_supp_stats2023_2024.pdf",
+      "downloaded_at": "2026-08-02T00:16:06.263334+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "embedded-url",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_red_river_exhibition_association.pdf",
-      "downloaded_at": "2026-08-02T00:14:03.028314+00:00",
+      "url": "https://manitoba.ca/asset_library/en/fippa/annual_reports/annual-reports-2023-2024.pdf",
+      "downloaded_at": "2026-08-02T00:16:04.973769+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "2024-2025 FIPPA Supplementary Statistics (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_garden_city_community_centre.pdf",
-      "downloaded_at": "2026-08-02T00:14:01.987051+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/annual_reports/fippa_supp_stats2024_2025.pdf",
+      "downloaded_at": "2026-08-02T00:16:03.651594+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "2024-2025 FIPPA Annual Report (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_eric_coy_arena.pdf",
-      "downloaded_at": "2026-08-02T00:14:00.884007+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/annual_reports/annual-reports-2024-2025.pdf",
+      "downloaded_at": "2026-08-02T00:16:02.634151+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "Cost Estimate Form",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/provincial_state_of_local_emergency.fr.pdf",
-      "downloaded_at": "2026-08-02T00:13:58.083193+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/cost_estimate_form.pdf",
+      "downloaded_at": "2026-08-02T00:15:59.729965+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "quoted-path",
+      "title": "Appendix 1 - Glossary of Terms (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/provincial_state_of_local_emergency.pdf",
-      "downloaded_at": "2026-08-02T00:13:57.306655+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/appendix_glossary.pdf",
+      "downloaded_at": "2026-08-02T00:15:59.048189+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/budgetinbrief_2025.pdf",
+      "title": "Chapter 8 - Independent Review: Complaints (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/budgetinbrief_2025.pdf",
-      "downloaded_at": "2026-08-02T00:13:56.569936+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_8.pdf",
+      "downloaded_at": "2026-08-02T00:15:58.290239+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/estimates_budget2025.pdf",
+      "title": "Chapter 7 - Independent Review: The Role of the Ombudsman (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/estimates_budget2025.pdf",
-      "downloaded_at": "2026-08-02T00:13:55.520729+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_7.pdf",
+      "downloaded_at": "2026-08-02T00:15:57.272489+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/speech_budget2025.pdf",
+      "title": "Chapter 6 - Protection of Privacy (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/speech_budget2025.pdf",
-      "downloaded_at": "2026-08-02T00:13:54.196134+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_6.pdf",
+      "downloaded_at": "2026-08-02T00:15:56.282621+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/budget2025.pdf",
+      "title": "Chapter 5 - Exceptions to Disclosure (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/budget2025.pdf",
-      "downloaded_at": "2026-08-02T00:13:51.283962+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_5.pdf",
+      "downloaded_at": "2026-08-02T00:15:52.177158+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "www.gov.mb.ca/asset_library/en/rail/railway-areas-winnipeg.pdf",
+      "title": "Chapter 4 - Access to Records (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/rail/railway-areas-winnipeg.pdf",
-      "downloaded_at": "2026-08-02T00:13:49.665959+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_4.pdf",
+      "downloaded_at": "2026-08-02T00:15:50.403008+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Regina",
+      "title": "Chapter 3 - Administration of FIPPA (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.regina.ca/export/sites/Regina.ca/business-development/land-property-development/.galleries/pdfs/Design-Regina/proposed-yards-neighbourhood-plan.pdf",
-      "downloaded_at": "2026-08-02T00:13:48.041782+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_3.pdf",
+      "downloaded_at": "2026-08-02T00:15:49.322549+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Feasibility Study to Repurpose CPKC Rail yards.",
+      "title": "Chapter 2 - Scope of FIPPA – Who and What Falls Under FIPPA (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/rail/feasibility-study-to-repurpose-cpkc-rail-yards.pdf",
-      "downloaded_at": "2026-08-02T00:13:43.681045+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_2.pdf",
+      "downloaded_at": "2026-08-02T00:15:48.336416+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Nomination Form",
+      "title": "Chapter 1 - Principles, History & Purposes of FIPPA (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/mosaicawards/mosaicawards-nomination-form.pdf",
-      "downloaded_at": "2026-08-02T00:13:42.493211+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_1.pdf",
+      "downloaded_at": "2026-08-02T00:15:46.762355+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 8,
     "pages_crawled": 2101,
     "js_pages": 145,
-    "pdfs_discovered": 2175,
-    "pdfs_downloaded": 2175,
+    "pdfs_discovered": 2230,
+    "pdfs_downloaded": 2230,
     "pdfs_skipped_existing": 8544,
     "pdfs_capped": 0,
-    "errors": 9669
+    "errors": 9674
   },
-  "manifest_generated_at": "2026-08-02T00:14:04.699735+00:00"
+  "manifest_generated_at": "2026-08-02T00:16:07.907232+00:00"
 }
