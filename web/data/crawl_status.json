@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:21:06.443861+00:00",
+  "updated_at": "2026-08-02T00:23:09.064067+00:00",
   "phase": "running",
-  "message": "downloaded 2400 new this run",
+  "message": "downloaded 2515 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11322,
+    "pdfs": 11437,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -25,7 +25,7 @@
     },
     {
       "jurisdiction": "USA Federal",
-      "count": 334
+      "count": 449
     },
     {
       "jurisdiction": "Ontario",
@@ -135,7 +135,7 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3779
+      "count": 3894
     }
   ],
   "current_source": {
@@ -145,108 +145,108 @@
   },
   "recent_pdfs": [
     {
-      "title": "Airworthiness Directives; Airbus SAS Airplanes",
+      "title": "Combined Notice of Filings #1",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15410.pdf",
-      "downloaded_at": "2026-08-02T00:21:04.896241+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15290.pdf",
+      "downloaded_at": "2026-08-02T00:23:07.481867+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limit",
+      "title": "Brookfield White Pine Hydro, LLC; Notice of Availability of Environmental Assessment",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15411.pdf",
-      "downloaded_at": "2026-08-02T00:21:04.278047+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15291.pdf",
+      "downloaded_at": "2026-08-02T00:23:06.867122+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Airworthiness Directives; MHI RJ Aviation ULC (Type Certificate Previously Held by Bombardier, Inc.) Airplanes",
+      "title": "Portland Natural Gas Transmission System; Notice of Request Under Blanket Authorization and Establishing Intervention an",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15412.pdf",
-      "downloaded_at": "2026-08-02T00:21:03.431875+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15292.pdf",
+      "downloaded_at": "2026-08-02T00:23:06.253383+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Announcement of the Intent To Award Single-Source Grants (Multiple Recipients) for Necessary Expenses Directly Related t",
+      "title": "Texas Eastern Transmission, LP; Notice of Availability of the Environmental Assessment for the Proposed Line 31 Expansio",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15413.pdf",
-      "downloaded_at": "2026-08-02T00:21:02.822007+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15293.pdf",
+      "downloaded_at": "2026-08-02T00:23:05.630576+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Parts and Accessories Necessary for Safe Operation; Application for Exemption From Transit Solutions, LLC",
+      "title": "Implementation of Fish and Fish Product Import Provisions of the Marine Mammal Protection Act",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15414.pdf",
-      "downloaded_at": "2026-08-02T00:21:02.209270+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15294.pdf",
+      "downloaded_at": "2026-08-02T00:23:05.016453+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Waiver of Specified Statutory Requirements for Commercial Space Launch and Reentry Actions",
+      "title": "Notice of Diabetes Mellitus Interagency Coordinating Committee Meeting",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15415.pdf",
-      "downloaded_at": "2026-08-02T00:20:59.678228+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15296.pdf",
+      "downloaded_at": "2026-08-02T00:23:02.461232+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of Availability of the Final Programmatic Environmental Assessment and FONSI/ROD",
+      "title": "Statement of Organization, Functions, and Delegations of Authority",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15417.pdf",
-      "downloaded_at": "2026-08-02T00:20:59.010412+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15297.pdf",
+      "downloaded_at": "2026-08-02T00:23:01.906296+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Seeking Comment on Prohibiting the Importation and Marketing of Certain Covered UAS and UAS Critical Components and Equi",
+      "title": "Endangered and Threatened Wildlife and Plants; Revised Designation of Critical Habitat for the Contiguous U.S. Distinct ",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15418.pdf",
-      "downloaded_at": "2026-08-02T00:20:58.400649+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15298.pdf",
+      "downloaded_at": "2026-08-02T00:23:01.060085+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Ti",
+      "title": "Endangered and Threatened Wildlife and Plants; Endangered Species Status for Florida Keys Mole Skink; Correction",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15419.pdf",
-      "downloaded_at": "2026-08-02T00:20:57.781445+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15299.pdf",
+      "downloaded_at": "2026-08-02T00:23:00.442245+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Duty Collection for Domestic Mail Arriving From Certain Insular Possessions and Territories",
+      "title": "Safety Zone; Lake Ontario, Olcott, NY",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15420.pdf",
-      "downloaded_at": "2026-08-02T00:20:57.166969+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15300.pdf",
+      "downloaded_at": "2026-08-02T00:22:59.827436+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Privacy Act of 1974; System of Records",
+      "title": "Implementation of Section 403 of the Senator Elizabeth Dole 21st Century Veterans Healthcare and Benefits Improvement Ac",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15421.pdf",
-      "downloaded_at": "2026-08-02T00:20:54.577035+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15301.pdf",
+      "downloaded_at": "2026-08-02T00:22:57.255740+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Foreign-Trade Zone (FTZ) 153, Notification of Proposed Production Activity; Aptera Motors Corp; (Solar Electric Vehicles",
+      "title": "Public Meeting of the National Geospatial Advisory Committee",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15422.pdf",
-      "downloaded_at": "2026-08-02T00:20:53.965563+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15302.pdf",
+      "downloaded_at": "2026-08-02T00:22:56.643023+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Fiberglass Door Panels From China; Determinations",
+      "title": "Medical Devices; Radiology Devices; Classification of the Phase-Changing Fiducial Marker for Radiation Therapy",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15423.pdf",
-      "downloaded_at": "2026-08-02T00:20:53.181986+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15303.pdf",
+      "downloaded_at": "2026-08-02T00:22:55.974926+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Attestation for Employers Seeking ",
+      "title": "Information Collection: Regulatory Issue Summary, Importance of Giving the NRC Advance Notice of Intent To Pursue Licens",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15424.pdf",
-      "downloaded_at": "2026-08-02T00:20:52.572507+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15304.pdf",
+      "downloaded_at": "2026-08-02T00:22:55.358699+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Office of the Secretary; Amended Notice of Meeting",
+      "title": "Agency Information Collection Activities; Proposed eCollection eComments Requested; Title-Medical History and Examinatio",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15425.pdf",
-      "downloaded_at": "2026-08-02T00:20:51.958446+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15305.pdf",
+      "downloaded_at": "2026-08-02T00:22:54.746061+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 10,
     "pages_crawled": 2105,
     "js_pages": 145,
-    "pdfs_discovered": 2400,
-    "pdfs_downloaded": 2400,
+    "pdfs_discovered": 2515,
+    "pdfs_downloaded": 2515,
     "pdfs_skipped_existing": 8746,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:21:04.896337+00:00"
+  "manifest_generated_at": "2026-08-02T00:23:07.481989+00:00"
 }
