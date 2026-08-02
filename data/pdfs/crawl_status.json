@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T21:29:13.227585+00:00",
+  "updated_at": "2026-08-02T21:42:14.978810+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - CMA / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - CST / ministry: +2 PDFs",
   "run_id": "30766741145",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30766741145",
   "totals": {
-    "pdfs": 12805,
-    "errors": 22091,
+    "pdfs": 12807,
+    "errors": 22117,
     "source_reports": 30,
-    "jurisdictions": 36
+    "jurisdictions": 37
   },
   "by_jurisdiction": [
     {
@@ -144,6 +144,10 @@
       "count": 2
     },
     {
+      "jurisdiction": "Saudi Arabia - CST",
+      "count": 2
+    },
+    {
       "jurisdiction": "Vietnam",
       "count": 1
     },
@@ -167,17 +171,31 @@
     },
     {
       "source_kind": "ministry",
-      "count": 560
+      "count": 562
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - CMA",
+    "jurisdiction": "Saudi Arabia - CST",
     "source_kind": "ministry",
-    "url": "https://cma.org.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "url": "https://www.cst.gov.sa",
+    "pdfs_downloaded": 2,
+    "pdfs_candidates": 29
   },
   "recent_pdfs": [
+    {
+      "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
+      "jurisdiction": "Saudi Arabia - CST",
+      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "downloaded_at": "2026-08-02T21:42:12.935316+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-cla",
+      "jurisdiction": "Saudi Arabia - CST",
+      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "downloaded_at": "2026-08-02T21:42:10.736738+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
@@ -267,20 +285,6 @@
       "jurisdiction": "Saudi Arabia - NCA",
       "url": "https://cdn.nca.gov.sa/api/files/public/upload/5e05d8ba-fb15-4819-af33-e953355d48ba_Standard_Privileged-Access-Workstation_Template_en_.pdf",
       "downloaded_at": "2026-08-02T18:50:48.077818+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/97c09b56-d650-45a3-adc7-49882ce5fc59_STANDARD_Physical-Security_template_en-.pdf",
-      "downloaded_at": "2026-08-02T18:50:47.487472+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/6dbdd8f1-11e7-457b-8934-7fb9939cdaa7_STANDARD_Patch_Management_Template_en.pdf",
-      "downloaded_at": "2026-08-02T18:50:46.665470+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -407,14 +411,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 1,
-    "js_pages": 1,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "sources_visited": 2,
+    "pages_crawled": 219,
+    "js_pages": 4,
+    "pdfs_discovered": 2,
+    "pdfs_downloaded": 2,
+    "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T21:29:11.383320+00:00"
+  "manifest_generated_at": "2026-08-02T21:42:13.150482+00:00"
 }

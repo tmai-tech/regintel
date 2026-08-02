@@ -1,5 +1,53 @@
 [
   {
+    "id": "47f89efc895d0d45",
+    "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "filename": "Guidance-for-classifying-service-business.ashx_7b69337aaa97f318.pdf",
+    "jurisdiction": "Saudi Arabia - CST",
+    "source_kind": "ministry",
+    "law_type": "consultation_paper",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "cst.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "open_url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "download_url": null,
+    "bytes": 1526433,
+    "sha256": "47f89efc895d0d45",
+    "downloaded_at": "2026-08-02T21:42:12.935316+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_CST/ministry/Guidance-for-classifying-service-business.ashx_7b69337aaa97f318.pdf"
+  },
+  {
+    "id": "6319a4f77f67faeb",
+    "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "filename": "Guidance-for-classifying-service-business.ashx.pdf",
+    "jurisdiction": "Saudi Arabia - CST",
+    "source_kind": "ministry",
+    "law_type": "consultation_paper",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "cst.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "open_url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+    "download_url": null,
+    "bytes": 3221455,
+    "sha256": "6319a4f77f67faeb",
+    "downloaded_at": "2026-08-02T21:42:10.736738+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_CST/ministry/Guidance-for-classifying-service-business.ashx.pdf"
+  },
+  {
     "id": "b6151240bbf13077",
     "title": "embedded-url",
     "filename": "207a41a9-febf-45ea-9517-5519e863028a_CGIoT-.pdf",

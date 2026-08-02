@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T21:29:11.383320+00:00",
+  "generated_at": "2026-08-02T21:42:13.150482+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -166465,6 +166465,32 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T18:51:05.926593+00:00"
+    },
+    {
+      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "jurisdiction": "Saudi Arabia - CST",
+      "source_kind": "ministry",
+      "source_page": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "path": "data/pdfs/Saudi_Arabia_CST/ministry/Guidance-for-classifying-service-business.ashx.pdf",
+      "bytes": 3221455,
+      "sha256": "6319a4f77f67faeb",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T21:42:10.736738+00:00"
+    },
+    {
+      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "jurisdiction": "Saudi Arabia - CST",
+      "source_kind": "ministry",
+      "source_page": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
+      "path": "data/pdfs/Saudi_Arabia_CST/ministry/Guidance-for-classifying-service-business.ashx_7b69337aaa97f318.pdf",
+      "bytes": 1526433,
+      "sha256": "47f89efc895d0d45",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T21:42:12.935316+00:00"
     }
   ],
   "discovered": [
@@ -307358,17 +307384,173 @@
       "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - NCA"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/تنظيمات تحديد وتصنيف الأسواق والسيطرة في قطاع الاتصالات.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/سجل تغييرات تحديث وثيقة تنظيمات تحديد وتصنيف الأسواق والسيطرة في قطاع الاتصالات.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Primary Document.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex A Glossary of Terms.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex B Billing.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Technical.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Attachment 1 DDF.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Attachment 2 POIs.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Attachment 3 Signalling.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Attachment 4_LLJ Nxx.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Attachment 5 Network Synchronization.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex C Attachment 6 Mobile Network Technical Information.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/regulations-and-licenses/Annex D Mgmt of Interconnection.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/RulesandSystems/bylaws/Documents/LA_008_%20e_Telecom%20Act%20violations%20Bylaw.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Regulations for Designation of Markets \\u0026 Dominance in the Telecom Sector.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Primary Document.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex A Glossary of Terms.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex B Billing.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Technical.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Attachment 1 DDF.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Attachment 2 POIs.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Attachment 3 Signalling.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Attachment 4_LLJ Nxx.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Attachment 5 Network Synchronization.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex C Attachment 6 Mobile Network Technical Information.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://www.cst.gov.sa/en/regulations-and-licenses/Annex D Mgmt of Interconnection.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - CST"
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 1,
-    "js_pages": 1,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "sources_visited": 2,
+    "pages_crawled": 219,
+    "js_pages": 4,
+    "pdfs_discovered": 2,
+    "pdfs_downloaded": 2,
+    "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 26
   },
   "source_reports": [
     {
