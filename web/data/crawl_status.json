@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T15:28:18.839346+00:00",
+  "updated_at": "2026-08-02T15:33:51.272587+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - CMA / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - CST / ministry: +0 PDFs",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
     "pdfs": 12325,
-    "errors": 21664,
+    "errors": 21690,
     "source_reports": 30,
     "jurisdictions": 30
   },
@@ -147,11 +147,11 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - CMA",
+    "jurisdiction": "Saudi Arabia - CST",
     "source_kind": "ministry",
-    "url": "https://cma.org.sa",
+    "url": "https://www.cst.gov.sa",
     "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "pdfs_candidates": 27
   },
   "recent_pdfs": [
     {
@@ -383,14 +383,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 1,
-    "js_pages": 1,
+    "sources_visited": 2,
+    "pages_crawled": 201,
+    "js_pages": 3,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T15:28:17.032189+00:00"
+  "manifest_generated_at": "2026-08-02T15:33:49.489568+00:00"
 }
