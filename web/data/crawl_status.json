@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T17:13:54.733751+00:00",
+  "updated_at": "2026-08-02T17:28:28.435254+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - MEWA / ministry: +76 PDFs",
+  "message": "downloaded 155 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12476,
+    "pdfs": 12480,
     "errors": 21690,
     "source_reports": 30,
-    "jurisdictions": 33
+    "jurisdictions": 34
   },
   "by_jurisdiction": [
     {
@@ -108,6 +108,10 @@
       "count": 4
     },
     {
+      "jurisdiction": "Saudi Arabia - MOF",
+      "count": 4
+    },
+    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -155,17 +159,43 @@
     },
     {
       "source_kind": "ministry",
-      "count": 231
+      "count": 235
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - MEWA",
+    "jurisdiction": "Saudi Arabia - MOF",
     "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa",
-    "pdfs_downloaded": 76,
-    "pdfs_candidates": 101
+    "url": "https://www.mof.gov.sa/help/Pages/mobileapps.aspx"
   },
   "recent_pdfs": [
+    {
+      "title": "برنامج تحقيق التوازن المالي",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/FBP2019A .pdf",
+      "downloaded_at": "2026-08-02T17:28:26.638934+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نسخة المواطن",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/Citizen Budget.pdf",
+      "downloaded_at": "2026-08-02T17:28:25.914580+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "بيان الميزانية 2019",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/بيان الميزانية U18-3AM.PDF",
+      "downloaded_at": "2026-08-02T17:28:24.104653+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تحديث برنامج تحقيق التوازن المالي",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/Documents/Fiscal program Final-.pdf",
+      "downloaded_at": "2026-08-02T17:28:19.474170+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع",
       "jurisdiction": "Saudi Arabia - MEWA",
@@ -241,34 +271,6 @@
       "jurisdiction": "Saudi Arabia - MEWA",
       "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2022).pdf",
       "downloaded_at": "2026-08-02T17:13:32.253467+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظا​ت المستفيدين النصف الاول (20​22).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%20(2022).pdf",
-      "downloaded_at": "2026-08-02T17:13:29.172239+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%201439-1440%d9%87%d9%80%20sp%202.pdf",
-      "downloaded_at": "2026-08-02T17:13:28.543815+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9%20%d8%a7%d9%84%d9%85%d8%b7%d8%b1%d9%8a%d8%a9.pdf",
-      "downloaded_at": "2026-08-02T17:13:27.279259+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%202019.pdf",
-      "downloaded_at": "2026-08-02T17:13:26.515906+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -395,14 +397,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 724,
-    "js_pages": 67,
-    "pdfs_discovered": 151,
-    "pdfs_downloaded": 151,
+    "sources_visited": 7,
+    "pages_crawled": 924,
+    "js_pages": 69,
+    "pdfs_discovered": 155,
+    "pdfs_downloaded": 155,
     "pdfs_skipped_existing": 45,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T17:13:52.909384+00:00"
+  "manifest_generated_at": "2026-08-02T17:28:26.639036+00:00"
 }

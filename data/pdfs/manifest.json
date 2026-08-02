@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T17:13:52.909384+00:00",
+  "generated_at": "2026-08-02T17:28:26.639036+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -162188,6 +162188,58 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T17:13:52.690921+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/Documents/Fiscal program Final-.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/help/Pages/mobileapps.aspx",
+      "title": "تحديث برنامج تحقيق التوازن المالي",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/Fiscal program Final-.pdf",
+      "bytes": 473906,
+      "sha256": "3231e4591e008202",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:28:19.474170+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/بيان الميزانية U18-3AM.PDF",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/help/Pages/mobileapps.aspx",
+      "title": "بيان الميزانية 2019",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/بيان الميزانية U18-3AM.PDF",
+      "bytes": 15476376,
+      "sha256": "5969d2d1e57cddb5",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:28:24.104653+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/Citizen Budget.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/help/Pages/mobileapps.aspx",
+      "title": "نسخة المواطن",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/Citizen Budget.pdf",
+      "bytes": 13066274,
+      "sha256": "94ae88bea871c771",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:28:25.914580+00:00"
+    },
+    {
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/FBP2019A .pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "source_kind": "ministry",
+      "source_page": "https://www.mof.gov.sa/help/Pages/mobileapps.aspx",
+      "title": "برنامج تحقيق التوازن المالي",
+      "path": "data/pdfs/Saudi_Arabia_MOF/ministry/FBP2019A .pdf",
+      "bytes": 670707,
+      "sha256": "e129ba21fb2dc167",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T17:28:26.638934+00:00"
     }
   ],
   "discovered": [
@@ -300367,11 +300419,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 724,
-    "js_pages": 67,
-    "pdfs_discovered": 151,
-    "pdfs_downloaded": 151,
+    "sources_visited": 7,
+    "pages_crawled": 924,
+    "js_pages": 69,
+    "pdfs_discovered": 155,
+    "pdfs_downloaded": 155,
     "pdfs_skipped_existing": 45,
     "pdfs_capped": 0,
     "errors": 26
