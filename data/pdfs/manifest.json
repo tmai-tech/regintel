@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:56:45.235845+00:00",
+  "generated_at": "2026-08-02T00:56:51.679884+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -297190,6 +297190,146 @@
       "js_pages": 8,
       "pdfs_candidates": 6289,
       "pdfs_downloaded": 4087,
+      "error": null
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.parl.ca/legisinfo",
+      "pages_crawled": 300,
+      "js_pages": 82,
+      "pdfs_candidates": 349,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Canada Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.gazette.gc.ca",
+      "pages_crawled": 300,
+      "js_pages": 3,
+      "pdfs_candidates": 3068,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.leg.bc.ca/parliamentary-business/legislation-debates-proceedings/legislation",
+      "pages_crawled": 300,
+      "js_pages": 32,
+      "pdfs_candidates": 10417,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "British Columbia",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.bclaws.gov.bc.ca/civix/document/id/public/bcgaz1/1",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Ontario",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.ola.org/en/legislative-business/bills",
+      "pages_crawled": 300,
+      "js_pages": 6,
+      "pdfs_candidates": 37,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Ontario",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.ontario.ca/ontariogazette",
+      "pages_crawled": 300,
+      "js_pages": 12,
+      "pdfs_candidates": 128,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.gov.mb.ca/legislature/business/bills.html",
+      "pages_crawled": 300,
+      "js_pages": 8,
+      "pdfs_candidates": 6289,
+      "pdfs_downloaded": 2119,
+      "error": null
+    },
+    {
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.gov.mb.ca/legislature/hansard/gazette.html",
+      "pages_crawled": 300,
+      "js_pages": 1,
+      "pdfs_candidates": 232,
+      "pdfs_downloaded": 179,
+      "error": null
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://www.congress.gov/bill",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://www.congress.gov/bill -> HTTP 403 ct=text/html; charset=UTF-8"
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.federalregister.gov",
+      "pages_crawled": 3,
+      "js_pages": 0,
+      "pdfs_candidates": 1000,
+      "pdfs_downloaded": 780,
+      "error": null
+    },
+    {
+      "jurisdiction": "USA Federal",
+      "source_kind": "official_gazette",
+      "source_url": "https://www.ecfr.gov/",
+      "pages_crawled": 2,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "New York",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://nyassembly.gov/leg/",
+      "pages_crawled": 300,
+      "js_pages": 7,
+      "pdfs_candidates": 164,
+      "pdfs_downloaded": 127,
+      "error": null
+    },
+    {
+      "jurisdiction": "New York",
+      "source_kind": "official_gazette",
+      "source_url": "https://dos.ny.gov/state-register",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://dos.ny.gov/state-register -> HTTP 403 ct=text/html; charset=UTF-8"
+    },
+    {
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_url": "https://legis.delaware.gov/",
+      "pages_crawled": 300,
+      "js_pages": 32,
+      "pdfs_candidates": 149,
+      "pdfs_downloaded": 118,
       "error": null
     }
   ]
