@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-02T00:41:57.023820+00:00",
+  "updated_at": "2026-08-02T00:42:51.581855+00:00",
   "phase": "running",
-  "message": "finished New York / parliamentary_bills: +127 PDFs",
+  "message": "finished New York / official_gazette: +0 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
@@ -140,10 +140,10 @@
   ],
   "current_source": {
     "jurisdiction": "New York",
-    "source_kind": "parliamentary_bills",
-    "url": "https://nyassembly.gov/leg/",
-    "pdfs_downloaded": 127,
-    "pdfs_candidates": 164
+    "source_kind": "official_gazette",
+    "url": "https://dos.ny.gov/state-register",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 0
   },
   "recent_pdfs": [
     {
@@ -375,8 +375,8 @@
     }
   ],
   "stats": {
-    "sources_visited": 12,
-    "pages_crawled": 2407,
+    "sources_visited": 13,
+    "pages_crawled": 2408,
     "js_pages": 152,
     "pdfs_discovered": 3205,
     "pdfs_downloaded": 3205,
@@ -384,5 +384,5 @@
     "pdfs_capped": 0,
     "errors": 9677
   },
-  "manifest_generated_at": "2026-08-02T00:41:55.346995+00:00"
+  "manifest_generated_at": "2026-08-02T00:42:49.914433+00:00"
 }
