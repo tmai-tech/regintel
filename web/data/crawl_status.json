@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:33:19.716041+00:00",
+  "updated_at": "2026-08-02T00:34:06.121160+00:00",
   "phase": "running",
-  "message": "downloaded 3040 new this run",
+  "message": "finished USA Federal / official_gazette: +780 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11962,
+    "pdfs": 12000,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -21,7 +21,7 @@
     },
     {
       "jurisdiction": "USA Federal",
-      "count": 974
+      "count": 1012
     },
     {
       "jurisdiction": "British Columbia",
@@ -135,118 +135,120 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 4419
+      "count": 4457
     }
   ],
   "current_source": {
     "jurisdiction": "USA Federal",
     "source_kind": "official_gazette",
-    "url": "https://www.federalregister.gov"
+    "url": "https://www.federalregister.gov",
+    "pdfs_downloaded": 780,
+    "pdfs_candidates": 1000
   },
   "recent_pdfs": [
     {
-      "title": "Notice of Inventory Completion: Yale Peabody Museum, Yale University, New Haven, CT",
+      "title": "International Product Change-Priority Mail Express International, Priority Mail International & First-Class Package Inte",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14733.pdf",
-      "downloaded_at": "2026-08-02T00:33:18.072423+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14695.pdf",
+      "downloaded_at": "2026-08-02T00:34:03.994478+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of Inventory Completion: University of Wisconsin Oshkosh, Oshkosh, WI",
+      "title": "Small Business Investment Company (“SBIC”) Program: SBA Model Form of Agreement for Limited Partnership SBICs",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14734.pdf",
-      "downloaded_at": "2026-08-02T00:33:17.458318+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14696.pdf",
+      "downloaded_at": "2026-08-02T00:34:03.382338+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of Intended Repatriation: University of New Mexico, Maxwell Museum of Anthropology, Albuquerque, NM",
+      "title": "Fisheries of the Northeastern United States; Summer Flounder Fishery; Quota Transfer From North Carolina to Massachusett",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14735.pdf",
-      "downloaded_at": "2026-08-02T00:33:16.600670+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14697.pdf",
+      "downloaded_at": "2026-08-02T00:34:02.770337+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of Intended Repatriation: Buffalo Society of Natural Sciences, Buffalo Museum of Science, Buffalo, NY",
+      "title": "USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill; Correction",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14736.pdf",
-      "downloaded_at": "2026-08-02T00:33:15.985598+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14698.pdf",
+      "downloaded_at": "2026-08-02T00:34:00.126120+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of Intended Repatriation: William S. Webb Museum of Anthropology, University of Kentucky, Lexington, KY",
+      "title": "Agency Information Collection Activities: Proposed Collection; Comment Request",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14737.pdf",
-      "downloaded_at": "2026-08-02T00:33:15.366130+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14699.pdf",
+      "downloaded_at": "2026-08-02T00:33:59.514348+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of Inventory Completion: William S. Webb Museum of Anthropology, University of Kentucky, Lexington, KY",
+      "title": "Request for Comment: Commission Agenda and Priorities",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14738.pdf",
-      "downloaded_at": "2026-08-02T00:33:12.681048+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14700.pdf",
+      "downloaded_at": "2026-08-02T00:33:58.898693+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Rule 17a-10",
+      "title": "General Technical, Organizational, Conforming, and Correcting Amendments to the Federal Motor Carrier Safety Regulations",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14739.pdf",
-      "downloaded_at": "2026-08-02T00:33:12.066139+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14701.pdf",
+      "downloaded_at": "2026-08-02T00:33:58.286514+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Rule 613 of Regulation NMS",
+      "title": "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Prog",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14740.pdf",
-      "downloaded_at": "2026-08-02T00:33:11.450513+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14709.pdf",
+      "downloaded_at": "2026-08-02T00:33:57.613838+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Rule 15c6-2",
+      "title": "Order Sunsetting Certain Large Trader Reporting Requirements for Physical Commodity Swaps",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14741.pdf",
-      "downloaded_at": "2026-08-02T00:33:10.826423+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14710.pdf",
+      "downloaded_at": "2026-08-02T00:33:54.905227+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Herzfeld Credit Income Fund, et al.",
+      "title": "Draft NUREG: Training Review Criteria and Procedures",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14742.pdf",
-      "downloaded_at": "2026-08-02T00:33:10.205398+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14702.pdf",
+      "downloaded_at": "2026-08-02T00:33:54.290590+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated A",
+      "title": "Personnel Demonstration Project at the United States Army Communications-Electronics Command Software Engineering Center",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14743.pdf",
-      "downloaded_at": "2026-08-02T00:33:07.547515+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14703.pdf",
+      "downloaded_at": "2026-08-02T00:33:53.442155+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of Proposed Rul",
+      "title": "Bulk Manufacturer of Controlled Substances Application: Cerilliant Corporation",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14744.pdf",
-      "downloaded_at": "2026-08-02T00:33:06.871767+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14704.pdf",
+      "downloaded_at": "2026-08-02T00:33:52.280574+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change T",
+      "title": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Ti",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14745.pdf",
-      "downloaded_at": "2026-08-02T00:33:06.018841+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14705.pdf",
+      "downloaded_at": "2026-08-02T00:33:51.607019+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To ",
+      "title": "Notice of OFAC Sanctions Action",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14746.pdf",
-      "downloaded_at": "2026-08-02T00:33:05.402958+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14706.pdf",
+      "downloaded_at": "2026-08-02T00:33:48.925461+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule C",
+      "title": "Agency Information Collection Activities; Submission for Office of Management and Budget Review; Comment Request; Premar",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14747.pdf",
-      "downloaded_at": "2026-08-02T00:33:04.786519+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14707.pdf",
+      "downloaded_at": "2026-08-02T00:33:47.649816+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +378,11 @@
     "sources_visited": 10,
     "pages_crawled": 2105,
     "js_pages": 145,
-    "pdfs_discovered": 3040,
-    "pdfs_downloaded": 3040,
+    "pdfs_discovered": 3078,
+    "pdfs_downloaded": 3078,
     "pdfs_skipped_existing": 8766,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:33:18.072507+00:00"
+  "manifest_generated_at": "2026-08-02T00:34:04.467887+00:00"
 }

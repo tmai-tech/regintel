@@ -1,5 +1,994 @@
 [
   {
+    "id": "b1a963623ba0b852",
+    "title": "International Product Change-Priority Mail Express International, Priority Mail International & First-Class Package International Service Agreement",
+    "filename": "2026-14695.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14695.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14695.pdf",
+    "download_url": null,
+    "bytes": 205049,
+    "sha256": "b1a963623ba0b852",
+    "downloaded_at": "2026-08-02T00:34:03.994478+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14695.pdf"
+  },
+  {
+    "id": "a2719f1c48997c82",
+    "title": "Small Business Investment Company (“SBIC”) Program: SBA Model Form of Agreement for Limited Partnership SBICs",
+    "filename": "2026-14696.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14696.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14696.pdf",
+    "download_url": null,
+    "bytes": 207024,
+    "sha256": "a2719f1c48997c82",
+    "downloaded_at": "2026-08-02T00:34:03.382338+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14696.pdf"
+  },
+  {
+    "id": "96ef541b6c76bf6a",
+    "title": "Fisheries of the Northeastern United States; Summer Flounder Fishery; Quota Transfer From North Carolina to Massachusetts",
+    "filename": "2026-14697.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14697.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14697.pdf",
+    "download_url": null,
+    "bytes": 185045,
+    "sha256": "96ef541b6c76bf6a",
+    "downloaded_at": "2026-08-02T00:34:02.770337+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14697.pdf"
+  },
+  {
+    "id": "6151258216d979fc",
+    "title": "USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill; Correction",
+    "filename": "2026-14698.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "bill",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14698.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14698.pdf",
+    "download_url": null,
+    "bytes": 217650,
+    "sha256": "6151258216d979fc",
+    "downloaded_at": "2026-08-02T00:34:00.126120+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14698.pdf"
+  },
+  {
+    "id": "d186fbfbc76172d9",
+    "title": "Agency Information Collection Activities: Proposed Collection; Comment Request",
+    "filename": "2026-14699.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14699.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14699.pdf",
+    "download_url": null,
+    "bytes": 217223,
+    "sha256": "d186fbfbc76172d9",
+    "downloaded_at": "2026-08-02T00:33:59.514348+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14699.pdf"
+  },
+  {
+    "id": "401b1dbad4d53343",
+    "title": "Request for Comment: Commission Agenda and Priorities",
+    "filename": "2026-14700.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "parliamentary_record",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14700.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14700.pdf",
+    "download_url": null,
+    "bytes": 198190,
+    "sha256": "401b1dbad4d53343",
+    "downloaded_at": "2026-08-02T00:33:58.898693+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14700.pdf"
+  },
+  {
+    "id": "8875b1121399c175",
+    "title": "General Technical, Organizational, Conforming, and Correcting Amendments to the Federal Motor Carrier Safety Regulations",
+    "filename": "2026-14701.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14701.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14701.pdf",
+    "download_url": null,
+    "bytes": 277662,
+    "sha256": "8875b1121399c175",
+    "downloaded_at": "2026-08-02T00:33:58.286514+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14701.pdf"
+  },
+  {
+    "id": "dd28ead4e67840db",
+    "title": "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Program; Correction",
+    "filename": "2026-14709.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "act",
+    "year": 2027,
+    "years": [
+      2027,
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14709.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14709.pdf",
+    "download_url": null,
+    "bytes": 239909,
+    "sha256": "dd28ead4e67840db",
+    "downloaded_at": "2026-08-02T00:33:57.613838+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14709.pdf"
+  },
+  {
+    "id": "cb40e3b6ddf95c16",
+    "title": "Order Sunsetting Certain Large Trader Reporting Requirements for Physical Commodity Swaps",
+    "filename": "2026-14710.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14710.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14710.pdf",
+    "download_url": null,
+    "bytes": 222357,
+    "sha256": "cb40e3b6ddf95c16",
+    "downloaded_at": "2026-08-02T00:33:54.905227+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14710.pdf"
+  },
+  {
+    "id": "f3d7b17fa8bccd1c",
+    "title": "Draft NUREG: Training Review Criteria and Procedures",
+    "filename": "2026-14702.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14702.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14702.pdf",
+    "download_url": null,
+    "bytes": 214123,
+    "sha256": "f3d7b17fa8bccd1c",
+    "downloaded_at": "2026-08-02T00:33:54.290590+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14702.pdf"
+  },
+  {
+    "id": "5f57b1088a5eba72",
+    "title": "Personnel Demonstration Project at the United States Army Communications-Electronics Command Software Engineering Center Science and Technology Reinvention Laboratory (STRL)",
+    "filename": "2026-14703.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14703.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14703.pdf",
+    "download_url": null,
+    "bytes": 763583,
+    "sha256": "5f57b1088a5eba72",
+    "downloaded_at": "2026-08-02T00:33:53.442155+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14703.pdf"
+  },
+  {
+    "id": "e3b045a761377695",
+    "title": "Bulk Manufacturer of Controlled Substances Application: Cerilliant Corporation",
+    "filename": "2026-14704.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14704.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14704.pdf",
+    "download_url": null,
+    "bytes": 261820,
+    "sha256": "e3b045a761377695",
+    "downloaded_at": "2026-08-02T00:33:52.280574+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14704.pdf"
+  },
+  {
+    "id": "a7edf1ffa34656ac",
+    "title": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Title: Advanced Nursing Education Program Specific Form OMB No. 0906-0089-Revision",
+    "filename": "2026-14705.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14705.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14705.pdf",
+    "download_url": null,
+    "bytes": 192369,
+    "sha256": "a7edf1ffa34656ac",
+    "downloaded_at": "2026-08-02T00:33:51.607019+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14705.pdf"
+  },
+  {
+    "id": "978deac0483910c9",
+    "title": "Notice of OFAC Sanctions Action",
+    "filename": "2026-14706.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14706.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14706.pdf",
+    "download_url": null,
+    "bytes": 928465,
+    "sha256": "978deac0483910c9",
+    "downloaded_at": "2026-08-02T00:33:48.925461+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14706.pdf"
+  },
+  {
+    "id": "9c7afdb9da659b2a",
+    "title": "Agency Information Collection Activities; Submission for Office of Management and Budget Review; Comment Request; Premarket Notifications Submission",
+    "filename": "2026-14707.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14707.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14707.pdf",
+    "download_url": null,
+    "bytes": 219674,
+    "sha256": "9c7afdb9da659b2a",
+    "downloaded_at": "2026-08-02T00:33:47.649816+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14707.pdf"
+  },
+  {
+    "id": "98cce61b70087729",
+    "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Highly Migratory Species Tournament Registration and Reporting",
+    "filename": "2026-14708.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14708.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14708.pdf",
+    "download_url": null,
+    "bytes": 199126,
+    "sha256": "98cce61b70087729",
+    "downloaded_at": "2026-08-02T00:33:47.037978+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14708.pdf"
+  },
+  {
+    "id": "07f0312f017b850c",
+    "title": "Foreign Endangered Species; Receipt of Permit Applications",
+    "filename": "2026-14711.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14711.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14711.pdf",
+    "download_url": null,
+    "bytes": 224943,
+    "sha256": "07f0312f017b850c",
+    "downloaded_at": "2026-08-02T00:33:46.424249+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14711.pdf"
+  },
+  {
+    "id": "2db712e0451d95a7",
+    "title": "Foreign Endangered Species; Receipt of Permit Applications",
+    "filename": "2026-14712.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14712.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14712.pdf",
+    "download_url": null,
+    "bytes": 232817,
+    "sha256": "2db712e0451d95a7",
+    "downloaded_at": "2026-08-02T00:33:45.813050+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14712.pdf"
+  },
+  {
+    "id": "9ee2f5a36e1512ea",
+    "title": "Notice of Inventory Completion: University of Michigan, Ann Arbor MI",
+    "filename": "2026-14713.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14713.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14713.pdf",
+    "download_url": null,
+    "bytes": 208641,
+    "sha256": "9ee2f5a36e1512ea",
+    "downloaded_at": "2026-08-02T00:33:43.096321+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14713.pdf"
+  },
+  {
+    "id": "a6c8473368840b18",
+    "title": "Notice of Intended Repatriation: California Department of Forestry and Fire Protection, Sacramento, CA",
+    "filename": "2026-14714.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14714.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14714.pdf",
+    "download_url": null,
+    "bytes": 208261,
+    "sha256": "a6c8473368840b18",
+    "downloaded_at": "2026-08-02T00:33:42.426881+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14714.pdf"
+  },
+  {
+    "id": "2d0dc74fdf6e0988",
+    "title": "Notice of Intended Repatriation: Milwaukee Public Museum, Milwaukee, WI",
+    "filename": "2026-14715.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14715.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14715.pdf",
+    "download_url": null,
+    "bytes": 209245,
+    "sha256": "2d0dc74fdf6e0988",
+    "downloaded_at": "2026-08-02T00:33:41.525528+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14715.pdf"
+  },
+  {
+    "id": "35eddf718400079f",
+    "title": "Notice of Inventory Completion: U.S. Department of Energy, Idaho Operations Office, Idaho Falls, ID",
+    "filename": "2026-14716.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14716.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14716.pdf",
+    "download_url": null,
+    "bytes": 208773,
+    "sha256": "35eddf718400079f",
+    "downloaded_at": "2026-08-02T00:33:40.855868+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14716.pdf"
+  },
+  {
+    "id": "ea20945677b7f931",
+    "title": "Notice of Inventory Completion: Kansas State Historical Society, Topeka, KS",
+    "filename": "2026-14717.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14717.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14717.pdf",
+    "download_url": null,
+    "bytes": 208493,
+    "sha256": "ea20945677b7f931",
+    "downloaded_at": "2026-08-02T00:33:40.183392+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14717.pdf"
+  },
+  {
+    "id": "85f5cf95236efd65",
+    "title": "Notice of Intended Repatriation: Abbe Museum, Bar Harbor, ME",
+    "filename": "2026-14718.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14718.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14718.pdf",
+    "download_url": null,
+    "bytes": 204703,
+    "sha256": "85f5cf95236efd65",
+    "downloaded_at": "2026-08-02T00:33:37.455162+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14718.pdf"
+  },
+  {
+    "id": "b4f7846a504da1f2",
+    "title": "Notice of Inventory Completion: U.S. Department of the Interior, Bureau of Indian Affairs, Washington, DC, and Eastern Washington University, Cheney, WA",
+    "filename": "2026-14719.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14719.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14719.pdf",
+    "download_url": null,
+    "bytes": 208889,
+    "sha256": "b4f7846a504da1f2",
+    "downloaded_at": "2026-08-02T00:33:36.845676+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14719.pdf"
+  },
+  {
+    "id": "b32dcd05ab8c5c84",
+    "title": "Notice of Inventory Completion: American Museum of Natural History, New York, NY",
+    "filename": "2026-14720.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14720.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14720.pdf",
+    "download_url": null,
+    "bytes": 204296,
+    "sha256": "b32dcd05ab8c5c84",
+    "downloaded_at": "2026-08-02T00:33:36.230198+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14720.pdf"
+  },
+  {
+    "id": "cb8b07e6230930c7",
+    "title": "Notice of Inventory Completion: The University of Tennessee, Department of Anthropology, Knoxville, TN, and the Frank H. McClung Museum of Natural History & Culture, Knoxville, TN",
+    "filename": "2026-14721.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14721.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14721.pdf",
+    "download_url": null,
+    "bytes": 209382,
+    "sha256": "cb8b07e6230930c7",
+    "downloaded_at": "2026-08-02T00:33:35.619672+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14721.pdf"
+  },
+  {
+    "id": "d3477c37029da974",
+    "title": "Notice of Intended Repatriation: The University of Tennessee, Department of Anthropology, Knoxville, TN, and the Frank H. McClung Museum of Natural History & Culture, Knoxville, TN",
+    "filename": "2026-14722.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14722.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14722.pdf",
+    "download_url": null,
+    "bytes": 209338,
+    "sha256": "d3477c37029da974",
+    "downloaded_at": "2026-08-02T00:33:35.007681+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14722.pdf"
+  },
+  {
+    "id": "33cbbc5dfffc1873",
+    "title": "Notice of Inventory Completion: The University of Tennessee, Department of Anthropology, Knoxville, TN, and the Frank H. McClung Museum of Natural History & Culture, Knoxville, TN",
+    "filename": "2026-14723.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14723.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14723.pdf",
+    "download_url": null,
+    "bytes": 209490,
+    "sha256": "33cbbc5dfffc1873",
+    "downloaded_at": "2026-08-02T00:33:32.357830+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14723.pdf"
+  },
+  {
+    "id": "890ce03f459bf878",
+    "title": "Notice of Intended Repatriation: the University of Tennessee, Department of Anthropology, Knoxville, TN, and the Frank H. McClung Museum of Natural History & Culture, Knoxville, TN",
+    "filename": "2026-14724.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14724.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14724.pdf",
+    "download_url": null,
+    "bytes": 204634,
+    "sha256": "890ce03f459bf878",
+    "downloaded_at": "2026-08-02T00:33:31.749477+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14724.pdf"
+  },
+  {
+    "id": "783f161b428313c8",
+    "title": "Notice of Intended Repatriation: Sonoma State University, Rohnert Park, CA",
+    "filename": "2026-14725.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14725.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14725.pdf",
+    "download_url": null,
+    "bytes": 211142,
+    "sha256": "783f161b428313c8",
+    "downloaded_at": "2026-08-02T00:33:30.898625+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14725.pdf"
+  },
+  {
+    "id": "340903a5bcb5898c",
+    "title": "Notice of Inventory Completion: Sonoma State University, Rohnert Park, CA",
+    "filename": "2026-14726.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14726.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14726.pdf",
+    "download_url": null,
+    "bytes": 207096,
+    "sha256": "340903a5bcb5898c",
+    "downloaded_at": "2026-08-02T00:33:30.288738+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14726.pdf"
+  },
+  {
+    "id": "7a3416000c44e7f3",
+    "title": "Product Change-Priority Mail Express, Priority Mail, and USPS Ground Advantage Negotiated Service Agreements; Priority Mail, and USPS Ground Advantage Negotiated Service Agreements",
+    "filename": "2026-14727.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14727.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14727.pdf",
+    "download_url": null,
+    "bytes": 191526,
+    "sha256": "7a3416000c44e7f3",
+    "downloaded_at": "2026-08-02T00:33:29.665806+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14727.pdf"
+  },
+  {
+    "id": "21c319ea831b04e7",
+    "title": "Notice of Inventory Completion: Michigan History Center, Lansing, MI",
+    "filename": "2026-14728.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14728.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14728.pdf",
+    "download_url": null,
+    "bytes": 204038,
+    "sha256": "21c319ea831b04e7",
+    "downloaded_at": "2026-08-02T00:33:26.998112+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14728.pdf"
+  },
+  {
+    "id": "6ab67fb85cd73e3f",
+    "title": "Notice of Intended Repatriation: University of California, Berkeley, Berkeley, CA",
+    "filename": "2026-14729.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "act",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14729.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14729.pdf",
+    "download_url": null,
+    "bytes": 212609,
+    "sha256": "6ab67fb85cd73e3f",
+    "downloaded_at": "2026-08-02T00:33:26.388224+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14729.pdf"
+  },
+  {
+    "id": "99aa82761e898ff1",
+    "title": "Notice of Intended Repatriation: California Department of Transportation, District 8, San Bernadino, CA",
+    "filename": "2026-14730.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14730.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14730.pdf",
+    "download_url": null,
+    "bytes": 208849,
+    "sha256": "99aa82761e898ff1",
+    "downloaded_at": "2026-08-02T00:33:25.777947+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14730.pdf"
+  },
+  {
+    "id": "ed39f216b3e370be",
+    "title": "Notice of Inventory Completion: University of Cincinnati, Cincinnati, OH",
+    "filename": "2026-14731.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14731.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14731.pdf",
+    "download_url": null,
+    "bytes": 213862,
+    "sha256": "ed39f216b3e370be",
+    "downloaded_at": "2026-08-02T00:33:25.167726+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14731.pdf"
+  },
+  {
+    "id": "f1ad257aed3718b3",
+    "title": "Notice of Inventory Completion: University of Cincinnati, Cincinnati, OH",
+    "filename": "2026-14732.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14732.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14732.pdf",
+    "download_url": null,
+    "bytes": 209206,
+    "sha256": "f1ad257aed3718b3",
+    "downloaded_at": "2026-08-02T00:33:24.554080+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-14732.pdf"
+  },
+  {
     "id": "60470ea3927615ac",
     "title": "Notice of Inventory Completion: Yale Peabody Museum, Yale University, New Haven, CT",
     "filename": "2026-14733.pdf",
