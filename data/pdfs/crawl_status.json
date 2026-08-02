@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T18:43:27.950974+00:00",
+  "updated_at": "2026-08-02T18:45:33.339009+00:00",
   "phase": "running",
-  "message": "downloaded 225 new this run",
+  "message": "downloaded 305 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12550,
+    "pdfs": 12630,
     "errors": 22090,
     "source_reports": 30,
     "jurisdictions": 36
@@ -38,6 +38,10 @@
     {
       "jurisdiction": "Delaware",
       "count": 121
+    },
+    {
+      "jurisdiction": "Saudi Arabia - NCA",
+      "count": 84
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -112,10 +116,6 @@
       "count": 4
     },
     {
-      "jurisdiction": "Saudi Arabia - NCA",
-      "count": 4
-    },
-    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -167,118 +167,118 @@
     },
     {
       "source_kind": "ministry",
-      "count": 305
+      "count": 385
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - NCA",
     "source_kind": "ministry",
-    "url": "https://nca.gov.sa"
+    "url": "https://nca.gov.sa/ar/regulatory-documents/"
   },
   "recent_pdfs": [
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/677a6cc9-e520-4f41-ade1-49851e3060ca_دليل-التوعية-السيبرانية-لأولياء-الأمور-.pdf",
-      "downloaded_at": "2026-08-02T18:43:26.102629+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d1621050-32da-48bd-9185-3120cc39e460_Report_Cybersecurity-Audit_Template_ar_v0.4.pdf",
+      "downloaded_at": "2026-08-02T18:45:31.514116+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4a51cfb0-fa32-4756-856c-01836c27c5a3_File-.pdf",
-      "downloaded_at": "2026-08-02T18:43:25.267519+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/1516ce8d-63de-459e-a7f3-33fcfe773e2d_PROGRAM_Cybersecurity-Awareness-Program_Template_ar_v0.3.pdf",
+      "downloaded_at": "2026-08-02T18:45:30.920456+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/b9454489-c625-47b4-8ebb-acda0bab720c_Accounts-Security.pdf",
-      "downloaded_at": "2026-08-02T18:43:24.419607+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/8b49130f-5e22-4e9a-8393-877258ad0e08_PROCEDURE_Vulnerability-Management-Procedure_Template_ar_v0.4.pdf",
+      "downloaded_at": "2026-08-02T18:45:30.326424+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/c5147e4d-9e2b-4d17-8702-39ef4ba169af_دليل-التوعية-السيبرانية-للتسوق-الآمن-عبر-الإنتـرنـت.pdf",
-      "downloaded_at": "2026-08-02T18:43:23.339614+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "سياسات حوكمة البيانات الوطنية.​",
-      "jurisdiction": "Saudi Arabia - MoC",
-      "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
-      "downloaded_at": "2026-08-02T18:36:54.454143+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/894edff9-ebe7-4f4c-9c70-02e5e95f9ad6_PROCEDURE_Cybersecurity-Document-Development-Procedure_Template_ar_v0.4-.pdf",
+      "downloaded_at": "2026-08-02T18:45:29.498311+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2022/B2022/Documents/budgetA2022.pdf",
-      "downloaded_at": "2026-08-02T17:31:05.285804+00:00",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d2064081-1689-4aa4-a283-dcff36e27374_PROCEDURE_Cybersecurity_risk_management_template_ar_v0.4.pdf",
+      "downloaded_at": "2026-08-02T18:45:28.438445+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2008.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2008.pdf",
-      "downloaded_at": "2026-08-02T17:30:58.553564+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/f7deadb8-cb86-42a2-bc2c-eb9510e16eba_Procedure_Cybersecurity-Audit_Template_ar_v0.4.pdf",
+      "downloaded_at": "2026-08-02T18:45:24.638357+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2009.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2009.pdf",
-      "downloaded_at": "2026-08-02T17:30:57.429425+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4f03a869-bd4e-4129-b31c-bd5e6fe6b3af_POLICY_Storage_Media_Policy_Template_ar_v0.3.pdf",
+      "downloaded_at": "2026-08-02T18:45:23.809482+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2010.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2010.pdf",
-      "downloaded_at": "2026-08-02T17:30:56.096128+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/50068ec0-2f38-4a1e-9150-3409a2e62d55_POLICY_SSDLC_Template_ar_v0.4.pdf",
+      "downloaded_at": "2026-08-02T18:45:22.980082+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نسخة المواطن",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2021/Documents/Citizen_Ver_2021.pdf",
-      "downloaded_at": "2026-08-02T17:30:54.492720+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/10e8e2b5-6c73-48af-8be3-09330de16d8e_POLICY_Data_Cybersecurity_template_ar.pdf",
+      "downloaded_at": "2026-08-02T18:45:22.151620+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "البيان التمهيدي",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/Documents/Pre-Bud%202021.pdf",
-      "downloaded_at": "2026-08-02T17:30:40.134037+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4b686057-2d85-4fbe-8b12-7b76e459e663_POLICY_Backup_and_Recovery_template_ar_v0.3.pdf",
+      "downloaded_at": "2026-08-02T18:45:21.323306+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q1_A_2020.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q1_A_2020.pdf",
-      "downloaded_at": "2026-08-02T17:30:38.085521+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/36346fff-a73a-4080-8429-7716f0e38661_POLICY_Asset_Management_template_ar_v0.3.pdf",
+      "downloaded_at": "2026-08-02T18:45:17.770821+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q2A2020.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q2A2020.pdf",
-      "downloaded_at": "2026-08-02T17:30:37.167515+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/028dd7a0-dffb-47a2-a5d5-b44bce260ff3_Form_Policy-Undertaking_Template_ar_.pdf",
+      "downloaded_at": "2026-08-02T18:45:16.939777+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q3%20A%202020.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q3%20A%202020.pdf",
-      "downloaded_at": "2026-08-02T17:30:35.763493+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d0a0b71a-da68-4f04-af15-ce65f572940a_Form_Confidentiality-Agreement_Template_ar_.pdf",
+      "downloaded_at": "2026-08-02T18:45:16.111746+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://mof.gov.sa/financialreport/budget2020/Documents/Q4A2020V6.pdf",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://mof.gov.sa/financialreport/budget2020/Documents/Q4A2020V6.pdf",
-      "downloaded_at": "2026-08-02T17:30:31.594190+00:00",
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/00909cb1-298f-44f1-8df9-23592aa66dbb_CHECKLIST_Cybersecurity_Requirements_in_Software_Development_Template_ar.pdf",
+      "downloaded_at": "2026-08-02T18:45:15.518999+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4298b044-0f62-4d38-bdfa-9c7a538135ec_CHECKLIST_Cybersecurity_Requirements_in_IT_Projects_and_Change_Management_template_ar.pdf",
+      "downloaded_at": "2026-08-02T18:45:14.224119+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -408,11 +408,11 @@
     "sources_visited": 11,
     "pages_crawled": 1326,
     "js_pages": 246,
-    "pdfs_discovered": 225,
-    "pdfs_downloaded": 225,
+    "pdfs_discovered": 305,
+    "pdfs_downloaded": 305,
     "pdfs_skipped_existing": 56,
     "pdfs_capped": 0,
     "errors": 426
   },
-  "manifest_generated_at": "2026-08-02T18:43:26.102717+00:00"
+  "manifest_generated_at": "2026-08-02T18:45:31.514211+00:00"
 }
