@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:27:16.284751+00:00",
+  "updated_at": "2026-08-02T00:29:17.302860+00:00",
   "phase": "running",
-  "message": "downloaded 2710 new this run",
+  "message": "downloaded 2820 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11632,
+    "pdfs": 11742,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -25,7 +25,7 @@
     },
     {
       "jurisdiction": "USA Federal",
-      "count": 644
+      "count": 754
     },
     {
       "jurisdiction": "Ontario",
@@ -135,7 +135,7 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 4089
+      "count": 4199
     }
   ],
   "current_source": {
@@ -145,108 +145,108 @@
   },
   "recent_pdfs": [
     {
-      "title": "Airworthiness Directives; The Boeing Company Airplanes",
+      "title": "Further Strengthening Actions Taken To Adjust Imports of Aluminum Into the United States",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15072.pdf",
-      "downloaded_at": "2026-08-02T00:27:14.682076+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14990.pdf",
+      "downloaded_at": "2026-08-02T00:29:15.683986+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limit",
+      "title": "Imposing Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to A",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15073.pdf",
-      "downloaded_at": "2026-08-02T00:27:14.014050+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14991.pdf",
+      "downloaded_at": "2026-08-02T00:29:15.072050+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Medical Devices; Gastroenterology-Urology Devices; Classification of the Non-Medicated Topical Formulation for Treatment",
+      "title": "Imposing Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to D",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15074.pdf",
-      "downloaded_at": "2026-08-02T00:27:13.111771+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14992.pdf",
+      "downloaded_at": "2026-08-02T00:29:13.201077+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Medical Devices; General Hospital and Personal Use Devices; Classification of the Active Noise Attenuation System for In",
+      "title": "Imposing Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to M",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15075.pdf",
-      "downloaded_at": "2026-08-02T00:27:12.501581+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14997.pdf",
+      "downloaded_at": "2026-08-02T00:29:12.109356+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "EnergySolutions Services Inc.; Application To Amend and Renew; Current Export License",
+      "title": "Captive Nations Week, 2026",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15076.pdf",
-      "downloaded_at": "2026-08-02T00:27:11.887555+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14998.pdf",
+      "downloaded_at": "2026-08-02T00:29:08.901680+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Forms Undergoing Paperwork Reduction Act Review",
+      "title": "Made in America Week, 2026",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15077.pdf",
-      "downloaded_at": "2026-08-02T00:27:09.293293+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14999.pdf",
+      "downloaded_at": "2026-08-02T00:29:06.330339+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Proposed Data Collection Submitted for Public Comment and Recommendations",
+      "title": "Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15078.pdf",
-      "downloaded_at": "2026-08-02T00:27:08.680740+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-15003.pdf",
+      "downloaded_at": "2026-08-02T00:29:05.778379+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Application for Final Commitment for a Long-Term Loan or Financial Guarantee in Excess of $100 Million: AP300129XX",
+      "title": "Continuation of the National Emergency With Respect to Mali",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15079.pdf",
-      "downloaded_at": "2026-08-02T00:27:08.069426+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-15024.pdf",
+      "downloaded_at": "2026-08-02T00:29:05.167318+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Reducing Barriers to Medical Use Licensing",
+      "title": "Deepwater Port License Application: ST LNG Deepwater Port Development Project-Final Public Hearing",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15080.pdf",
-      "downloaded_at": "2026-08-02T00:27:07.519818+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14960.pdf",
+      "downloaded_at": "2026-08-02T00:29:04.611585+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities: Comment Request on the Burden Related to the Requirements for Completing and S",
+      "title": "Agency Information Collection Request: OPM E-File System (3206-NEW)",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15081.pdf",
-      "downloaded_at": "2026-08-02T00:27:06.603410+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14961.pdf",
+      "downloaded_at": "2026-08-02T00:29:04.058768+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities: Comment Request on the Burden Related to the Disclosure of Returns and Return ",
+      "title": "Notice of the Establishment of the Arctic Shipping Federal Advisory Committee; Solicitation of Nominations for Membershi",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15082.pdf",
-      "downloaded_at": "2026-08-02T00:27:04.065720+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14962.pdf",
+      "downloaded_at": "2026-08-02T00:29:01.436524+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Administrative Declaration of a Disaster for the Commonwealth of Pennsylvania",
+      "title": "Deepwater Port License Application: ST LNG Deepwater Port Development Project-Final Environmental Impact Statement",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15083.pdf",
-      "downloaded_at": "2026-08-02T00:27:03.454499+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14963.pdf",
+      "downloaded_at": "2026-08-02T00:29:00.825873+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "TCPC SBIC LP; Surrender of License of Small Business Investment Company",
+      "title": "Center for Scientific Review; Notice of Closed Meeting",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15084.pdf",
-      "downloaded_at": "2026-08-02T00:27:02.608063+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14964.pdf",
+      "downloaded_at": "2026-08-02T00:28:59.983389+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "New Postal Products",
+      "title": "Agency Information Collection Activities; Extension, Without Change, of a Currently Approved Collection: Request for Fee",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15085.pdf",
-      "downloaded_at": "2026-08-02T00:27:01.815026+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14965.pdf",
+      "downloaded_at": "2026-08-02T00:28:59.372601+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Presidential Declaration Amendment of a Major Disaster for the State of Louisiana",
+      "title": "Government-Owned Inventions; Availability for Licensing",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15086.pdf",
-      "downloaded_at": "2026-08-02T00:27:01.258402+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14966.pdf",
+      "downloaded_at": "2026-08-02T00:28:58.762074+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 10,
     "pages_crawled": 2105,
     "js_pages": 145,
-    "pdfs_discovered": 2710,
-    "pdfs_downloaded": 2710,
+    "pdfs_discovered": 2820,
+    "pdfs_downloaded": 2820,
     "pdfs_skipped_existing": 8766,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:27:14.682157+00:00"
+  "manifest_generated_at": "2026-08-02T00:29:15.684095+00:00"
 }
