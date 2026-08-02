@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:51:48.825583+00:00",
+  "updated_at": "2026-08-02T00:56:46.957278+00:00",
   "phase": "running",
-  "message": "downloaded 3315 new this run",
+  "message": "finished Delaware / parliamentary_bills: +118 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 12237,
+    "pdfs": 12245,
     "errors": 21634,
     "source_reports": 16,
     "jurisdictions": 29
@@ -37,7 +37,7 @@
     },
     {
       "jurisdiction": "Delaware",
-      "count": 113
+      "count": 121
     },
     {
       "jurisdiction": "India",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7780
+      "count": 7788
     },
     {
       "source_kind": "official_gazette",
@@ -141,9 +141,67 @@
   "current_source": {
     "jurisdiction": "Delaware",
     "source_kind": "parliamentary_bills",
-    "url": "https://legis.delaware.gov/Offices/DivisionOfResearch/Publications"
+    "url": "https://legis.delaware.gov/",
+    "pdfs_downloaded": 118,
+    "pdfs_candidates": 149
   },
   "recent_pdfs": [
+    {
+      "title": "General Tour Packet",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/onlineadulttourpacket.pdf?sfvrsn=9dcfb238_2",
+      "downloaded_at": "2026-08-02T00:56:44.986689+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Drink & Pastries Menu",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/cafeteria/coffeedrinkspastries11x17menu.pdf?sfvrsn=75928b38_3",
+      "downloaded_at": "2026-08-02T00:52:00.412005+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Lunch Menu",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/cafeteria/lunchmenutrifold2026pdf.pdf?sfvrsn=51928b38_3",
+      "downloaded_at": "2026-08-02T00:51:59.429479+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Delaware General Assembly Media Credential Application",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/MediaCredentialingPolicy/DelawareGeneralAssemblyMediaCredentialApplication.pdf?sfvrsn=b213b338_0",
+      "downloaded_at": "2026-08-02T00:51:56.499325+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Public Participation Infographic",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/publicparticipationguideinfographic.pdf?sfvrsn=6bc68938_2",
+      "downloaded_at": "2026-08-02T00:51:55.947141+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Public Participation Guide",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/publicparticipationguidewithcover.pdf?sfvrsn=57c68938_2",
+      "downloaded_at": "2026-08-02T00:51:55.457204+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Filling a Vacancy in the General Assembly",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/fillingavacancyinthegeneralassembly.pdf?sfvrsn=fcb28d38_2",
+      "downloaded_at": "2026-08-02T00:51:54.831301+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Senate Operations When a Vote is Equally Divided",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/senateoperationswhenavoteisequallydivided.pdf?sfvrsn=96b28d38_2",
+      "downloaded_at": "2026-08-02T00:51:54.297081+00:00",
+      "source_kind": "parliamentary_bills"
+    },
     {
       "title": "Chamber Vote Requirements When Vacancy Occurs",
       "jurisdiction": "Delaware",
@@ -191,62 +249,6 @@
       "jurisdiction": "Delaware",
       "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-prescriptiondrugaffordabilityreviewboards.pdf?sfvrsn=3b0f8838_2",
       "downloaded_at": "2026-08-02T00:51:40.758889+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Delaware School Districts and Public Schools Statistics",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/delawareschooldistrictsandpublicschoolsstatistics.pdf?sfvrsn=a2e58838_1",
-      "downloaded_at": "2026-08-02T00:51:40.118341+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Exploring the Data Center Industry in the United States",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/exploringthedatacenterindustryintheunitedstates.pdf?sfvrsn=c0858b38_1",
-      "downloaded_at": "2026-08-02T00:51:39.276304+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Autonomous Vehicles, Legislative Developments Across U.S. States",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/autonomousvehicleslegislativedevelopmentsacrossusstates.pdf?sfvrsn=d6f88b38_1",
-      "downloaded_at": "2026-08-02T00:51:37.221172+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Pocket Veto Process",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/pocketvetoprocess.pdf?sfvrsn=33828d38_2",
-      "downloaded_at": "2026-08-02T00:51:34.186085+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Veto Override Procedures",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/vetooverrideprocedures.pdf?sfvrsn=ff828d38_2",
-      "downloaded_at": "2026-08-02T00:51:33.678531+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Constitutional Amendments Explained",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/constitutionalamendmentsexplained.pdf?sfvrsn=87828d38_2",
-      "downloaded_at": "2026-08-02T00:51:33.114408+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Considerations for Whether a Bill Raises Revenue (2023)",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/considerationsforwhetherabillraisesrevenue(2023).pdf?sfvrsn=3cc68938_2",
-      "downloaded_at": "2026-08-02T00:51:32.356055+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Memo - Voting Method Laws in the U.S.",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/memoranda/memo-votingmethodlawsintheus.pdf?sfvrsn=df138838_2",
-      "downloaded_at": "2026-08-02T00:51:31.774518+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +378,11 @@
     "sources_visited": 14,
     "pages_crawled": 2708,
     "js_pages": 184,
-    "pdfs_discovered": 3315,
-    "pdfs_downloaded": 3315,
+    "pdfs_discovered": 3323,
+    "pdfs_downloaded": 3323,
     "pdfs_skipped_existing": 8805,
     "pdfs_capped": 0,
     "errors": 9677
   },
-  "manifest_generated_at": "2026-08-02T00:51:47.116873+00:00"
+  "manifest_generated_at": "2026-08-02T00:56:45.235845+00:00"
 }

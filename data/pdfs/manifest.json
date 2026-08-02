@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:51:47.116873+00:00",
+  "generated_at": "2026-08-02T00:56:45.235845+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -159081,6 +159081,110 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T00:51:47.116768+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/senateoperationswhenavoteisequallydivided.pdf?sfvrsn=96b28d38_2",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Offices/DivisionOfResearch/Publications",
+      "title": "Senate Operations When a Vote is Equally Divided",
+      "path": "data/pdfs/Delaware/parliamentary_bills/senateoperationswhenavoteisequallydivided.pdf",
+      "bytes": 193360,
+      "sha256": "18fabfa91a54b853",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:51:54.297081+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/fillingavacancyinthegeneralassembly.pdf?sfvrsn=fcb28d38_2",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Offices/DivisionOfResearch/Publications",
+      "title": "Filling a Vacancy in the General Assembly",
+      "path": "data/pdfs/Delaware/parliamentary_bills/fillingavacancyinthegeneralassembly.pdf",
+      "bytes": 219524,
+      "sha256": "9e2ae01351febf23",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:51:54.831301+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/publicparticipationguidewithcover.pdf?sfvrsn=57c68938_2",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Resources/PreparingToTestify",
+      "title": "Public Participation Guide",
+      "path": "data/pdfs/Delaware/parliamentary_bills/publicparticipationguidewithcover.pdf",
+      "bytes": 590124,
+      "sha256": "b29258d4df1c691e",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:51:55.457204+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/publicparticipationguideinfographic.pdf?sfvrsn=6bc68938_2",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Resources/PreparingToTestify",
+      "title": "Public Participation Infographic",
+      "path": "data/pdfs/Delaware/parliamentary_bills/publicparticipationguideinfographic.pdf",
+      "bytes": 61447,
+      "sha256": "ef68c20170ae2d50",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:51:55.947141+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/MediaCredentialingPolicy/DelawareGeneralAssemblyMediaCredentialApplication.pdf?sfvrsn=b213b338_0",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Media-Credentialing-Policy",
+      "title": "Delaware General Assembly Media Credential Application",
+      "path": "data/pdfs/Delaware/parliamentary_bills/DelawareGeneralAssemblyMediaCredentialApplication.pdf",
+      "bytes": 74997,
+      "sha256": "c618aa34ba090f4b",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:51:56.499325+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/cafeteria/lunchmenutrifold2026pdf.pdf?sfvrsn=51928b38_3",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/LegislativeHallCafe",
+      "title": "Lunch Menu",
+      "path": "data/pdfs/Delaware/parliamentary_bills/lunchmenutrifold2026pdf.pdf",
+      "bytes": 1466922,
+      "sha256": "991f35c98313d462",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:51:59.429479+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/cafeteria/coffeedrinkspastries11x17menu.pdf?sfvrsn=75928b38_3",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/LegislativeHallCafe",
+      "title": "Drink & Pastries Menu",
+      "path": "data/pdfs/Delaware/parliamentary_bills/coffeedrinkspastries11x17menu.pdf",
+      "bytes": 988566,
+      "sha256": "8cc35817dcb63621",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:52:00.412005+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/default-document-library/onlineadulttourpacket.pdf?sfvrsn=9dcfb238_2",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Resources/PlanningAVisit",
+      "title": "General Tour Packet",
+      "path": "data/pdfs/Delaware/parliamentary_bills/onlineadulttourpacket.pdf",
+      "bytes": 1291020217,
+      "sha256": "4158d07af0763816",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:56:44.986689+00:00"
     }
   ],
   "discovered": [
@@ -296921,8 +297025,8 @@
     "sources_visited": 14,
     "pages_crawled": 2708,
     "js_pages": 184,
-    "pdfs_discovered": 3315,
-    "pdfs_downloaded": 3315,
+    "pdfs_discovered": 3323,
+    "pdfs_downloaded": 3323,
     "pdfs_skipped_existing": 8805,
     "pdfs_capped": 0,
     "errors": 9677
