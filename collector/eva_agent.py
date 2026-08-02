@@ -41,19 +41,80 @@ def load_summaries() -> list[dict]:
     return [r for r in rows if (r.get("summary") or "").strip()]
 
 
+STOP = {
+    "the", "and", "for", "are", "you", "your", "what", "when", "where", "which",
+    "who", "how", "does", "did", "with", "from", "that", "this", "have", "has",
+    "was", "were", "will", "can", "could", "would", "should", "about", "into",
+    "more", "any", "all", "our", "its", "not", "but", "also", "than", "then",
+    "them", "they", "there", "these", "those", "please", "tell", "give", "show",
+    "read", "reading", "pdf", "pdfs", "document", "documents", "file", "files",
+}
+
+
 def tokenize(s: str) -> set[str]:
-    return {t for t in re.findall(r"[a-z0-9]{3,}", (s or "").lower()) if t}
+    return {
+        t
+        for t in re.findall(r"[a-z0-9]{3,}", (s or "").lower())
+        if t not in STOP
+    }
+
+
+def is_meta_question(q: str) -> bool:
+    s = (q or "").lower().strip()
+    if not s:
+        return False
+    if re.match(r"^(status|progress|update|hello|hi|hey)[\s?!.,]*$", s):
+        return True
+    patterns = [
+        r"\bare you (still )?(reading|indexing|processing|summarizing)",
+        r"\b(how many|what('?s| is) (your|the) (count|status|coverage))",
+        r"\b(are you|do you) (reading|indexing|processing) more",
+        r"\b(still )?(working|running|crawling|indexing)\b",
+        r"\b(who are you|what (can|do) you do|what is eva|hello|hi\b|hey\b)",
+        r"\bhave you read\b",
+        r"\bknowledge base\b",
+    ]
+    return any(re.search(p, s) for p in patterns)
+
+
+def meta_answer(question: str, corpus: list[dict]) -> dict:
+    n = len(corpus)
+    s = (question or "").lower()
+    if re.search(r"who are you|what (can|do) you do|hello|hi\b|hey\b", s):
+        ans = (
+            "I’m Eva, RegIntel’s legal research assistant. "
+            f"I have {n} PDF summaries indexed. Ask about a topic or jurisdiction; "
+            "I’ll cite source PDFs. Ask “status” for indexing progress."
+        )
+    else:
+        ans = (
+            f"Yes — summarization runs in batches in the background.\n"
+            f"• Summaries ready: {n}\n"
+            f"• LLM mode: {'on' if get_client() else 'off (extractive / set XAI_API_KEY)'}\n\n"
+            "I only answer from summaries I’ve finished. "
+            "I won’t invent content from unread PDFs. "
+            "Try a content question like “Delaware revenue bills”."
+        )
+    return {
+        "answer": ans,
+        "citations": [],
+        "method": "meta",
+        "retrieved": 0,
+        "corpus_size": n,
+        "llm": get_client() is not None,
+    }
 
 
 def retrieve(question: str, corpus: list[dict], *, k: int = 8) -> list[dict]:
     q = tokenize(question)
     if not q:
-        return corpus[:k]
+        return []
     scored = []
     for doc in corpus:
+        title = str(doc.get("title") or "")
         blob = " ".join(
             [
-                str(doc.get("title") or ""),
+                title,
                 str(doc.get("jurisdiction") or ""),
                 str(doc.get("summary") or ""),
                 " ".join(doc.get("key_points") or []),
@@ -63,18 +124,25 @@ def retrieve(question: str, corpus: list[dict], *, k: int = 8) -> list[dict]:
         dt = tokenize(blob)
         if not dt:
             continue
-        overlap = len(q & dt)
-        # light boost for title hits
-        title_t = tokenize(str(doc.get("title") or ""))
-        overlap += 2 * len(q & title_t)
-        if overlap:
-            scored.append((overlap, doc))
+        score = len(q & dt)
+        score += 3 * len(q & tokenize(title))
+        j = str(doc.get("jurisdiction") or "").lower()
+        for t in q:
+            if t in j:
+                score += 2
+        if score >= 2:
+            scored.append((score, doc))
     scored.sort(key=lambda x: -x[0])
-    return [d for _, d in scored[:k]]
+    if not scored:
+        return []
+    best = scored[0][0]
+    return [d for sc, d in scored if sc >= max(2, best * 0.4)][:k]
 
 
 def ask(question: str, *, k: int = 8) -> dict:
     corpus = load_summaries()
+    if is_meta_question(question):
+        return meta_answer(question, corpus)
     hits = retrieve(question, corpus, k=k)
     result = answer_with_context(question=question, contexts=hits)
     result["retrieved"] = len(hits)

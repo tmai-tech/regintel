@@ -226,19 +226,89 @@
     </article>`;
   }
 
+  const EVA_STOP = new Set([
+    "the", "and", "for", "are", "you", "your", "what", "when", "where", "which",
+    "who", "how", "does", "did", "with", "from", "that", "this", "have", "has",
+    "was", "were", "will", "can", "could", "would", "should", "about", "into",
+    "more", "any", "all", "our", "its", "not", "but", "also", "than", "then",
+    "them", "they", "there", "these", "those", "please", "tell", "give", "show",
+    "read", "reading", "pdf", "pdfs", "document", "documents", "file", "files",
+    "summary", "summaries", "index", "indexed",
+  ]);
+
   function tokenizeEva(s) {
-    return String(s || "")
-      .toLowerCase()
-      .match(/[a-z0-9]{3,}/g) || [];
+    return (String(s || "").toLowerCase().match(/[a-z0-9]{3,}/g) || []).filter(
+      (t) => !EVA_STOP.has(t),
+    );
+  }
+
+  /** Questions about Eva herself / indexing status — not about bill content. */
+  function isEvaMetaQuestion(q) {
+    const s = String(q || "").toLowerCase().trim();
+    if (!s) return false;
+    const patterns = [
+      /\bare you (still )?(reading|indexing|processing|summarizing)/,
+      /\b(how many|what('?s| is) (your|the) (count|status|coverage))/,
+      /\b(are you|do you) (reading|indexing|processing) more/,
+      /\b(still )?(working|running|crawling|indexing)\b/,
+      /\b(how much|progress|update me|status)\b/,
+      /\b(who are you|what (can|do) you do|what is eva|hello|hi\b|hey\b)/,
+      /\b(thank(s| you)|help)\b/,
+      /\bhave you read\b/,
+      /\bknowledge base\b/,
+      /\b(more )?pdfs?\??\s*$/,
+    ];
+    // short status-like
+    if (/^(status|progress|update|hello|hi|hey)[\s?!.,]*$/i.test(s)) return true;
+    return patterns.some((re) => re.test(s));
+  }
+
+  function evaMetaAnswer(question, corpus, meta, pdfCatalogCount) {
+    const count = corpus.length;
+    const total = (meta && (meta.total_indexed || meta.count)) || count;
+    const updated = meta && meta.updated_at ? new Date(meta.updated_at).toLocaleString() : "—";
+    const llm = meta && meta.llm_available;
+    const s = String(question || "").toLowerCase();
+
+    if (/^(hi|hello|hey)\b/.test(s) || /who are you|what (can|do) you do|what is eva/.test(s)) {
+      return {
+        answer:
+          "I’m Eva, RegIntel’s legal research assistant. I read bill and gazette PDFs, keep short summaries, and answer your questions with links to the source PDFs.\n\n" +
+          `Right now I have ${count} PDF summary(ies) in my index` +
+          (pdfCatalogCount ? ` (catalog has ~${pdfCatalogCount} PDFs total — I’m still catching up).` : ".") +
+          "\n\nAsk about a topic, jurisdiction, or bill name — e.g. “Delaware revenue bills” or “cybersecurity rules”.",
+        citations: [],
+      };
+    }
+
+    if (/thank/.test(s)) {
+      return { answer: "You’re welcome. Ask anytime about a bill, regulation, or jurisdiction.", citations: [] };
+    }
+
+    // status / are you reading more
+    return {
+      answer:
+        `Yes — PDF summarization runs in batches (GitHub Actions + local jobs), separate from this chat.\n\n` +
+        `• Summaries I’ve finished: ${count}` +
+        (total && total !== count ? ` (store reports ${total})` : "") +
+        `\n• PDFs in the RegIntel catalog: ${pdfCatalogCount != null ? pdfCatalogCount : "unknown"}` +
+        `\n• Last index update: ${updated}` +
+        `\n• Summary engine: ${llm ? "SpaceXAI LLM" : "extractive (set XAI_API_KEY for higher quality)"}` +
+        `\n\nI only answer from summaries I’ve completed. When you ask about a topic, I search those summaries and cite the PDF links — I don’t invent content from unread files.\n\n` +
+        `Try a content question, e.g. “What does the Delaware order paper cover?” or “Saudi capital market rules”.`,
+      citations: [],
+    };
   }
 
   function retrieveEva(question, corpus, k) {
-    const q = new Set(tokenizeEva(question));
-    if (!q.size) return corpus.slice(0, k);
+    const tokens = tokenizeEva(question);
+    if (!tokens.length) return [];
+    const q = new Set(tokens);
     const scored = [];
     for (const doc of corpus) {
+      const title = String(doc.title || "");
       const blob = [
-        doc.title,
+        title,
         doc.jurisdiction,
         doc.summary,
         ...(doc.key_points || []),
@@ -251,25 +321,43 @@
       q.forEach((t) => {
         if (dt.has(t)) score += 1;
       });
-      tokenizeEva(doc.title || "").forEach((t) => {
-        if (q.has(t)) score += 2;
+      // strong title match
+      const titleToks = new Set(tokenizeEva(title));
+      q.forEach((t) => {
+        if (titleToks.has(t)) score += 3;
       });
-      if (score > 0) scored.push({ score, doc });
+      // jurisdiction phrase
+      const j = String(doc.jurisdiction || "").toLowerCase();
+      tokens.forEach((t) => {
+        if (j.includes(t)) score += 2;
+      });
+      if (score >= 2) scored.push({ score, doc });
     }
     scored.sort((a, b) => b.score - a.score);
-    return scored.slice(0, k).map((x) => x.doc);
+    // drop weak tail: keep only scores close to best
+    if (!scored.length) return [];
+    const best = scored[0].score;
+    return scored
+      .filter((x) => x.score >= Math.max(2, best * 0.4))
+      .slice(0, k)
+      .map((x) => x.doc);
   }
 
   function evaAnswerLocal(question, hits) {
     if (!hits.length) {
       return {
         answer:
-          "I don’t have a matching PDF summary yet. Eva is still indexing PDFs — try again after more summaries are published, or ask about a jurisdiction/title already in the list.",
+          "I couldn’t find a strong match in my PDF summaries for that question.\n\n" +
+          "Tips:\n" +
+          "• Name a jurisdiction (e.g. Delaware, Manitoba, Saudi, UK)\n" +
+          "• Use a topic (tax, cyber, securities, housing)\n" +
+          "• Or a bill/document title word\n\n" +
+          "Ask “status” if you want to know how many PDFs I’ve indexed so far.",
         citations: [],
       };
     }
     const lines = [
-      `I found ${hits.length} relevant PDF summary(ies) in my index:`,
+      `Here’s what I found in ${hits.length} related PDF summary(ies). I only use summaries I’ve completed — each answer cites the source:`,
       "",
     ];
     const citations = [];
@@ -282,20 +370,22 @@
         jurisdiction: h.jurisdiction,
       });
       lines.push(`[${n}] ${h.title || "Untitled"} (${h.jurisdiction || "—"})`);
-      lines.push((h.summary || "").slice(0, 420));
+      let sum = (h.summary || "").trim();
+      if (sum.length > 380) sum = sum.slice(0, 377) + "…";
+      lines.push(sum || "(No summary text.)");
       if (h.key_points && h.key_points.length) {
-        lines.push("Key points: " + h.key_points.slice(0, 4).join("; "));
+        lines.push("Key points: " + h.key_points.slice(0, 3).join("; "));
       }
       lines.push("");
     });
-    lines.push("References:");
+    lines.push("References (open the PDF):");
     citations.forEach((c) => {
-      lines.push(`[${c.n}] ${c.title} — ${c.url || "—"}`);
+      lines.push(`[${c.n}] ${c.title}${c.url ? " — " + c.url : ""}`);
     });
     return { answer: lines.join("\n"), citations };
   }
 
-  function initEva(summaries, meta) {
+  function initEva(summaries, meta, pdfCatalogCount) {
     const chat = document.getElementById("evaChat");
     const form = document.getElementById("evaForm");
     const input = document.getElementById("evaInput");
@@ -309,7 +399,11 @@
     const corpus = Array.isArray(summaries) ? summaries : [];
     const count = corpus.length;
     const llmHint =
-      meta && meta.llm_available ? "LLM index ready" : count ? count + " summaries" : "indexing…";
+      meta && meta.llm_available
+        ? "LLM index · " + count + " PDFs"
+        : count
+          ? count + " summaries"
+          : "indexing…";
     if (metaEl) {
       metaEl.textContent = llmHint;
     }
@@ -326,8 +420,12 @@
           addBubble(
             "bot",
             count
-              ? `Hi, I’m Eva — your legal research assistant. I’ve read ${count} PDF summary(ies). Ask about any bill, regulation, or topic; I’ll cite the source PDFs.`
-              : "Hi, I’m Eva — your legal research assistant. PDF summaries are still being built. You can still ask; coverage grows as indexing finishes.",
+              ? `Hi, I’m Eva — your legal research assistant.\n\nI’ve summarized ${count} PDF(s) so far` +
+                  (pdfCatalogCount
+                    ? ` (catalog has ~${pdfCatalogCount} PDFs; more summaries are added in batches).`
+                    : ".") +
+                  `\n\nAsk a content question (topic / jurisdiction / bill name). For indexing progress, ask “are you reading more PDFs?” or “status”.`
+              : "Hi, I’m Eva. PDF summaries are still being built. Ask “status” anytime, or a topic once indexing has started.",
           );
         }
         setTimeout(() => input && input.focus(), 50);
@@ -383,7 +481,7 @@
       addBubble("user", q);
       const typing = document.createElement("div");
       typing.className = "eva-bubble eva-bot eva-typing";
-      typing.textContent = "Eva is reading…";
+      typing.textContent = "Eva is thinking…";
       chat.appendChild(typing);
       chat.scrollTop = chat.scrollHeight;
 
@@ -391,6 +489,13 @@
         typing.remove();
         addBubble("bot", answer || "No answer.", citations || []);
       };
+
+      // Meta questions about Eva / indexing — never fake PDF hits
+      if (isEvaMetaQuestion(q)) {
+        const out = evaMetaAnswer(q, corpus, meta, pdfCatalogCount);
+        finish(out.answer, out.citations);
+        return;
+      }
 
       const apiBase = (
         window.REGINTEL_EVA_API ||
@@ -413,7 +518,7 @@
           /* fall through */
         }
       }
-      const hits = retrieveEva(q, corpus, 6);
+      const hits = retrieveEva(q, corpus, 5);
       const out = evaAnswerLocal(q, hits);
       finish(out.answer, out.citations);
     }
@@ -941,7 +1046,7 @@
 
     initLaws(laws);
     initMinistries(ministries, pdfs);
-    initEva(evaSummaries, evaMeta);
+    initEva(evaSummaries, evaMeta, pdfs.length);
     initPdfs(pdfs);
     initCrawl();
   }
