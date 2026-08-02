@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:19:02.639237+00:00",
+  "updated_at": "2026-08-02T00:21:06.443861+00:00",
   "phase": "running",
-  "message": "finished USA Federal / parliamentary_bills: +0 PDFs",
+  "message": "downloaded 2400 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11220,
+    "pdfs": 11322,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -25,7 +25,7 @@
     },
     {
       "jurisdiction": "USA Federal",
-      "count": 232
+      "count": 334
     },
     {
       "jurisdiction": "Ontario",
@@ -135,120 +135,118 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3677
+      "count": 3779
     }
   ],
   "current_source": {
     "jurisdiction": "USA Federal",
-    "source_kind": "parliamentary_bills",
-    "url": "https://www.congress.gov/bill",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "source_kind": "official_gazette",
+    "url": "https://www.federalregister.gov"
   },
   "recent_pdfs": [
     {
-      "title": "ITS 21-040 - Amendments to the Steam and Pressure Plants Regulation",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/its_21_040_amendments_to_the_steam_and_pressure_plants_regulation.pdf",
-      "downloaded_at": "2026-08-02T00:18:05.398120+00:00",
+      "title": "Airworthiness Directives; Airbus SAS Airplanes",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15410.pdf",
+      "downloaded_at": "2026-08-02T00:21:04.896241+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "180 Provencher Blvd (Under review by Court of Kings Bench)",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/180-provencher-blvd.pdf",
-      "downloaded_at": "2026-08-02T00:18:01.484157+00:00",
+      "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limit",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15411.pdf",
+      "downloaded_at": "2026-08-02T00:21:04.278047+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "click here.",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/community_part3_9_2018.pdf",
-      "downloaded_at": "2026-08-02T00:17:59.603614+00:00",
+      "title": "Airworthiness Directives; MHI RJ Aviation ULC (Type Certificate Previously Held by Bombardier, Inc.) Airplanes",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15412.pdf",
+      "downloaded_at": "2026-08-02T00:21:03.431875+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Home-type Care Updates",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/home-type_care_updates.pdf",
-      "downloaded_at": "2026-08-02T00:17:56.715445+00:00",
+      "title": "Announcement of the Intent To Award Single-Source Grants (Multiple Recipients) for Necessary Expenses Directly Related t",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15413.pdf",
+      "downloaded_at": "2026-08-02T00:21:02.822007+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Manitoba Plumbing Code Updates",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/manitoba_plumbing_code_updates.pdf",
-      "downloaded_at": "2026-08-02T00:17:55.664963+00:00",
+      "title": "Parts and Accessories Necessary for Safe Operation; Application for Exemption From Transit Solutions, LLC",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15414.pdf",
+      "downloaded_at": "2026-08-02T00:21:02.209270+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Farm Building Requirement Updates",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/farm_building_requirement_updates.pdf",
-      "downloaded_at": "2026-08-02T00:17:54.670464+00:00",
+      "title": "Waiver of Specified Statutory Requirements for Commercial Space Launch and Reentry Actions",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15415.pdf",
+      "downloaded_at": "2026-08-02T00:20:59.678228+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Energy Efficiency Tier Adoption",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/energy_efficiency_tier_adoption.pdf",
-      "downloaded_at": "2026-08-02T00:17:53.294026+00:00",
+      "title": "Notice of Availability of the Final Programmatic Environmental Assessment and FONSI/ROD",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15417.pdf",
+      "downloaded_at": "2026-08-02T00:20:59.010412+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Accessibility Requirement Updates",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/accessibiity_requirement_updates.pdf",
-      "downloaded_at": "2026-08-02T00:17:52.236332+00:00",
+      "title": "Seeking Comment on Prohibiting the Importation and Marketing of Certain Covered UAS and UAS Critical Components and Equi",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15418.pdf",
+      "downloaded_at": "2026-08-02T00:20:58.400649+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "FARM BUILDINGS FAQ DOWNLOAD LINK.",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/farm_buildings_faq.pdf",
-      "downloaded_at": "2026-08-02T00:17:49.314234+00:00",
+      "title": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Ti",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15419.pdf",
+      "downloaded_at": "2026-08-02T00:20:57.781445+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "The Technical Safety Regulation",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/regs/annual/2025/074.pdf",
-      "downloaded_at": "2026-08-02T00:17:48.320311+00:00",
+      "title": "Duty Collection for Domestic Mail Arriving From Certain Insular Possessions and Territories",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15420.pdf",
+      "downloaded_at": "2026-08-02T00:20:57.166969+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "The Technical Safety Act",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2015/pdf/c01715.pdf",
-      "downloaded_at": "2026-08-02T00:17:47.004133+00:00",
+      "title": "Privacy Act of 1974; System of Records",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15421.pdf",
+      "downloaded_at": "2026-08-02T00:20:54.577035+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Designated Substances by Chemical Name/Industry Uses",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/ds_list.pdf",
-      "downloaded_at": "2026-08-02T00:17:45.945466+00:00",
+      "title": "Foreign-Trade Zone (FTZ) 153, Notification of Proposed Production Activity; Aptera Motors Corp; (Solar Electric Vehicles",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15422.pdf",
+      "downloaded_at": "2026-08-02T00:20:53.965563+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "2019 OEL Table",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/OEL_2019_list_final.pdf",
-      "downloaded_at": "2026-08-02T00:17:44.965924+00:00",
+      "title": "Fiberglass Door Panels From China; Determinations",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15423.pdf",
+      "downloaded_at": "2026-08-02T00:20:53.181986+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Cadmium: Medical Screening Guideline for Workers (PDF)",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/cadmium_gl.pdf",
-      "downloaded_at": "2026-08-02T00:17:41.924226+00:00",
+      "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Attestation for Employers Seeking ",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15424.pdf",
+      "downloaded_at": "2026-08-02T00:20:52.572507+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Inorganic Arsenic: Medical Screening Guideline for Workers (PDF)",
-      "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/arsenic_gl.pdf",
-      "downloaded_at": "2026-08-02T00:17:41.234690+00:00",
+      "title": "Office of the Secretary; Amended Notice of Meeting",
+      "jurisdiction": "USA Federal",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15425.pdf",
+      "downloaded_at": "2026-08-02T00:20:51.958446+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -375,14 +373,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 9,
-    "pages_crawled": 2102,
+    "sources_visited": 10,
+    "pages_crawled": 2105,
     "js_pages": 145,
-    "pdfs_discovered": 2298,
-    "pdfs_downloaded": 2298,
-    "pdfs_skipped_existing": 8546,
+    "pdfs_discovered": 2400,
+    "pdfs_downloaded": 2400,
+    "pdfs_skipped_existing": 8746,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:19:01.089165+00:00"
+  "manifest_generated_at": "2026-08-02T00:21:04.896337+00:00"
 }

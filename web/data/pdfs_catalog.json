@@ -1,5 +1,2661 @@
 [
   {
+    "id": "a833f2a25872ba6f",
+    "title": "Airworthiness Directives; Airbus SAS Airplanes",
+    "filename": "2026-15410.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15410.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15410.pdf",
+    "download_url": null,
+    "bytes": 247699,
+    "sha256": "a833f2a25872ba6f",
+    "downloaded_at": "2026-08-02T00:21:04.896241+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15410.pdf"
+  },
+  {
+    "id": "03838b219f663dff",
+    "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Airplanes",
+    "filename": "2026-15411.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15411.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15411.pdf",
+    "download_url": null,
+    "bytes": 243261,
+    "sha256": "03838b219f663dff",
+    "downloaded_at": "2026-08-02T00:21:04.278047+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15411.pdf"
+  },
+  {
+    "id": "b330b9011ae833df",
+    "title": "Airworthiness Directives; MHI RJ Aviation ULC (Type Certificate Previously Held by Bombardier, Inc.) Airplanes",
+    "filename": "2026-15412.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15412.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15412.pdf",
+    "download_url": null,
+    "bytes": 245736,
+    "sha256": "b330b9011ae833df",
+    "downloaded_at": "2026-08-02T00:21:03.431875+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15412.pdf"
+  },
+  {
+    "id": "6e28fc586c8c00e9",
+    "title": "Announcement of the Intent To Award Single-Source Grants (Multiple Recipients) for Necessary Expenses Directly Related to the Consequences of Hurricanes Fiona and Ian",
+    "filename": "2026-15413.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15413.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15413.pdf",
+    "download_url": null,
+    "bytes": 208033,
+    "sha256": "6e28fc586c8c00e9",
+    "downloaded_at": "2026-08-02T00:21:02.822007+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15413.pdf"
+  },
+  {
+    "id": "8bf2a330dcbc2a4a",
+    "title": "Parts and Accessories Necessary for Safe Operation; Application for Exemption From Transit Solutions, LLC",
+    "filename": "2026-15414.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15414.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15414.pdf",
+    "download_url": null,
+    "bytes": 219363,
+    "sha256": "8bf2a330dcbc2a4a",
+    "downloaded_at": "2026-08-02T00:21:02.209270+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15414.pdf"
+  },
+  {
+    "id": "d56d5f4bd056b10b",
+    "title": "Waiver of Specified Statutory Requirements for Commercial Space Launch and Reentry Actions",
+    "filename": "2026-15415.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15415.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15415.pdf",
+    "download_url": null,
+    "bytes": 259075,
+    "sha256": "d56d5f4bd056b10b",
+    "downloaded_at": "2026-08-02T00:20:59.678228+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15415.pdf"
+  },
+  {
+    "id": "0f9dd6c3b20ed5bc",
+    "title": "Notice of Availability of the Final Programmatic Environmental Assessment and FONSI/ROD",
+    "filename": "2026-15417.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15417.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15417.pdf",
+    "download_url": null,
+    "bytes": 205835,
+    "sha256": "0f9dd6c3b20ed5bc",
+    "downloaded_at": "2026-08-02T00:20:59.010412+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15417.pdf"
+  },
+  {
+    "id": "3b7c669d18bbf25b",
+    "title": "Seeking Comment on Prohibiting the Importation and Marketing of Certain Covered UAS and UAS Critical Components and Equipment Listed in Section 1709 of FY2025 NDAA.",
+    "filename": "2026-15418.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026,
+      2025
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15418.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15418.pdf",
+    "download_url": null,
+    "bytes": 222085,
+    "sha256": "3b7c669d18bbf25b",
+    "downloaded_at": "2026-08-02T00:20:58.400649+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15418.pdf"
+  },
+  {
+    "id": "3f96fcd478dde5ec",
+    "title": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Title: Health Center Program Forms-OMB No. 0915-0285-Revision",
+    "filename": "2026-15419.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15419.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15419.pdf",
+    "download_url": null,
+    "bytes": 227613,
+    "sha256": "3f96fcd478dde5ec",
+    "downloaded_at": "2026-08-02T00:20:57.781445+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15419.pdf"
+  },
+  {
+    "id": "3db2530fc6c64a86",
+    "title": "Duty Collection for Domestic Mail Arriving From Certain Insular Possessions and Territories",
+    "filename": "2026-15420.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15420.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15420.pdf",
+    "download_url": null,
+    "bytes": 257379,
+    "sha256": "3db2530fc6c64a86",
+    "downloaded_at": "2026-08-02T00:20:57.166969+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15420.pdf"
+  },
+  {
+    "id": "6d71c369bfc32007",
+    "title": "Privacy Act of 1974; System of Records",
+    "filename": "2026-15421.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "act",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15421.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15421.pdf",
+    "download_url": null,
+    "bytes": 220436,
+    "sha256": "6d71c369bfc32007",
+    "downloaded_at": "2026-08-02T00:20:54.577035+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15421.pdf"
+  },
+  {
+    "id": "faf5cae2242cce58",
+    "title": "Foreign-Trade Zone (FTZ) 153, Notification of Proposed Production Activity; Aptera Motors Corp; (Solar Electric Vehicles); Carlsbad, California",
+    "filename": "2026-15422.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15422.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15422.pdf",
+    "download_url": null,
+    "bytes": 187411,
+    "sha256": "faf5cae2242cce58",
+    "downloaded_at": "2026-08-02T00:20:53.965563+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15422.pdf"
+  },
+  {
+    "id": "845b59add63cedb1",
+    "title": "Fiberglass Door Panels From China; Determinations",
+    "filename": "2026-15423.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15423.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15423.pdf",
+    "download_url": null,
+    "bytes": 245446,
+    "sha256": "845b59add63cedb1",
+    "downloaded_at": "2026-08-02T00:20:53.181986+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15423.pdf"
+  },
+  {
+    "id": "6bd49ac1b7835b63",
+    "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Attestation for Employers Seeking To Employ H-2B Nonimmigrant Workers Under Section 105 of Division G, Title I of the Further Consolidated Appropriations Act, 2024, Public Law 118-47, as Extended by Public Law 119-",
+    "filename": "2026-15424.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "act",
+    "year": 2026,
+    "years": [
+      2026,
+      2024
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15424.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15424.pdf",
+    "download_url": null,
+    "bytes": 226346,
+    "sha256": "6bd49ac1b7835b63",
+    "downloaded_at": "2026-08-02T00:20:52.572507+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15424.pdf"
+  },
+  {
+    "id": "55f059a11492fa33",
+    "title": "Office of the Secretary; Amended Notice of Meeting",
+    "filename": "2026-15425.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15425.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15425.pdf",
+    "download_url": null,
+    "bytes": 193127,
+    "sha256": "55f059a11492fa33",
+    "downloaded_at": "2026-08-02T00:20:51.958446+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15425.pdf"
+  },
+  {
+    "id": "995fbd2ca02d7c06",
+    "title": "Certain TOPCon Solar Cells, Modules, Panels, Components Thereof, and Products Containing Same; Notice of a Commission Determination Not To Review an Initial Determination Granting the Motion To Intervene of IC Star Solar (USA) LLC D/B/A Imperial Star",
+    "filename": "2026-15426.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15426.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15426.pdf",
+    "download_url": null,
+    "bytes": 191945,
+    "sha256": "995fbd2ca02d7c06",
+    "downloaded_at": "2026-08-02T00:20:49.420700+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15426.pdf"
+  },
+  {
+    "id": "b931dade6f30d7de",
+    "title": "Office of the Director, National Institutes of Health; Notice of Meeting",
+    "filename": "2026-15427.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15427.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15427.pdf",
+    "download_url": null,
+    "bytes": 187968,
+    "sha256": "b931dade6f30d7de",
+    "downloaded_at": "2026-08-02T00:20:48.812982+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15427.pdf"
+  },
+  {
+    "id": "8191a242c8533fe2",
+    "title": "Privacy Act of 1974; System of Records",
+    "filename": "2026-15428.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "act",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15428.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15428.pdf",
+    "download_url": null,
+    "bytes": 223444,
+    "sha256": "8191a242c8533fe2",
+    "downloaded_at": "2026-08-02T00:20:48.259557+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15428.pdf"
+  },
+  {
+    "id": "6cfd4fe7d007d791",
+    "title": "Butylated Hydroxytoluene (BHT); Request for Information; Reopening of Comment Period",
+    "filename": "2026-15429.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15429.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15429.pdf",
+    "download_url": null,
+    "bytes": 216669,
+    "sha256": "6cfd4fe7d007d791",
+    "downloaded_at": "2026-08-02T00:20:47.648055+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15429.pdf"
+  },
+  {
+    "id": "852aa23ef020658f",
+    "title": "Hours of Service (HOS) of Drivers: Precision Fireworks LLC; Application for Exemption",
+    "filename": "2026-15430.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15430.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15430.pdf",
+    "download_url": null,
+    "bytes": 215042,
+    "sha256": "852aa23ef020658f",
+    "downloaded_at": "2026-08-02T00:20:47.036389+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15430.pdf"
+  },
+  {
+    "id": "b93ce24bdbd4fa80",
+    "title": "Parts and Accessories Necessary for Safe Operation; Application for Exemption Renewal From Charles Machine Works, Inc.",
+    "filename": "2026-15431.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15431.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15431.pdf",
+    "download_url": null,
+    "bytes": 205835,
+    "sha256": "b93ce24bdbd4fa80",
+    "downloaded_at": "2026-08-02T00:20:44.512984+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15431.pdf"
+  },
+  {
+    "id": "ac319d3459cb3819",
+    "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Non-Infrastructure Metrics",
+    "filename": "2026-15432.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15432.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15432.pdf",
+    "download_url": null,
+    "bytes": 218632,
+    "sha256": "ac319d3459cb3819",
+    "downloaded_at": "2026-08-02T00:20:43.899587+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15432.pdf"
+  },
+  {
+    "id": "583902aadf798524",
+    "title": "Submission for OMB Review; Comment Request",
+    "filename": "2026-15433.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15433.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15433.pdf",
+    "download_url": null,
+    "bytes": 188320,
+    "sha256": "583902aadf798524",
+    "downloaded_at": "2026-08-02T00:20:43.055634+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15433.pdf"
+  },
+  {
+    "id": "b3e5cac0bd9d5507",
+    "title": "Procedures for Submission and Consideration of Petitions for Rulemaking",
+    "filename": "2026-15434.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15434.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15434.pdf",
+    "download_url": null,
+    "bytes": 252642,
+    "sha256": "b3e5cac0bd9d5507",
+    "downloaded_at": "2026-08-02T00:20:42.495770+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15434.pdf"
+  },
+  {
+    "id": "e236dcea770e8528",
+    "title": "Identifying Aquaculture Opportunity Areas in U.S. Waters",
+    "filename": "2026-15435.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15435.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15435.pdf",
+    "download_url": null,
+    "bytes": 225261,
+    "sha256": "e236dcea770e8528",
+    "downloaded_at": "2026-08-02T00:20:41.877521+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15435.pdf"
+  },
+  {
+    "id": "53100030d4f9acb6",
+    "title": "Raw Honey From Argentina: Amended Final Results of Antidumping Duty Administrative Review and Notice of Correction; 2023-2024",
+    "filename": "2026-15436.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026,
+      2024,
+      2023
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15436.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15436.pdf",
+    "download_url": null,
+    "bytes": 209063,
+    "sha256": "53100030d4f9acb6",
+    "downloaded_at": "2026-08-02T00:20:39.363154+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15436.pdf"
+  },
+  {
+    "id": "b31a9cb992ff2040",
+    "title": "Steel Concrete Reinforcing Bar From the Socialist Republic of Vietnam: Final Affirmative Countervailing Duty Determination",
+    "filename": "2026-15437.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15437.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15437.pdf",
+    "download_url": null,
+    "bytes": 207678,
+    "sha256": "b31a9cb992ff2040",
+    "downloaded_at": "2026-08-02T00:20:38.750518+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15437.pdf"
+  },
+  {
+    "id": "4729d83b52ea34e6",
+    "title": "Steel Concrete Reinforcing Bar From the Socialist Republic of Vietnam: Final Affirmative Determination of Sales at Less Than Fair Value",
+    "filename": "2026-15438.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15438.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15438.pdf",
+    "download_url": null,
+    "bytes": 232809,
+    "sha256": "4729d83b52ea34e6",
+    "downloaded_at": "2026-08-02T00:20:38.137498+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15438.pdf"
+  },
+  {
+    "id": "fd572a9dc732db94",
+    "title": "Steel Concrete Reinforcing Bar From Egypt: Final Affirmative Countervailing Duty Determination",
+    "filename": "2026-15439.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15439.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15439.pdf",
+    "download_url": null,
+    "bytes": 226310,
+    "sha256": "fd572a9dc732db94",
+    "downloaded_at": "2026-08-02T00:20:37.504969+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15439.pdf"
+  },
+  {
+    "id": "3d6174752e6370f0",
+    "title": "Steel Concrete Reinforcing Bar From Egypt: Final Affirmative Determination of Sales at Less Than Fair Value",
+    "filename": "2026-15440.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15440.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15440.pdf",
+    "download_url": null,
+    "bytes": 215116,
+    "sha256": "3d6174752e6370f0",
+    "downloaded_at": "2026-08-02T00:20:36.892172+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15440.pdf"
+  },
+  {
+    "id": "84130b4f4300e435",
+    "title": "Steel Concrete Reinforcing Bar From Bulgaria: Final Affirmative Determination of Sales at Less Than Fair Value",
+    "filename": "2026-15441.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15441.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15441.pdf",
+    "download_url": null,
+    "bytes": 191886,
+    "sha256": "84130b4f4300e435",
+    "downloaded_at": "2026-08-02T00:20:34.189679+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15441.pdf"
+  },
+  {
+    "id": "839a8265777cd3e8",
+    "title": "Oswego Hydro Partners, LP; Notice of Availability of Environmental Assessment",
+    "filename": "2026-15442.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15442.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15442.pdf",
+    "download_url": null,
+    "bytes": 191615,
+    "sha256": "839a8265777cd3e8",
+    "downloaded_at": "2026-08-02T00:20:33.577802+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15442.pdf"
+  },
+  {
+    "id": "19a17e89ea65e01b",
+    "title": "Tennessee Gas Pipeline Company, L.L.C.; Notice of Request Under Blanket Authorization and Establishing Intervention and Protest Deadline",
+    "filename": "2026-15443.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15443.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15443.pdf",
+    "download_url": null,
+    "bytes": 215003,
+    "sha256": "19a17e89ea65e01b",
+    "downloaded_at": "2026-08-02T00:20:32.741787+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15443.pdf"
+  },
+  {
+    "id": "cdb775ba17ef4896",
+    "title": "Domtar Paper Company, LLC; Notice of Application for Non-Capacity Amendment of License Accepted for Filing, Soliciting Comments, Motions To Intervene, and Protests",
+    "filename": "2026-15444.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15444.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15444.pdf",
+    "download_url": null,
+    "bytes": 196677,
+    "sha256": "cdb775ba17ef4896",
+    "downloaded_at": "2026-08-02T00:20:32.128469+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15444.pdf"
+  },
+  {
+    "id": "88f60adc8e047e83",
+    "title": "Southern Star Central Gas Pipeline, Inc.; Notice of Request Under Blanket Authorization and Establishing Intervention and Protest Deadline",
+    "filename": "2026-15445.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15445.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15445.pdf",
+    "download_url": null,
+    "bytes": 198739,
+    "sha256": "88f60adc8e047e83",
+    "downloaded_at": "2026-08-02T00:20:31.516883+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15445.pdf"
+  },
+  {
+    "id": "172feabfac3b03e8",
+    "title": "Medicare Program; Updates to the Master List of Items Potentially Subject to Face-to-Face Encounter and Written Order Prior to Delivery and/or Prior Authorization Requirements; Updates to the Required Face-to-Face Encounter and Written Order Prior to Delivery List; and Updates to the Required Prior ",
+    "filename": "2026-15446.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15446.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15446.pdf",
+    "download_url": null,
+    "bytes": 254413,
+    "sha256": "172feabfac3b03e8",
+    "downloaded_at": "2026-08-02T00:20:29.002711+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15446.pdf"
+  },
+  {
+    "id": "ea25b62e5d415608",
+    "title": "Exchange Visitor Program-Termination of Program Participation, Extension of Program and Reinstatement to Valid Program Status",
+    "filename": "2026-15450.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15450.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15450.pdf",
+    "download_url": null,
+    "bytes": 257275,
+    "sha256": "ea25b62e5d415608",
+    "downloaded_at": "2026-08-02T00:20:28.389965+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15450.pdf"
+  },
+  {
+    "id": "c1bbd241a9791ab1",
+    "title": "Airworthiness Directives; Airbus SAS Airplanes",
+    "filename": "2026-15455.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15455.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15455.pdf",
+    "download_url": null,
+    "bytes": 252043,
+    "sha256": "c1bbd241a9791ab1",
+    "downloaded_at": "2026-08-02T00:20:27.721962+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15455.pdf"
+  },
+  {
+    "id": "fc80dc62da93288b",
+    "title": "Civil Money Penalty for Actions in Contempt of an Immigration Judge's Proper Exercise of Authority",
+    "filename": "2026-15458.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15458.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15458.pdf",
+    "download_url": null,
+    "bytes": 319451,
+    "sha256": "fc80dc62da93288b",
+    "downloaded_at": "2026-08-02T00:20:27.107836+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15458.pdf"
+  },
+  {
+    "id": "1318c58da9b3db0d",
+    "title": "Airworthiness Directives; Stemme GmbH Gliders",
+    "filename": "2026-15466.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15466.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15466.pdf",
+    "download_url": null,
+    "bytes": 247051,
+    "sha256": "1318c58da9b3db0d",
+    "downloaded_at": "2026-08-02T00:20:26.379097+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15466.pdf"
+  },
+  {
+    "id": "4b91420972f82afc",
+    "title": "Airworthiness Directives; Pilatus Aircraft Ltd. Airplanes",
+    "filename": "2026-15467.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15467.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15467.pdf",
+    "download_url": null,
+    "bytes": 244824,
+    "sha256": "4b91420972f82afc",
+    "downloaded_at": "2026-08-02T00:20:23.823036+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15467.pdf"
+  },
+  {
+    "id": "e7f092de2c21c2ba",
+    "title": "Agency Information Collection Activities; Nonindigenous Aquatic Species eDNA Data Submission Forms",
+    "filename": "2026-15447.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15447.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15447.pdf",
+    "download_url": null,
+    "bytes": 217915,
+    "sha256": "e7f092de2c21c2ba",
+    "downloaded_at": "2026-08-02T00:20:23.209356+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15447.pdf"
+  },
+  {
+    "id": "03ad2c9f1a22ad2e",
+    "title": "Agency Information Collection Activities: Comment Request",
+    "filename": "2026-15448.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15448.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15448.pdf",
+    "download_url": null,
+    "bytes": 251182,
+    "sha256": "03ad2c9f1a22ad2e",
+    "downloaded_at": "2026-08-02T00:20:22.366529+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15448.pdf"
+  },
+  {
+    "id": "57646df2eddbd101",
+    "title": "Agency Information Collection Activities: Proposed Request",
+    "filename": "2026-15449.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15449.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15449.pdf",
+    "download_url": null,
+    "bytes": 248687,
+    "sha256": "57646df2eddbd101",
+    "downloaded_at": "2026-08-02T00:20:21.752719+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15449.pdf"
+  },
+  {
+    "id": "ddd87b7022f77953",
+    "title": "Agency Information Collection Activities: Requests for Comments; Clearance of Renewed Approval of Information Collection",
+    "filename": "2026-15451.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15451.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15451.pdf",
+    "download_url": null,
+    "bytes": 229656,
+    "sha256": "ddd87b7022f77953",
+    "downloaded_at": "2026-08-02T00:20:21.129201+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15451.pdf"
+  },
+  {
+    "id": "8129d0b1501a1adb",
+    "title": "Agency Information Collection Activity: Requirements for Recognition as a VA Accredited Organization",
+    "filename": "2026-15452.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15452.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15452.pdf",
+    "download_url": null,
+    "bytes": 188739,
+    "sha256": "8129d0b1501a1adb",
+    "downloaded_at": "2026-08-02T00:20:18.603716+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15452.pdf"
+  },
+  {
+    "id": "c9c86c77b96471c5",
+    "title": "Agency Information Collection Activity: Income and Asset Statement in Support of Claim for Pension or Parents' Dependency and Indemnity Compensation (D.I.C.)",
+    "filename": "2026-15453.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15453.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15453.pdf",
+    "download_url": null,
+    "bytes": 211165,
+    "sha256": "c9c86c77b96471c5",
+    "downloaded_at": "2026-08-02T00:20:18.052039+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15453.pdf"
+  },
+  {
+    "id": "90e83145db9be52b",
+    "title": "Agency Information Collection Activity: Statement of Person Claiming to Have Stood in Relation of Parent",
+    "filename": "2026-15454.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15454.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15454.pdf",
+    "download_url": null,
+    "bytes": 192127,
+    "sha256": "90e83145db9be52b",
+    "downloaded_at": "2026-08-02T00:20:17.426794+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15454.pdf"
+  },
+  {
+    "id": "38b055a340b3e68a",
+    "title": "Agency Information Collection Activity: Generic Clearance for the Collection of Qualitative Feedback on Agency Service Delivery (VBA, VHA, NCA)",
+    "filename": "2026-15456.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15456.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15456.pdf",
+    "download_url": null,
+    "bytes": 212230,
+    "sha256": "38b055a340b3e68a",
+    "downloaded_at": "2026-08-02T00:20:16.817765+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15456.pdf"
+  },
+  {
+    "id": "a42660ef1d406882",
+    "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Comment Request; RSA-227, Annual Client Assistance Program Performance Report",
+    "filename": "2026-15457.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15457.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15457.pdf",
+    "download_url": null,
+    "bytes": 187315,
+    "sha256": "a42660ef1d406882",
+    "downloaded_at": "2026-08-02T00:20:16.206481+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15457.pdf"
+  },
+  {
+    "id": "52c11c01de6d55b5",
+    "title": "Mercedes-Benz USA, LLC, Grant of Petition for Decision of Inconsequential Noncompliance",
+    "filename": "2026-15459.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15459.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15459.pdf",
+    "download_url": null,
+    "bytes": 214476,
+    "sha256": "52c11c01de6d55b5",
+    "downloaded_at": "2026-08-02T00:20:13.300263+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15459.pdf"
+  },
+  {
+    "id": "67a6c3102a716802",
+    "title": "Self-Regulatory Organizations; NYSE Texas, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Rule 7.35 (Auctions) for ETP IPO Securities",
+    "filename": "2026-15460.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15460.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15460.pdf",
+    "download_url": null,
+    "bytes": 210885,
+    "sha256": "67a6c3102a716802",
+    "downloaded_at": "2026-08-02T00:20:12.688323+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15460.pdf"
+  },
+  {
+    "id": "a0aea4ff548068bc",
+    "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Nasdaq TotalView Plus and Nasdaq Basic Plus Data Feeds",
+    "filename": "2026-15461.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "regulation",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15461.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15461.pdf",
+    "download_url": null,
+    "bytes": 236521,
+    "sha256": "a0aea4ff548068bc",
+    "downloaded_at": "2026-08-02T00:20:11.845061+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15461.pdf"
+  },
+  {
+    "id": "0ac90ccbe08374cf",
+    "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Nasdaq Totalview Plus and Nasdaq Basic Plus Data Feeds",
+    "filename": "2026-15462.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "regulation",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15462.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15462.pdf",
+    "download_url": null,
+    "bytes": 227691,
+    "sha256": "0ac90ccbe08374cf",
+    "downloaded_at": "2026-08-02T00:20:11.228570+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15462.pdf"
+  },
+  {
+    "id": "3be4cc70d6bb56d7",
+    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated Approval of a Proposed Rule Change, as Modified by Amendment No. 1, To Amend NYSE Arca Rule 8.201-E (Generic) Commodity-Based Trust Shares",
+    "filename": "2026-15463.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15463.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15463.pdf",
+    "download_url": null,
+    "bytes": 231499,
+    "sha256": "3be4cc70d6bb56d7",
+    "downloaded_at": "2026-08-02T00:20:10.618173+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15463.pdf"
+  },
+  {
+    "id": "db8da34e0c86c5e9",
+    "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Various NTX Options Rules",
+    "filename": "2026-15464.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "amendment",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15464.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15464.pdf",
+    "download_url": null,
+    "bytes": 265881,
+    "sha256": "db8da34e0c86c5e9",
+    "downloaded_at": "2026-08-02T00:20:08.112351+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15464.pdf"
+  },
+  {
+    "id": "26f9e7dde65ec023",
+    "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Nasdaq TotalView Plus and Nasdaq Basic Plus Data Feeds",
+    "filename": "2026-15465.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "regulation",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15465.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15465.pdf",
+    "download_url": null,
+    "bytes": 227768,
+    "sha256": "26f9e7dde65ec023",
+    "downloaded_at": "2026-08-02T00:20:07.441040+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15465.pdf"
+  },
+  {
+    "id": "40e4e841e0b8afc4",
+    "title": "Small Business Investment Company Licensing and Examination Fees Inflation Adjustment",
+    "filename": "2026-15468.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15468.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15468.pdf",
+    "download_url": null,
+    "bytes": 217917,
+    "sha256": "40e4e841e0b8afc4",
+    "downloaded_at": "2026-08-02T00:20:06.811061+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15468.pdf"
+  },
+  {
+    "id": "5e6ffbac945c05e2",
+    "title": "VALIC Company I and The Variable Annuity Life Insurance Company",
+    "filename": "2026-15469.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15469.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15469.pdf",
+    "download_url": null,
+    "bytes": 187763,
+    "sha256": "5e6ffbac945c05e2",
+    "downloaded_at": "2026-08-02T00:20:06.199698+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15469.pdf"
+  },
+  {
+    "id": "be92ad1c096e643b",
+    "title": "Boltless Steel Shelving Units Prepackaged for Sale From the People's Republic of China: Final Results of the Expedited Sunset Review of the Antidumping Duty Order",
+    "filename": "2026-15470.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15470.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15470.pdf",
+    "download_url": null,
+    "bytes": 209372,
+    "sha256": "be92ad1c096e643b",
+    "downloaded_at": "2026-08-02T00:20:05.648061+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15470.pdf"
+  },
+  {
+    "id": "9d2bdde3eb96255b",
+    "title": "Mattresses From Cambodia, Malaysia, Serbia, Thailand, the Republic of Türkiye, and the Socialist Republic of Vietnam: Final Results of the Expedited First Sunset Reviews of the Antidumping Duty Orders",
+    "filename": "2026-15471.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15471.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15471.pdf",
+    "download_url": null,
+    "bytes": 192555,
+    "sha256": "9d2bdde3eb96255b",
+    "downloaded_at": "2026-08-02T00:20:03.107464+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15471.pdf"
+  },
+  {
+    "id": "2ec16cf48b2eff3e",
+    "title": "Certain Preserved Mushrooms From Chile, the People's Republic of China, India, and Indonesia: Continuation of Antidumping Duty Orders",
+    "filename": "2026-15472.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15472.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15472.pdf",
+    "download_url": null,
+    "bytes": 191361,
+    "sha256": "2ec16cf48b2eff3e",
+    "downloaded_at": "2026-08-02T00:20:02.468828+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15472.pdf"
+  },
+  {
+    "id": "cef78ba26dc2bef3",
+    "title": "Certain Vertical Shaft Engines Between 99cc and Up To 225cc, and Parts Thereof (Small Vertical Engines) From the People's Republic of China: Final Results of the Expedited First Sunset Review of the Antidumping Duty Order",
+    "filename": "2026-15473.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15473.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15473.pdf",
+    "download_url": null,
+    "bytes": 191962,
+    "sha256": "cef78ba26dc2bef3",
+    "downloaded_at": "2026-08-02T00:20:01.624375+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15473.pdf"
+  },
+  {
+    "id": "ac3d834a7acddb1b",
+    "title": "Agency Information Collection Activities; Turtle Distribution Database",
+    "filename": "2026-15474.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15474.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15474.pdf",
+    "download_url": null,
+    "bytes": 219441,
+    "sha256": "ac3d834a7acddb1b",
+    "downloaded_at": "2026-08-02T00:20:01.013499+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15474.pdf"
+  },
+  {
+    "id": "694c7409717d55f4",
+    "title": "Office of the Secretary; Notice of Meeting",
+    "filename": "2026-15475.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15475.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15475.pdf",
+    "download_url": null,
+    "bytes": 206301,
+    "sha256": "694c7409717d55f4",
+    "downloaded_at": "2026-08-02T00:20:00.401241+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15475.pdf"
+  },
+  {
+    "id": "4155a01bfaaa6d34",
+    "title": "Center for Scientific Review; Notice of Closed Meetings",
+    "filename": "2026-15476.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15476.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15476.pdf",
+    "download_url": null,
+    "bytes": 186515,
+    "sha256": "4155a01bfaaa6d34",
+    "downloaded_at": "2026-08-02T00:19:57.897985+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15476.pdf"
+  },
+  {
+    "id": "08ecf2c5745ec5a2",
+    "title": "Center for Scientific Review; Notice of Closed Meeting",
+    "filename": "2026-15477.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15477.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15477.pdf",
+    "download_url": null,
+    "bytes": 186515,
+    "sha256": "08ecf2c5745ec5a2",
+    "downloaded_at": "2026-08-02T00:19:57.346346+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15477.pdf"
+  },
+  {
+    "id": "11f88c55c4a7d590",
+    "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+    "filename": "2026-15478.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15478.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15478.pdf",
+    "download_url": null,
+    "bytes": 223370,
+    "sha256": "11f88c55c4a7d590",
+    "downloaded_at": "2026-08-02T00:19:56.794217+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15478.pdf"
+  },
+  {
+    "id": "28b28b45f8911b3b",
+    "title": "Information Collection Being Submitted for Review and Approval to Office of Management and Budget",
+    "filename": "2026-15479.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15479.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15479.pdf",
+    "download_url": null,
+    "bytes": 194266,
+    "sha256": "28b28b45f8911b3b",
+    "downloaded_at": "2026-08-02T00:19:56.185374+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15479.pdf"
+  },
+  {
+    "id": "9a50249ac2a79294",
+    "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+    "filename": "2026-15480.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15480.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15480.pdf",
+    "download_url": null,
+    "bytes": 199099,
+    "sha256": "9a50249ac2a79294",
+    "downloaded_at": "2026-08-02T00:19:55.576359+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15480.pdf"
+  },
+  {
+    "id": "3cf45802280e7eda",
+    "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+    "filename": "2026-15481.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15481.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15481.pdf",
+    "download_url": null,
+    "bytes": 215339,
+    "sha256": "3cf45802280e7eda",
+    "downloaded_at": "2026-08-02T00:19:53.028577+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15481.pdf"
+  },
+  {
+    "id": "3465438573827428",
+    "title": "Temporary Exemption From Motor Vehicle Safety and Bumper Standards",
+    "filename": "2026-15482.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15482.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15482.pdf",
+    "download_url": null,
+    "bytes": 259594,
+    "sha256": "3465438573827428",
+    "downloaded_at": "2026-08-02T00:19:52.418945+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15482.pdf"
+  },
+  {
+    "id": "e6050d872c167cc6",
+    "title": "AV Framework Updates and Request for Comments on Interim Guidance",
+    "filename": "2026-15483.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15483.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15483.pdf",
+    "download_url": null,
+    "bytes": 250442,
+    "sha256": "e6050d872c167cc6",
+    "downloaded_at": "2026-08-02T00:19:51.514691+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15483.pdf"
+  },
+  {
+    "id": "278fe5cfae915eb4",
+    "title": "Updating and Expanding Guidance on Safe Development and Deployment of Automated Driving Systems",
+    "filename": "2026-15484.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15484.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15484.pdf",
+    "download_url": null,
+    "bytes": 211060,
+    "sha256": "278fe5cfae915eb4",
+    "downloaded_at": "2026-08-02T00:19:50.903655+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15484.pdf"
+  },
+  {
+    "id": "93d414ecacb7d3a4",
+    "title": "Zoox-Grant of Temporary Exemption From Portions of Various Requirements of the Federal Motor Vehicle Safety Standards for an Automated Driving System-Equipped Vehicle",
+    "filename": "2026-15485.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15485.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15485.pdf",
+    "download_url": null,
+    "bytes": 293295,
+    "sha256": "93d414ecacb7d3a4",
+    "downloaded_at": "2026-08-02T00:19:50.292854+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15485.pdf"
+  },
+  {
+    "id": "f2b30b936f515dde",
+    "title": "Robomart, Inc.-Receipt of Application for Temporary Exemption From Various Requirements of the Federal Motor Vehicle Safety Standards for an Automated Driving System-Equipped Vehicle",
+    "filename": "2026-15486.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15486.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15486.pdf",
+    "download_url": null,
+    "bytes": 186490,
+    "sha256": "f2b30b936f515dde",
+    "downloaded_at": "2026-08-02T00:19:47.725419+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15486.pdf"
+  },
+  {
+    "id": "863004ed9350f6f6",
+    "title": "30-Day Notice of Proposed Information Collection: Housing Discrimination Complaint Form HUD 903",
+    "filename": "2026-15487.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15487.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15487.pdf",
+    "download_url": null,
+    "bytes": 200778,
+    "sha256": "863004ed9350f6f6",
+    "downloaded_at": "2026-08-02T00:19:47.173406+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15487.pdf"
+  },
+  {
+    "id": "2bc9821ac92067d4",
+    "title": "Advisory Committees on Appellate, Bankruptcy, Civil, Criminal, and Evidence Rules; Hearings of the Judicial Conference",
+    "filename": "2026-15488.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "committee_report",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15488.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15488.pdf",
+    "download_url": null,
+    "bytes": 207622,
+    "sha256": "2bc9821ac92067d4",
+    "downloaded_at": "2026-08-02T00:19:46.563171+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15488.pdf"
+  },
+  {
+    "id": "78b7a1bb03a722e4",
+    "title": "Rehabilitation Research, Development, and Translation (RRDT) Scientific Merit Review Board; Federal Register Notice of Meeting",
+    "filename": "2026-15489.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15489.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15489.pdf",
+    "download_url": null,
+    "bytes": 187692,
+    "sha256": "78b7a1bb03a722e4",
+    "downloaded_at": "2026-08-02T00:19:45.952325+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15489.pdf"
+  },
+  {
+    "id": "2953da525e78433f",
+    "title": "Notice of Department of State Sanctions Actions",
+    "filename": "2026-15490.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15490.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15490.pdf",
+    "download_url": null,
+    "bytes": 227718,
+    "sha256": "2953da525e78433f",
+    "downloaded_at": "2026-08-02T00:19:45.403050+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15490.pdf"
+  },
+  {
+    "id": "739530e9cd707422",
+    "title": "Notice of Department of State Sanctions Action",
+    "filename": "2026-15491.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15491.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15491.pdf",
+    "download_url": null,
+    "bytes": 203295,
+    "sha256": "739530e9cd707422",
+    "downloaded_at": "2026-08-02T00:19:42.871509+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15491.pdf"
+  },
+  {
+    "id": "7f2857e9ee557690",
+    "title": "Notice of Department of State Sanctions Actions",
+    "filename": "2026-15492.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15492.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15492.pdf",
+    "download_url": null,
+    "bytes": 190152,
+    "sha256": "7f2857e9ee557690",
+    "downloaded_at": "2026-08-02T00:19:42.261089+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15492.pdf"
+  },
+  {
+    "id": "ad22d730e89fc37a",
+    "title": "Air Plan Approval; Rhode Island; Update to Materials Incorporated by Reference",
+    "filename": "2026-15493.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15493.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15493.pdf",
+    "download_url": null,
+    "bytes": 289161,
+    "sha256": "ad22d730e89fc37a",
+    "downloaded_at": "2026-08-02T00:19:41.478554+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15493.pdf"
+  },
+  {
+    "id": "b7e6c6d68605aef8",
+    "title": "Notice of Inventory Completion: History Colorado, Denver, CO",
+    "filename": "2026-15494.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15494.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15494.pdf",
+    "download_url": null,
+    "bytes": 203827,
+    "sha256": "b7e6c6d68605aef8",
+    "downloaded_at": "2026-08-02T00:19:40.808442+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15494.pdf"
+  },
+  {
+    "id": "f2dfe3c9ecea3ee4",
+    "title": "Notice of Inventory Completion: The University of Alabama at Birmingham, Birmingham, AL",
+    "filename": "2026-15495.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15495.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15495.pdf",
+    "download_url": null,
+    "bytes": 209037,
+    "sha256": "f2dfe3c9ecea3ee4",
+    "downloaded_at": "2026-08-02T00:19:40.196770+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15495.pdf"
+  },
+  {
+    "id": "c7a97fee91df423b",
+    "title": "Notice of Inventory Completion: The University of Alabama at Birmingham, Birmingham, AL",
+    "filename": "2026-15496.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15496.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15496.pdf",
+    "download_url": null,
+    "bytes": 204100,
+    "sha256": "c7a97fee91df423b",
+    "downloaded_at": "2026-08-02T00:19:37.677950+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15496.pdf"
+  },
+  {
+    "id": "99b974cf0ce25454",
+    "title": "Notice of Inventory Completion: University of Texas at San Antonio Center for Archaeological Research, San Antonio, TX",
+    "filename": "2026-15497.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15497.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15497.pdf",
+    "download_url": null,
+    "bytes": 208544,
+    "sha256": "99b974cf0ce25454",
+    "downloaded_at": "2026-08-02T00:19:37.069711+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15497.pdf"
+  },
+  {
+    "id": "f2f5468baade0d37",
+    "title": "Notice of Intended Repatriation: Missouri Department of Natural Resources, Jefferson City, MO",
+    "filename": "2026-15498.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15498.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15498.pdf",
+    "download_url": null,
+    "bytes": 209581,
+    "sha256": "f2f5468baade0d37",
+    "downloaded_at": "2026-08-02T00:19:36.458711+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15498.pdf"
+  },
+  {
+    "id": "77f5a76306ae44f0",
+    "title": "Notice of Intended Repatriation: San Bernardino County Museum, Redlands, CA",
+    "filename": "2026-15499.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15499.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15499.pdf",
+    "download_url": null,
+    "bytes": 208612,
+    "sha256": "77f5a76306ae44f0",
+    "downloaded_at": "2026-08-02T00:19:35.850000+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15499.pdf"
+  },
+  {
+    "id": "5da1651af6b41816",
+    "title": "Notice of Inventory Completion: Louisiana Department of Culture, Recreation, and Tourism, Division of Archaeology, Baton Rouge, LA",
+    "filename": "2026-15500.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15500.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15500.pdf",
+    "download_url": null,
+    "bytes": 210905,
+    "sha256": "5da1651af6b41816",
+    "downloaded_at": "2026-08-02T00:19:35.236701+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15500.pdf"
+  },
+  {
+    "id": "8e3441cc4e74e1a3",
+    "title": "Notice of Inventory Completion: Louisiana Department of Culture, Recreation, and Tourism, Division of Archaeology, Baton Rouge, LA",
+    "filename": "2026-15501.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15501.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15501.pdf",
+    "download_url": null,
+    "bytes": 209132,
+    "sha256": "8e3441cc4e74e1a3",
+    "downloaded_at": "2026-08-02T00:19:32.712578+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15501.pdf"
+  },
+  {
+    "id": "76c0272edaefd8ea",
+    "title": "Notice of Inventory Completion: Louisiana Department of Culture, Recreation, and Tourism, Division of Archaeology, Baton Rouge, LA",
+    "filename": "2026-15502.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15502.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15502.pdf",
+    "download_url": null,
+    "bytes": 208686,
+    "sha256": "76c0272edaefd8ea",
+    "downloaded_at": "2026-08-02T00:19:32.094965+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15502.pdf"
+  },
+  {
+    "id": "eaa4c4b0bc87bd9b",
+    "title": "Notice of Inventory Completion: Louisiana Department of Culture, Recreation, and Tourism, Division of Archaeology, Baton Rouge, LA",
+    "filename": "2026-15503.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15503.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15503.pdf",
+    "download_url": null,
+    "bytes": 208102,
+    "sha256": "eaa4c4b0bc87bd9b",
+    "downloaded_at": "2026-08-02T00:19:31.257406+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15503.pdf"
+  },
+  {
+    "id": "271b6cdf4019970c",
+    "title": "Notice of Inventory Completion: Louisiana Department of Culture, Recreation, and Tourism, Division of Archaeology, Baton Rouge, LA",
+    "filename": "2026-15504.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15504.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15504.pdf",
+    "download_url": null,
+    "bytes": 208276,
+    "sha256": "271b6cdf4019970c",
+    "downloaded_at": "2026-08-02T00:19:30.646384+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15504.pdf"
+  },
+  {
+    "id": "f44c93f00da35460",
+    "title": "Notice of Inventory Completion: Montcalm County Sheriff's Office, Stanton, MI",
+    "filename": "2026-15505.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15505.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15505.pdf",
+    "download_url": null,
+    "bytes": 208280,
+    "sha256": "f44c93f00da35460",
+    "downloaded_at": "2026-08-02T00:19:30.034207+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15505.pdf"
+  },
+  {
+    "id": "a20c2ea82c061a4e",
+    "title": "Notice of Inventory Completion: San Diego State University, San Diego, CA",
+    "filename": "2026-15506.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15506.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15506.pdf",
+    "download_url": null,
+    "bytes": 212227,
+    "sha256": "a20c2ea82c061a4e",
+    "downloaded_at": "2026-08-02T00:19:27.530970+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15506.pdf"
+  },
+  {
+    "id": "f65e61e4b6315323",
+    "title": "Notice of Inventory Completion: University of Missouri, Museum of Anthropology, Columbia, MO",
+    "filename": "2026-15507.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15507.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15507.pdf",
+    "download_url": null,
+    "bytes": 208838,
+    "sha256": "f65e61e4b6315323",
+    "downloaded_at": "2026-08-02T00:19:26.918685+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15507.pdf"
+  },
+  {
+    "id": "821815a6b505a816",
+    "title": "Notice of Intended Repatriation: Portland Art Museum, Portland, OR",
+    "filename": "2026-15508.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15508.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15508.pdf",
+    "download_url": null,
+    "bytes": 209200,
+    "sha256": "821815a6b505a816",
+    "downloaded_at": "2026-08-02T00:19:26.307200+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15508.pdf"
+  },
+  {
+    "id": "ae633e21af590487",
+    "title": "Notice of Intended Repatriation: Portland Art Museum, Portland, OR",
+    "filename": "2026-15509.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15509.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15509.pdf",
+    "download_url": null,
+    "bytes": 208883,
+    "sha256": "ae633e21af590487",
+    "downloaded_at": "2026-08-02T00:19:25.695257+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15509.pdf"
+  },
+  {
+    "id": "c401419c6a4b4920",
+    "title": "Notice of Intended Repatriation: Portland Art Museum, Portland, OR",
+    "filename": "2026-15510.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15510.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15510.pdf",
+    "download_url": null,
+    "bytes": 204481,
+    "sha256": "c401419c6a4b4920",
+    "downloaded_at": "2026-08-02T00:19:25.079387+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15510.pdf"
+  },
+  {
+    "id": "2e68212e69d1b9dd",
+    "title": "Notice of Inventory Completion: California Department of Parks and Recreation, Sacramento, CA",
+    "filename": "2026-15511.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15511.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15511.pdf",
+    "download_url": null,
+    "bytes": 207702,
+    "sha256": "2e68212e69d1b9dd",
+    "downloaded_at": "2026-08-02T00:19:22.561230+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15511.pdf"
+  },
+  {
+    "id": "6c36f20da1d5793f",
+    "title": "Notice of Intended Repatriation: California Department of Transportation, San Diego, CA",
+    "filename": "2026-15512.pdf",
+    "jurisdiction": "USA Federal",
+    "source_kind": "official_gazette",
+    "law_type": "notice",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "govinfo.gov",
+    "filename_tags": [
+      "fr_document_number"
+    ],
+    "source_page": "https://www.federalregister.gov",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15512.pdf",
+    "open_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-31/pdf/2026-15512.pdf",
+    "download_url": null,
+    "bytes": 209696,
+    "sha256": "6c36f20da1d5793f",
+    "downloaded_at": "2026-08-02T00:19:21.952295+00:00",
+    "local_path": "data/pdfs/USA_Federal/official_gazette/2026-15512.pdf"
+  },
+  {
     "id": "ef31ae45fd3fe8b4",
     "title": "ITS 21-040 - Amendments to the Steam and Pressure Plants Regulation",
     "filename": "its_21_040_amendments_to_the_steam_and_pressure_plants_regulation.pdf",
