@@ -1,7 +1,10 @@
 # Long-running, resume-safe PDF crawl on GitHub Actions.
 # GHA jobs max ~6h → we run in chunks with --time-budget-minutes and resume via manifest.
-# Live site updates: crawler commits web/data/pdfs_catalog.json + crawl_status.json;
-# deploy-pages.yml runs on those path pushes.
+#
+# Live site updates:
+# - crawler commits catalog/status to main (resume + history)
+# - this workflow ALSO deploys GitHub Pages directly (GITHUB_TOKEN pushes do NOT
+#   trigger deploy-pages.yml — that is why the public site stayed stale at ~546)
 name: Crawl gazette PDFs
 
 on:
@@ -155,3 +158,41 @@ jobs:
               with open(summary, "a", encoding="utf-8") as f:
                   f.write(text)
           PY
+
+  # Deploy Pages from latest main after crawl commits (GITHUB_TOKEN pushes do not
+  # trigger deploy-pages.yml — deploy here so the public site stays current).
+  deploy-site:
+    needs: crawl
+    if: always()
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Sync data into web/
+        run: |
+          set -euo pipefail
+          mkdir -p web/data
+          cp -f data/*.json web/data/ 2>/dev/null || true
+          # Prefer crawl outputs already under web/data
+          if [ -f data/pdfs/crawl_status.json ]; then
+            cp -f data/pdfs/crawl_status.json web/data/crawl_status.json
+          fi
+          for f in web/index.html web/manifest.webmanifest web/assets/app.js web/assets/styles.css; do
+            test -f "$f" || { echo "::error::Missing $f"; exit 1; }
+          done
+          echo "pdfs_catalog.json: $(wc -c < web/data/pdfs_catalog.json 2>/dev/null || echo 0) bytes"
+          echo "crawl_status.json: $(wc -c < web/data/crawl_status.json 2>/dev/null || echo 0) bytes"
+          python3 -c "import json; print('catalog items', len(json.load(open('web/data/pdfs_catalog.json'))))" || true
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4
