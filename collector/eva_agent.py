@@ -85,6 +85,13 @@ def is_meta_question(q: str) -> bool:
         return True
     if re.search(r"\bhave you (read|finished|done|indexed|extracted)\b", s):
         return True
+    if (
+        re.search(r"\b(list|show|display|name)\b", s)
+        and re.search(r"\b(pdfs?|summaries|documents?|files?|them|those|index)\b", s)
+    ):
+        return True
+    if re.search(r"\bgive me (a |the )?list\b", s):
+        return True
     patterns = [
         r"\b(still )?(working|running|crawling|indexing|extracting)\b",
         r"\b(progress|update me|status|coverage)\b",
@@ -102,17 +109,57 @@ def meta_answer(question: str, corpus: list[dict]) -> dict:
         ans = (
             "I’m Eva, RegIntel’s legal research assistant. "
             f"I have {n} PDF summaries indexed. Ask about a topic or jurisdiction; "
-            "I’ll cite source PDFs. Ask “status” for indexing progress."
+            "I’ll cite source PDFs. Ask “status” or “list the PDFs” for progress / inventory."
         )
-    else:
-        ans = (
-            f"Yes — summarization runs in batches in the background.\n"
-            f"• Summaries ready: {n}\n"
-            f"• LLM mode: {'on' if get_client() else 'off (extractive / set XAI_API_KEY)'}\n\n"
-            "I only answer from summaries I’ve finished. "
-            "I won’t invent content from unread PDFs. "
-            "Try a content question like “Delaware revenue bills”."
-        )
+        return {
+            "answer": ans,
+            "citations": [],
+            "method": "meta",
+            "retrieved": 0,
+            "corpus_size": n,
+            "llm": get_client() is not None,
+        }
+
+    # list indexed PDFs
+    if (
+        re.search(r"\b(list|show|display|name)\b", s)
+        and re.search(r"\b(pdfs?|summaries|documents?|files?|them|those|index)\b", s)
+    ) or re.search(r"\bgive me (a |the )?list\b", s):
+        lines = [f"Here are the {n} PDF(s) I’ve summarized so far:", ""]
+        citations = []
+        for i, doc in enumerate(corpus, 1):
+            url = doc.get("open_url") or doc.get("url") or ""
+            title = doc.get("title") or "Untitled"
+            jur = doc.get("jurisdiction") or "—"
+            citations.append(
+                {
+                    "n": i,
+                    "id": doc.get("id"),
+                    "title": title,
+                    "jurisdiction": jur,
+                    "url": url,
+                    "source_page": doc.get("source_page"),
+                }
+            )
+            lines.append(f"[{i}] {title} ({jur})")
+            if url:
+                lines.append(f"    {url}")
+        return {
+            "answer": "\n".join(lines),
+            "citations": citations,
+            "method": "meta_list",
+            "retrieved": n,
+            "corpus_size": n,
+            "llm": get_client() is not None,
+        }
+
+    ans = (
+        f"Yes — summarization runs in batches in the background.\n"
+        f"• Summaries ready: {n}\n"
+        f"• LLM mode: {'on' if get_client() else 'off (extractive / set XAI_API_KEY)'}\n\n"
+        "Ask “list the PDFs” to see every document I’ve summarized. "
+        "I only answer content questions from those summaries."
+    )
     return {
         "answer": ans,
         "citations": [],

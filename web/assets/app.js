@@ -276,6 +276,17 @@
     if (/\bhow many\b/.test(s) && /\b(pdfs?|summaries|documents?)\b/.test(s)) return true;
     if (/\b(are you|do you)\b/.test(s) && processVerb.test(s)) return true;
     if (/\bhave you (read|finished|done|indexed|extracted)\b/.test(s)) return true;
+    // "list/show those 38 pdfs", "give me the list"
+    if (
+      /\b(list|show|display|name)\b/.test(s) &&
+      /\b(pdfs?|summaries|documents?|files?|them|those|index)\b/.test(s)
+    ) {
+      return true;
+    }
+    if (/\bgive me (a |the )?list\b/.test(s)) return true;
+    if (/\bwhich pdfs?\b/.test(s) || /\bwhat (pdfs?|documents?) (do you|have you)\b/.test(s)) {
+      return true;
+    }
 
     const patterns = [
       /\b(still )?(working|running|crawling|indexing|extracting)\b/,
@@ -310,6 +321,38 @@
       return { answer: "You’re welcome. Ask anytime about a bill, regulation, or jurisdiction.", citations: [] };
     }
 
+    // list / show all indexed PDFs
+    if (
+      /\b(list|show|display|name|which|what)\b/.test(s) &&
+      /\b(pdfs?|summaries|documents?|files?|index|indexed|read|you have|you've)\b/.test(s)
+    ) {
+      if (!count) {
+        return {
+          answer: "I don’t have any PDF summaries indexed yet. Summarization is still running in batches.",
+          citations: [],
+        };
+      }
+      const citations = corpus.map((h, i) => ({
+        n: i + 1,
+        title: h.title || "Untitled",
+        url: h.open_url || h.url,
+        jurisdiction: h.jurisdiction,
+      }));
+      const lines = [
+        `Here are the ${count} PDF(s) I’ve summarized so far (catalog has ~${pdfCatalogCount != null ? pdfCatalogCount : "many"} total):`,
+        "",
+      ];
+      citations.forEach((c) => {
+        lines.push(
+          `[${c.n}] ${c.title} (${c.jurisdiction || "—"})` +
+            (c.url ? `\n    ${c.url}` : ""),
+        );
+      });
+      lines.push("");
+      lines.push("Click a reference link below (or open the URL) to view the PDF.");
+      return { answer: lines.join("\n"), citations };
+    }
+
     // status / are you reading more
     return {
       answer:
@@ -319,8 +362,8 @@
         `\n• PDFs in the RegIntel catalog: ${pdfCatalogCount != null ? pdfCatalogCount : "unknown"}` +
         `\n• Last index update: ${updated}` +
         `\n• Summary engine: ${llm ? "SpaceXAI LLM" : "extractive (set XAI_API_KEY for higher quality)"}` +
-        `\n\nI only answer from summaries I’ve completed. When you ask about a topic, I search those summaries and cite the PDF links — I don’t invent content from unread files.\n\n` +
-        `Try a content question, e.g. “What does the Delaware order paper cover?” or “Saudi capital market rules”.`,
+        `\n\nAsk “list the PDFs” to see every document I’ve summarized.\n` +
+        `Or ask a content question, e.g. “Delaware order paper” or “Manitoba bills”.`,
       citations: [],
     };
   }
