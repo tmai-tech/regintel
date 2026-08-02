@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:29:17.302860+00:00",
+  "updated_at": "2026-08-02T00:31:19.137796+00:00",
   "phase": "running",
-  "message": "downloaded 2820 new this run",
+  "message": "downloaded 2930 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11742,
+    "pdfs": 11852,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -20,12 +20,12 @@
       "count": 3370
     },
     {
-      "jurisdiction": "British Columbia",
-      "count": 852
+      "jurisdiction": "USA Federal",
+      "count": 864
     },
     {
-      "jurisdiction": "USA Federal",
-      "count": 754
+      "jurisdiction": "British Columbia",
+      "count": 852
     },
     {
       "jurisdiction": "Ontario",
@@ -135,7 +135,7 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 4199
+      "count": 4309
     }
   ],
   "current_source": {
@@ -145,108 +145,108 @@
   },
   "recent_pdfs": [
     {
-      "title": "Further Strengthening Actions Taken To Adjust Imports of Aluminum Into the United States",
+      "title": "Combined Notice of Filings #2",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14990.pdf",
-      "downloaded_at": "2026-08-02T00:29:15.683986+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14833.pdf",
+      "downloaded_at": "2026-08-02T00:31:17.499318+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Imposing Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to A",
+      "title": "Columbia Gas Transmission, LLC; Notice of Availability of the Environmental Assessment for the Proposed Southeast Virgin",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14991.pdf",
-      "downloaded_at": "2026-08-02T00:29:15.072050+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14834.pdf",
+      "downloaded_at": "2026-08-02T00:31:16.938116+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Imposing Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to D",
+      "title": "Combined Notice of Filings #1",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14992.pdf",
-      "downloaded_at": "2026-08-02T00:29:13.201077+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14835.pdf",
+      "downloaded_at": "2026-08-02T00:31:16.087380+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Imposing Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to M",
+      "title": "Agency Information Collection Activities; Proposed eCollection, eComments Requested; Extension Without Change of a Previ",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14997.pdf",
-      "downloaded_at": "2026-08-02T00:29:12.109356+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14836.pdf",
+      "downloaded_at": "2026-08-02T00:31:15.463377+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Captive Nations Week, 2026",
+      "title": "Agency Information Collection Activities; Proposed eCollection, eComments Requested; Revision of a Previously Approved C",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14998.pdf",
-      "downloaded_at": "2026-08-02T00:29:08.901680+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14837.pdf",
+      "downloaded_at": "2026-08-02T00:31:14.910106+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Made in America Week, 2026",
+      "title": "Agency Information Collection Activities; Proposed eCollection, eComments Requested; Revision of a Previously Approved C",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14999.pdf",
-      "downloaded_at": "2026-08-02T00:29:06.330339+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14838.pdf",
+      "downloaded_at": "2026-08-02T00:31:12.314344+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials",
+      "title": "Quarterly Publication of Individuals, Who Have Chosen To Expatriate",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-15003.pdf",
-      "downloaded_at": "2026-08-02T00:29:05.778379+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14841.pdf",
+      "downloaded_at": "2026-08-02T00:31:11.702180+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Continuation of the National Emergency With Respect to Mali",
+      "title": "Prospective Grant of an Exclusive Patent License: RXFP1 AGONISTS",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-15024.pdf",
-      "downloaded_at": "2026-08-02T00:29:05.167318+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14848.pdf",
+      "downloaded_at": "2026-08-02T00:31:11.009751+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Deepwater Port License Application: ST LNG Deepwater Port Development Project-Final Public Hearing",
+      "title": "Intent To Request Extension From OMB of One Current Public Collection of Information: Transportation Security Officer Me",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14960.pdf",
-      "downloaded_at": "2026-08-02T00:29:04.611585+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14855.pdf",
+      "downloaded_at": "2026-08-02T00:31:10.396563+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Request: OPM E-File System (3206-NEW)",
+      "title": "Self-Regulatory Organizations; BOX Exchange LLC; Notice of Filing of a Proposed Rule Change To Amend BOX Rule 3060 (Grat",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14961.pdf",
-      "downloaded_at": "2026-08-02T00:29:04.058768+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14856.pdf",
+      "downloaded_at": "2026-08-02T00:31:09.843171+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Notice of the Establishment of the Arctic Shipping Federal Advisory Committee; Solicitation of Nominations for Membershi",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change T",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14962.pdf",
-      "downloaded_at": "2026-08-02T00:29:01.436524+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14857.pdf",
+      "downloaded_at": "2026-08-02T00:31:07.208217+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Deepwater Port License Application: ST LNG Deepwater Port Development Project-Final Environmental Impact Statement",
+      "title": "Self-Regulatory Organizations; NYSE Texas, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change ",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14963.pdf",
-      "downloaded_at": "2026-08-02T00:29:00.825873+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14858.pdf",
+      "downloaded_at": "2026-08-02T00:31:06.593424+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Center for Scientific Review; Notice of Closed Meeting",
+      "title": "Self-Regulatory Organizations; New York Stock Exchange LLC; Notice of Filing and Immediate Effectiveness of a Proposed R",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14964.pdf",
-      "downloaded_at": "2026-08-02T00:28:59.983389+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14859.pdf",
+      "downloaded_at": "2026-08-02T00:31:05.746726+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities; Extension, Without Change, of a Currently Approved Collection: Request for Fee",
+      "title": "Self-Regulatory Organizations; CME Securities Clearing Inc.; Order Approving Proposed Rule Change To Support Members' Ri",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14965.pdf",
-      "downloaded_at": "2026-08-02T00:28:59.372601+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14860.pdf",
+      "downloaded_at": "2026-08-02T00:31:05.135415+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Government-Owned Inventions; Availability for Licensing",
+      "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-24/pdf/2026-14966.pdf",
-      "downloaded_at": "2026-08-02T00:28:58.762074+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/pdf/2026-14861.pdf",
+      "downloaded_at": "2026-08-02T00:31:04.523822+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 10,
     "pages_crawled": 2105,
     "js_pages": 145,
-    "pdfs_discovered": 2820,
-    "pdfs_downloaded": 2820,
+    "pdfs_discovered": 2930,
+    "pdfs_downloaded": 2930,
     "pdfs_skipped_existing": 8766,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:29:15.684095+00:00"
+  "manifest_generated_at": "2026-08-02T00:31:17.499413+00:00"
 }
