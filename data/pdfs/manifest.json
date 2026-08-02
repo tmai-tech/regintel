@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T15:33:49.489568+00:00",
+  "generated_at": "2026-08-02T15:34:04.320463+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -298404,9 +298404,9 @@
     }
   ],
   "stats": {
-    "sources_visited": 2,
-    "pages_crawled": 201,
-    "js_pages": 3,
+    "sources_visited": 3,
+    "pages_crawled": 202,
+    "js_pages": 4,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 1,
