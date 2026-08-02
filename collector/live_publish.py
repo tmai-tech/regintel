@@ -198,36 +198,52 @@ def publish(
     return status
 
 
+def _git_remote_with_token() -> str | None:
+    """Build authenticated remote URL for Actions (GITHUB_TOKEN)."""
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY")  # owner/name
+    if token and repo:
+        return f"https://x-access-token:{token}@github.com/{repo}.git"
+    return None
+
+
+def _run_git(args: list[str], *, env: dict | None = None) -> subprocess.CompletedProcess:
+    return subprocess.run(
+        ["git", *args],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        env=env or os.environ.copy(),
+    )
+
+
 def _git_push_live(pdf_count: int, phase: str) -> bool:
-    """Commit catalog/status/manifest so deploy-pages + resume work."""
+    """Commit catalog/status/manifest so deploy + resume work.
+
+    On GitHub Actions, use GITHUB_TOKEN in the remote URL (plain `git push origin`
+    often fails with exit 1 under concurrent jobs / default credential setup).
+    """
     try:
         env = os.environ.copy()
-        # identity for bot
-        subprocess.run(
-            ["git", "config", "user.name", "github-actions[bot]"],
-            cwd=ROOT,
-            check=False,
-            capture_output=True,
-        )
-        subprocess.run(
+        _run_git(["config", "user.name", "github-actions[bot]"])
+        _run_git(
             [
-                "git",
                 "config",
                 "user.email",
                 "41898282+github-actions[bot]@users.noreply.github.com",
-            ],
-            cwd=ROOT,
-            check=False,
-            capture_output=True,
+            ]
         )
-        # pull --rebase to reduce conflicts when multiple runs
-        subprocess.run(
-            ["git", "pull", "--rebase", "origin", "main"],
-            cwd=ROOT,
-            check=False,
-            capture_output=True,
-            env=env,
-        )
+
+        remote = _git_remote_with_token()
+        # Always fetch latest main before commit to reduce non-fast-forward
+        if remote:
+            fr = _run_git(["fetch", remote, "main:refs/remotes/origin/main"], env=env)
+            if fr.returncode != 0:
+                print(f"[live-publish] fetch warn: {fr.stderr.strip()[:300]}", flush=True)
+            _run_git(["rebase", "origin/main"], env=env)
+        else:
+            _run_git(["pull", "--rebase", "origin", "main"], env=env)
+
         paths = [
             "data/pdfs/manifest.json",
             "data/pdfs/crawl_status.json",
@@ -238,34 +254,41 @@ def _git_push_live(pdf_count: int, phase: str) -> bool:
         ]
         for p in paths:
             if (ROOT / p).exists():
-                subprocess.run(
-                    ["git", "add", "-f", p],
-                    cwd=ROOT,
-                    check=False,
-                    capture_output=True,
-                )
-        st = subprocess.run(
-            ["git", "diff", "--staged", "--quiet"], cwd=ROOT, capture_output=True
-        )
+                _run_git(["add", "-f", p])
+
+        st = _run_git(["diff", "--staged", "--quiet"])
         if st.returncode == 0:
             return False  # nothing staged
+
         msg = f"chore: live PDF catalog ({pdf_count} pdfs, {phase}) {_now()}"
-        subprocess.run(
-            ["git", "commit", "-m", msg],
-            cwd=ROOT,
-            check=True,
-            capture_output=True,
-            env=env,
-        )
-        subprocess.run(
-            ["git", "push", "origin", "HEAD:main"],
-            cwd=ROOT,
-            check=True,
-            capture_output=True,
-            env=env,
-        )
-        print(f"[live-publish] pushed catalog ({pdf_count} PDFs)", flush=True)
-        return True
+        cr = _run_git(["commit", "-m", msg], env=env)
+        if cr.returncode != 0:
+            print(
+                f"[live-publish] commit failed: {(cr.stderr or cr.stdout)[:400]}",
+                flush=True,
+            )
+            return False
+
+        # Retry push a few times (concurrent crawl/schedule races)
+        last_err = ""
+        for attempt in range(1, 4):
+            if remote:
+                pr = _run_git(["push", remote, "HEAD:main"], env=env)
+            else:
+                pr = _run_git(["push", "origin", "HEAD:main"], env=env)
+            if pr.returncode == 0:
+                print(f"[live-publish] pushed catalog ({pdf_count} PDFs)", flush=True)
+                return True
+            last_err = (pr.stderr or pr.stdout or "")[:500]
+            print(f"[live-publish] push attempt {attempt} failed: {last_err}", flush=True)
+            # rebase on latest and retry
+            if remote:
+                _run_git(["fetch", remote, "main:refs/remotes/origin/main"], env=env)
+            _run_git(["rebase", "origin/main"], env=env)
+            time.sleep(2 * attempt)
+
+        print(f"[live-publish] git push failed after retries: {last_err}", flush=True)
+        return False
     except Exception as e:
         print(f"[live-publish] git push skipped/failed: {e}", flush=True)
         return False

@@ -130,21 +130,59 @@ jobs:
         if: always()
         env:
           REGINTEL_LIVE_GIT_PUSH: "1"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Rebuild catalog from runner manifest (even if mid-run pushes failed)
           python collector/live_publish.py || true
-          # force one more commit of any leftover files
           git add -f data/pdfs/manifest.json data/pdfs/crawl_status.json \
             web/data/pdfs_catalog.json web/data/crawl_status.json \
             android/app/src/main/assets/pdfs_catalog.json 2>/dev/null || true
           if git diff --staged --quiet; then
-            echo "No final data changes"
+            echo "No final data changes to commit"
           else
-            git pull --rebase origin main || true
-            git commit -m "chore: crawl chunk complete $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push origin HEAD:main || true
+            # Authenticated push (fixes silent exit 1 seen on 173 mid-run pushes)
+            REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git fetch "$REPO" main:refs/remotes/origin/main || true
+            git rebase origin/main || true
+            git commit -m "chore: crawl chunk complete $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            for i in 1 2 3 4 5; do
+              if git push "$REPO" HEAD:main; then
+                echo "Pushed catalog to main (attempt $i)"
+                break
+              fi
+              echo "Push failed attempt $i — rebase and retry"
+              git fetch "$REPO" main:refs/remotes/origin/main || true
+              git rebase origin/main || true
+              sleep $((i * 3))
+            done
           fi
+          # Always upload artifacts so we never lose a successful crawl again
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m = json.loads(Path("data/pdfs/manifest.json").read_text()) if Path("data/pdfs/manifest.json").exists() else {}
+          n = len([d for d in (m.get("downloads") or []) if not d.get("dry_run")])
+          saudi = sum(1 for d in (m.get("downloads") or []) if "saudi" in str(d.get("jurisdiction") or "").lower() or d.get("source_kind") == "ministry")
+          print(f"manifest_downloads={n} saudi_or_ministry={saudi}")
+          Path("crawl_metrics.txt").write_text(f"pdfs={n}\nsaudi={saudi}\n")
+          PY
+
+      - name: Upload crawl artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawl-catalog
+          path: |
+            data/pdfs/manifest.json
+            data/pdfs/crawl_status.json
+            web/data/pdfs_catalog.json
+            web/data/crawl_status.json
+            crawl_metrics.txt
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Summary
         if: always()
@@ -153,18 +191,21 @@ jobs:
           import json, os
           from pathlib import Path
           m = json.loads(Path("data/pdfs/manifest.json").read_text()) if Path("data/pdfs/manifest.json").exists() else {}
-          n = len(m.get("downloads") or [])
+          downloads = [d for d in (m.get("downloads") or []) if not d.get("dry_run")]
+          n = len(downloads)
+          saudi = sum(1 for d in downloads if "saudi" in str(d.get("jurisdiction") or "").lower() or d.get("source_kind") == "ministry")
           s = {}
           if Path("web/data/crawl_status.json").exists():
               s = json.loads(Path("web/data/crawl_status.json").read_text())
           lines = [
               "### Crawl chunk summary",
               "",
-              f"- **PDFs in catalog**: {n}",
+              f"- **PDFs in catalog (manifest)**: {n}",
+              f"- **Saudi / ministry-labeled**: {saudi}",
               f"- **Phase**: {s.get('phase')}",
               f"- **Message**: {s.get('message')}",
               "- **Site**: https://tmai-tech.github.io/regintel/",
-              "- Open the **Crawl** tab for live status",
+              "- Open the **Ministries** / **Crawl** tabs after deploy",
               "",
           ]
           text = "\n".join(lines) + "\n"
@@ -175,8 +216,8 @@ jobs:
                   f.write(text)
           PY
 
-  # Deploy Pages from latest main after crawl commits (GITHUB_TOKEN pushes do not
-  # trigger deploy-pages.yml — deploy here so the public site stays current).
+  # Deploy Pages from the crawl job workspace (not a fresh main checkout), so
+  # Saudi PDFs appear even if git push failed mid-run.
   deploy-site:
     needs: crawl
     if: always()
@@ -190,21 +231,36 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Sync data into web/
+      - name: Download crawl artifacts
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: crawl-catalog
+          path: _crawl_out
+
+      - name: Merge crawl outputs into web/
         run: |
           set -euo pipefail
-          mkdir -p web/data
+          mkdir -p web/data data/pdfs
           cp -f data/*.json web/data/ 2>/dev/null || true
-          # Prefer crawl outputs already under web/data
-          if [ -f data/pdfs/crawl_status.json ]; then
-            cp -f data/pdfs/crawl_status.json web/data/crawl_status.json
+          # Prefer artifact from this crawl run (has Saudi PDFs even if push failed)
+          if [ -f _crawl_out/web/data/pdfs_catalog.json ]; then
+            cp -f _crawl_out/web/data/pdfs_catalog.json web/data/pdfs_catalog.json
+            echo "Using catalog from crawl artifact"
+          fi
+          if [ -f _crawl_out/web/data/crawl_status.json ]; then
+            cp -f _crawl_out/web/data/crawl_status.json web/data/crawl_status.json
+          elif [ -f _crawl_out/data/pdfs/crawl_status.json ]; then
+            cp -f _crawl_out/data/pdfs/crawl_status.json web/data/crawl_status.json
+          fi
+          if [ -f _crawl_out/data/pdfs/manifest.json ]; then
+            cp -f _crawl_out/data/pdfs/manifest.json data/pdfs/manifest.json
           fi
           for f in web/index.html web/manifest.webmanifest web/assets/app.js web/assets/styles.css; do
             test -f "$f" || { echo "::error::Missing $f"; exit 1; }
           done
           echo "pdfs_catalog.json: $(wc -c < web/data/pdfs_catalog.json 2>/dev/null || echo 0) bytes"
-          echo "crawl_status.json: $(wc -c < web/data/crawl_status.json 2>/dev/null || echo 0) bytes"
-          python3 -c "import json; print('catalog items', len(json.load(open('web/data/pdfs_catalog.json'))))" || true
+          python3 -c "import json; c=json.load(open('web/data/pdfs_catalog.json')); sa=sum(1 for x in c if 'saudi' in str(x.get('jurisdiction') or '').lower() or x.get('source_kind')=='ministry'); print('catalog', len(c), 'saudi/ministry', sa)" || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
