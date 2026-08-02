@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T15:08:24.728355+00:00",
+  "generated_at": "2026-08-02T15:16:09.869819+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -159185,6 +159185,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T00:56:44.986689+00:00"
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%AA%D8%B5%D8%B1%D9%8A%D9%81%20%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%A7%D9%94%D9%85%D8%B7%D8%A7%D8%B1%202016.pdf",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar/open-data",
+      "title": "PDF",
+      "path": "data/pdfs/Saudi_Arabia_MOMAH/ministry/تصريف مياه الا_مطار 2016.pdf",
+      "bytes": 70337,
+      "sha256": "d99d7007e3885088",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T15:15:48.064730+00:00"
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%AF%D9%88%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%B9%D8%A7%D9%85%202018.pdf",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar/open-data",
+      "title": "PDF",
+      "path": "data/pdfs/Saudi_Arabia_MOMAH/ministry/دورات المياه العامة نهاية عام 2018.pdf",
+      "bytes": 62988,
+      "sha256": "ad7b5aa1bc95d233",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T15:15:48.670336+00:00"
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2026-07/%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%B2%D8%A7%D8%B1%D9%8A%20%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D9%84%D9%81%20%D9%84%D9%84%D9%88%D8%AD%D8%AF%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%D8%A9.pdf",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar/regulations",
+      "title": "عرض",
+      "path": "data/pdfs/Saudi_Arabia_MOMAH/ministry/القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
+      "bytes": 3623181,
+      "sha256": "ed45089d787fec25",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T15:15:56.549938+00:00"
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2026-06/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%2026-01-2026%20-%20%D9%85%D8%B9%D8%AA%D9%85%D8%AF%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1.pdf",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar/regulations",
+      "title": "عرض",
+      "path": "data/pdfs/Saudi_Arabia_MOMAH/ministry/ضوابط تصريح 24 ساعة 26-01-2026 - معتمد مع القرار.pdf",
+      "bytes": 3344509,
+      "sha256": "c9b8c8b09f602e57",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T15:16:02.418044+00:00"
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2026-06/%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D9%85%D8%BA%D8%A7%D8%B3%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%AA%D9%89.pdf",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar/regulations",
+      "title": "عرض",
+      "path": "data/pdfs/Saudi_Arabia_MOMAH/ministry/اشتراطات مغاسل الموتى.pdf",
+      "bytes": 3602431,
+      "sha256": "6c46508b6852f45a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T15:16:09.869731+00:00"
     }
   ],
   "discovered": [
@@ -297194,11 +297259,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
+    "sources_visited": 1,
+    "pages_crawled": 200,
+    "js_pages": 8,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0

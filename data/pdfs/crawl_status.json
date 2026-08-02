@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T15:08:26.704026+00:00",
-  "phase": "starting",
-  "message": "crawl starting",
+  "updated_at": "2026-08-02T15:16:11.837577+00:00",
+  "phase": "running",
+  "message": "downloaded 5 new this run",
   "run_id": "30753616423",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30753616423",
   "totals": {
-    "pdfs": 12245,
+    "pdfs": 12250,
     "errors": 21662,
     "source_reports": 30,
-    "jurisdictions": 29
+    "jurisdictions": 30
   },
   "by_jurisdiction": [
     {
@@ -92,6 +92,10 @@
       "count": 5
     },
     {
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "count": 5
+    },
+    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -136,10 +140,53 @@
     {
       "source_kind": "official_gazette",
       "count": 4457
+    },
+    {
+      "source_kind": "ministry",
+      "count": 5
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - MOMAH",
+    "source_kind": "ministry",
+    "url": "https://momah.gov.sa/ar/regulations"
+  },
   "recent_pdfs": [
+    {
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2026-06/%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D9%85%D8%BA%D8%A7%D8%B3%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%AA%D9%89.pdf",
+      "downloaded_at": "2026-08-02T15:16:09.869731+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2026-06/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%2026-01-2026%20-%20%D9%85%D8%B9%D8%AA%D9%85%D8%AF%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1.pdf",
+      "downloaded_at": "2026-08-02T15:16:02.418044+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "عرض",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2026-07/%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%B2%D8%A7%D8%B1%D9%8A%20%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D9%84%D9%81%20%D9%84%D9%84%D9%88%D8%AD%D8%AF%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%D8%A9.pdf",
+      "downloaded_at": "2026-08-02T15:15:56.549938+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%AF%D9%88%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%B9%D8%A7%D9%85%202018.pdf",
+      "downloaded_at": "2026-08-02T15:15:48.670336+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%AA%D8%B5%D8%B1%D9%8A%D9%81%20%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%A7%D9%94%D9%85%D8%B7%D8%A7%D8%B1%202016.pdf",
+      "downloaded_at": "2026-08-02T15:15:48.064730+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "General Tour Packet",
       "jurisdiction": "Delaware",
@@ -208,41 +255,6 @@
       "jurisdiction": "Delaware",
       "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/lengthofageneralassemblyandalegislator%27stermofoffice.pdf?sfvrsn=77808d38_3",
       "downloaded_at": "2026-08-02T00:51:46.614355+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Compensation Commission",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/faqdocuments/compensationcommission.pdf?sfvrsn=59d08d38_3",
-      "downloaded_at": "2026-08-02T00:51:45.892732+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Research Report - Sexual Assault Kit Tracking",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-sexualassaultkittracking.pdf?sfvrsn=a7c18938_2",
-      "downloaded_at": "2026-08-02T00:51:45.017340+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Research Report - Exploring Truth-In-Labeling Meat Laws",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-exploringtruth-in-labelingmeatlaws.pdf?sfvrsn=41c68938_2",
-      "downloaded_at": "2026-08-02T00:51:44.258548+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Research Report - Exploring the Gas Tax and Mileage-Based User Fee",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-exploringthegastaxandmileage-baseduserfee.pdf?sfvrsn=7c68938_2",
-      "downloaded_at": "2026-08-02T00:51:41.544217+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Research Report - Prescription Drug Affordability Review Boards",
-      "jurisdiction": "Delaware",
-      "url": "https://legis.delaware.gov/docs/default-source/publications/researchreports/researchreport-prescriptiondrugaffordabilityreviewboards.pdf?sfvrsn=3b0f8838_2",
-      "downloaded_at": "2026-08-02T00:51:40.758889+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -369,14 +381,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
+    "sources_visited": 1,
+    "pages_crawled": 200,
+    "js_pages": 8,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-02T15:08:24.728355+00:00"
+  "manifest_generated_at": "2026-08-02T15:16:09.869819+00:00"
 }
