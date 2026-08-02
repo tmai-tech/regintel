@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-02T00:16:09.428457+00:00",
+  "updated_at": "2026-08-02T00:18:07.167217+00:00",
   "phase": "running",
-  "message": "downloaded 2230 new this run",
+  "message": "finished Manitoba / official_gazette: +179 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11152,
-    "errors": 21631,
+    "pdfs": 11220,
+    "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 6317
+      "count": 6385
     },
     {
       "jurisdiction": "Canada Federal",
@@ -135,118 +135,120 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3609
+      "count": 3677
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "official_gazette",
-    "url": "https://www.gov.mb.ca/fippa/annual_reports/index.html"
+    "url": "https://www.gov.mb.ca/legislature/hansard/gazette.html",
+    "pdfs_downloaded": 179,
+    "pdfs_candidates": 232
   },
   "recent_pdfs": [
     {
-      "title": "embedded-url",
+      "title": "ITS 21-040 - Amendments to the Steam and Pressure Plants Regulation",
       "jurisdiction": "Manitoba",
-      "url": "https://manitoba.ca/asset_library/en/fippa/annual_reports/2022_2023_report.pdf",
-      "downloaded_at": "2026-08-02T00:16:07.907136+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/its_21_040_amendments_to_the_steam_and_pressure_plants_regulation.pdf",
+      "downloaded_at": "2026-08-02T00:18:05.398120+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "embedded-url",
+      "title": "180 Provencher Blvd (Under review by Court of Kings Bench)",
       "jurisdiction": "Manitoba",
-      "url": "https://manitoba.ca/asset_library/en/fippa/annual_reports/fippa_supp_stats2023_2024.pdf",
-      "downloaded_at": "2026-08-02T00:16:06.263334+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/180-provencher-blvd.pdf",
+      "downloaded_at": "2026-08-02T00:18:01.484157+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "embedded-url",
+      "title": "click here.",
       "jurisdiction": "Manitoba",
-      "url": "https://manitoba.ca/asset_library/en/fippa/annual_reports/annual-reports-2023-2024.pdf",
-      "downloaded_at": "2026-08-02T00:16:04.973769+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/community_part3_9_2018.pdf",
+      "downloaded_at": "2026-08-02T00:17:59.603614+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "2024-2025 FIPPA Supplementary Statistics (PDF)",
+      "title": "Home-type Care Updates",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/annual_reports/fippa_supp_stats2024_2025.pdf",
-      "downloaded_at": "2026-08-02T00:16:03.651594+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/home-type_care_updates.pdf",
+      "downloaded_at": "2026-08-02T00:17:56.715445+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "2024-2025 FIPPA Annual Report (PDF)",
+      "title": "Manitoba Plumbing Code Updates",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/annual_reports/annual-reports-2024-2025.pdf",
-      "downloaded_at": "2026-08-02T00:16:02.634151+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/manitoba_plumbing_code_updates.pdf",
+      "downloaded_at": "2026-08-02T00:17:55.664963+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Cost Estimate Form",
+      "title": "Farm Building Requirement Updates",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/cost_estimate_form.pdf",
-      "downloaded_at": "2026-08-02T00:15:59.729965+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/farm_building_requirement_updates.pdf",
+      "downloaded_at": "2026-08-02T00:17:54.670464+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Appendix 1 - Glossary of Terms (PDF)",
+      "title": "Energy Efficiency Tier Adoption",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/appendix_glossary.pdf",
-      "downloaded_at": "2026-08-02T00:15:59.048189+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/energy_efficiency_tier_adoption.pdf",
+      "downloaded_at": "2026-08-02T00:17:53.294026+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 8 - Independent Review: Complaints (PDF)",
+      "title": "Accessibility Requirement Updates",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_8.pdf",
-      "downloaded_at": "2026-08-02T00:15:58.290239+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/accessibiity_requirement_updates.pdf",
+      "downloaded_at": "2026-08-02T00:17:52.236332+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 7 - Independent Review: The Role of the Ombudsman (PDF)",
+      "title": "FARM BUILDINGS FAQ DOWNLOAD LINK.",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_7.pdf",
-      "downloaded_at": "2026-08-02T00:15:57.272489+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/its/farm_buildings_faq.pdf",
+      "downloaded_at": "2026-08-02T00:17:49.314234+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 6 - Protection of Privacy (PDF)",
+      "title": "The Technical Safety Regulation",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_6.pdf",
-      "downloaded_at": "2026-08-02T00:15:56.282621+00:00",
+      "url": "https://web2.gov.mb.ca/laws/regs/annual/2025/074.pdf",
+      "downloaded_at": "2026-08-02T00:17:48.320311+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 5 - Exceptions to Disclosure (PDF)",
+      "title": "The Technical Safety Act",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_5.pdf",
-      "downloaded_at": "2026-08-02T00:15:52.177158+00:00",
+      "url": "https://web2.gov.mb.ca/laws/statutes/2015/pdf/c01715.pdf",
+      "downloaded_at": "2026-08-02T00:17:47.004133+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 4 - Access to Records (PDF)",
+      "title": "Designated Substances by Chemical Name/Industry Uses",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_4.pdf",
-      "downloaded_at": "2026-08-02T00:15:50.403008+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/ds_list.pdf",
+      "downloaded_at": "2026-08-02T00:17:45.945466+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 3 - Administration of FIPPA (PDF)",
+      "title": "2019 OEL Table",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_3.pdf",
-      "downloaded_at": "2026-08-02T00:15:49.322549+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/OEL_2019_list_final.pdf",
+      "downloaded_at": "2026-08-02T00:17:44.965924+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 2 - Scope of FIPPA – Who and What Falls Under FIPPA (PDF)",
+      "title": "Cadmium: Medical Screening Guideline for Workers (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_2.pdf",
-      "downloaded_at": "2026-08-02T00:15:48.336416+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/cadmium_gl.pdf",
+      "downloaded_at": "2026-08-02T00:17:41.924226+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Chapter 1 - Principles, History & Purposes of FIPPA (PDF)",
+      "title": "Inorganic Arsenic: Medical Screening Guideline for Workers (PDF)",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/asset_library/en/fippa/resource_manual/chap_1.pdf",
-      "downloaded_at": "2026-08-02T00:15:46.762355+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/safety/arsenic_gl.pdf",
+      "downloaded_at": "2026-08-02T00:17:41.234690+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +378,11 @@
     "sources_visited": 8,
     "pages_crawled": 2101,
     "js_pages": 145,
-    "pdfs_discovered": 2230,
-    "pdfs_downloaded": 2230,
-    "pdfs_skipped_existing": 8544,
+    "pdfs_discovered": 2298,
+    "pdfs_downloaded": 2298,
+    "pdfs_skipped_existing": 8546,
     "pdfs_capped": 0,
-    "errors": 9674
+    "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:16:07.907232+00:00"
+  "manifest_generated_at": "2026-08-02T00:18:05.624933+00:00"
 }
