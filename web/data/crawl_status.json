@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:42:51.581855+00:00",
+  "updated_at": "2026-08-02T00:49:44.637029+00:00",
   "phase": "running",
-  "message": "finished New York / official_gazette: +0 PDFs",
+  "message": "downloaded 3210 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 12127,
+    "pdfs": 12132,
     "errors": 21634,
     "source_reports": 16,
     "jurisdictions": 29
@@ -68,6 +68,10 @@
       "count": 11
     },
     {
+      "jurisdiction": "Delaware",
+      "count": 8
+    },
+    {
       "jurisdiction": "Turkey",
       "count": 8
     },
@@ -89,10 +93,6 @@
     },
     {
       "jurisdiction": "European Union",
-      "count": 3
-    },
-    {
-      "jurisdiction": "Delaware",
       "count": 3
     },
     {
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7670
+      "count": 7675
     },
     {
       "source_kind": "official_gazette",
@@ -139,13 +139,46 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "New York",
-    "source_kind": "official_gazette",
-    "url": "https://dos.ny.gov/state-register",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "jurisdiction": "Delaware",
+    "source_kind": "parliamentary_bills",
+    "url": "https://legis.delaware.gov/Chambers/Senate/senate-rules"
   },
   "recent_pdfs": [
+    {
+      "title": "General & Floor Procedures",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/senate/senategeneralfloorprocedures.pdf?sfvrsn=61ca8838_1",
+      "downloaded_at": "2026-08-02T00:49:42.917502+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Senate Rules",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/senate/senaterules.pdf?sfvrsn=35ca8838_1",
+      "downloaded_at": "2026-08-02T00:49:42.276651+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "https://legis.delaware.gov/docs/default-source/publications/howabillbecomesalawweb.pdf?sfvrsn=ee138838_2",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/howabillbecomesalawweb.pdf?sfvrsn=ee138838_2",
+      "downloaded_at": "2026-08-02T00:49:41.763260+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "2024 Legislative Drafting Quick Guide",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/2024legislativedraftingquickguide.pdf?sfvrsn=98d8838_1",
+      "downloaded_at": "2026-08-02T00:49:41.224111+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "2024 Legislative Drafting Manual",
+      "jurisdiction": "Delaware",
+      "url": "https://legis.delaware.gov/docs/default-source/publications/legislative-drafting-manual.pdf?sfvrsn=74bcb138_7",
+      "downloaded_at": "2026-08-02T00:49:40.596529+00:00",
+      "source_kind": "parliamentary_bills"
+    },
     {
       "title": "Solicitation for Legal Services Announcement",
       "jurisdiction": "New York",
@@ -214,41 +247,6 @@
       "jurisdiction": "New York",
       "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250228_0113139.pdf?v=1740759578",
       "downloaded_at": "2026-08-02T00:41:43.262231+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113197.pdf?v=1741120123",
-      "downloaded_at": "2026-08-02T00:41:39.293073+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113198.pdf?v=1741120237",
-      "downloaded_at": "2026-08-02T00:41:38.262575+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113199.pdf?v=1741120355",
-      "downloaded_at": "2026-08-02T00:41:37.227608+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113200.pdf?v=1741120415",
-      "downloaded_at": "2026-08-02T00:41:36.180451+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250310_0113257.pdf?v=1741615836",
-      "downloaded_at": "2026-08-02T00:41:35.127355+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -375,14 +373,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 13,
-    "pages_crawled": 2408,
-    "js_pages": 152,
-    "pdfs_discovered": 3205,
-    "pdfs_downloaded": 3205,
-    "pdfs_skipped_existing": 8802,
+    "sources_visited": 14,
+    "pages_crawled": 2708,
+    "js_pages": 184,
+    "pdfs_discovered": 3210,
+    "pdfs_downloaded": 3210,
+    "pdfs_skipped_existing": 8805,
     "pdfs_capped": 0,
     "errors": 9677
   },
-  "manifest_generated_at": "2026-08-02T00:42:49.914433+00:00"
+  "manifest_generated_at": "2026-08-02T00:49:42.917581+00:00"
 }

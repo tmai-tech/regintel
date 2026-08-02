@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:42:49.914433+00:00",
+  "generated_at": "2026-08-02T00:49:42.917581+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -157651,6 +157651,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T00:41:53.004301+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/legislative-drafting-manual.pdf?sfvrsn=74bcb138_7",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/LawsOfDE/BillDraftingManual",
+      "title": "2024 Legislative Drafting Manual",
+      "path": "data/pdfs/Delaware/parliamentary_bills/legislative-drafting-manual.pdf",
+      "bytes": 25837507,
+      "sha256": "227d475a7e5ef73f",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:49:40.596529+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/2024legislativedraftingquickguide.pdf?sfvrsn=98d8838_1",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/LawsOfDE/BillDraftingManual",
+      "title": "2024 Legislative Drafting Quick Guide",
+      "path": "data/pdfs/Delaware/parliamentary_bills/2024legislativedraftingquickguide.pdf",
+      "bytes": 719962,
+      "sha256": "ad8dad5855880c1f",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:49:41.224111+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/publications/howabillbecomesalawweb.pdf?sfvrsn=ee138838_2",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/LawsOfDE/LegislativeProcess",
+      "title": "https://legis.delaware.gov/docs/default-source/publications/howabillbecomesalawweb.pdf?sfvrsn=ee138838_2",
+      "path": "data/pdfs/Delaware/parliamentary_bills/howabillbecomesalawweb.pdf",
+      "bytes": 418603,
+      "sha256": "83c6ca947e2a5311",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:49:41.763260+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/senate/senaterules.pdf?sfvrsn=35ca8838_1",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Chambers/Senate/senate-rules",
+      "title": "Senate Rules",
+      "path": "data/pdfs/Delaware/parliamentary_bills/senaterules.pdf",
+      "bytes": 219241,
+      "sha256": "a5216733824be352",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:49:42.276651+00:00"
+    },
+    {
+      "url": "https://legis.delaware.gov/docs/default-source/senate/senategeneralfloorprocedures.pdf?sfvrsn=61ca8838_1",
+      "jurisdiction": "Delaware",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://legis.delaware.gov/Chambers/Senate/senate-rules",
+      "title": "General & Floor Procedures",
+      "path": "data/pdfs/Delaware/parliamentary_bills/senategeneralfloorprocedures.pdf",
+      "bytes": 787708,
+      "sha256": "5f84dce69cd023e0",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:49:42.917502+00:00"
     }
   ],
   "discovered": [
@@ -295488,12 +295553,12 @@
     }
   ],
   "stats": {
-    "sources_visited": 13,
-    "pages_crawled": 2408,
-    "js_pages": 152,
-    "pdfs_discovered": 3205,
-    "pdfs_downloaded": 3205,
-    "pdfs_skipped_existing": 8802,
+    "sources_visited": 14,
+    "pages_crawled": 2708,
+    "js_pages": 184,
+    "pdfs_discovered": 3210,
+    "pdfs_downloaded": 3210,
+    "pdfs_skipped_existing": 8805,
     "pdfs_capped": 0,
     "errors": 9677
   },
