@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T16:57:03.358076+00:00",
+  "updated_at": "2026-08-02T17:00:11.640270+00:00",
   "phase": "running",
-  "message": "downloaded 5 new this run",
+  "message": "downloaded 25 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12330,
+    "pdfs": 12350,
     "errors": 21690,
     "source_reports": 30,
     "jurisdictions": 32
@@ -50,6 +50,10 @@
     {
       "jurisdiction": "UK",
       "count": 42
+    },
+    {
+      "jurisdiction": "Saudi Arabia - IA",
+      "count": 21
     },
     {
       "jurisdiction": "Singapore",
@@ -134,10 +138,6 @@
     {
       "jurisdiction": "Germany",
       "count": 1
-    },
-    {
-      "jurisdiction": "Saudi Arabia - IA",
-      "count": 1
     }
   ],
   "by_source_kind": [
@@ -151,118 +151,118 @@
     },
     {
       "source_kind": "ministry",
-      "count": 85
+      "count": 105
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - IA",
     "source_kind": "ministry",
-    "url": "https://www.ia.gov.sa/ar/regulations-and-licenses/regulations"
+    "url": "https://www.ia.gov.sa/ar/information-center/reports/quarterly-publications"
   },
   "recent_pdfs": [
     {
       "title": "تنزيل",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/Regulations/اعتماد الصيغة النموذجية لوثيقة تأمين المسؤولية المدنية للأماكن المكتظة والأنشطة عالية الخطورة.1.pdf",
-      "downloaded_at": "2026-08-02T16:57:01.518246+00:00",
+      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الأول لعام 2023م.pdf",
+      "downloaded_at": "2026-08-02T17:00:09.837043+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
-      "downloaded_at": "2026-08-02T16:47:14.956909+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الثاني لعام 2023م.pdf",
+      "downloaded_at": "2026-08-02T17:00:05.098228+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://awareness.gosi.gov.sa/pdf/Contributions.pdf",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://awareness.gosi.gov.sa/pdf/Contributions.pdf",
-      "downloaded_at": "2026-08-02T16:47:14.390727+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الثالث لعام 2023م.pdf",
+      "downloaded_at": "2026-08-02T16:59:28.052807+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://awareness.gosi.gov.sa/pdf/journeyInformation4.pdf",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation4.pdf",
-      "downloaded_at": "2026-08-02T16:47:13.745305+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الأول لعام 2024م.pdf",
+      "downloaded_at": "2026-08-02T16:58:53.883732+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://awareness.gosi.gov.sa/pdf/MaternityCompensation.pdf",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://awareness.gosi.gov.sa/pdf/MaternityCompensation.pdf",
-      "downloaded_at": "2026-08-02T16:47:13.178258+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الثاني لعام 2024م.pdf",
+      "downloaded_at": "2026-08-02T16:58:48.721540+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81%20%D8%A8%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:23:30.147872+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الثالث لعام 2024م.pdf",
+      "downloaded_at": "2026-08-02T16:58:32.605111+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-01/ashtratat%20alkhdmat%20alajtma%60yt.pdf",
-      "downloaded_at": "2026-08-02T15:23:28.188872+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/تقرير الربع الأول لقطاع التأمين لعام 2025م.pdf",
+      "downloaded_at": "2026-08-02T16:58:23.329277+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%86%D8%B8%D8%A7%D9%85%20%D8%B1%D8%B3%D9%88%D9%85%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1.pdf",
-      "downloaded_at": "2026-08-02T15:23:22.264655+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/تقرير الربع الثاني لقطاع التأمين 2025م.pdf",
+      "downloaded_at": "2026-08-02T16:58:14.080292+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-03/dwabt-mmarst-nshat-altzyyn-alnsayy-.pdf",
-      "downloaded_at": "2026-08-02T15:23:14.430378+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/تقرير الربع الثالث لقطاع التأمين 2025.pdf",
+      "downloaded_at": "2026-08-02T16:58:05.741336+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D9%87%D9%86%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:22:38.466056+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/Arabic%20lienees/ارشادات%20اعداد%20نماذج%202.pdf",
+      "downloaded_at": "2026-08-02T16:57:56.245201+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3%20%D8%A7%D9%84%D8%A7%D9%94%D9%87%D9%84%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:22:34.362541+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/Arabic%20lienees/ارشادات%20اعداد%20نماذج.pdf",
+      "downloaded_at": "2026-08-02T16:57:52.688208+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-06/jdwl-aljzaat-n-almkhalfat-albldyt.pdf",
-      "downloaded_at": "2026-08-02T15:22:32.689912+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Licenses/الشركات المرخصة 15 يوليو.pdf",
+      "downloaded_at": "2026-08-02T16:57:50.206494+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/ashtratat-alhadnat-albldyt-llbat-aljaylyn.pdf",
-      "downloaded_at": "2026-08-02T15:22:20.229532+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Regulations/وثيقة التأمين القياسية للتعويض المهني لمدققي الحسابات في الجهات الخاضعة لرقابة هيئة السوق المالية.pdf",
+      "downloaded_at": "2026-08-02T16:57:46.755746+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل الملف",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-10/tqryr-altwthyq-alalamy-llmshary-alrb-althalth-2023.pdf",
-      "downloaded_at": "2026-08-02T15:22:05.858849+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Regulations/الوثيقة الموحدة للتأمين الإلزامي على المركبات.pdf",
+      "downloaded_at": "2026-08-02T16:57:43.313877+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-05/owned-and-leased-buildings-2021.pdf",
-      "downloaded_at": "2026-08-02T15:21:57.137868+00:00",
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Regulations/تعليمات تغطيات التأمين البحري.pdf",
+      "downloaded_at": "2026-08-02T16:57:40.085178+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -392,11 +392,11 @@
     "sources_visited": 5,
     "pages_crawled": 524,
     "js_pages": 65,
-    "pdfs_discovered": 5,
-    "pdfs_downloaded": 5,
+    "pdfs_discovered": 25,
+    "pdfs_downloaded": 25,
     "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T16:57:01.518363+00:00"
+  "manifest_generated_at": "2026-08-02T17:00:09.837135+00:00"
 }
