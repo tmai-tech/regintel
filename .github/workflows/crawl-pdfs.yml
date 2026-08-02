@@ -96,7 +96,11 @@ jobs:
           LEGAL="${{ github.event.inputs.include_legal_db }}"
           LEGAL="${LEGAL:-false}"
           MODE="${{ github.event.inputs.mode }}"
-          MODE="${MODE:-all_gazette}"
+          # Scheduled runs prioritize Saudi ministries until switched back to all_gazette
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -z "${{ github.event.inputs.mode }}" ]; then
+            MODE="saudi_ministries"
+          fi
+          MODE="${MODE:-saudi_ministries}"
 
           # git identity for live_publish pushes during the run
           git config user.name "github-actions[bot]"
