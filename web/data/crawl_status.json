@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-02T05:55:21.580014+00:00",
-  "phase": "running",
-  "message": "finished Canada Federal / official_gazette: +0 PDFs",
-  "run_id": "30729598729",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30729598729",
+  "updated_at": "2026-08-02T15:05:34.225355+00:00",
+  "phase": "starting",
+  "message": "crawl starting",
+  "run_id": "30753516028",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30753516028",
   "totals": {
     "pdfs": 12245,
     "errors": 21662,
@@ -138,13 +138,7 @@
       "count": 4457
     }
   ],
-  "current_source": {
-    "jurisdiction": "Canada Federal",
-    "source_kind": "official_gazette",
-    "url": "https://www.gazette.gc.ca",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 3068
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "General Tour Packet",
@@ -375,14 +369,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 2,
-    "pages_crawled": 600,
-    "js_pages": 86,
+    "sources_visited": 0,
+    "pages_crawled": 0,
+    "js_pages": 0,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 3390,
+    "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
-    "errors": 28
+    "errors": 0
   },
-  "manifest_generated_at": "2026-08-02T05:55:19.830272+00:00"
+  "manifest_generated_at": "2026-08-02T15:05:32.330629+00:00"
 }
