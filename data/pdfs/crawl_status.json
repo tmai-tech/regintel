@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T18:47:35.302748+00:00",
+  "updated_at": "2026-08-02T18:49:36.611012+00:00",
   "phase": "running",
-  "message": "downloaded 365 new this run",
+  "message": "downloaded 420 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12690,
-    "errors": 22090,
+    "pdfs": 12745,
+    "errors": 22091,
     "source_reports": 30,
     "jurisdictions": 36
   },
@@ -28,12 +28,12 @@
       "count": 852
     },
     {
-      "jurisdiction": "Ontario",
-      "count": 159
+      "jurisdiction": "Saudi Arabia - NCA",
+      "count": 199
     },
     {
-      "jurisdiction": "Saudi Arabia - NCA",
-      "count": 144
+      "jurisdiction": "Ontario",
+      "count": 159
     },
     {
       "jurisdiction": "New York",
@@ -167,118 +167,118 @@
     },
     {
       "source_kind": "ministry",
-      "count": 445
+      "count": 500
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - NCA",
     "source_kind": "ministry",
-    "url": "https://nca.gov.sa/en/regulatory-documents/"
+    "url": "https://nca.gov.sa/en/regulatory-documents/?documentType=guidelines-list"
   },
   "recent_pdfs": [
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://nca.gov.sa/osmacc-en.pdf",
-      "downloaded_at": "2026-08-02T18:47:33.440579+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "View The Legal Powers of the National Cybersecurity Authority",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/6ab6bb83-8701-4fe8-97ca-c4263c9ec11b_ترجمة-ENالممكنات-النظامية-للهيئة-الوطنية-للأمن-السيبراني---Copy.pdf",
-      "downloaded_at": "2026-08-02T18:47:31.439022+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "View the Statute of The National Cybersecurity Authority",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/32034bfb-c6e6-4c64-aec4-b7ce585a3fc7_EN-تنظيم-الهيئة-الوطنية-للأمن-السيبراني---Copy.pdf",
-      "downloaded_at": "2026-08-02T18:47:30.847370+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Click here to download the National Cybersecurity Strategy",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/b2bf9688-b7d1-4cd2-8e40-d075612a2323_national_cybersecurity_strategy-en.pdf",
-      "downloaded_at": "2026-08-02T18:47:30.255767+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/a89027d8-e51d-46d7-a9f8-7f6349c38479_POLICY_Physical_Security_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:34.722990+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/0d50328f-c10a-4e2c-8218-481f70ea4c01_CGIoT.pdf",
-      "downloaded_at": "2026-08-02T18:47:29.180828+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/04156481-aa0b-4a6a-87d1-d789c0db92df_POLICY_Penetration_Testing_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:33.896344+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/617dd3e3-7323-4867-8713-57765b959b01_DCC_Implementation-Guideline_ar.pdf",
-      "downloaded_at": "2026-08-02T18:47:25.367549+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/ba218b18-e7f1-4974-bbe1-1eeb592c810c_POLICY_Patch_Management_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:33.298799+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d719f258-5661-40cd-8f20-852b54edfd7b_OTCC_Implementation-Guideline_ar-.pdf",
-      "downloaded_at": "2026-08-02T18:47:24.521641+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d0503849-c66a-4477-9ad3-ceaab7f8215e_POLICY_Network_Security_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:32.472535+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/09454a41-ebd7-4a15-a497-1683d7d1d355_OSMACC_Implementation-Guideline_ar-.pdf",
-      "downloaded_at": "2026-08-02T18:47:23.674675+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d6f7c6e1-dfeb-4e70-b935-fd66912508f8_POLICY_Identity_and_Access_Management_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:31.645347+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/44a5c26e-44ca-4fe0-bb4d-a0f2ef26b90b_TCC_Implementation-Guideline_ar.pdf",
-      "downloaded_at": "2026-08-02T18:47:23.073213+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/2b360ab4-cb99-4e1c-b396-27e3c70c6567_POLICY_Human_Resources_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:28.043056+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/ar/Guide_to_Cloud_Cybersecurity_Controls_for_Service_Providers_Implementation.pdf",
-      "downloaded_at": "2026-08-02T18:47:22.466380+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d5c56ebf-6d5d-493f-90f4-5fc854ec28b8_POLICY_Email_Security_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:27.211856+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/a338f221-154e-4cf7-b1cb-f13ecc881ebc_CSCC_Implementation_Guidelines_ar.pdf",
-      "downloaded_at": "2026-08-02T18:47:17.915883+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/2c1bace3-0e3d-4ff1-8a2e-6eb407f6b25d_POLICY_Database_Security_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:26.385484+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/b1e26981-2ed0-4b91-bf80-682c13d3a20b_إرشادات-الأمن-السيبراني-لاختيار-مستوى-التحقق-من-هوية-مستخدمي-الخدمات-الإلكترونية-.pdf",
-      "downloaded_at": "2026-08-02T18:47:16.843166+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/fcf4c28b-a84f-4c11-a245-63e2964f0255_POLICY_Cybersecurity_Risk_Management_Template_en---.pdf",
+      "downloaded_at": "2026-08-02T18:49:25.559274+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/d45a814c-17b4-43c4-ba45-4a52ae702ceb_2025-1-NFCRM.pdf",
-      "downloaded_at": "2026-08-02T18:47:16.011355+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/f90b3946-77fd-48fd-ae2f-532dc121013f_POLICY_Cybersecurity_Review_and_Audit_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:24.732735+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://nca.gov.sa/ncs_ar.pdf",
-      "downloaded_at": "2026-08-02T18:47:15.416822+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/4ae174c2-06e2-4e10-ba70-4e7547b8f984_POLICY_Cybersecurity_Industrial_Controls_Systems_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:21.134119+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/273b990d-2991-4c45-90e5-83558b4cddbd_SCyWF_CP-Ar.pdf",
-      "downloaded_at": "2026-08-02T18:47:13.652874+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/6c15978a-f6a1-4024-87b3-c7bdc16f05d0_POLICY_Cybersecurity_Incident_and_Threat_Management_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:20.073904+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/8fbcbe22-ce9b-4b32-8fe7-f66a2ddcf727_POLICY_Cybersecurity_Event_Logs_and_Monitoring_Management_Template-.pdf",
+      "downloaded_at": "2026-08-02T18:49:19.481732+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/01013186-c6ed-4456-8531-858de55b6130_POLICY_Cybersecurity_Business_Continuity_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:18.655354+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/c0617414-8544-4111-a17e-377b31c8c7d5_POLICY_Cryptography_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:17.828480+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -408,11 +408,11 @@
     "sources_visited": 11,
     "pages_crawled": 1326,
     "js_pages": 246,
-    "pdfs_discovered": 365,
-    "pdfs_downloaded": 365,
-    "pdfs_skipped_existing": 56,
+    "pdfs_discovered": 420,
+    "pdfs_downloaded": 420,
+    "pdfs_skipped_existing": 57,
     "pdfs_capped": 0,
-    "errors": 426
+    "errors": 427
   },
-  "manifest_generated_at": "2026-08-02T18:47:33.440667+00:00"
+  "manifest_generated_at": "2026-08-02T18:49:34.723099+00:00"
 }
