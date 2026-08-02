@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T00:39:13.639377+00:00",
+  "updated_at": "2026-08-02T00:41:20.402094+00:00",
   "phase": "running",
-  "message": "downloaded 3080 new this run",
+  "message": "downloaded 3185 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 12002,
-    "errors": 21633,
+    "pdfs": 12107,
+    "errors": 21634,
     "source_reports": 16,
     "jurisdictions": 29
   },
@@ -30,6 +30,10 @@
     {
       "jurisdiction": "Ontario",
       "count": 159
+    },
+    {
+      "jurisdiction": "New York",
+      "count": 108
     },
     {
       "jurisdiction": "India",
@@ -88,10 +92,6 @@
       "count": 3
     },
     {
-      "jurisdiction": "New York",
-      "count": 3
-    },
-    {
       "jurisdiction": "Delaware",
       "count": 3
     },
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7545
+      "count": 7650
     },
     {
       "source_kind": "official_gazette",
@@ -141,113 +141,113 @@
   "current_source": {
     "jurisdiction": "New York",
     "source_kind": "parliamentary_bills",
-    "url": "https://nyassembly.gov/leg/?sh=hear"
+    "url": "https://nyassembly.gov/Reports/?sec=story&story=113631"
   },
   "recent_pdfs": [
     {
-      "title": "View Printable Calendar",
+      "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/phcal/PHCal.pdf",
-      "downloaded_at": "2026-08-02T00:39:11.953410+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250410_0113631.pdf?v=1744311439",
+      "downloaded_at": "2026-08-02T00:41:18.707219+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "View cable systems that carry NYS Legislative Proceedings",
+      "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/av/cable.pdf",
-      "downloaded_at": "2026-08-02T00:39:10.989029+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250625_0114491.pdf?v=1750876603",
+      "downloaded_at": "2026-08-02T00:41:17.671183+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
-      "title": "International Product Change-Priority Mail Express International, Priority Mail International & First-Class Package Inte",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14695.pdf",
-      "downloaded_at": "2026-08-02T00:34:03.994478+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250711_0114703.pdf?v=1752247230",
+      "downloaded_at": "2026-08-02T00:41:16.632389+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Small Business Investment Company (“SBIC”) Program: SBA Model Form of Agreement for Limited Partnership SBICs",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14696.pdf",
-      "downloaded_at": "2026-08-02T00:34:03.382338+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250711_0114704.pdf?v=1752247463",
+      "downloaded_at": "2026-08-02T00:41:15.589410+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Fisheries of the Northeastern United States; Summer Flounder Fishery; Quota Transfer From North Carolina to Massachusett",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14697.pdf",
-      "downloaded_at": "2026-08-02T00:34:02.770337+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250718_0114741.pdf?v=1754493741",
+      "downloaded_at": "2026-08-02T00:41:14.540069+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill; Correction",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14698.pdf",
-      "downloaded_at": "2026-08-02T00:34:00.126120+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250722_0114753.pdf?v=1753195437",
+      "downloaded_at": "2026-08-02T00:41:10.682842+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Agency Information Collection Activities: Proposed Collection; Comment Request",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14699.pdf",
-      "downloaded_at": "2026-08-02T00:33:59.514348+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250722_0114759.pdf?v=1753198159",
+      "downloaded_at": "2026-08-02T00:41:09.653238+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Request for Comment: Commission Agenda and Priorities",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14700.pdf",
-      "downloaded_at": "2026-08-02T00:33:58.898693+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250730_0114859.pdf?v=1753903531",
+      "downloaded_at": "2026-08-02T00:41:08.620987+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "General Technical, Organizational, Conforming, and Correcting Amendments to the Federal Motor Carrier Safety Regulations",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14701.pdf",
-      "downloaded_at": "2026-08-02T00:33:58.286514+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250910_0115216.pdf?v=1757534384",
+      "downloaded_at": "2026-08-02T00:41:07.581731+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Prog",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14709.pdf",
-      "downloaded_at": "2026-08-02T00:33:57.613838+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250910_0115217.pdf?v=1757534449",
+      "downloaded_at": "2026-08-02T00:41:06.536274+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Order Sunsetting Certain Large Trader Reporting Requirements for Physical Commodity Swaps",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-21/pdf/2026-14710.pdf",
-      "downloaded_at": "2026-08-02T00:33:54.905227+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250912_0115222.pdf?v=1757691059",
+      "downloaded_at": "2026-08-02T00:41:02.579746+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Draft NUREG: Training Review Criteria and Procedures",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14702.pdf",
-      "downloaded_at": "2026-08-02T00:33:54.290590+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250912_0115235.pdf?v=1757706436",
+      "downloaded_at": "2026-08-02T00:41:01.550956+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Personnel Demonstration Project at the United States Army Communications-Electronics Command Software Engineering Center",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14703.pdf",
-      "downloaded_at": "2026-08-02T00:33:53.442155+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250919_0115300.pdf?v=1758305131",
+      "downloaded_at": "2026-08-02T00:41:00.515101+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Bulk Manufacturer of Controlled Substances Application: Cerilliant Corporation",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14704.pdf",
-      "downloaded_at": "2026-08-02T00:33:52.280574+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2026/pdfs/20260108_0116390.pdf?v=1767899215",
+      "downloaded_at": "2026-08-02T00:40:59.474498+00:00",
+      "source_kind": "parliamentary_bills"
     },
     {
-      "title": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Ti",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14705.pdf",
-      "downloaded_at": "2026-08-02T00:33:51.607019+00:00",
-      "source_kind": "official_gazette"
+      "title": "download the PDF",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/postings/2026/pdfs/20260108_0116393.pdf?v=1767903219",
+      "downloaded_at": "2026-08-02T00:40:58.424604+00:00",
+      "source_kind": "parliamentary_bills"
     }
   ],
   "last_source_reports": [
@@ -376,11 +376,11 @@
     "sources_visited": 12,
     "pages_crawled": 2407,
     "js_pages": 152,
-    "pdfs_discovered": 3080,
-    "pdfs_downloaded": 3080,
-    "pdfs_skipped_existing": 8766,
+    "pdfs_discovered": 3185,
+    "pdfs_downloaded": 3185,
+    "pdfs_skipped_existing": 8787,
     "pdfs_capped": 0,
-    "errors": 9676
+    "errors": 9677
   },
-  "manifest_generated_at": "2026-08-02T00:39:11.953509+00:00"
+  "manifest_generated_at": "2026-08-02T00:41:18.707297+00:00"
 }
