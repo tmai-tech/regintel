@@ -245,6 +245,19 @@ h1 {
 .data-table td.num { font-family: var(--mono); text-align: right; }
 .crawl-note { margin: 14px 0 0; line-height: 1.4; }
 
+.ministry-pdf-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+.ministry-pdf-list a {
+  word-break: break-word;
+}
+
 .toolbar {
   display: flex;
   flex-wrap: wrap;

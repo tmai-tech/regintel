@@ -43,6 +43,7 @@
 
     <nav class="tabs" role="tablist" aria-label="Main views">
       <button type="button" class="tab active" role="tab" id="tabLaws" aria-selected="true" aria-controls="panelLaws" data-tab="laws">Laws</button>
+      <button type="button" class="tab" role="tab" id="tabMinistries" aria-selected="false" aria-controls="panelMinistries" data-tab="ministries">Ministries</button>
       <button type="button" class="tab" role="tab" id="tabPdfs" aria-selected="false" aria-controls="panelPdfs" data-tab="pdfs">PDFs</button>
       <button type="button" class="tab" role="tab" id="tabCrawl" aria-selected="false" aria-controls="panelCrawl" data-tab="crawl">Crawl</button>
     </nav>
@@ -78,6 +79,23 @@
       </div>
       <div id="lawList" class="pdf-list" role="list"></div>
       <div id="lawEmpty" class="empty" hidden>No laws match your filters.</div>
+    </section>
+
+    <!-- Saudi ministries / authorities -->
+    <section class="panel" id="panelMinistries" role="tabpanel" aria-labelledby="tabMinistries" aria-label="Ministries" hidden>
+      <div class="toolbar sticky-toolbar">
+        <label class="sr-only" for="ministrySearch">Search ministries</label>
+        <input
+          type="search"
+          id="ministrySearch"
+          enterkeyhint="search"
+          autocomplete="off"
+          placeholder="Search ministry / authority name…"
+        />
+        <span id="ministryCount" class="muted row-count" aria-live="polite"></span>
+      </div>
+      <div id="ministryList" class="pdf-list" role="list"></div>
+      <div id="ministryEmpty" class="empty" hidden>No ministries match.</div>
     </section>
 
     <!-- Crawl status -->

@@ -13,6 +13,10 @@ on:
     - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
+      mode:
+        description: "Crawl mode: all_gazette (sheet) or saudi_ministries (priority SA list)"
+        required: false
+        default: "all_gazette"
       max_pages:
         description: "BFS pages per source URL"
         required: false
@@ -91,14 +95,22 @@ jobs:
           DELAY="${DELAY:-0.35}"
           LEGAL="${{ github.event.inputs.include_legal_db }}"
           LEGAL="${LEGAL:-false}"
+          MODE="${{ github.event.inputs.mode }}"
+          MODE="${MODE:-all_gazette}"
 
           # git identity for live_publish pushes during the run
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           EXTRA=()
-          if [ "$LEGAL" = "true" ]; then
-            EXTRA+=(--include-legal-db)
+          if [ "$MODE" = "saudi_ministries" ]; then
+            echo "=== Priority crawl: Saudi ministries / authorities ==="
+            test -f data/saudi_ministries_links.txt
+            EXTRA+=(--url-only --from-file data/saudi_ministries_links.txt)
+          else
+            if [ "$LEGAL" = "true" ]; then
+              EXTRA+=(--include-legal-db)
+            fi
           fi
 
           python -u collector/download_gazette_pdfs.py \

@@ -1,0 +1,23 @@
+# Saudi Arabia — priority authority crawl (format: Jurisdiction | source_kind | url)
+# Jurisdiction label is used in the Ministries tab + PDF catalog.
+Saudi Arabia - MOMAH | ministry | https://momah.gov.sa
+Saudi Arabia - SOCPA | ministry | https://socpa.org.sa
+Saudi Arabia - TGA | ministry | https://tga.gov.sa
+Saudi Arabia - MoC | ministry | https://mc.gov.sa
+Saudi Arabia - MOI | ministry | https://www.moi.gov.sa
+Saudi Arabia - Nazaha | ministry | https://nazaha.gov.sa
+Saudi Arabia - SAMA | ministry | https://www.sama.gov.sa
+Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa
+Saudi Arabia - GAC | ministry | https://gac.gov.sa
+Saudi Arabia - CST | ministry | https://www.cst.gov.sa
+Saudi Arabia - MOF | ministry | https://www.mof.gov.sa
+Saudi Arabia - CMA | ministry | https://cma.org.sa
+Saudi Arabia - Tadawul | ministry | https://www.saudiexchange.sa
+Saudi Arabia - NCA | ministry | https://nca.gov.sa
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa
+Saudi Arabia - GOSI | ministry | https://www.gosi.gov.sa
+Saudi Arabia - MEWA | ministry | https://www.mewa.gov.sa
+Saudi Arabia - SASO | ministry | https://www.saso.gov.sa
+Saudi Arabia - IA | ministry | https://ia.gov.sa
+Saudi Arabia - SAIP | ministry | https://www.saip.gov.sa
+Saudi Arabia - ZATCA | ministry | https://zatca.gov.sa

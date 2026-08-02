@@ -149,6 +149,7 @@
       laws: document.getElementById("panelLaws"),
       pdfs: document.getElementById("panelPdfs"),
       crawl: document.getElementById("panelCrawl"),
+      ministries: document.getElementById("panelMinistries"),
     };
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -167,6 +168,99 @@
         }
       });
     });
+  }
+
+  function hostOf(u) {
+    try {
+      return new URL(u).hostname.replace(/^www\./i, "").toLowerCase();
+    } catch {
+      return "";
+    }
+  }
+
+  function ministryCardHtml(m, pdfs) {
+    const related = pdfs.filter((p) => {
+      const j = (p.jurisdiction || "").toLowerCase();
+      const h = hostOf(p.open_url || p.url || "");
+      const mh = hostOf(m.url);
+      const code = (m.code || "").toLowerCase();
+      return (
+        j.includes(code) ||
+        j.includes("saudi arabia - " + code) ||
+        (mh && (h === mh || h.endsWith("." + mh) || mh.endsWith("." + h)))
+      );
+    });
+    const pdfLinks = related
+      .slice(0, 12)
+      .map((p) => {
+        const open = p.open_url || p.url || "";
+        const title = p.title || p.filename || "PDF";
+        if (!isHttpUrl(open)) return "";
+        return `<li><a class="link" href="${escapeAttr(open)}" target="_blank" rel="noopener">${escapeHtml(title.slice(0, 90))}</a></li>`;
+      })
+      .filter(Boolean)
+      .join("");
+    const more =
+      related.length > 12
+        ? `<p class="muted">+${related.length - 12} more PDFs (see PDFs tab, filter “${escapeHtml(m.code)}”)</p>`
+        : "";
+
+    return `<article class="pdf-card law-card" role="listitem">
+      <div class="card-badges">
+        <span class="badge badge-fed">${escapeHtml(m.authority_type || "Authority")}</span>
+        <span class="badge badge-src">${escapeHtml(m.code || "")}</span>
+        <span class="badge badge-state">${related.length} PDF${related.length === 1 ? "" : "s"}</span>
+      </div>
+      <h3>${escapeHtml(m.name)}</h3>
+      <p class="meta-line">${escapeHtml(m.country || "Saudi Arabia")}</p>
+      <p class="field-label">Official website</p>
+      <p class="url-line"><a class="link" href="${escapeAttr(m.url)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(m.url, 64))}</a></p>
+      <div class="card-actions">
+        <a class="btn primary" href="${escapeAttr(m.url)}" target="_blank" rel="noopener">Open authority site</a>
+      </div>
+      ${
+        related.length
+          ? `<p class="field-label">Extracted PDFs</p><ul class="ministry-pdf-list">${pdfLinks}</ul>${more}`
+          : `<p class="muted">No PDFs extracted yet for this authority — crawl in progress.</p>`
+      }
+    </article>`;
+  }
+
+  function initMinistries(ministries, pdfs) {
+    const list = document.getElementById("ministryList");
+    const empty = document.getElementById("ministryEmpty");
+    const search = document.getElementById("ministrySearch");
+    const count = document.getElementById("ministryCount");
+    if (!list || !Array.isArray(ministries)) return;
+
+    function render() {
+      const q = (search && search.value.trim().toLowerCase()) || "";
+      const filtered = ministries.filter((m) => {
+        if (!q) return true;
+        const blob = [m.name, m.code, m.url, m.authority_type, m.country]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+        return blob.includes(q);
+      });
+      if (count) count.textContent = filtered.length + " authorities";
+      if (!filtered.length) {
+        list.innerHTML = "";
+        if (empty) empty.hidden = false;
+        return;
+      }
+      if (empty) empty.hidden = true;
+      list.innerHTML = filtered.map((m) => ministryCardHtml(m, pdfs || [])).join("");
+    }
+
+    if (search) {
+      let t = null;
+      search.addEventListener("input", () => {
+        clearTimeout(t);
+        t = setTimeout(render, 100);
+      });
+    }
+    render();
   }
 
   function renderCrawlStatus(st) {
@@ -593,10 +687,12 @@
     let laws = [];
     let pdfs = [];
 
+    let ministries = [];
     try {
-      const [lawsRes, pdfsRes] = await Promise.all([
+      const [lawsRes, pdfsRes, minRes] = await Promise.all([
         fetchJson("data/laws_catalog.json").catch(() => null),
         fetchJson("data/pdfs_catalog.json"),
+        fetchJson("data/saudi_ministries.json").catch(() => []),
       ]);
       if (Array.isArray(lawsRes) && lawsRes.length) {
         laws = lawsRes;
@@ -615,6 +711,7 @@
       }
       if (!Array.isArray(pdfsRes)) throw new Error("PDF catalog is not a list");
       pdfs = pdfsRes;
+      ministries = Array.isArray(minRes) ? minRes : [];
     } catch (e) {
       metaBar.textContent = "Error";
       document.getElementById("lawList").innerHTML =
@@ -627,9 +724,15 @@
     const nState = laws.filter((r) => (r.level || "") === "State").length;
     const nFed = laws.filter((r) => (r.level || "") === "Federal").length;
     metaBar.textContent =
-      laws.length + " laws (" + nFed + " fed · " + nState + " state) · " + pdfs.length + " PDFs";
+      laws.length +
+      " laws · " +
+      ministries.length +
+      " ministries · " +
+      pdfs.length +
+      " PDFs";
 
     initLaws(laws);
+    initMinistries(ministries, pdfs);
     initPdfs(pdfs);
     initCrawl();
   }
