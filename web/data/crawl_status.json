@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T17:06:11.718523+00:00",
+  "updated_at": "2026-08-02T17:07:56.919558+00:00",
   "phase": "running",
-  "message": "downloaded 55 new this run",
+  "message": "finished Saudi Arabia - IA / ministry: +71 PDFs",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12380,
+    "pdfs": 12400,
     "errors": 21690,
     "source_reports": 30,
     "jurisdictions": 32
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - IA",
-      "count": 51
+      "count": 71
     },
     {
       "jurisdiction": "India",
@@ -151,118 +151,120 @@
     },
     {
       "source_kind": "ministry",
-      "count": 135
+      "count": 155
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - IA",
     "source_kind": "ministry",
-    "url": "https://www.ia.gov.sa/ar/information-center/Review-of-actuarial-reports/22"
+    "url": "https://ia.gov.sa",
+    "pdfs_downloaded": 71,
+    "pdfs_candidates": 90
   },
   "recent_pdfs": [
     {
-      "title": "هذا المستند",
+      "title": "المراجعة",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20هيئة%20التأمين%20لتقرير%20الملاءة%20المالية%20ورأس%20المال%20الاكتواري%20لعام%202025م.pdf",
-      "downloaded_at": "2026-08-02T17:06:09.917532+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20الإحتياطيات%20الإكتوارية%20لعام%202018م.pdf?slrid=f015e7a1-7733-00a5-cc0d-6e59e8dc54b7",
+      "downloaded_at": "2026-08-02T17:07:52.468152+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download",
+      "title": "المراجعة",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/Phase3_Dear%20CEO_eng.pdf",
-      "downloaded_at": "2026-08-02T17:06:01.675029+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d8%a7%d9%84%d8%a5%d8%ad%d8%aa%d9%8a%d8%a7%d8%b7%d9%8a%d8%a7%d8%aa%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202019%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:45.480699+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/IFRS17%20Phase%202_Dear%20CEO%20Letter_English.pdf",
-      "downloaded_at": "2026-08-02T17:05:55.788739+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202020%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:40.797194+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download",
+      "title": "توقعاته",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/IFRS17_Phase4_Dear%20CEO_Eng.pdf",
-      "downloaded_at": "2026-08-02T17:05:52.306726+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202021%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:38.474467+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر سبتمبر من عام 2025.pdf",
-      "downloaded_at": "2026-08-02T17:05:46.713707+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202021%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:37.126996+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "ملف منفصل",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر أكتوبر من عام 2025.pdf",
-      "downloaded_at": "2026-08-02T17:05:41.701998+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/توقعات%20التقارير%20الإكتوارية%20لعام%202022م.pdf",
+      "downloaded_at": "2026-08-02T17:07:31.436146+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر نوفمبر من عام 2025.pdf",
-      "downloaded_at": "2026-08-02T17:05:40.351982+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20التقارير%20الاكتوارية%20لعام%202022م.pdf",
+      "downloaded_at": "2026-08-02T17:07:29.608320+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "ملف منفصل",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر ديسمبر من عام 2025.pdf",
-      "downloaded_at": "2026-08-02T17:05:33.562050+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/توقعات%20هيئة%20التأمين%20حيال%20التقارير%20الإكتوارية%20للتسعير%20لعام%202023م.pdf",
+      "downloaded_at": "2026-08-02T17:07:22.860785+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر فبراير من عام 2026.pdf",
-      "downloaded_at": "2026-08-02T17:05:30.286727+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20هيئة%20التأمين%20لتقار%20ير%20التسعير%20الإكتوار%20ية%20لعام%202023%20م.pdf",
+      "downloaded_at": "2026-08-02T17:07:21.751305+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "ملف منفصل",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر مارس من عام 2026.pdf",
-      "downloaded_at": "2026-08-02T17:05:27.489826+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d9%8a%d9%94%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%95%d8%b9%d8%a7%d8%af%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%d8%8c%20%d9%88%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1%d8%8c%20%d9%88%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a1%d8%a9%20%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:14.985294+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر أبريل من عام 2026.pdf",
-      "downloaded_at": "2026-08-02T17:05:17.759035+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d9%87%d9%8a%d9%8a%d9%94%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%20%d8%ad%d9%8a%d8%a7%d9%84%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a7%d9%95%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%a7%d9%95%d8%b9%d8%a7%d8%af%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%d8%8c%20%d9%88%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1%d8%8c%20%d9%88%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a1%d8%a9%20%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:10.020927+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "ملف منفصل",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر مايو من عام 2026.pdf",
-      "downloaded_at": "2026-08-02T17:05:16.190882+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d8%ad%d9%8a%d8%a7%d9%84%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d9%84%d8%a7%d8%ad%d8%aa%d9%8a%d8%a7%d8%b7%d9%8a%d8%a7%d8%aa%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:09.136610+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/معدل الشكاوى الواردة لهيئة التأمين في شهر يونيو من عام 2026.pdf",
-      "downloaded_at": "2026-08-02T17:05:14.599159+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%8a%d8%a7%d8%b7%d9%8a%d8%a7%d8%aa%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:07:06.790880+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "ملف منفصل",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/تقرير سوق التأمين السعودي لعام 2017م.pdf",
-      "downloaded_at": "2026-08-02T17:05:10.851880+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d8%ad%d9%8a%d8%a7%d9%84%20%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%aa%d8%b3%d8%b9%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202024%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:06:53.996555+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تنزيل",
+      "title": "المستند",
       "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/تقرير سوق التأمين السعودي لعام 2018م.pdf",
-      "downloaded_at": "2026-08-02T17:05:07.596185+00:00",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d8%a6%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%aa%d8%b3%d8%b9%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202024%d9%85.pdf",
+      "downloaded_at": "2026-08-02T17:06:52.172983+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -392,11 +394,11 @@
     "sources_visited": 5,
     "pages_crawled": 524,
     "js_pages": 65,
-    "pdfs_discovered": 55,
-    "pdfs_downloaded": 55,
+    "pdfs_discovered": 75,
+    "pdfs_downloaded": 75,
     "pdfs_skipped_existing": 20,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T17:06:09.917634+00:00"
+  "manifest_generated_at": "2026-08-02T17:07:55.117266+00:00"
 }
