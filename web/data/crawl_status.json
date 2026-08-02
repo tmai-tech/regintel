@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T15:18:17.888766+00:00",
+  "updated_at": "2026-08-02T15:20:53.157951+00:00",
   "phase": "running",
-  "message": "downloaded 30 new this run",
+  "message": "downloaded 50 new this run",
   "run_id": "30753616423",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30753616423",
   "totals": {
-    "pdfs": 12275,
-    "errors": 21662,
+    "pdfs": 12295,
+    "errors": 21664,
     "source_reports": 30,
     "jurisdictions": 30
   },
@@ -40,16 +40,16 @@
       "count": 121
     },
     {
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "count": 50
+    },
+    {
       "jurisdiction": "India",
       "count": 47
     },
     {
       "jurisdiction": "UK",
       "count": 42
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "count": 30
     },
     {
       "jurisdiction": "Singapore",
@@ -143,118 +143,118 @@
     },
     {
       "source_kind": "ministry",
-      "count": 30
+      "count": 50
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MOMAH",
     "source_kind": "ministry",
-    "url": "https://momah.gov.sa/ar/studies-library"
+    "url": "https://momah.gov.sa/ar/e-services/alastlam-n-qbr-mtwfy"
   },
   "recent_pdfs": [
     {
-      "title": "عرض",
+      "title": "تحميل",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-01/Construction%20Technologies.pdf",
-      "downloaded_at": "2026-08-02T15:18:15.952109+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2025-08/dlyl%20almstkhdm%20lkhdmt%20alast%60lam%20%60n%20qbr%20mtwfy%20-%20almstfyd_0.pdf",
+      "downloaded_at": "2026-08-02T15:20:51.222370+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "عرض الملف",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/City%20Services%20-%20%2805%20May%202021%29%20.pdf",
-      "downloaded_at": "2026-08-02T15:18:07.750857+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2026-03/dlyl%20bna%20alkhtt%20alatsalyt_1.pptx_.pdf",
+      "downloaded_at": "2026-08-02T15:20:13.505524+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية - يناير 2021.",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Communication%20and%20Information%20Technology.pdf",
-      "downloaded_at": "2026-08-02T15:18:05.007781+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/HDOC%2520-%2520%25202021%2520January-2352021-.pdf",
+      "downloaded_at": "2026-08-02T15:20:04.915222+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : نشرة الإسكان - العدد الثاني",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Engineering%20Office%20Sector.pdf",
-      "downloaded_at": "2026-08-02T15:18:01.565420+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/eskan_periodical_2_0.pdf",
+      "downloaded_at": "2026-08-02T15:20:00.419615+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية - الربع الرابع 2020",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/City%20Cleaning%20Technologies.pdf",
-      "downloaded_at": "2026-08-02T15:17:56.935901+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/HDOC-4th%2520quarter%25202020%2520-5-4-2021.pdf",
+      "downloaded_at": "2026-08-02T15:19:57.634569+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية -عدد خاص 2020",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Construction%20Sector.pdf",
-      "downloaded_at": "2026-08-02T15:17:49.305369+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/Newsletter-1542.pdf",
+      "downloaded_at": "2026-08-02T15:19:42.842555+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية - عدد خاص",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/Sectorial%20Analysis%20-%20Maintenance%20%26%20Operations%20Sector.pdf",
-      "downloaded_at": "2026-08-02T15:17:42.320935+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/Iskan_Newsletter%2520V2.pdf",
+      "downloaded_at": "2026-08-02T15:19:39.895184+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : نشرة الإسكان - الربع الأول 2020",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-01/Popular%20Apps%20for%20Contractors.pdf",
-      "downloaded_at": "2026-08-02T15:17:37.171188+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/%25D9%2586%25D8%25B4%25D8%25B1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25A5%25D8%25B3%25D9%2583%25D8%25A7%25D9%2586%2520-%2520%25D8%25A7%25D9%2584%25D8%25B1%25D8%25A8%25D8%25B9%2520%25D8%25A7%25D9%2584%25D8%25A3%25D9%2588%25D9%2584%25202020_0.pdf",
+      "downloaded_at": "2026-08-02T15:19:27.638814+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية - الربع الثاني 2020",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%84%D8%AD%D8%AF%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.pdf",
-      "downloaded_at": "2026-08-02T15:17:26.874204+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/%25D8%25A7%25D9%2584%25D9%2586%25D8%25B4%25D8%25B1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25AF%25D9%2588%25D8%25B1%25D9%258A%25D8%25A9%2520%25D9%2584%25D9%2584%25D8%25A5%25D8%25B3%25D9%2583%25D8%25A7%25D9%2586%2520-%2520%25D8%25A7%25D9%2584%25D8%25B1%25D8%25A8%25D8%25B9%2520%25D8%25A7%25D9%2584%25D8%25AB%25D8%25A7%25D9%2586%25D9%258A%25202020.pdf",
+      "downloaded_at": "2026-08-02T15:19:22.023462+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية - الربع الثالث 2020",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A5%D8%B7%D8%A7%D8%B1%20%D8%B3%D9%86%D8%AF%D8%A7%D9%8A%20%D9%84%D9%84%D8%AD%D8%AF%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB%20%D9%84%D9%84%D9%81%D8%AA%D8%B1%D8%A9%20%D9%85%D9%86%202015%20%D9%80%D9%80%202030.pdf",
-      "downloaded_at": "2026-08-02T15:17:25.443543+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/HDOC%2520Newsletter%2520-%2520Issue%252025%2520-%2520Quarter%25203%2520-%2520Year%25202020_0.pdf",
+      "downloaded_at": "2026-08-02T15:19:14.979688+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية - مايو 2021.",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AE%D8%B7%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AD%D8%AF%20%D9%85%D9%85%D8%A7%20%D9%8A%D9%88%D8%A7%D8%AC%D9%87%20%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A7%D8%B7%D8%B1.pdf",
-      "downloaded_at": "2026-08-02T15:17:20.968042+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/HDOC%2520-%2520May%25201882021.pdf",
+      "downloaded_at": "2026-08-02T15:19:10.622623+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : نشرة الإسكان _عدد_خاص_Q42019",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D8%B8%D9%88%D8%A7%D9%87%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9%20%D9%86%D8%AD%D9%88%20%D8%A8%D9%86%D8%A7%D8%A1%20%D8%AB%D9%82%D8%A7%D9%81%D8%A9%20%20%D8%A7%D9%84%D9%88%D9%82%D8%A7%D9%8A%D8%A9%20%D9%85%D9%86%20%D9%83%D9%88%D8%A7%D8%B1%D8%AB%D9%87%D8%A7%20%E2%80%93%20%D8%A7%D9%84%D8%A3%D9%85%D9%85%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:17:19.990099+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-01/%25D9%2586%25D8%25B4%25D8%25B1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25A5%25D8%25B3%25D9%2583%25D8%25A7%25D9%2586_%25D8%25B9%25D8%25AF%25D8%25AF%2520%25D8%25AE%25D8%25A7%25D8%25B5_Q4_2019.pdf",
+      "downloaded_at": "2026-08-02T15:19:08.231849+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية-الربع الثاني 2021",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB%20%D9%85%D9%86%20%D8%AE%D9%84%D8%A7%D9%84%20%D8%B1%D8%A4%D9%8A%D8%A9%20%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%E2%80%93%20%D8%A7%D9%84%D8%A3%D9%85%D9%85%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:17:15.934862+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-04/alnshrt-aldwryt-_alrb-althany-2021.pdf",
+      "downloaded_at": "2026-08-02T15:18:56.768248+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "اقرأ المزيد : النشرة الدورية-يوليو2021",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%20%D8%AD%D9%82%D8%A7%D8%A6%D9%82%20%D9%88%D8%A3%D8%B1%D9%82%D8%A7%D9%85%20%E2%80%93%20%D9%87%D9%8A%D8%A6%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:17:12.610793+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2022-04/alnshrt-aldwryt-_shhr-ywlyw2021.pdf",
+      "downloaded_at": "2026-08-02T15:18:52.043029+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "عرض",
+      "title": "https://etmam.momah.gov.sa/sites/default/files/2024-12/Assessment%20of%20Real_0.pdf",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2021-10/%D8%A8%D8%B7%D8%A7%D9%82%D8%A9%20%D9%82%D9%8A%D8%A7%D8%B3%20%D8%B5%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D9%85%D8%AF%D9%86%20%D8%A3%D9%85%D8%A7%D9%85%20%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.pdf",
-      "downloaded_at": "2026-08-02T15:17:08.777670+00:00",
+      "url": "https://etmam.momah.gov.sa/sites/default/files/2024-12/Assessment%20of%20Real_0.pdf",
+      "downloaded_at": "2026-08-02T15:18:45.822561+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -384,11 +384,11 @@
     "sources_visited": 1,
     "pages_crawled": 200,
     "js_pages": 8,
-    "pdfs_discovered": 30,
-    "pdfs_downloaded": 30,
+    "pdfs_discovered": 50,
+    "pdfs_downloaded": 50,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 2
   },
-  "manifest_generated_at": "2026-08-02T15:18:15.952196+00:00"
+  "manifest_generated_at": "2026-08-02T15:20:51.222457+00:00"
 }
