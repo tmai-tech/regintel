@@ -14,13 +14,13 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "Crawl mode: all_gazette (sheet) or saudi_ministries (priority SA list)"
+        description: "Crawl mode: saudi_ministries (your morning 21 links) or all_gazette (global sheet)"
         required: false
-        default: "all_gazette"
+        default: "saudi_ministries"
       max_pages:
         description: "BFS pages per source URL"
         required: false
-        default: "300"
+        default: "200"
       time_budget_minutes:
         description: "Stop after N minutes (leave headroom under 6h job limit)"
         required: false
@@ -96,8 +96,9 @@ jobs:
           LEGAL="${{ github.event.inputs.include_legal_db }}"
           LEGAL="${LEGAL:-false}"
           MODE="${{ github.event.inputs.mode }}"
-          # Scheduled runs prioritize Saudi ministries until switched back to all_gazette
-          if [ "${{ github.event_name }}" = "schedule" ] && [ -z "${{ github.event.inputs.mode }}" ]; then
+          # Default + schedule: only the morning Saudi ministries list (21 authorities).
+          # Use mode=all_gazette only when you explicitly want the global sheet again.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
             MODE="saudi_ministries"
           fi
           MODE="${MODE:-saudi_ministries}"
@@ -108,10 +109,14 @@ jobs:
 
           EXTRA=()
           if [ "$MODE" = "saudi_ministries" ]; then
-            echo "=== Priority crawl: Saudi ministries / authorities ==="
+            echo "=== Priority crawl: Saudi ministries list (morning 21 links only) ==="
             test -f data/saudi_ministries_links.txt
+            echo "--- data/saudi_ministries_links.txt ---"
+            cat data/saudi_ministries_links.txt
+            echo "--------------------------------------"
             EXTRA+=(--url-only --from-file data/saudi_ministries_links.txt)
           else
+            echo "=== Global gazette sheet crawl (mode=$MODE) ==="
             if [ "$LEGAL" = "true" ]; then
               EXTRA+=(--include-legal-db)
             fi

@@ -693,7 +693,35 @@ class GazettePdfCollector:
     def run(self) -> None:
         self._publish(phase="starting", message="crawl starting", force_git=True)
 
-        for extra in self.extra_sources:
+        # Ministry / --from-file list: visit authorities with fewest PDFs first so a
+        # long BFS on e.g. MOMAH does not starve the rest of the morning link list.
+        extras = list(self.extra_sources or [])
+        if extras and self.skip_gazette:
+            from collections import Counter
+
+            already = Counter(
+                str(d.get("jurisdiction") or "")
+                for d in (self.manifest.get("downloads") or [])
+                if not d.get("dry_run")
+            )
+            extras = sorted(
+                extras,
+                key=lambda e: (
+                    already.get(str(e.get("jurisdiction") or ""), 0),
+                    str(e.get("jurisdiction") or ""),
+                ),
+            )
+            order = [
+                f"{e.get('jurisdiction')}({already.get(str(e.get('jurisdiction') or ''), 0)})"
+                for e in extras
+            ]
+            self.log(
+                f"[priority] crawling {len(extras)} list URLs, fewest PDFs first: "
+                + ", ".join(order[:12])
+                + ("…" if len(order) > 12 else "")
+            )
+
+        for extra in extras:
             if self.budget_exceeded():
                 self._stop_requested = True
                 self.log("[time-budget] exceeded — pausing (resume-safe next run)")
