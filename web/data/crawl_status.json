@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T16:47:16.974857+00:00",
+  "updated_at": "2026-08-02T16:57:03.358076+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - GOSI / ministry: +4 PDFs",
+  "message": "downloaded 5 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12329,
+    "pdfs": 12330,
     "errors": 21690,
     "source_reports": 30,
-    "jurisdictions": 31
+    "jurisdictions": 32
   },
   "by_jurisdiction": [
     {
@@ -134,6 +134,10 @@
     {
       "jurisdiction": "Germany",
       "count": 1
+    },
+    {
+      "jurisdiction": "Saudi Arabia - IA",
+      "count": 1
     }
   ],
   "by_source_kind": [
@@ -147,17 +151,22 @@
     },
     {
       "source_kind": "ministry",
-      "count": 84
+      "count": 85
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - GOSI",
+    "jurisdiction": "Saudi Arabia - IA",
     "source_kind": "ministry",
-    "url": "https://www.gosi.gov.sa",
-    "pdfs_downloaded": 4,
-    "pdfs_candidates": 4
+    "url": "https://www.ia.gov.sa/ar/regulations-and-licenses/regulations"
   },
   "recent_pdfs": [
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Regulations/اعتماد الصيغة النموذجية لوثيقة تأمين المسؤولية المدنية للأماكن المكتظة والأنشطة عالية الخطورة.1.pdf",
+      "downloaded_at": "2026-08-02T16:57:01.518246+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
       "jurisdiction": "Saudi Arabia - GOSI",
@@ -254,13 +263,6 @@
       "jurisdiction": "Saudi Arabia - MOMAH",
       "url": "https://momah.gov.sa/sites/default/files/2023-05/owned-and-leased-buildings-2021.pdf",
       "downloaded_at": "2026-08-02T15:21:57.137868+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-05/training-courses-and-workshops-for-the-year-2021.pdf",
-      "downloaded_at": "2026-08-02T15:21:53.696880+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -387,14 +389,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 4,
-    "pages_crawled": 324,
-    "js_pages": 34,
-    "pdfs_discovered": 4,
-    "pdfs_downloaded": 4,
+    "sources_visited": 5,
+    "pages_crawled": 524,
+    "js_pages": 65,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
     "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T16:47:15.161523+00:00"
+  "manifest_generated_at": "2026-08-02T16:57:01.518363+00:00"
 }

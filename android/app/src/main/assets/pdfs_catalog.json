@@ -1,5 +1,29 @@
 [
   {
+    "id": "9301d7f57161233a",
+    "title": "تنزيل",
+    "filename": "اعتماد الصيغة النموذجية لوثيقة تأمين المسؤولية المدنية للأماكن المكتظة والأنشطة عالية الخطورة.1.pdf",
+    "jurisdiction": "Saudi Arabia - IA",
+    "source_kind": "ministry",
+    "law_type": "regulation",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "ia.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://www.ia.gov.sa/ar/regulations-and-licenses/regulations",
+    "url": "https://www.ia.gov.sa/Regulations/اعتماد الصيغة النموذجية لوثيقة تأمين المسؤولية المدنية للأماكن المكتظة والأنشطة عالية الخطورة.1.pdf",
+    "open_url": "https://www.ia.gov.sa/Regulations/اعتماد الصيغة النموذجية لوثيقة تأمين المسؤولية المدنية للأماكن المكتظة والأنشطة عالية الخطورة.1.pdf",
+    "download_url": null,
+    "bytes": 221261,
+    "sha256": "9301d7f57161233a",
+    "downloaded_at": "2026-08-02T16:57:01.518246+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_IA/ministry/اعتماد الصيغة النموذجية لوثيقة تأمين المسؤولية المدنية للأماكن المكتظة والأنشطة عالية الخطورة.1.pdf"
+  },
+  {
     "id": "b31b3e7db6bc00b9",
     "title": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
     "filename": "journeyInformation3.pdf",
