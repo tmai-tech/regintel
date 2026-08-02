@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-02T00:34:06.121160+00:00",
+  "updated_at": "2026-08-02T00:34:15.988035+00:00",
   "phase": "running",
-  "message": "finished USA Federal / official_gazette: +780 PDFs",
+  "message": "finished USA Federal / official_gazette: +0 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
@@ -141,9 +141,9 @@
   "current_source": {
     "jurisdiction": "USA Federal",
     "source_kind": "official_gazette",
-    "url": "https://www.federalregister.gov",
-    "pdfs_downloaded": 780,
-    "pdfs_candidates": 1000
+    "url": "https://www.ecfr.gov/",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 0
   },
   "recent_pdfs": [
     {
@@ -375,8 +375,8 @@
     }
   ],
   "stats": {
-    "sources_visited": 10,
-    "pages_crawled": 2105,
+    "sources_visited": 11,
+    "pages_crawled": 2107,
     "js_pages": 145,
     "pdfs_discovered": 3078,
     "pdfs_downloaded": 3078,
@@ -384,5 +384,5 @@
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:34:04.467887+00:00"
+  "manifest_generated_at": "2026-08-02T00:34:14.339592+00:00"
 }
