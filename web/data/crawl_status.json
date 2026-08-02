@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T17:00:11.640270+00:00",
+  "updated_at": "2026-08-02T17:04:07.498594+00:00",
   "phase": "running",
-  "message": "downloaded 25 new this run",
+  "message": "downloaded 35 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12350,
+    "pdfs": 12360,
     "errors": 21690,
     "source_reports": 30,
     "jurisdictions": 32
@@ -53,7 +53,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - IA",
-      "count": 21
+      "count": 31
     },
     {
       "jurisdiction": "Singapore",
@@ -151,15 +151,85 @@
     },
     {
       "source_kind": "ministry",
-      "count": 105
+      "count": 115
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - IA",
     "source_kind": "ministry",
-    "url": "https://www.ia.gov.sa/ar/information-center/reports/quarterly-publications"
+    "url": "https://www.ia.gov.sa/ar/information-center/reports/annual-publications"
   },
   "recent_pdfs": [
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/تقرير سوق التأمين السعودي لعام 2024م.pdf",
+      "downloaded_at": "2026-08-02T17:04:05.703429+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/SectorReports/تقرير سوق التأمين السعودي لعام 2025م.pdf",
+      "downloaded_at": "2026-08-02T17:03:58.451459+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Licenses/Licensed Companies 15 July.pdf",
+      "downloaded_at": "2026-08-02T17:01:20.556812+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/Regulations/The Standard Insurance Policy of the compulsory health insurance for domestic workers and their equivalent who are more than (4).pdf",
+      "downloaded_at": "2026-08-02T17:00:52.743860+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/DEAR CEO Letter_Motor Actuarial Pricing Reports March 2017 - SAMA Feedback.pdf",
+      "downloaded_at": "2026-08-02T17:00:41.775008+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/20180516 Reserve Review 2017_SAMA feedback to Ins Cos_v4.pdf",
+      "downloaded_at": "2026-08-02T17:00:36.559161+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/20181018 Motor pricing 2018_SAMA feedback_signed lettter.pdf",
+      "downloaded_at": "2026-08-02T17:00:33.028772+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/Phase3_Dear%20CEO_ara.pdf",
+      "downloaded_at": "2026-08-02T17:00:31.186298+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/IFRS17%20Phase%202_Dear%20CEO%20Letter_%D9%90Arabic.pdf",
+      "downloaded_at": "2026-08-02T17:00:27.250137+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل",
+      "jurisdiction": "Saudi Arabia - IA",
+      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/IFRS17_Phase4_Dear%20CEO_Ar.pdf",
+      "downloaded_at": "2026-08-02T17:00:23.300693+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "تنزيل",
       "jurisdiction": "Saudi Arabia - IA",
@@ -193,76 +263,6 @@
       "jurisdiction": "Saudi Arabia - IA",
       "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الثاني لعام 2024م.pdf",
       "downloaded_at": "2026-08-02T16:58:48.721540+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/التقرير الربع سنوي لقطاع التأمين للربع الثالث لعام 2024م.pdf",
-      "downloaded_at": "2026-08-02T16:58:32.605111+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/تقرير الربع الأول لقطاع التأمين لعام 2025م.pdf",
-      "downloaded_at": "2026-08-02T16:58:23.329277+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/تقرير الربع الثاني لقطاع التأمين 2025م.pdf",
-      "downloaded_at": "2026-08-02T16:58:14.080292+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/SectorReports/تقرير الربع الثالث لقطاع التأمين 2025.pdf",
-      "downloaded_at": "2026-08-02T16:58:05.741336+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/Arabic%20lienees/ارشادات%20اعداد%20نماذج%202.pdf",
-      "downloaded_at": "2026-08-02T16:57:56.245201+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/Arabic%20lienees/ارشادات%20اعداد%20نماذج.pdf",
-      "downloaded_at": "2026-08-02T16:57:52.688208+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/Licenses/الشركات المرخصة 15 يوليو.pdf",
-      "downloaded_at": "2026-08-02T16:57:50.206494+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/Regulations/وثيقة التأمين القياسية للتعويض المهني لمدققي الحسابات في الجهات الخاضعة لرقابة هيئة السوق المالية.pdf",
-      "downloaded_at": "2026-08-02T16:57:46.755746+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/Regulations/الوثيقة الموحدة للتأمين الإلزامي على المركبات.pdf",
-      "downloaded_at": "2026-08-02T16:57:43.313877+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تنزيل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/Regulations/تعليمات تغطيات التأمين البحري.pdf",
-      "downloaded_at": "2026-08-02T16:57:40.085178+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -392,11 +392,11 @@
     "sources_visited": 5,
     "pages_crawled": 524,
     "js_pages": 65,
-    "pdfs_discovered": 25,
-    "pdfs_downloaded": 25,
-    "pdfs_skipped_existing": 1,
+    "pdfs_discovered": 35,
+    "pdfs_downloaded": 35,
+    "pdfs_skipped_existing": 20,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T17:00:09.837135+00:00"
+  "manifest_generated_at": "2026-08-02T17:04:05.703516+00:00"
 }
