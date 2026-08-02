@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T17:35:41.847851+00:00",
+  "updated_at": "2026-08-02T18:36:57.372371+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - MOJ / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - MoC / ministry: +1 PDFs",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12545,
-    "errors": 21779,
+    "pdfs": 12546,
+    "errors": 22090,
     "source_reports": 30,
-    "jurisdictions": 34
+    "jurisdictions": 35
   },
   "by_jurisdiction": [
     {
@@ -146,6 +146,10 @@
     {
       "jurisdiction": "Germany",
       "count": 1
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MoC",
+      "count": 1
     }
   ],
   "by_source_kind": [
@@ -159,17 +163,24 @@
     },
     {
       "source_kind": "ministry",
-      "count": 300
+      "count": 301
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - MOJ",
+    "jurisdiction": "Saudi Arabia - MoC",
     "source_kind": "ministry",
-    "url": "https://www.moj.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "url": "https://mc.gov.sa",
+    "pdfs_downloaded": 1,
+    "pdfs_candidates": 313
   },
   "recent_pdfs": [
+    {
+      "title": "سياسات حوكمة البيانات الوطنية.​",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
+      "downloaded_at": "2026-08-02T18:36:54.454143+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - MOF",
@@ -266,13 +277,6 @@
       "jurisdiction": "Saudi Arabia - MOF",
       "url": "https://www.mof.gov.sa/budget/2019/Documents/FY-A%202019.pdf",
       "downloaded_at": "2026-08-02T17:30:19.790394+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "البيان التمهيدي للميزانية 2019",
-      "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/financialreport/Documents/Bayan%20Tamhidi%20Ar%20Portrait.pdf",
-      "downloaded_at": "2026-08-02T17:30:16.340208+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -399,14 +403,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 9,
-    "pages_crawled": 926,
-    "js_pages": 69,
-    "pdfs_discovered": 220,
-    "pdfs_downloaded": 220,
-    "pdfs_skipped_existing": 55,
+    "sources_visited": 10,
+    "pages_crawled": 1126,
+    "js_pages": 246,
+    "pdfs_discovered": 221,
+    "pdfs_downloaded": 221,
+    "pdfs_skipped_existing": 56,
     "pdfs_capped": 0,
-    "errors": 115
+    "errors": 426
   },
-  "manifest_generated_at": "2026-08-02T17:35:40.031913+00:00"
+  "manifest_generated_at": "2026-08-02T18:36:55.548114+00:00"
 }

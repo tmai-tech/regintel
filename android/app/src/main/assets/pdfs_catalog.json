@@ -1,5 +1,29 @@
 [
   {
+    "id": "c95da2e38676de75",
+    "title": "سياسات حوكمة البيانات الوطنية.​",
+    "filename": "PoliciesEn.pdf",
+    "jurisdiction": "Saudi Arabia - MoC",
+    "source_kind": "ministry",
+    "law_type": "other",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "sdaia.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://mc.gov.sa/ar/About/Pages/Information-Policy.aspx",
+    "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
+    "open_url": "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
+    "download_url": null,
+    "bytes": 1256882,
+    "sha256": "c95da2e38676de75",
+    "downloaded_at": "2026-08-02T18:36:54.454143+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_MoC/ministry/PoliciesEn.pdf"
+  },
+  {
     "id": "d2210770ab19d3ef",
     "title": "embedded-url",
     "filename": "budgetA2022.pdf",

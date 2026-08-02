@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T17:35:40.031913+00:00",
+  "generated_at": "2026-08-02T18:36:55.548114+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -163085,6 +163085,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T17:31:05.285804+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/ar/About/Pages/Information-Policy.aspx",
+      "title": "سياسات حوكمة البيانات الوطنية.​",
+      "path": "data/pdfs/Saudi_Arabia_MoC/ministry/PoliciesEn.pdf",
+      "bytes": 1256882,
+      "sha256": "c95da2e38676de75",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T18:36:54.454143+00:00"
     }
   ],
   "discovered": [
@@ -301795,17 +301808,2194 @@
       "error": "missing %PDF magic (ct=text/html)",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - MOF"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_AR.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/Documents/User-GuideMC.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/CustomerGuide.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/Proliferation%20Financing%20Typologies%20and%20Red%20Flag%20Indicators.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/GMDPMS.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/GMDPMTFS.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/NPC_RA_Summary%20v1.2.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_%20EN.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/contactus/Documents/سياسة%20الشروط%20والاحكام%20و%20ضوابط%20اتصل%20بنا.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/contactus/Documents/سياسة%20الشروط%20والاحكام%20في%20استخدام%20منصات%20التواصل.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/Report-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2024.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2022.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2023.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2021.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2020.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2019.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2018.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Statistics_PDF/report-2017.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Competitions/Documents/Acknowledgment.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Statistics/Documents/MC%20CR%20restapi.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/guides/Documents/GDB.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/guides/Documents/CSF.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/guides/Documents/BOG.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/GES/Documents/GES.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCAQ2-2026.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ1-2026.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ4-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ3-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ2-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ1-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ3-2024.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ2-2024.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ1-2024.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ4-2023.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ3-2023.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ2-2023.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ1-2023.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Documents/MCQ4-2024.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCCQ22026.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCQ1-2026.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCQ2-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCQ1-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCQ4-2024.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCQ3-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOC/MCQ4-2025.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/16.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/15.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/3.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/4.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/5.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/6.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/7.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/8.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/9.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/10.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/24.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/23.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/11.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/12.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/13.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/14.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/1.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/2.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/17.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/18.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/19.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/20.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/21.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DOT/22.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/1.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/4.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/9.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/10.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/11.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/12.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/13.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/14.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/15.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/16.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/17.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/28.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/27.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/26.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/25.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/23.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/22.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/DT/5.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/1.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/2.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/3.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/4.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/5.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/6.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/7.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/8.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/9.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/10.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/11.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/12.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/13.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/14.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/15.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/16.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/17.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/18.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/19.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/20.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/21.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/22.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/23.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/24.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/25.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/26.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/27.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/28.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/29.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/30.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/31.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/32.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/33.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/34.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/35.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/36.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/37.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/38.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/39.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/40.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/41.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/42.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/43.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/44.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/45.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/46.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/47.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/48.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/49.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/50.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/51.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/52.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/53.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/54.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/55.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/56.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/57.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/58.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/59.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/60.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/61.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/62.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/63.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/64.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/65.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/66.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/67.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/68.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/69.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/70.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/72.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/73.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/74.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/75.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/76.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/77.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/78.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/79.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/80.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/81.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/82.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/83.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/84.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/85.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/86.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/87.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/88.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/89.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/90.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/91.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/92.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/93.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/94.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/95.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/96.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/97.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/98.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/99.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/100.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/101.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/102.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/103.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/104.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/105.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/106.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/107.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/108.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/109.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/110.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/111.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/112.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/113.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/114.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/115.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/116.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/117.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/118.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/119.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/120.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/121.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/250.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/123.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/124.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/125.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/126.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/127.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/128.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/129.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/130.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/131.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/187.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/188.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/133.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/134.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/135.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/136.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/137.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/138.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/140.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/141.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/142.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/143.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/144.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/145.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/146.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/147.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/148.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/149.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/150.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/151.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/152.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/153.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/154.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/155.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/156.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/217.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/159.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/160.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/161.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/162.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/163.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/164.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/165.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/221.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/167.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/168.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/169.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/170.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/171.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/172.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/173.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/174.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/175.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/176.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/177.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/178.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/179.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/180.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/181.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/182.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/183.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/184.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/185.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/186.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/220.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/189.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/190.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/191.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/192.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/193.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/195.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/196.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/197.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/198.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/199.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/200.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/201.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/202.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/219.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/204.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/205.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/206.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/207.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/208.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/209.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/210.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/211.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/212.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/213.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/214.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/215.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/216.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/esvt/71.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/eservices/Documents/ID%3D55.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/DOC/Mc38.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/mediacenter/Ads/Documents/Canpbook.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/guides/CustomerGuide/Documents/MCIDoc.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Documents/FI.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Documents/Guideline.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/About/Documents/FAQ.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/eservices/Documents/55en.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
+    },
+    {
+      "url": "https://mc.gov.sa/en/About/Documents/FI.pdf",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - MoC",
+      "source_kind": "ministry"
     }
   ],
   "stats": {
-    "sources_visited": 9,
-    "pages_crawled": 926,
-    "js_pages": 69,
-    "pdfs_discovered": 220,
-    "pdfs_downloaded": 220,
-    "pdfs_skipped_existing": 55,
+    "sources_visited": 10,
+    "pages_crawled": 1126,
+    "js_pages": 246,
+    "pdfs_discovered": 221,
+    "pdfs_downloaded": 221,
+    "pdfs_skipped_existing": 56,
     "pdfs_capped": 0,
-    "errors": 115
+    "errors": 426
   },
   "source_reports": [
     {
