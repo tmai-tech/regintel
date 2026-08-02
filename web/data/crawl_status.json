@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-02T15:34:06.078592+00:00",
+  "updated_at": "2026-08-02T16:47:16.974857+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - GAC / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - GOSI / ministry: +4 PDFs",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12325,
+    "pdfs": 12329,
     "errors": 21690,
     "source_reports": 30,
-    "jurisdictions": 30
+    "jurisdictions": 31
   },
   "by_jurisdiction": [
     {
@@ -96,6 +96,10 @@
       "count": 5
     },
     {
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "count": 4
+    },
+    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -143,17 +147,45 @@
     },
     {
       "source_kind": "ministry",
-      "count": 80
+      "count": 84
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - GAC",
+    "jurisdiction": "Saudi Arabia - GOSI",
     "source_kind": "ministry",
-    "url": "https://gac.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "url": "https://www.gosi.gov.sa",
+    "pdfs_downloaded": 4,
+    "pdfs_candidates": 4
   },
   "recent_pdfs": [
+    {
+      "title": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
+      "downloaded_at": "2026-08-02T16:47:14.956909+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://awareness.gosi.gov.sa/pdf/Contributions.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/Contributions.pdf",
+      "downloaded_at": "2026-08-02T16:47:14.390727+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://awareness.gosi.gov.sa/pdf/journeyInformation4.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation4.pdf",
+      "downloaded_at": "2026-08-02T16:47:13.745305+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://awareness.gosi.gov.sa/pdf/MaternityCompensation.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/MaternityCompensation.pdf",
+      "downloaded_at": "2026-08-02T16:47:13.178258+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "Show",
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -229,34 +261,6 @@
       "jurisdiction": "Saudi Arabia - MOMAH",
       "url": "https://momah.gov.sa/sites/default/files/2023-05/training-courses-and-workshops-for-the-year-2021.pdf",
       "downloaded_at": "2026-08-02T15:21:53.696880+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-05/parks-and-green-spaces-for-the-year-2021.pdf",
-      "downloaded_at": "2026-08-02T15:21:53.053667+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-05/planted-trees-and-flowers-for-2021.pdf",
-      "downloaded_at": "2026-08-02T15:21:51.995131+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-06/the-fields-of-celebrations-at-the-end-of-2022.pdf",
-      "downloaded_at": "2026-08-02T15:21:51.357065+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "PDF",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2023-05/health-inspection-activities-2021.pdf",
-      "downloaded_at": "2026-08-02T15:21:50.694943+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -383,14 +387,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 3,
-    "pages_crawled": 202,
-    "js_pages": 4,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
+    "sources_visited": 4,
+    "pages_crawled": 324,
+    "js_pages": 34,
+    "pdfs_discovered": 4,
+    "pdfs_downloaded": 4,
     "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T15:34:04.320463+00:00"
+  "manifest_generated_at": "2026-08-02T16:47:15.161523+00:00"
 }
