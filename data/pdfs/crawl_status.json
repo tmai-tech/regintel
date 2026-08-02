@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:41:20.402094+00:00",
+  "updated_at": "2026-08-02T00:41:57.023820+00:00",
   "phase": "running",
-  "message": "downloaded 3185 new this run",
+  "message": "finished New York / parliamentary_bills: +127 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 12107,
+    "pdfs": 12127,
     "errors": 21634,
     "source_reports": 16,
     "jurisdictions": 29
@@ -33,7 +33,7 @@
     },
     {
       "jurisdiction": "New York",
-      "count": 108
+      "count": 128
     },
     {
       "jurisdiction": "India",
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7650
+      "count": 7670
     },
     {
       "source_kind": "official_gazette",
@@ -141,112 +141,114 @@
   "current_source": {
     "jurisdiction": "New York",
     "source_kind": "parliamentary_bills",
-    "url": "https://nyassembly.gov/Reports/?sec=story&story=113631"
+    "url": "https://nyassembly.gov/leg/",
+    "pdfs_downloaded": 127,
+    "pdfs_candidates": 164
   },
   "recent_pdfs": [
     {
-      "title": "download the PDF",
+      "title": "Solicitation for Legal Services Announcement",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250410_0113631.pdf?v=1744311439",
-      "downloaded_at": "2026-08-02T00:41:18.707219+00:00",
+      "url": "https://nyassembly.gov/write/upload/comm/016/custom_modules/mission_faq/SolicitationforLegalServices.pdf",
+      "downloaded_at": "2026-08-02T00:41:53.004301+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Assembly Policy Prohibiting Fraternization With Student Interns",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/comm/016/custom_modules/mission_faq/ProhibitFraternizationPolicy.pdf",
+      "downloaded_at": "2026-08-02T00:41:52.575322+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "Assembly Policy Prohibiting Harassment, Discrimination and Retaliation",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/comm/016/custom_modules/mission_faq/ProhibitHarassmentPolicy.pdf?20250122",
+      "downloaded_at": "2026-08-02T00:41:52.146020+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "https://nyassembly.gov/Reports/WAM/2024economic_revenue/2024ecrev_report.pdf",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/Reports/WAM/2024economic_revenue/2024ecrev_report.pdf",
+      "downloaded_at": "2026-08-02T00:41:51.174717+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "https://nyassembly.gov/Reports/WAM/AssemblyBudgetProposal/2024/2024AssemblySummary.pdf?t=1785631118",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/Reports/WAM/AssemblyBudgetProposal/2024/2024AssemblySummary.pdf?t=1785631118",
+      "downloaded_at": "2026-08-02T00:41:50.173310+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "https://nyassembly.gov/Reports/WAM/2024summary_changes/summary_2024.pdf",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/Reports/WAM/2024summary_changes/summary_2024.pdf",
+      "downloaded_at": "2026-08-02T00:41:47.238981+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250625_0114491.pdf?v=1750876603",
-      "downloaded_at": "2026-08-02T00:41:17.671183+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2024/pdfs/20241104_0111972.pdf?v=1730751329",
+      "downloaded_at": "2026-08-02T00:41:46.298671+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250711_0114703.pdf?v=1752247230",
-      "downloaded_at": "2026-08-02T00:41:16.632389+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250227_0113133.pdf?v=1740688621",
+      "downloaded_at": "2026-08-02T00:41:45.347847+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250711_0114704.pdf?v=1752247463",
-      "downloaded_at": "2026-08-02T00:41:15.589410+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250227_0113134.pdf?v=1740688687",
+      "downloaded_at": "2026-08-02T00:41:44.308817+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250718_0114741.pdf?v=1754493741",
-      "downloaded_at": "2026-08-02T00:41:14.540069+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250228_0113139.pdf?v=1740759578",
+      "downloaded_at": "2026-08-02T00:41:43.262231+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250722_0114753.pdf?v=1753195437",
-      "downloaded_at": "2026-08-02T00:41:10.682842+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113197.pdf?v=1741120123",
+      "downloaded_at": "2026-08-02T00:41:39.293073+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250722_0114759.pdf?v=1753198159",
-      "downloaded_at": "2026-08-02T00:41:09.653238+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113198.pdf?v=1741120237",
+      "downloaded_at": "2026-08-02T00:41:38.262575+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250730_0114859.pdf?v=1753903531",
-      "downloaded_at": "2026-08-02T00:41:08.620987+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113199.pdf?v=1741120355",
+      "downloaded_at": "2026-08-02T00:41:37.227608+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250910_0115216.pdf?v=1757534384",
-      "downloaded_at": "2026-08-02T00:41:07.581731+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250304_0113200.pdf?v=1741120415",
+      "downloaded_at": "2026-08-02T00:41:36.180451+00:00",
       "source_kind": "parliamentary_bills"
     },
     {
       "title": "download the PDF",
       "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250910_0115217.pdf?v=1757534449",
-      "downloaded_at": "2026-08-02T00:41:06.536274+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250912_0115222.pdf?v=1757691059",
-      "downloaded_at": "2026-08-02T00:41:02.579746+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250912_0115235.pdf?v=1757706436",
-      "downloaded_at": "2026-08-02T00:41:01.550956+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250919_0115300.pdf?v=1758305131",
-      "downloaded_at": "2026-08-02T00:41:00.515101+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2026/pdfs/20260108_0116390.pdf?v=1767899215",
-      "downloaded_at": "2026-08-02T00:40:59.474498+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "download the PDF",
-      "jurisdiction": "New York",
-      "url": "https://nyassembly.gov/write/upload/postings/2026/pdfs/20260108_0116393.pdf?v=1767903219",
-      "downloaded_at": "2026-08-02T00:40:58.424604+00:00",
+      "url": "https://nyassembly.gov/write/upload/postings/2025/pdfs/20250310_0113257.pdf?v=1741615836",
+      "downloaded_at": "2026-08-02T00:41:35.127355+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -376,11 +378,11 @@
     "sources_visited": 12,
     "pages_crawled": 2407,
     "js_pages": 152,
-    "pdfs_discovered": 3185,
-    "pdfs_downloaded": 3185,
-    "pdfs_skipped_existing": 8787,
+    "pdfs_discovered": 3205,
+    "pdfs_downloaded": 3205,
+    "pdfs_skipped_existing": 8802,
     "pdfs_capped": 0,
     "errors": 9677
   },
-  "manifest_generated_at": "2026-08-02T00:41:18.707297+00:00"
+  "manifest_generated_at": "2026-08-02T00:41:55.346995+00:00"
 }
