@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T17:28:28.435254+00:00",
+  "updated_at": "2026-08-02T17:30:41.960353+00:00",
   "phase": "running",
-  "message": "downloaded 155 new this run",
+  "message": "downloaded 215 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12480,
-    "errors": 21690,
+    "pdfs": 12540,
+    "errors": 21700,
     "source_reports": 30,
     "jurisdictions": 34
   },
@@ -50,6 +50,10 @@
     {
       "jurisdiction": "Saudi Arabia - IA",
       "count": 71
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOF",
+      "count": 64
     },
     {
       "jurisdiction": "India",
@@ -108,10 +112,6 @@
       "count": 4
     },
     {
-      "jurisdiction": "Saudi Arabia - MOF",
-      "count": 4
-    },
-    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -159,118 +159,118 @@
     },
     {
       "source_kind": "ministry",
-      "count": 235
+      "count": 295
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MOF",
     "source_kind": "ministry",
-    "url": "https://www.mof.gov.sa/help/Pages/mobileapps.aspx"
+    "url": "https://www.mof.gov.sa/budget/2021/Pages/default.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "برنامج تحقيق التوازن المالي",
+      "title": "البيان التمهيدي",
       "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2019/Documents/FBP2019A .pdf",
-      "downloaded_at": "2026-08-02T17:28:26.638934+00:00",
+      "url": "https://www.mof.gov.sa/Documents/Pre-Bud%202021.pdf",
+      "downloaded_at": "2026-08-02T17:30:40.134037+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q1_A_2020.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q1_A_2020.pdf",
+      "downloaded_at": "2026-08-02T17:30:38.085521+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q2A2020.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q2A2020.pdf",
+      "downloaded_at": "2026-08-02T17:30:37.167515+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q3%20A%202020.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/financialreport/budget2020/2020/Q3%20A%202020.pdf",
+      "downloaded_at": "2026-08-02T17:30:35.763493+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://mof.gov.sa/financialreport/budget2020/Documents/Q4A2020V6.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://mof.gov.sa/financialreport/budget2020/Documents/Q4A2020V6.pdf",
+      "downloaded_at": "2026-08-02T17:30:31.594190+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تقرير نهاية العام المالي 2020م",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/budget/2020/Documents/END%20Bud-A%202020%20210527%20V1.pdf",
+      "downloaded_at": "2026-08-02T17:30:25.346612+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "نسخة المواطن",
       "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2019/Documents/Citizen Budget.pdf",
-      "downloaded_at": "2026-08-02T17:28:25.914580+00:00",
+      "url": "https://www.mof.gov.sa/financialreport/budget2020/Documents/Citizen_Ver.pdf",
+      "downloaded_at": "2026-08-02T17:30:24.615384+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "بيان الميزانية 2019",
+      "title": "البيان التمهيدي للميزانية 2020",
       "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/2019/Documents/بيان الميزانية U18-3AM.PDF",
-      "downloaded_at": "2026-08-02T17:28:24.104653+00:00",
+      "url": "https://www.mof.gov.sa/Documents/BSA%20FY2020.pdf",
+      "downloaded_at": "2026-08-02T17:30:22.608735+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تحديث برنامج تحقيق التوازن المالي",
+      "title": "تقرير نهاية العام المالي 2019",
       "jurisdiction": "Saudi Arabia - MOF",
-      "url": "https://www.mof.gov.sa/budget/Documents/Fiscal program Final-.pdf",
-      "downloaded_at": "2026-08-02T17:28:19.474170+00:00",
+      "url": "https://www.mof.gov.sa/budget/2019/Documents/FY-A%202019.pdf",
+      "downloaded_at": "2026-08-02T17:30:19.790394+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9..pdf",
-      "downloaded_at": "2026-08-02T17:13:52.690921+00:00",
+      "title": "البيان التمهيدي للميزانية 2019",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/financialreport/Documents/Bayan%20Tamhidi%20Ar%20Portrait.pdf",
+      "downloaded_at": "2026-08-02T17:30:16.340208+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثالث(2025)​​​.",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB(2025)%E2%80%8B%E2%80%8B%E2%80%8B..pdf",
-      "downloaded_at": "2026-08-02T17:13:40.143245+00:00",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2012.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2012.pdf",
+      "downloaded_at": "2026-08-02T17:30:10.599868+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثاني (2025)​​​.",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2025)%E2%80%8B%E2%80%8B%E2%80%8B.pdf",
-      "downloaded_at": "2026-08-02T17:13:39.513635+00:00",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2013.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2013.pdf",
+      "downloaded_at": "2026-08-02T17:30:09.933073+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الأول (2025)",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%A3%D9%88%D9%84%20(2025).pdf",
-      "downloaded_at": "2026-08-02T17:13:38.883778+00:00",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2014.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2014.pdf",
+      "downloaded_at": "2026-08-02T17:30:09.262981+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع( 2024​).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9(%202024%E2%80%8B).pdf",
-      "downloaded_at": "2026-08-02T17:13:38.247150+00:00",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2015.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2015.pdf",
+      "downloaded_at": "2026-08-02T17:30:08.598581+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثالث (​2024).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%20(%E2%80%8B2024).pdf",
-      "downloaded_at": "2026-08-02T17:13:37.634814+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثاني(2024).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A(2024)..pdf",
-      "downloaded_at": "2026-08-02T17:13:34.790363+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الاول (2024).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%20(2024)..pdf",
-      "downloaded_at": "2026-08-02T17:13:34.149991+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين النصف الثاني (2023).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2023).pdf",
-      "downloaded_at": "2026-08-02T17:13:33.504594+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين النصف الاول (2023).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%20(2023).pdf",
-      "downloaded_at": "2026-08-02T17:13:32.873137+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين النصف الثاني (2022).",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2022).pdf",
-      "downloaded_at": "2026-08-02T17:13:32.253467+00:00",
+      "title": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2016.pdf",
+      "jurisdiction": "Saudi Arabia - MOF",
+      "url": "https://www.mof.gov.sa/docslibrary/Budget/Documents/2016.pdf",
+      "downloaded_at": "2026-08-02T17:30:07.944496+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -400,11 +400,11 @@
     "sources_visited": 7,
     "pages_crawled": 924,
     "js_pages": 69,
-    "pdfs_discovered": 155,
-    "pdfs_downloaded": 155,
-    "pdfs_skipped_existing": 45,
+    "pdfs_discovered": 215,
+    "pdfs_downloaded": 215,
+    "pdfs_skipped_existing": 55,
     "pdfs_capped": 0,
-    "errors": 26
+    "errors": 36
   },
-  "manifest_generated_at": "2026-08-02T17:28:26.639036+00:00"
+  "manifest_generated_at": "2026-08-02T17:30:40.134120+00:00"
 }
