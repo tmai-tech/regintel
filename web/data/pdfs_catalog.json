@@ -1,5 +1,29 @@
 [
   {
+    "id": "72e36c5690e6afd7",
+    "title": "Municipal Officials",
+    "filename": "mod.pdf",
+    "jurisdiction": "Manitoba",
+    "source_kind": "official_gazette",
+    "law_type": "gazette",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "gov.mb.ca",
+    "filename_tags": [],
+    "source_page": "https://residents.gov.mb.ca/",
+    "url": "https://www.gov.mb.ca/mr/contactus/pubs/mod.pdf",
+    "open_url": "https://www.gov.mb.ca/mr/contactus/pubs/mod.pdf",
+    "download_url": null,
+    "bytes": 8226882,
+    "sha256": "72e36c5690e6afd7",
+    "downloaded_at": "2026-08-02T00:12:03.924376+00:00",
+    "local_path": "data/pdfs/Manitoba/official_gazette/mod.pdf"
+  },
+  {
     "id": "3e8f6b02d6acd26b",
     "title": "bilingual (PDF) version",
     "filename": "c01426.pdf",

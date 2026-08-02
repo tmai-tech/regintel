@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:08:17.339975+00:00",
+  "updated_at": "2026-08-02T00:12:05.468531+00:00",
   "phase": "running",
-  "message": "finished Manitoba / parliamentary_bills: +2119 PDFs",
+  "message": "downloaded 2120 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11041,
+    "pdfs": 11042,
     "errors": 21591,
     "source_reports": 16,
     "jurisdictions": 29
@@ -13,7 +13,7 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 6206
+      "count": 6207
     },
     {
       "jurisdiction": "Canada Federal",
@@ -135,17 +135,22 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3498
+      "count": 3499
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
-    "source_kind": "parliamentary_bills",
-    "url": "https://www.gov.mb.ca/legislature/business/bills.html",
-    "pdfs_downloaded": 2119,
-    "pdfs_candidates": 6289
+    "source_kind": "official_gazette",
+    "url": "https://residents.gov.mb.ca/"
   },
   "recent_pdfs": [
+    {
+      "title": "Municipal Officials",
+      "jurisdiction": "Manitoba",
+      "url": "https://www.gov.mb.ca/mr/contactus/pubs/mod.pdf",
+      "downloaded_at": "2026-08-02T00:12:03.924376+00:00",
+      "source_kind": "official_gazette"
+    },
     {
       "title": "bilingual (PDF) version",
       "jurisdiction": "Manitoba",
@@ -242,13 +247,6 @@
       "jurisdiction": "Manitoba",
       "url": "https://web2.gov.mb.ca/bills/37-1/billstatus.en.pdf",
       "downloaded_at": "2026-08-02T00:07:59.227582+00:00",
-      "source_kind": "parliamentary_bills"
-    },
-    {
-      "title": "Status of bills",
-      "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/37-2/billstatus.en.pdf",
-      "downloaded_at": "2026-08-02T00:07:56.574065+00:00",
       "source_kind": "parliamentary_bills"
     }
   ],
@@ -375,14 +373,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 7,
-    "pages_crawled": 1801,
-    "js_pages": 144,
-    "pdfs_discovered": 2119,
-    "pdfs_downloaded": 2119,
-    "pdfs_skipped_existing": 8535,
+    "sources_visited": 8,
+    "pages_crawled": 2101,
+    "js_pages": 145,
+    "pdfs_discovered": 2120,
+    "pdfs_downloaded": 2120,
+    "pdfs_skipped_existing": 8536,
     "pdfs_capped": 0,
     "errors": 9634
   },
-  "manifest_generated_at": "2026-08-02T00:08:15.855670+00:00"
+  "manifest_generated_at": "2026-08-02T00:12:03.924460+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:08:15.855670+00:00",
+  "generated_at": "2026-08-02T00:12:03.924460+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -143533,6 +143533,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T00:08:15.632364+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/mr/contactus/pubs/mod.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://residents.gov.mb.ca/",
+      "title": "Municipal Officials",
+      "path": "data/pdfs/Manitoba/official_gazette/mod.pdf",
+      "bytes": 8226882,
+      "sha256": "72e36c5690e6afd7",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:03.924376+00:00"
     }
   ],
   "discovered": [
@@ -281111,12 +281124,12 @@
     }
   ],
   "stats": {
-    "sources_visited": 7,
-    "pages_crawled": 1801,
-    "js_pages": 144,
-    "pdfs_discovered": 2119,
-    "pdfs_downloaded": 2119,
-    "pdfs_skipped_existing": 8535,
+    "sources_visited": 8,
+    "pages_crawled": 2101,
+    "js_pages": 145,
+    "pdfs_discovered": 2120,
+    "pdfs_downloaded": 2120,
+    "pdfs_skipped_existing": 8536,
     "pdfs_capped": 0,
     "errors": 9634
   },
