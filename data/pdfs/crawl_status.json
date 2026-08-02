@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-02T05:39:22.460509+00:00",
-  "phase": "starting",
-  "message": "crawl starting",
+  "updated_at": "2026-08-02T05:50:20.885961+00:00",
+  "phase": "running",
+  "message": "finished Canada Federal / parliamentary_bills: +0 PDFs",
   "run_id": "30729598729",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30729598729",
   "totals": {
     "pdfs": 12245,
-    "errors": 21634,
+    "errors": 21654,
     "source_reports": 30,
     "jurisdictions": 29
   },
@@ -138,7 +138,13 @@
       "count": 4457
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Canada Federal",
+    "source_kind": "parliamentary_bills",
+    "url": "https://www.parl.ca/legisinfo",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 350
+  },
   "recent_pdfs": [
     {
       "title": "General Tour Packet",
@@ -369,14 +375,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
+    "sources_visited": 1,
+    "pages_crawled": 300,
+    "js_pages": 83,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "pdfs_skipped_existing": 330,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 20
   },
-  "manifest_generated_at": "2026-08-02T05:39:20.649139+00:00"
+  "manifest_generated_at": "2026-08-02T05:50:19.154233+00:00"
 }
