@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T17:11:39.340834+00:00",
+  "updated_at": "2026-08-02T17:13:41.943927+00:00",
   "phase": "running",
-  "message": "downloaded 80 new this run",
+  "message": "downloaded 150 new this run",
   "run_id": "30754336905",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12405,
+    "pdfs": 12475,
     "errors": 21690,
     "source_reports": 30,
     "jurisdictions": 33
@@ -42,6 +42,10 @@
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
       "count": 80
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "count": 75
     },
     {
       "jurisdiction": "Saudi Arabia - IA",
@@ -100,10 +104,6 @@
       "count": 5
     },
     {
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 5
-    },
-    {
       "jurisdiction": "Saudi Arabia - GOSI",
       "count": 4
     },
@@ -155,118 +155,118 @@
     },
     {
       "source_kind": "ministry",
-      "count": 160
+      "count": 230
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MEWA",
     "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx"
+    "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/Pages/default.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "download",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثالث(2025)​​​.",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
-      "downloaded_at": "2026-08-02T17:11:37.537442+00:00",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB(2025)%E2%80%8B%E2%80%8B%E2%80%8B..pdf",
+      "downloaded_at": "2026-08-02T17:13:40.143245+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "download",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثاني (2025)​​​.",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
-      "downloaded_at": "2026-08-02T17:11:36.897772+00:00",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2025)%E2%80%8B%E2%80%8B%E2%80%8B.pdf",
+      "downloaded_at": "2026-08-02T17:13:39.513635+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "click here",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الأول (2025)",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/en/Ministry/initiatives/SectorStratigy/Documents/6.%20BAH-MEWA-KSA%20NES-CEDA%20Executive%20Summary%20v3%2020180221%20ENG.pdf",
-      "downloaded_at": "2026-08-02T17:11:36.288889+00:00",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%A3%D9%88%D9%84%20(2025).pdf",
+      "downloaded_at": "2026-08-02T17:13:38.883778+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المفكرة الزراعية",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الرابع( 2024​).",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
-      "downloaded_at": "2026-08-02T17:11:35.637373+00:00",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9(%202024%E2%80%8B).pdf",
+      "downloaded_at": "2026-08-02T17:13:38.247150+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Here",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثالث (​2024).",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
-      "downloaded_at": "2026-08-02T17:11:31.308918+00:00",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%20(%E2%80%8B2024).pdf",
+      "downloaded_at": "2026-08-02T17:13:37.634814+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المراجعة",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20الإحتياطيات%20الإكتوارية%20لعام%202018م.pdf?slrid=f015e7a1-7733-00a5-cc0d-6e59e8dc54b7",
-      "downloaded_at": "2026-08-02T17:07:52.468152+00:00",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الثاني(2024).",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A(2024)..pdf",
+      "downloaded_at": "2026-08-02T17:13:34.790363+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المراجعة",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d8%a7%d9%84%d8%a5%d8%ad%d8%aa%d9%8a%d8%a7%d8%b7%d9%8a%d8%a7%d8%aa%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202019%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:45.480699+00:00",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين الربع الاول (2024).",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/SiteAssets/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%20(2024)..pdf",
+      "downloaded_at": "2026-08-02T17:13:34.149991+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202020%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:40.797194+00:00",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين النصف الثاني (2023).",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2023).pdf",
+      "downloaded_at": "2026-08-02T17:13:33.504594+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "توقعاته",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d8%aa%d9%88%d9%82%d8%b9%d8%a7%d8%aa%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202021%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:38.474467+00:00",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين النصف الاول (2023).",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%20(2023).pdf",
+      "downloaded_at": "2026-08-02T17:13:32.873137+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d8%a7%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%a5%d9%83%d8%aa%d9%88%d8%a7%d8%b1%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202021%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:37.126996+00:00",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظات المستفيدين النصف الثاني (2022).",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20(2022).pdf",
+      "downloaded_at": "2026-08-02T17:13:32.253467+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "ملف منفصل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/توقعات%20التقارير%20الإكتوارية%20لعام%202022م.pdf",
-      "downloaded_at": "2026-08-02T17:07:31.436146+00:00",
+      "title": "تقرير الاجراءات والتحسينات المتخذة نتيجة ملاحظا​ت المستفيدين النصف الاول (20​22).",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/PortalIndicators/PublishingImages/Pages/default/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B0%D8%A9%20%D9%86%D8%AA%D9%8A%D8%AC%D8%A9%20%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%81%D9%8A%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D9%86%D8%B5%D9%81%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%20(2022).pdf",
+      "downloaded_at": "2026-08-02T17:13:29.172239+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20التقارير%20الاكتوارية%20لعام%202022م.pdf",
-      "downloaded_at": "2026-08-02T17:07:29.608320+00:00",
+      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%201439-1440%d9%87%d9%80%20sp%202.pdf",
+      "downloaded_at": "2026-08-02T17:13:28.543815+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "ملف منفصل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/توقعات%20هيئة%20التأمين%20حيال%20التقارير%20الإكتوارية%20للتسعير%20لعام%202023م.pdf",
-      "downloaded_at": "2026-08-02T17:07:22.860785+00:00",
+      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9%20%d8%a7%d9%84%d9%85%d8%b7%d8%b1%d9%8a%d8%a9.pdf",
+      "downloaded_at": "2026-08-02T17:13:27.279259+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المستند",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/مراجعة%20هيئة%20التأمين%20لتقار%20ير%20التسعير%20الإكتوار%20ية%20لعام%202023%20م.pdf",
-      "downloaded_at": "2026-08-02T17:07:21.751305+00:00",
+      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%20%d8%a7%d9%84%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%202019.pdf",
+      "downloaded_at": "2026-08-02T17:13:26.515906+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "ملف منفصل",
-      "jurisdiction": "Saudi Arabia - IA",
-      "url": "https://www.ia.gov.sa/WebsiteFiles/ReviewActuarialReports/%d9%85%d8%b1%d8%a7%d8%ac%d8%b9%d8%a9%20%d9%87%d9%8a%d9%8a%d9%94%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%20%d9%84%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%95%d8%b9%d8%a7%d8%af%d8%a9%20%d8%a7%d9%84%d8%aa%d8%a7%d9%94%d9%85%d9%8a%d9%86%d8%8c%20%d9%88%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1%d8%8c%20%d9%88%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a1%d8%a9%20%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202023%d9%85.pdf",
-      "downloaded_at": "2026-08-02T17:07:14.985294+00:00",
+      "title": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%85%d9%88%d9%94%d8%b4%d8%b1%d8%a7%d8%aa",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/Researchs/Reports/GeneralReports/%d9%85%d9%88%d9%94%d8%b4%d8%b1%d8%a7%d8%aa%20%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1.pdf",
+      "downloaded_at": "2026-08-02T17:13:24.626831+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -396,11 +396,11 @@
     "sources_visited": 6,
     "pages_crawled": 724,
     "js_pages": 67,
-    "pdfs_discovered": 80,
-    "pdfs_downloaded": 80,
-    "pdfs_skipped_existing": 20,
+    "pdfs_discovered": 150,
+    "pdfs_downloaded": 150,
+    "pdfs_skipped_existing": 45,
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T17:11:37.537528+00:00"
+  "manifest_generated_at": "2026-08-02T17:13:40.143329+00:00"
 }
