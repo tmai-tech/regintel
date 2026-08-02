@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-02T21:42:30.894717+00:00",
+  "updated_at": "2026-08-02T21:43:38.263421+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - GAC / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - MOI / ministry: +0 PDFs",
   "run_id": "30766741145",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30766741145",
   "totals": {
@@ -175,9 +175,9 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - GAC",
+    "jurisdiction": "Saudi Arabia - MOI",
     "source_kind": "ministry",
-    "url": "https://gac.gov.sa",
+    "url": "https://www.moi.gov.sa",
     "pdfs_downloaded": 0,
     "pdfs_candidates": 0
   },
@@ -411,8 +411,8 @@
     }
   ],
   "stats": {
-    "sources_visited": 3,
-    "pages_crawled": 220,
+    "sources_visited": 4,
+    "pages_crawled": 221,
     "js_pages": 5,
     "pdfs_discovered": 2,
     "pdfs_downloaded": 2,
@@ -420,5 +420,5 @@
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-02T21:42:29.073132+00:00"
+  "manifest_generated_at": "2026-08-02T21:43:36.452593+00:00"
 }
