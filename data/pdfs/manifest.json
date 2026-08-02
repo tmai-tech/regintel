@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:12:03.924460+00:00",
+  "generated_at": "2026-08-02T00:14:04.699735+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -143546,6 +143546,721 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T00:12:03.924376+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/justice/employment/pubs/careerfacts.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://residents.gov.mb.ca/findingwork.html",
+      "title": "Consider a Career in Manitoba Justice",
+      "path": "data/pdfs/Manitoba/official_gazette/careerfacts.pdf",
+      "bytes": 380763,
+      "sha256": "badd5563efe4e62a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:10.217086+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/jec/busdev/images/invest_with_manitoba.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/business/",
+      "title": "Invest with Manitoba",
+      "path": "data/pdfs/Manitoba/official_gazette/invest_with_manitoba.pdf",
+      "bytes": 834071,
+      "sha256": "4d7ecf1748d08e90",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:11.560882+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/jec/busdev/images/manitoba_quick_facts.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/business/",
+      "title": "Manitoba Quick Facts",
+      "path": "data/pdfs/Manitoba/official_gazette/manitoba_quick_facts.pdf",
+      "bytes": 1422186,
+      "sha256": "5c5335962ceadbaa",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:13.073242+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/members/pf/deputy_ministers.fr.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/contact/index.fr.html",
+      "title": "Sous-ministres de la province du Manitoba",
+      "path": "data/pdfs/Manitoba/official_gazette/deputy_ministers.fr.pdf",
+      "bytes": 106330,
+      "sha256": "57e7cc2ba7e6aefc",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:14.659650+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/accessibility/accessible_customer_service_policy.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/accessibility/",
+      "title": "Manitoba Government Accessible Customer Service Policy (PDF)",
+      "path": "data/pdfs/Manitoba/official_gazette/accessible_customer_service_policy.pdf",
+      "bytes": 434571,
+      "sha256": "faa4aeb5631d90b4",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:15.585031+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/accessibility/steeringcommittee_termsreference.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/accessibility/",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/steeringcommittee_termsreference.pdf",
+      "bytes": 438996,
+      "sha256": "7e29ef642b021bba",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:18.631154+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/legal/OpenMB-Information-Data-Use-Licence.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/legal/copyright.html",
+      "title": "The OpenMB Information and Data Use Licences",
+      "path": "data/pdfs/Manitoba/official_gazette/OpenMB-Information-Data-Use-Licence.pdf",
+      "bytes": 291970,
+      "sha256": "50ca4d7aa0ff9d2a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:19.492738+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2026/budget2026.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2026/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2026/budget2026.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/budget2026.pdf",
+      "bytes": 3543138,
+      "sha256": "68051c26af8389d2",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:21.982235+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2026/speech_budget2026.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2026/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2026/speech_budget2026.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/speech_budget2026.pdf",
+      "bytes": 375030,
+      "sha256": "d722bcb3f94d0e66",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:22.913096+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2026/estimates_budget2026.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2026/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2026/estimates_budget2026.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/estimates_budget2026.pdf",
+      "bytes": 2309766,
+      "sha256": "a188c67e0c9315ee",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:24.798994+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2026/budgetinbrief_2026.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2026/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2026/budgetinbrief_2026.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/budgetinbrief_2026.pdf",
+      "bytes": 514490,
+      "sha256": "87666dfe904cb0c0",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:27.638453+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/mfrp/manitoba-flood-recovery-program.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/mfrp/index.html",
+      "title": "Download Information Guide",
+      "path": "data/pdfs/Manitoba/official_gazette/manitoba-flood-recovery-program.pdf",
+      "bytes": 128264,
+      "sha256": "c0a0515a422cff93",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:28.432594+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/mfrp/mfrp-recovery-support-services.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/mfrp/index.html",
+      "title": "See the schedule",
+      "path": "data/pdfs/Manitoba/official_gazette/mfrp-recovery-support-services.pdf",
+      "bytes": 75208,
+      "sha256": "edf014a6cb7963aa",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:29.189336+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/emo/dfa-application.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/mfrp/index.html",
+      "title": "application form",
+      "path": "data/pdfs/Manitoba/official_gazette/dfa-application.pdf",
+      "bytes": 199097,
+      "sha256": "5d66cb6aae315e10",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:30.002968+00:00"
+    },
+    {
+      "url": "https://manitoba.ca/asset_library/en/mfrp/mfrp-declaration-notice-and-consent-form.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/mfrp/index.html",
+      "title": "Download and print the MFRP Waiver and Consent Form",
+      "path": "data/pdfs/Manitoba/official_gazette/mfrp-declaration-notice-and-consent-form.pdf",
+      "bytes": 135496,
+      "sha256": "16dad828f5578fd0",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:31.034591+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/mfrp/mfrp-insurance-declaration-form.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/mfrp/index.html",
+      "title": "Insurance Declaration Form",
+      "path": "data/pdfs/Manitoba/official_gazette/mfrp-insurance-declaration-form.pdf",
+      "bytes": 147393,
+      "sha256": "ae547656c7107b3e",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:33.953266+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/rallyforcanada/rally-poster.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/rallyforcanada/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/rallyforcanada/rally-poster.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/rally-poster.pdf",
+      "bytes": 8716096,
+      "sha256": "986ca32b0ba2ef5e",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:38.801992+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/publications/pubs/indigenous-organizations-in-manitoba.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/index.html",
+      "title": "Indigenous Organizations in Manitoba",
+      "path": "data/pdfs/Manitoba/official_gazette/indigenous-organizations-in-manitoba.pdf",
+      "bytes": 1054620,
+      "sha256": "730b7f2703803f9a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:40.923220+00:00"
+    },
+    {
+      "url": "https://nctr.ca/wp-content/uploads/2021/01/Calls_to_Action_English2.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/osd.html",
+      "title": "Truth and Reconciliation Commission of Canada's Calls to Action",
+      "path": "data/pdfs/Manitoba/official_gazette/Calls_to_Action_English2.pdf",
+      "bytes": 305728,
+      "sha256": "f0bc24a34047e7c4",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:41.914847+00:00"
+    },
+    {
+      "url": "https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/11/UNDRIP_E_web.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/osd.html",
+      "title": "United Nations Declaration on the Rights of Indigenous Peoples",
+      "path": "data/pdfs/Manitoba/official_gazette/UNDRIP_E_web.pdf",
+      "bytes": 153798,
+      "sha256": "2ff3fcc151fb3e8d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:42.465631+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/orange-shirt-day-fund-grant-guide-2026.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/osd.html",
+      "title": "English",
+      "path": "data/pdfs/Manitoba/official_gazette/orange-shirt-day-fund-grant-guide-2026.pdf",
+      "bytes": 184167,
+      "sha256": "e74c8687755c9143",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:45.160687+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/orange-shirt-day-grant-application-2026.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/osd.html",
+      "title": "Orange Shirt Day - Application Form",
+      "path": "data/pdfs/Manitoba/official_gazette/orange-shirt-day-grant-application-2026.pdf",
+      "bytes": 250249,
+      "sha256": "e5c09b1e677d1acd",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:46.020313+00:00"
+    },
+    {
+      "url": "https://www.edu.gov.mb.ca/docs/sexual_violence/guide.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/mmiwg2s/manitoba-action.html",
+      "title": "Department of Education, 2017",
+      "path": "data/pdfs/Manitoba/official_gazette/guide.pdf",
+      "bytes": 529916,
+      "sha256": "8f4b5cbcd38652bd",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:12:51.483734+00:00"
+    },
+    {
+      "url": "https://web2.gov.mb.ca/laws/statutes/2016/pdf/c01716.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/mmiwg2s/legislation.html",
+      "title": "Protecting Children (Information) Sharing Act",
+      "path": "data/pdfs/Manitoba/official_gazette/c01716.pdf",
+      "bytes": 195040,
+      "sha256": "dcbd80052946236c",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:16.371162+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-cree.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Cree",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-cree.pdf",
+      "bytes": 128705,
+      "sha256": "dfcc92078b7a34ce",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:16.943301+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-dakota.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Dakota",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-dakota.pdf",
+      "bytes": 107224,
+      "sha256": "7414c3ee24202882",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:19.889960+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-dene.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Dene",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-dene.pdf",
+      "bytes": 179743,
+      "sha256": "474d25187a275f3d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:20.728414+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-inukitut.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Inukitut",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-inukitut.pdf",
+      "bytes": 58201,
+      "sha256": "e9445800fd3a73a5",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:21.466342+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-michif.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Michif",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-michif.pdf",
+      "bytes": 175626,
+      "sha256": "2ff7ab4115b050cc",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:22.272834+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-ojibwe.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Ojibwe",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-ojibwe.pdf",
+      "bytes": 177013,
+      "sha256": "f8ecc9e84fc9919c",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:23.086156+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/pubs/the-path-to-reconciliation-act-oji-cree.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/inr/responsibilities.html",
+      "title": "The Path to Reconciliation Act - Oji-Cree",
+      "path": "data/pdfs/Manitoba/official_gazette/the-path-to-reconciliation-act-oji-cree.pdf",
+      "bytes": 103725,
+      "sha256": "676e0147e2038a3e",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:25.762204+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/eds/economic-development-strategy.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/eds/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/eds/economic-development-strategy.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/economic-development-strategy.pdf",
+      "bytes": 4129469,
+      "sha256": "9afd4e01dfa3daec",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:28.485481+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/netzero/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/mb-path-to-net-zero.pdf",
+      "bytes": 3193477,
+      "sha256": "feebd4644522a807",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:30.816147+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/reviewboard/rbc-summary.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/about.html",
+      "title": "here",
+      "path": "data/pdfs/Manitoba/official_gazette/rbc-summary.pdf",
+      "bytes": 137299,
+      "sha256": "68635b882c67bbf6",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:31.613122+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/reviewboard/rules-of-practice-and-procedure.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/hearing-process.html",
+      "title": "here",
+      "path": "data/pdfs/Manitoba/official_gazette/rules-of-practice-and-procedure.pdf",
+      "bytes": 631911,
+      "sha256": "e8c08d2854772c05",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:32.709702+00:00"
+    },
+    {
+      "url": "https://laws.justice.gc.ca/PDF/I-11.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/legal-resources.html",
+      "title": "Inquiries Act",
+      "path": "data/pdfs/Manitoba/official_gazette/I-11.pdf",
+      "bytes": 289595,
+      "sha256": "aca0effd7874aad1",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:35.933499+00:00"
+    },
+    {
+      "url": "https://laws-lois.justice.gc.ca/PDF/C-23.7.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/legal-resources.html",
+      "title": "Canadian Victims Bill of Rights",
+      "path": "data/pdfs/Manitoba/official_gazette/C-23.7.pdf",
+      "bytes": 371700,
+      "sha256": "06dcccfaeb90f4ce",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:37.131101+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/reviewboard/cases-of-note.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/legal-resources.html",
+      "title": "Significant Cases and Supreme Court Judgments",
+      "path": "data/pdfs/Manitoba/official_gazette/cases-of-note.pdf",
+      "bytes": 338972,
+      "sha256": "8c38621027375b3a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:37.999318+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/reviewboard/criminal-code-excerpts.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/faq.html",
+      "title": "section 672.91 of the Criminal Code",
+      "path": "data/pdfs/Manitoba/official_gazette/criminal-code-excerpts.pdf",
+      "bytes": 290904,
+      "sha256": "17d5f38de549cbc4",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:38.940116+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/reviewboard/victim-impact-statement-form-48.2.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/reviewboard/information-for-victims.html",
+      "title": "here",
+      "path": "data/pdfs/Manitoba/official_gazette/victim-impact-statement-form-48.2.pdf",
+      "bytes": 93111,
+      "sha256": "8da700a05c7ed43d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:39.743697+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/mosaicawards/mosaicawards-nomination-form.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/mosaicawards/index.html",
+      "title": "Nomination Form",
+      "path": "data/pdfs/Manitoba/official_gazette/mosaicawards-nomination-form.pdf",
+      "bytes": 313837,
+      "sha256": "e3dfeb0b50ea56ad",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:42.493211+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/rail/feasibility-study-to-repurpose-cpkc-rail-yards.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/rail/stay-connected.html",
+      "title": "Feasibility Study to Repurpose CPKC Rail yards.",
+      "path": "data/pdfs/Manitoba/official_gazette/feasibility-study-to-repurpose-cpkc-rail-yards.pdf",
+      "bytes": 722583,
+      "sha256": "ba39395d444feb39",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:43.681045+00:00"
+    },
+    {
+      "url": "https://www.regina.ca/export/sites/Regina.ca/business-development/land-property-development/.galleries/pdfs/Design-Regina/proposed-yards-neighbourhood-plan.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/rail/stay-connected.html",
+      "title": "Regina",
+      "path": "data/pdfs/Manitoba/official_gazette/proposed-yards-neighbourhood-plan.pdf",
+      "bytes": 2712392,
+      "sha256": "3bbca6f7fcb0aa32",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:48.041782+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/rail/railway-areas-winnipeg.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/rail/stay-connected.html",
+      "title": "www.gov.mb.ca/asset_library/en/rail/railway-areas-winnipeg.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/railway-areas-winnipeg.pdf",
+      "bytes": 1783227,
+      "sha256": "1fcd5fe9317ea7e3",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:49.665959+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/budget2025.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2025/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/budget2025.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/budget2025.pdf",
+      "bytes": 1838327,
+      "sha256": "f97fe20a46a717cf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:51.283962+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/speech_budget2025.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2025/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/speech_budget2025.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/speech_budget2025.pdf",
+      "bytes": 163001,
+      "sha256": "444b0a3a8a755140",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:54.196134+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/estimates_budget2025.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2025/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/estimates_budget2025.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/estimates_budget2025.pdf",
+      "bytes": 1178874,
+      "sha256": "36f3ef918bcc1860",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:55.520729+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/budgetinbrief_2025.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/budget2025/index.html",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/budgetinbrief_2025.pdf",
+      "path": "data/pdfs/Manitoba/official_gazette/budgetinbrief_2025.pdf",
+      "bytes": 555346,
+      "sha256": "687d3e063fc07307",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:56.569936+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/provincial_state_of_local_emergency.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/provincial_state_of_local_emergency.pdf",
+      "bytes": 54392,
+      "sha256": "e572c38ee5af76c2",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:57.306655+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/provincial_state_of_local_emergency.fr.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/provincial_state_of_local_emergency.fr.pdf",
+      "bytes": 55696,
+      "sha256": "836dd4f0abcd5a58",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:13:58.083193+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_eric_coy_arena.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/ema_order_eric_coy_arena.pdf",
+      "bytes": 445975,
+      "sha256": "323931e4f1077600",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:14:00.884007+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_garden_city_community_centre.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/ema_order_garden_city_community_centre.pdf",
+      "bytes": 483266,
+      "sha256": "b0d68bf5b0205974",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:14:01.987051+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_red_river_exhibition_association.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/ema_order_red_river_exhibition_association.pdf",
+      "bytes": 454100,
+      "sha256": "f57ff2ad4944b549",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:14:03.028314+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ministerial_order_state_of_local_emergency.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/ministerial_order_state_of_local_emergency.pdf",
+      "bytes": 103162,
+      "sha256": "be622375f96c81ac",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:14:03.807228+00:00"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_fnsos.pdf",
+      "jurisdiction": "Manitoba",
+      "source_kind": "official_gazette",
+      "source_page": "https://www.gov.mb.ca/wildfire/reports_updates.html",
+      "title": "quoted-path",
+      "path": "data/pdfs/Manitoba/official_gazette/ema_order_fnsos.pdf",
+      "bytes": 339351,
+      "sha256": "b5964946613224a7",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:14:04.699640+00:00"
     }
   ],
   "discovered": [
@@ -281121,17 +281836,227 @@
       "error": "missing %PDF magic (ct=text/html)",
       "stage": "download_pdf",
       "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/iem/explore/files/criticalmineralsstrategy.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/asset_library/en/milgp/mb-indigenous-clean-electricity-project-equity-workshop.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.amnesty.ca/sites/amnesty/files/amr200032004enstolensisters.pdf",
+      "error": "HTTP 404",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/msw/_docs/publications/mb_framework_addressing_gender_based_violence_en.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/compendium-recommendations.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/families-first-ongoing-approach.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/paradigmatic-shift-justice-response.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/never-forgotten-summit.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/mmiwg-manitoba-coalition-written-submission.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/pitawik-hear-me.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/sco-mmiwg-report-final.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://4c3tru4erdnui9g3ggftji1d-wpengine.netdna-ssl.com/wp-content/uploads/2022/06/NAP-progress-report-2022-1.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://nwac.ca/assets-knowledge-centre/FEDERAL_ANNUAL_SCORECARD_ACTIONPLAN_2022_2022-06-03-132116_mfnq.pdf",
+      "error": "missing %PDF magic (ct=text/html; charset=UTF-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/nap-report-en.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/nfsc-nap-contribution-2022.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/first-nations-action-plan-report.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/pauktuutit-mmiwg-action-plan-english-pdf-version.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/weaving-miskotaha-report-july-2021.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/2slgbtqqia-report-final.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/nap-urban-framework-en.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/cap-mmiwg-interim-report-june-2021-en.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/the-2021-national-action-plan-data-strategy-en.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/fed-patway-mmiwg-2slgbtqqia-1622728066545-eng.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/nwac-action-plan-full-all-edits.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/what-their-stories-tell-us.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/fpt-justice-framework-address-violence.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/sources-of-information-mmiwg.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/an-awkward-silence.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/women-criminal-justice.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/spirits-are-not-for-sale.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/promising-practices.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/violence-against-indigenous-males.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/calls-for-justice-summary-report.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/final-report-volume-1a.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
+    },
+    {
+      "url": "https://www.gov.mb.ca/inr/mmiwg2s/pubs/final-report-volume-1b.pdf",
+      "error": "missing %PDF magic (ct=text/html)",
+      "stage": "download_pdf",
+      "jurisdiction": "Manitoba"
     }
   ],
   "stats": {
     "sources_visited": 8,
     "pages_crawled": 2101,
     "js_pages": 145,
-    "pdfs_discovered": 2120,
-    "pdfs_downloaded": 2120,
-    "pdfs_skipped_existing": 8536,
+    "pdfs_discovered": 2175,
+    "pdfs_downloaded": 2175,
+    "pdfs_skipped_existing": 8544,
     "pdfs_capped": 0,
-    "errors": 9634
+    "errors": 9669
   },
   "source_reports": [
     {

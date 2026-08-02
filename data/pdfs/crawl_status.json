@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-02T00:12:05.468531+00:00",
+  "updated_at": "2026-08-02T00:14:06.221361+00:00",
   "phase": "running",
-  "message": "downloaded 2120 new this run",
+  "message": "downloaded 2175 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11042,
-    "errors": 21591,
+    "pdfs": 11097,
+    "errors": 21626,
     "source_reports": 16,
     "jurisdictions": 29
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Manitoba",
-      "count": 6207
+      "count": 6262
     },
     {
       "jurisdiction": "Canada Federal",
@@ -135,119 +135,119 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3499
+      "count": 3554
     }
   ],
   "current_source": {
     "jurisdiction": "Manitoba",
     "source_kind": "official_gazette",
-    "url": "https://residents.gov.mb.ca/"
+    "url": "https://www.gov.mb.ca/wildfire/reports_updates.html"
   },
   "recent_pdfs": [
     {
-      "title": "Municipal Officials",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://www.gov.mb.ca/mr/contactus/pubs/mod.pdf",
-      "downloaded_at": "2026-08-02T00:12:03.924376+00:00",
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_fnsos.pdf",
+      "downloaded_at": "2026-08-02T00:14:04.699640+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c01426.pdf",
-      "downloaded_at": "2026-08-02T00:08:15.632364+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ministerial_order_state_of_local_emergency.pdf",
+      "downloaded_at": "2026-08-02T00:14:03.807228+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c01326.pdf",
-      "downloaded_at": "2026-08-02T00:08:14.701600+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_red_river_exhibition_association.pdf",
+      "downloaded_at": "2026-08-02T00:14:03.028314+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c01226.pdf",
-      "downloaded_at": "2026-08-02T00:08:13.773744+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_garden_city_community_centre.pdf",
+      "downloaded_at": "2026-08-02T00:14:01.987051+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c01126.pdf",
-      "downloaded_at": "2026-08-02T00:08:12.748119+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/ema_order_eric_coy_arena.pdf",
+      "downloaded_at": "2026-08-02T00:14:00.884007+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c01026.pdf",
-      "downloaded_at": "2026-08-02T00:08:09.943153+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/provincial_state_of_local_emergency.fr.pdf",
+      "downloaded_at": "2026-08-02T00:13:58.083193+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "quoted-path",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00926.pdf",
-      "downloaded_at": "2026-08-02T00:08:08.995371+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/wildfire/provincial_state_of_local_emergency.pdf",
+      "downloaded_at": "2026-08-02T00:13:57.306655+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/budgetinbrief_2025.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00826.pdf",
-      "downloaded_at": "2026-08-02T00:08:08.038977+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/budgetinbrief_2025.pdf",
+      "downloaded_at": "2026-08-02T00:13:56.569936+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/estimates_budget2025.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00726.pdf",
-      "downloaded_at": "2026-08-02T00:08:07.108938+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/estimates_budget2025.pdf",
+      "downloaded_at": "2026-08-02T00:13:55.520729+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/speech_budget2025.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00626.pdf",
-      "downloaded_at": "2026-08-02T00:08:06.087061+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/speech_budget2025.pdf",
+      "downloaded_at": "2026-08-02T00:13:54.196134+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "https://www.gov.mb.ca/asset_library/en/budget2025/budget2025.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00526.pdf",
-      "downloaded_at": "2026-08-02T00:08:03.086078+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/budget2025/budget2025.pdf",
+      "downloaded_at": "2026-08-02T00:13:51.283962+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "www.gov.mb.ca/asset_library/en/rail/railway-areas-winnipeg.pdf",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00426.pdf",
-      "downloaded_at": "2026-08-02T00:08:02.119966+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/rail/railway-areas-winnipeg.pdf",
+      "downloaded_at": "2026-08-02T00:13:49.665959+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "Regina",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00326.pdf",
-      "downloaded_at": "2026-08-02T00:08:01.174783+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.regina.ca/export/sites/Regina.ca/business-development/land-property-development/.galleries/pdfs/Design-Regina/proposed-yards-neighbourhood-plan.pdf",
+      "downloaded_at": "2026-08-02T00:13:48.041782+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "bilingual (PDF) version",
+      "title": "Feasibility Study to Repurpose CPKC Rail yards.",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/laws/statutes/2026/pdf/c00226.pdf",
-      "downloaded_at": "2026-08-02T00:08:00.256954+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/rail/feasibility-study-to-repurpose-cpkc-rail-yards.pdf",
+      "downloaded_at": "2026-08-02T00:13:43.681045+00:00",
+      "source_kind": "official_gazette"
     },
     {
-      "title": "Status of bills",
+      "title": "Nomination Form",
       "jurisdiction": "Manitoba",
-      "url": "https://web2.gov.mb.ca/bills/37-1/billstatus.en.pdf",
-      "downloaded_at": "2026-08-02T00:07:59.227582+00:00",
-      "source_kind": "parliamentary_bills"
+      "url": "https://www.gov.mb.ca/asset_library/en/labour/docs/mosaicawards/mosaicawards-nomination-form.pdf",
+      "downloaded_at": "2026-08-02T00:13:42.493211+00:00",
+      "source_kind": "official_gazette"
     }
   ],
   "last_source_reports": [
@@ -376,11 +376,11 @@
     "sources_visited": 8,
     "pages_crawled": 2101,
     "js_pages": 145,
-    "pdfs_discovered": 2120,
-    "pdfs_downloaded": 2120,
-    "pdfs_skipped_existing": 8536,
+    "pdfs_discovered": 2175,
+    "pdfs_downloaded": 2175,
+    "pdfs_skipped_existing": 8544,
     "pdfs_capped": 0,
-    "errors": 9634
+    "errors": 9669
   },
-  "manifest_generated_at": "2026-08-02T00:12:03.924460+00:00"
+  "manifest_generated_at": "2026-08-02T00:14:04.699735+00:00"
 }
