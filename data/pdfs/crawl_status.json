@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:25:13.705496+00:00",
+  "updated_at": "2026-08-02T00:27:16.284751+00:00",
   "phase": "running",
-  "message": "downloaded 2620 new this run",
+  "message": "downloaded 2710 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 11542,
+    "pdfs": 11632,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -25,7 +25,7 @@
     },
     {
       "jurisdiction": "USA Federal",
-      "count": 554
+      "count": 644
     },
     {
       "jurisdiction": "Ontario",
@@ -135,7 +135,7 @@
     },
     {
       "source_kind": "official_gazette",
-      "count": 3999
+      "count": 4089
     }
   ],
   "current_source": {
@@ -145,108 +145,108 @@
   },
   "recent_pdfs": [
     {
-      "title": "Petition for Rulemaking of the National Consumers League, Campaign for Fairer Gambling, the National Council for Problem",
+      "title": "Airworthiness Directives; The Boeing Company Airplanes",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15182.pdf",
-      "downloaded_at": "2026-08-02T00:25:12.116106+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15072.pdf",
+      "downloaded_at": "2026-08-02T00:27:14.682076+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Center for Scientific Review; Notice of Closed Meeting",
+      "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limit",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15183.pdf",
-      "downloaded_at": "2026-08-02T00:25:11.503424+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15073.pdf",
+      "downloaded_at": "2026-08-02T00:27:14.014050+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Center for Scientific Review; Notice of Closed Meeting",
+      "title": "Medical Devices; Gastroenterology-Urology Devices; Classification of the Non-Medicated Topical Formulation for Treatment",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15184.pdf",
-      "downloaded_at": "2026-08-02T00:25:10.713788+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15074.pdf",
+      "downloaded_at": "2026-08-02T00:27:13.111771+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Cancer Clinical Trial Eligibility Criteria: Performance Status; Guidance for Industry, Institutional Review Boards, and ",
+      "title": "Medical Devices; General Hospital and Personal Use Devices; Classification of the Active Noise Attenuation System for In",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15185.pdf",
-      "downloaded_at": "2026-08-02T00:25:10.157724+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15075.pdf",
+      "downloaded_at": "2026-08-02T00:27:12.501581+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Cancer Clinical Trial Eligibility Criteria: Washout Periods and Concomitant Medications; Guidance for Industry, Institut",
+      "title": "EnergySolutions Services Inc.; Application To Amend and Renew; Current Export License",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15186.pdf",
-      "downloaded_at": "2026-08-02T00:25:09.541986+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15076.pdf",
+      "downloaded_at": "2026-08-02T00:27:11.887555+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Cancer Clinical Trial Eligibility Criteria: Laboratory Values; Guidance for Industry, Institutional Review Boards, and C",
+      "title": "Agency Forms Undergoing Paperwork Reduction Act Review",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15187.pdf",
-      "downloaded_at": "2026-08-02T00:25:06.966036+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15077.pdf",
+      "downloaded_at": "2026-08-02T00:27:09.293293+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "National Assessment Governing Board; Meeting; Correction",
+      "title": "Proposed Data Collection Submitted for Public Comment and Recommendations",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15188.pdf",
-      "downloaded_at": "2026-08-02T00:25:06.340696+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15078.pdf",
+      "downloaded_at": "2026-08-02T00:27:08.680740+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Req",
+      "title": "Application for Final Commitment for a Long-Term Loan or Financial Guarantee in Excess of $100 Million: AP300129XX",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15189.pdf",
-      "downloaded_at": "2026-08-02T00:25:05.721100+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15079.pdf",
+      "downloaded_at": "2026-08-02T00:27:08.069426+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Affirmative Asylum Referrals Without Interview",
+      "title": "Reducing Barriers to Medical Use Licensing",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15190.pdf",
-      "downloaded_at": "2026-08-02T00:25:05.048093+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15080.pdf",
+      "downloaded_at": "2026-08-02T00:27:07.519818+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Epyrifenacil; Pesticide Tolerances; Correction",
+      "title": "Agency Information Collection Activities: Comment Request on the Burden Related to the Requirements for Completing and S",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15191.pdf",
-      "downloaded_at": "2026-08-02T00:25:04.249839+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15081.pdf",
+      "downloaded_at": "2026-08-02T00:27:06.603410+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Perchloroethylene (PCE) and Carbon Tetrachloride (CTC); Regulation under the Toxic Substances Control Act (TSCA); Compli",
+      "title": "Agency Information Collection Activities: Comment Request on the Burden Related to the Disclosure of Returns and Return ",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15192.pdf",
-      "downloaded_at": "2026-08-02T00:25:01.673495+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15082.pdf",
+      "downloaded_at": "2026-08-02T00:27:04.065720+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Certain New Chemicals; Receipt and Status Information for April and May 2026",
+      "title": "Administrative Declaration of a Disaster for the Commonwealth of Pennsylvania",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15193.pdf",
-      "downloaded_at": "2026-08-02T00:25:00.999146+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15083.pdf",
+      "downloaded_at": "2026-08-02T00:27:03.454499+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Certain New Chemicals or Significant New Uses; Statements of Findings-April 2026",
+      "title": "TCPC SBIC LP; Surrender of License of Small Business Investment Company",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15194.pdf",
-      "downloaded_at": "2026-08-02T00:25:00.155154+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15084.pdf",
+      "downloaded_at": "2026-08-02T00:27:02.608063+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "International Product Change-Priority Mail Express International, Priority Mail International & First-Class Package Inte",
+      "title": "New Postal Products",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15195.pdf",
-      "downloaded_at": "2026-08-02T00:24:59.540040+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15085.pdf",
+      "downloaded_at": "2026-08-02T00:27:01.815026+00:00",
       "source_kind": "official_gazette"
     },
     {
-      "title": "Renewal of Agency Information Collection of a Previously Approved Collection; Request for Comments",
+      "title": "Presidential Declaration Amendment of a Major Disaster for the State of Louisiana",
       "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15196.pdf",
-      "downloaded_at": "2026-08-02T00:24:58.728404+00:00",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-27/pdf/2026-15086.pdf",
+      "downloaded_at": "2026-08-02T00:27:01.258402+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -376,11 +376,11 @@
     "sources_visited": 10,
     "pages_crawled": 2105,
     "js_pages": 145,
-    "pdfs_discovered": 2620,
-    "pdfs_downloaded": 2620,
-    "pdfs_skipped_existing": 8746,
+    "pdfs_discovered": 2710,
+    "pdfs_downloaded": 2710,
+    "pdfs_skipped_existing": 8766,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:25:12.116217+00:00"
+  "manifest_generated_at": "2026-08-02T00:27:14.682157+00:00"
 }
