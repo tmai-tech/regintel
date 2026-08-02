@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T15:26:14.748036+00:00",
-  "phase": "manual",
-  "message": "manual live_publish",
-  "run_id": "30753616423",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30753616423",
+  "updated_at": "2026-08-02T15:28:18.839346+00:00",
+  "phase": "running",
+  "message": "finished Saudi Arabia - CMA / ministry: +0 PDFs",
+  "run_id": "30754336905",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
   "totals": {
-    "pdfs": 12335,
+    "pdfs": 12325,
     "errors": 21664,
     "source_reports": 30,
     "jurisdictions": 30
@@ -41,7 +41,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "count": 90
+      "count": 80
     },
     {
       "jurisdiction": "India",
@@ -143,81 +143,17 @@
     },
     {
       "source_kind": "ministry",
-      "count": 90
+      "count": 80
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - CMA",
+    "source_kind": "ministry",
+    "url": "https://cma.org.sa",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 0
+  },
   "recent_pdfs": [
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%81%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%84%D8%A5%D9%86%D8%B4%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B7%D8%B1%D9%82%20%D9%88%D9%85%D9%86%D8%B4%D8%A2%D8%AA%D9%87%D8%A7.pdf",
-      "downloaded_at": "2026-08-02T15:25:00.542212+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%81%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%84%D9%84%D8%A7%D9%94%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%20%D8%AA%D9%85%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%81%D9%82%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:24:48.878804+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%95%D9%86%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B4%D9%88%D8%A7%D8%B1%D8%B9%20%D9%88%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D8%AF%D9%8A%D9%86.pdf",
-      "downloaded_at": "2026-08-02T15:24:40.152567+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%B4%20%D8%A7%D9%84%D9%81%D9%86%D9%8A%20%D9%84%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A.pdf",
-      "downloaded_at": "2026-08-02T15:24:37.785087+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-04/qrar-mjls-alwzra-rqm-550-alqady-balmwafqt-ly-jdwl-tsnyf-mkhalfat-astkhdam-almwaqf-fy-almwaq-altjaryt-walamakn-alamt_0.pdf",
-      "downloaded_at": "2026-08-02T15:24:36.402115+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-03/%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AC%D8%B1%20%D8%A7%D9%84%D9%85%D8%BA%D9%84%D9%82%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:24:31.788396+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2020-03/%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%B7%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%D9%84%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84.pdf",
-      "downloaded_at": "2026-08-02T15:23:54.429487+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "عرض",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2020-02/%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%B7%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%81%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%D8%A9%20%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AD%D8%A7%D8%AD%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%A2%D9%81%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%86%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A7%D8%AA%20.pdf",
-      "downloaded_at": "2026-08-02T15:23:49.122808+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2024-02/allayht-altnfydhyt-lnzam-ajraat-altrakhys-albldyt.pdf",
-      "downloaded_at": "2026-08-02T15:23:42.937722+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Show",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B1%D8%B3%D9%88%D9%85%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1%20%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-02T15:23:39.885987+00:00",
-      "source_kind": "ministry"
-    },
     {
       "title": "Show",
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -251,6 +187,76 @@
       "jurisdiction": "Saudi Arabia - MOMAH",
       "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D9%87%D9%86%D9%8A%D8%A9.pdf",
       "downloaded_at": "2026-08-02T15:22:38.466056+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Show",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3%20%D8%A7%D9%84%D8%A7%D9%94%D9%87%D9%84%D9%8A%D8%A9.pdf",
+      "downloaded_at": "2026-08-02T15:22:34.362541+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Show",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-06/jdwl-aljzaat-n-almkhalfat-albldyt.pdf",
+      "downloaded_at": "2026-08-02T15:22:32.689912+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Show",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2022-03/ashtratat-alhadnat-albldyt-llbat-aljaylyn.pdf",
+      "downloaded_at": "2026-08-02T15:22:20.229532+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "تنزيل الملف",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-10/tqryr-altwthyq-alalamy-llmshary-alrb-althalth-2023.pdf",
+      "downloaded_at": "2026-08-02T15:22:05.858849+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-05/owned-and-leased-buildings-2021.pdf",
+      "downloaded_at": "2026-08-02T15:21:57.137868+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-05/training-courses-and-workshops-for-the-year-2021.pdf",
+      "downloaded_at": "2026-08-02T15:21:53.696880+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-05/parks-and-green-spaces-for-the-year-2021.pdf",
+      "downloaded_at": "2026-08-02T15:21:53.053667+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-05/planted-trees-and-flowers-for-2021.pdf",
+      "downloaded_at": "2026-08-02T15:21:51.995131+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-06/the-fields-of-celebrations-at-the-end-of-2022.pdf",
+      "downloaded_at": "2026-08-02T15:21:51.357065+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PDF",
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "url": "https://momah.gov.sa/sites/default/files/2023-05/health-inspection-activities-2021.pdf",
+      "downloaded_at": "2026-08-02T15:21:50.694943+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -378,13 +384,13 @@
   ],
   "stats": {
     "sources_visited": 1,
-    "pages_crawled": 200,
-    "js_pages": 8,
-    "pdfs_discovered": 90,
-    "pdfs_downloaded": 90,
+    "pages_crawled": 1,
+    "js_pages": 1,
+    "pdfs_discovered": 0,
+    "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
-    "errors": 2
+    "errors": 0
   },
-  "manifest_generated_at": "2026-08-02T15:25:00.542315+00:00"
+  "manifest_generated_at": "2026-08-02T15:28:17.032189+00:00"
 }
