@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-02T00:34:15.988035+00:00",
+  "updated_at": "2026-08-02T00:39:13.639377+00:00",
   "phase": "running",
-  "message": "finished USA Federal / official_gazette: +0 PDFs",
+  "message": "downloaded 3080 new this run",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
-    "pdfs": 12000,
+    "pdfs": 12002,
     "errors": 21633,
     "source_reports": 16,
     "jurisdictions": 29
@@ -88,6 +88,10 @@
       "count": 3
     },
     {
+      "jurisdiction": "New York",
+      "count": 3
+    },
+    {
       "jurisdiction": "Delaware",
       "count": 3
     },
@@ -116,10 +120,6 @@
       "count": 2
     },
     {
-      "jurisdiction": "New York",
-      "count": 1
-    },
-    {
       "jurisdiction": "Vietnam",
       "count": 1
     },
@@ -131,7 +131,7 @@
   "by_source_kind": [
     {
       "source_kind": "parliamentary_bills",
-      "count": 7543
+      "count": 7545
     },
     {
       "source_kind": "official_gazette",
@@ -139,13 +139,25 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "USA Federal",
-    "source_kind": "official_gazette",
-    "url": "https://www.ecfr.gov/",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "jurisdiction": "New York",
+    "source_kind": "parliamentary_bills",
+    "url": "https://nyassembly.gov/leg/?sh=hear"
   },
   "recent_pdfs": [
+    {
+      "title": "View Printable Calendar",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/write/upload/phcal/PHCal.pdf",
+      "downloaded_at": "2026-08-02T00:39:11.953410+00:00",
+      "source_kind": "parliamentary_bills"
+    },
+    {
+      "title": "View cable systems that carry NYS Legislative Proceedings",
+      "jurisdiction": "New York",
+      "url": "https://nyassembly.gov/av/cable.pdf",
+      "downloaded_at": "2026-08-02T00:39:10.989029+00:00",
+      "source_kind": "parliamentary_bills"
+    },
     {
       "title": "International Product Change-Priority Mail Express International, Priority Mail International & First-Class Package Inte",
       "jurisdiction": "USA Federal",
@@ -235,20 +247,6 @@
       "jurisdiction": "USA Federal",
       "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14705.pdf",
       "downloaded_at": "2026-08-02T00:33:51.607019+00:00",
-      "source_kind": "official_gazette"
-    },
-    {
-      "title": "Notice of OFAC Sanctions Action",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14706.pdf",
-      "downloaded_at": "2026-08-02T00:33:48.925461+00:00",
-      "source_kind": "official_gazette"
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission for Office of Management and Budget Review; Comment Request; Premar",
-      "jurisdiction": "USA Federal",
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-22/pdf/2026-14707.pdf",
-      "downloaded_at": "2026-08-02T00:33:47.649816+00:00",
       "source_kind": "official_gazette"
     }
   ],
@@ -375,14 +373,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 11,
-    "pages_crawled": 2107,
-    "js_pages": 145,
-    "pdfs_discovered": 3078,
-    "pdfs_downloaded": 3078,
+    "sources_visited": 12,
+    "pages_crawled": 2407,
+    "js_pages": 152,
+    "pdfs_discovered": 3080,
+    "pdfs_downloaded": 3080,
     "pdfs_skipped_existing": 8766,
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:34:14.339592+00:00"
+  "manifest_generated_at": "2026-08-02T00:39:11.953509+00:00"
 }

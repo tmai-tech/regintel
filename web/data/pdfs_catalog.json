@@ -1,5 +1,53 @@
 [
   {
+    "id": "6d7c29ff36f5bbbe",
+    "title": "View Printable Calendar",
+    "filename": "PHCal.pdf",
+    "jurisdiction": "New York",
+    "source_kind": "parliamentary_bills",
+    "law_type": "procedural",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "nyassembly.gov",
+    "filename_tags": [],
+    "source_page": "https://nyassembly.gov/leg/?sh=hear",
+    "url": "https://nyassembly.gov/write/upload/phcal/PHCal.pdf",
+    "open_url": "https://nyassembly.gov/write/upload/phcal/PHCal.pdf",
+    "download_url": null,
+    "bytes": 925813,
+    "sha256": "6d7c29ff36f5bbbe",
+    "downloaded_at": "2026-08-02T00:39:11.953410+00:00",
+    "local_path": "data/pdfs/New_York/parliamentary_bills/PHCal.pdf"
+  },
+  {
+    "id": "80128c4da383d855",
+    "title": "View cable systems that carry NYS Legislative Proceedings",
+    "filename": "cable.pdf",
+    "jurisdiction": "New York",
+    "source_kind": "parliamentary_bills",
+    "law_type": "bill",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "en",
+    "status": "downloaded",
+    "host": "nyassembly.gov",
+    "filename_tags": [],
+    "source_page": "https://nyassembly.gov/av/",
+    "url": "https://nyassembly.gov/av/cable.pdf",
+    "open_url": "https://nyassembly.gov/av/cable.pdf",
+    "download_url": null,
+    "bytes": 14944,
+    "sha256": "80128c4da383d855",
+    "downloaded_at": "2026-08-02T00:39:10.989029+00:00",
+    "local_path": "data/pdfs/New_York/parliamentary_bills/cable.pdf"
+  },
+  {
     "id": "b1a963623ba0b852",
     "title": "International Product Change-Priority Mail Express International, Priority Mail International & First-Class Package International Service Agreement",
     "filename": "2026-14695.pdf",

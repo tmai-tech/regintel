@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:34:14.339592+00:00",
+  "generated_at": "2026-08-02T00:39:11.953509+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -156000,6 +156000,32 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T00:34:03.994478+00:00"
+    },
+    {
+      "url": "https://nyassembly.gov/av/cable.pdf",
+      "jurisdiction": "New York",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://nyassembly.gov/av/",
+      "title": "View cable systems that carry NYS Legislative Proceedings",
+      "path": "data/pdfs/New_York/parliamentary_bills/cable.pdf",
+      "bytes": 14944,
+      "sha256": "80128c4da383d855",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:39:10.989029+00:00"
+    },
+    {
+      "url": "https://nyassembly.gov/write/upload/phcal/PHCal.pdf",
+      "jurisdiction": "New York",
+      "source_kind": "parliamentary_bills",
+      "source_page": "https://nyassembly.gov/leg/?sh=hear",
+      "title": "View Printable Calendar",
+      "path": "data/pdfs/New_York/parliamentary_bills/PHCal.pdf",
+      "bytes": 925813,
+      "sha256": "6d7c29ff36f5bbbe",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-02T00:39:11.953410+00:00"
     }
   ],
   "discovered": [
@@ -293831,11 +293857,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 11,
-    "pages_crawled": 2107,
-    "js_pages": 145,
-    "pdfs_discovered": 3078,
-    "pdfs_downloaded": 3078,
+    "sources_visited": 12,
+    "pages_crawled": 2407,
+    "js_pages": 152,
+    "pdfs_discovered": 3080,
+    "pdfs_downloaded": 3080,
     "pdfs_skipped_existing": 8766,
     "pdfs_capped": 0,
     "errors": 9676
