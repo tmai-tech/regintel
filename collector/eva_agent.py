@@ -60,19 +60,37 @@ def tokenize(s: str) -> set[str]:
 
 
 def is_meta_question(q: str) -> bool:
-    s = (q or "").lower().strip()
+    s = (q or "").lower().strip().replace("’", "'")
     if not s:
         return False
-    if re.match(r"^(status|progress|update|hello|hi|hey)[\s?!.,]*$", s):
+    if re.match(r"^(status|progress|update|hello|hi|hey|thanks|thank you)[\s?!.,]*$", s):
+        return True
+    process = (
+        r"(read|reading|extract|extracting|index|indexing|process|processing|"
+        r"summariz(?:e|ing)?|crawl(?:ing)?|download(?:ing)?|fetch(?:ing)?)"
+    )
+    if re.search(rf"\b(will|are|do|can|could|would)\s+you\b", s) and re.search(process, s):
+        return True
+    if (
+        re.search(process, s)
+        and re.search(r"\b(more|additional|new|further)\b", s)
+        and re.search(r"\b(pdfs?|documents?|files?|summaries|data)\b", s)
+    ):
+        return True
+    if re.search(r"\b(more|additional)\s+(pdfs?|documents?|files?)\b", s):
+        return True
+    if re.search(r"\bhow many\b", s) and re.search(r"\b(pdfs?|summaries|documents?)\b", s):
+        return True
+    if re.search(r"\b(are you|do you)\b", s) and re.search(process, s):
+        return True
+    if re.search(r"\bhave you (read|finished|done|indexed|extracted)\b", s):
         return True
     patterns = [
-        r"\bare you (still )?(reading|indexing|processing|summarizing)",
-        r"\b(how many|what('?s| is) (your|the) (count|status|coverage))",
-        r"\b(are you|do you) (reading|indexing|processing) more",
-        r"\b(still )?(working|running|crawling|indexing)\b",
-        r"\b(who are you|what (can|do) you do|what is eva|hello|hi\b|hey\b)",
-        r"\bhave you read\b",
+        r"\b(still )?(working|running|crawling|indexing|extracting)\b",
+        r"\b(progress|update me|status|coverage)\b",
+        r"\b(who are you|what (can|do) you do|what is eva)\b",
         r"\bknowledge base\b",
+        r"\b(keep|continue)\s+(reading|extracting|indexing)\b",
     ]
     return any(re.search(p, s) for p in patterns)
 

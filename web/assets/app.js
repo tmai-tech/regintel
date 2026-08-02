@@ -244,22 +244,47 @@
 
   /** Questions about Eva herself / indexing status — not about bill content. */
   function isEvaMetaQuestion(q) {
-    const s = String(q || "").toLowerCase().trim();
+    const s = String(q || "")
+      .toLowerCase()
+      .trim()
+      .replace(/[’']/g, "'");
     if (!s) return false;
-    const patterns = [
-      /\bare you (still )?(reading|indexing|processing|summarizing)/,
-      /\b(how many|what('?s| is) (your|the) (count|status|coverage))/,
-      /\b(are you|do you) (reading|indexing|processing) more/,
-      /\b(still )?(working|running|crawling|indexing)\b/,
-      /\b(how much|progress|update me|status)\b/,
-      /\b(who are you|what (can|do) you do|what is eva|hello|hi\b|hey\b)/,
-      /\b(thank(s| you)|help)\b/,
-      /\bhave you read\b/,
-      /\bknowledge base\b/,
-      /\b(more )?pdfs?\??\s*$/,
-    ];
+
     // short status-like
-    if (/^(status|progress|update|hello|hi|hey)[\s?!.,]*$/i.test(s)) return true;
+    if (/^(status|progress|update|hello|hi|hey|thanks|thank you)[\s?!.,]*$/i.test(s)) {
+      return true;
+    }
+
+    // "will/are/do/can you … extract/read/index more pdfs?"
+    const processVerb =
+      /(read|reading|extract|extracting|index|indexing|process|processing|summariz(?:e|ing)?|crawl(?:ing)?|download(?:ing)?|fetch(?:ing)?|scrape|scraping|ingest(?:ing)?)/;
+    if (
+      /\b(will|are|do|can|could|would|shall)\s+you\b/.test(s) &&
+      processVerb.test(s)
+    ) {
+      return true;
+    }
+    // "extracting more pdfs", "more documents", "reading more"
+    if (
+      processVerb.test(s) &&
+      /\b(more|additional|new|other|further)\b/.test(s) &&
+      /\b(pdfs?|documents?|files?|bills?|summaries|data)\b/.test(s)
+    ) {
+      return true;
+    }
+    if (/\b(more|additional)\s+(pdfs?|documents?|files?)\b/.test(s)) return true;
+    if (/\bhow many\b/.test(s) && /\b(pdfs?|summaries|documents?)\b/.test(s)) return true;
+    if (/\b(are you|do you)\b/.test(s) && processVerb.test(s)) return true;
+    if (/\bhave you (read|finished|done|indexed|extracted)\b/.test(s)) return true;
+
+    const patterns = [
+      /\b(still )?(working|running|crawling|indexing|extracting)\b/,
+      /\b(how much|progress|update me|status|coverage)\b/,
+      /\b(who are you|what (can|do) you do|what is eva)\b/,
+      /\b(thank(s| you)|help me)\b/,
+      /\bknowledge base\b/,
+      /\b(keep|continue)\s+(reading|extracting|indexing|processing)\b/,
+    ];
     return patterns.some((re) => re.test(s));
   }
 
