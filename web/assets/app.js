@@ -150,7 +150,6 @@
       pdfs: document.getElementById("panelPdfs"),
       crawl: document.getElementById("panelCrawl"),
       ministries: document.getElementById("panelMinistries"),
-      eva: document.getElementById("panelEva"),
     };
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -301,18 +300,56 @@
     const form = document.getElementById("evaForm");
     const input = document.getElementById("evaInput");
     const metaEl = document.getElementById("evaMeta");
-    if (!chat || !form) return;
+    const fab = document.getElementById("evaFab");
+    const panel = document.getElementById("evaPanel");
+    const closeBtn = document.getElementById("evaClose");
+    const widget = document.getElementById("evaWidget");
+    if (!chat || !form || !fab || !panel) return;
 
     const corpus = Array.isArray(summaries) ? summaries : [];
     const count = corpus.length;
-    const llmHint = meta && meta.llm_available ? "LLM summaries available" : "extractive / offline index";
+    const llmHint =
+      meta && meta.llm_available ? "LLM index ready" : count ? count + " summaries" : "indexing…";
     if (metaEl) {
-      metaEl.textContent = `Eva · ${count} PDF summaries indexed · ${llmHint}`;
+      metaEl.textContent = llmHint;
+    }
+
+    let greeted = false;
+
+    function setOpen(open) {
+      panel.hidden = !open;
+      fab.setAttribute("aria-expanded", open ? "true" : "false");
+      if (widget) widget.classList.toggle("eva-open", open);
+      if (open) {
+        if (!greeted) {
+          greeted = true;
+          addBubble(
+            "bot",
+            count
+              ? `Hi, I’m Eva — your legal research assistant. I’ve read ${count} PDF summary(ies). Ask about any bill, regulation, or topic; I’ll cite the source PDFs.`
+              : "Hi, I’m Eva — your legal research assistant. PDF summaries are still being built. You can still ask; coverage grows as indexing finishes.",
+          );
+        }
+        setTimeout(() => input && input.focus(), 50);
+      }
+    }
+
+    fab.addEventListener("click", () => {
+      setOpen(panel.hidden);
+    });
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => setOpen(false));
     }
 
     function addBubble(role, text, citations) {
       const div = document.createElement("div");
       div.className = "eva-bubble eva-" + role;
+      if (role === "bot") {
+        const who = document.createElement("div");
+        who.className = "eva-who";
+        who.textContent = "👩‍⚖️ Eva";
+        div.appendChild(who);
+      }
       const body = document.createElement("div");
       body.className = "eva-bubble-text";
       body.textContent = text;
@@ -342,21 +379,24 @@
       chat.scrollTop = chat.scrollHeight;
     }
 
-    addBubble(
-      "bot",
-      count
-        ? `Hi, I’m Eva. I’ve indexed ${count} PDF summaries. Ask me about bills, regulations, or topics — I’ll answer with references to the source PDFs.`
-        : "Hi, I’m Eva. No PDF summaries are published yet. Run collector/eva_summarize.py (with optional XAI_API_KEY) to build my knowledge base.",
-    );
-
     async function handleAsk(q) {
       addBubble("user", q);
-      // Prefer optional local Eva API (LLM synthesis)
-      const apiBase =
-        (window.REGINTEL_EVA_API || localStorage.getItem("regintel_eva_api") || "").replace(
-          /\/$/,
-          "",
-        );
+      const typing = document.createElement("div");
+      typing.className = "eva-bubble eva-bot eva-typing";
+      typing.textContent = "Eva is reading…";
+      chat.appendChild(typing);
+      chat.scrollTop = chat.scrollHeight;
+
+      const finish = (answer, citations) => {
+        typing.remove();
+        addBubble("bot", answer || "No answer.", citations || []);
+      };
+
+      const apiBase = (
+        window.REGINTEL_EVA_API ||
+        localStorage.getItem("regintel_eva_api") ||
+        ""
+      ).replace(/\/$/, "");
       if (apiBase) {
         try {
           const res = await fetch(apiBase + "/api/eva/ask", {
@@ -366,16 +406,16 @@
           });
           if (res.ok) {
             const data = await res.json();
-            addBubble("bot", data.answer || "No answer.", data.citations || []);
+            finish(data.answer, data.citations || []);
             return;
           }
         } catch {
-          /* fall through to local retrieval */
+          /* fall through */
         }
       }
       const hits = retrieveEva(q, corpus, 6);
       const out = evaAnswerLocal(q, hits);
-      addBubble("bot", out.answer, out.citations);
+      finish(out.answer, out.citations);
     }
 
     form.addEventListener("submit", (e) => {
@@ -383,6 +423,7 @@
       const q = (input.value || "").trim();
       if (!q) return;
       input.value = "";
+      if (panel.hidden) setOpen(true);
       handleAsk(q);
     });
   }
