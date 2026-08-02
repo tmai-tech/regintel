@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-02T00:18:07.167217+00:00",
+  "updated_at": "2026-08-02T00:19:02.639237+00:00",
   "phase": "running",
-  "message": "finished Manitoba / official_gazette: +179 PDFs",
+  "message": "finished USA Federal / parliamentary_bills: +0 PDFs",
   "run_id": "30709374850",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30709374850",
   "totals": {
@@ -139,11 +139,11 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Manitoba",
-    "source_kind": "official_gazette",
-    "url": "https://www.gov.mb.ca/legislature/hansard/gazette.html",
-    "pdfs_downloaded": 179,
-    "pdfs_candidates": 232
+    "jurisdiction": "USA Federal",
+    "source_kind": "parliamentary_bills",
+    "url": "https://www.congress.gov/bill",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 0
   },
   "recent_pdfs": [
     {
@@ -375,8 +375,8 @@
     }
   ],
   "stats": {
-    "sources_visited": 8,
-    "pages_crawled": 2101,
+    "sources_visited": 9,
+    "pages_crawled": 2102,
     "js_pages": 145,
     "pdfs_discovered": 2298,
     "pdfs_downloaded": 2298,
@@ -384,5 +384,5 @@
     "pdfs_capped": 0,
     "errors": 9676
   },
-  "manifest_generated_at": "2026-08-02T00:18:05.624933+00:00"
+  "manifest_generated_at": "2026-08-02T00:19:01.089165+00:00"
 }
