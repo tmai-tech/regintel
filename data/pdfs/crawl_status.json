@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-02T18:52:20.137876+00:00",
-  "phase": "running",
-  "message": "finished Saudi Arabia - Nazaha / ministry: +0 PDFs",
-  "run_id": "30754336905",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30754336905",
+  "updated_at": "2026-08-02T21:28:54.686289+00:00",
+  "phase": "starting",
+  "message": "crawl starting",
+  "run_id": "30766741145",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30766741145",
   "totals": {
     "pdfs": 12805,
     "errors": 22091,
@@ -170,13 +170,7 @@
       "count": 560
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - Nazaha",
-    "source_kind": "ministry",
-    "url": "https://nazaha.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "embedded-url",
@@ -407,14 +401,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 12,
-    "pages_crawled": 1327,
-    "js_pages": 246,
-    "pdfs_discovered": 480,
-    "pdfs_downloaded": 480,
-    "pdfs_skipped_existing": 57,
+    "sources_visited": 0,
+    "pages_crawled": 0,
+    "js_pages": 0,
+    "pdfs_discovered": 0,
+    "pdfs_downloaded": 0,
+    "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
-    "errors": 427
+    "errors": 0
   },
-  "manifest_generated_at": "2026-08-02T18:52:18.257841+00:00"
+  "manifest_generated_at": "2026-08-02T21:28:52.792569+00:00"
 }
