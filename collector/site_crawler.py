@@ -125,12 +125,13 @@ class PlaywrightRenderer:
         self._playwright = sync_playwright().start()
         self._browser = self._playwright.chromium.launch(headless=True)
 
-    def render(self, url: str, *, wait_ms: int = 2000, timeout_ms: int = 45000) -> tuple[str, str]:
+    def render(self, url: str, *, wait_ms: int = 800, timeout_ms: int = 15000) -> tuple[str, str]:
+        """Faster defaults: domcontentloaded + short wait (was networkidle/45s — too slow for 21 ministries)."""
         self._ensure()
         assert self._browser is not None
         page = self._browser.new_page(user_agent=self.user_agent)
         try:
-            page.goto(url, timeout=timeout_ms, wait_until="networkidle")
+            page.goto(url, timeout=timeout_ms, wait_until="domcontentloaded")
             page.wait_for_timeout(wait_ms)
             html = page.content()
             final = page.url
@@ -171,6 +172,7 @@ class SiteCrawler:
         log: Callable[[str], None] | None = None,
         extra_seed_paths: list[str] | None = None,
         regulatory_focus: bool = False,
+        should_stop: Callable[[], bool] | None = None,
     ):
         self.max_pages = max_pages
         self.delay = delay
@@ -183,6 +185,7 @@ class SiteCrawler:
         self.extra_seed_paths = extra_seed_paths or []
         # Prefer laws/regulations paths; skip news/media/careers BFS branches
         self.regulatory_focus = regulatory_focus
+        self.should_stop = should_stop
 
         self._session = None
         self._renderer: PlaywrightRenderer | None = None
@@ -346,6 +349,12 @@ class SiteCrawler:
 
         try:
             while queue and len(visited) < self.max_pages:
+                if self.should_stop and self.should_stop():
+                    self.log(
+                        f"  [stop] time/budget — ending BFS after {len(visited)} pages "
+                        f"({len(result.docs)} docs so far)"
+                    )
+                    break
                 # always take highest priority currently at left; re-sort lightly
                 # (appendleft for prio 0 keeps legal pages ahead of bulk)
                 _prio, url = queue.popleft()

@@ -212,6 +212,8 @@ class GazettePdfCollector:
         time_budget_minutes: int = 0,
         git_push: bool | None = None,
         regulatory_only: bool = False,
+        max_minutes_per_source: int = 0,
+        skip_if_pdfs: int = 0,
     ):
         # 0 = unlimited PDFs per source
         self.max_pdfs_per_source = max_pdfs_per_source
@@ -229,7 +231,12 @@ class GazettePdfCollector:
         self.git_push = git_push
         # ministry / SA mode: only keep laws, regulations, decrees, circulars…
         self.regulatory_only = regulatory_only
+        # Hard cap per ministry so all 21 links get a turn in one GHA run
+        self.max_minutes_per_source = max(0, max_minutes_per_source)
+        # Skip source if catalog already has this many PDFs for its jurisdiction
+        self.skip_if_pdfs = max(0, skip_if_pdfs)
         self._started_at = time.time()
+        self._source_deadline: float | None = None
         self._downloads_since_publish = 0
         self._stop_requested = False
 
@@ -292,9 +299,17 @@ class GazettePdfCollector:
             pass
 
     def budget_exceeded(self) -> bool:
-        if self.time_budget_minutes <= 0:
-            return False
-        return (time.time() - self._started_at) >= self.time_budget_minutes * 60
+        if self.time_budget_minutes > 0:
+            if (time.time() - self._started_at) >= self.time_budget_minutes * 60:
+                return True
+        if self._source_deadline is not None and time.time() >= self._source_deadline:
+            return True
+        return False
+
+    def source_time_exceeded(self) -> bool:
+        return (
+            self._source_deadline is not None and time.time() >= self._source_deadline
+        )
 
     def _publish(
         self,
@@ -531,18 +546,30 @@ class GazettePdfCollector:
         )
 
         reg_focus = self.regulatory_only or source_kind == "ministry"
+        if self.max_minutes_per_source > 0:
+            self._source_deadline = time.time() + self.max_minutes_per_source * 60
+            self.log(
+                f"  [cap] max {self.max_minutes_per_source} min for this source "
+                f"(so remaining ministries still get a turn)"
+            )
+        else:
+            self._source_deadline = None
+
         crawler = SiteCrawler(
             max_pages=self.max_pages,
             delay=self.delay,
-            timeout=self.timeout,
+            timeout=min(self.timeout, 12.0) if reg_focus else self.timeout,
             pdf_only=True,
             use_playwright=self.use_playwright,
             same_site_only=True,
             log=self.log,
             extra_seed_paths=list(MINISTRY_LEGAL_SEED_PATHS) if reg_focus else None,
             regulatory_focus=reg_focus,
+            should_stop=lambda: self.budget_exceeded() or self.source_time_exceeded(),
         )
         crawl = crawler.crawl(page_url)
+        # clear per-source deadline after BFS (downloads may still run briefly)
+        source_over = self.source_time_exceeded()
         report["pages_crawled"] = crawl.pages_visited
         report["js_pages"] = crawl.js_pages
         self.stats["pages_crawled"] += crawl.pages_visited
@@ -663,7 +690,12 @@ class GazettePdfCollector:
         )
 
         for d in docs:
-            if self.budget_exceeded():
+            if self.source_time_exceeded():
+                self.log("  [source-cap] time up for this ministry — moving on")
+                break
+            if self.time_budget_minutes > 0 and (
+                time.time() - self._started_at
+            ) >= self.time_budget_minutes * 60:
                 self._stop_requested = True
                 self.log("  [time-budget] stopping downloads for this run")
                 break
@@ -691,11 +723,14 @@ class GazettePdfCollector:
                 save_manifest(self.manifest)
 
         report["pdfs_downloaded"] = downloaded_here
+        if source_over or self.source_time_exceeded():
+            report["error"] = report.get("error") or "source_time_cap"
         if crawl.empty_streak_warning:
             report["error"] = "possible_rate_limit"
         if crawl.errors and not docs:
             report["error"] = crawl.errors[0][:200]
         self.source_reports.append(report)
+        self._source_deadline = None
         self.log(
             f"  source result: {downloaded_here} new / "
             f"{attempts} attempts / {len(docs)} candidates"
@@ -764,8 +799,20 @@ class GazettePdfCollector:
                 + ("…" if len(order) > 12 else "")
             )
 
+        from collections import Counter as _Counter
+
+        already_counts = _Counter(
+            str(d.get("jurisdiction") or "")
+            for d in (self.manifest.get("downloads") or [])
+            if not d.get("dry_run")
+        )
+        visited_ok = 0
+        skipped_done = 0
         for extra in extras:
-            if self.budget_exceeded():
+            # Only stop the whole run on GLOBAL time budget — not per-source cap
+            if self.time_budget_minutes > 0 and (
+                time.time() - self._started_at
+            ) >= self.time_budget_minutes * 60:
                 self._stop_requested = True
                 self.log("[time-budget] exceeded — pausing (resume-safe next run)")
                 break
@@ -774,10 +821,30 @@ class GazettePdfCollector:
                 continue
             if not url.startswith("http"):
                 url = "https://" + url.lstrip("/")
+            jur = extra.get("jurisdiction") or "AdHoc"
+            if self.skip_if_pdfs > 0 and already_counts.get(jur, 0) >= self.skip_if_pdfs:
+                skipped_done += 1
+                self.log(
+                    f"\n==> [skip] {jur}: already have {already_counts[jur]} PDFs "
+                    f"(skip_if_pdfs={self.skip_if_pdfs}) — covering other ministries first"
+                )
+                continue
             self._crawl_source(
                 url=url,
-                jurisdiction=extra.get("jurisdiction") or "AdHoc",
+                jurisdiction=jur,
                 source_kind=extra.get("source_kind") or "custom",
+            )
+            visited_ok += 1
+            # refresh count after crawl
+            already_counts = _Counter(
+                str(d.get("jurisdiction") or "")
+                for d in (self.manifest.get("downloads") or [])
+                if not d.get("dry_run")
+            )
+        if extras:
+            self.log(
+                f"[list] visited {visited_ok}/{len(extras)} sources "
+                f"(skipped already-covered: {skipped_done})"
             )
 
         if not self.skip_gazette and not self._stop_requested:
@@ -881,6 +948,20 @@ def main():
         help="Only download law/regulation/decree/circular PDFs; skip IoT, "
         "workshops, newsletters, marketing (recommended for ministry crawls)",
     )
+    p.add_argument(
+        "--max-minutes-per-source",
+        type=int,
+        default=0,
+        help="Hard time cap per ministry/source (minutes). "
+        "Ensures all list URLs get a turn (e.g. 8 for 21 Saudi links).",
+    )
+    p.add_argument(
+        "--skip-if-pdfs",
+        type=int,
+        default=0,
+        help="Skip a jurisdiction if it already has this many PDFs in the "
+        "manifest (0=never skip). Use e.g. 8 so empty ministries are filled first.",
+    )
     # backwards-compat aliases (ignored or mapped)
     p.add_argument("--max-follow-pages", type=int, default=None, help=argparse.SUPPRESS)
     p.add_argument("--max-list-pages", type=int, default=None, help=argparse.SUPPRESS)
@@ -911,6 +992,15 @@ def main():
     # Ministry / --url-only lists default to regulatory filter (laws not IoT junk)
     regulatory_only = bool(args.regulatory_only or args.url_only)
 
+    # For ministry lists: default 8 min/source + skip if already has 5 PDFs
+    max_min_src = args.max_minutes_per_source
+    skip_if = args.skip_if_pdfs
+    if args.url_only:
+        if max_min_src <= 0:
+            max_min_src = 8
+        if skip_if <= 0:
+            skip_if = 5
+
     collector = GazettePdfCollector(
         max_pdfs_per_source=args.max_pdfs_per_source,
         max_pages=max_pages,
@@ -926,6 +1016,8 @@ def main():
         time_budget_minutes=args.time_budget_minutes,
         git_push=git_push,
         regulatory_only=regulatory_only,
+        max_minutes_per_source=max_min_src,
+        skip_if_pdfs=skip_if,
     )
     try:
         collector.run()

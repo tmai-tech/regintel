@@ -18,21 +18,21 @@ on:
         required: false
         default: "saudi_ministries"
       max_pages:
-        description: "BFS pages per source URL (keep low for ministry legal focus)"
+        description: "BFS pages per source URL (keep low so all 21 finish)"
         required: false
-        default: "80"
+        default: "40"
       time_budget_minutes:
         description: "Stop after N minutes (leave headroom under 6h job limit)"
         required: false
-        default: "280"
+        default: "200"
       max_pdfs_per_source:
         description: "Max NEW regulatory PDFs per ministry (0=unlimited)"
         required: false
-        default: "40"
+        default: "25"
       delay:
         description: "Seconds between requests"
         required: false
-        default: "0.25"
+        default: "0.2"
       include_legal_db:
         description: "Also crawl legal_databases column (true/false)"
         required: false
@@ -120,17 +120,22 @@ jobs:
           fi
           MODE="${MODE:-saudi_ministries}"
 
-          # Saudi ministry defaults: shallow legal-focused crawl, not 300-page junk BFS
+          # Saudi: finish ALL 21 links in one run (hard per-ministry time cap)
           if [ "$MODE" = "saudi_ministries" ]; then
-            MAX_PAGES="${MAX_PAGES:-80}"
-            MAX_PDFS="${MAX_PDFS:-40}"
-            DELAY="${DELAY:-0.25}"
+            MAX_PAGES="${MAX_PAGES:-40}"
+            MAX_PDFS="${MAX_PDFS:-25}"
+            DELAY="${DELAY:-0.2}"
+            # 21 * ~8 min = ~3h, plus overhead — under 6h GHA limit
+            PER_SRC_MIN=8
+            SKIP_IF=5
           else
             MAX_PAGES="${MAX_PAGES:-200}"
             MAX_PDFS="${MAX_PDFS:-0}"
             DELAY="${DELAY:-0.35}"
+            PER_SRC_MIN=0
+            SKIP_IF=0
           fi
-          BUDGET="${BUDGET:-280}"
+          BUDGET="${BUDGET:-200}"
 
           # git identity for live_publish pushes during the run
           git config user.name "github-actions[bot]"
@@ -138,13 +143,20 @@ jobs:
 
           EXTRA=()
           if [ "$MODE" = "saudi_ministries" ]; then
-            echo "=== Priority crawl: Saudi ministries (regulatory PDFs only) ==="
+            echo "=== Saudi ministries: visit ALL 21 links (regulatory only) ==="
             test -f data/saudi_ministries_links.txt
             echo "--- data/saudi_ministries_links.txt ---"
             cat data/saudi_ministries_links.txt
             echo "--------------------------------------"
-            echo "max_pages=$MAX_PAGES max_pdfs=$MAX_PDFS delay=$DELAY (regulatory filter ON)"
-            EXTRA+=(--url-only --from-file data/saudi_ministries_links.txt --regulatory-only)
+            echo "max_pages=$MAX_PAGES max_pdfs=$MAX_PDFS delay=$DELAY"
+            echo "max_minutes_per_source=$PER_SRC_MIN skip_if_pdfs=$SKIP_IF budget=${BUDGET}m"
+            EXTRA+=(
+              --url-only
+              --from-file data/saudi_ministries_links.txt
+              --regulatory-only
+              --max-minutes-per-source "$PER_SRC_MIN"
+              --skip-if-pdfs "$SKIP_IF"
+            )
           else
             echo "=== Global gazette sheet crawl (mode=$MODE) ==="
             if [ "$LEGAL" = "true" ]; then
