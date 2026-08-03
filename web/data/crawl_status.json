@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-03T17:36:09.745469+00:00",
-  "phase": "running",
-  "message": "finished Saudi Arabia - SAIP / ministry: +0 PDFs",
+  "updated_at": "2026-08-03T17:36:21.540137+00:00",
+  "phase": "paused",
+  "message": "crawl finished or paused",
   "run_id": "30809390819",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30809390819",
   "totals": {
     "pdfs": 12807,
     "errors": 22117,
-    "source_reports": 37,
+    "source_reports": 43,
     "jurisdictions": 37
   },
   "by_jurisdiction": [
@@ -174,13 +174,7 @@
       "count": 562
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - SAIP",
-    "source_kind": "ministry",
-    "url": "https://www.saip.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 73
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
@@ -290,66 +284,6 @@
   ],
   "last_source_reports": [
     {
-      "jurisdiction": "USA Federal",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.federalregister.gov",
-      "pages_crawled": 3,
-      "js_pages": 0,
-      "pdfs_candidates": 1000,
-      "pdfs_downloaded": 780,
-      "error": null
-    },
-    {
-      "jurisdiction": "USA Federal",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.ecfr.gov/",
-      "pages_crawled": 2,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "New York",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://nyassembly.gov/leg/",
-      "pages_crawled": 300,
-      "js_pages": 7,
-      "pdfs_candidates": 164,
-      "pdfs_downloaded": 127,
-      "error": null
-    },
-    {
-      "jurisdiction": "New York",
-      "source_kind": "official_gazette",
-      "source_url": "https://dos.ny.gov/state-register",
-      "pages_crawled": 1,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": "[1] ERROR https://dos.ny.gov/state-register -> HTTP 403 ct=text/html; charset=UTF-8"
-    },
-    {
-      "jurisdiction": "Delaware",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://legis.delaware.gov/",
-      "pages_crawled": 300,
-      "js_pages": 32,
-      "pdfs_candidates": 149,
-      "pdfs_downloaded": 118,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - CMA",
-      "source_kind": "ministry",
-      "source_url": "https://cma.org.sa",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
       "jurisdiction": "Saudi Arabia - CST",
       "source_kind": "ministry",
       "source_url": "https://www.cst.gov.sa",
@@ -408,6 +342,66 @@
       "pdfs_candidates": 73,
       "pdfs_downloaded": 0,
       "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - CMA",
+      "source_kind": "ministry",
+      "source_url": "https://cma.org.sa",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - GAC",
+      "source_kind": "ministry",
+      "source_url": "https://gac.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOI",
+      "source_kind": "ministry",
+      "source_url": "https://www.moi.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://www.moi.gov.sa -> timed out"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "source_kind": "ministry",
+      "source_url": "https://www.moj.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://www.moj.gov.sa -> [Errno 101] Network is unreachable"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - Nazaha",
+      "source_kind": "ministry",
+      "source_url": "https://nazaha.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://nazaha.gov.sa -> [Errno 101] Network is unreachable"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "source_kind": "ministry",
+      "source_url": "https://www.saip.gov.sa",
+      "pages_crawled": 210,
+      "js_pages": 11,
+      "pdfs_candidates": 73,
+      "pdfs_downloaded": 0,
+      "error": null
     }
   ],
   "stats": {
@@ -420,5 +414,5 @@
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T17:36:07.892891+00:00"
+  "manifest_generated_at": "2026-08-03T17:36:19.669712+00:00"
 }
