@@ -50,10 +50,22 @@ try:
     from collector.site_crawler import SiteCrawler, FoundDoc, DEFAULT_UA
     from collector import site_adapters
     from collector import live_publish
+    from collector.pdf_relevance import (
+        MINISTRY_LEGAL_SEED_PATHS,
+        filter_regulatory_docs,
+        is_regulatory_pdf,
+        regulatory_score,
+    )
 except ImportError:
     from site_crawler import SiteCrawler, FoundDoc, DEFAULT_UA  # type: ignore
     import site_adapters  # type: ignore
     import live_publish  # type: ignore
+    from pdf_relevance import (  # type: ignore
+        MINISTRY_LEGAL_SEED_PATHS,
+        filter_regulatory_docs,
+        is_regulatory_pdf,
+        regulatory_score,
+    )
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -199,6 +211,7 @@ class GazettePdfCollector:
         live_publish_every: int = 5,
         time_budget_minutes: int = 0,
         git_push: bool | None = None,
+        regulatory_only: bool = False,
     ):
         # 0 = unlimited PDFs per source
         self.max_pdfs_per_source = max_pdfs_per_source
@@ -214,6 +227,8 @@ class GazettePdfCollector:
         self.live_publish_every = max(0, live_publish_every)
         self.time_budget_minutes = max(0, time_budget_minutes)
         self.git_push = git_push
+        # ministry / SA mode: only keep laws, regulations, decrees, circulars…
+        self.regulatory_only = regulatory_only
         self._started_at = time.time()
         self._downloads_since_publish = 0
         self._stop_requested = False
@@ -243,6 +258,7 @@ class GazettePdfCollector:
             "pdfs_downloaded": 0,
             "pdfs_skipped_existing": 0,
             "pdfs_capped": 0,
+            "pdfs_rejected_junk": 0,
             "errors": 0,
         }
         self.source_reports: list[dict] = []
@@ -499,6 +515,8 @@ class GazettePdfCollector:
             "pages_crawled": 0,
             "js_pages": 0,
             "pdfs_candidates": 0,
+            "pdfs_regulatory": 0,
+            "pdfs_rejected_junk": 0,
             "pdfs_downloaded": 0,
             "error": None,
         }
@@ -512,6 +530,7 @@ class GazettePdfCollector:
             },
         )
 
+        reg_focus = self.regulatory_only or source_kind == "ministry"
         crawler = SiteCrawler(
             max_pages=self.max_pages,
             delay=self.delay,
@@ -520,6 +539,8 @@ class GazettePdfCollector:
             use_playwright=self.use_playwright,
             same_site_only=True,
             log=self.log,
+            extra_seed_paths=list(MINISTRY_LEGAL_SEED_PATHS) if reg_focus else None,
+            regulatory_focus=reg_focus,
         )
         crawl = crawler.crawl(page_url)
         report["pages_crawled"] = crawl.pages_visited
@@ -605,8 +626,30 @@ class GazettePdfCollector:
         # Prefer PDFs
         docs = [d for d in docs if d.is_pdf or PDF_EXT_RE.search(d.url)]
         report["pdfs_candidates"] = len(docs)
+
+        reg_focus = self.regulatory_only or source_kind == "ministry"
+        if reg_focus and docs:
+            keep, rejected = filter_regulatory_docs(docs, min_score=15)
+            report["pdfs_rejected_junk"] = len(rejected)
+            report["pdfs_regulatory"] = len(keep)
+            self.stats["pdfs_rejected_junk"] = self.stats.get("pdfs_rejected_junk", 0) + len(
+                rejected
+            )
+            self.log(
+                f"  regulatory filter: keep {len(keep)} / reject {len(rejected)} "
+                f"(of {len(docs)} PDFs) — dropping IoT/news/workshop junk"
+            )
+            if rejected and len(rejected) <= 8:
+                for d, sc in rejected[:8]:
+                    self.log(f"    [junk score={sc}] {(d.text or d.url)[:90]}")
+            elif rejected:
+                for d, sc in rejected[:5]:
+                    self.log(f"    [junk score={sc}] {(d.text or d.url)[:90]}")
+                self.log(f"    … +{len(rejected) - 5} more rejected")
+            docs = keep
+
         self.log(
-            f"  discovered {len(docs)} PDF candidates "
+            f"  downloading from {len(docs)} PDF candidates "
             f"(crawled {crawl.pages_visited} pages, cap="
             f"{self.max_pdfs_per_source or '∞'})"
         )
@@ -832,6 +875,12 @@ def main():
         action="store_true",
         help="Never git push even on GITHUB_ACTIONS",
     )
+    p.add_argument(
+        "--regulatory-only",
+        action="store_true",
+        help="Only download law/regulation/decree/circular PDFs; skip IoT, "
+        "workshops, newsletters, marketing (recommended for ministry crawls)",
+    )
     # backwards-compat aliases (ignored or mapped)
     p.add_argument("--max-follow-pages", type=int, default=None, help=argparse.SUPPRESS)
     p.add_argument("--max-list-pages", type=int, default=None, help=argparse.SUPPRESS)
@@ -859,6 +908,9 @@ def main():
     else:
         git_push = None  # auto on GITHUB_ACTIONS
 
+    # Ministry / --url-only lists default to regulatory filter (laws not IoT junk)
+    regulatory_only = bool(args.regulatory_only or args.url_only)
+
     collector = GazettePdfCollector(
         max_pdfs_per_source=args.max_pdfs_per_source,
         max_pages=max_pages,
@@ -873,6 +925,7 @@ def main():
         live_publish_every=args.live_publish_every,
         time_budget_minutes=args.time_budget_minutes,
         git_push=git_push,
+        regulatory_only=regulatory_only,
     )
     try:
         collector.run()

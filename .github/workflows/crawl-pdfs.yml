@@ -18,21 +18,21 @@ on:
         required: false
         default: "saudi_ministries"
       max_pages:
-        description: "BFS pages per source URL"
+        description: "BFS pages per source URL (keep low for ministry legal focus)"
         required: false
-        default: "200"
+        default: "80"
       time_budget_minutes:
         description: "Stop after N minutes (leave headroom under 6h job limit)"
         required: false
         default: "280"
       max_pdfs_per_source:
-        description: "0 = unlimited new PDFs per source"
+        description: "Max NEW regulatory PDFs per ministry (0=unlimited)"
         required: false
-        default: "0"
+        default: "40"
       delay:
         description: "Seconds between requests"
         required: false
-        default: "0.35"
+        default: "0.25"
       include_legal_db:
         description: "Also crawl legal_databases column (true/false)"
         required: false
@@ -45,7 +45,8 @@ permissions:
 
 concurrency:
   group: crawl-pdfs
-  cancel-in-progress: false
+  # New saudi-focused runs replace stuck multi-hour BFS jobs
+  cancel-in-progress: true
 
 jobs:
   crawl:
@@ -79,6 +80,26 @@ jobs:
             echo '{"downloads":[],"errors":[],"source_reports":[],"stats":{}}' > data/pdfs/manifest.json
           fi
 
+      - name: Prune non-regulatory ministry junk PDFs
+        if: always()
+        run: |
+          set -euo pipefail
+          python scripts/prune_ministry_junk_pdfs.py || true
+          # Commit pruned catalog so site stops showing IoT/workshop waste
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/pdfs/manifest.json web/data/pdfs_catalog.json \
+            android/app/src/main/assets/pdfs_catalog.json 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git commit -m "chore: prune non-regulatory ministry PDFs"
+            git push "$REPO" HEAD:main || true
+          else
+            echo "No junk to prune"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Crawl (resume-safe, live publish)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -86,13 +107,9 @@ jobs:
         run: |
           set -euo pipefail
           MAX_PAGES="${{ github.event.inputs.max_pages }}"
-          MAX_PAGES="${MAX_PAGES:-300}"
           BUDGET="${{ github.event.inputs.time_budget_minutes }}"
-          BUDGET="${BUDGET:-280}"
           MAX_PDFS="${{ github.event.inputs.max_pdfs_per_source }}"
-          MAX_PDFS="${MAX_PDFS:-0}"
           DELAY="${{ github.event.inputs.delay }}"
-          DELAY="${DELAY:-0.35}"
           LEGAL="${{ github.event.inputs.include_legal_db }}"
           LEGAL="${LEGAL:-false}"
           MODE="${{ github.event.inputs.mode }}"
@@ -103,18 +120,31 @@ jobs:
           fi
           MODE="${MODE:-saudi_ministries}"
 
+          # Saudi ministry defaults: shallow legal-focused crawl, not 300-page junk BFS
+          if [ "$MODE" = "saudi_ministries" ]; then
+            MAX_PAGES="${MAX_PAGES:-80}"
+            MAX_PDFS="${MAX_PDFS:-40}"
+            DELAY="${DELAY:-0.25}"
+          else
+            MAX_PAGES="${MAX_PAGES:-200}"
+            MAX_PDFS="${MAX_PDFS:-0}"
+            DELAY="${DELAY:-0.35}"
+          fi
+          BUDGET="${BUDGET:-280}"
+
           # git identity for live_publish pushes during the run
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           EXTRA=()
           if [ "$MODE" = "saudi_ministries" ]; then
-            echo "=== Priority crawl: Saudi ministries list (morning 21 links only) ==="
+            echo "=== Priority crawl: Saudi ministries (regulatory PDFs only) ==="
             test -f data/saudi_ministries_links.txt
             echo "--- data/saudi_ministries_links.txt ---"
             cat data/saudi_ministries_links.txt
             echo "--------------------------------------"
-            EXTRA+=(--url-only --from-file data/saudi_ministries_links.txt)
+            echo "max_pages=$MAX_PAGES max_pdfs=$MAX_PDFS delay=$DELAY (regulatory filter ON)"
+            EXTRA+=(--url-only --from-file data/saudi_ministries_links.txt --regulatory-only)
           else
             echo "=== Global gazette sheet crawl (mode=$MODE) ==="
             if [ "$LEGAL" = "true" ]; then

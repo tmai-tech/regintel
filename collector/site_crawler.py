@@ -170,6 +170,7 @@ class SiteCrawler:
         same_site_only: bool = True,
         log: Callable[[str], None] | None = None,
         extra_seed_paths: list[str] | None = None,
+        regulatory_focus: bool = False,
     ):
         self.max_pages = max_pages
         self.delay = delay
@@ -180,6 +181,8 @@ class SiteCrawler:
         self.same_site_only = same_site_only
         self.log = log or (lambda msg: print(msg, flush=True))
         self.extra_seed_paths = extra_seed_paths or []
+        # Prefer laws/regulations paths; skip news/media/careers BFS branches
+        self.regulatory_focus = regulatory_focus
 
         self._session = None
         self._renderer: PlaywrightRenderer | None = None
@@ -311,20 +314,41 @@ class SiteCrawler:
         result = CrawlResult(start_url=start_url)
         visited: set[str] = set()
         docs_seen: set[str] = set()
-        queue: deque[str] = deque([start_url])
+        # priority queue: legal paths first (0), normal (1), low (2)
+        queue: deque[tuple[int, str]] = deque([(0, start_url)])
 
         # optional extra paths under same host (listing shortcuts)
         for path in self.extra_seed_paths:
             if path.startswith("http"):
-                queue.append(normalize_url(path))
+                queue.append((0, normalize_url(path)))
             else:
-                queue.append(normalize_url(urljoin(start_url, path)))
+                queue.append((0, normalize_url(urljoin(start_url, path))))
 
         consecutive_empty = 0
 
+        def _enqueue(full: str, prio: int = 1) -> None:
+            if full in visited:
+                return
+            if self.regulatory_focus:
+                try:
+                    from collector.pdf_relevance import is_junk_page, is_legal_priority_page
+                except ImportError:
+                    from pdf_relevance import is_junk_page, is_legal_priority_page  # type: ignore
+                if is_junk_page(full):
+                    return
+                if is_legal_priority_page(full):
+                    prio = 0
+            # insert by priority (simple: left for high, right for low)
+            if prio <= 0:
+                queue.appendleft((prio, full))
+            else:
+                queue.append((prio, full))
+
         try:
             while queue and len(visited) < self.max_pages:
-                url = queue.popleft()
+                # always take highest priority currently at left; re-sort lightly
+                # (appendleft for prio 0 keeps legal pages ahead of bulk)
+                _prio, url = queue.popleft()
                 if url in visited:
                     continue
                 visited.add(url)
@@ -427,7 +451,7 @@ class SiteCrawler:
                         continue
                     # skip binary-ish query downloads without extension handled above
                     if full not in visited:
-                        queue.append(full)
+                        _enqueue(full, prio=1)
 
             result.pages_visited = len(visited)
             self.log(
