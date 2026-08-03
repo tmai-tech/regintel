@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-03T17:38:11.906978+00:00",
-  "phase": "manual",
-  "message": "manual live_publish",
-  "run_id": "30837508862",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30837508862",
+  "updated_at": "2026-08-03T17:43:52.609048+00:00",
+  "phase": "idle",
+  "message": "pruned 0 non-regulatory ministry PDFs",
+  "run_id": "30837940806",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30837940806",
   "totals": {
     "pdfs": 12420,
     "errors": 22117,
