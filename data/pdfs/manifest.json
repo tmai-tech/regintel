@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T07:34:17.253717+00:00",
+  "generated_at": "2026-08-03T07:37:02.189268+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -166491,45 +166491,6 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-02T21:42:12.935316+00:00"
-    },
-    {
-      "url": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25AA%25D8%25AE%25D8%25AF%25D9%2585%2520%25D9%2584%25D8%25AA%25D9%2582%25D8%25AF%25D9%258A%25D9%2585%2520%25D8%25B7%25D9%2584%25D8%25A8%2520%25D8%25AA%25D8%25B3%25D8%25AC%25D9%258A%25D9%2584%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9%2520%2520.pdf&action=view",
-      "jurisdiction": "Saudi Arabia - SAIP",
-      "source_kind": "ministry",
-      "source_page": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25AA%25D8%25AE%25D8%25AF%25D9%2585%2520%25D9%2584%25D8%25AA%25D9%2582%25D8%25AF%25D9%258A%25D9%2585%2520%25D8%25B7%25D9%2584%25D8%25A8%2520%25D8%25AA%25D8%25B3%25D8%25AC%25D9%258A%25D9%2584%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9%2520%2520.pdf&action=view",
-      "title": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25AA%25D8%25AE%25D8%25AF%25D9%2585%2520%25D9%2584%25D8%25AA%25D9%2582%25D8%25AF%25D9%258A%25D9%2585%2520%25D8%25B7%25D9%2584%25D8%25A8%2520%25D8%25AA%25D8%25B3%25D8%25AC%25D9%258A%25D9%2584%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9%2520%2520.pdf&action=view",
-      "path": "data/pdfs/Saudi_Arabia_SAIP/ministry/proxy-file.pdf",
-      "bytes": 6256793,
-      "sha256": "3930c5efb9d74051",
-      "http_status": 200,
-      "content_type": "application/pdf",
-      "downloaded_at": "2026-08-03T07:31:20.799255+00:00"
-    },
-    {
-      "url": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25A7%25D9%2584%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D8%25A7%25D9%2595%25D8%25B1%25D8%25B4%25D8%25A7%25D8%25AF%25D9%258A%2520%25D9%2584%25D8%25AE%25D8%25AF%25D9%2585%25D8%25A9%2520%25D8%25A7%25D9%2595%25D9%258A%25D8%25AF%25D8%25A7%25D8%25B9%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9_compressed.pdf&action=view",
-      "jurisdiction": "Saudi Arabia - SAIP",
-      "source_kind": "ministry",
-      "source_page": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25A7%25D9%2584%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D8%25A7%25D9%2595%25D8%25B1%25D8%25B4%25D8%25A7%25D8%25AF%25D9%258A%2520%25D9%2584%25D8%25AE%25D8%25AF%25D9%2585%25D8%25A9%2520%25D8%25A7%25D9%2595%25D9%258A%25D8%25AF%25D8%25A7%25D8%25B9%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9_compressed.pdf&action=view",
-      "title": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25A7%25D9%2584%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D8%25A7%25D9%2595%25D8%25B1%25D8%25B4%25D8%25A7%25D8%25AF%25D9%258A%2520%25D9%2584%25D8%25AE%25D8%25AF%25D9%2585%25D8%25A9%2520%25D8%25A7%25D9%2595%25D9%258A%25D8%25AF%25D8%25A7%25D8%25B9%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9_compressed.pdf&action=view",
-      "path": "data/pdfs/Saudi_Arabia_SAIP/ministry/proxy-file_17921c8e7724466f.pdf",
-      "bytes": 1428984,
-      "sha256": "f6b0be3e7c4219ca",
-      "http_status": 200,
-      "content_type": "application/pdf",
-      "downloaded_at": "2026-08-03T07:32:17.749068+00:00"
-    },
-    {
-      "url": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D9%2585%25D8%25AD%25D8%25AA%25D9%2588%25D9%2589%2520%25D8%25AA%25D9%2582%25D8%25B1%25D9%258A%25D8%25B1%2520%25D8%25A7%25D9%2584%25D9%2581%25D8%25AD%25D8%25B5.pdf&action=view",
-      "jurisdiction": "Saudi Arabia - SAIP",
-      "source_kind": "ministry",
-      "source_page": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D9%2585%25D8%25AD%25D8%25AA%25D9%2588%25D9%2589%2520%25D8%25AA%25D9%2582%25D8%25B1%25D9%258A%25D8%25B1%2520%25D8%25A7%25D9%2584%25D9%2581%25D8%25AD%25D8%25B5.pdf&action=view",
-      "title": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D9%2585%25D8%25AD%25D8%25AA%25D9%2588%25D9%2589%2520%25D8%25AA%25D9%2582%25D8%25B1%25D9%258A%25D8%25B1%2520%25D8%25A7%25D9%2584%25D9%2581%25D8%25AD%25D8%25B5.pdf&action=view",
-      "path": "data/pdfs/Saudi_Arabia_SAIP/ministry/proxy-file_ac0e22f0e4a9b193.pdf",
-      "bytes": 1404345,
-      "sha256": "d7bae652348bb408",
-      "http_status": 200,
-      "content_type": "application/pdf",
-      "downloaded_at": "2026-08-03T07:34:05.408522+00:00"
     }
   ],
   "discovered": [
@@ -307579,23 +307540,17 @@
       "error": "HTTP 404",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - CST"
-    },
-    {
-      "url": "https://www.saip.gov.sa/ar/downloads/saip-brand-guide.pdf",
-      "error": "HTTP 404",
-      "stage": "download_pdf",
-      "jurisdiction": "Saudi Arabia - SAIP"
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 217,
-    "js_pages": 20,
-    "pdfs_discovered": 3,
-    "pdfs_downloaded": 3,
-    "pdfs_skipped_existing": 1,
+    "sources_visited": 1,
+    "pages_crawled": 1,
+    "js_pages": 1,
+    "pdfs_discovered": 0,
+    "pdfs_downloaded": 0,
+    "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
-    "errors": 1
+    "errors": 0
   },
   "source_reports": [
     {
@@ -307966,66 +307921,6 @@
       "js_pages": 17,
       "pdfs_candidates": 73,
       "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - CMA",
-      "source_kind": "ministry",
-      "source_url": "https://cma.org.sa",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - GAC",
-      "source_kind": "ministry",
-      "source_url": "https://gac.gov.sa",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MOI",
-      "source_kind": "ministry",
-      "source_url": "https://www.moi.gov.sa",
-      "pages_crawled": 1,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": "[1] ERROR https://www.moi.gov.sa -> timed out"
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MOJ",
-      "source_kind": "ministry",
-      "source_url": "https://www.moj.gov.sa",
-      "pages_crawled": 1,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": "[1] ERROR https://www.moj.gov.sa -> [Errno 101] Network is unreachable"
-    },
-    {
-      "jurisdiction": "Saudi Arabia - Nazaha",
-      "source_kind": "ministry",
-      "source_url": "https://nazaha.gov.sa",
-      "pages_crawled": 1,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": "[1] ERROR https://nazaha.gov.sa -> [Errno 101] Network is unreachable"
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SAIP",
-      "source_kind": "ministry",
-      "source_url": "https://www.saip.gov.sa",
-      "pages_crawled": 212,
-      "js_pages": 18,
-      "pdfs_candidates": 71,
-      "pdfs_downloaded": 3,
       "error": null
     }
   ]
