@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-03T02:39:21.745219+00:00",
-  "phase": "paused",
-  "message": "crawl finished or paused",
+  "updated_at": "2026-08-03T02:39:27.710715+00:00",
+  "phase": "manual",
+  "message": "manual live_publish",
   "run_id": "30766741145",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30766741145",
   "totals": {
