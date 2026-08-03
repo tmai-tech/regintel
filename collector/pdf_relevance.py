@@ -134,7 +134,36 @@ MINISTRY_LEGAL_SEED_PATHS = [
     "/ar/systems",
     "/en/rules",
     "/ar/rules",
+    # SOCPA (Sitecore) — standards / regulations, not bare homepage
+    "/Socpa/Professional-standards.aspx?lang=en-us",
+    "/Socpa/Professional-standards/Accounting-standards.aspx?lang=en-us",
+    "/Socpa/Professional-standards/Auditing-standards.aspx?lang=en-us",
+    "/Socpa/About-Socpa/Regulations.aspx?lang=en-us",
+    "/Socpa/Professional-standards/Ethics-code.aspx?lang=en-us",
 ]
+
+# Extra deep seeds keyed by host (merged when seed host matches)
+HOST_LEGAL_SEEDS: dict[str, list[str]] = {
+    "socpa.org.sa": [
+        "https://socpa.org.sa/Socpa/Professional-standards.aspx?lang=en-us",
+        "https://socpa.org.sa/Socpa/Professional-standards/Accounting-standards.aspx?lang=en-us",
+        "https://socpa.org.sa/Socpa/Professional-standards/Auditing-standards.aspx?lang=en-us",
+        "https://socpa.org.sa/Socpa/About-Socpa/Regulations.aspx?lang=en-us",
+        "https://socpa.org.sa/Socpa/Professional-standards/Accounting-standards/Technical-standards-and-mechanisms-that-comple.aspx?lang=en-us",
+    ],
+}
+
+
+def legal_seeds_for_url(start_url: str) -> list[str]:
+    """Generic ministry seeds + host-specific deep links (e.g. SOCPA)."""
+    from urllib.parse import urlparse
+
+    host = (urlparse(start_url).netloc or "").lower().removeprefix("www.")
+    out = list(MINISTRY_LEGAL_SEED_PATHS)
+    for h, seeds in HOST_LEGAL_SEEDS.items():
+        if host == h or host.endswith("." + h):
+            out.extend(seeds)
+    return out
 
 
 def _blob(url: str = "", title: str = "", filename: str = "", text: str = "") -> str:

@@ -54,6 +54,7 @@ try:
         MINISTRY_LEGAL_SEED_PATHS,
         filter_regulatory_docs,
         is_regulatory_pdf,
+        legal_seeds_for_url,
         regulatory_score,
     )
 except ImportError:
@@ -64,6 +65,7 @@ except ImportError:
         MINISTRY_LEGAL_SEED_PATHS,
         filter_regulatory_docs,
         is_regulatory_pdf,
+        legal_seeds_for_url,
         regulatory_score,
     )
 
@@ -74,7 +76,8 @@ PDF_ROOT = DATA / "pdfs"
 MANIFEST_PATH = PDF_ROOT / "manifest.json"
 LOG_PATH = PDF_ROOT / "crawl_log.txt"
 
-PDF_EXT_RE = re.compile(r"\.pdf($|\?|#|;)", re.I)
+# Include Sitecore-style .pdf.aspx (SOCPA and many gov CMS sites)
+PDF_EXT_RE = re.compile(r"\.pdf(\.aspx)?($|\?|#|;)", re.I)
 
 
 def slugify(text: str) -> str:
@@ -136,8 +139,15 @@ def safe_filename(url: str, title: str = "") -> str:
     parsed = urlparse(url)
     name = unquote(Path(parsed.path).name or "document.pdf")
     name = name.split(";")[0]
+    # Sitecore: exposure-draft....pdf.aspx → exposure-draft....pdf
+    if name.lower().endswith(".aspx"):
+        name = name[: -len(".aspx")]
     if not name.lower().endswith(".pdf"):
-        name = name + ".pdf"
+        # getattachment UUID paths sometimes omit .pdf in the last segment
+        if ".pdf" in name.lower():
+            pass
+        else:
+            name = name + ".pdf"
     name = re.sub(r"[^\w.\-()+ ]+", "_", name)
     name = name.strip(" ._") or "document.pdf"
     if len(name) > 140:
@@ -563,7 +573,7 @@ class GazettePdfCollector:
             use_playwright=self.use_playwright,
             same_site_only=True,
             log=self.log,
-            extra_seed_paths=list(MINISTRY_LEGAL_SEED_PATHS) if reg_focus else None,
+            extra_seed_paths=legal_seeds_for_url(page_url) if reg_focus else None,
             regulatory_focus=reg_focus,
             should_stop=lambda: self.budget_exceeded() or self.source_time_exceeded(),
         )

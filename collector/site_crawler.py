@@ -27,6 +27,9 @@ DOC_EXTENSIONS = (".pdf", ".doc", ".docx", ".csv", ".xls", ".xlsx")
 PDF_EXTENSIONS = (".pdf",)
 SKIP_HREF_PREFIX = ("javascript:", "mailto:", "tel:", "#", "data:", "blob:")
 SPA_MARKERS = ('id="root"', 'id="app"', 'id="__next"', "ng-version", 'id="__nuxt"')
+# Sitecore / ASP.NET (e.g. SOCPA): .../file.pdf.aspx  or  /getattachment/.../x.pdf.aspx
+PDF_ASPX_RE = re.compile(r"\.pdf\.aspx($|\?|#|;)", re.I)
+GETATTACHMENT_PDF_RE = re.compile(r"/getattachment/.*\.pdf", re.I)
 
 DEFAULT_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -75,10 +78,27 @@ def is_same_site(netloc: str, seed_domain: str) -> bool:
 
 
 def has_doc_extension(url: str, extensions: tuple[str, ...] = DOC_EXTENSIONS) -> bool:
-    path = urlparse(url).path.lower()
-    # strip trailing junk like ;jsessionid=
-    path = path.split(";")[0]
-    return any(path.endswith(ext) for ext in extensions)
+    """True if URL looks like a downloadable document.
+
+    Handles normal .pdf and Sitecore-style .pdf.aspx / getattachment links
+    (SOCPA and many .sa CMS sites do not use bare .pdf paths).
+    """
+    raw = (url or "").strip()
+    if not raw:
+        return False
+    path = urlparse(raw).path.lower().split(";")[0]
+    if any(path.endswith(ext) for ext in extensions):
+        return True
+    # file.pdf.aspx  /  file.docx.aspx
+    for ext in extensions:
+        if path.endswith(ext + ".aspx"):
+            return True
+    if ".pdf" in extensions or extensions == PDF_EXTENSIONS or ".pdf" in path:
+        if PDF_ASPX_RE.search(raw) or PDF_ASPX_RE.search(path):
+            return True
+        if GETATTACHMENT_PDF_RE.search(path) or GETATTACHMENT_PDF_RE.search(raw):
+            return True
+    return False
 
 
 def looks_like_empty_shell(html: str) -> bool:
@@ -291,16 +311,23 @@ class SiteCrawler:
             add(el.get("data-url"), el.get_text(" ", strip=True))
         for el in soup.find_all(attrs={"data-href": True}):
             add(el.get("data-href"), el.get_text(" ", strip=True))
-        # bare document URLs in HTML (SPAs / JSON blobs)
+        # bare document URLs in HTML (SPAs / JSON blobs), incl. .pdf.aspx
         for m in re.finditer(
-            r"""https?://[^\s"'<>]+?\.(?:pdf|docx?|xlsx?|csv)(?:\?[^\s"'<>]*)?""",
+            r"""https?://[^\s"'<>]+?\.(?:pdf|docx?|xlsx?|csv)(?:\.aspx)?(?:\?[^\s"'<>]*)?""",
             html,
             re.I,
         ):
             add(m.group(0), "embedded-url")
-        # relative .pdf paths
+        # Sitecore getattachment with pdf in path
         for m in re.finditer(
-            r"""["']([^"']+\.pdf(?:\?[^"']*)?)["']""",
+            r"""https?://[^\s"'<>]*?/getattachment/[^\s"'<>]+?\.pdf[^\s"'<>]*""",
+            html,
+            re.I,
+        ):
+            add(m.group(0), "getattachment")
+        # relative .pdf / .pdf.aspx paths
+        for m in re.finditer(
+            r"""["']([^"']+\.pdf(?:\.aspx)?(?:\?[^"']*)?)["']""",
             html,
             re.I,
         ):
