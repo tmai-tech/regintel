@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-03T07:41:01.938027+00:00",
-  "phase": "running",
-  "message": "finished Saudi Arabia - Nazaha / ministry: +0 PDFs",
-  "run_id": "30793738147",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30793738147",
+  "updated_at": "2026-08-03T12:36:59.027193+00:00",
+  "phase": "starting",
+  "message": "crawl starting",
+  "run_id": "30809390819",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30809390819",
   "totals": {
     "pdfs": 12807,
     "errors": 22117,
@@ -174,13 +174,7 @@
       "count": 562
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - Nazaha",
-    "source_kind": "ministry",
-    "url": "https://nazaha.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
@@ -411,14 +405,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 5,
-    "js_pages": 2,
+    "sources_visited": 0,
+    "pages_crawled": 0,
+    "js_pages": 0,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T07:41:00.064879+00:00"
+  "manifest_generated_at": "2026-08-03T12:36:57.112489+00:00"
 }
