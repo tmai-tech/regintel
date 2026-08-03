@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-03T02:39:15.105336+00:00",
-  "phase": "running",
-  "message": "finished Saudi Arabia - SAIP / ministry: +0 PDFs",
+  "updated_at": "2026-08-03T02:39:21.745219+00:00",
+  "phase": "paused",
+  "message": "crawl finished or paused",
   "run_id": "30766741145",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30766741145",
   "totals": {
     "pdfs": 12807,
     "errors": 22117,
-    "source_reports": 30,
+    "source_reports": 37,
     "jurisdictions": 37
   },
   "by_jurisdiction": [
@@ -174,13 +174,7 @@
       "count": 562
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - SAIP",
-    "source_kind": "ministry",
-    "url": "https://www.saip.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 73
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
@@ -290,76 +284,6 @@
   ],
   "last_source_reports": [
     {
-      "jurisdiction": "British Columbia",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://www.leg.bc.ca/parliamentary-business/legislation-debates-proceedings/legislation",
-      "pages_crawled": 300,
-      "js_pages": 32,
-      "pdfs_candidates": 10417,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "British Columbia",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.bclaws.gov.bc.ca/civix/document/id/public/bcgaz1/1",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Ontario",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://www.ola.org/en/legislative-business/bills",
-      "pages_crawled": 300,
-      "js_pages": 6,
-      "pdfs_candidates": 37,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Ontario",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.ontario.ca/ontariogazette",
-      "pages_crawled": 300,
-      "js_pages": 12,
-      "pdfs_candidates": 128,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Manitoba",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://www.gov.mb.ca/legislature/business/bills.html",
-      "pages_crawled": 300,
-      "js_pages": 8,
-      "pdfs_candidates": 6289,
-      "pdfs_downloaded": 2119,
-      "error": null
-    },
-    {
-      "jurisdiction": "Manitoba",
-      "source_kind": "official_gazette",
-      "source_url": "https://www.gov.mb.ca/legislature/hansard/gazette.html",
-      "pages_crawled": 300,
-      "js_pages": 1,
-      "pdfs_candidates": 232,
-      "pdfs_downloaded": 179,
-      "error": null
-    },
-    {
-      "jurisdiction": "USA Federal",
-      "source_kind": "parliamentary_bills",
-      "source_url": "https://www.congress.gov/bill",
-      "pages_crawled": 1,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": "[1] ERROR https://www.congress.gov/bill -> HTTP 403 ct=text/html; charset=UTF-8"
-    },
-    {
       "jurisdiction": "USA Federal",
       "source_kind": "official_gazette",
       "source_url": "https://www.federalregister.gov",
@@ -408,6 +332,76 @@
       "pdfs_candidates": 149,
       "pdfs_downloaded": 118,
       "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - CMA",
+      "source_kind": "ministry",
+      "source_url": "https://cma.org.sa",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - CST",
+      "source_kind": "ministry",
+      "source_url": "https://www.cst.gov.sa",
+      "pages_crawled": 218,
+      "js_pages": 3,
+      "pdfs_candidates": 29,
+      "pdfs_downloaded": 2,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - GAC",
+      "source_kind": "ministry",
+      "source_url": "https://gac.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOI",
+      "source_kind": "ministry",
+      "source_url": "https://www.moi.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://www.moi.gov.sa -> timed out"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "source_kind": "ministry",
+      "source_url": "https://www.moj.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://www.moj.gov.sa -> [Errno 101] Network is unreachable"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - Nazaha",
+      "source_kind": "ministry",
+      "source_url": "https://nazaha.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://nazaha.gov.sa -> [Errno 101] Network is unreachable"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "source_kind": "ministry",
+      "source_url": "https://www.saip.gov.sa",
+      "pages_crawled": 212,
+      "js_pages": 17,
+      "pdfs_candidates": 73,
+      "pdfs_downloaded": 0,
+      "error": null
     }
   ],
   "stats": {
@@ -420,5 +414,5 @@
     "pdfs_capped": 0,
     "errors": 26
   },
-  "manifest_generated_at": "2026-08-03T02:39:13.273795+00:00"
+  "manifest_generated_at": "2026-08-03T02:39:19.949094+00:00"
 }
