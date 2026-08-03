@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-03T02:39:27.710715+00:00",
-  "phase": "manual",
-  "message": "manual live_publish",
-  "run_id": "30766741145",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30766741145",
+  "updated_at": "2026-08-03T02:54:07.355605+00:00",
+  "phase": "starting",
+  "message": "crawl starting",
+  "run_id": "30780362343",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30780362343",
   "totals": {
     "pdfs": 12807,
     "errors": 22117,
@@ -405,14 +405,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 7,
-    "pages_crawled": 435,
-    "js_pages": 22,
-    "pdfs_discovered": 2,
-    "pdfs_downloaded": 2,
-    "pdfs_skipped_existing": 1,
+    "sources_visited": 0,
+    "pages_crawled": 0,
+    "js_pages": 0,
+    "pdfs_discovered": 0,
+    "pdfs_downloaded": 0,
+    "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
-    "errors": 26
+    "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T02:39:19.949094+00:00"
+  "manifest_generated_at": "2026-08-03T02:54:05.450662+00:00"
 }
