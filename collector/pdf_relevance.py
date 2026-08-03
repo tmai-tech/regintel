@@ -147,9 +147,37 @@ HOST_LEGAL_SEEDS: dict[str, list[str]] = {
     "socpa.org.sa": [
         "https://socpa.org.sa/Socpa/Professional-standards.aspx?lang=en-us",
         "https://socpa.org.sa/Socpa/Professional-standards/Accounting-standards.aspx?lang=en-us",
-        "https://socpa.org.sa/Socpa/Professional-standards/Auditing-standards.aspx?lang=en-us",
         "https://socpa.org.sa/Socpa/About-Socpa/Regulations.aspx?lang=en-us",
-        "https://socpa.org.sa/Socpa/Professional-standards/Accounting-standards/Technical-standards-and-mechanisms-that-comple.aspx?lang=en-us",
+    ],
+    "sama.gov.sa": [
+        "https://rulebook.sama.gov.sa/en",
+        "https://rulebook.sama.gov.sa/en/node/6259",
+    ],
+    "rulebook.sama.gov.sa": [
+        "https://rulebook.sama.gov.sa/en",
+        "https://rulebook.sama.gov.sa/en/node/6259",
+    ],
+    "cma.org.sa": [
+        "https://cma.org.sa/en/RulesRegulations/Regulations/Documents/",
+        "https://cma.org.sa/en/RulesRegulations/Regulations/Pages/default.aspx",
+    ],
+    "moj.gov.sa": [
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/",
+        "https://laws.moj.gov.sa/en",
+    ],
+    "zatca.gov.sa": [
+        "https://zatca.gov.sa/en/RulesRegulations/Pages/rules.aspx",
+        "https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf",
+        "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law_EN.pdf",
+    ],
+    "tga.gov.sa": [
+        "https://www.tga.gov.sa/en/regulations",
+    ],
+    "gosi.gov.sa": [
+        "https://www.gosi.gov.sa/en/LawsAndRegulations",
+    ],
+    "cst.gov.sa": [
+        "https://www.cst.gov.sa/en/regulations",
     ],
 }
 

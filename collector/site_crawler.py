@@ -59,12 +59,23 @@ def base_domain(netloc: str) -> str:
     return (netloc or "").lower().removeprefix("www.")
 
 
+# Known companion hosts that share legal docs with a ministry seed
+# (e.g. SAMA rulebook lives on rulebook.sama.gov.sa, laws on laws.moj.gov.sa)
+_SITE_ALIASES: dict[str, set[str]] = {
+    "sama.gov.sa": {"rulebook.sama.gov.sa", "sama.gov.sa"},
+    "rulebook.sama.gov.sa": {"rulebook.sama.gov.sa", "sama.gov.sa"},
+    "moj.gov.sa": {"laws.moj.gov.sa", "moj.gov.sa"},
+    "laws.moj.gov.sa": {"laws.moj.gov.sa", "moj.gov.sa"},
+}
+
+
 def is_same_site(netloc: str, seed_domain: str) -> bool:
     """True if netloc is the seed host or a subdomain of it.
 
     Only allow child hosts of the seed (e.g. docs.example.gov under example.gov).
     Do NOT treat sibling hosts under a shared public suffix as same-site
     (e.g. other.gov.sa is NOT the same site as momah.gov.sa).
+    Explicit aliases cover known legal portals (SAMA rulebook, MOJ laws).
     """
     a, b = base_domain(netloc), base_domain(seed_domain)
     if not a or not b:
@@ -73,6 +84,12 @@ def is_same_site(netloc: str, seed_domain: str) -> bool:
         return True
     # link host is subdomain of seed
     if a.endswith("." + b):
+        return True
+    # seed is subdomain of link host (rare)
+    if b.endswith("." + a):
+        return True
+    aliases = _SITE_ALIASES.get(b) or _SITE_ALIASES.get(a)
+    if aliases and a in aliases and b in aliases:
         return True
     return False
 

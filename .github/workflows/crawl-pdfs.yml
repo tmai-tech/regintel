@@ -1,40 +1,34 @@
-# Long-running, resume-safe PDF crawl on GitHub Actions.
-# GHA jobs max ~6h → we run in chunks with --time-budget-minutes and resume via manifest.
-#
-# Live site updates:
-# - crawler commits catalog/status to main (resume + history)
-# - this workflow ALSO deploys GitHub Pages directly (GITHUB_TOKEN pushes do NOT
-#   trigger deploy-pages.yml — that is why the public site stayed stale at ~546)
+# Saudi ministries: PARALLEL crawl (one job per zero-PDF authority) so the list
+# cannot get stuck for 24h on a single site. Merge + deploy at the end.
 name: Crawl gazette PDFs
 
 on:
   schedule:
-    # Keep crawling until the sheet is exhausted (resume-safe).
     - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
       mode:
-        description: "Crawl mode: saudi_ministries (your morning 21 links) or all_gazette (global sheet)"
+        description: "saudi_ministries (parallel zeros) or all_gazette"
         required: false
         default: "saudi_ministries"
       max_pages:
-        description: "BFS pages per source URL (keep low so all 21 finish)"
+        description: "BFS pages per source URL"
         required: false
-        default: "40"
+        default: "35"
       time_budget_minutes:
-        description: "Stop after N minutes (leave headroom under 6h job limit)"
+        description: "Per-ministry job time budget (minutes)"
         required: false
-        default: "200"
+        default: "18"
       max_pdfs_per_source:
-        description: "Max NEW regulatory PDFs per ministry (0=unlimited)"
+        description: "Max NEW regulatory PDFs per source URL"
         required: false
-        default: "25"
+        default: "20"
       delay:
         description: "Seconds between requests"
         required: false
         default: "0.2"
       include_legal_db:
-        description: "Also crawl legal_databases column (true/false)"
+        description: "all_gazette only"
         required: false
         default: "false"
 
@@ -45,229 +39,144 @@ permissions:
 
 concurrency:
   group: crawl-pdfs
-  # New saudi-focused runs replace stuck multi-hour BFS jobs
   cancel-in-progress: true
 
 jobs:
-  crawl:
+  # ---------- Parallel: one runner per ministry still at 0 PDFs ----------
+  crawl-ministry:
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.mode != 'all_gazette' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        # 15 authorities currently showing 0 PDFs on Ministries tab
+        code:
+          - SOCPA
+          - TGA
+          - MOI
+          - Nazaha
+          - SAMA
+          - MOJ
+          - GAC
+          - CST
+          - CMA
+          - Tadawul
+          - SDAIA
+          - GOSI
+          - SASO
+          - SAIP
+          - ZATCA
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          # JS fallback for SPA gazette sites (optional if install fails)
-          playwright install chromium --with-deps || echo "playwright browser install skipped"
+          playwright install chromium --with-deps || echo "playwright skip"
 
-      - name: Ensure dirs
-        run: |
-          mkdir -p data/pdfs web/data android/app/src/main/assets
-          # empty manifest if missing so crawl can start
-          if [ ! -f data/pdfs/manifest.json ]; then
-            echo '{"downloads":[],"errors":[],"source_reports":[],"stats":{}}' > data/pdfs/manifest.json
-          fi
-
-      - name: Prune non-regulatory ministry junk PDFs
-        if: always()
+      - name: Filter links for this ministry
         run: |
           set -euo pipefail
-          python scripts/prune_ministry_junk_pdfs.py || true
-          # Commit pruned catalog so site stops showing IoT/workshop waste
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f data/pdfs/manifest.json web/data/pdfs_catalog.json \
-            android/app/src/main/assets/pdfs_catalog.json 2>/dev/null || true
-          if ! git diff --staged --quiet; then
-            REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-            git commit -m "chore: prune non-regulatory ministry PDFs"
-            git push "$REPO" HEAD:main || true
-          else
-            echo "No junk to prune"
+          CODE="${{ matrix.code }}"
+          mkdir -p data/pdfs _out
+          # Keep only lines for this authority code
+          grep -E "^Saudi Arabia - ${CODE} \|" data/saudi_ministries_links.txt > "data/_one_${CODE}.txt" || true
+          if [ ! -s "data/_one_${CODE}.txt" ]; then
+            echo "No links for $CODE — writing homepage fallback"
+            # fallback map
+            case "$CODE" in
+              SOCPA) U="https://socpa.org.sa" ;;
+              TGA) U="https://tga.gov.sa" ;;
+              MOI) U="https://www.moi.gov.sa" ;;
+              Nazaha) U="https://nazaha.gov.sa" ;;
+              SAMA) U="https://rulebook.sama.gov.sa/en" ;;
+              MOJ) U="https://www.moj.gov.sa" ;;
+              GAC) U="https://gac.gov.sa" ;;
+              CST) U="https://www.cst.gov.sa" ;;
+              CMA) U="https://cma.org.sa/en/RulesRegulations/Regulations/Documents/" ;;
+              Tadawul) U="https://www.saudiexchange.sa" ;;
+              SDAIA) U="https://sdaia.gov.sa" ;;
+              GOSI) U="https://www.gosi.gov.sa" ;;
+              SASO) U="https://www.saso.gov.sa" ;;
+              SAIP) U="https://www.saip.gov.sa" ;;
+              ZATCA) U="https://zatca.gov.sa/en/RulesRegulations/Pages/rules.aspx" ;;
+              *) U="https://www.google.com" ;;
+            esac
+            echo "Saudi Arabia - ${CODE} | ministry | ${U}" > "data/_one_${CODE}.txt"
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo "=== Links for ${CODE} ==="
+          cat "data/_one_${CODE}.txt"
 
-      - name: Crawl (resume-safe, live publish)
+      - name: Crawl this ministry only
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REGINTEL_LIVE_GIT_PUSH: "1"
+          CODE: ${{ matrix.code }}
         run: |
           set -euo pipefail
           MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          MAX_PAGES="${MAX_PAGES:-35}"
           BUDGET="${{ github.event.inputs.time_budget_minutes }}"
+          BUDGET="${BUDGET:-18}"
           MAX_PDFS="${{ github.event.inputs.max_pdfs_per_source }}"
+          MAX_PDFS="${MAX_PDFS:-20}"
           DELAY="${{ github.event.inputs.delay }}"
-          LEGAL="${{ github.event.inputs.include_legal_db }}"
-          LEGAL="${LEGAL:-false}"
-          MODE="${{ github.event.inputs.mode }}"
-          # Default + schedule: only the morning Saudi ministries list (21 authorities).
-          # Use mode=all_gazette only when you explicitly want the global sheet again.
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            MODE="saudi_ministries"
-          fi
-          MODE="${MODE:-saudi_ministries}"
+          DELAY="${DELAY:-0.2}"
 
-          # Saudi: finish ALL 21 links in one run (hard per-ministry time cap)
-          if [ "$MODE" = "saudi_ministries" ]; then
-            MAX_PAGES="${MAX_PAGES:-40}"
-            MAX_PDFS="${MAX_PDFS:-25}"
-            DELAY="${DELAY:-0.2}"
-            # 21 * ~8 min = ~3h, plus overhead — under 6h GHA limit
-            PER_SRC_MIN=8
-            SKIP_IF=5
-          else
-            MAX_PAGES="${MAX_PAGES:-200}"
-            MAX_PDFS="${MAX_PDFS:-0}"
-            DELAY="${DELAY:-0.35}"
-            PER_SRC_MIN=0
-            SKIP_IF=0
-          fi
-          BUDGET="${BUDGET:-200}"
-
-          # git identity for live_publish pushes during the run
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          EXTRA=()
-          if [ "$MODE" = "saudi_ministries" ]; then
-            echo "=== Saudi ministries: visit ALL 21 links (regulatory only) ==="
-            test -f data/saudi_ministries_links.txt
-            echo "--- data/saudi_ministries_links.txt ---"
-            cat data/saudi_ministries_links.txt
-            echo "--------------------------------------"
-            echo "max_pages=$MAX_PAGES max_pdfs=$MAX_PDFS delay=$DELAY"
-            echo "max_minutes_per_source=$PER_SRC_MIN skip_if_pdfs=$SKIP_IF budget=${BUDGET}m"
-            EXTRA+=(
-              --url-only
-              --from-file data/saudi_ministries_links.txt
-              --regulatory-only
-              --max-minutes-per-source "$PER_SRC_MIN"
-              --skip-if-pdfs "$SKIP_IF"
-            )
-          else
-            echo "=== Global gazette sheet crawl (mode=$MODE) ==="
-            if [ "$LEGAL" = "true" ]; then
-              EXTRA+=(--include-legal-db)
-            fi
-          fi
+          # Empty manifest so this job only collects THIS ministry's new PDFs
+          echo '{"downloads":[],"errors":[],"source_reports":[],"stats":{}}' > data/pdfs/manifest.json
 
           python -u collector/download_gazette_pdfs.py \
+            --url-only \
+            --from-file "data/_one_${CODE}.txt" \
+            --regulatory-only \
             --max-pages "$MAX_PAGES" \
             --max-pdfs-per-source "$MAX_PDFS" \
+            --max-minutes-per-source 6 \
             --time-budget-minutes "$BUDGET" \
-            --live-publish-every 5 \
-            --git-push \
-            --delay "$DELAY" \
-            "${EXTRA[@]+"${EXTRA[@]}"}"
+            --skip-if-pdfs 0 \
+            --live-publish-every 0 \
+            --no-git-push \
+            --delay "$DELAY"
 
-      - name: Final catalog + status publish
-        if: always()
-        env:
-          REGINTEL_LIVE_GIT_PUSH: "1"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Rebuild catalog from runner manifest (even if mid-run pushes failed)
-          python collector/live_publish.py || true
-          git add -f data/pdfs/manifest.json data/pdfs/crawl_status.json \
-            web/data/pdfs_catalog.json web/data/crawl_status.json \
-            android/app/src/main/assets/pdfs_catalog.json 2>/dev/null || true
-          if git diff --staged --quiet; then
-            echo "No final data changes to commit"
-          else
-            # Authenticated push (fixes silent exit 1 seen on 173 mid-run pushes)
-            REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-            git fetch "$REPO" main:refs/remotes/origin/main || true
-            git rebase origin/main || true
-            git commit -m "chore: crawl chunk complete $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
-            for i in 1 2 3 4 5; do
-              if git push "$REPO" HEAD:main; then
-                echo "Pushed catalog to main (attempt $i)"
-                break
-              fi
-              echo "Push failed attempt $i — rebase and retry"
-              git fetch "$REPO" main:refs/remotes/origin/main || true
-              git rebase origin/main || true
-              sleep $((i * 3))
-            done
-          fi
-          # Always upload artifacts so we never lose a successful crawl again
-          python - <<'PY'
+          # Export only this ministry's downloads as artifact
+          python - <<PY
           import json
           from pathlib import Path
-          m = json.loads(Path("data/pdfs/manifest.json").read_text()) if Path("data/pdfs/manifest.json").exists() else {}
-          n = len([d for d in (m.get("downloads") or []) if not d.get("dry_run")])
-          saudi = sum(1 for d in (m.get("downloads") or []) if "saudi" in str(d.get("jurisdiction") or "").lower() or d.get("source_kind") == "ministry")
-          print(f"manifest_downloads={n} saudi_or_ministry={saudi}")
-          Path("crawl_metrics.txt").write_text(f"pdfs={n}\nsaudi={saudi}\n")
+          code = "${CODE}"
+          m = json.loads(Path("data/pdfs/manifest.json").read_text())
+          dls = [d for d in (m.get("downloads") or []) if not d.get("dry_run")]
+          # keep only matching jurisdiction
+          keep = [d for d in dls if code in str(d.get("jurisdiction") or "")]
+          Path("_out").mkdir(exist_ok=True)
+          out = {"code": code, "downloads": keep, "count": len(keep)}
+          Path(f"_out/{code}.json").write_text(json.dumps(out, ensure_ascii=False, indent=2))
+          print(f"{code}: {len(keep)} PDFs")
+          for d in keep[:8]:
+              print(" ", (d.get("title") or d.get("url") or "")[:100])
           PY
 
-      - name: Upload crawl artifacts
+      - name: Upload ministry artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: crawl-catalog
-          path: |
-            data/pdfs/manifest.json
-            data/pdfs/crawl_status.json
-            web/data/pdfs_catalog.json
-            web/data/crawl_status.json
-            crawl_metrics.txt
+          name: ministry-${{ matrix.code }}
+          path: _out/${{ matrix.code }}.json
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 7
 
-      - name: Summary
-        if: always()
-        run: |
-          python <<'PY'
-          import json, os
-          from pathlib import Path
-          m = json.loads(Path("data/pdfs/manifest.json").read_text()) if Path("data/pdfs/manifest.json").exists() else {}
-          downloads = [d for d in (m.get("downloads") or []) if not d.get("dry_run")]
-          n = len(downloads)
-          saudi = sum(1 for d in downloads if "saudi" in str(d.get("jurisdiction") or "").lower() or d.get("source_kind") == "ministry")
-          s = {}
-          if Path("web/data/crawl_status.json").exists():
-              s = json.loads(Path("web/data/crawl_status.json").read_text())
-          lines = [
-              "### Crawl chunk summary",
-              "",
-              f"- **PDFs in catalog (manifest)**: {n}",
-              f"- **Saudi / ministry-labeled**: {saudi}",
-              f"- **Phase**: {s.get('phase')}",
-              f"- **Message**: {s.get('message')}",
-              "- **Site**: https://tmai-tech.github.io/regintel/",
-              "- Open the **Ministries** / **Crawl** tabs after deploy",
-              "",
-          ]
-          text = "\n".join(lines) + "\n"
-          print(text)
-          summary = os.environ.get("GITHUB_STEP_SUMMARY")
-          if summary:
-              with open(summary, "a", encoding="utf-8") as f:
-                  f.write(text)
-          PY
-
-  # Deploy Pages from the crawl job workspace (not a fresh main checkout), so
-  # Saudi PDFs appear even if git push failed mid-run.
-  deploy-site:
-    needs: crawl
-    if: always()
+  # ---------- Merge all ministry artifacts + push + deploy ----------
+  merge-deploy:
+    needs: [crawl-ministry]
+    if: always() && (github.event_name == 'schedule' || github.event.inputs.mode != 'all_gazette')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -275,39 +184,78 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
-          fetch-depth: 1
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download crawl artifacts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Download all ministry artifacts
         uses: actions/download-artifact@v4
         continue-on-error: true
         with:
-          name: crawl-catalog
-          path: _crawl_out
+          path: _ministry_out
+          pattern: ministry-*
+          merge-multiple: true
 
-      - name: Merge crawl outputs into web/
+      - name: Merge + rebuild catalog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          mkdir -p web/data data/pdfs
-          cp -f data/*.json web/data/ 2>/dev/null || true
-          # Prefer artifact from this crawl run (has Saudi PDFs even if push failed)
-          if [ -f _crawl_out/web/data/pdfs_catalog.json ]; then
-            cp -f _crawl_out/web/data/pdfs_catalog.json web/data/pdfs_catalog.json
-            echo "Using catalog from crawl artifact"
+          ls -la _ministry_out || true
+          find _ministry_out -type f -name '*.json' | head -40 || true
+          python scripts/merge_ministry_artifacts.py _ministry_out
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          c = json.loads(Path("web/data/pdfs_catalog.json").read_text())
+          sa = [x for x in c if str(x.get("jurisdiction","")).startswith("Saudi")]
+          print("total", len(c), "SA", len(sa))
+          print(Counter(x.get("jurisdiction") for x in sa).most_common(30))
+          zeros = []
+          expected = ["MOMAH","SOCPA","TGA","MoC","MOI","Nazaha","SAMA","MOJ","GAC","CST","MOF","CMA","Tadawul","NCA","SDAIA","GOSI","MEWA","SASO","IA","SAIP","ZATCA"]
+          counts = Counter(x.get("jurisdiction") for x in sa)
+          for code in expected:
+              j = f"Saudi Arabia - {code}"
+              n = counts.get(j, 0)
+              print(f"  {n:4d}  {j}")
+              if n == 0:
+                  zeros.append(code)
+          print("still_zero", zeros)
+          Path("ministry_coverage.txt").write_text(
+              "zeros=" + ",".join(zeros) + f"\nsa_total={len(sa)}\n"
+          )
+          PY
+
+      - name: Commit catalog to main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/pdfs/manifest.json web/data/pdfs_catalog.json \
+            web/data/crawl_status.json android/app/src/main/assets/pdfs_catalog.json \
+            data/saudi_ministries_links.txt web/data/saudi_ministries_links.txt 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No catalog changes"
+          else
+            REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git commit -m "chore: parallel Saudi ministry crawl merge $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            for i in 1 2 3 4 5; do
+              git fetch "$REPO" main:refs/remotes/origin/main || true
+              git rebase origin/main || true
+              git push "$REPO" HEAD:main && break
+              sleep $((i * 3))
+            done
           fi
-          if [ -f _crawl_out/web/data/crawl_status.json ]; then
-            cp -f _crawl_out/web/data/crawl_status.json web/data/crawl_status.json
-          elif [ -f _crawl_out/data/pdfs/crawl_status.json ]; then
-            cp -f _crawl_out/data/pdfs/crawl_status.json web/data/crawl_status.json
-          fi
-          if [ -f _crawl_out/data/pdfs/manifest.json ]; then
-            cp -f _crawl_out/data/pdfs/manifest.json data/pdfs/manifest.json
-          fi
-          for f in web/index.html web/manifest.webmanifest web/assets/app.js web/assets/styles.css; do
-            test -f "$f" || { echo "::error::Missing $f"; exit 1; }
-          done
-          echo "pdfs_catalog.json: $(wc -c < web/data/pdfs_catalog.json 2>/dev/null || echo 0) bytes"
-          python3 -c "import json; c=json.load(open('web/data/pdfs_catalog.json')); sa=sum(1 for x in c if 'saudi' in str(x.get('jurisdiction') or '').lower() or x.get('source_kind')=='ministry'); print('catalog', len(c), 'saudi/ministry', sa)" || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -315,3 +263,45 @@ jobs:
           path: web
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Parallel Saudi ministry crawl" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          cat ministry_coverage.txt >> "$GITHUB_STEP_SUMMARY" || true
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Site: https://tmai-tech.github.io/regintel/" >> "$GITHUB_STEP_SUMMARY"
+
+  # ---------- Optional: global gazette (explicit mode only) ----------
+  crawl-gazette:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'all_gazette' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps || true
+      - name: Gazette crawl
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          BUDGET="${{ github.event.inputs.time_budget_minutes }}"
+          python -u collector/download_gazette_pdfs.py \
+            --max-pages "${MAX_PAGES:-200}" \
+            --time-budget-minutes "${BUDGET:-280}" \
+            --live-publish-every 5 \
+            --git-push \
+            --delay 0.35

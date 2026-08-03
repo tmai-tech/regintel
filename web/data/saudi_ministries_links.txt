@@ -1,27 +1,76 @@
-# Saudi Arabia — priority authority crawl (format: Jurisdiction | source_kind | url)
-# Jurisdiction label is used in the Ministries tab + PDF catalog.
+# Saudi Arabia — priority authority crawl
+# Format: Jurisdiction | source_kind | url
+# Deep legal/regulatory URLs first — bare homepages often return 0 PDF candidates (SPA).
+#
+# With PDFs already (skipped if skip_if_pdfs>=5): MOMAH, MOF, NCA, MEWA, IA, MoC
+
 Saudi Arabia - MOMAH | ministry | https://momah.gov.sa
-Saudi Arabia - SOCPA | ministry | https://socpa.org.sa
-# SOCPA deep links (CMS serves docs as .pdf.aspx getattachment — not on bare homepage)
+Saudi Arabia - MoC | ministry | https://mc.gov.sa
+Saudi Arabia - MOF | ministry | https://www.mof.gov.sa
+Saudi Arabia - NCA | ministry | https://nca.gov.sa
+Saudi Arabia - MEWA | ministry | https://www.mewa.gov.sa
+Saudi Arabia - IA | ministry | https://ia.gov.sa
+
+# --- ZERO: SOCPA (Sitecore .pdf.aspx) ---
 Saudi Arabia - SOCPA | ministry | https://socpa.org.sa/Socpa/Professional-standards.aspx?lang=en-us
 Saudi Arabia - SOCPA | ministry | https://socpa.org.sa/Socpa/Professional-standards/Accounting-standards.aspx?lang=en-us
 Saudi Arabia - SOCPA | ministry | https://socpa.org.sa/Socpa/About-Socpa/Regulations.aspx?lang=en-us
+Saudi Arabia - SOCPA | ministry | https://socpa.org.sa
+
+# --- ZERO: TGA ---
+Saudi Arabia - TGA | ministry | https://www.tga.gov.sa/en/regulations
+Saudi Arabia - TGA | ministry | https://tga.gov.sa/en/regulations
 Saudi Arabia - TGA | ministry | https://tga.gov.sa
-Saudi Arabia - MoC | ministry | https://mc.gov.sa
+
+# --- ZERO: MOI ---
 Saudi Arabia - MOI | ministry | https://www.moi.gov.sa
+
+# --- ZERO: Nazaha ---
 Saudi Arabia - Nazaha | ministry | https://nazaha.gov.sa
+
+# --- ZERO: SAMA (rulebook has the PDFs, not marketing homepage) ---
+Saudi Arabia - SAMA | ministry | https://rulebook.sama.gov.sa/en
+Saudi Arabia - SAMA | ministry | https://rulebook.sama.gov.sa/en/node/6259
 Saudi Arabia - SAMA | ministry | https://www.sama.gov.sa
+
+# --- ZERO: MOJ (Documents/Regulations/pdf tree) ---
+Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa/Documents/Regulations/pdf/En/
+Saudi Arabia - MOJ | ministry | https://laws.moj.gov.sa/en
 Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa
+
+# --- ZERO: GAC ---
 Saudi Arabia - GAC | ministry | https://gac.gov.sa
+
+# --- ZERO: CST ---
 Saudi Arabia - CST | ministry | https://www.cst.gov.sa
-Saudi Arabia - MOF | ministry | https://www.mof.gov.sa
+Saudi Arabia - CST | ministry | https://www.cst.gov.sa/en/regulations
+
+# --- ZERO: CMA (direct regulations folder) ---
+Saudi Arabia - CMA | ministry | https://cma.org.sa/en/RulesRegulations/Regulations/Documents/
+Saudi Arabia - CMA | ministry | https://cma.org.sa/en/RulesRegulations/Regulations/Pages/default.aspx
 Saudi Arabia - CMA | ministry | https://cma.org.sa
+
+# --- ZERO: Tadawul ---
 Saudi Arabia - Tadawul | ministry | https://www.saudiexchange.sa
-Saudi Arabia - NCA | ministry | https://nca.gov.sa
+
+# --- ZERO: SDAIA ---
 Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf
+
+# --- ZERO: GOSI ---
 Saudi Arabia - GOSI | ministry | https://www.gosi.gov.sa
-Saudi Arabia - MEWA | ministry | https://www.mewa.gov.sa
+Saudi Arabia - GOSI | ministry | https://www.gosi.gov.sa/en/LawsAndRegulations
+
+# --- ZERO: SASO ---
 Saudi Arabia - SASO | ministry | https://www.saso.gov.sa
-Saudi Arabia - IA | ministry | https://ia.gov.sa
+
+# --- ZERO: SAIP ---
 Saudi Arabia - SAIP | ministry | https://www.saip.gov.sa
+
+# --- ZERO: ZATCA (known direct regulation PDFs) ---
+Saudi Arabia - ZATCA | ministry | https://zatca.gov.sa/en/RulesRegulations/Pages/rules.aspx
+Saudi Arabia - ZATCA | ministry | https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf
+Saudi Arabia - ZATCA | ministry | https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law_EN.pdf
+Saudi Arabia - ZATCA | ministry | https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf
 Saudi Arabia - ZATCA | ministry | https://zatca.gov.sa
