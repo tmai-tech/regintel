@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-03T12:40:56.139448+00:00",
+  "updated_at": "2026-08-03T17:36:09.745469+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - Nazaha / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - SAIP / ministry: +0 PDFs",
   "run_id": "30809390819",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30809390819",
   "totals": {
@@ -175,11 +175,11 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - Nazaha",
+    "jurisdiction": "Saudi Arabia - SAIP",
     "source_kind": "ministry",
-    "url": "https://nazaha.gov.sa",
+    "url": "https://www.saip.gov.sa",
     "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "pdfs_candidates": 73
   },
   "recent_pdfs": [
     {
@@ -411,14 +411,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 5,
-    "js_pages": 2,
+    "sources_visited": 6,
+    "pages_crawled": 215,
+    "js_pages": 13,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T12:40:54.291609+00:00"
+  "manifest_generated_at": "2026-08-03T17:36:07.892891+00:00"
 }
