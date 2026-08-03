@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T08:02:38.487310+00:00",
+  "generated_at": "2026-08-03T08:59:50.960018+00:00",
   "counts": {
     "primary_sources": 1330,
     "tracking_records": 114,
@@ -9,7 +9,7 @@
     "updates": 454,
     "laws": 1867
   },
-  "last_collector_run": "2026-08-02T08:02:39.224961+00:00",
+  "last_collector_run": "2026-08-03T08:59:51.301556+00:00",
   "last_collector_stats": {
     "sources_attempted": 50,
     "ok": 46,

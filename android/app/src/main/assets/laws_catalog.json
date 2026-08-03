@@ -8064,7 +8064,7 @@
     "alert_status": "new"
   },
   {
-    "id": "1f52100689a50cc6",
+    "id": "4c228bf505a69e67",
     "name": "Page content changed — Canadian Securities Administrators (CSA)",
     "summary": "Topics: Take Private/ Over Rules, Shareholder Rights, Crypto/ Digital Assets, Merger Control (+7 more) · Law area: Private, Capital · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Securities Administrators (CSA) · Awaiting analyst review",
     "country": "Canada",
@@ -8076,13 +8076,13 @@
     "authority": "Canadian Securities Administrators (CSA)",
     "authority_url": "https://www.securities-administrators.ca/",
     "region": "North America",
-    "date": "2026-08-02T08:02:39.224961+00:00",
+    "date": "2026-08-03T08:59:51.301556+00:00",
     "source": "collector",
     "relevancy": "Pending",
     "alert_status": "new"
   },
   {
-    "id": "d9596d53c4761382",
+    "id": "4dcce027789eba22",
     "name": "Page content changed — Canadian Securities Administrators (CSA)",
     "summary": "Topics: Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Securities Administrators (CSA) · Awaiting analyst review",
     "country": "Canada",
@@ -8094,7 +8094,7 @@
     "authority": "Canadian Securities Administrators (CSA)",
     "authority_url": "https://www.securities-administrators.ca/news/",
     "region": "North America",
-    "date": "2026-08-02T08:02:39.224961+00:00",
+    "date": "2026-08-03T08:59:51.301556+00:00",
     "source": "collector",
     "relevancy": "Pending",
     "alert_status": "new"
