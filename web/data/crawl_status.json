@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-03T17:37:17.160601+00:00",
-  "phase": "idle",
-  "message": "pruned non-regulatory ministry PDFs (CGIoT/IoT junk)",
-  "run_id": null,
-  "github_run_url": null,
+  "updated_at": "2026-08-03T17:38:11.906978+00:00",
+  "phase": "manual",
+  "message": "manual live_publish",
+  "run_id": "30837508862",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30837508862",
   "totals": {
     "pdfs": 12420,
     "errors": 22117,
