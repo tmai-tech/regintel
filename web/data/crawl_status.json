@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-03T17:36:27.784279+00:00",
-  "phase": "manual",
-  "message": "manual live_publish",
-  "run_id": "30809390819",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30809390819",
+  "updated_at": "2026-08-03T17:37:17.160601+00:00",
+  "phase": "idle",
+  "message": "pruned non-regulatory ministry PDFs (CGIoT/IoT junk)",
+  "run_id": null,
+  "github_run_url": null,
   "totals": {
-    "pdfs": 12807,
+    "pdfs": 12420,
     "errors": 22117,
     "source_reports": 43,
-    "jurisdictions": 37
+    "jurisdictions": 35
   },
   "by_jurisdiction": [
     {
@@ -28,10 +28,6 @@
       "count": 852
     },
     {
-      "jurisdiction": "Saudi Arabia - NCA",
-      "count": 259
-    },
-    {
       "jurisdiction": "Ontario",
       "count": 159
     },
@@ -44,20 +40,8 @@
       "count": 121
     },
     {
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "count": 80
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 76
-    },
-    {
-      "jurisdiction": "Saudi Arabia - IA",
-      "count": 71
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MOF",
-      "count": 69
+      "jurisdiction": "Saudi Arabia - NCA",
+      "count": 110
     },
     {
       "jurisdiction": "India",
@@ -66,6 +50,14 @@
     {
       "jurisdiction": "UK",
       "count": 42
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "count": 24
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "count": 18
     },
     {
       "jurisdiction": "Singapore",
@@ -88,8 +80,16 @@
       "count": 12
     },
     {
+      "jurisdiction": "Saudi Arabia - MOF",
+      "count": 12
+    },
+    {
       "jurisdiction": "Poland",
       "count": 11
+    },
+    {
+      "jurisdiction": "Saudi Arabia - IA",
+      "count": 10
     },
     {
       "jurisdiction": "Turkey",
@@ -110,10 +110,6 @@
     {
       "jurisdiction": "Portugal",
       "count": 5
-    },
-    {
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "count": 4
     },
     {
       "jurisdiction": "European Union",
@@ -144,10 +140,6 @@
       "count": 2
     },
     {
-      "jurisdiction": "Saudi Arabia - CST",
-      "count": 2
-    },
-    {
       "jurisdiction": "Vietnam",
       "count": 1
     },
@@ -171,32 +163,11 @@
     },
     {
       "source_kind": "ministry",
-      "count": 562
+      "count": 175
     }
   ],
   "current_source": null,
   "recent_pdfs": [
-    {
-      "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
-      "jurisdiction": "Saudi Arabia - CST",
-      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
-      "downloaded_at": "2026-08-02T21:42:12.935316+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-cla",
-      "jurisdiction": "Saudi Arabia - CST",
-      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/AR/Innovative-Technologies/Guidance-for-classifying-service-business.ashx",
-      "downloaded_at": "2026-08-02T21:42:10.736738+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/207a41a9-febf-45ea-9517-5519e863028a_CGIoT-.pdf",
-      "downloaded_at": "2026-08-02T18:51:05.926593+00:00",
-      "source_kind": "ministry"
-    },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
@@ -242,43 +213,64 @@
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/9cea9ea5-fa62-41ce-9e57-eec0342379a0_Standard_Web_Applications_Protection_Template_en-.pdf",
-      "downloaded_at": "2026-08-02T18:50:55.204893+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/2d8f01ee-ec8f-4b95-9aa0-b7373fffbcfc_POLICY_Storage_Media_Policy_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:50:19.503935+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/8c17c1bc-5a28-40f5-bbd7-f3ef5e7519de_STANDARD_Virtualization_Security_Template_en_.pdf",
-      "downloaded_at": "2026-08-02T18:50:54.615582+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/5f87a811-756f-4a0d-bf05-9d001fc3c038_Policy_SSDLC_Policy_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:50:14.232276+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/333b5368-ea76-4b93-a08d-43c7b9f0302d_STANDARD_Social-Media-Security-Standard_Template_en.pdf",
-      "downloaded_at": "2026-08-02T18:50:53.793129+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/a8fc8779-e215-4ef8-a457-ae7882165c7f_POLICY_Data_Cybersecurity_template_en.pdf",
+      "downloaded_at": "2026-08-02T18:50:13.411115+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/287a01f6-9d37-4331-9cde-99144a394ce8_STANDARD_Secure-Configuration-and-Hardening_template_en-.pdf",
-      "downloaded_at": "2026-08-02T18:50:49.957557+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/18f485e9-9cee-4013-b789-a60191068944_POLICY_Backup_and_Recovery_template_en.pdf",
+      "downloaded_at": "2026-08-02T18:50:12.589749+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/906a8d4a-631f-457e-9cad-02e1178c13d1_Standard_Proxy_template_en-.pdf",
-      "downloaded_at": "2026-08-02T18:50:48.900124+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/b2de0067-b6c6-426b-b3e1-cc5a27515191_POLICY_Asset_Management_template_en.pdf",
+      "downloaded_at": "2026-08-02T18:50:11.769045+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "embedded-url",
       "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/5e05d8ba-fb15-4819-af33-e953355d48ba_Standard_Privileged-Access-Workstation_Template_en_.pdf",
-      "downloaded_at": "2026-08-02T18:50:48.077818+00:00",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/cee056c6-f796-4c53-8293-fbd19d9e631e_Form_Policy-Undertaking_Template.pdf",
+      "downloaded_at": "2026-08-02T18:50:10.947175+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/43c50545-de13-4fd9-a484-7cb81194d327_Checklist_Cybersecurity-Requirements-in-Software-Development_template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:50:06.527361+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/270d5330-ecea-4047-9458-b062189d3ec2_Checklist_Cybersecurity-Requirements-in-IT-Projects-and-Change-Management_template_en.pdf",
+      "downloaded_at": "2026-08-02T18:50:05.703592+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "embedded-url",
+      "jurisdiction": "Saudi Arabia - NCA",
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/ccea5a8c-a237-4fb8-be67-8e6e8d9dc12f_Standard_Secure_Coding_standrd-controls_Template_en-.pdf",
+      "downloaded_at": "2026-08-02T18:49:59.257242+00:00",
       "source_kind": "ministry"
     }
   ],
