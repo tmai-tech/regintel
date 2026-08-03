@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-03T12:36:59.027193+00:00",
-  "phase": "starting",
-  "message": "crawl starting",
+  "updated_at": "2026-08-03T12:37:18.867365+00:00",
+  "phase": "running",
+  "message": "finished Saudi Arabia - CMA / ministry: +0 PDFs",
   "run_id": "30809390819",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30809390819",
   "totals": {
@@ -174,7 +174,13 @@
       "count": 562
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - CMA",
+    "source_kind": "ministry",
+    "url": "https://cma.org.sa",
+    "pdfs_downloaded": 0,
+    "pdfs_candidates": 0
+  },
   "recent_pdfs": [
     {
       "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
@@ -405,14 +411,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
+    "sources_visited": 1,
+    "pages_crawled": 1,
+    "js_pages": 1,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T12:36:57.112489+00:00"
+  "manifest_generated_at": "2026-08-03T12:37:16.971146+00:00"
 }
