@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-03T17:52:49.511076+00:00",
-  "phase": "idle",
-  "message": "pruned 0 non-regulatory ministry PDFs",
+  "updated_at": "2026-08-03T17:52:55.036037+00:00",
+  "phase": "manual",
+  "message": "manual live_publish",
   "run_id": "30838656632",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30838656632",
   "totals": {
