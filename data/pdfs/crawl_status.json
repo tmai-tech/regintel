@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-03T02:58:03.236920+00:00",
+  "updated_at": "2026-08-03T07:34:07.493423+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - Nazaha / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - SAIP / ministry: +3 PDFs",
   "run_id": "30780362343",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30780362343",
   "totals": {
-    "pdfs": 12807,
-    "errors": 22117,
+    "pdfs": 12810,
+    "errors": 22118,
     "source_reports": 37,
-    "jurisdictions": 37
+    "jurisdictions": 38
   },
   "by_jurisdiction": [
     {
@@ -132,6 +132,10 @@
       "count": 3
     },
     {
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "count": 3
+    },
+    {
       "jurisdiction": "California",
       "count": 2
     },
@@ -171,17 +175,38 @@
     },
     {
       "source_kind": "ministry",
-      "count": 562
+      "count": 565
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - Nazaha",
+    "jurisdiction": "Saudi Arabia - SAIP",
     "source_kind": "ministry",
-    "url": "https://nazaha.gov.sa",
-    "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "url": "https://www.saip.gov.sa",
+    "pdfs_downloaded": 3,
+    "pdfs_candidates": 71
   },
   "recent_pdfs": [
+    {
+      "title": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2",
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "url": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D9%2585%25D8%25AD%25D8%25AA%25D9%2588%25D9%2589%2520%25D8%25AA%25D9%2582%25D8%25B1%25D9%258A%25D8%25B1%2520%25D8%25A7%25D9%2584%25D9%2581%25D8%25AD%25D8%25B5.pdf&action=view",
+      "downloaded_at": "2026-08-03T07:34:05.408522+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25A7%25D9%2584%25D8%25AF%25D9%2",
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "url": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25A7%25D9%2584%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D8%25A7%25D9%2595%25D8%25B1%25D8%25B4%25D8%25A7%25D8%25AF%25D9%258A%2520%25D9%2584%25D8%25AE%25D8%25AF%25D9%2585%25D8%25A9%2520%25D8%25A7%25D9%2595%25D9%258A%25D8%25AF%25D8%25A7%25D8%25B9%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D9%2584%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9_compressed.pdf&action=view",
+      "downloaded_at": "2026-08-03T07:32:17.749068+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2",
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "url": "https://www.saip.gov.sa/api/proxy-file?path=%2Fsites%2Fdefault%2Ffiles%2F2026-04%2F%25D8%25AF%25D9%2584%25D9%258A%25D9%2584%2520%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25AA%25D8%25AE%25D8%25AF%25D9%2585%2520%25D9%2584%25D8%25AA%25D9%2582%25D8%25AF%25D9%258A%25D9%2585%2520%25D8%25B7%25D9%2584%25D8%25A8%2520%25D8%25AA%25D8%25B3%25D8%25AC%25D9%258A%25D9%2584%2520%25D8%25A8%25D8%25B1%25D8%25A7%25D8%25A1%25D8%25A9%2520%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25B9%2520%2520.pdf&action=view",
+      "downloaded_at": "2026-08-03T07:31:20.799255+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/Reports/Whitepaper/EN/Innovative-Technologies/Guidance-for-cla",
       "jurisdiction": "Saudi Arabia - CST",
@@ -264,27 +289,6 @@
       "jurisdiction": "Saudi Arabia - NCA",
       "url": "https://cdn.nca.gov.sa/api/files/public/upload/333b5368-ea76-4b93-a08d-43c7b9f0302d_STANDARD_Social-Media-Security-Standard_Template_en.pdf",
       "downloaded_at": "2026-08-02T18:50:53.793129+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/287a01f6-9d37-4331-9cde-99144a394ce8_STANDARD_Secure-Configuration-and-Hardening_template_en-.pdf",
-      "downloaded_at": "2026-08-02T18:50:49.957557+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/906a8d4a-631f-457e-9cad-02e1178c13d1_Standard_Proxy_template_en-.pdf",
-      "downloaded_at": "2026-08-02T18:50:48.900124+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "embedded-url",
-      "jurisdiction": "Saudi Arabia - NCA",
-      "url": "https://cdn.nca.gov.sa/api/files/public/upload/5e05d8ba-fb15-4819-af33-e953355d48ba_Standard_Privileged-Access-Workstation_Template_en_.pdf",
-      "downloaded_at": "2026-08-02T18:50:48.077818+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -411,14 +415,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 5,
-    "pages_crawled": 5,
-    "js_pages": 2,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
-    "pdfs_skipped_existing": 0,
+    "sources_visited": 6,
+    "pages_crawled": 217,
+    "js_pages": 20,
+    "pdfs_discovered": 3,
+    "pdfs_downloaded": 3,
+    "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
-    "errors": 0
+    "errors": 1
   },
-  "manifest_generated_at": "2026-08-03T02:58:01.366249+00:00"
+  "manifest_generated_at": "2026-08-03T07:34:05.618723+00:00"
 }
