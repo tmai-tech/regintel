@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-03T17:43:52.609048+00:00",
-  "phase": "idle",
-  "message": "pruned 0 non-regulatory ministry PDFs",
+  "updated_at": "2026-08-03T17:43:56.432778+00:00",
+  "phase": "starting",
+  "message": "crawl starting",
   "run_id": "30837940806",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30837940806",
   "totals": {
@@ -397,14 +397,15 @@
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 215,
-    "js_pages": 13,
+    "sources_visited": 0,
+    "pages_crawled": 0,
+    "js_pages": 0,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
+    "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T17:36:19.669712+00:00"
+  "manifest_generated_at": "2026-08-03T17:43:55.114415+00:00"
 }
