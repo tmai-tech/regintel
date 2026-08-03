@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-03T02:54:26.916430+00:00",
+  "updated_at": "2026-08-03T02:54:42.039288+00:00",
   "phase": "running",
-  "message": "finished Saudi Arabia - CMA / ministry: +0 PDFs",
+  "message": "finished Saudi Arabia - GAC / ministry: +0 PDFs",
   "run_id": "30780362343",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30780362343",
   "totals": {
@@ -175,9 +175,9 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - CMA",
+    "jurisdiction": "Saudi Arabia - GAC",
     "source_kind": "ministry",
-    "url": "https://cma.org.sa",
+    "url": "https://gac.gov.sa",
     "pdfs_downloaded": 0,
     "pdfs_candidates": 0
   },
@@ -411,14 +411,14 @@
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 1,
-    "js_pages": 1,
+    "sources_visited": 2,
+    "pages_crawled": 2,
+    "js_pages": 2,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T02:54:25.013013+00:00"
+  "manifest_generated_at": "2026-08-03T02:54:40.139486+00:00"
 }
