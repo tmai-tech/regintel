@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-04T18:15:33.465488+00:00",
+  "updated_at": "2026-08-04T18:20:02.237161+00:00",
   "phase": "running",
   "message": "finished Saudi Arabia - SDAIA / site: +0 PDFs",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
     "pdfs": 12755,
-    "errors": 22124,
+    "errors": 22126,
     "source_reports": 43,
     "jurisdictions": 40
   },
@@ -193,9 +193,9 @@
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/ndmo/Files/",
+    "url": "https://dgp.sdaia.gov.sa/",
     "pdfs_downloaded": 0,
-    "pdfs_candidates": 0
+    "pdfs_candidates": 102
   },
   "recent_pdfs": [
     {
@@ -427,15 +427,15 @@
     }
   ],
   "stats": {
-    "sources_visited": 7,
-    "pages_crawled": 1204,
-    "js_pages": 160,
+    "sources_visited": 8,
+    "pages_crawled": 1466,
+    "js_pages": 204,
     "pdfs_discovered": 216,
     "pdfs_downloaded": 216,
-    "pdfs_skipped_existing": 591,
+    "pdfs_skipped_existing": 691,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 7
+    "errors": 9
   },
-  "manifest_generated_at": "2026-08-04T18:15:31.754076+00:00"
+  "manifest_generated_at": "2026-08-04T18:20:00.544338+00:00"
 }
