@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:13:46.389042+00:00",
+  "updated_at": "2026-08-04T17:16:14.318249+00:00",
   "phase": "running",
-  "message": "downloaded 5 new this run",
+  "message": "downloaded 25 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12544,
+    "pdfs": 12564,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -48,16 +48,16 @@
       "count": 50
     },
     {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "count": 49
+    },
+    {
       "jurisdiction": "India",
       "count": 47
     },
     {
       "jurisdiction": "UK",
       "count": 42
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 29
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
@@ -187,119 +187,119 @@
     },
     {
       "source_kind": "site",
-      "count": 5
+      "count": 25
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/organizationalStructure.aspx"
+    "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "السيرة الذاتية",
+      "title": "البنود التعاقدية القياسية لنقل البيانات الشخصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DR.SattamAlsubaieCV.pdf",
-      "downloaded_at": "2026-08-04T17:13:44.733458+00:00",
+      "url": "https://sdaia.gov.sa/Documents/StandardContractualClausesForPersonalDataTransferAR.pdf",
+      "downloaded_at": "2026-08-04T17:16:12.658420+00:00",
       "source_kind": "site"
     },
     {
-      "title": "السيرة الذاتية",
+      "title": "دليل إعداد القواعد المُشتركة المُلزِمة لنقل البيانات الشخصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/HEAlrebdiCV.pdf",
-      "downloaded_at": "2026-08-04T17:13:44.032621+00:00",
+      "url": "https://sdaia.gov.sa/Documents/CommonRulesBCRForPersonalDataTransferAR.pdf",
+      "downloaded_at": "2026-08-04T17:16:08.818624+00:00",
       "source_kind": "site"
     },
     {
-      "title": "السيرة الذاتية",
+      "title": "القواعد العامة للاستخدام الثانوي للبيانات",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DrEsamAlwagait.pdf",
-      "downloaded_at": "2026-08-04T17:13:43.175888+00:00",
+      "url": "https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_AR.pdf",
+      "downloaded_at": "2026-08-04T17:16:05.072456+00:00",
       "source_kind": "site"
     },
     {
-      "title": "السيرة الذاتية",
+      "title": "القواعد المنظمة للسجل الوطني لجهات التحكم داخل المملكة",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/HEEngSamiMuqeemCV.pdf",
-      "downloaded_at": "2026-08-04T17:13:42.353130+00:00",
+      "url": "https://sdaia.gov.sa/Documents/TheRulesGoverningTheNationalRegisterOfControllersWithinTheKingdomPublic.pdf",
+      "downloaded_at": "2026-08-04T17:15:57.902166+00:00",
       "source_kind": "site"
     },
     {
-      "title": "السيرة الذاتية",
+      "title": "الدليل الاسترشادي لتحديد الحد الأدنى من البيانات الشخصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/Dr.AbdullahCV.pdf",
-      "downloaded_at": "2026-08-04T17:13:41.542636+00:00",
+      "url": "https://sdaia.gov.sa/Documents/MinmumPDGuidelineArabic.pdf",
+      "downloaded_at": "2026-08-04T17:15:53.762761+00:00",
       "source_kind": "site"
     },
     {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/Documents/DataSharingPolicySADIA.pdf",
-      "downloaded_at": "2026-08-04T16:54:24.005401+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/RequiredDocuments/Documents/WageVariablesDataForSaudiWorkersInGCCAR.pdf",
-      "downloaded_at": "2026-08-04T16:54:22.013463+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/RequiredDocuments/Documents/es002025.pdf",
-      "downloaded_at": "2026-08-04T16:54:21.040022+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/RequiredDocuments/Documents/form109-1.pdf",
-      "downloaded_at": "2026-08-04T16:54:20.709651+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/InsuranceProtection/Documents/GuideforGCCCitizensWorkingInKingdomOfSaudiArabia.pdf",
-      "downloaded_at": "2026-08-04T16:54:20.326384+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/OccupationalHazardsInsurancePolicyforNon-Saudis1445.pdf",
-      "downloaded_at": "2026-08-04T16:54:19.966062+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/OccupationalHazardsInsurancePolicyforSaudis1445.pdf",
-      "downloaded_at": "2026-08-04T16:54:05.712125+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغ ط هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/Vaolitionrules1445H.pdf",
-      "downloaded_at": "2026-08-04T16:53:57.431505+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/OccupationalDiseasesTable.pdf",
-      "downloaded_at": "2026-08-04T16:53:56.627077+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf",
+      "title": "الدليل الاسترشادي لإعداد وتطوير سياسة الخصوصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf",
-      "downloaded_at": "2026-08-04T16:53:13.489993+00:00",
-      "source_kind": "ministry"
+      "url": "https://sdaia.gov.sa/Documents/PrivacyPolicyGuidelineArabic.pdf",
+      "downloaded_at": "2026-08-04T17:15:44.363736+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "الدليل الاسترشادي لتقويم مخاطر نقل البيانات الشخصية إلى خارج المملكة",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/RisksTransferringDataOutsideKingdomAr.pdf",
+      "downloaded_at": "2026-08-04T17:15:38.324341+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "سياسة تحقيق الإيرادات من البيانات",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/DataMonetizationPolicy-ar.pdf",
+      "downloaded_at": "2026-08-04T17:15:28.927859+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "السياسة",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf",
+      "downloaded_at": "2026-08-04T17:15:21.652326+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "السياسة",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf",
+      "downloaded_at": "2026-08-04T17:15:17.143827+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "قواعد تعيين مسؤول حماية البيانات الشخصية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/RulesforAppointingPersonalDataProtectionOfficer.pdf",
+      "downloaded_at": "2026-08-04T17:15:13.970625+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "قواعد عمل لجان النظر في مخالفة أحكام نظام حماية البيانات الشخصية ولوائحه",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/CommitteeWorkingRules.pdf",
+      "downloaded_at": "2026-08-04T17:15:08.752591+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "لائحة نقل البيانات الشخصية إلى خارج المملكة",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/Documents/RegulationonPersonalDataAR.pdf",
+      "downloaded_at": "2026-08-04T17:15:07.193529+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "اللائحة التنفيذية للنظام",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf",
+      "downloaded_at": "2026-08-04T17:15:01.696916+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "النظام",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf",
+      "downloaded_at": "2026-08-04T17:14:56.473217+00:00",
+      "source_kind": "site"
     }
   ],
   "last_source_reports": [
@@ -428,12 +428,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 5,
-    "pdfs_downloaded": 5,
-    "pdfs_skipped_existing": 0,
+    "pdfs_discovered": 25,
+    "pdfs_downloaded": 25,
+    "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:13:44.733579+00:00"
+  "manifest_generated_at": "2026-08-04T17:16:12.658513+00:00"
 }
