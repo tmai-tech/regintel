@@ -1,0 +1,143 @@
+# One-shot: full unfiltered PDF crawl of sdaia.gov.sa (+ dgp.sdaia.gov.sa)
+name: Crawl SDAIA full site
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: "BFS pages per seed URL"
+        required: false
+        default: "400"
+      time_budget_minutes:
+        description: "Total run time budget (minutes)"
+        required: false
+        default: "200"
+      delay:
+        description: "Seconds between requests"
+        required: false
+        default: "0.2"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl-sdaia-full
+  cancel-in-progress: true
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install chromium --with-deps || echo "playwright skip"
+
+      - name: Full SDAIA crawl (no regulatory filter)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          MAX_PAGES="${MAX_PAGES:-400}"
+          BUDGET="${{ github.event.inputs.time_budget_minutes }}"
+          BUDGET="${BUDGET:-200}"
+          DELAY="${{ github.event.inputs.delay }}"
+          DELAY="${DELAY:-0.2}"
+          test -f data/sdaia_full_crawl.txt
+          echo "=== SDAIA FULL CRAWL (all PDFs, no filter) ==="
+          cat data/sdaia_full_crawl.txt
+          # Start from existing manifest so we keep prior SA PDFs and resume
+          mkdir -p data/pdfs
+          # Unlimited PDFs per source, no per-source minute cap, no skip-if, NO --regulatory-only
+          python -u collector/download_gazette_pdfs.py \
+            --url-only \
+            --from-file data/sdaia_full_crawl.txt \
+            --max-pages "$MAX_PAGES" \
+            --max-pdfs-per-source 0 \
+            --max-minutes-per-source 0 \
+            --skip-if-pdfs 0 \
+            --time-budget-minutes "$BUDGET" \
+            --live-publish-every 5 \
+            --git-push \
+            --delay "$DELAY"
+          python scripts/fix_ministry_jurisdiction_labels.py || true
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          c = json.loads(Path("web/data/pdfs_catalog.json").read_text())
+          sda = [x for x in c if "SDAIA" in str(x.get("jurisdiction") or "")
+                 or "sdaia" in str(x.get("host") or "").lower()
+                 or "sdaia" in str(x.get("url") or "").lower()]
+          print(f"SDAIA-related PDFs in catalog: {len(sda)}")
+          print(Counter(x.get("jurisdiction") for x in sda))
+          for x in sda[:40]:
+              print(" -", (x.get("filename") or x.get("title") or "")[:80])
+          if len(sda) > 40:
+              print(f" ... +{len(sda)-40} more")
+          Path("sdaia_count.txt").write_text(str(len(sda)) + "\n")
+          PY
+
+      - name: Final push
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python collector/live_publish.py || true
+          python scripts/fix_ministry_jurisdiction_labels.py || true
+          git add -f data/pdfs/manifest.json web/data/pdfs_catalog.json \
+            web/data/crawl_status.json android/app/src/main/assets/pdfs_catalog.json \
+            data/pdfs/crawl_status.json 2>/dev/null || true
+          REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: SDAIA full-site PDF crawl $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            for i in 1 2 3 4 5; do
+              git fetch "$REPO" main:refs/remotes/origin/main || true
+              git rebase origin/main || true
+              git push "$REPO" HEAD:main && break
+              sleep $((i * 3))
+            done
+          fi
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          c = json.loads(Path("web/data/pdfs_catalog.json").read_text())
+          n = sum(1 for x in c if "SDAIA" in str(x.get("jurisdiction") or "")
+                  or "sdaia" in str(x.get("host") or "").lower())
+          print(f"### SDAIA full crawl result: **{n} PDFs**", flush=True)
+          import os
+          s = os.environ.get("GITHUB_STEP_SUMMARY")
+          if s:
+              open(s, "a").write(f"### SDAIA full crawl\n\n**{n} PDFs** labeled/host-matched to SDAIA\n")
+          PY
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4

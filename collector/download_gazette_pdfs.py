@@ -555,7 +555,9 @@ class GazettePdfCollector:
             },
         )
 
-        reg_focus = self.regulatory_only or source_kind == "ministry"
+        # Full dump (source_kind=site/full/custom): no legal-path bias, no regulatory filter
+        full_dump = source_kind in ("site", "full", "custom", "all_pdfs")
+        reg_focus = (self.regulatory_only or source_kind == "ministry") and not full_dump
         if self.max_minutes_per_source > 0:
             self._source_deadline = time.time() + self.max_minutes_per_source * 60
             self.log(
@@ -697,7 +699,8 @@ class GazettePdfCollector:
         docs = [d for d in docs if d.is_pdf or PDF_EXT_RE.search(d.url)]
         report["pdfs_candidates"] = len(docs)
 
-        reg_focus = self.regulatory_only or source_kind == "ministry"
+        full_dump = source_kind in ("site", "full", "custom", "all_pdfs")
+        reg_focus = (self.regulatory_only or source_kind == "ministry") and not full_dump
         if reg_focus and docs:
             keep, rejected = filter_regulatory_docs(docs, min_score=15)
             report["pdfs_rejected_junk"] = len(rejected)
@@ -1032,17 +1035,17 @@ def main():
     else:
         git_push = None  # auto on GITHUB_ACTIONS
 
-    # Ministry / --url-only lists default to regulatory filter (laws not IoT junk)
-    regulatory_only = bool(args.regulatory_only or args.url_only)
+    # Only apply regulatory filter when explicitly requested (not implied by --url-only)
+    regulatory_only = bool(args.regulatory_only)
 
-    # For ministry lists: default 8 min/source + skip if already has 5 PDFs
     max_min_src = args.max_minutes_per_source
     skip_if = args.skip_if_pdfs
-    if args.url_only:
+    # Defaults for filtered ministry mode only; full-site dumps pass 0 explicitly
+    if args.regulatory_only and args.url_only:
         if max_min_src <= 0:
             max_min_src = 8
-        if skip_if <= 0:
-            skip_if = 5
+        if skip_if < 0:
+            skip_if = 0
 
     collector = GazettePdfCollector(
         max_pdfs_per_source=args.max_pdfs_per_source,

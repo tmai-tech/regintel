@@ -1,0 +1,12 @@
+# Full unfiltered SDAIA site PDF dump (source_kind=site → no regulatory filter)
+# BFS every same-site page; collect every .pdf / .pdf.aspx under these seeds.
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/en
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/ar
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/en/SDAIA/about/Documents/
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/ar/SDAIA/about/Documents/
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/Documents/
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/ndmo/Files/
+Saudi Arabia - SDAIA | site | https://dgp.sdaia.gov.sa/
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/en/SDAIA/about/
+Saudi Arabia - SDAIA | site | https://sdaia.gov.sa/ar/SDAIA/about/
