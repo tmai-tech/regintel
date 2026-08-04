@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:03:33.240306+00:00",
-  "phase": "starting",
-  "message": "crawl starting",
+  "updated_at": "2026-08-04T17:13:46.389042+00:00",
+  "phase": "running",
+  "message": "downloaded 5 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12539,
+    "pdfs": 12544,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -57,7 +57,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 24
+      "count": 29
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
@@ -184,10 +184,53 @@
     {
       "source_kind": "ministry",
       "count": 294
+    },
+    {
+      "source_kind": "site",
+      "count": 5
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "site",
+    "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/organizationalStructure.aspx"
+  },
   "recent_pdfs": [
+    {
+      "title": "السيرة الذاتية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DR.SattamAlsubaieCV.pdf",
+      "downloaded_at": "2026-08-04T17:13:44.733458+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "السيرة الذاتية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/HEAlrebdiCV.pdf",
+      "downloaded_at": "2026-08-04T17:13:44.032621+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "السيرة الذاتية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DrEsamAlwagait.pdf",
+      "downloaded_at": "2026-08-04T17:13:43.175888+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "السيرة الذاتية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/HEEngSamiMuqeemCV.pdf",
+      "downloaded_at": "2026-08-04T17:13:42.353130+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "السيرة الذاتية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/Dr.AbdullahCV.pdf",
+      "downloaded_at": "2026-08-04T17:13:41.542636+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "اضغط هنا",
       "jurisdiction": "Saudi Arabia - GOSI",
@@ -256,41 +299,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf",
       "downloaded_at": "2026-08-04T16:53:13.489993+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/047a4149-ba11-4919-9341-260164125ba5/The+Rules+Governing+the+National+Register+of+Controllers+Within+the+Kingdom.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-047a4149-ba11-4919-9341-260164125ba5-p77GRZx",
-      "downloaded_at": "2026-08-04T16:51:41.787132+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/1f2c6774-2afe-41b4-b96b-4762c5c71b00/Guidelines+for+Binding+Common+Rules+%28BCR%29+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1f2c6774-2afe-41b4-b96b-4762c5c71b00-p72bRsu",
-      "downloaded_at": "2026-08-04T16:51:40.066216+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/16aec46f-ea3d-47f6-8e0d-e49ffa2349d5/Risk+Assessment+Guideline+for+Transferring+Personal+Data+Outside+the+Kingdom.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-16aec46f-ea3d-47f6-8e0d-e49ffa2349d5-pkzMZp-",
-      "downloaded_at": "2026-08-04T16:51:36.279897+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/19ec3250-16a6-47c7-8e8c-b8e1d6f86633/Personal+Data+Processing+Activities+Records+Guideline.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-19ec3250-16a6-47c7-8e8c-b8e1d6f86633-p6ZyLvw",
-      "downloaded_at": "2026-08-04T16:51:26.864340+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/1d3217bd-64b2-4e87-86a1-f0d094712cd4/Personal+Data+Disclosure+Cases+Guideline.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d3217bd-64b2-4e87-86a1-f0d094712cd4-p6OmrYd",
-      "downloaded_at": "2026-08-04T16:51:19.270488+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -417,15 +425,15 @@
     }
   ],
   "stats": {
-    "sources_visited": 0,
-    "pages_crawled": 0,
-    "js_pages": 0,
-    "pdfs_discovered": 0,
-    "pdfs_downloaded": 0,
+    "sources_visited": 1,
+    "pages_crawled": 400,
+    "js_pages": 58,
+    "pdfs_discovered": 5,
+    "pdfs_downloaded": 5,
     "pdfs_skipped_existing": 0,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:03:31.521106+00:00"
+  "manifest_generated_at": "2026-08-04T17:13:44.733579+00:00"
 }
