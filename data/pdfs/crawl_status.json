@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:16:14.318249+00:00",
+  "updated_at": "2026-08-04T17:18:57.605775+00:00",
   "phase": "running",
-  "message": "downloaded 25 new this run",
+  "message": "downloaded 40 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12564,
+    "pdfs": 12579,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -44,12 +44,12 @@
       "count": 104
     },
     {
-      "jurisdiction": "Saudi Arabia - CMA",
-      "count": 50
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "count": 64
     },
     {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 49
+      "jurisdiction": "Saudi Arabia - CMA",
+      "count": 50
     },
     {
       "jurisdiction": "India",
@@ -187,118 +187,118 @@
     },
     {
       "source_kind": "site",
-      "count": 25
+      "count": 40
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
+    "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/AboutAI.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "البنود التعاقدية القياسية لنقل البيانات الشخصية",
+      "title": "المؤشر الوطني للذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/StandardContractualClausesForPersonalDataTransferAR.pdf",
-      "downloaded_at": "2026-08-04T17:16:12.658420+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/NAII.pdf",
+      "downloaded_at": "2026-08-04T17:18:55.952437+00:00",
       "source_kind": "site"
     },
     {
-      "title": "دليل إعداد القواعد المُشتركة المُلزِمة لنقل البيانات الشخصية",
+      "title": "الذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/CommonRulesBCRForPersonalDataTransferAR.pdf",
-      "downloaded_at": "2026-08-04T17:16:08.818624+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications09.pdf",
+      "downloaded_at": "2026-08-04T17:18:52.623864+00:00",
       "source_kind": "site"
     },
     {
-      "title": "القواعد العامة للاستخدام الثانوي للبيانات",
+      "title": "إطار تبني الذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_AR.pdf",
-      "downloaded_at": "2026-08-04T17:16:05.072456+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/AIAdoptionFramework.pdf",
+      "downloaded_at": "2026-08-04T17:18:19.828277+00:00",
       "source_kind": "site"
     },
     {
-      "title": "القواعد المنظمة للسجل الوطني لجهات التحكم داخل المملكة",
+      "title": "مبادئ التزييف العميق",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/TheRulesGoverningTheNationalRegisterOfControllersWithinTheKingdomPublic.pdf",
-      "downloaded_at": "2026-08-04T17:15:57.902166+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf",
+      "downloaded_at": "2026-08-04T17:18:14.583842+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الدليل الاسترشادي لتحديد الحد الأدنى من البيانات الشخصية",
+      "title": "مبادئ الذكاء الاصطناعي التوليدي للعموم",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/MinmumPDGuidelineArabic.pdf",
-      "downloaded_at": "2026-08-04T17:15:53.762761+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenerativeAIPublicAR.pdf",
+      "downloaded_at": "2026-08-04T17:17:57.911760+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الدليل الاسترشادي لإعداد وتطوير سياسة الخصوصية",
+      "title": "مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/PrivacyPolicyGuidelineArabic.pdf",
-      "downloaded_at": "2026-08-04T17:15:44.363736+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf",
+      "downloaded_at": "2026-08-04T17:17:44.881575+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الدليل الاسترشادي لتقويم مخاطر نقل البيانات الشخصية إلى خارج المملكة",
+      "title": "الإطار السعودي لمؤهلات تخصصات الذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/RisksTransferringDataOutsideKingdomAr.pdf",
-      "downloaded_at": "2026-08-04T17:15:38.324341+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0003.pdf",
+      "downloaded_at": "2026-08-04T17:17:31.744997+00:00",
       "source_kind": "site"
     },
     {
-      "title": "سياسة تحقيق الإيرادات من البيانات",
+      "title": "الإطار الوطني للمعايير المهنية للبيانات والذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/DataMonetizationPolicy-ar.pdf",
-      "downloaded_at": "2026-08-04T17:15:28.927859+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0002.pdf",
+      "downloaded_at": "2026-08-04T17:17:27.673928+00:00",
       "source_kind": "site"
     },
     {
-      "title": "السياسة",
+      "title": "النسخة الأولية من مبادئ أخلاقيات الذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf",
-      "downloaded_at": "2026-08-04T17:15:21.652326+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf",
+      "downloaded_at": "2026-08-04T17:17:04.045821+00:00",
       "source_kind": "site"
     },
     {
-      "title": "السياسة",
+      "title": "القواعد المنظمة لإصدار شهادات الاعتماد لجهات التحكم وجهات المعالجة",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf",
-      "downloaded_at": "2026-08-04T17:15:17.143827+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/RulesGoverningIssuanceAccreditationCertificatesControllersProcessers-ar.pdf",
+      "downloaded_at": "2026-08-04T17:16:56.653630+00:00",
       "source_kind": "site"
     },
     {
-      "title": "قواعد تعيين مسؤول حماية البيانات الشخصية",
+      "title": "القواعد المنظمة لتراخيص أنشطة إصدار شهادات الاعتماد لجهات التحكم والمعالجة وأنشطة التدقيق والفحص لمعالجة البيانات الشخصي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/RulesforAppointingPersonalDataProtectionOfficer.pdf",
-      "downloaded_at": "2026-08-04T17:15:13.970625+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/CertificatesControllersProcessorsAuditingInspectionPersonalDataProcessingActivities-ar.pdf",
+      "downloaded_at": "2026-08-04T17:16:52.579340+00:00",
       "source_kind": "site"
     },
     {
-      "title": "قواعد عمل لجان النظر في مخالفة أحكام نظام حماية البيانات الشخصية ولوائحه",
+      "title": "الدليل الإجرائي لمعالجة حوادث تسرب البيانات الشخصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/CommitteeWorkingRules.pdf",
-      "downloaded_at": "2026-08-04T17:15:08.752591+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataBreachIncidents.pdf",
+      "downloaded_at": "2026-08-04T17:16:49.966344+00:00",
       "source_kind": "site"
     },
     {
-      "title": "لائحة نقل البيانات الشخصية إلى خارج المملكة",
+      "title": "الدليل الاسترشادي لسجلات أنشطة معالجة البيانات الشخصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/RegulationonPersonalDataAR.pdf",
-      "downloaded_at": "2026-08-04T17:15:07.193529+00:00",
+      "url": "https://sdaia.gov.sa/Documents/PersonalDataProcessingActivitiesRecordsGuidelineAR.pdf",
+      "downloaded_at": "2026-08-04T17:16:44.689600+00:00",
       "source_kind": "site"
     },
     {
-      "title": "اللائحة التنفيذية للنظام",
+      "title": "الدليل الاسترشادي لحالات الإفصاح عن البيانات الشخصية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf",
-      "downloaded_at": "2026-08-04T17:15:01.696916+00:00",
+      "url": "https://sdaia.gov.sa/Documents/PersonalDataDisclosureCasesGuidelineAR.pdf",
+      "downloaded_at": "2026-08-04T17:16:36.967580+00:00",
       "source_kind": "site"
     },
     {
-      "title": "النظام",
+      "title": "الدليل الاسترشادي لإتلاف البيانات الشخصية وإخفاء الهوية والترميز",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf",
-      "downloaded_at": "2026-08-04T17:14:56.473217+00:00",
+      "url": "https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf",
+      "downloaded_at": "2026-08-04T17:16:29.216664+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 25,
-    "pdfs_downloaded": 25,
+    "pdfs_discovered": 40,
+    "pdfs_downloaded": 40,
     "pdfs_skipped_existing": 1,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:16:12.658513+00:00"
+  "manifest_generated_at": "2026-08-04T17:18:55.952542+00:00"
 }
