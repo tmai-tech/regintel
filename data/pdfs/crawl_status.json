@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T02:56:58.351134+00:00",
+  "updated_at": "2026-08-04T06:48:59.236309+00:00",
   "phase": "idle",
-  "message": "merged 1 ministry PDFs from parallel crawl",
-  "run_id": "30872311643",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30872311643",
+  "message": "merged 15 ministry PDFs from parallel crawl",
+  "run_id": "30884128088",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30884128088",
   "totals": {
-    "pdfs": 12460,
+    "pdfs": 12475,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -58,6 +58,10 @@
     {
       "jurisdiction": "Saudi Arabia - CMA",
       "count": 20
+    },
+    {
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "count": 19
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -124,10 +128,6 @@
       "count": 5
     },
     {
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "count": 4
-    },
-    {
       "jurisdiction": "European Union",
       "count": 3
     },
@@ -183,114 +183,114 @@
     },
     {
       "source_kind": "ministry",
-      "count": 215
+      "count": 230
     }
   ],
   "current_source": null,
   "recent_pdfs": [
     {
-      "title": "استخدام البيانات المفتوحة",
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
-      "downloaded_at": "2026-08-04T02:46:40.068339+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf",
+      "title": "The Agreement in Turkish​",
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf",
-      "downloaded_at": "2026-08-03T21:20:26.983468+00:00",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSAxTR_Agreement(TR).pdf",
+      "downloaded_at": "2026-08-04T06:45:34.599943+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law_EN.pdf",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law_EN.pdf",
-      "downloaded_at": "2026-08-03T21:18:31.051727+00:00",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/Solvakia.pdf",
+      "downloaded_at": "2026-08-04T06:45:33.720502+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf",
-      "downloaded_at": "2026-08-03T21:17:38.401118+00:00",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/Develop-Trade-Among-Arab-Countries.pdf",
+      "downloaded_at": "2026-08-04T06:45:33.180881+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Click here​​​",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/Documents/Statute%20of%20ZATCA_EN.pdf",
-      "downloaded_at": "2026-08-03T21:17:36.728116+00:00",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/TFA.pdf",
+      "downloaded_at": "2026-08-04T06:45:32.506359+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "انقر للمزيد​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/measurement/Documents/Controls-for-qualifying-verification.pdf",
-      "downloaded_at": "2026-08-03T21:17:06.074172+00:00",
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSA%26MORC_Agreement(AR).pdf",
+      "downloaded_at": "2026-08-04T06:45:31.947911+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "انقر للمزيد ​.",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/measurement/Documents/Technical-requirements.pdf",
-      "downloaded_at": "2026-08-03T21:15:49.077845+00:00",
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSAxJORD_Agreement(AR).pdf",
+      "downloaded_at": "2026-08-04T06:45:30.782752+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "انقر للمزيد",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/measurement/Documents/%d8%a7%d9%84%d8%a7%d8%b4%d8%aa%d8%b1%d8%a7%d8%b7%d8%a7%d8%aa%20%d8%a7%d9%84%d9%81%d9%86%d9%8a%d8%a9%20%d9%84%d8%b9%d8%af%d8%a7%d8%af%d8%a7%d8%aa%20%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9%20%d8%a7%d9%84%d9%83%d9%87%d8%b1%d8%a8%d8%a7%d8%a6%d9%8a%d8%a9%20%d8%a7%d9%84%d9%81%d8%b9%d8%a7%d9%84%d8%a9.pdf",
-      "downloaded_at": "2026-08-03T21:15:40.081874+00:00",
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/KSAxTR_Agreement(EN).pdf",
+      "downloaded_at": "2026-08-04T06:45:29.013146+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "انقر للمزيد ​.​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/measurement/Documents/%d8%a7%d9%84%d8%a7%d8%b4%d8%aa%d8%b1%d8%a7%d8%b7%d8%a7%d8%aa%20%d8%a7%d9%84%d9%81%d9%86%d9%8a%d8%a9%20%d9%84%d9%84%d9%85%d9%88%d8%a7%d8%b2%d9%8a%d9%8a%d9%86%20%d8%ba%d9%8a%d8%b1%20%d8%a7%d9%84%d8%aa%d9%84%d9%82%d8%a7%d8%a6%d9%8a%d8%a9.pdf",
-      "downloaded_at": "2026-08-03T21:15:24.229965+00:00",
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/Endangered-Species.pdf",
+      "downloaded_at": "2026-08-04T06:45:28.268162+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "انقر للمزيد ​.",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/measurement/Documents/%d8%a7%d9%84%d8%a7%d8%b4%d8%aa%d8%b1%d8%a7%d8%b7%d8%a7%d8%aa%20%d8%a7%d9%84%d9%81%d9%86%d9%8a%d8%a9%20%d9%84%d9%85%d8%b6%d8%ae%d8%a7%d8%aa%20%d8%a7%d9%84%d9%88%d9%82%d9%88%d8%af.pdf",
-      "downloaded_at": "2026-08-03T21:15:06.798309+00:00",
+      "title": "The Royal Decree​​",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSAxTR_RoyalDecree.pdf",
+      "downloaded_at": "2026-08-04T06:45:26.831276+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "انقر للمزيد.​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/measurement/Documents/%d9%84%d8%a7%d8%a6%d8%ad%d8%a9%20%d8%a7%d9%84%d8%aa%d9%83%d8%a7%d9%84%d9%8a%d9%81.pdf",
-      "downloaded_at": "2026-08-03T21:14:49.719161+00:00",
+      "title": "The Royal Decree​​​",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSAxJORD_RoyalDecree.pdf",
+      "downloaded_at": "2026-08-04T06:45:25.654182+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.org.sa/en/RulesRegulations/Regulations/Documents/InstructionsontheFinancingInvestmentFunds_en.pdf",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.org.sa/en/RulesRegulations/Regulations/Documents/InstructionsontheFinancingInvestmentFunds_en.pdf",
-      "downloaded_at": "2026-08-03T21:10:33.740811+00:00",
+      "title": "The Royal Decree​​",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSA%26MORC_RoyalDecree.pdf",
+      "downloaded_at": "2026-08-04T06:45:24.494399+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/The_Instructions_for_Shariah_Governance_in_Capital_Market_I",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/The_Instructions_for_Shariah_Governance_in_Capital_Market_InstitutionsEN.pdf",
-      "downloaded_at": "2026-08-03T21:10:32.189062+00:00",
+      "title": "Rules of Origin for Arab Goods within the GAFTA Framework",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/GAFTA.PDF",
+      "downloaded_at": "2026-08-04T06:45:22.703924+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Securities ExchangesAndDepositoryCentersRegulationsEn.pdf",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Securities ExchangesAndDepositoryCentersRegulationsEn.pdf",
-      "downloaded_at": "2026-08-03T21:10:30.983204+00:00",
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/Agreement-on-Rules-of-Origin.pdf",
+      "downloaded_at": "2026-08-04T06:45:20.716669+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Instructions%20on%20the%20Offering%20of%20Real%20Estate%20C",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Instructions%20on%20the%20Offering%20of%20Real%20Estate%20Contrbutions%20Certificates_en.pdf",
-      "downloaded_at": "2026-08-03T21:10:29.546722+00:00",
+      "title": "Download",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/Import-Licensing-Procedures.pdf",
+      "downloaded_at": "2026-08-04T06:45:20.257268+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "E-Services Guideline",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/ZATCA-App-Guideline.pdf",
+      "downloaded_at": "2026-08-04T06:42:31.056652+00:00",
       "source_kind": "ministry"
     }
   ],
