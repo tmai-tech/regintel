@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:55:26.493239+00:00",
+  "updated_at": "2026-08-04T17:57:52.668125+00:00",
   "phase": "running",
-  "message": "downloaded 160 new this run",
+  "message": "downloaded 170 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12699,
+    "pdfs": 12709,
     "errors": 22119,
     "source_reports": 43,
     "jurisdictions": 40
@@ -29,7 +29,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 184
+      "count": 194
     },
     {
       "jurisdiction": "Ontario",
@@ -187,7 +187,7 @@
     },
     {
       "source_kind": "site",
-      "count": 160
+      "count": 170
     }
   ],
   "current_source": {
@@ -196,6 +196,76 @@
     "url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
   },
   "recent_pdfs": [
+    {
+      "title": "Saudi Academic Framework for AI Qualifications (Education Intelligence)",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/File0003.pdf",
+      "downloaded_at": "2026-08-04T17:57:50.987971+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "National Occupational Standard Framework for Data & Artificial Intelligence",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/File0002.pdf",
+      "downloaded_at": "2026-08-04T17:57:45.284774+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "draft of Principles of AI Ethics",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ai-principles.pdf",
+      "downloaded_at": "2026-08-04T17:57:27.278325+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "The Rules Governing the Licensing to Issue Accreditation Certificates to Controllers and Processors, and the Auditing an",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/CertificatesControllersProcessorsAuditingInspectionPersonalDataProcessingActivities.pdf",
+      "downloaded_at": "2026-08-04T17:57:19.531002+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Personal Data Breach Incidents Procedural Guide",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataBreachIncidents.pdf",
+      "downloaded_at": "2026-08-04T17:57:17.690518+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "The Rules Governing the National Register of Controllers Within the Kingdom",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/Documents/TheRulesGoverningTheNationalRegisterOfControllersWithinTheKingdomPublicEN.pdf",
+      "downloaded_at": "2026-08-04T17:56:34.074938+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Data Monetization Policy",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/DataMonetizationPolicy.pdf",
+      "downloaded_at": "2026-08-04T17:56:09.130546+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Policies",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf",
+      "downloaded_at": "2026-08-04T17:56:01.659460+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Policies",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf",
+      "downloaded_at": "2026-08-04T17:55:59.502964+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Rules of Procedure on Committees for Reviewing Violations of the Provisions of the Personal Data Protection Law and Its ",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/CommitteeWorkingRules.pdf",
+      "downloaded_at": "2026-08-04T17:55:43.451475+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "The implementing Regulation",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -229,76 +299,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/SDAIAReport2022.pdf",
       "downloaded_at": "2026-08-04T17:54:58.668736+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "CV",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DR.SattamAlsubaieCV.pdf",
-      "downloaded_at": "2026-08-04T17:48:20.808848+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "CV",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/HEAlrebdiCV.pdf",
-      "downloaded_at": "2026-08-04T17:48:20.185651+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "CV",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DrEsamAlwagait.pdf",
-      "downloaded_at": "2026-08-04T17:48:19.372275+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "CV",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/HEEngSamiMuqeemCV.pdf",
-      "downloaded_at": "2026-08-04T17:48:18.561706+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "CV",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Dr.AbdullahCV.pdf",
-      "downloaded_at": "2026-08-04T17:48:17.713470+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/016534ff-df3b-4bf4-80d7-d7145f41a926/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-016534ff-df3b-4bf4-80d7-d7145f41a926-p77ZzL1",
-      "downloaded_at": "2026-08-04T17:33:47.947715+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/7956feea-ad69-48b5-95ee-f18872a0106d/GeneralRulesforSecondaryUseofData_en.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-7956feea-ad69-48b5-95ee-f18872a0106d-pJzq87o",
-      "downloaded_at": "2026-08-04T17:33:40.570839+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/b2bc4540-a515-4b4d-82d7-c1c554bf2b05/%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D9%82%D9%88%D8%A7%D8%B9%D8%AF+%D8%AA%D8%B9%D9%8A%D9%8A%D9%86+%D9%85%D8%B3%D9%88%D9%94%D9%88%D9%84+%D8%AD%D9%85%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9+en+%282%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-b2bc4540-a515-4b4d-82d7-c1c554bf2b05-p6jH9TM",
-      "downloaded_at": "2026-08-04T17:33:38.348019+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/004e1ecf-d1cb-4aa7-b417-31e465f83fa7/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+EN+%282%29+%281%29+%281%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-004e1ecf-d1cb-4aa7-b417-31e465f83fa7-pVa3I1G",
-      "downloaded_at": "2026-08-04T17:33:11.246463+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Download File",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/9ba1424f-24d5-43e4-881b-d148024fc059/User+guide+of+Registration+of+External+organization11.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-9ba1424f-24d5-43e4-881b-d148024fc059-p-enBB0",
-      "downloaded_at": "2026-08-04T17:32:53.955612+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 160,
-    "pdfs_downloaded": 160,
-    "pdfs_skipped_existing": 93,
+    "pdfs_discovered": 170,
+    "pdfs_downloaded": 170,
+    "pdfs_skipped_existing": 106,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 2
   },
-  "manifest_generated_at": "2026-08-04T17:55:24.835235+00:00"
+  "manifest_generated_at": "2026-08-04T17:57:50.988078+00:00"
 }
