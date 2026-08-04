@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T18:15:21.424807+00:00",
+  "updated_at": "2026-08-04T18:15:33.465488+00:00",
   "phase": "running",
   "message": "finished Saudi Arabia - SDAIA / site: +0 PDFs",
   "run_id": "30932009346",
@@ -193,7 +193,7 @@
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/Documents/",
+    "url": "https://sdaia.gov.sa/ndmo/Files/",
     "pdfs_downloaded": 0,
     "pdfs_candidates": 0
   },
@@ -427,9 +427,9 @@
     }
   ],
   "stats": {
-    "sources_visited": 6,
-    "pages_crawled": 1203,
-    "js_pages": 159,
+    "sources_visited": 7,
+    "pages_crawled": 1204,
+    "js_pages": 160,
     "pdfs_discovered": 216,
     "pdfs_downloaded": 216,
     "pdfs_skipped_existing": 591,
@@ -437,5 +437,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 7
   },
-  "manifest_generated_at": "2026-08-04T18:15:19.738373+00:00"
+  "manifest_generated_at": "2026-08-04T18:15:31.754076+00:00"
 }
