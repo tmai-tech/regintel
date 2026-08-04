@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T17:36:28.599707+00:00",
+  "generated_at": "2026-08-04T17:48:20.808941+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -164957,6 +164957,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-04T17:33:47.947715+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Dr.AbdullahCV.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/organizationalStructure.aspx",
+      "title": "CV",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/Dr.AbdullahCV_babf68eab36eaeb8.pdf",
+      "bytes": 143244,
+      "sha256": "6516e845fc56b708",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:48:17.713470+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/HEEngSamiMuqeemCV.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/organizationalStructure.aspx",
+      "title": "CV",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/HEEngSamiMuqeemCV_f735fdba65c57de4.pdf",
+      "bytes": 134538,
+      "sha256": "5fbabec261967a04",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:48:18.561706+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DrEsamAlwagait.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/organizationalStructure.aspx",
+      "title": "CV",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/DrEsamAlwagait_e5eae9b90771d4ae.pdf",
+      "bytes": 137027,
+      "sha256": "5d387bb9174d11b4",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:48:19.372275+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/HEAlrebdiCV.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/organizationalStructure.aspx",
+      "title": "CV",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/HEAlrebdiCV_7addb57d8f03d228.pdf",
+      "bytes": 148862,
+      "sha256": "34f1afb02dbed74d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:48:20.185651+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DR.SattamAlsubaieCV.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/organizationalStructure.aspx",
+      "title": "CV",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/DR.SattamAlsubaieCV_68ad27ef152b7f91.pdf",
+      "bytes": 115582,
+      "sha256": "d28327765ea3786a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:48:20.808848+00:00"
     }
   ],
   "discovered": [
@@ -306021,11 +306086,11 @@
     }
   ],
   "stats": {
-    "sources_visited": 1,
-    "pages_crawled": 400,
-    "js_pages": 58,
-    "pdfs_discovered": 150,
-    "pdfs_downloaded": 150,
+    "sources_visited": 2,
+    "pages_crawled": 800,
+    "js_pages": 98,
+    "pdfs_discovered": 155,
+    "pdfs_downloaded": 155,
     "pdfs_skipped_existing": 91,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
