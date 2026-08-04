@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:25:15.904474+00:00",
+  "updated_at": "2026-08-04T17:27:41.913864+00:00",
   "phase": "running",
-  "message": "downloaded 115 new this run",
+  "message": "downloaded 135 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12654,
+    "pdfs": 12674,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -33,7 +33,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 139
+      "count": 159
     },
     {
       "jurisdiction": "New York",
@@ -187,118 +187,118 @@
     },
     {
       "source_kind": "site",
-      "count": 115
+      "count": 135
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/ar/Services/Pages/DigitalCertification.aspx"
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/Pages/MovablesPlatform.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CPS%20v3.6.pdf",
+      "title": "نموذج بيان المعدات",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CPS%20v3.6.pdf",
-      "downloaded_at": "2026-08-04T17:25:14.263235+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/EquipmentdevicesimageAR.pdf",
+      "downloaded_at": "2026-08-04T17:27:40.200732+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPSv3.7.pdf",
+      "title": "بيان الاجهزة",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPSv3.7.pdf",
-      "downloaded_at": "2026-08-04T17:25:09.000147+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/ComputersandAccessoriesAR.pdf",
+      "downloaded_at": "2026-08-04T17:27:37.041788+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.4.pdf",
+      "title": "نموذج بيان الاجهزة",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.4.pdf",
-      "downloaded_at": "2026-08-04T17:25:05.958195+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/ComputersdAccessoriesimageAR.pdf",
+      "downloaded_at": "2026-08-04T17:27:34.296719+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.5.pdf",
+      "title": "بيان المركبات",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.5.pdf",
-      "downloaded_at": "2026-08-04T17:24:59.007446+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/RecordOfVehiclesAr19.pdf",
+      "downloaded_at": "2026-08-04T17:27:29.833943+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.6.pdf",
+      "title": "نموذج بيان مركبة",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.6.pdf",
-      "downloaded_at": "2026-08-04T17:24:52.061615+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/VehicleImageForm19Ar.pdf",
+      "downloaded_at": "2026-08-04T17:27:28.995062+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPv3.7.pdf",
+      "title": "تحميل الملف",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPv3.7.pdf",
-      "downloaded_at": "2026-08-04T17:24:43.234252+00:00",
+      "url": "https://sdaia.gov.sa/Documents/TYAI_Brand_Guidelines2026.pdf",
+      "downloaded_at": "2026-08-04T17:27:13.969583+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.1.pdf",
+      "title": "الهوية البصرية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.1.pdf",
-      "downloaded_at": "2026-08-04T17:24:39.833367+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/identificationSdaiaItems/SDAIA%20.pdf",
+      "downloaded_at": "2026-08-04T17:26:51.849644+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.2.pdf",
+      "title": "وثيقة الإطار الأكاديمي السعودي لمؤهلات تخصصات الذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.2.pdf",
-      "downloaded_at": "2026-08-04T17:24:38.072644+00:00",
+      "url": "https://sdaia.gov.sa/ar/Research/Documents/EducationIntelligence.pdf",
+      "downloaded_at": "2026-08-04T17:26:49.494534+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIGlossaryv1.3.pdf",
+      "title": "الإطار الوطني للمعايير المهنية للبيانات والذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIGlossaryv1.3.pdf",
-      "downloaded_at": "2026-08-04T17:24:36.543310+00:00",
+      "url": "https://sdaia.gov.sa/ar/Research/Documents/PSFDataAndAIBook.pdf",
+      "downloaded_at": "2026-08-04T17:26:28.427149+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.0.pdf",
+      "title": "وثيقة المؤشرات التشغيلية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.0.pdf",
-      "downloaded_at": "2026-08-04T17:24:35.569180+00:00",
+      "url": "https://sdaia.gov.sa/ar/Research/Documents/OperationalExcellence-OE.pdf",
+      "downloaded_at": "2026-08-04T17:26:26.624005+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.1.pdf",
+      "title": "الدليل الإرشادي للمؤشرات التشغيلية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.1.pdf",
-      "downloaded_at": "2026-08-04T17:24:31.107371+00:00",
+      "url": "https://sdaia.gov.sa/ar/Research/Documents/FAQsforOperationalExcellence.pdf",
+      "downloaded_at": "2026-08-04T17:26:20.781810+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.2.pdf",
+      "title": "وثيقة المؤشر الوطني للبيانات (نضيء)",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.2.pdf",
-      "downloaded_at": "2026-08-04T17:24:29.185101+00:00",
+      "url": "https://sdaia.gov.sa/ar/Research/Documents/National-Data-Index_v1.0_AR.PDF",
+      "downloaded_at": "2026-08-04T17:26:16.448475+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIDisputeResolutionPolicyv1.3.pdf",
+      "title": "دليل المستخدم لمنصة المؤشر الوطني للبيانات (نضيء)",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIDisputeResolutionPolicyv1.3.pdf",
-      "downloaded_at": "2026-08-04T17:24:27.106868+00:00",
+      "url": "https://sdaia.gov.sa/ar/Research/Documents/DataPlatformUserGuide.pdf",
+      "downloaded_at": "2026-08-04T17:25:59.760941+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.2.pdf",
+      "title": "​",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.2.pdf",
-      "downloaded_at": "2026-08-04T17:24:26.104246+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SubscriberAgreementV2.1.pdf",
+      "downloaded_at": "2026-08-04T17:25:47.738262+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.3.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20PDS%20v2.4.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.3.pdf",
-      "downloaded_at": "2026-08-04T17:24:23.378454+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20PDS%20v2.4.pdf",
+      "downloaded_at": "2026-08-04T17:25:45.582711+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 115,
-    "pdfs_downloaded": 115,
-    "pdfs_skipped_existing": 2,
+    "pdfs_discovered": 135,
+    "pdfs_downloaded": 135,
+    "pdfs_skipped_existing": 3,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:25:14.263327+00:00"
+  "manifest_generated_at": "2026-08-04T17:27:40.200823+00:00"
 }
