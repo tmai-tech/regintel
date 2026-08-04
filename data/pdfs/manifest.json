@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T18:42:42.466875+00:00",
+  "generated_at": "2026-08-04T18:42:49.128083+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -307389,6 +307389,126 @@
       "pages_crawled": 210,
       "js_pages": 11,
       "pdfs_candidates": 73,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa",
+      "pages_crawled": 400,
+      "js_pages": 58,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 150,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en",
+      "pages_crawled": 400,
+      "js_pages": 40,
+      "pdfs_candidates": 328,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 66,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar",
+      "pages_crawled": 400,
+      "js_pages": 58,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ndmo/Files/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://dgp.sdaia.gov.sa/",
+      "pages_crawled": 262,
+      "js_pages": 44,
+      "pdfs_candidates": 102,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": "possible_rate_limit"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/",
+      "pages_crawled": 400,
+      "js_pages": 41,
+      "pdfs_candidates": 328,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/",
+      "pages_crawled": 400,
+      "js_pages": 57,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
       "pdfs_downloaded": 0,
       "error": null
     }
