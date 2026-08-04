@@ -91,6 +91,10 @@ jobs:
           mkdir -p data/pdfs _out
           # Keep only lines for this authority code
           grep -E "^Saudi Arabia - ${CODE} \|" data/saudi_ministries_links.txt > "data/_one_${CODE}.txt" || true
+          # SDAIA: append dedicated seed file (36+ public PDPL/NDMO docs expected)
+          if [ "$CODE" = "SDAIA" ] && [ -f data/sdaia_seed_pdfs.txt ]; then
+            grep -E "^Saudi Arabia - SDAIA \|" data/sdaia_seed_pdfs.txt >> "data/_one_${CODE}.txt" || true
+          fi
           if [ ! -s "data/_one_${CODE}.txt" ]; then
             echo "No links for $CODE — writing homepage fallback"
             # fallback map
@@ -105,7 +109,7 @@ jobs:
               CST) U="https://www.cst.gov.sa" ;;
               CMA) U="https://cma.org.sa/en/RulesRegulations/Regulations/Documents/" ;;
               Tadawul) U="https://www.saudiexchange.sa" ;;
-              SDAIA) U="https://sdaia.gov.sa" ;;
+              SDAIA) U="https://sdaia.gov.sa/en/SDAIA/about/Documents/" ;;
               GOSI) U="https://www.gosi.gov.sa" ;;
               SASO) U="https://www.saso.gov.sa" ;;
               SAIP) U="https://www.saip.gov.sa" ;;
@@ -114,7 +118,9 @@ jobs:
             esac
             echo "Saudi Arabia - ${CODE} | ministry | ${U}" > "data/_one_${CODE}.txt"
           fi
-          echo "=== Links for ${CODE} ==="
+          # dedupe URLs
+          sort -u "data/_one_${CODE}.txt" -o "data/_one_${CODE}.txt"
+          echo "=== Links for ${CODE} ($(wc -l < data/_one_${CODE}.txt) lines) ==="
           cat "data/_one_${CODE}.txt"
 
       - name: Crawl this ministry only
@@ -130,6 +136,15 @@ jobs:
           MAX_PDFS="${MAX_PDFS:-20}"
           DELAY="${{ github.event.inputs.delay }}"
           DELAY="${DELAY:-0.2}"
+          # SDAIA has a large public doc set — raise caps for this job only
+          if [ "$CODE" = "SDAIA" ]; then
+            MAX_PAGES=80
+            MAX_PDFS=50
+            BUDGET=35
+            PER_SRC=10
+          else
+            PER_SRC=6
+          fi
 
           # Empty manifest so this job only collects THIS ministry's new PDFs
           echo '{"downloads":[],"errors":[],"source_reports":[],"stats":{}}' > data/pdfs/manifest.json
@@ -140,7 +155,7 @@ jobs:
             --regulatory-only \
             --max-pages "$MAX_PAGES" \
             --max-pdfs-per-source "$MAX_PDFS" \
-            --max-minutes-per-source 6 \
+            --max-minutes-per-source "$PER_SRC" \
             --time-budget-minutes "$BUDGET" \
             --skip-if-pdfs 0 \
             --live-publish-every 0 \

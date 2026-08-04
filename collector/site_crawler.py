@@ -70,6 +70,10 @@ _SITE_ALIASES: dict[str, set[str]] = {
     "cma.gov.sa": {"cma.org.sa", "cma.gov.sa"},
     "gosi.gov.sa": {"gosi.gov.sa", "cmsgosi.gosi.gov.sa"},
     "cmsgosi.gosi.gov.sa": {"gosi.gov.sa", "cmsgosi.gosi.gov.sa"},
+    # SDAIA PDPL portal + main site share legal docs
+    "sdaia.gov.sa": {"sdaia.gov.sa", "dgp.sdaia.gov.sa", "ndmo.sdaia.gov.sa"},
+    "dgp.sdaia.gov.sa": {"sdaia.gov.sa", "dgp.sdaia.gov.sa", "ndmo.sdaia.gov.sa"},
+    "ndmo.sdaia.gov.sa": {"sdaia.gov.sa", "dgp.sdaia.gov.sa", "ndmo.sdaia.gov.sa"},
 }
 
 

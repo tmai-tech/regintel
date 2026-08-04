@@ -56,10 +56,18 @@ Saudi Arabia - CMA | ministry | https://cma.org.sa
 # --- ZERO: Tadawul ---
 Saudi Arabia - Tadawul | ministry | https://www.saudiexchange.sa
 
-# --- ZERO: SDAIA (direct PDFs — BFS often finds 0 on SPA home) ---
+# --- SDAIA (many PDPL/NDMO docs; also see data/sdaia_seed_pdfs.txt) ---
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ar/SDAIA/about/Documents/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/
+Saudi Arabia - SDAIA | ministry | https://dgp.sdaia.gov.sa/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/PersonalDataProcessingActivitiesRecordsGuideline.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/MinmumPDGuideline.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/StandardContractualClausesForPersonalDataTransferEN.pdf
 Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf
 Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf
-Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/ExecutiveRegulations.pdf
 Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa
 
 # --- ZERO: GOSI ---

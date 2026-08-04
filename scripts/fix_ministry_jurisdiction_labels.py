@@ -41,6 +41,11 @@ def main() -> int:
             host_to_jur.append(("rulebook.sama.gov.sa", jur))
         if host == "moj.gov.sa":
             host_to_jur.append(("laws.moj.gov.sa", jur))
+        if host == "sdaia.gov.sa":
+            host_to_jur.append(("dgp.sdaia.gov.sa", jur))
+            host_to_jur.append(("ndmo.sdaia.gov.sa", jur))
+        if host == "cma.org.sa":
+            host_to_jur.append(("cma.gov.sa", jur))
     host_to_jur.sort(key=lambda x: -len(x[0]))
 
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))

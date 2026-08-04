@@ -1,0 +1,20 @@
+# SDAIA — known public regulatory/policy PDFs (direct seeds)
+# Format: Jurisdiction | source_kind | url
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/ExecutiveRegulations.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalData.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ar/SDAIA/about/Documents/ExecutiveRegulationsAr.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/PersonalDataProcessingActivitiesRecordsGuideline.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/MinmumPDGuideline.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/StandardContractualClausesForPersonalDataTransferEN.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/StandardContractualClausesForPersonalDataTransferAR.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ar/SDAIA/about/Documents/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/Documents/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/
+Saudi Arabia - SDAIA | ministry | https://dgp.sdaia.gov.sa/
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa
