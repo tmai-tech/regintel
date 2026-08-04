@@ -1,7 +1,7 @@
 [
   {
-    "id": "4c228bf505a69e67",
-    "discovered_at": "2026-08-03T08:59:51.301556+00:00",
+    "id": "921cf9bea5aacf81",
+    "discovered_at": "2026-08-04T08:15:17.427438+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,23 @@
     "tracked_by": "collector"
   },
   {
-    "id": "4dcce027789eba22",
-    "discovered_at": "2026-08-03T08:59:51.301556+00:00",
+    "id": "37d4e8145efc0a20",
+    "discovered_at": "2026-08-04T08:15:17.427438+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Environment and Climate Change Canada",
+    "law_area": "Capital",
+    "topical_relevance": "ESG",
+    "title": "Notice of Settlement Approval",
+    "link": "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/sweet-hmk-class-action-suit/notice-settlement-approval-sweet-v-his-majesty-king-federal-court-file-t-982-20.html",
+    "source_url": "https://www.canada.ca/en/environment-climate-change.html",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "10d79ede40658674",
+    "discovered_at": "2026-08-04T08:15:17.427438+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
