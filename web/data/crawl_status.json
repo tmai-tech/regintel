@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-04T18:01:07.845014+00:00",
+  "updated_at": "2026-08-04T18:04:11.086314+00:00",
   "phase": "running",
-  "message": "downloaded 180 new this run",
+  "message": "downloaded 215 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12719,
-    "errors": 22119,
+    "pdfs": 12754,
+    "errors": 22120,
     "source_reports": 43,
     "jurisdictions": 40
   },
@@ -29,7 +29,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 204
+      "count": 239
     },
     {
       "jurisdiction": "Ontario",
@@ -187,118 +187,118 @@
     },
     {
       "source_kind": "site",
-      "count": 180
+      "count": 215
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Pages/MainFeedbackPage.aspx"
+    "url": "https://sdaia.gov.sa/en/MediaCenter/Pages/MovablesPlatform.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2025.pdf",
+      "title": "Vehicle Information Form",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2025.pdf",
-      "downloaded_at": "2026-08-04T18:01:06.163357+00:00",
+      "url": "https://sdaia.gov.sa/en/Documents/VehicleInformationForm.pdf",
+      "downloaded_at": "2026-08-04T18:04:09.420100+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ2-2026.pdf",
+      "title": "Tools of Devices",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ2-2026.pdf",
-      "downloaded_at": "2026-08-04T18:01:04.767027+00:00",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Documents/EquipmentdevicesEN.pdf",
+      "downloaded_at": "2026-08-04T18:03:18.814430+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "title": "Tools Information Form",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
-      "downloaded_at": "2026-08-04T18:01:03.100694+00:00",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Documents/EquipmentdevicesimageEN.pdf",
+      "downloaded_at": "2026-08-04T18:03:17.775994+00:00",
       "source_kind": "site"
     },
     {
-      "title": "AI Principles in Media",
+      "title": "Record of Vehicles",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMedia.pdf",
-      "downloaded_at": "2026-08-04T17:59:16.402208+00:00",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Documents/RecordOfVehicles19.pdf",
+      "downloaded_at": "2026-08-04T18:03:14.233491+00:00",
       "source_kind": "site"
     },
     {
-      "title": "National Artificial Intelligence Index (NAII)",
+      "title": "Vehicle Information Form",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/NAII.pdf",
-      "downloaded_at": "2026-08-04T17:59:12.077405+00:00",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Documents/VehicleImageForm19.pdf",
+      "downloaded_at": "2026-08-04T18:03:13.612270+00:00",
       "source_kind": "site"
     },
     {
-      "title": "Artificial Intelligence",
+      "title": "The Saudi Academic Framework for AI Qualifications",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications09.pdf",
-      "downloaded_at": "2026-08-04T17:59:07.393275+00:00",
+      "url": "https://sdaia.gov.sa/en/Research/Documents/SaudiAcademicFramework.pdf",
+      "downloaded_at": "2026-08-04T18:02:56.349438+00:00",
       "source_kind": "site"
     },
     {
-      "title": "AI Adoption Framework",
+      "title": "National Occupational Standard Framework for Data and Artificial Intelligence",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf",
-      "downloaded_at": "2026-08-04T17:58:45.256168+00:00",
+      "url": "https://sdaia.gov.sa/en/Research/Documents/PSFDataAndAIBook.pdf",
+      "downloaded_at": "2026-08-04T18:02:50.853814+00:00",
       "source_kind": "site"
     },
     {
-      "title": "Deepfakes mitigating risks while fostering innovation",
+      "title": "Operational Excellence Support Handbook",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/File0001.pdf",
-      "downloaded_at": "2026-08-04T17:58:36.178548+00:00",
+      "url": "https://sdaia.gov.sa/en/Research/Documents/FAQsforOperationalExcellence.pdf",
+      "downloaded_at": "2026-08-04T18:02:45.137976+00:00",
       "source_kind": "site"
     },
     {
-      "title": "Generative Al Guideline for Public",
+      "title": "NDI Document",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenerativeAIPublicEN.pdf",
-      "downloaded_at": "2026-08-04T17:58:23.538587+00:00",
+      "url": "https://sdaia.gov.sa/en/Research/Documents/National-Data-Index_v1.0_EN.PDF",
+      "downloaded_at": "2026-08-04T18:02:41.421605+00:00",
       "source_kind": "site"
     },
     {
-      "title": "Generative Al Guideline for Government",
+      "title": "Freedom of Information Policy",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf",
-      "downloaded_at": "2026-08-04T17:58:12.666416+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Freedom%20of%20Information%20Policy.pdf",
+      "downloaded_at": "2026-08-04T18:02:14.680997+00:00",
       "source_kind": "site"
     },
     {
-      "title": "Saudi Academic Framework for AI Qualifications (Education Intelligence)",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/File0003.pdf",
-      "downloaded_at": "2026-08-04T17:57:50.987971+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/OpenDataReport2025Q3.pdf",
+      "downloaded_at": "2026-08-04T18:02:00.288090+00:00",
       "source_kind": "site"
     },
     {
-      "title": "National Occupational Standard Framework for Data & Artificial Intelligence",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/File0002.pdf",
-      "downloaded_at": "2026-08-04T17:57:45.284774+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/OpenDataReport2025EnQ2.pdf",
+      "downloaded_at": "2026-08-04T18:01:58.292647+00:00",
       "source_kind": "site"
     },
     {
-      "title": "draft of Principles of AI Ethics",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ai-principles.pdf",
-      "downloaded_at": "2026-08-04T17:57:27.278325+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/OpenDataReport.pdf",
+      "downloaded_at": "2026-08-04T18:01:56.245090+00:00",
       "source_kind": "site"
     },
     {
-      "title": "The Rules Governing the Licensing to Issue Accreditation Certificates to Controllers and Processors, and the Auditing an",
+      "title": "Statistics of the services provided by SDAIA and the performance of these statistics",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/CertificatesControllersProcessorsAuditingInspectionPersonalDataProcessingActivities.pdf",
-      "downloaded_at": "2026-08-04T17:57:19.531002+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/ServicePerformanceStatistics.pdf",
+      "downloaded_at": "2026-08-04T18:01:54.638539+00:00",
       "source_kind": "site"
     },
     {
-      "title": "Personal Data Breach Incidents Procedural Guide",
+      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataBreachIncidents.pdf",
-      "downloaded_at": "2026-08-04T17:57:17.690518+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
+      "downloaded_at": "2026-08-04T18:01:52.996022+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 180,
-    "pdfs_downloaded": 180,
-    "pdfs_skipped_existing": 110,
+    "pdfs_discovered": 215,
+    "pdfs_downloaded": 215,
+    "pdfs_skipped_existing": 157,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 2
+    "errors": 3
   },
-  "manifest_generated_at": "2026-08-04T18:01:06.163451+00:00"
+  "manifest_generated_at": "2026-08-04T18:04:09.420211+00:00"
 }
