@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-04T11:00:34.832220+00:00",
+  "updated_at": "2026-08-04T14:34:20.158721+00:00",
   "phase": "idle",
-  "message": "merged 1 ministry PDFs from parallel crawl",
-  "run_id": "30901621432",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30901621432",
+  "message": "merged 0 ministry PDFs from parallel crawl",
+  "run_id": "30917879084",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30917879084",
   "totals": {
     "pdfs": 12476,
     "errors": 22117,
