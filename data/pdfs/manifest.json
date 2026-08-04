@@ -162175,6 +162175,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-04T06:45:34.599943+00:00"
+    },
+    {
+      "url": "https://zatca.gov.sa/ar/Documents/Statute%20of%20ZATCA_AR.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "source_kind": "ministry",
+      "source_page": "https://zatca.gov.sa/ar/AboutUs/Pages/Statute-of-ZATCA.aspx",
+      "title": "اضغط هنـا​​​",
+      "path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/Statute of ZATCA_AR.pdf",
+      "bytes": 434538,
+      "sha256": "015bf66381276596",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T10:54:30.408807+00:00"
     }
   ],
   "discovered": [

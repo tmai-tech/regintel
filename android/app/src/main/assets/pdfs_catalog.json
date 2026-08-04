@@ -1,5 +1,29 @@
 [
   {
+    "id": "015bf66381276596",
+    "title": "اضغط هنـا​​​",
+    "filename": "Statute of ZATCA_AR.pdf",
+    "jurisdiction": "Saudi Arabia - ZATCA",
+    "source_kind": "ministry",
+    "law_type": "act",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "zatca.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://zatca.gov.sa/ar/AboutUs/Pages/Statute-of-ZATCA.aspx",
+    "url": "https://zatca.gov.sa/ar/Documents/Statute%20of%20ZATCA_AR.pdf",
+    "open_url": "https://zatca.gov.sa/ar/Documents/Statute%20of%20ZATCA_AR.pdf",
+    "download_url": null,
+    "bytes": 434538,
+    "sha256": "015bf66381276596",
+    "downloaded_at": "2026-08-04T10:54:30.408807+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/Statute of ZATCA_AR.pdf"
+  },
+  {
     "id": "159ac7871c9548d0",
     "title": "The Agreement in Turkish​",
     "filename": "KSAxTR_Agreement(TR).pdf",

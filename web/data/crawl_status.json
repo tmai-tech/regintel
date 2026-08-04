@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T06:48:59.236309+00:00",
+  "updated_at": "2026-08-04T11:00:34.832220+00:00",
   "phase": "idle",
-  "message": "merged 15 ministry PDFs from parallel crawl",
-  "run_id": "30884128088",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30884128088",
+  "message": "merged 1 ministry PDFs from parallel crawl",
+  "run_id": "30901621432",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30901621432",
   "totals": {
-    "pdfs": 12475,
+    "pdfs": 12476,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -61,7 +61,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "count": 19
+      "count": 20
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -183,11 +183,18 @@
     },
     {
       "source_kind": "ministry",
-      "count": 230
+      "count": 231
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "اضغط هنـا​​​",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/Documents/Statute%20of%20ZATCA_AR.pdf",
+      "downloaded_at": "2026-08-04T10:54:30.408807+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "The Agreement in Turkish​",
       "jurisdiction": "Saudi Arabia - ZATCA",
@@ -284,13 +291,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/Import-Licensing-Procedures.pdf",
       "downloaded_at": "2026-08-04T06:45:20.257268+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "E-Services Guideline",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/ZATCA-App-Guideline.pdf",
-      "downloaded_at": "2026-08-04T06:42:31.056652+00:00",
       "source_kind": "ministry"
     }
   ],
