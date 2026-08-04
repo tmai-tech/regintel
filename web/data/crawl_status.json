@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-04T16:58:03.497873+00:00",
-  "phase": "idle",
-  "message": "relabeled 0 ministry PDFs by host",
-  "run_id": "30930241608",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30930241608",
+  "updated_at": "2026-08-04T17:03:33.240306+00:00",
+  "phase": "starting",
+  "message": "crawl starting",
+  "run_id": "30932009346",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
     "pdfs": 12539,
     "errors": 22117,
@@ -417,9 +417,9 @@
     }
   ],
   "stats": {
-    "sources_visited": 2,
-    "pages_crawled": 24,
-    "js_pages": 24,
+    "sources_visited": 0,
+    "pages_crawled": 0,
+    "js_pages": 0,
     "pdfs_discovered": 0,
     "pdfs_downloaded": 0,
     "pdfs_skipped_existing": 0,
@@ -427,5 +427,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-03T17:45:56.792380+00:00"
+  "manifest_generated_at": "2026-08-04T17:03:31.521106+00:00"
 }
