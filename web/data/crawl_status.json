@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:23:09.705548+00:00",
+  "updated_at": "2026-08-04T17:25:15.904474+00:00",
   "phase": "running",
-  "message": "downloaded 90 new this run",
+  "message": "downloaded 115 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12629,
+    "pdfs": 12654,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -32,16 +32,16 @@
       "count": 159
     },
     {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "count": 139
+    },
+    {
       "jurisdiction": "New York",
       "count": 128
     },
     {
       "jurisdiction": "Delaware",
       "count": 121
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 114
     },
     {
       "jurisdiction": "Saudi Arabia - NCA",
@@ -187,7 +187,7 @@
     },
     {
       "source_kind": "site",
-      "count": 90
+      "count": 115
     }
   ],
   "current_source": {
@@ -197,108 +197,108 @@
   },
   "recent_pdfs": [
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20CPS%20v1.5.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CPS%20v3.6.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20CPS%20v1.5.pdf",
-      "downloaded_at": "2026-08-04T17:23:08.059095+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CPS%20v3.6.pdf",
+      "downloaded_at": "2026-08-04T17:25:14.263235+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICGovernment-CA2CPSv1.6.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPSv3.7.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICGovernment-CA2CPSv1.6.pdf",
-      "downloaded_at": "2026-08-04T17:23:01.226828+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPSv3.7.pdf",
+      "downloaded_at": "2026-08-04T17:25:09.000147+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC-PKI-Privacy-Policy1.0.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.4.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC-PKI-Privacy-Policy1.0.pdf",
-      "downloaded_at": "2026-08-04T17:22:57.488777+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.4.pdf",
+      "downloaded_at": "2026-08-04T17:25:05.958195+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Privacy%20Policy%20v1.1.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.5.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Privacy%20Policy%20v1.1.pdf",
-      "downloaded_at": "2026-08-04T17:22:55.298658+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.5.pdf",
+      "downloaded_at": "2026-08-04T17:24:59.007446+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIPrivacyPolicyv1.2.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.6.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIPrivacyPolicyv1.2.pdf",
-      "downloaded_at": "2026-08-04T17:22:52.573540+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/Saudi%20National%20Root-CA%20CP%20v3.6.pdf",
+      "downloaded_at": "2026-08-04T17:24:52.061615+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/saudi_elect_trans_act.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPv3.7.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/saudi_elect_trans_act.pdf",
-      "downloaded_at": "2026-08-04T17:22:49.068195+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/SaudiNationalRoot-CA-CPv3.7.pdf",
+      "downloaded_at": "2026-08-04T17:24:43.234252+00:00",
       "source_kind": "site"
     },
     {
-      "title": "البرامج التدريبية التقنية المنفذة في معهد تقنية المعلومات بالرياض لعام 2026 رجال نساء",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.1.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/IT-Institute/Documents/TechnicalTrainingProgramsMenWomen2026.pdf",
-      "downloaded_at": "2026-08-04T17:22:44.946714+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.1.pdf",
+      "downloaded_at": "2026-08-04T17:24:39.833367+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الجدول الزمني للخطة التدريبية لعام 2026م",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.2.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/IT-Institute/Documents/TrainingPlanSchedule2026.pdf",
-      "downloaded_at": "2026-08-04T17:22:43.745635+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Glossary%20v1.2.pdf",
+      "downloaded_at": "2026-08-04T17:24:38.072644+00:00",
       "source_kind": "site"
     },
     {
-      "title": "سياسة حرية المعلومات",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIGlossaryv1.3.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/حرية%20المعلومات.pdf",
-      "downloaded_at": "2026-08-04T17:22:42.735047+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIGlossaryv1.3.pdf",
+      "downloaded_at": "2026-08-04T17:24:36.543310+00:00",
       "source_kind": "site"
     },
     {
-      "title": "ضوابط ومواصفات إدارة البيانات الوطنية",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.0.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/Policies001.pdf",
-      "downloaded_at": "2026-08-04T17:22:37.277843+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.0.pdf",
+      "downloaded_at": "2026-08-04T17:24:35.569180+00:00",
       "source_kind": "site"
     },
     {
-      "title": "تحميل",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.1.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/OpenDataReport2025ArQ3.pdf",
-      "downloaded_at": "2026-08-04T17:22:26.000752+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.1.pdf",
+      "downloaded_at": "2026-08-04T17:24:31.107371+00:00",
       "source_kind": "site"
     },
     {
-      "title": "تحميل",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.2.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/OpenDataReport2025ArQ2.pdf",
-      "downloaded_at": "2026-08-04T17:22:24.009649+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Dispute%20Resolution%20Policy%20v1.2.pdf",
+      "downloaded_at": "2026-08-04T17:24:29.185101+00:00",
       "source_kind": "site"
     },
     {
-      "title": "تحميل",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIDisputeResolutionPolicyv1.3.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/OpenDataReport.pdf",
-      "downloaded_at": "2026-08-04T17:22:21.816475+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIDisputeResolutionPolicyv1.3.pdf",
+      "downloaded_at": "2026-08-04T17:24:27.106868+00:00",
       "source_kind": "site"
     },
     {
-      "title": "إحصائيات الخدمات التي تقدمها الجهة وأداء هذه الإحصائيات",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.2.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Files/%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%d8%a7%d8%aa%20%d8%a3%d8%af%d8%a7%d8%a1%20%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a9%20-.pdf",
-      "downloaded_at": "2026-08-04T17:22:20.232098+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.2.pdf",
+      "downloaded_at": "2026-08-04T17:24:26.104246+00:00",
       "source_kind": "site"
     },
     {
-      "title": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.3.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
-      "downloaded_at": "2026-08-04T17:22:19.414866+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20PDS%20v1.3.pdf",
+      "downloaded_at": "2026-08-04T17:24:23.378454+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 90,
-    "pdfs_downloaded": 90,
+    "pdfs_discovered": 115,
+    "pdfs_downloaded": 115,
     "pdfs_skipped_existing": 2,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:23:08.059183+00:00"
+  "manifest_generated_at": "2026-08-04T17:25:14.263327+00:00"
 }
