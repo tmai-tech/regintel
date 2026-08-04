@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T17:32:36.614826+00:00",
+  "generated_at": "2026-08-04T17:36:28.599707+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -164892,6 +164892,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-04T17:32:36.614734+00:00"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/9ba1424f-24d5-43e4-881b-d148024fc059/User+guide+of+Registration+of+External+organization11.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-9ba1424f-24d5-43e4-881b-d148024fc059-p-enBB0",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://dgp.sdaia.gov.sa/wps/portal/pdp/Registration/external/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MTIz1w9EUhIZZAhUEGvl6OXoaGwQY60cRo98AB3A0IKw_Cq8Sd2MMBZhOBCvA44aC3NAIg0xPRQBsMeD-/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Vu/",
+      "title": "Download File",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/User+guide+of+Registration+of+External+organization11.pdf",
+      "bytes": 1104965,
+      "sha256": "746fe5fcea39ec1f",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:32:53.955612+00:00"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/004e1ecf-d1cb-4aa7-b417-31e465f83fa7/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+EN+%282%29+%281%29+%281%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-004e1ecf-d1cb-4aa7-b417-31e465f83fa7-pVa3I1G",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://dgp.sdaia.gov.sa/wps/portal/pdp/services/DataServiceandProductProvider/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQJdHA2dTAwNPTwMjQ3Mgpz8nSzMHI0NAoz0w8EKPB1dzTwMgw2MDEPDLA3MjAONfL0cPYEKjPWjiNFvgAM4GhDWHwVWgnBBmJMp0AW-fqam3sZGBhZGGAownQhWgMcNBbmhEQaZnooAkaDaPw!!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Vu/",
+      "title": "Download File",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+EN+(2)+(1)+(1).pdf",
+      "bytes": 3540514,
+      "sha256": "7258daf67f7ff66a",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:33:11.246463+00:00"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/b2bc4540-a515-4b4d-82d7-c1c554bf2b05/%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D9%82%D9%88%D8%A7%D8%B9%D8%AF+%D8%AA%D8%B9%D9%8A%D9%8A%D9%86+%D9%85%D8%B3%D9%88%D9%94%D9%88%D9%84+%D8%AD%D9%85%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9+en+%282%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-b2bc4540-a515-4b4d-82d7-c1c554bf2b05-p6jH9TM",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MLIz1w9EUhIZZAhUEGvl6OXoaGwQY60cRo98AB3A0IKw_Ck0JpgvACvBYUZAbGmGQ6agIAE-5EAA!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Vu/",
+      "title": "Download File",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/مشروع+قواعد+تعيين+مسو_ول+حماية+البيانات+الشخصية+en+(2).pdf",
+      "bytes": 2626151,
+      "sha256": "8b297a8d8cc1634c",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:33:38.348019+00:00"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/7956feea-ad69-48b5-95ee-f18872a0106d/GeneralRulesforSecondaryUseofData_en.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-7956feea-ad69-48b5-95ee-f18872a0106d-pJzq87o",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MLIz1w9EUhIZZAhUEGvl6OXoaGwQY60cRo98AB3A0IKw_Ck0JpgvACvBYUZAbGmGQ6agIAE-5EAA!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Vu/",
+      "title": "Download File",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/GeneralRulesforSecondaryUseofData_en.pdf",
+      "bytes": 690904,
+      "sha256": "72cabccf56888a4c",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:33:40.570839+00:00"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/016534ff-df3b-4bf4-80d7-d7145f41a926/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-016534ff-df3b-4bf4-80d7-d7145f41a926-p77ZzL1",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MLIz1w9EUhIZZAhUEGvl6OXoaGwQY60cRo98AB3A0IKw_Ck0JpgvACvBYUZAbGmGQ6agIAE-5EAA!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Vu/",
+      "title": "Download File",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf",
+      "bytes": 1587993,
+      "sha256": "2de9606a64c45d2d",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:33:47.947715+00:00"
     }
   ],
   "discovered": [
@@ -305941,18 +306006,30 @@
       "error": "HTTP 404",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - CST"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/8d5c18e2-adc3-4ad1-8c3f-b25491c63565/Rules+Governing+the+Licensing+to+Issue+Accreditation+Certificates+to+Controllers+and+Processors%2C+and+the+Auditing+and+Inspection+of+Personal+Data+Processing+Activities.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-8d5c18e2-adc3-4ad1-8c3f-b25491c63565-pND8UR4",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/8d5c18e2-adc3-4ad1-8c3f-b25491c63565/Rules+Governing+the+Licensing+to+Issue+Accreditation+Certificates+to+Controllers+and+Processors%2C+and+the+Auditing+and+Inspection+of+Personal+Data+Processing+Activities.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-8d5c18e2-adc3-4ad1-8c3f-b25491c63565-pND8UR4",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA"
     }
   ],
   "stats": {
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 145,
-    "pdfs_downloaded": 145,
-    "pdfs_skipped_existing": 41,
+    "pdfs_discovered": 150,
+    "pdfs_downloaded": 150,
+    "pdfs_skipped_existing": 91,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 0
+    "errors": 2
   },
   "source_reports": [
     {

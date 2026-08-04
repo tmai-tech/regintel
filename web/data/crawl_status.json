@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-04T17:32:38.271180+00:00",
+  "updated_at": "2026-08-04T17:36:30.278438+00:00",
   "phase": "running",
-  "message": "downloaded 145 new this run",
+  "message": "finished Saudi Arabia - SDAIA / site: +150 PDFs",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12684,
-    "errors": 22117,
+    "pdfs": 12689,
+    "errors": 22119,
     "source_reports": 43,
     "jurisdictions": 40
   },
@@ -29,7 +29,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 169
+      "count": 174
     },
     {
       "jurisdiction": "Ontario",
@@ -187,15 +187,52 @@
     },
     {
       "source_kind": "site",
-      "count": 145
+      "count": 150
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/services/servicesdetails/AIEthicsAssessment"
+    "url": "https://sdaia.gov.sa",
+    "pdfs_downloaded": 150,
+    "pdfs_candidates": 243
   },
   "recent_pdfs": [
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/016534ff-df3b-4bf4-80d7-d7145f41a926/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-016534ff-df3b-4bf4-80d7-d7145f41a926-p77ZzL1",
+      "downloaded_at": "2026-08-04T17:33:47.947715+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/7956feea-ad69-48b5-95ee-f18872a0106d/GeneralRulesforSecondaryUseofData_en.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-7956feea-ad69-48b5-95ee-f18872a0106d-pJzq87o",
+      "downloaded_at": "2026-08-04T17:33:40.570839+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/b2bc4540-a515-4b4d-82d7-c1c554bf2b05/%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D9%82%D9%88%D8%A7%D8%B9%D8%AF+%D8%AA%D8%B9%D9%8A%D9%8A%D9%86+%D9%85%D8%B3%D9%88%D9%94%D9%88%D9%84+%D8%AD%D9%85%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9+en+%282%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-b2bc4540-a515-4b4d-82d7-c1c554bf2b05-p6jH9TM",
+      "downloaded_at": "2026-08-04T17:33:38.348019+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/004e1ecf-d1cb-4aa7-b417-31e465f83fa7/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+EN+%282%29+%281%29+%281%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-004e1ecf-d1cb-4aa7-b417-31e465f83fa7-pVa3I1G",
+      "downloaded_at": "2026-08-04T17:33:11.246463+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/9ba1424f-24d5-43e4-881b-d148024fc059/User+guide+of+Registration+of+External+organization11.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-9ba1424f-24d5-43e4-881b-d148024fc059-p-enBB0",
+      "downloaded_at": "2026-08-04T17:32:53.955612+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "Download the guide in PDF format",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -264,41 +301,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/EquipmentdevicesAR.pdf",
       "downloaded_at": "2026-08-04T17:27:50.018874+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "نموذج بيان المعدات",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/EquipmentdevicesimageAR.pdf",
-      "downloaded_at": "2026-08-04T17:27:40.200732+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "بيان الاجهزة",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/ComputersandAccessoriesAR.pdf",
-      "downloaded_at": "2026-08-04T17:27:37.041788+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "نموذج بيان الاجهزة",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/ComputersdAccessoriesimageAR.pdf",
-      "downloaded_at": "2026-08-04T17:27:34.296719+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "بيان المركبات",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/RecordOfVehiclesAr19.pdf",
-      "downloaded_at": "2026-08-04T17:27:29.833943+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "نموذج بيان مركبة",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/Documents/VehicleImageForm19Ar.pdf",
-      "downloaded_at": "2026-08-04T17:27:28.995062+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +430,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 145,
-    "pdfs_downloaded": 145,
-    "pdfs_skipped_existing": 41,
+    "pdfs_discovered": 150,
+    "pdfs_downloaded": 150,
+    "pdfs_skipped_existing": 91,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 0
+    "errors": 2
   },
-  "manifest_generated_at": "2026-08-04T17:32:36.614826+00:00"
+  "manifest_generated_at": "2026-08-04T17:36:28.599707+00:00"
 }
