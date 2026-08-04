@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-04T18:04:11.086314+00:00",
+  "updated_at": "2026-08-04T18:04:28.803229+00:00",
   "phase": "running",
-  "message": "downloaded 215 new this run",
+  "message": "finished Saudi Arabia - SDAIA / site: +66 PDFs",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12754,
-    "errors": 22120,
+    "pdfs": 12755,
+    "errors": 22122,
     "source_reports": 43,
     "jurisdictions": 40
   },
@@ -29,7 +29,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 239
+      "count": 240
     },
     {
       "jurisdiction": "Ontario",
@@ -187,15 +187,24 @@
     },
     {
       "source_kind": "site",
-      "count": 215
+      "count": 216
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/en/MediaCenter/Pages/MovablesPlatform.aspx"
+    "url": "https://sdaia.gov.sa/en",
+    "pdfs_downloaded": 66,
+    "pdfs_candidates": 328
   },
   "recent_pdfs": [
+    {
+      "title": "Record of Vehicles",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/Documents/RecordOfVehicles.pdf",
+      "downloaded_at": "2026-08-04T18:04:19.750980+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "Vehicle Information Form",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -292,13 +301,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/ServicePerformanceStatistics.pdf",
       "downloaded_at": "2026-08-04T18:01:54.638539+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
-      "downloaded_at": "2026-08-04T18:01:52.996022+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +430,12 @@
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 215,
-    "pdfs_downloaded": 215,
-    "pdfs_skipped_existing": 157,
+    "pdfs_discovered": 216,
+    "pdfs_downloaded": 216,
+    "pdfs_skipped_existing": 350,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 3
+    "errors": 5
   },
-  "manifest_generated_at": "2026-08-04T18:04:09.420211+00:00"
+  "manifest_generated_at": "2026-08-04T18:04:27.095456+00:00"
 }

@@ -1,5 +1,29 @@
 [
   {
+    "id": "0b483a030982aa26",
+    "title": "Record of Vehicles",
+    "filename": "RecordOfVehicles.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "site",
+    "law_type": "other",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "sdaia.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://sdaia.gov.sa/en/MediaCenter/Pages/MovablesPlatform.aspx",
+    "url": "https://sdaia.gov.sa/en/Documents/RecordOfVehicles.pdf",
+    "open_url": "https://sdaia.gov.sa/en/Documents/RecordOfVehicles.pdf",
+    "download_url": null,
+    "bytes": 380324,
+    "sha256": "0b483a030982aa26",
+    "downloaded_at": "2026-08-04T18:04:19.750980+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_SDAIA/site/RecordOfVehicles.pdf"
+  },
+  {
     "id": "bde1e72210b189d8",
     "title": "Vehicle Information Form",
     "filename": "VehicleInformationForm.pdf",

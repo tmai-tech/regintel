@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T18:04:09.420211+00:00",
+  "generated_at": "2026-08-04T18:04:27.095456+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -165802,6 +165802,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-04T18:04:09.420100+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/Documents/RecordOfVehicles.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/MediaCenter/Pages/MovablesPlatform.aspx",
+      "title": "Record of Vehicles",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/RecordOfVehicles.pdf",
+      "bytes": 380324,
+      "sha256": "0b483a030982aa26",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T18:04:19.750980+00:00"
     }
   ],
   "discovered": [
@@ -306869,18 +306882,30 @@
       "error": "HTTP 404",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/8d5c18e2-adc3-4ad1-8c3f-b25491c63565/Rules+Governing+the+Licensing+to+Issue+Accreditation+Certificates+to+Controllers+and+Processors%2C+and+the+Auditing+and+Inspection+of+Personal+Data+Processing+Activities.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-8d5c18e2-adc3-4ad1-8c3f-b25491c63565-pND8UR4",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/8d5c18e2-adc3-4ad1-8c3f-b25491c63565/Rules+Governing+the+Licensing+to+Issue+Accreditation+Certificates+to+Controllers+and+Processors%2C+and+the+Auditing+and+Inspection+of+Personal+Data+Processing+Activities.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-8d5c18e2-adc3-4ad1-8c3f-b25491c63565-pND8UR4",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA"
     }
   ],
   "stats": {
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 215,
-    "pdfs_downloaded": 215,
-    "pdfs_skipped_existing": 157,
+    "pdfs_discovered": 216,
+    "pdfs_downloaded": 216,
+    "pdfs_skipped_existing": 350,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 3
+    "errors": 5
   },
   "source_reports": [
     {
