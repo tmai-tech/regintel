@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T16:18:06.838005+00:00",
+  "updated_at": "2026-08-04T16:57:52.507413+00:00",
   "phase": "idle",
-  "message": "relabeled 0 ministry PDFs by host",
-  "run_id": "30926772115",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30926772115",
+  "message": "merged 47 ministry PDFs from parallel crawl",
+  "run_id": "30930241608",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30930241608",
   "totals": {
-    "pdfs": 12492,
+    "pdfs": 12539,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -44,6 +44,10 @@
       "count": 104
     },
     {
+      "jurisdiction": "Saudi Arabia - CMA",
+      "count": 50
+    },
+    {
       "jurisdiction": "India",
       "count": 47
     },
@@ -52,8 +56,8 @@
       "count": 42
     },
     {
-      "jurisdiction": "Saudi Arabia - CMA",
-      "count": 28
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "count": 24
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
@@ -104,15 +108,15 @@
       "count": 10
     },
     {
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "count": 10
+    },
+    {
       "jurisdiction": "Saudi Arabia - SAMA",
       "count": 9
     },
     {
       "jurisdiction": "Turkey",
-      "count": 8
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
       "count": 8
     },
     {
@@ -166,10 +170,6 @@
     {
       "jurisdiction": "Germany",
       "count": 1
-    },
-    {
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "count": 1
     }
   ],
   "by_source_kind": [
@@ -183,114 +183,114 @@
     },
     {
       "source_kind": "ministry",
-      "count": 247
+      "count": 294
     }
   ],
   "current_source": null,
   "recent_pdfs": [
     {
-      "title": "لمعرفة المزيد",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf",
-      "downloaded_at": "2026-08-04T16:12:21.327434+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا​​​​​​​​​​​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/List-of-entities-awarded-the-Quality-Certificate-For-Beneficiary-Service-Centers-HAYAK.pdf",
-      "downloaded_at": "2026-08-04T16:10:04.003214+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/Additive-Suppliers-List.pdf",
-      "downloaded_at": "2026-08-04T16:09:53.357051+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا​​​​​​​​​​​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/manufacturers-that-have-a-certificate-of-conformity-for-trailers.pdf",
-      "downloaded_at": "2026-08-04T16:09:46.965553+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا​​​​​​​​​​​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/Retro-Reflective-Tape-List.pdf",
-      "downloaded_at": "2026-08-04T16:09:45.533347+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا​​​​​​​​​​​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/list-trucks-and-trailers.pdf",
-      "downloaded_at": "2026-08-04T16:09:42.519540+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "هنا​",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/Certification-Program-Saudi-Quality-Hayyak.pdf",
-      "downloaded_at": "2026-08-04T16:09:36.831849+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/Documents/DataSharingPolicySADIA.pdf",
+      "downloaded_at": "2026-08-04T16:54:24.005401+00:00",
       "source_kind": "ministry"
     },
     {
       "title": "هنا",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://www.saso.gov.sa/ar/sectors/certificates/compliance_certificate/Documents/TR-%20Saudi-Quality-Certificate-Hayyak.pdf",
-      "downloaded_at": "2026-08-04T16:09:19.776627+00:00",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/RequiredDocuments/Documents/WageVariablesDataForSaudiWorkersInGCCAR.pdf",
+      "downloaded_at": "2026-08-04T16:54:22.013463+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تحميل اصدار كامل نظام السوق المالية",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/RulesRegulations/CMALaw/Documents/CMA_Law.pdf",
-      "downloaded_at": "2026-08-04T16:04:25.528123+00:00",
+      "title": "هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/RequiredDocuments/Documents/es002025.pdf",
+      "downloaded_at": "2026-08-04T16:54:21.040022+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "circular",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/RulesRegulations/circulars/Documents/circular77.pdf",
-      "downloaded_at": "2026-08-04T16:04:24.469400+00:00",
+      "title": "هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/RequiredDocuments/Documents/form109-1.pdf",
+      "downloaded_at": "2026-08-04T16:54:20.709651+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Guides/Documents/Guideline on Post-Public Offering and Pre-Trading Obligations of",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Guides/Documents/Guideline on Post-Public Offering and Pre-Trading Obligations of Public Joint-Stock Companies.pdf",
-      "downloaded_at": "2026-08-04T16:04:23.234792+00:00",
+      "title": "هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/InsuranceProtection/Documents/GuideforGCCCitizensWorkingInKingdomOfSaudiArabia.pdf",
+      "downloaded_at": "2026-08-04T16:54:20.326384+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Guides/Documents/Research Agenda Guideline.pdf",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Guides/Documents/Research Agenda Guideline.pdf",
-      "downloaded_at": "2026-08-04T16:04:15.559675+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/OccupationalHazardsInsurancePolicyforNon-Saudis1445.pdf",
+      "downloaded_at": "2026-08-04T16:54:19.966062+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Guides/Documents/Policy on Application of the CPMI-IOSCO Principles for Financial",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Guides/Documents/Policy on Application of the CPMI-IOSCO Principles for Financial Market Infrastructures by SDCs and CCPs_en.pdf",
-      "downloaded_at": "2026-08-04T16:04:14.636549+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/OccupationalHazardsInsurancePolicyforSaudis1445.pdf",
+      "downloaded_at": "2026-08-04T16:54:05.712125+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "​ نظام معالجة المنشآت المالية المهمة​",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/RulesRegulations/Law-of-Systemically-Important-Financial-Institutions/Documents/Law-of-Systemically-Important-Financial-Institutions-ar.pdf",
-      "downloaded_at": "2026-08-04T16:04:07.595927+00:00",
+      "title": "اضغ ط هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/Vaolitionrules1445H.pdf",
+      "downloaded_at": "2026-08-04T16:53:57.431505+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "​ نظام ال​شركات",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/RulesRegulations/New_CompaniesLaw/Documents/%d9%86%d8%b8%d8%a7%d9%85%20%d8%a7%d9%84%d8%b4%d8%b1%d9%83%d8%a7%d8%aa.pdf",
-      "downloaded_at": "2026-08-04T16:04:05.720167+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///SystemsAndRegulations/newSystem/Documents/OccupationalDiseasesTable.pdf",
+      "downloaded_at": "2026-08-04T16:53:56.627077+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulation.pdf",
+      "downloaded_at": "2026-08-04T16:53:13.489993+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/047a4149-ba11-4919-9341-260164125ba5/The+Rules+Governing+the+National+Register+of+Controllers+Within+the+Kingdom.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-047a4149-ba11-4919-9341-260164125ba5-p77GRZx",
+      "downloaded_at": "2026-08-04T16:51:41.787132+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/1f2c6774-2afe-41b4-b96b-4762c5c71b00/Guidelines+for+Binding+Common+Rules+%28BCR%29+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1f2c6774-2afe-41b4-b96b-4762c5c71b00-p72bRsu",
+      "downloaded_at": "2026-08-04T16:51:40.066216+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/16aec46f-ea3d-47f6-8e0d-e49ffa2349d5/Risk+Assessment+Guideline+for+Transferring+Personal+Data+Outside+the+Kingdom.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-16aec46f-ea3d-47f6-8e0d-e49ffa2349d5-pkzMZp-",
+      "downloaded_at": "2026-08-04T16:51:36.279897+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/19ec3250-16a6-47c7-8e8c-b8e1d6f86633/Personal+Data+Processing+Activities+Records+Guideline.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-19ec3250-16a6-47c7-8e8c-b8e1d6f86633-p6ZyLvw",
+      "downloaded_at": "2026-08-04T16:51:26.864340+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Download File",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/1d3217bd-64b2-4e87-86a1-f0d094712cd4/Personal+Data+Disclosure+Cases+Guideline.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d3217bd-64b2-4e87-86a1-f0d094712cd4-p6OmrYd",
+      "downloaded_at": "2026-08-04T16:51:19.270488+00:00",
       "source_kind": "ministry"
     }
   ],
