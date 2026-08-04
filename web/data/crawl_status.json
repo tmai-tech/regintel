@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:21:07.965414+00:00",
+  "updated_at": "2026-08-04T17:23:09.705548+00:00",
   "phase": "running",
-  "message": "downloaded 45 new this run",
+  "message": "downloaded 90 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12584,
+    "pdfs": 12629,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -40,12 +40,12 @@
       "count": 121
     },
     {
-      "jurisdiction": "Saudi Arabia - NCA",
-      "count": 104
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "count": 114
     },
     {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 69
+      "jurisdiction": "Saudi Arabia - NCA",
+      "count": 104
     },
     {
       "jurisdiction": "Saudi Arabia - CMA",
@@ -187,118 +187,118 @@
     },
     {
       "source_kind": "site",
-      "count": 45
+      "count": 90
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Pages/MainFeedbackPage.aspx"
+    "url": "https://sdaia.gov.sa/ar/Services/Pages/DigitalCertification.aspx"
   },
   "recent_pdfs": [
     {
-      "title": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20CPS%20v1.5.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
-      "downloaded_at": "2026-08-04T17:21:06.281129+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20Government-CA%202%20CPS%20v1.5.pdf",
+      "downloaded_at": "2026-08-04T17:23:08.059095+00:00",
       "source_kind": "site"
     },
     {
-      "title": "كتيب الإستراتيجية",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICGovernment-CA2CPSv1.6.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/SdaiaStrategies/Documents/BrochureNSDAISummit.pdf",
-      "downloaded_at": "2026-08-04T17:21:05.110341+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICGovernment-CA2CPSv1.6.pdf",
+      "downloaded_at": "2026-08-04T17:23:01.226828+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الذكاء الاصطناعي التوكيلي",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC-PKI-Privacy-Policy1.0.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Agentic_AI_090725.V.pdf",
-      "downloaded_at": "2026-08-04T17:20:53.357905+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC-PKI-Privacy-Policy1.0.pdf",
+      "downloaded_at": "2026-08-04T17:22:57.488777+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الذكاء الاصطناعي التوليدي",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Privacy%20Policy%20v1.1.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/GenerativeAI.pdf",
-      "downloaded_at": "2026-08-04T17:19:57.585692+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NIC%20PKI%20Privacy%20Policy%20v1.1.pdf",
+      "downloaded_at": "2026-08-04T17:22:55.298658+00:00",
       "source_kind": "site"
     },
     {
-      "title": "مبادئ الذكاء الاصطناعي في الإعلام",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIPrivacyPolicyv1.2.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMediaAr.pdf",
-      "downloaded_at": "2026-08-04T17:19:08.821038+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/NICPKIPrivacyPolicyv1.2.pdf",
+      "downloaded_at": "2026-08-04T17:22:52.573540+00:00",
       "source_kind": "site"
     },
     {
-      "title": "المؤشر الوطني للذكاء الاصطناعي",
+      "title": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/saudi_elect_trans_act.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/NAII.pdf",
-      "downloaded_at": "2026-08-04T17:18:55.952437+00:00",
+      "url": "https://sdaia.gov.sa/en/Sectors/Nic/ca/Documents/saudi_elect_trans_act.pdf",
+      "downloaded_at": "2026-08-04T17:22:49.068195+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الذكاء الاصطناعي",
+      "title": "البرامج التدريبية التقنية المنفذة في معهد تقنية المعلومات بالرياض لعام 2026 رجال نساء",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications09.pdf",
-      "downloaded_at": "2026-08-04T17:18:52.623864+00:00",
+      "url": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/IT-Institute/Documents/TechnicalTrainingProgramsMenWomen2026.pdf",
+      "downloaded_at": "2026-08-04T17:22:44.946714+00:00",
       "source_kind": "site"
     },
     {
-      "title": "إطار تبني الذكاء الاصطناعي",
+      "title": "الجدول الزمني للخطة التدريبية لعام 2026م",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/AIAdoptionFramework.pdf",
-      "downloaded_at": "2026-08-04T17:18:19.828277+00:00",
+      "url": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/IT-Institute/Documents/TrainingPlanSchedule2026.pdf",
+      "downloaded_at": "2026-08-04T17:22:43.745635+00:00",
       "source_kind": "site"
     },
     {
-      "title": "مبادئ التزييف العميق",
+      "title": "سياسة حرية المعلومات",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf",
-      "downloaded_at": "2026-08-04T17:18:14.583842+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/حرية%20المعلومات.pdf",
+      "downloaded_at": "2026-08-04T17:22:42.735047+00:00",
       "source_kind": "site"
     },
     {
-      "title": "مبادئ الذكاء الاصطناعي التوليدي للعموم",
+      "title": "ضوابط ومواصفات إدارة البيانات الوطنية",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenerativeAIPublicAR.pdf",
-      "downloaded_at": "2026-08-04T17:17:57.911760+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/Policies001.pdf",
+      "downloaded_at": "2026-08-04T17:22:37.277843+00:00",
       "source_kind": "site"
     },
     {
-      "title": "مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية",
+      "title": "تحميل",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf",
-      "downloaded_at": "2026-08-04T17:17:44.881575+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/OpenDataReport2025ArQ3.pdf",
+      "downloaded_at": "2026-08-04T17:22:26.000752+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الإطار السعودي لمؤهلات تخصصات الذكاء الاصطناعي",
+      "title": "تحميل",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0003.pdf",
-      "downloaded_at": "2026-08-04T17:17:31.744997+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/OpenDataReport2025ArQ2.pdf",
+      "downloaded_at": "2026-08-04T17:22:24.009649+00:00",
       "source_kind": "site"
     },
     {
-      "title": "الإطار الوطني للمعايير المهنية للبيانات والذكاء الاصطناعي",
+      "title": "تحميل",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0002.pdf",
-      "downloaded_at": "2026-08-04T17:17:27.673928+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/OpenDataReport.pdf",
+      "downloaded_at": "2026-08-04T17:22:21.816475+00:00",
       "source_kind": "site"
     },
     {
-      "title": "النسخة الأولية من مبادئ أخلاقيات الذكاء الاصطناعي",
+      "title": "إحصائيات الخدمات التي تقدمها الجهة وأداء هذه الإحصائيات",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf",
-      "downloaded_at": "2026-08-04T17:17:04.045821+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Files/%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%d8%a7%d8%aa%20%d8%a3%d8%af%d8%a7%d8%a1%20%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a9%20-.pdf",
+      "downloaded_at": "2026-08-04T17:22:20.232098+00:00",
       "source_kind": "site"
     },
     {
-      "title": "القواعد المنظمة لإصدار شهادات الاعتماد لجهات التحكم وجهات المعالجة",
+      "title": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/RulesGoverningIssuanceAccreditationCertificatesControllersProcessers-ar.pdf",
-      "downloaded_at": "2026-08-04T17:16:56.653630+00:00",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/Complaints-and-suggestions-report%2c-fourth-quarter-of-2022.pdf",
+      "downloaded_at": "2026-08-04T17:22:19.414866+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 45,
-    "pdfs_downloaded": 45,
+    "pdfs_discovered": 90,
+    "pdfs_downloaded": 90,
     "pdfs_skipped_existing": 2,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:21:06.281244+00:00"
+  "manifest_generated_at": "2026-08-04T17:23:08.059183+00:00"
 }
