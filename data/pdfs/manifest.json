@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T18:04:27.095456+00:00",
+  "generated_at": "2026-08-04T18:14:44.302573+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -306894,18 +306894,30 @@
       "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
       "stage": "download_pdf",
       "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/8d5c18e2-adc3-4ad1-8c3f-b25491c63565/Rules+Governing+the+Licensing+to+Issue+Accreditation+Certificates+to+Controllers+and+Processors%2C+and+the+Auditing+and+Inspection+of+Personal+Data+Processing+Activities.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-8d5c18e2-adc3-4ad1-8c3f-b25491c63565-pND8UR4",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/8d5c18e2-adc3-4ad1-8c3f-b25491c63565/Rules+Governing+the+Licensing+to+Issue+Accreditation+Certificates+to+Controllers+and+Processors%2C+and+the+Auditing+and+Inspection+of+Personal+Data+Processing+Activities.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-8d5c18e2-adc3-4ad1-8c3f-b25491c63565-pND8UR4",
+      "error": "missing %PDF magic (ct=text/html; charset=utf-8)",
+      "stage": "download_pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA"
     }
   ],
   "stats": {
-    "sources_visited": 2,
-    "pages_crawled": 800,
-    "js_pages": 98,
+    "sources_visited": 3,
+    "pages_crawled": 1200,
+    "js_pages": 156,
     "pdfs_discovered": 216,
     "pdfs_downloaded": 216,
-    "pdfs_skipped_existing": 350,
+    "pdfs_skipped_existing": 591,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
-    "errors": 5
+    "errors": 7
   },
   "source_reports": [
     {
