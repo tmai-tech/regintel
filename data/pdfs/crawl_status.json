@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:57:52.668125+00:00",
+  "updated_at": "2026-08-04T18:01:07.845014+00:00",
   "phase": "running",
-  "message": "downloaded 170 new this run",
+  "message": "downloaded 180 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12709,
+    "pdfs": 12719,
     "errors": 22119,
     "source_reports": 43,
     "jurisdictions": 40
@@ -29,7 +29,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 194
+      "count": 204
     },
     {
       "jurisdiction": "Ontario",
@@ -187,15 +187,85 @@
     },
     {
       "source_kind": "site",
-      "count": 170
+      "count": 180
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
+    "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Pages/MainFeedbackPage.aspx"
   },
   "recent_pdfs": [
+    {
+      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2025.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2025.pdf",
+      "downloaded_at": "2026-08-04T18:01:06.163357+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ2-2026.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ2-2026.pdf",
+      "downloaded_at": "2026-08-04T18:01:04.767027+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "downloaded_at": "2026-08-04T18:01:03.100694+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "AI Principles in Media",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMedia.pdf",
+      "downloaded_at": "2026-08-04T17:59:16.402208+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "National Artificial Intelligence Index (NAII)",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/NAII.pdf",
+      "downloaded_at": "2026-08-04T17:59:12.077405+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Artificial Intelligence",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications09.pdf",
+      "downloaded_at": "2026-08-04T17:59:07.393275+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "AI Adoption Framework",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf",
+      "downloaded_at": "2026-08-04T17:58:45.256168+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Deepfakes mitigating risks while fostering innovation",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/File0001.pdf",
+      "downloaded_at": "2026-08-04T17:58:36.178548+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Generative Al Guideline for Public",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenerativeAIPublicEN.pdf",
+      "downloaded_at": "2026-08-04T17:58:23.538587+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Generative Al Guideline for Government",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf",
+      "downloaded_at": "2026-08-04T17:58:12.666416+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "Saudi Academic Framework for AI Qualifications (Education Intelligence)",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -229,76 +299,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataBreachIncidents.pdf",
       "downloaded_at": "2026-08-04T17:57:17.690518+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "The Rules Governing the National Register of Controllers Within the Kingdom",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/TheRulesGoverningTheNationalRegisterOfControllersWithinTheKingdomPublicEN.pdf",
-      "downloaded_at": "2026-08-04T17:56:34.074938+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Data Monetization Policy",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/DataMonetizationPolicy.pdf",
-      "downloaded_at": "2026-08-04T17:56:09.130546+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Policies",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf",
-      "downloaded_at": "2026-08-04T17:56:01.659460+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Policies",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf",
-      "downloaded_at": "2026-08-04T17:55:59.502964+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Rules of Procedure on Committees for Reviewing Violations of the Provisions of the Personal Data Protection Law and Its ",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/CommitteeWorkingRules.pdf",
-      "downloaded_at": "2026-08-04T17:55:43.451475+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "The implementing Regulation",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLaw.pdf",
-      "downloaded_at": "2026-08-04T17:55:24.835141+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "The law",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataProtectionLaw.pdf",
-      "downloaded_at": "2026-08-04T17:55:19.771788+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Policies",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataClassificationPolicy.pdf",
-      "downloaded_at": "2026-08-04T17:55:14.434574+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Data Management and Personal Data Protection Regulations and Standards",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandards.pdf",
-      "downloaded_at": "2026-08-04T17:55:10.872813+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "SDAIA Achievements",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/SDAIAReport2022.pdf",
-      "downloaded_at": "2026-08-04T17:54:58.668736+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 170,
-    "pdfs_downloaded": 170,
-    "pdfs_skipped_existing": 106,
+    "pdfs_discovered": 180,
+    "pdfs_downloaded": 180,
+    "pdfs_skipped_existing": 110,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 2
   },
-  "manifest_generated_at": "2026-08-04T17:57:50.988078+00:00"
+  "manifest_generated_at": "2026-08-04T18:01:06.163451+00:00"
 }
