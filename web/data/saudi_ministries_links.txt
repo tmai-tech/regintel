@@ -33,9 +33,12 @@ Saudi Arabia - SAMA | ministry | https://rulebook.sama.gov.sa/en
 Saudi Arabia - SAMA | ministry | https://rulebook.sama.gov.sa/en/node/6259
 Saudi Arabia - SAMA | ministry | https://www.sama.gov.sa
 
-# --- ZERO: MOJ (Documents/Regulations/pdf tree) ---
+# --- ZERO: MOJ (direct known regulation PDFs) ---
+Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa/Documents/Regulations/pdf/En/50.pdf
+Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa/Documents/Regulations/pdf/En/09.pdf
+Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa/Documents/Regulations/pdf/En/96.pdf
+Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa/Documents/Regulations/pdf/En/Rules%20of%20Professional%20Conduct%20for%20Lawyers.pdf
 Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa/Documents/Regulations/pdf/En/
-Saudi Arabia - MOJ | ministry | https://laws.moj.gov.sa/en
 Saudi Arabia - MOJ | ministry | https://www.moj.gov.sa
 
 # --- ZERO: GAC ---
@@ -53,10 +56,11 @@ Saudi Arabia - CMA | ministry | https://cma.org.sa
 # --- ZERO: Tadawul ---
 Saudi Arabia - Tadawul | ministry | https://www.saudiexchange.sa
 
-# --- ZERO: SDAIA ---
-Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa
+# --- ZERO: SDAIA (direct PDFs — BFS often finds 0 on SPA home) ---
 Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf
 Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa/en/SDAIA/about/Documents/ExecutiveRegulations.pdf
+Saudi Arabia - SDAIA | ministry | https://sdaia.gov.sa
 
 # --- ZERO: GOSI ---
 Saudi Arabia - GOSI | ministry | https://www.gosi.gov.sa

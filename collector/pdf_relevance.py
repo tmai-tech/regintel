@@ -109,7 +109,8 @@ _JUNK_PATH = re.compile(
     re.I | re.X,
 )
 
-# Default seeds appended for ministry homepage crawls (relative paths)
+# Generic seeds only — NEVER put host-specific paths here (they get joined onto
+# every ministry domain and waste the page budget, e.g. sdaia.gov.sa/Socpa/...).
 MINISTRY_LEGAL_SEED_PATHS = [
     "/en/laws",
     "/ar/laws",
@@ -134,12 +135,6 @@ MINISTRY_LEGAL_SEED_PATHS = [
     "/ar/systems",
     "/en/rules",
     "/ar/rules",
-    # SOCPA (Sitecore) — standards / regulations, not bare homepage
-    "/Socpa/Professional-standards.aspx?lang=en-us",
-    "/Socpa/Professional-standards/Accounting-standards.aspx?lang=en-us",
-    "/Socpa/Professional-standards/Auditing-standards.aspx?lang=en-us",
-    "/Socpa/About-Socpa/Regulations.aspx?lang=en-us",
-    "/Socpa/Professional-standards/Ethics-code.aspx?lang=en-us",
 ]
 
 # Extra deep seeds keyed by host (merged when seed host matches)
@@ -148,6 +143,24 @@ HOST_LEGAL_SEEDS: dict[str, list[str]] = {
         "https://socpa.org.sa/Socpa/Professional-standards.aspx?lang=en-us",
         "https://socpa.org.sa/Socpa/Professional-standards/Accounting-standards.aspx?lang=en-us",
         "https://socpa.org.sa/Socpa/About-Socpa/Regulations.aspx?lang=en-us",
+        # Known direct Sitecore attachments (homepage BFS finds none)
+        "https://socpa.org.sa/getattachment/Socpa/Professional-standards/Accounting-standards/Technical-standards-and-mechanisms-that-comple/000001.pdf.aspx?lang=ar-SA",
+        "https://socpa.org.sa/getattachment/Socpa/Media-Center/News/2022/3591/exposure-draft-ifrs-s1-general-requirements-for-disclosure.pdf.aspx?lang=ar-SA",
+    ],
+    "sdaia.gov.sa": [
+        "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
+        "https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf",
+        "https://sdaia.gov.sa/en/SDAIA/about/Documents/ExecutiveRegulations.pdf",
+        "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-Reviewed-.pdf",
+    ],
+    "moj.gov.sa": [
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/50.pdf",
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/09.pdf",
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/96.pdf",
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/Rules%20of%20Professional%20Conduct%20for%20Lawyers.pdf",
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/pdf/The%20Implementing%20Regulations%20of%20the%20Commercial%20Courts%20Law.pdf",
+        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/",
+        "https://laws.moj.gov.sa/en",
     ],
     "sama.gov.sa": [
         "https://rulebook.sama.gov.sa/en",
@@ -160,10 +173,6 @@ HOST_LEGAL_SEEDS: dict[str, list[str]] = {
     "cma.org.sa": [
         "https://cma.org.sa/en/RulesRegulations/Regulations/Documents/",
         "https://cma.org.sa/en/RulesRegulations/Regulations/Pages/default.aspx",
-    ],
-    "moj.gov.sa": [
-        "https://www.moj.gov.sa/Documents/Regulations/pdf/En/",
-        "https://laws.moj.gov.sa/en",
     ],
     "zatca.gov.sa": [
         "https://zatca.gov.sa/en/RulesRegulations/Pages/rules.aspx",

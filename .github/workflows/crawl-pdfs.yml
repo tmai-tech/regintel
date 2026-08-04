@@ -211,6 +211,8 @@ jobs:
           ls -la _ministry_out || true
           find _ministry_out -type f -name '*.json' | head -40 || true
           python scripts/merge_ministry_artifacts.py _ministry_out
+          # Fix mislabeled hosts (e.g. sdaia PDFs stored as NCA/MoC)
+          python scripts/fix_ministry_jurisdiction_labels.py || true
           python - <<'PY'
           import json
           from collections import Counter

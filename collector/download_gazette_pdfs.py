@@ -565,6 +565,39 @@ class GazettePdfCollector:
         else:
             self._source_deadline = None
 
+        # Direct PDF seed: download only — do not burn page budget on fake /laws seeds
+        try:
+            from collector.site_crawler import has_doc_extension
+        except ImportError:
+            from site_crawler import has_doc_extension  # type: ignore
+
+        if has_doc_extension(page_url):
+            self.log("  [direct-pdf seed] skipping HTML BFS")
+            rec = self.download_pdf(
+                url=page_url,
+                jurisdiction=jurisdiction,
+                source_kind=source_kind,
+                source_page=page_url,
+                title=page_url.rsplit("/", 1)[-1],
+            )
+            report["pdfs_candidates"] = 1
+            report["pdfs_downloaded"] = 1 if rec else 0
+            self.source_reports.append(report)
+            self._source_deadline = None
+            save_manifest(self.manifest)
+            self._publish(
+                phase="running",
+                message=f"finished {jurisdiction} / {source_kind}: +{1 if rec else 0} PDFs (direct)",
+                current_source={
+                    "jurisdiction": jurisdiction,
+                    "source_kind": source_kind,
+                    "url": page_url,
+                    "pdfs_downloaded": 1 if rec else 0,
+                },
+                force_git=True,
+            )
+            return
+
         crawler = SiteCrawler(
             max_pages=self.max_pages,
             delay=self.delay,

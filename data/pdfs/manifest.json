@@ -159305,7 +159305,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://momah.gov.sa/ar/node/3443",
       "title": "سياسات حوكمة البيانات الوطنية",
@@ -160020,7 +160020,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesEn.pdf",
-      "jurisdiction": "Saudi Arabia - MoC",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://mc.gov.sa/ar/About/Pages/Information-Policy.aspx",
       "title": "سياسات حوكمة البيانات الوطنية.​",
@@ -160631,7 +160631,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalData.pdf",
-      "jurisdiction": "Saudi Arabia - NCA",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://nca.gov.sa/ar/privacy-statement/",
       "title": "نظام حماية البيانات الشخصية",
@@ -160644,7 +160644,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/ExecutiveRegulationsAr.pdf",
-      "jurisdiction": "Saudi Arabia - NCA",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://nca.gov.sa/ar/privacy-statement/",
       "title": "اللائحة التنفيذية لنظام حماية البيانات الشخصية",
@@ -160657,7 +160657,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf",
-      "jurisdiction": "Saudi Arabia - NCA",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://nca.gov.sa/ar/privacy-statement/",
       "title": "سياسة مشاركة البيانات",
@@ -160865,7 +160865,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf",
-      "jurisdiction": "Saudi Arabia - NCA",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://nca.gov.sa/en/privacy-statement/",
       "title": "Personal Data Protection Law",
@@ -160878,7 +160878,7 @@
     },
     {
       "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ExecutiveRegulations.pdf",
-      "jurisdiction": "Saudi Arabia - NCA",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://nca.gov.sa/en/privacy-statement/",
       "title": "The Implementing Regulation of the Personal Data Protection Law",
@@ -160891,7 +160891,7 @@
     },
     {
       "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/b5d1907f-1b54-469d-8609-204ede2fa928/Data+Sharing+Policy.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-b5d1907f-1b54-469d-8609-204ede2fa928-p9iH7ub",
-      "jurisdiction": "Saudi Arabia - NCA",
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "source_kind": "ministry",
       "source_page": "https://nca.gov.sa/en/privacy-statement/",
       "title": "Data Sharing Policy",

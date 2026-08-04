@@ -66,6 +66,10 @@ _SITE_ALIASES: dict[str, set[str]] = {
     "rulebook.sama.gov.sa": {"rulebook.sama.gov.sa", "sama.gov.sa"},
     "moj.gov.sa": {"laws.moj.gov.sa", "moj.gov.sa"},
     "laws.moj.gov.sa": {"laws.moj.gov.sa", "moj.gov.sa"},
+    "cma.org.sa": {"cma.org.sa", "cma.gov.sa"},
+    "cma.gov.sa": {"cma.org.sa", "cma.gov.sa"},
+    "gosi.gov.sa": {"gosi.gov.sa", "cmsgosi.gosi.gov.sa"},
+    "cmsgosi.gosi.gov.sa": {"gosi.gov.sa", "cmsgosi.gosi.gov.sa"},
 }
 
 
@@ -485,14 +489,21 @@ class SiteCrawler:
 
                 for full, text in anchors:
                     if has_doc_extension(full, self.extensions):
+                        # Do NOT keep off-site PDFs (was labeling SDAIA files as NCA/MoC/GOSI)
+                        host = urlparse(full).netloc
+                        if self.same_site_only and not is_same_site(host, seed.netloc):
+                            continue
                         if full not in docs_seen:
                             docs_seen.add(full)
+                            path_l = urlparse(full).path.lower().split(";")[0]
                             result.docs.append(
                                 FoundDoc(
                                     url=full,
                                     text=text,
                                     source_page=url,
-                                    is_pdf=urlparse(full).path.lower().split(";")[0].endswith(".pdf"),
+                                    is_pdf=path_l.endswith(".pdf")
+                                    or path_l.endswith(".pdf.aspx")
+                                    or ".pdf" in path_l,
                                 )
                             )
                             self.log(f"    -> DOC FOUND: {full}")

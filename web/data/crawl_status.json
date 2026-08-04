@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-04T14:34:20.158721+00:00",
+  "updated_at": "2026-08-04T15:57:14.848211+00:00",
   "phase": "idle",
-  "message": "merged 0 ministry PDFs from parallel crawl",
-  "run_id": "30917879084",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30917879084",
+  "message": "relabeled 0 ministry PDFs by host",
+  "run_id": null,
+  "github_run_url": null,
   "totals": {
     "pdfs": 12476,
     "errors": 22117,
@@ -41,7 +41,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - NCA",
-      "count": 110
+      "count": 104
     },
     {
       "jurisdiction": "India",
@@ -64,11 +64,11 @@
       "count": 20
     },
     {
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "count": 18
+      "jurisdiction": "Singapore",
+      "count": 17
     },
     {
-      "jurisdiction": "Singapore",
+      "jurisdiction": "Saudi Arabia - MOMAH",
       "count": 17
     },
     {
@@ -105,6 +105,10 @@
     },
     {
       "jurisdiction": "Turkey",
+      "count": 8
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
       "count": 8
     },
     {
@@ -161,10 +165,6 @@
     },
     {
       "jurisdiction": "Germany",
-      "count": 1
-    },
-    {
-      "jurisdiction": "Saudi Arabia - MoC",
       "count": 1
     },
     {

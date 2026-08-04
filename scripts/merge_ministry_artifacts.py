@@ -25,6 +25,7 @@ def main() -> int:
         print("No artifacts dir", ART_DIR)
         return 0
 
+    updated = 0
     for path in sorted(ART_DIR.rglob("*.json")):
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
@@ -36,7 +37,20 @@ def main() -> int:
             if rec.get("dry_run"):
                 continue
             url = rec.get("url")
-            if not url or url in by_url:
+            if not url:
+                continue
+            # Already have URL: still fix jurisdiction if artifact has better ministry label
+            if url in by_url:
+                existing = by_url[url]
+                new_j = rec.get("jurisdiction") or ""
+                old_j = existing.get("jurisdiction") or ""
+                if new_j.startswith("Saudi Arabia - ") and new_j != old_j:
+                    existing["jurisdiction"] = new_j
+                    existing["source_kind"] = rec.get("source_kind") or existing.get(
+                        "source_kind"
+                    ) or "ministry"
+                    updated += 1
+                    by_code[new_j] = by_code.get(new_j, 0) + 1
                 continue
             by_url[url] = rec
             downloads.append(rec)
@@ -47,7 +61,7 @@ def main() -> int:
     data["downloads"] = downloads
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     MANIFEST.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"merged +{added} downloads; total={len(downloads)}")
+    print(f"merged +{added} new, updated {updated} labels; total={len(downloads)}")
     for j, n in sorted(by_code.items(), key=lambda x: -x[1]):
         print(f"  +{n}  {j}")
 
