@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T17:48:20.808941+00:00",
+  "generated_at": "2026-08-04T17:55:24.835235+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -165022,6 +165022,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-04T17:48:20.808848+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/SDAIAReport2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/Achievements.aspx",
+      "title": "SDAIA Achievements",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/SDAIAReport2022_379b5a0b03d68496.pdf",
+      "bytes": 132215768,
+      "sha256": "8f23642a53c46458",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:54:58.668736+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandards.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+      "title": "Data Management and Personal Data Protection Regulations and Standards",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/DataManagementPersonalDataProtectionStandards.pdf",
+      "bytes": 3327566,
+      "sha256": "784fdaae1ff5d9de",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:55:10.872813+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataClassificationPolicy.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+      "title": "Policies",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/DataClassificationPolicy.pdf",
+      "bytes": 1075534,
+      "sha256": "bfad974c5343b264",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:55:14.434574+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataProtectionLaw.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+      "title": "The law",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/PersonalDataProtectionLaw.pdf",
+      "bytes": 1558413,
+      "sha256": "f8e499d3ee1a7608",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:55:19.771788+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLaw.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+      "title": "The implementing Regulation",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/ImplementingRegulationPersonalDataProtectionLaw.pdf",
+      "bytes": 1548907,
+      "sha256": "fccdb1d9f0f07ab7",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:55:24.835141+00:00"
     }
   ],
   "discovered": [
@@ -306089,9 +306154,9 @@
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 155,
-    "pdfs_downloaded": 155,
-    "pdfs_skipped_existing": 91,
+    "pdfs_discovered": 160,
+    "pdfs_downloaded": 160,
+    "pdfs_skipped_existing": 93,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 2

@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:48:22.479933+00:00",
+  "updated_at": "2026-08-04T17:55:26.493239+00:00",
   "phase": "running",
-  "message": "downloaded 155 new this run",
+  "message": "downloaded 160 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12694,
+    "pdfs": 12699,
     "errors": 22119,
     "source_reports": 43,
     "jurisdictions": 40
@@ -29,7 +29,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 179
+      "count": 184
     },
     {
       "jurisdiction": "Ontario",
@@ -187,15 +187,50 @@
     },
     {
       "source_kind": "site",
-      "count": 155
+      "count": 160
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/organizationalStructure.aspx"
+    "url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
   },
   "recent_pdfs": [
+    {
+      "title": "The implementing Regulation",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLaw.pdf",
+      "downloaded_at": "2026-08-04T17:55:24.835141+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "The law",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataProtectionLaw.pdf",
+      "downloaded_at": "2026-08-04T17:55:19.771788+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Policies",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataClassificationPolicy.pdf",
+      "downloaded_at": "2026-08-04T17:55:14.434574+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "Data Management and Personal Data Protection Regulations and Standards",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandards.pdf",
+      "downloaded_at": "2026-08-04T17:55:10.872813+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "SDAIA Achievements",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/SDAIAReport2022.pdf",
+      "downloaded_at": "2026-08-04T17:54:58.668736+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "CV",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -264,41 +299,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/9ba1424f-24d5-43e4-881b-d148024fc059/User+guide+of+Registration+of+External+organization11.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-9ba1424f-24d5-43e4-881b-d148024fc059-p-enBB0",
       "downloaded_at": "2026-08-04T17:32:53.955612+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "Download the guide in PDF format",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-3fceaa0d-bbb6-4ead-9cab-c141c2eca42d-p735I9a",
-      "downloaded_at": "2026-08-04T17:32:36.614734+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "تحميل",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/e7bde646-739b-4fb5-b5fb-04b0a1e8ad72/%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF+%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%85%D8%A9+%D9%84%D9%84%D8%B3%D8%AC%D9%84+%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A+%D9%84%D8%AC%D9%87%D8%A7%D8%AA+%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85+%D8%AF%D8%A7%D8%AE%D9%84+%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-e7bde646-739b-4fb5-b5fb-04b0a1e8ad72-p77Gs4j",
-      "downloaded_at": "2026-08-04T17:30:51.202166+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "تحميل",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/176d12ec-1a62-4300-9f56-635e2ab0b4f0/GeneralRulesforSecondaryUseofData_ar.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-176d12ec-1a62-4300-9f56-635e2ab0b4f0-pJzsxWC",
-      "downloaded_at": "2026-08-04T17:30:38.927884+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "تحميل",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/b71b54cf-3cda-4a2b-ace1-73283ddd7445/AR_%D8%AF%D9%84%D9%8A%D9%84+%D9%86%D8%B8%D8%A7%D9%85+%D8%AD%D9%85%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9+%D9%84%D8%AC%D9%87%D8%A7%D8%AA+%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85+%D9%88%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-b71b54cf-3cda-4a2b-ace1-73283ddd7445-p499Bkr",
-      "downloaded_at": "2026-08-04T17:29:58.245165+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "تحميل",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/f4456d78-ad09-43ee-9af0-7c281bad0655/%D8%AF%D9%84%D9%8A%D9%84+%D9%86%D8%B8%D8%A7%D9%85+%D8%AD%D9%85%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9+HANDBOOK_AR_.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-f4456d78-ad09-43ee-9af0-7c281bad0655-p4971j.",
-      "downloaded_at": "2026-08-04T17:29:46.974983+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 2,
     "pages_crawled": 800,
     "js_pages": 98,
-    "pdfs_discovered": 155,
-    "pdfs_downloaded": 155,
-    "pdfs_skipped_existing": 91,
+    "pdfs_discovered": 160,
+    "pdfs_downloaded": 160,
+    "pdfs_skipped_existing": 93,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 2
   },
-  "manifest_generated_at": "2026-08-04T17:48:20.808941+00:00"
+  "manifest_generated_at": "2026-08-04T17:55:24.835235+00:00"
 }
