@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T17:18:55.952542+00:00",
+  "generated_at": "2026-08-04T17:21:06.281244+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -163527,6 +163527,71 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-04T17:18:55.952437+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMediaAr.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/AboutAI.aspx",
+      "title": "مبادئ الذكاء الاصطناعي في الإعلام",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/AIPrinciplesMediaAr.pdf",
+      "bytes": 1439051,
+      "sha256": "5cafe5ebe19745a9",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:19:08.821038+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/GenerativeAI.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/AboutAI.aspx",
+      "title": "الذكاء الاصطناعي التوليدي",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/GenerativeAI.pdf",
+      "bytes": 16805661,
+      "sha256": "90ba2d5a5fde2461",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:19:57.585692+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Agentic_AI_090725.V.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/AboutAI.aspx",
+      "title": "الذكاء الاصطناعي التوكيلي",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/Agentic_AI_090725.V.pdf",
+      "bytes": 13690966,
+      "sha256": "eb409ea0d473ebfa",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:20:53.357905+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ar/SDAIA/SdaiaStrategies/Documents/BrochureNSDAISummit.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/ar/SDAIA/SdaiaStrategies/Pages/NationalStrategyForDataAndAI.aspx",
+      "title": "كتيب الإستراتيجية",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/BrochureNSDAISummit.pdf",
+      "bytes": 3927773,
+      "sha256": "d2a37534379f7be1",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:21:05.110341+00:00"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_page": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Pages/MainFeedbackPage.aspx",
+      "title": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "path": "data/pdfs/Saudi_Arabia_SDAIA/site/BeneficiaryVoiceQ1-2026.pdf",
+      "bytes": 270263,
+      "sha256": "5f171a8c30c99a39",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T17:21:06.281129+00:00"
     }
   ],
   "discovered": [
@@ -304582,9 +304647,9 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 40,
-    "pdfs_downloaded": 40,
-    "pdfs_skipped_existing": 1,
+    "pdfs_discovered": 45,
+    "pdfs_downloaded": 45,
+    "pdfs_skipped_existing": 2,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0

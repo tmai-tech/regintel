@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T17:18:57.605775+00:00",
+  "updated_at": "2026-08-04T17:21:07.965414+00:00",
   "phase": "running",
-  "message": "downloaded 40 new this run",
+  "message": "downloaded 45 new this run",
   "run_id": "30932009346",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
   "totals": {
-    "pdfs": 12579,
+    "pdfs": 12584,
     "errors": 22117,
     "source_reports": 43,
     "jurisdictions": 40
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 64
+      "count": 69
     },
     {
       "jurisdiction": "Saudi Arabia - CMA",
@@ -187,15 +187,50 @@
     },
     {
       "source_kind": "site",
-      "count": 40
+      "count": 45
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - SDAIA",
     "source_kind": "site",
-    "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/AboutAI.aspx"
+    "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Pages/MainFeedbackPage.aspx"
   },
   "recent_pdfs": [
+    {
+      "title": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/eParticipation/Documents/BeneficiaryVoiceQ1-2026.pdf",
+      "downloaded_at": "2026-08-04T17:21:06.281129+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "كتيب الإستراتيجية",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/SDAIA/SdaiaStrategies/Documents/BrochureNSDAISummit.pdf",
+      "downloaded_at": "2026-08-04T17:21:05.110341+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "الذكاء الاصطناعي التوكيلي",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Agentic_AI_090725.V.pdf",
+      "downloaded_at": "2026-08-04T17:20:53.357905+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "الذكاء الاصطناعي التوليدي",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/GenerativeAI.pdf",
+      "downloaded_at": "2026-08-04T17:19:57.585692+00:00",
+      "source_kind": "site"
+    },
+    {
+      "title": "مبادئ الذكاء الاصطناعي في الإعلام",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMediaAr.pdf",
+      "downloaded_at": "2026-08-04T17:19:08.821038+00:00",
+      "source_kind": "site"
+    },
     {
       "title": "المؤشر الوطني للذكاء الاصطناعي",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -264,41 +299,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/RulesGoverningIssuanceAccreditationCertificatesControllersProcessers-ar.pdf",
       "downloaded_at": "2026-08-04T17:16:56.653630+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "القواعد المنظمة لتراخيص أنشطة إصدار شهادات الاعتماد لجهات التحكم والمعالجة وأنشطة التدقيق والفحص لمعالجة البيانات الشخصي",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/CertificatesControllersProcessorsAuditingInspectionPersonalDataProcessingActivities-ar.pdf",
-      "downloaded_at": "2026-08-04T17:16:52.579340+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "الدليل الإجرائي لمعالجة حوادث تسرب البيانات الشخصية",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataBreachIncidents.pdf",
-      "downloaded_at": "2026-08-04T17:16:49.966344+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "الدليل الاسترشادي لسجلات أنشطة معالجة البيانات الشخصية",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/PersonalDataProcessingActivitiesRecordsGuidelineAR.pdf",
-      "downloaded_at": "2026-08-04T17:16:44.689600+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "الدليل الاسترشادي لحالات الإفصاح عن البيانات الشخصية",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/PersonalDataDisclosureCasesGuidelineAR.pdf",
-      "downloaded_at": "2026-08-04T17:16:36.967580+00:00",
-      "source_kind": "site"
-    },
-    {
-      "title": "الدليل الاسترشادي لإتلاف البيانات الشخصية وإخفاء الهوية والترميز",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf",
-      "downloaded_at": "2026-08-04T17:16:29.216664+00:00",
       "source_kind": "site"
     }
   ],
@@ -428,12 +428,12 @@
     "sources_visited": 1,
     "pages_crawled": 400,
     "js_pages": 58,
-    "pdfs_discovered": 40,
-    "pdfs_downloaded": 40,
-    "pdfs_skipped_existing": 1,
+    "pdfs_discovered": 45,
+    "pdfs_downloaded": 45,
+    "pdfs_skipped_existing": 2,
     "pdfs_capped": 0,
     "pdfs_rejected_junk": 0,
     "errors": 0
   },
-  "manifest_generated_at": "2026-08-04T17:18:55.952542+00:00"
+  "manifest_generated_at": "2026-08-04T17:21:06.281244+00:00"
 }
