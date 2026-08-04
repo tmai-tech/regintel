@@ -1,5 +1,29 @@
 [
   {
+    "id": "9d61086fad178343",
+    "title": "استخدام البيانات المفتوحة",
+    "filename": "OpenDataUsageGuidelines.pdf",
+    "jurisdiction": "Saudi Arabia - GOSI",
+    "source_kind": "ministry",
+    "law_type": "other",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "cmsgosi.gosi.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://www.gosi.gov.sa/ar/StatisticsAndData/OpenedData/policy",
+    "url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
+    "open_url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
+    "download_url": null,
+    "bytes": 638785,
+    "sha256": "9d61086fad178343",
+    "downloaded_at": "2026-08-04T02:46:40.068339+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_GOSI/ministry/OpenDataUsageGuidelines.pdf"
+  },
+  {
     "id": "352c2c7355538cfe",
     "title": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf",
     "filename": "Regulations_of_Income_Tax.pdf",

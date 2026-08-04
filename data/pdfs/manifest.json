@@ -161967,6 +161967,19 @@
       "http_status": 200,
       "content_type": "application/pdf",
       "downloaded_at": "2026-08-03T21:20:26.983468+00:00"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "source_kind": "ministry",
+      "source_page": "https://www.gosi.gov.sa/ar/StatisticsAndData/OpenedData/policy",
+      "title": "استخدام البيانات المفتوحة",
+      "path": "data/pdfs/Saudi_Arabia_GOSI/ministry/OpenDataUsageGuidelines.pdf",
+      "bytes": 638785,
+      "sha256": "9d61086fad178343",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "downloaded_at": "2026-08-04T02:46:40.068339+00:00"
     }
   ],
   "discovered": [

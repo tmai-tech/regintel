@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-03T21:24:06.633937+00:00",
+  "updated_at": "2026-08-04T02:56:58.351134+00:00",
   "phase": "idle",
-  "message": "merged 39 ministry PDFs from parallel crawl",
-  "run_id": "30853006052",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30853006052",
+  "message": "merged 1 ministry PDFs from parallel crawl",
+  "run_id": "30872311643",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30872311643",
   "totals": {
-    "pdfs": 12459,
+    "pdfs": 12460,
     "errors": 22117,
     "source_reports": 43,
-    "jurisdictions": 39
+    "jurisdictions": 40
   },
   "by_jurisdiction": [
     {
@@ -166,6 +166,10 @@
     {
       "jurisdiction": "Saudi Arabia - MoC",
       "count": 1
+    },
+    {
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "count": 1
     }
   ],
   "by_source_kind": [
@@ -179,11 +183,18 @@
     },
     {
       "source_kind": "ministry",
-      "count": 214
+      "count": 215
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "استخدام البيانات المفتوحة",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa///StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
+      "downloaded_at": "2026-08-04T02:46:40.068339+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf",
       "jurisdiction": "Saudi Arabia - ZATCA",
@@ -280,13 +291,6 @@
       "jurisdiction": "Saudi Arabia - CMA",
       "url": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Instructions%20on%20the%20Offering%20of%20Real%20Estate%20Contrbutions%20Certificates_en.pdf",
       "downloaded_at": "2026-08-03T21:10:29.546722+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Green_Social_Sustainability_Sustainability_Guidelines.en.pd",
-      "jurisdiction": "Saudi Arabia - CMA",
-      "url": "https://cma.gov.sa/en/RulesRegulations/Regulations/Documents/Green_Social_Sustainability_Sustainability_Guidelines.en.pdf",
-      "downloaded_at": "2026-08-03T21:10:28.542847+00:00",
       "source_kind": "ministry"
     }
   ],
