@@ -646,30 +646,56 @@
     render();
   }
 
-  function renderCrawlStatus(st) {
+  function statusBadge(status) {
+    const s = String(status || "to_download");
+    const map = {
+      downloaded: "badge-fed",
+      to_download: "badge-src",
+      download_failed: "badge-state",
+      scanned_pdf: "badge-src",
+      listed: "badge-src",
+    };
+    return `<span class="badge ${map[s] || "badge-src"}">${escapeHtml(s)}</span>`;
+  }
+
+  function renderCrawlStatus(st, docList) {
     const body = document.getElementById("crawlBody");
     const updated = document.getElementById("crawlUpdated");
     if (!body) return;
-    if (!st) {
+    if (!st && !docList) {
       body.innerHTML =
-        '<div class="empty">No crawl status yet. GitHub Actions crawl will publish <code>crawl_status.json</code> as PDFs are found.</div>';
+        '<div class="empty">No crawl status yet. Ministry crawl publishes a full document list (to download / downloaded / failed / scanned) then downloads.</div>';
       if (updated) updated.textContent = "No status file";
       return;
     }
+    st = st || {};
     const totals = st.totals || {};
     const phase = st.phase || "unknown";
     const cur = st.current_source || {};
     const byJ = st.by_jurisdiction || [];
     const recent = st.recent_pdfs || [];
+    const mdl = st.ministry_document_list || docList || {};
+    const counts = mdl.counts || {
+      listed_total: totals.ministry_listed,
+      to_download: totals.ministry_to_download,
+      downloaded: totals.ministry_downloaded,
+      download_failed: totals.ministry_failed,
+      scanned_pdf: totals.ministry_scanned,
+    };
     if (updated) {
       updated.textContent =
         "Updated " +
-        (st.updated_at ? new Date(st.updated_at).toLocaleString() : "—") +
+        (st.updated_at || mdl.updated_at
+          ? new Date(st.updated_at || mdl.updated_at).toLocaleString()
+          : "—") +
         " · phase: " +
         phase;
     }
     const phaseClass =
-      phase === "running" || phase === "starting"
+      phase === "running" ||
+      phase === "starting" ||
+      phase === "discovering" ||
+      phase === "downloading"
         ? "badge-state"
         : phase === "paused"
           ? "badge-src"
@@ -694,6 +720,29 @@
       })
       .join("");
 
+    const docs = (docList && docList.documents) || mdl.documents || [];
+    const failed = (docList && docList.failed_sample) || docs.filter((d) => d.status === "download_failed").slice(0, 40);
+    const docRows = docs
+      .slice(0, 80)
+      .map((d) => {
+        const name = d.filename || d.title || "doc";
+        const link = isHttpUrl(d.url)
+          ? `<a class="link" href="${escapeAttr(d.url)}" target="_blank" rel="noopener">${escapeHtml(String(name).slice(0, 60))}</a>`
+          : escapeHtml(String(name).slice(0, 60));
+        const err = d.download_error
+          ? `<span class="muted">${escapeHtml(String(d.download_error).slice(0, 60))}</span>`
+          : "—";
+        return `<tr><td>${link}</td><td>${statusBadge(d.status)}</td><td class="muted">${escapeHtml(d.discovery_method || "—")}</td><td>${err}</td></tr>`;
+      })
+      .join("");
+    const failRows = failed
+      .slice(0, 30)
+      .map((d) => {
+        const name = d.filename || d.url || "doc";
+        return `<tr><td>${escapeHtml(String(name).slice(0, 50))}</td><td class="muted">${escapeHtml(String(d.download_error || "failed").slice(0, 80))}</td></tr>`;
+      })
+      .join("");
+
     body.innerHTML = `
       <div class="crawl-hero">
         <div class="card-badges">
@@ -702,26 +751,31 @@
         </div>
         <p class="summary-line">${escapeHtml(st.message || "—")}</p>
         <div class="crawl-metrics">
-          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.pdfs ?? 0))}</div><div class="metric-label">PDFs in catalog</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.jurisdictions ?? 0))}</div><div class="metric-label">Jurisdictions</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.errors ?? 0))}</div><div class="metric-label">Errors logged</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.listed_total ?? totals.ministry_listed ?? 0))}</div><div class="metric-label">Listed (master list)</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.to_download ?? totals.ministry_to_download ?? 0))}</div><div class="metric-label">To be downloaded</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.downloaded ?? totals.ministry_downloaded ?? 0))}</div><div class="metric-label">Downloaded</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.scanned_pdf ?? totals.ministry_scanned ?? 0))}</div><div class="metric-label">Scanned PDFs</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.download_failed ?? totals.ministry_failed ?? 0))}</div><div class="metric-label">Download errors</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.pdfs ?? 0))}</div><div class="metric-label">Catalog total</div></div>
         </div>
-        <p class="meta-line">Current source: <strong>${escapeHtml(cur.jurisdiction || "—")}</strong>
-          ${cur.source_kind ? " · " + escapeHtml(cur.source_kind) : ""}
-          ${cur.url ? `<br/><a class="link" href="${escapeAttr(cur.url)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(cur.url, 70))}</a>` : ""}
+        <p class="meta-line">Ministry target: <strong>${escapeHtml(mdl.label || cur.jurisdiction || "—")}</strong>
+          ${mdl.target_url || cur.url ? `<br/><a class="link" href="${escapeAttr(mdl.target_url || cur.url)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(mdl.target_url || cur.url, 70))}</a>` : ""}
+          ${mdl.pages_visited != null ? `<br/>Pages scanned: ${escapeHtml(String(mdl.pages_visited))}` : ""}
         </p>
       </div>
       <div class="crawl-grid">
         <div>
-          <h3 class="crawl-h">By jurisdiction</h3>
-          <div class="table-wrap"><table class="data-table"><thead><tr><th>Jurisdiction</th><th>PDFs</th></tr></thead><tbody>${jurisRows || "<tr><td colspan=2 class=muted>None yet</td></tr>"}</tbody></table></div>
+          <h3 class="crawl-h">Document list (status)</h3>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th>File</th><th>Status</th><th>Found via</th><th>Error</th></tr></thead><tbody>${docRows || "<tr><td colspan=4 class=muted>No ministry document list yet — run ministry_pipeline on a URL</td></tr>"}</tbody></table></div>
         </div>
         <div>
-          <h3 class="crawl-h">Recently extracted</h3>
-          <div class="table-wrap"><table class="data-table"><thead><tr><th>Place</th><th>PDF</th><th>When</th></tr></thead><tbody>${recentRows || "<tr><td colspan=3 class=muted>None yet</td></tr>"}</tbody></table></div>
+          <h3 class="crawl-h">Download failures</h3>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th>File</th><th>Error</th></tr></thead><tbody>${failRows || "<tr><td colspan=2 class=muted>No failures recorded</td></tr>"}</tbody></table></div>
+          <h3 class="crawl-h">By jurisdiction (catalog)</h3>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th>Jurisdiction</th><th>PDFs</th></tr></thead><tbody>${jurisRows || "<tr><td colspan=2 class=muted>None yet</td></tr>"}</tbody></table></div>
         </div>
       </div>
-      <p class="muted crawl-note">Catalog refreshes on the live site as the GitHub Actions crawl finds PDFs (resume-safe chunks every few hours). Open the <strong>PDFs</strong> tab to browse them.</p>
+      <p class="muted crawl-note"><strong>Flow:</strong> 1) Discover full PDF list (sitemap + SharePoint feeds + page scan) → 2) Download each with status: <code>to_download</code>, <code>downloaded</code>, <code>scanned_pdf</code>, <code>download_failed</code>. Open <strong>PDFs</strong> / <strong>Ministries</strong> for content.</p>
     `;
   }
 
@@ -729,8 +783,11 @@
     const btn = document.getElementById("crawlRefresh");
     async function refresh() {
       try {
-        const st = await fetchJson("data/crawl_status.json").catch(() => null);
-        renderCrawlStatus(st);
+        const [st, docList] = await Promise.all([
+          fetchJson("data/crawl_status.json").catch(() => null),
+          fetchJson("data/ministry_document_list.json").catch(() => null),
+        ]);
+        renderCrawlStatus(st, docList);
       } catch (e) {
         renderCrawlStatus(null);
       }

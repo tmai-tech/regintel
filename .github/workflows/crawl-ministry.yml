@@ -1,0 +1,133 @@
+# Discover full PDF list for a ministry URL, then download with status tracking.
+# Usage: workflow_dispatch with url=https://sdaia.gov.sa
+name: Crawl ministry (list then download)
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Ministry site root URL"
+        required: true
+        default: "https://sdaia.gov.sa"
+      label:
+        description: "Jurisdiction label (e.g. Saudi Arabia - SDAIA)"
+        required: false
+        default: "Saudi Arabia - SDAIA"
+      max_pages:
+        description: "Max HTML pages to scan during discovery"
+        required: false
+        default: "600"
+      delay:
+        description: "Seconds between requests"
+        required: false
+        default: "0.3"
+      discover_only:
+        description: "true = list only, do not download"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl-ministry
+  cancel-in-progress: true
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pymupdf || true
+
+      - name: Discover list + download
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          URL="${{ github.event.inputs.url }}"
+          LABEL="${{ github.event.inputs.label }}"
+          MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          DELAY="${{ github.event.inputs.delay }}"
+          ONLY="${{ github.event.inputs.discover_only }}"
+          EXTRA=()
+          if [ "$ONLY" = "true" ]; then
+            EXTRA+=(--discover-only)
+          fi
+          echo "=== Ministry pipeline: $URL ($LABEL) ==="
+          python -u collector/ministry_pipeline.py \
+            --url "$URL" \
+            --label "$LABEL" \
+            --max-pages "${MAX_PAGES:-600}" \
+            --delay "${DELAY:-0.3}" \
+            "${EXTRA[@]+"${EXTRA[@]}"}"
+          python scripts/fix_ministry_jurisdiction_labels.py || true
+          # print counts for summary
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("web/data/ministry_document_list.json")
+          if p.exists():
+              d = json.loads(p.read_text())
+              c = d.get("counts") or {}
+              print("COUNTS", c)
+              print("phase", d.get("phase"), "label", d.get("label"))
+              failed = [x for x in (d.get("documents") or []) if x.get("status") == "download_failed"]
+              print("failed", len(failed))
+              for f in failed[:15]:
+                  print(" FAIL", f.get("filename"), f.get("download_error"))
+          PY
+
+      - name: Commit + push catalog
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python collector/live_publish.py || true
+          git add -f data/pdfs/manifest.json data/pdfs/ministry_lists \
+            web/data/pdfs_catalog.json web/data/crawl_status.json \
+            web/data/ministry_document_list.json \
+            android/app/src/main/assets/pdfs_catalog.json \
+            data/pdfs/crawl_status.json 2>/dev/null || true
+          REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: ministry pipeline ${{ github.event.inputs.label }} $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            for i in 1 2 3 4 5; do
+              git fetch "$REPO" main:refs/remotes/origin/main || true
+              git rebase origin/main || true
+              git push "$REPO" HEAD:main && break
+              sleep $((i * 3))
+            done
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4
