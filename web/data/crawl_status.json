@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-05T16:54:40.314379+00:00",
+  "updated_at": "2026-08-05T16:54:48.137439+00:00",
   "phase": "idle",
-  "message": "Saudi Arabia - SDAIA: listed=319 downloaded=312 scanned=5 failed=2",
+  "message": "relabeled 0 ministry PDFs by host",
   "run_id": "31022996599",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31022996599",
   "totals": {
