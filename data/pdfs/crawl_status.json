@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-04T18:43:07.085964+00:00",
-  "phase": "idle",
-  "message": "relabeled 0 ministry PDFs by host",
-  "run_id": "30932009346",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/30932009346",
+  "updated_at": "2026-08-05T15:59:34.952257+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://sdaia.gov.sa/",
+  "run_id": "31022996599",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31022996599",
   "totals": {
     "pdfs": 12755,
     "errors": 22131,
@@ -190,7 +190,16 @@
       "count": 216
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "url": "https://sdaia.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0
+  },
   "recent_pdfs": [
     {
       "title": "Record of Vehicles",
