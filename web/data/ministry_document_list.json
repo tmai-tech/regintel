@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-06T18:53:55.516778+00:00",
+  "updated_at": "2026-08-06T18:55:30.354367+00:00",
   "phase": "discovering",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
   "counts": {
-    "to_download": 305,
+    "to_download": 315,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 305
+    "listed_total": 315
   },
   "discovery_methods": {
-    "href": 264,
-    "script": 41
+    "href": 269,
+    "script": 46
   },
-  "pages_visited": 375,
+  "pages_visited": 475,
   "documents": [
     {
       "filename": "organizationalArrangementsAr.pdf",
@@ -3672,6 +3672,126 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "Request+For+Legal+Opinion+Clarification+User+Guide.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+EN+(2)+(1)+(1).pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/004e1ecf-d1cb-4aa7-b417-31e465f83fa7/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+EN+%282%29+%281%29+%281%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-004e1ecf-d1cb-4aa7-b417-31e465f83fa7-pVa3I1G",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download File",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+EN+(2)+(1)+(1).pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/004e1ecf-d1cb-4aa7-b417-31e465f83fa7/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+EN+%282%29+%281%29+%281%29.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+EN+(2)+(1)+(1).pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "ai-principles-EN.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-3fceaa0d-bbb6-4ead-9cab-c141c2eca42d-p735I9a",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download the guide in PDF format",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "ai-principles-EN.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "ai-principles-EN.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+تسجيل+الجهات+خارج+المملكة+wv1.1.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/f745cd37-d1a8-4176-90f1-5a73d59a90fb/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D8%A7%D9%84%D8%AC%D9%87%D8%A7%D8%AA+%D8%AE%D8%A7%D8%B1%D8%AC+%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+wv1.1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-f745cd37-d1a8-4176-90f1-5a73d59a90fb-pYP6B3I",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل الدليل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+تسجيل+الجهات+خارج+المملكة+wv1.1.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/f745cd37-d1a8-4176-90f1-5a73d59a90fb/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D8%A7%D9%84%D8%AC%D9%87%D8%A7%D8%AA+%D8%AE%D8%A7%D8%B1%D8%AC+%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+wv1.1.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "دليل+المستخدم+لخدمة+تسجيل+الجهات+خارج+المملكة+wv1.1.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+طلب+بيان+الرأي+النظامي.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/a2d99662-e9a5-4693-a406-9ca92ea23741/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%B7%D9%84%D8%A8+%D8%A8%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B1%D8%A3%D9%8A+%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%85%D9%8A.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-a2d99662-e9a5-4693-a406-9ca92ea23741-pTZ5DiP",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل الدليل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+طلب+بيان+الرأي+النظامي.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/a2d99662-e9a5-4693-a406-9ca92ea23741/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%B7%D9%84%D8%A8+%D8%A8%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B1%D8%A3%D9%8A+%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%85%D9%8A.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "دليل+المستخدم+لخدمة+طلب+بيان+الرأي+النظامي.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+2.2+عربي++(1).pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/c0af230b-189e-46ce-bc8c-380d76694108/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+2.2+%D8%B9%D8%B1%D8%A8%D9%8A++%281%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-c0af230b-189e-46ce-bc8c-380d76694108-pVa3PQI",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل الدليل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+2.2+عربي++(1).pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/c0af230b-189e-46ce-bc8c-380d76694108/%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85+%D9%84%D8%AE%D8%AF%D9%85%D8%A9+%D8%AA%D8%B3%D8%AC%D9%8A%D9%84+%D9%85%D9%82%D8%AF%D9%85%D9%8A+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+2.2+%D8%B9%D8%B1%D8%A8%D9%8A++%281%29.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "دليل+المستخدم+لخدمة+تسجيل+مقدمي+خدمات+ومنتجات+البيانات+2.2+عربي++(1).pdf",
       "bytes": null,
       "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - SDAIA"
