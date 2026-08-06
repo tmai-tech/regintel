@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-06T18:40:22.819900+00:00",
+  "updated_at": "2026-08-06T18:42:18.176982+00:00",
   "phase": "discovering",
-  "message": "discovering sdaia.gov.sa: pages=150 listed=170",
+  "message": "discovering sdaia.gov.sa: pages=250 listed=218",
   "run_id": "31126108024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31126108024",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 1,
-    "ministry_listed": 170,
+    "ministry_listed": 218,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 170
+    "ministry_to_download": 218
   },
   "by_jurisdiction": [
     {
@@ -31,12 +31,12 @@
     "jurisdiction": "Saudi Arabia - SDAIA",
     "url": "https://sdaia.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 170,
+    "listed": 218,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 170,
-    "pages_visited": 150
+    "to_download": 218,
+    "pages_visited": 250
   },
   "recent_pdfs": [
     {
@@ -303,16 +303,16 @@
     "label": "Saudi Arabia - SDAIA",
     "target_url": "https://sdaia.gov.sa/",
     "counts": {
-      "to_download": 170,
+      "to_download": 218,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 170
+      "listed_total": 218
     },
     "discovery_methods": {
-      "href": 170
+      "href": 218
     },
-    "pages_visited": 150,
+    "pages_visited": 250,
     "sitemaps_used": [
       "https://sdaia.gov.sa/sitemap.xml",
       "https://sdaia.gov.sa/sitemap_index.xml",
@@ -321,8 +321,8 @@
       "https://sdaia.gov.sa/ar/SDAIA/AboutPortal/Pages/Sitemap.aspx",
       "https://sdaia.gov.sa/en/SDAIA/AboutPortal/Pages/Sitemap.aspx"
     ],
-    "datasources_found": 14,
+    "datasources_found": 15,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T18:40:21.147978+00:00"
+    "updated_at": "2026-08-06T18:42:16.526553+00:00"
   }
 }
