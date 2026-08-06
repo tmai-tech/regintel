@@ -146,7 +146,6 @@
   function setupTabs() {
     const tabs = document.querySelectorAll(".tab");
     const panels = {
-      laws: document.getElementById("panelLaws"),
       pdfs: document.getElementById("panelPdfs"),
       crawl: document.getElementById("panelCrawl"),
       ministries: document.getElementById("panelMinistries"),
@@ -751,7 +750,7 @@
           <div class="metric"><div class="metric-val">${escapeHtml(String(counts.downloaded ?? totals.ministry_downloaded ?? 0))}</div><div class="metric-label">Downloaded</div></div>
           <div class="metric"><div class="metric-val">${escapeHtml(String(counts.scanned_pdf ?? totals.ministry_scanned ?? 0))}</div><div class="metric-label">Scanned PDFs</div></div>
           <div class="metric"><div class="metric-val">${escapeHtml(String(counts.download_failed ?? totals.ministry_failed ?? 0))}</div><div class="metric-label">Download errors</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.pdfs ?? 0))}</div><div class="metric-label">Catalog total</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.pdfs ?? counts.downloaded ?? 0))}</div><div class="metric-label">SDAIA PDFs</div></div>
         </div>
         <p class="meta-line">Ministry target: <strong>${escapeHtml(mdl.label || cur.jurisdiction || "—")}</strong>
           ${mdl.target_url || cur.url ? `<br/><a class="link" href="${escapeAttr(mdl.target_url || cur.url)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(mdl.target_url || cur.url, 70))}</a>` : ""}
@@ -1190,30 +1189,47 @@
         );
       }
       if (!Array.isArray(pdfsRes)) throw new Error("PDF catalog is not a list");
-      pdfs = pdfsRes;
-      ministries = Array.isArray(minRes) ? minRes : [];
+      // Site is SDAIA-only — drop any residual non-SDAIA rows
+      pdfs = pdfsRes.filter((p) => {
+        const j = String(p.jurisdiction || "");
+        const h = String(p.host || "");
+        const u = String(p.url || p.open_url || "");
+        return (
+          j.includes("SDAIA") ||
+          h.toLowerCase().includes("sdaia") ||
+          u.toLowerCase().includes("sdaia")
+        );
+      });
+      ministries = (Array.isArray(minRes) ? minRes : []).filter(
+        (m) => String(m.code || "").toUpperCase() === "SDAIA" || /sdaia/i.test(m.name || ""),
+      );
+      if (!ministries.length) {
+        ministries = [
+          {
+            code: "SDAIA",
+            name: "Saudi Data and Artificial Intelligence Authority (SDAIA)",
+            url: "https://sdaia.gov.sa",
+            country: "Saudi Arabia",
+            authority_type: "Authority",
+          },
+        ];
+      }
       evaSummaries = Array.isArray(evaRes) ? evaRes : [];
       evaMeta = evaMetaRes;
     } catch (e) {
       metaBar.textContent = "Error";
-      document.getElementById("lawList").innerHTML =
-        '<div class="error-state">Failed to load data.<br/>' +
-        escapeHtml(e.message || String(e)) +
-        "</div>";
+      const host = document.getElementById("ministryList") || document.getElementById("list");
+      if (host) {
+        host.innerHTML =
+          '<div class="error-state">Failed to load data.<br/>' +
+          escapeHtml(e.message || String(e)) +
+          "</div>";
+      }
       return;
     }
 
-    const nState = laws.filter((r) => (r.level || "") === "State").length;
-    const nFed = laws.filter((r) => (r.level || "") === "Federal").length;
-    metaBar.textContent =
-      laws.length +
-      " laws · " +
-      ministries.length +
-      " ministries · " +
-      pdfs.length +
-      " PDFs";
+    metaBar.textContent = "SDAIA · " + pdfs.length + " PDFs";
 
-    initLaws(laws);
     initMinistries(ministries, pdfs);
     initEva(evaSummaries, evaMeta, pdfs.length);
     initPdfs(pdfs);

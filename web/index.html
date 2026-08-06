@@ -14,7 +14,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icon-180.png" />
-  <title>RegIntel — Laws &amp; Regulatory Updates</title>
+  <title>RegIntel — SDAIA documents</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
@@ -27,7 +27,7 @@
         <div class="logo" aria-hidden="true">⚖️</div>
         <div>
           <h1>RegIntel</h1>
-          <p class="subtitle">Laws, updates &amp; bill PDFs — filter by country and level</p>
+          <p class="subtitle">SDAIA — Saudi Data &amp; AI Authority documents</p>
         </div>
       </div>
       <div class="meta-bar" id="metaBar" role="status">Loading…</div>
@@ -42,47 +42,13 @@
     </aside>
 
     <nav class="tabs" role="tablist" aria-label="Main views">
-      <button type="button" class="tab active" role="tab" id="tabLaws" aria-selected="true" aria-controls="panelLaws" data-tab="laws">Laws</button>
-      <button type="button" class="tab" role="tab" id="tabMinistries" aria-selected="false" aria-controls="panelMinistries" data-tab="ministries">Ministries</button>
+      <button type="button" class="tab active" role="tab" id="tabMinistries" aria-selected="true" aria-controls="panelMinistries" data-tab="ministries">SDAIA</button>
       <button type="button" class="tab" role="tab" id="tabPdfs" aria-selected="false" aria-controls="panelPdfs" data-tab="pdfs">PDFs</button>
       <button type="button" class="tab" role="tab" id="tabCrawl" aria-selected="false" aria-controls="panelCrawl" data-tab="crawl">Crawl</button>
     </nav>
 
-    <!-- Laws / regulatory updates -->
-    <section class="panel" id="panelLaws" role="tabpanel" aria-labelledby="tabLaws" aria-label="Laws catalog">
-      <div class="toolbar sticky-toolbar">
-        <label class="sr-only" for="lawSearch">Search by name of the law</label>
-        <input
-          type="search"
-          id="lawSearch"
-          enterkeyhint="search"
-          autocomplete="off"
-          autocorrect="off"
-          spellcheck="false"
-          placeholder="Search by name of the law…"
-        />
-        <label class="sr-only" for="filterCountry">Filter by country</label>
-        <select id="filterCountry" aria-label="Country filter"></select>
-        <label class="sr-only" for="filterLevel">Filter by federal or state</label>
-        <select id="filterLevel" aria-label="Federal or state filter">
-          <option value="All levels">All levels</option>
-          <option value="Federal">Federal</option>
-          <option value="State">State / province</option>
-        </select>
-        <label class="sr-only" for="filterLawArea">Filter by law area</label>
-        <select id="filterLawArea" aria-label="Law area filter"></select>
-        <label class="sr-only" for="filterLawKind">Filter by record type</label>
-        <select id="filterLawKind" aria-label="Record type filter">
-          <option value="All types">All types</option>
-        </select>
-        <span id="lawRowCount" class="muted row-count" aria-live="polite"></span>
-      </div>
-      <div id="lawList" class="pdf-list" role="list"></div>
-      <div id="lawEmpty" class="empty" hidden>No laws match your filters.</div>
-    </section>
-
-    <!-- Saudi ministries / authorities -->
-    <section class="panel" id="panelMinistries" role="tabpanel" aria-labelledby="tabMinistries" aria-label="Ministries" hidden>
+    <!-- SDAIA authority -->
+    <section class="panel" id="panelMinistries" role="tabpanel" aria-labelledby="tabMinistries" aria-label="SDAIA">
       <div class="toolbar sticky-toolbar">
         <label class="sr-only" for="ministrySearch">Search ministries</label>
         <input
@@ -173,6 +139,6 @@
   </div>
 
   <!-- cache-bust when Eva chat logic changes -->
-  <script src="assets/app.js?v=crawl3" defer></script>
+  <script src="assets/app.js?v=sdaia1" defer></script>
 </body>
 </html>
