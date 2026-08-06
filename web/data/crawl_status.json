@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-05T16:54:51.218555+00:00",
-  "phase": "manual",
-  "message": "manual live_publish",
-  "run_id": "31022996599",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31022996599",
+  "updated_at": "2026-08-06T07:34:32.468343+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://sdaia.gov.sa/",
+  "run_id": "31081389225",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31081389225",
   "totals": {
     "pdfs": 12853,
     "errors": 22131,
@@ -190,7 +190,16 @@
       "count": 14
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "url": "https://sdaia.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0
+  },
   "recent_pdfs": [
     {
       "title": "البنود+التعاقدية+القياسية.pdf",
