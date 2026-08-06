@@ -1,19 +1,14 @@
 {
-  "updated_at": "2026-08-06T15:51:29.101753+00:00",
-  "phase": "discovering",
-  "message": "discovering sdaia.gov.sa: pages=275 listed=218",
+  "updated_at": "2026-08-06T15:54:42.451994+00:00",
+  "phase": "manual",
+  "message": "manual live_publish",
   "run_id": "31117131897",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31117131897",
   "totals": {
     "pdfs": 338,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 1,
-    "ministry_listed": 218,
-    "ministry_downloaded": 0,
-    "ministry_failed": 0,
-    "ministry_scanned": 0,
-    "ministry_to_download": 218
+    "jurisdictions": 1
   },
   "by_jurisdiction": [
     {
@@ -27,17 +22,7 @@
       "count": 338
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - SDAIA",
-    "url": "https://sdaia.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 218,
-    "downloaded": 0,
-    "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 218,
-    "pages_visited": 275
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "البنود+التعاقدية+القياسية.pdf",
@@ -298,31 +283,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-05T16:54:39.092030+00:00",
-  "ministry_document_list": {
-    "label": "Saudi Arabia - SDAIA",
-    "target_url": "https://sdaia.gov.sa/",
-    "counts": {
-      "to_download": 218,
-      "downloaded": 0,
-      "download_failed": 0,
-      "scanned_pdf": 0,
-      "listed_total": 218
-    },
-    "discovery_methods": {
-      "href": 218
-    },
-    "pages_visited": 275,
-    "sitemaps_used": [
-      "https://sdaia.gov.sa/sitemap.xml",
-      "https://sdaia.gov.sa/sitemap_index.xml",
-      "https://sdaia.gov.sa/Sitemap.xml",
-      "https://sdaia.gov.sa/_layouts/15/sitemap.aspx",
-      "https://sdaia.gov.sa/ar/SDAIA/AboutPortal/Pages/Sitemap.aspx",
-      "https://sdaia.gov.sa/en/SDAIA/AboutPortal/Pages/Sitemap.aspx"
-    ],
-    "datasources_found": 15,
-    "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T15:51:27.431842+00:00"
-  }
+  "manifest_generated_at": "2026-08-05T16:54:39.092030+00:00"
 }
