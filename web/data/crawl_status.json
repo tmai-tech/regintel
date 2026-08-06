@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-06T19:17:00.803414+00:00",
+  "updated_at": "2026-08-06T19:19:22.503976+00:00",
   "phase": "downloading",
-  "message": "downloading 190/315 for Saudi Arabia - SDAIA (ok=184 scanned=5 fail=1)",
+  "message": "downloading 230/315 for Saudi Arabia - SDAIA (ok=224 scanned=5 fail=1)",
   "run_id": "31126108024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31126108024",
   "totals": {
@@ -10,10 +10,10 @@
     "source_reports": 53,
     "jurisdictions": 1,
     "ministry_listed": 315,
-    "ministry_downloaded": 184,
+    "ministry_downloaded": 224,
     "ministry_failed": 1,
     "ministry_scanned": 5,
-    "ministry_to_download": 125
+    "ministry_to_download": 85
   },
   "by_jurisdiction": [
     {
@@ -32,10 +32,10 @@
     "url": "https://sdaia.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 315,
-    "downloaded": 184,
+    "downloaded": 224,
     "download_failed": 1,
     "scanned_pdf": 5,
-    "to_download": 125,
+    "to_download": 85,
     "pages_visited": 546
   },
   "recent_pdfs": [
@@ -303,8 +303,8 @@
     "label": "Saudi Arabia - SDAIA",
     "target_url": "https://sdaia.gov.sa/",
     "counts": {
-      "to_download": 125,
-      "downloaded": 184,
+      "to_download": 85,
+      "downloaded": 224,
       "download_failed": 1,
       "scanned_pdf": 5,
       "listed_total": 315
@@ -324,6 +324,6 @@
     ],
     "datasources_found": 15,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T19:16:59.140789+00:00"
+    "updated_at": "2026-08-06T19:19:20.858369+00:00"
   }
 }
