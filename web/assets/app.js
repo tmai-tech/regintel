@@ -657,7 +657,16 @@
     return `<span class="badge ${map[s] || "badge-src"}">${escapeHtml(s)}</span>`;
   }
 
-  function renderCrawlStatus(st, docList) {
+  function fmtWhen(iso) {
+    if (!iso) return "—";
+    try {
+      return new Date(iso).toLocaleString();
+    } catch (_) {
+      return String(iso).slice(0, 19);
+    }
+  }
+
+  function renderCrawlStatus(st, docList, catalogCount) {
     const body = document.getElementById("crawlBody");
     const updated = document.getElementById("crawlUpdated");
     if (!body) return;
@@ -668,74 +677,103 @@
       return;
     }
     st = st || {};
+    docList = docList && typeof docList === "object" ? docList : null;
     const totals = st.totals || {};
     const phase = st.phase || "unknown";
     const cur = st.current_source || {};
-    const byJ = st.by_jurisdiction || [];
-    const recent = st.recent_pdfs || [];
-    const mdl = st.ministry_document_list || docList || {};
-    const counts = mdl.counts || {
-      listed_total: totals.ministry_listed,
-      to_download: totals.ministry_to_download,
-      downloaded: totals.ministry_downloaded,
-      download_failed: totals.ministry_failed,
-      scanned_pdf: totals.ministry_scanned,
-    };
+    // Merge list file (full docs) with crawl_status summary — prefer newer timestamps
+    const stMdl = st.ministry_document_list || {};
+    const listFile = docList || {};
+    const stMdlAt = Date.parse(stMdl.updated_at || "") || 0;
+    const listAt = Date.parse(listFile.updated_at || "") || 0;
+    const newerList = listAt >= stMdlAt ? listFile : { ...listFile, ...stMdl };
+    // Always prefer document array from the dedicated list file when present
+    const docs =
+      (Array.isArray(listFile.documents) && listFile.documents.length
+        ? listFile.documents
+        : null) ||
+      (Array.isArray(stMdl.documents) && stMdl.documents.length
+        ? stMdl.documents
+        : null) ||
+      [];
+    const countsFromFile = newerList.counts || listFile.counts || stMdl.counts || {};
+    // Discovered total = master list size (explicit count or length of list)
+    const discoveredTotal = Number(
+      countsFromFile.listed_total ??
+        totals.ministry_listed ??
+        (docs.length ? docs.length : 0),
+    );
+    const toDl = Number(countsFromFile.to_download ?? totals.ministry_to_download ?? 0);
+    const dlOk = Number(countsFromFile.downloaded ?? totals.ministry_downloaded ?? 0);
+    const scanned = Number(countsFromFile.scanned_pdf ?? totals.ministry_scanned ?? 0);
+    const failed = Number(countsFromFile.download_failed ?? totals.ministry_failed ?? 0);
+    // Catalog = published PDFs tab inventory (NOT the same as discovered list)
+    const catalogPdfs = Number(
+      catalogCount != null
+        ? catalogCount
+        : totals.pdfs != null
+          ? totals.pdfs
+          : 0,
+    );
+    const listUpdated = listFile.updated_at || stMdl.updated_at || null;
+    const statusUpdated = st.updated_at || null;
+    const pagesVisited =
+      newerList.pages_visited != null
+        ? newerList.pages_visited
+        : stMdl.pages_visited != null
+          ? stMdl.pages_visited
+          : listFile.pages_visited;
+    const methods =
+      newerList.discovery_methods ||
+      stMdl.discovery_methods ||
+      listFile.discovery_methods ||
+      {};
+    const methodLine = Object.keys(methods).length
+      ? Object.entries(methods)
+          .map(([k, v]) => `${k}: ${v}`)
+          .join(" · ")
+      : "—";
+    const label = newerList.label || stMdl.label || listFile.label || cur.jurisdiction || "SDAIA";
+    const targetUrl = newerList.target_url || stMdl.target_url || listFile.target_url || cur.url || "";
+
     if (updated) {
       updated.textContent =
-        "Updated " +
-        (st.updated_at || mdl.updated_at
-          ? new Date(st.updated_at || mdl.updated_at).toLocaleString()
-          : "—") +
+        "Status " +
+        fmtWhen(statusUpdated) +
+        " · list " +
+        fmtWhen(listUpdated) +
         " · phase: " +
-        phase;
+        phase +
+        " · discovered " +
+        discoveredTotal +
+        " · catalog " +
+        catalogPdfs;
     }
     const phaseClass =
       phase === "running" ||
       phase === "starting" ||
       phase === "discovering" ||
-      phase === "downloading"
+      phase === "downloading" ||
+      phase === "listed"
         ? "badge-state"
         : phase === "paused"
           ? "badge-src"
           : "badge-fed";
     const runLink = isHttpUrl(st.github_run_url)
-      ? `<a class="link" href="${escapeAttr(st.github_run_url)}" target="_blank" rel="noopener">GitHub Actions run</a>`
+      ? `<a class="link" href="${escapeAttr(st.github_run_url)}" target="_blank" rel="noopener">GitHub Actions run #${escapeHtml(String(st.run_id || "").slice(-6) || "open")}</a>`
       : "";
-    const jurisRows = byJ
-      .slice(0, 25)
-      .map(
-        (r) =>
-          `<tr><td>${escapeHtml(r.jurisdiction)}</td><td class="num">${escapeHtml(String(r.count))}</td></tr>`,
-      )
-      .join("");
-    const recentRows = recent
-      .map((r) => {
-        const title = r.title || r.url || "PDF";
-        const link = isHttpUrl(r.url)
-          ? `<a class="link" href="${escapeAttr(r.url)}" target="_blank" rel="noopener">${escapeHtml(title.slice(0, 80))}</a>`
-          : escapeHtml(title.slice(0, 80));
-        return `<tr><td>${escapeHtml(r.jurisdiction || "—")}</td><td>${link}</td><td class="muted">${escapeHtml((r.downloaded_at || "").slice(0, 19))}</td></tr>`;
-      })
-      .join("");
-
-    const docs = (docList && docList.documents) || mdl.documents || [];
-    const failed = (docList && docList.failed_sample) || docs.filter((d) => d.status === "download_failed").slice(0, 40);
+    const failedSample =
+      (listFile && listFile.failed_sample) ||
+      docs.filter((d) => d.status === "download_failed").slice(0, 40);
     const statusFilterId = "crawlStatusFilter";
     const allDocs = docs;
-    const failRows = failed
+    const failRows = failedSample
       .slice(0, 50)
       .map((d) => {
         const name = d.filename || d.url || "doc";
         return `<tr><td>${escapeHtml(String(name).slice(0, 50))}</td><td class="muted">${escapeHtml(String(d.download_error || "failed").slice(0, 80))}</td></tr>`;
       })
       .join("");
-    const methods = mdl.discovery_methods || {};
-    const methodLine = Object.keys(methods).length
-      ? Object.entries(methods)
-          .map(([k, v]) => `${k}: ${v}`)
-          .join(" · ")
-      : "—";
 
     body.innerHTML = `
       <div class="crawl-hero">
@@ -744,24 +782,37 @@
           ${runLink ? `<span class="badge badge-src">${runLink}</span>` : ""}
         </div>
         <p class="summary-line">${escapeHtml(st.message || "—")}</p>
+
+        <h3 class="crawl-h" style="margin:1rem 0 0.35rem">1 · Discovered master list <span class="muted" style="font-weight:400">(URLs found on the ministry site — not the catalog)</span></h3>
         <div class="crawl-metrics">
-          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.listed_total ?? totals.ministry_listed ?? allDocs.length ?? 0))}</div><div class="metric-label">Listed (master list)</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.to_download ?? totals.ministry_to_download ?? 0))}</div><div class="metric-label">To be downloaded</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.downloaded ?? totals.ministry_downloaded ?? 0))}</div><div class="metric-label">Downloaded</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.scanned_pdf ?? totals.ministry_scanned ?? 0))}</div><div class="metric-label">Scanned PDFs</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.download_failed ?? totals.ministry_failed ?? 0))}</div><div class="metric-label">Download errors</div></div>
-          <div class="metric"><div class="metric-val">${escapeHtml(String(totals.pdfs ?? counts.downloaded ?? 0))}</div><div class="metric-label">SDAIA PDFs</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(discoveredTotal))}</div><div class="metric-label">Discovered PDFs (total)</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(toDl))}</div><div class="metric-label">Still to download</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(dlOk))}</div><div class="metric-label">Downloaded OK</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(scanned))}</div><div class="metric-label">Scanned (image PDF)</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(failed))}</div><div class="metric-label">Download failed</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(pagesVisited != null ? pagesVisited : "—"))}</div><div class="metric-label">Pages scanned</div></div>
         </div>
-        <p class="meta-line">Ministry target: <strong>${escapeHtml(mdl.label || cur.jurisdiction || "—")}</strong>
-          ${mdl.target_url || cur.url ? `<br/><a class="link" href="${escapeAttr(mdl.target_url || cur.url)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(mdl.target_url || cur.url, 70))}</a>` : ""}
-          ${mdl.pages_visited != null ? `<br/>Pages scanned: ${escapeHtml(String(mdl.pages_visited))}` : ""}
-          <br/>Discovery: ${escapeHtml(methodLine)}
+        <p class="meta-line">
+          Master list updated: <strong>${escapeHtml(fmtWhen(listUpdated))}</strong>
+          ${docs.length ? ` · rows in table: <strong>${docs.length}</strong>` : " · full row list not published yet"}
+          <br/>Target: <strong>${escapeHtml(label)}</strong>
+          ${targetUrl ? ` · <a class="link" href="${escapeAttr(targetUrl)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(targetUrl, 60))}</a>` : ""}
+          <br/>How found: ${escapeHtml(methodLine)}
+        </p>
+
+        <h3 class="crawl-h" style="margin:1.25rem 0 0.35rem">2 · SDAIA catalog <span class="muted" style="font-weight:400">(PDFs tab / published inventory — separate from discovery)</span></h3>
+        <div class="crawl-metrics">
+          <div class="metric"><div class="metric-val">${escapeHtml(String(catalogPdfs))}</div><div class="metric-label">SDAIA catalog PDFs</div></div>
+        </div>
+        <p class="meta-line">
+          Catalog status updated: <strong>${escapeHtml(fmtWhen(statusUpdated))}</strong>
+          <br/><span class="muted">Discovered total and catalog total are different numbers. Discovery = every PDF URL found. Catalog = what is published on the PDFs tab after download/merge.</span>
         </p>
       </div>
       <div class="toolbar" style="margin:0.75rem 0;gap:0.5rem;flex-wrap:wrap">
-        <label class="muted" for="${statusFilterId}">Filter list status</label>
+        <label class="muted" for="${statusFilterId}">Filter master list status</label>
         <select id="${statusFilterId}" aria-label="Filter by document status">
-          <option value="">All statuses (${allDocs.length})</option>
+          <option value="">All discovered (${allDocs.length})</option>
           <option value="to_download">to_download</option>
           <option value="downloaded">downloaded</option>
           <option value="scanned_pdf">scanned_pdf</option>
@@ -771,19 +822,19 @@
       </div>
       <div class="crawl-grid">
         <div style="grid-column:1/-1">
-          <h3 class="crawl-h">Full document list (all PDFs found on site)</h3>
+          <h3 class="crawl-h">Master list — every discovered PDF URL (${discoveredTotal})</h3>
           <div class="table-wrap" style="max-height:28rem;overflow:auto"><table class="data-table" id="crawlDocTable"><thead><tr><th>#</th><th>File</th><th>Status</th><th>Found via</th><th>Error</th></tr></thead><tbody></tbody></table></div>
         </div>
         <div>
           <h3 class="crawl-h">Download failures</h3>
           <div class="table-wrap"><table class="data-table"><thead><tr><th>File</th><th>Error</th></tr></thead><tbody>${failRows || "<tr><td colspan=2 class=muted>No failures recorded</td></tr>"}</tbody></table></div>
         </div>
-        <div>
-          <h3 class="crawl-h">By jurisdiction (catalog)</h3>
-          <div class="table-wrap"><table class="data-table"><thead><tr><th>Jurisdiction</th><th>PDFs</th></tr></thead><tbody>${jurisRows || "<tr><td colspan=2 class=muted>None yet</td></tr>"}</tbody></table></div>
-        </div>
       </div>
-      <p class="muted crawl-note"><strong>Flow:</strong> 1) Discover full PDF list (sitemap + SharePoint/_api + KnowledgeCenter seeds + page scan) → 2) Download with status <code>to_download</code> / <code>downloaded</code> / <code>scanned_pdf</code> / <code>download_failed</code>.</p>
+      <p class="muted crawl-note"><strong>Two counters (do not mix them):</strong>
+        <br/>• <strong>Discovered PDFs</strong> = master list size from the latest ministry crawl (URLs found).
+        <br/>• <strong>SDAIA catalog PDFs</strong> = published PDFs tab count (files already in catalog).
+        <br/><strong>Flow:</strong> discover list → download with status → merge into catalog.
+      </p>
     `;
 
     function paintDocs(filter) {
@@ -818,20 +869,23 @@
     const btn = document.getElementById("crawlRefresh");
     async function refresh() {
       try {
-        const [st, docList] = await Promise.all([
-          fetchJson("data/crawl_status.json").catch(() => null),
-          fetchJson("data/ministry_document_list.json").catch(() => null),
+        const bust = "t=" + Date.now();
+        const [st, docList, catalog] = await Promise.all([
+          fetchJson("data/crawl_status.json?" + bust).catch(() => null),
+          fetchJson("data/ministry_document_list.json?" + bust).catch(() => null),
+          fetchJson("data/pdfs_catalog.json?" + bust).catch(() => null),
         ]);
-        renderCrawlStatus(st, docList);
+        const catalogCount = Array.isArray(catalog) ? catalog.length : null;
+        renderCrawlStatus(st, docList, catalogCount);
       } catch (e) {
-        renderCrawlStatus(null);
+        renderCrawlStatus(null, null, null);
       }
     }
     window.__regintelRefreshCrawl = refresh;
     if (btn) btn.addEventListener("click", refresh);
     refresh();
-    // auto-refresh every 60s while page open
-    setInterval(refresh, 60000);
+    // auto-refresh every 45s while page open (live discovery progress)
+    setInterval(refresh, 45000);
   }
 
   function normalizeLawRow(r) {
@@ -1232,13 +1286,15 @@
       return;
     }
 
-    metaBar.textContent = "SDAIA · " + pdfs.length + " PDFs";
+    // Meta: catalog (PDFs tab) is not the same as discovered master-list count
+    metaBar.textContent = "SDAIA catalog · " + pdfs.length + " PDFs";
 
     initMinistries(ministries, pdfs);
     initEva(evaSummaries, evaMeta, pdfs.length);
     initPdfs(pdfs);
     initCrawl();
   }
+
 
   /** Minimal fallback if laws_catalog.json is absent. */
   function legacyBuildLaws(updates, tracking, sources) {
