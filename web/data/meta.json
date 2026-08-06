@@ -1,20 +1,9 @@
 {
-  "generated_at": "2026-08-06T08:12:45.812473+00:00",
+  "generated_at": "2026-08-06T19:33:49.037923+00:00",
+  "site_scope": "SDAIA",
   "counts": {
-    "primary_sources": 1330,
-    "tracking_records": 114,
-    "gazette_sources": 67,
-    "secondary_sources": 68,
-    "detailed_plan_rows": 85,
-    "updates": 460,
-    "laws": 1870
+    "sdaia_pdfs": 338,
+    "jurisdictions": 1
   },
-  "last_collector_run": "2026-08-06T08:12:46.604211+00:00",
-  "last_collector_stats": {
-    "sources_attempted": 50,
-    "ok": 46,
-    "fail": 4,
-    "new_updates": 6,
-    "total_updates": 460
-  }
+  "message": "SDAIA-only · 338 PDFs"
 }
