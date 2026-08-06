@@ -317,9 +317,9 @@
       return {
         answer:
           "I’m Eva, RegIntel’s legal research assistant. I read bill and gazette PDFs, keep short summaries, and answer your questions with links to the source PDFs.\n\n" +
-          `Right now I have ${count} PDF summary(ies) in my index` +
-          (pdfCatalogCount ? ` (catalog has ~${pdfCatalogCount} PDFs total — I’m still catching up).` : ".") +
-          "\n\nAsk about a topic, jurisdiction, or bill name — e.g. “Delaware revenue bills” or “cybersecurity rules”.",
+          `Right now I have ${count} SDAIA PDF summary(ies) in my index` +
+          (pdfCatalogCount ? ` (${pdfCatalogCount} SDAIA PDFs in the catalog).` : ".") +
+          "\n\nAsk about SDAIA policies, PDPL, AI ethics, or a document name.",
         citations: [],
       };
     }
@@ -1214,7 +1214,11 @@
           },
         ];
       }
-      evaSummaries = Array.isArray(evaRes) ? evaRes : [];
+      evaSummaries = (Array.isArray(evaRes) ? evaRes : []).filter((e) => {
+        const j = String(e.jurisdiction || "");
+        const u = String(e.url || e.open_url || e.source_page || "");
+        return j.includes("SDAIA") || u.toLowerCase().includes("sdaia");
+      });
       evaMeta = evaMetaRes;
     } catch (e) {
       metaBar.textContent = "Error";

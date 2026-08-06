@@ -111,11 +111,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python collector/live_publish.py || true
+          # After publish_sdaia_only — commit only SDAIA public payloads
           git add -f data/pdfs/manifest.json data/pdfs/ministry_lists \
             web/data/pdfs_catalog.json web/data/crawl_status.json \
             web/data/ministry_document_list.json \
+            web/data/saudi_ministries.json web/data/laws_catalog.json \
+            web/data/meta.json web/data/eva_summaries.json web/data/eva_meta.json \
             android/app/src/main/assets/pdfs_catalog.json \
-            data/pdfs/crawl_status.json 2>/dev/null || true
+            data/pdfs/crawl_status.json data/saudi_ministries.json 2>/dev/null || true
           REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           if ! git diff --staged --quiet; then
             git commit -m "chore: ministry pipeline ${{ github.event.inputs.label }} $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true

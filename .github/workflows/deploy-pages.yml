@@ -27,26 +27,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Sync data into web/
+      - name: Sync data into web/ (SDAIA-only public site)
         run: |
           set -euo pipefail
           mkdir -p web/data
-          # Catalog JSON lives primarily under web/data (index_pdfs_firestore.py).
-          # Also merge any root data/*.json so Pages stays in sync with collector output.
-          cp -f data/*.json web/data/ 2>/dev/null || true
-          # Rebuild enriched laws catalog (country, federal/state, summaries, authorities)
-          if [ -f scripts/build_laws_catalog.py ]; then
-            python3 scripts/build_laws_catalog.py
+          # Do NOT copy root data/*.json over web/data — that reintroduces the
+          # global multi-jurisdiction catalog (12k+ PDFs, laws, gazette, etc.).
+          # Public site is SDAIA-only: strip anything non-SDAIA before upload.
+          if [ -f scripts/publish_sdaia_only.py ]; then
+            python3 scripts/publish_sdaia_only.py
           fi
           if [ ! -f web/data/pdfs_catalog.json ]; then
             echo "::warning::web/data/pdfs_catalog.json missing — UI will show load error until catalog is generated."
           else
-            echo "pdfs_catalog.json: $(wc -c < web/data/pdfs_catalog.json) bytes"
+            echo "pdfs_catalog.json: $(wc -c < web/data/pdfs_catalog.json) bytes · $(python3 -c "import json;print(len(json.load(open('web/data/pdfs_catalog.json'))))") PDFs"
           fi
           if [ ! -f web/data/laws_catalog.json ]; then
-            echo "::warning::web/data/laws_catalog.json missing — Laws tab will use fallback merge."
-          else
-            echo "laws_catalog.json: $(wc -c < web/data/laws_catalog.json) bytes"
+            echo "[]" > web/data/laws_catalog.json
           fi
           # Sanity: required static files for iOS web client
           for f in web/index.html web/manifest.webmanifest web/assets/app.js web/assets/styles.css; do

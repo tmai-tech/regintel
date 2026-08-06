@@ -145,6 +145,19 @@ def build_status(
     }
 
 
+def _is_sdaia_row(r: dict) -> bool:
+    j = str(r.get("jurisdiction") or "")
+    h = str(r.get("host") or "")
+    u = str(r.get("url") or r.get("open_url") or "")
+    sp = str(r.get("source_page") or "")
+    return (
+        "SDAIA" in j
+        or "sdaia" in h.lower()
+        or "sdaia" in u.lower()
+        or "sdaia" in sp.lower()
+    )
+
+
 def publish(
     *,
     phase: str = "running",
@@ -154,15 +167,40 @@ def publish(
     force_git: bool = False,
     min_git_interval_sec: float = 180.0,
 ) -> dict:
-    """Rebuild catalog + status JSON. Optionally commit/push for live site."""
+    """Rebuild catalog + status JSON. Optionally commit/push for live site.
+
+    Public site is SDAIA-only (REGINTEL_SDAIA_ONLY defaults on) so mid-crawl
+    pushes never reintroduce the global multi-jurisdiction catalog.
+    """
     global _last_git_push, _last_catalog_count
 
     manifest = load_manifest()
     catalog = build_catalog_from_manifest(manifest)
+    sdaia_only = os.environ.get("REGINTEL_SDAIA_ONLY", "1") != "0"
+    if sdaia_only:
+        catalog = [r for r in catalog if _is_sdaia_row(r)]
+        for r in catalog:
+            r["jurisdiction"] = "Saudi Arabia - SDAIA"
+            r["source_kind"] = r.get("source_kind") or "ministry"
     status = build_status(
         phase=phase, message=message, current_source=current_source
     )
+    # Status totals for the public site reflect published (filtered) catalog
     status["totals"]["pdfs"] = len(catalog)
+    if sdaia_only:
+        status["totals"]["jurisdictions"] = 1 if catalog else 0
+        status["by_jurisdiction"] = (
+            [{"jurisdiction": "Saudi Arabia - SDAIA", "count": len(catalog)}]
+            if catalog
+            else []
+        )
+        status["by_source_kind"] = (
+            [{"source_kind": "ministry", "count": len(catalog)}] if catalog else []
+        )
+        if not message:
+            status["message"] = f"SDAIA-only · {len(catalog)} PDFs"
+        elif "catalog" in message.lower() and "total" in message.lower():
+            status["message"] = f"SDAIA · {len(catalog)} PDFs"
 
     WEB_DATA.mkdir(parents=True, exist_ok=True)
     (ROOT / "data" / "pdfs").mkdir(parents=True, exist_ok=True)
