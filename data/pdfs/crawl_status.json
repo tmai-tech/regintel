@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-06T18:56:27.782192+00:00",
-  "phase": "listed",
-  "message": "listed 315 documents on sdaia.gov.sa (pages=546)",
+  "updated_at": "2026-08-06T18:56:30.675368+00:00",
+  "phase": "downloading",
+  "message": "downloading 315 listed docs",
   "run_id": "31126108024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31126108024",
   "totals": {
@@ -324,6 +324,6 @@
     ],
     "datasources_found": 15,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T18:56:26.103175+00:00"
+    "updated_at": "2026-08-06T18:56:29.034074+00:00"
   }
 }
