@@ -15,8 +15,11 @@ permissions:
   id-token: write
 
 concurrency:
+  # Do not cancel — live crawl progress commits every ~90s and would
+  # otherwise abort every in-flight Pages deploy (site stays stale).
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
+
 
 jobs:
   deploy:

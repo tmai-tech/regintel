@@ -386,5 +386,52 @@ def _git_push_live(pdf_count: int, phase: str) -> bool:
 
 
 if __name__ == "__main__":
-    s = publish(phase="manual", message="manual live_publish", force_git=False)
-    print(json.dumps(s["totals"], indent=2))
+    # Preserve existing crawl phase/message when run as a post-step helper
+    # (workflow used to overwrite real discovery status with "manual").
+    prev_phase = "idle"
+    prev_msg = "live publish"
+    ministry_progress = None
+    try:
+        if WEB_STATUS.exists():
+            prev = json.loads(WEB_STATUS.read_text(encoding="utf-8"))
+            if prev.get("phase") and prev.get("phase") not in ("manual",):
+                prev_phase = prev["phase"]
+            if prev.get("message") and "manual" not in str(prev.get("message")).lower():
+                prev_msg = prev["message"]
+            if prev.get("ministry_document_list"):
+                ministry_progress = prev["ministry_document_list"]
+        list_path = WEB_DATA / "ministry_document_list.json"
+        if list_path.exists():
+            lst = json.loads(list_path.read_text(encoding="utf-8"))
+            ministry_progress = {
+                "label": lst.get("label") or "Saudi Arabia - SDAIA",
+                "target_url": lst.get("target_url") or "https://sdaia.gov.sa",
+                "counts": lst.get("counts") or {},
+                "discovery_methods": lst.get("discovery_methods") or {},
+                "pages_visited": lst.get("pages_visited"),
+                "list_file": "data/ministry_document_list.json",
+                "updated_at": lst.get("updated_at"),
+            }
+            c = lst.get("counts") or {}
+            if lst.get("phase") in (
+                "discovering",
+                "listed",
+                "downloading",
+                "complete",
+            ):
+                prev_phase = lst["phase"] if prev_phase in ("idle", "manual") else prev_phase
+            if c.get("listed_total") is not None and prev_msg in ("live publish", "manual live_publish"):
+                prev_msg = (
+                    f"{prev_phase}: listed={c.get('listed_total', 0)} "
+                    f"downloaded={c.get('downloaded', 0)} "
+                    f"failed={c.get('download_failed', 0)}"
+                )
+    except Exception:
+        pass
+    s = publish(
+        phase=prev_phase,
+        message=prev_msg,
+        ministry_progress=ministry_progress,
+        force_git=False,
+    )
+    print(json.dumps({"phase": s.get("phase"), "message": s.get("message"), "totals": s.get("totals")}, indent=2))
