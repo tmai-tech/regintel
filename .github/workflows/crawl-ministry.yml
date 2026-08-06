@@ -28,8 +28,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  # Pages deploy is NOT done in this long job — holding environment:github-pages
+  # for hours blocked every live site update. Data is git-pushed; deploy-pages.yml
+  # publishes the site.
 
 concurrency:
   group: crawl-ministry
@@ -39,9 +40,6 @@ jobs:
   crawl:
     runs-on: ubuntu-latest
     timeout-minutes: 360
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -129,10 +127,4 @@ jobs:
               sleep $((i * 3))
             done
           fi
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: web
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          echo "Site updates via deploy-pages.yml on push (this job no longer holds github-pages)."
