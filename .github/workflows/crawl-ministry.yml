@@ -14,9 +14,9 @@ on:
         required: false
         default: "Saudi Arabia - SDAIA"
       max_pages:
-        description: "Max HTML pages to scan during discovery"
+        description: "Max HTML pages to scan during discovery (use 2000+ for full SDAIA)"
         required: false
-        default: "600"
+        default: "2000"
       delay:
         description: "Seconds between requests"
         required: false
@@ -80,7 +80,7 @@ jobs:
           python -u collector/ministry_pipeline.py \
             --url "$URL" \
             --label "$LABEL" \
-            --max-pages "${MAX_PAGES:-600}" \
+            --max-pages "${MAX_PAGES:-2000}" \
             --delay "${DELAY:-0.3}" \
             "${EXTRA[@]+"${EXTRA[@]}"}"
           python scripts/fix_ministry_jurisdiction_labels.py || true

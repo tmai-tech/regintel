@@ -133,7 +133,7 @@ class MinistryPipeline:
         *,
         url: str,
         label: str,
-        max_pages: int = 500,
+        max_pages: int = 2000,
         delay: float = 0.35,
         max_file_mb: int = 150,
         download: bool = True,
@@ -202,7 +202,14 @@ class MinistryPipeline:
             return
         if not looks_like_doc(url):
             return
-        if not same_site(url, self.root):
+        # same site or sibling portal (dgp.sdaia.gov.sa under sdaia.gov.sa)
+        h = base_host(url)
+        r = self.root
+        ok = same_site(url, r) or h.endswith("." + r.split(".", 1)[-1] if r.count(".") >= 2 else r)
+        # tighter: allow *.sdaia.gov.sa when root is sdaia.gov.sa
+        if r.endswith("sdaia.gov.sa") and h.endswith("sdaia.gov.sa"):
+            ok = True
+        if not ok:
             return
         if url in self.docs:
             return
@@ -228,6 +235,53 @@ class MinistryPipeline:
         self.discovery_methods[method] = self.discovery_methods.get(method, 0) + 1
 
     # ---------- discovery ----------
+    def deep_seed_paths(self) -> list[str]:
+        """High-value library paths (colleague excel: KnowledgeCenter holds most PDFs)."""
+        common = [
+            "/Documents/",
+            "/en/default.aspx",
+            "/ar/default.aspx",
+            "/en/",
+            "/ar/",
+            "/_layouts/15/",
+            "/_api/web/lists?$select=Title,Id,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
+            "/_api/web/lists?$filter=BaseTemplate eq 101&$top=100",
+            "/_vti_bin/listdata.svc/",
+            "/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500",
+            "/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
+        ]
+        if "sdaia" in self.root:
+            common.extend(
+                [
+                    "/en/MediaCenter/KnowledgeCenter/",
+                    "/ar/MediaCenter/KnowledgeCenter/",
+                    "/en/MediaCenter/KnowledgeCenter/AINewsletter/",
+                    "/ar/MediaCenter/KnowledgeCenter/AINewsletter/",
+                    "/en/MediaCenter/KnowledgeCenter/ResearchLibrary/",
+                    "/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/",
+                    "/en/MediaCenter/",
+                    "/ar/MediaCenter/",
+                    "/en/SDAIA/about/Documents/",
+                    "/ar/SDAIA/about/Documents/",
+                    "/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+                    "/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+                    "/en/SDAIA/about/",
+                    "/ar/SDAIA/about/",
+                    "/en/SDAIA/eParticipation/",
+                    "/ar/SDAIA/eParticipation/",
+                    "/en/Sectors/Nic/",
+                    "/ar/Sectors/Nic/",
+                    "/en/Sectors/",
+                    "/ar/Sectors/",
+                    "/en/Research/Documents/",
+                    "/ar/Research/Documents/",
+                    "/ndmo/Files/",
+                    "/Documents/",
+                    "https://dgp.sdaia.gov.sa/",
+                ]
+            )
+        return common
+
     def discover_sitemaps(self) -> None:
         candidates = [
             urljoin(self.start_url, "/sitemap.xml"),
@@ -235,8 +289,11 @@ class MinistryPipeline:
             urljoin(self.start_url, "/Sitemap.xml"),
             f"https://{self.root}/sitemap.xml",
             f"https://www.{self.root}/sitemap.xml",
+            f"https://{self.root}/sitemap_index.xml",
+            f"https://{self.root}/_layouts/15/sitemap.aspx",
+            f"https://{self.root}/en/sitemap.xml",
+            f"https://{self.root}/ar/sitemap.xml",
         ]
-        # robots.txt
         r, _ = self.fetch(urljoin(self.start_url, "/robots.txt"), timeout=15)
         if r and r.text:
             for line in r.text.splitlines():
@@ -247,79 +304,134 @@ class MinistryPipeline:
         queue = list(dict.fromkeys(candidates))
         while queue:
             sm = queue.pop(0)
-            if sm in seen_sm:
+            if sm in seen_sm or len(seen_sm) > 80:
                 continue
             seen_sm.add(sm)
-            r, err = self.fetch(sm, timeout=30)
+            r, err = self.fetch(sm, timeout=45)
             if err or r is None:
                 continue
             body = r.text or ""
-            if not body.strip().startswith("<") and "xml" not in (r.headers.get("Content-Type") or "").lower():
+            ct = (r.headers.get("Content-Type") or "").lower()
+            if not (
+                body.strip().startswith("<")
+                or "xml" in ct
+                or "<urlset" in body.lower()
+                or "<sitemapindex" in body.lower()
+                or "<loc>" in body.lower()
+            ):
+                if "html" in ct or "<html" in body[:500].lower():
+                    for p in self.extract_from_html(body, sm):
+                        self._seed_pages.append(p)
                 continue
             self.sitemaps_used.append(sm)
             self.log(f"  [sitemap] {sm}")
-            # loc tags
-            for m in re.finditer(r"<loc>\s*([^<\s]+)\s*</loc>", body, re.I):
-                loc = m.group(1).strip()
+            locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", body, re.I)
+            locs += re.findall(r"https?://[^\s\"'<>]+", body)
+            for loc in locs:
+                loc = loc.strip()
                 if looks_like_doc(loc):
                     self.add_doc(loc, "sitemap")
                 elif same_site(loc, self.root):
-                    # page for BFS later — store as soft seed
-                    if loc not in self.visited_pages:
-                        self._seed_pages.append(normalize(loc))
-            # nested sitemaps
-            if "sitemapindex" in body.lower() or "<sitemap>" in body.lower():
-                for m in re.finditer(r"<loc>\s*([^<\s]+)\s*</loc>", body, re.I):
-                    loc = m.group(1).strip()
                     if "sitemap" in loc.lower() and loc not in seen_sm:
                         queue.append(loc)
+                    else:
+                        self._seed_pages.append(normalize(loc))
+
+    def harvest_doc_urls_from_text(self, text: str, base: str, method: str) -> None:
+        if not text:
+            return
+        for m in re.finditer(
+            r"https?://[^\s\"'<>]+?\.(?:pdf|docx?|xlsx?|pptx?)(?:\.aspx)?(?:\?[^\s\"'<>]*)?",
+            text,
+            re.I,
+        ):
+            self.add_doc(m.group(0).replace("&amp;", "&"), method)
+        for m in re.finditer(
+            r'["\']([^"\']+\.pdf(?:\.aspx)?(?:\?[^"\']*)?)["\']', text, re.I
+        ):
+            self.add_doc(urljoin(base, m.group(1).replace("&amp;", "&")), method)
+        for m in re.finditer(
+            r"(?:href|src|url|FileRef|ServerRelativeUrl|EncodedAbsUrl|Path)\s*[=:]\s*[\"']?([^\s\"'<>]+\.pdf[^\s\"'<>]*)",
+            text,
+            re.I,
+        ):
+            path = m.group(1).replace("&amp;", "&")
+            self.add_doc(urljoin(base, path) if path.startswith("/") else path, method)
+        for m in re.finditer(r"(/[^\s\"'<>]*?/[^\s\"'<>]*?\.pdf)", text, re.I):
+            self.add_doc(urljoin(base, m.group(1)), method)
 
     def discover_sharepoint_datasources(self, html: str, page_url: str) -> None:
-        # Colleague note: DataSources/*.aspx XML feeds on SharePoint
         patterns = [
             r'["\']([^"\']*DataSources/[^"\']+\.aspx[^"\']*)["\']',
             r'["\']([^"\']*_vti_bin/[^"\']+)["\']',
             r'["\']([^"\']*_api/web/[^"\']+)["\']',
+            r'["\']([^"\']*_api/search/[^"\']+)["\']',
             r'["\']([^"\']*listdata\.svc[^"\']*)["\']',
         ]
         found = []
         for pat in patterns:
-            for m in re.finditer(pat, html, re.I):
-                u = urljoin(page_url, m.group(1))
-                if same_site(u, self.root) or "sdaia" in base_host(u):
+            for m in re.finditer(pat, html or "", re.I):
+                u = urljoin(page_url, m.group(1).replace("&amp;", "&"))
+                if same_site(u, self.root):
                     found.append(normalize(u))
-        for ds in list(dict.fromkeys(found))[:40]:
+        for probe in (
+            f"https://{self.root}/_api/web/lists?$select=Title,Id,ItemCount,BaseTemplate,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
+            f"https://{self.root}/_api/search/query?querytext=%27FileExtension:pdf%20Path:{self.root}%27&rowlimit=500&selectproperties=%27Path,Title,Size%27",
+            f"https://{self.root}/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
+            f"https://{self.root}/_vti_bin/listdata.svc/",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/Documents')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en')/files?$top=200",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+        ):
+            found.append(probe)
+
+        for ds in list(dict.fromkeys(found))[:120]:
             if ds in self.datasources_found:
                 continue
             self.datasources_found.append(ds)
-            self.log(f"  [datasource] {ds[:100]}")
-            r, err = self.fetch(ds, timeout=45)
+            self.log(f"  [datasource] {ds[:130]}")
+            r, err = self.fetch(ds, timeout=60)
             if err or r is None:
                 continue
             text = r.text or ""
-            # extract any document-like URLs from feed
-            for m in re.finditer(
-                r"https?://[^\s\"'<>]+?\.(?:pdf|docx?|xlsx?)(?:\.aspx)?(?:\?[^\s\"'<>]*)?",
-                text,
-                re.I,
-            ):
-                self.add_doc(m.group(0), "datasource")
-            for m in re.finditer(
-                r'["\'](/[^"\']+\.pdf(?:\.aspx)?[^"\']*)["\']', text, re.I
-            ):
-                self.add_doc(urljoin(ds, m.group(1)), "datasource")
-            # SharePoint FileRef / ServerUrl fields
-            for m in re.finditer(
-                r"(?:FileRef|ServerRelativeUrl|EncodedAbsUrl)[\"'>\s:=]+([^\s\"'<>]+)",
-                text,
-                re.I,
-            ):
-                path = m.group(1).strip()
-                if ".pdf" in path.lower() or looks_like_doc(path):
-                    self.add_doc(urljoin(ds, path) if path.startswith("/") else path, "datasource")
+            self.harvest_doc_urls_from_text(text, ds, "datasource")
+            for m in re.finditer(r'"ServerRelativeUrl"\s*:\s*"([^"]+)"', text):
+                rel = m.group(1)
+                if any(
+                    x in rel.lower()
+                    for x in (
+                        "document", "media", "library", "pdf", "file",
+                        "knowledge", "research", "publication", "newsletter",
+                        "sdaia", "sector",
+                    )
+                ):
+                    api = f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('{rel}')/files?$top=500"
+                    if api not in self.datasources_found:
+                        self.datasources_found.append(api)
+                        r2, err2 = self.fetch(api, timeout=60)
+                        if r2 and not err2:
+                            self.harvest_doc_urls_from_text(r2.text or "", api, "datasource")
+                    sub = f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('{rel}')/folders?$top=200"
+                    r3, err3 = self.fetch(sub, timeout=45)
+                    if r3 and not err3:
+                        for m2 in re.finditer(r'"ServerRelativeUrl"\s*:\s*"([^"]+)"', r3.text or ""):
+                            rel2 = m2.group(1)
+                            api2 = f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('{rel2}')/files?$top=500"
+                            if api2 in self.datasources_found:
+                                continue
+                            self.datasources_found.append(api2)
+                            r4, err4 = self.fetch(api2, timeout=60)
+                            if r4 and not err4:
+                                self.harvest_doc_urls_from_text(r4.text or "", api2, "datasource")
 
     def extract_from_html(self, html: str, page_url: str) -> list[str]:
-        """Return same-site HTML page links to enqueue; register docs side-effect."""
         pages = []
         soup = BeautifulSoup(html, "lxml")
         for a in soup.find_all("a", href=True):
@@ -334,25 +446,31 @@ class MinistryPipeline:
                 self.add_doc(target, "href", text)
             elif same_site(target, self.root):
                 pages.append(target)
-        # scripts / embedded
-        for m in re.finditer(
-            r"https?://[^\s\"'<>]+?\.(?:pdf|docx?|xlsx?)(?:\.aspx)?(?:\?[^\s\"'<>]*)?",
-            html,
-            re.I,
+        for tag in soup.find_all(["iframe", "embed", "object", "source"]):
+            for attr in ("src", "data", "data-src"):
+                if tag.get(attr):
+                    t = normalize(urljoin(page_url, tag.get(attr)))
+                    if looks_like_doc(t):
+                        self.add_doc(t, "embed")
+        self.harvest_doc_urls_from_text(html, page_url, "script")
+        if (
+            "DataSource" in html
+            or "_api/" in html
+            or "_vti_bin" in html
+            or "SharePoint" in html
+            or "WebPart" in html
+            or self.pages_seen <= 5
         ):
-            self.add_doc(m.group(0), "script")
-        for m in re.finditer(r'["\']([^"\']+\.pdf(?:\.aspx)?(?:\?[^"\']*)?)["\']', html, re.I):
-            self.add_doc(urljoin(page_url, m.group(1)), "script")
-        # SharePoint datasources on this page
-        if "DataSource" in html or "_api/" in html or "_vti_bin" in html:
             self.discover_sharepoint_datasources(html, page_url)
-        # JSON API hints
+        for api in re.findall(r'["\'](/_api/[^"\']{2,200})["\']', html)[:40]:
+            pages.append(normalize(urljoin(page_url, api)))
         for api in re.findall(r'["\'](/api/[^"\']{2,120})["\']', html)[:25]:
             pages.append(normalize(urljoin(page_url, api)))
         return pages
 
     def extract_from_json(self, text: str, page_url: str) -> list[str]:
         pages = []
+        self.harvest_doc_urls_from_text(text, page_url, "json_api")
         try:
             data = json.loads(text)
         except Exception:
@@ -373,61 +491,92 @@ class MinistryPipeline:
                     self.add_doc(urljoin(page_url, s), "json_api")
                 elif s.startswith("http") and same_site(s, self.root):
                     pages.append(normalize(s))
-                elif s.startswith("/api/") or (s.startswith("/") and s.count("/") >= 2):
+                elif s.startswith("/_api/") or s.startswith("/api/") or (
+                    s.startswith("/") and s.count("/") >= 2
+                ):
                     low = s.lower()
-                    if not low.endswith((".css", ".js", ".png", ".jpg", ".svg", ".ico")):
+                    if not low.endswith((".css", ".js", ".png", ".jpg", ".svg", ".ico", ".woff")):
                         pages.append(normalize(urljoin(page_url, s)))
 
         rec(data)
         return pages
 
+    def page_priority(self, url: str) -> int:
+        u = url.lower()
+        if any(
+            k in u
+            for k in (
+                "knowledgecenter", "ainewsletter", "researchlibrary",
+                "/documents", "regulations", "policies", "mediacenter",
+                "datasource", "_api/", "newsletter",
+            )
+        ):
+            return 0
+        if any(k in u for k in ("/about", "/sectors", "/research", "eparticipation")):
+            return 1
+        return 2
+
     def discover(self) -> dict:
         self._seed_pages: list[str] = []
         self.log(f"[discover] start {self.start_url} max_pages={self.max_pages}")
         self.discover_sitemaps()
+        self.discover_sharepoint_datasources("", self.start_url)
 
-        queue: deque[str] = deque()
+        queues: dict[int, deque] = {0: deque(), 1: deque(), 2: deque()}
         queued: set[str] = set()
 
         def enq(u: str):
             u = normalize(u)
-            if u not in queued and same_site(u, self.root):
-                queue.append(u)
-                queued.add(u)
+            if not u.startswith("http") or u in queued:
+                return
+            if not same_site(u, self.root):
+                # allow sibling sdaia hosts
+                if not (self.root in base_host(u) or base_host(u).endswith("." + self.root)):
+                    return
+            queued.add(u)
+            queues[self.page_priority(u)].append(u)
+
+        def pop_next():
+            for prio in (0, 1, 2):
+                if queues[prio]:
+                    return queues[prio].popleft()
+            return None
 
         enq(self.start_url)
-        for p in getattr(self, "_seed_pages", [])[:2000]:
+        for p in getattr(self, "_seed_pages", [])[:5000]:
             enq(p)
-        # common ministry / SharePoint seeds
-        for path in (
-            "/Documents/",
-            "/en/SDAIA/about/Documents/",
-            "/ar/SDAIA/about/Documents/",
-            "/ndmo/Files/",
-            "/en/default.aspx",
-            "/ar/default.aspx",
-            "/_layouts/15/",
-        ):
-            enq(urljoin(self.start_url, path))
+        for path in self.deep_seed_paths():
+            if path.startswith("http"):
+                enq(path)
+            else:
+                enq(urljoin(self.start_url, path))
+                enq(f"https://{self.root}{path}")
 
-        while queue and self.pages_seen < self.max_pages:
-            url = queue.popleft()
+        while self.pages_seen < self.max_pages:
+            url = pop_next()
+            if not url:
+                break
             if url in self.visited_pages:
                 continue
             self.visited_pages.add(url)
             self.pages_seen += 1
             if self.pages_seen % 25 == 0:
+                qsize = sum(len(q) for q in queues.values())
                 self.log(
-                    f"  [progress] pages={self.pages_seen} docs_listed={len(self.docs)} queue={len(queue)}"
+                    f"  [progress] pages={self.pages_seen} docs_listed={len(self.docs)} "
+                    f"queue={qsize} methods={self.discovery_methods}"
                 )
                 self.save_list(phase="discovering")
+                self.publish_status(
+                    "discovering",
+                    f"discovering {self.root}: pages={self.pages_seen} listed={len(self.docs)}",
+                )
 
             r, err = self.fetch(url)
             if err or r is None:
                 self.page_errors.append({"url": url, "error": err})
                 continue
             ct = (r.headers.get("Content-Type") or "").lower()
-            # direct document
             if looks_like_doc(url) or "pdf" in ct:
                 self.add_doc(url, "direct")
                 continue
@@ -436,15 +585,11 @@ class MinistryPipeline:
                 for p in self.extract_from_json(text, url):
                     enq(p)
                 continue
+            if "xml" in ct or text.lstrip().startswith("<?xml") or "<feed" in text[:200].lower():
+                self.harvest_doc_urls_from_text(text, url, "datasource")
+                continue
             for p in self.extract_from_html(text, url):
                 enq(p)
-            # opportunistic datasource path probe once
-            if self.pages_seen <= 5:
-                for guess in (
-                    urljoin(url, "DataSources/"),
-                    f"https://{self.root}/_api/web/lists?$top=50",
-                ):
-                    enq(guess)
 
         stats = {
             "target_url": self.start_url,
@@ -457,10 +602,15 @@ class MinistryPipeline:
             "discovery_methods": self.discovery_methods,
             "page_errors": len(self.page_errors),
             "hit_page_cap": self.pages_seen >= self.max_pages,
+            "discovery_method_detail": (
+                "Sitemap + SharePoint DataSource/_api/search + priority BFS "
+                "(KnowledgeCenter first) + href/script scan"
+            ),
         }
         self.log(
             f"[discover] done pages={self.pages_seen} listed={len(self.docs)} "
-            f"methods={self.discovery_methods} datasources={len(self.datasources_found)}"
+            f"methods={self.discovery_methods} datasources={len(self.datasources_found)} "
+            f"sitemaps={len(self.sitemaps_used)}"
         )
         self.save_list(phase="listed", extra_stats=stats)
         return stats
@@ -623,7 +773,7 @@ class MinistryPipeline:
         # slim public copy for web
         web_list = ROOT / "web" / "data" / "ministry_document_list.json"
         slim_docs = []
-        for d in list(self.docs.values())[:2000]:
+        for d in list(self.docs.values()):  # full list for Crawl tab
             slim_docs.append(
                 {
                     "filename": d.get("filename"),
@@ -754,7 +904,7 @@ def main():
     ap = argparse.ArgumentParser(description="Ministry discover-then-download pipeline")
     ap.add_argument("--url", required=True, help="Ministry site root URL")
     ap.add_argument("--label", default="", help='Jurisdiction label e.g. "Saudi Arabia - SDAIA"')
-    ap.add_argument("--max-pages", type=int, default=500)
+    ap.add_argument("--max-pages", type=int, default=2000)
     ap.add_argument("--delay", type=float, default=0.35)
     ap.add_argument("--max-file-mb", type=int, default=150)
     ap.add_argument("--discover-only", action="store_true", help="List only, do not download")

@@ -722,26 +722,21 @@
 
     const docs = (docList && docList.documents) || mdl.documents || [];
     const failed = (docList && docList.failed_sample) || docs.filter((d) => d.status === "download_failed").slice(0, 40);
-    const docRows = docs
-      .slice(0, 80)
-      .map((d) => {
-        const name = d.filename || d.title || "doc";
-        const link = isHttpUrl(d.url)
-          ? `<a class="link" href="${escapeAttr(d.url)}" target="_blank" rel="noopener">${escapeHtml(String(name).slice(0, 60))}</a>`
-          : escapeHtml(String(name).slice(0, 60));
-        const err = d.download_error
-          ? `<span class="muted">${escapeHtml(String(d.download_error).slice(0, 60))}</span>`
-          : "—";
-        return `<tr><td>${link}</td><td>${statusBadge(d.status)}</td><td class="muted">${escapeHtml(d.discovery_method || "—")}</td><td>${err}</td></tr>`;
-      })
-      .join("");
+    const statusFilterId = "crawlStatusFilter";
+    const allDocs = docs;
     const failRows = failed
-      .slice(0, 30)
+      .slice(0, 50)
       .map((d) => {
         const name = d.filename || d.url || "doc";
         return `<tr><td>${escapeHtml(String(name).slice(0, 50))}</td><td class="muted">${escapeHtml(String(d.download_error || "failed").slice(0, 80))}</td></tr>`;
       })
       .join("");
+    const methods = mdl.discovery_methods || {};
+    const methodLine = Object.keys(methods).length
+      ? Object.entries(methods)
+          .map(([k, v]) => `${k}: ${v}`)
+          .join(" · ")
+      : "—";
 
     body.innerHTML = `
       <div class="crawl-hero">
@@ -751,7 +746,7 @@
         </div>
         <p class="summary-line">${escapeHtml(st.message || "—")}</p>
         <div class="crawl-metrics">
-          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.listed_total ?? totals.ministry_listed ?? 0))}</div><div class="metric-label">Listed (master list)</div></div>
+          <div class="metric"><div class="metric-val">${escapeHtml(String(counts.listed_total ?? totals.ministry_listed ?? allDocs.length ?? 0))}</div><div class="metric-label">Listed (master list)</div></div>
           <div class="metric"><div class="metric-val">${escapeHtml(String(counts.to_download ?? totals.ministry_to_download ?? 0))}</div><div class="metric-label">To be downloaded</div></div>
           <div class="metric"><div class="metric-val">${escapeHtml(String(counts.downloaded ?? totals.ministry_downloaded ?? 0))}</div><div class="metric-label">Downloaded</div></div>
           <div class="metric"><div class="metric-val">${escapeHtml(String(counts.scanned_pdf ?? totals.ministry_scanned ?? 0))}</div><div class="metric-label">Scanned PDFs</div></div>
@@ -761,22 +756,63 @@
         <p class="meta-line">Ministry target: <strong>${escapeHtml(mdl.label || cur.jurisdiction || "—")}</strong>
           ${mdl.target_url || cur.url ? `<br/><a class="link" href="${escapeAttr(mdl.target_url || cur.url)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(mdl.target_url || cur.url, 70))}</a>` : ""}
           ${mdl.pages_visited != null ? `<br/>Pages scanned: ${escapeHtml(String(mdl.pages_visited))}` : ""}
+          <br/>Discovery: ${escapeHtml(methodLine)}
         </p>
       </div>
+      <div class="toolbar" style="margin:0.75rem 0;gap:0.5rem;flex-wrap:wrap">
+        <label class="muted" for="${statusFilterId}">Filter list status</label>
+        <select id="${statusFilterId}" aria-label="Filter by document status">
+          <option value="">All statuses (${allDocs.length})</option>
+          <option value="to_download">to_download</option>
+          <option value="downloaded">downloaded</option>
+          <option value="scanned_pdf">scanned_pdf</option>
+          <option value="download_failed">download_failed</option>
+        </select>
+        <span class="muted" id="crawlDocCount"></span>
+      </div>
       <div class="crawl-grid">
-        <div>
-          <h3 class="crawl-h">Document list (status)</h3>
-          <div class="table-wrap"><table class="data-table"><thead><tr><th>File</th><th>Status</th><th>Found via</th><th>Error</th></tr></thead><tbody>${docRows || "<tr><td colspan=4 class=muted>No ministry document list yet — run ministry_pipeline on a URL</td></tr>"}</tbody></table></div>
+        <div style="grid-column:1/-1">
+          <h3 class="crawl-h">Full document list (all PDFs found on site)</h3>
+          <div class="table-wrap" style="max-height:28rem;overflow:auto"><table class="data-table" id="crawlDocTable"><thead><tr><th>#</th><th>File</th><th>Status</th><th>Found via</th><th>Error</th></tr></thead><tbody></tbody></table></div>
         </div>
         <div>
           <h3 class="crawl-h">Download failures</h3>
           <div class="table-wrap"><table class="data-table"><thead><tr><th>File</th><th>Error</th></tr></thead><tbody>${failRows || "<tr><td colspan=2 class=muted>No failures recorded</td></tr>"}</tbody></table></div>
+        </div>
+        <div>
           <h3 class="crawl-h">By jurisdiction (catalog)</h3>
           <div class="table-wrap"><table class="data-table"><thead><tr><th>Jurisdiction</th><th>PDFs</th></tr></thead><tbody>${jurisRows || "<tr><td colspan=2 class=muted>None yet</td></tr>"}</tbody></table></div>
         </div>
       </div>
-      <p class="muted crawl-note"><strong>Flow:</strong> 1) Discover full PDF list (sitemap + SharePoint feeds + page scan) → 2) Download each with status: <code>to_download</code>, <code>downloaded</code>, <code>scanned_pdf</code>, <code>download_failed</code>. Open <strong>PDFs</strong> / <strong>Ministries</strong> for content.</p>
+      <p class="muted crawl-note"><strong>Flow:</strong> 1) Discover full PDF list (sitemap + SharePoint/_api + KnowledgeCenter seeds + page scan) → 2) Download with status <code>to_download</code> / <code>downloaded</code> / <code>scanned_pdf</code> / <code>download_failed</code>.</p>
     `;
+
+    function paintDocs(filter) {
+      const tbody = document.querySelector("#crawlDocTable tbody");
+      const countEl = document.getElementById("crawlDocCount");
+      if (!tbody) return;
+      const filtered = filter
+        ? allDocs.filter((d) => d.status === filter)
+        : allDocs;
+      if (countEl) countEl.textContent = filtered.length + " shown";
+      tbody.innerHTML = filtered
+        .map((d, i) => {
+          const name = d.filename || d.title || "doc";
+          const link = isHttpUrl(d.url)
+            ? `<a class="link" href="${escapeAttr(d.url)}" target="_blank" rel="noopener">${escapeHtml(String(name).slice(0, 70))}</a>`
+            : escapeHtml(String(name).slice(0, 70));
+          const err = d.download_error
+            ? `<span class="muted">${escapeHtml(String(d.download_error).slice(0, 70))}</span>`
+            : "—";
+          return `<tr><td class="num">${i + 1}</td><td>${link}</td><td>${statusBadge(d.status)}</td><td class="muted">${escapeHtml(d.discovery_method || "—")}</td><td>${err}</td></tr>`;
+        })
+        .join("") || `<tr><td colspan="5" class="muted">No documents in list yet</td></tr>`;
+    }
+    const sel = document.getElementById(statusFilterId);
+    if (sel) {
+      sel.addEventListener("change", () => paintDocs(sel.value));
+    }
+    paintDocs("");
   }
 
   function initCrawl() {
