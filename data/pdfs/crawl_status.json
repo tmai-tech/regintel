@@ -1,14 +1,19 @@
 {
-  "updated_at": "2026-08-06T14:22:15.278059+00:00",
+  "updated_at": "2026-08-06T15:45:12.596521+00:00",
   "phase": "discovering",
   "message": "discovering documents on https://sdaia.gov.sa/",
-  "run_id": "31110403321",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31110403321",
+  "run_id": "31117131897",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31117131897",
   "totals": {
     "pdfs": 338,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 1
+    "jurisdictions": 1,
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -30,7 +35,8 @@
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0
+    "to_download": 0,
+    "pages_visited": 0
   },
   "recent_pdfs": [
     {
@@ -292,5 +298,22 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-05T16:54:39.092030+00:00"
+  "manifest_generated_at": "2026-08-05T16:54:39.092030+00:00",
+  "ministry_document_list": {
+    "label": "Saudi Arabia - SDAIA",
+    "target_url": "https://sdaia.gov.sa/",
+    "counts": {
+      "to_download": 0,
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 0
+    },
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
+    "list_file": "data/ministry_document_list.json",
+    "updated_at": "2026-08-06T15:45:10.907020+00:00"
+  }
 }
