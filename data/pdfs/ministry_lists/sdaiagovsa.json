@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-06T18:55:30.354367+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-06T18:56:26.096671+00:00",
+  "phase": "listed",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
   "host": "sdaia.gov.sa",
@@ -40,7 +40,7 @@
     "https://sdaia.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
     "https://sdaia.gov.sa/en/Contact/_vti_bin/owssvr.dll?CS=65001"
   ],
-  "pages_visited": 475,
+  "pages_visited": 546,
   "page_errors_sample": [
     {
       "url": "https://sdaia.gov.sa/ar/Investment/Pages/LeadingBusinesses.aspx",

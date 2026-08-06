@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-06T18:55:32.028273+00:00",
-  "phase": "discovering",
-  "message": "discovering sdaia.gov.sa: pages=475 listed=315",
+  "updated_at": "2026-08-06T18:56:27.782192+00:00",
+  "phase": "listed",
+  "message": "listed 315 documents on sdaia.gov.sa (pages=546)",
   "run_id": "31126108024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31126108024",
   "totals": {
@@ -36,7 +36,7 @@
     "download_failed": 0,
     "scanned_pdf": 0,
     "to_download": 315,
-    "pages_visited": 475
+    "pages_visited": 546
   },
   "recent_pdfs": [
     {
@@ -313,7 +313,7 @@
       "href": 269,
       "script": 46
     },
-    "pages_visited": 475,
+    "pages_visited": 546,
     "sitemaps_used": [
       "https://sdaia.gov.sa/sitemap.xml",
       "https://sdaia.gov.sa/sitemap_index.xml",
@@ -324,6 +324,6 @@
     ],
     "datasources_found": 15,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T18:55:30.361825+00:00"
+    "updated_at": "2026-08-06T18:56:26.103175+00:00"
   }
 }
