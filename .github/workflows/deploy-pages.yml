@@ -70,3 +70,4 @@ jobs:
           echo "**https://tmai-tech.github.io/regintel/**" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "Deployed page_url: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
+# deploy-kick
