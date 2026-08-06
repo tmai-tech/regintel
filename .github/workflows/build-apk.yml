@@ -9,17 +9,19 @@ on:
       - 'feat/**'
       - 'fix/**'
       - 'ci/**'
-    paths-ignore:
-      - '**.md'
-      - 'LICENSE*'
-      - 'docs/**'
-      - 'web/**'
+    # Only rebuild APK when app/code changes — not on crawl data / Pages noise
+    # (data/** pushes were queueing APK jobs and starving Pages deploys).
+    paths:
+      - 'android/**'
+      - 'collector/**'
+      - 'requirements.txt'
+      - '.github/workflows/build-apk.yml'
   pull_request:
-    paths-ignore:
-      - '**.md'
-      - 'LICENSE*'
-      - 'docs/**'
-      - 'web/**'
+    paths:
+      - 'android/**'
+      - 'collector/**'
+      - 'requirements.txt'
+      - '.github/workflows/build-apk.yml'
   workflow_dispatch:
     inputs:
       tester_groups:
