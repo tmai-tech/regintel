@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-06T15:45:12.596521+00:00",
+  "updated_at": "2026-08-06T15:47:00.967888+00:00",
   "phase": "discovering",
-  "message": "discovering documents on https://sdaia.gov.sa/",
+  "message": "discovering sdaia.gov.sa: pages=50 listed=67",
   "run_id": "31117131897",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31117131897",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 1,
-    "ministry_listed": 0,
+    "ministry_listed": 67,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 67
   },
   "by_jurisdiction": [
     {
@@ -31,12 +31,12 @@
     "jurisdiction": "Saudi Arabia - SDAIA",
     "url": "https://sdaia.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 0,
+    "listed": 67,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 0
+    "to_download": 67,
+    "pages_visited": 50
   },
   "recent_pdfs": [
     {
@@ -303,17 +303,26 @@
     "label": "Saudi Arabia - SDAIA",
     "target_url": "https://sdaia.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 67,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 0
+      "listed_total": 67
     },
-    "discovery_methods": {},
-    "pages_visited": 0,
-    "sitemaps_used": [],
-    "datasources_found": 0,
+    "discovery_methods": {
+      "href": 67
+    },
+    "pages_visited": 50,
+    "sitemaps_used": [
+      "https://sdaia.gov.sa/sitemap.xml",
+      "https://sdaia.gov.sa/sitemap_index.xml",
+      "https://sdaia.gov.sa/Sitemap.xml",
+      "https://sdaia.gov.sa/_layouts/15/sitemap.aspx",
+      "https://sdaia.gov.sa/ar/SDAIA/AboutPortal/Pages/Sitemap.aspx",
+      "https://sdaia.gov.sa/en/SDAIA/AboutPortal/Pages/Sitemap.aspx"
+    ],
+    "datasources_found": 14,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T15:45:10.907020+00:00"
+    "updated_at": "2026-08-06T15:46:59.313905+00:00"
   }
 }
