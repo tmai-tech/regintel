@@ -30,6 +30,8 @@ ASSETS_CATALOG = ROOT / "android" / "app" / "src" / "main" / "assets" / "pdfs_ca
 # throttle git pushes
 _last_git_push = 0.0
 _last_catalog_count = -1
+_last_listed_count = -1
+_last_pages_seen = -1
 
 
 def _now() -> str:
@@ -163,16 +165,21 @@ def publish(
     phase: str = "running",
     message: str = "",
     current_source: dict | None = None,
+    ministry_progress: dict | None = None,
     git_push: bool | None = None,
     force_git: bool = False,
-    min_git_interval_sec: float = 180.0,
+    min_git_interval_sec: float = 120.0,
 ) -> dict:
     """Rebuild catalog + status JSON. Optionally commit/push for live site.
 
     Public site is SDAIA-only (REGINTEL_SDAIA_ONLY defaults on) so mid-crawl
     pushes never reintroduce the global multi-jurisdiction catalog.
+
+    During ministry discovery, pass ``ministry_progress`` (counts, pages_visited,
+    discovery_methods) so the Crawl tab updates even when catalog PDF count is
+    unchanged. Git also stages ``ministry_document_list.json``.
     """
-    global _last_git_push, _last_catalog_count
+    global _last_git_push, _last_catalog_count, _last_listed_count, _last_pages_seen
 
     manifest = load_manifest()
     catalog = build_catalog_from_manifest(manifest)
@@ -202,6 +209,27 @@ def publish(
         elif "catalog" in message.lower() and "total" in message.lower():
             status["message"] = f"SDAIA · {len(catalog)} PDFs"
 
+    # Merge ministry discovery / download progress into crawl_status (public)
+    listed = None
+    pages_seen = None
+    if ministry_progress:
+        status["ministry_document_list"] = ministry_progress
+        counts = ministry_progress.get("counts") or {}
+        listed = counts.get("listed_total")
+        pages_seen = ministry_progress.get("pages_visited")
+        status["totals"]["ministry_listed"] = counts.get("listed_total", 0)
+        status["totals"]["ministry_downloaded"] = counts.get("downloaded", 0)
+        status["totals"]["ministry_failed"] = counts.get("download_failed", 0)
+        status["totals"]["ministry_scanned"] = counts.get("scanned_pdf", 0)
+        status["totals"]["ministry_to_download"] = counts.get("to_download", 0)
+    elif current_source and current_source.get("listed") is not None:
+        listed = current_source.get("listed")
+        status["totals"]["ministry_listed"] = listed
+        status["totals"]["ministry_downloaded"] = current_source.get("downloaded", 0)
+        status["totals"]["ministry_failed"] = current_source.get("download_failed", 0)
+        status["totals"]["ministry_scanned"] = current_source.get("scanned_pdf", 0)
+        status["totals"]["ministry_to_download"] = current_source.get("to_download", 0)
+
     WEB_DATA.mkdir(parents=True, exist_ok=True)
     (ROOT / "data" / "pdfs").mkdir(parents=True, exist_ok=True)
 
@@ -220,18 +248,34 @@ def publish(
         )
 
     n = len(catalog)
+    listed_n = int(listed) if listed is not None else -1
+    pages_n = int(pages_seen) if pages_seen is not None else -1
+    progress_changed = (
+        n != _last_catalog_count
+        or (listed_n >= 0 and listed_n != _last_listed_count)
+        or (pages_n >= 0 and pages_n != _last_pages_seen)
+        or phase in ("discovering", "listed", "downloading", "complete")
+    )
+
     do_git = git_push
     if do_git is None:
         do_git = os.environ.get("GITHUB_ACTIONS") == "true" or os.environ.get(
             "REGINTEL_LIVE_GIT_PUSH"
         ) == "1"
 
-    if do_git and (force_git or n != _last_catalog_count):
+    if do_git and (force_git or progress_changed):
         now = time.time()
         if force_git or (now - _last_git_push) >= min_git_interval_sec:
-            if _git_push_live(n, status.get("phase") or phase):
+            label = status.get("phase") or phase
+            if listed_n >= 0:
+                label = f"{label}, listed={listed_n}"
+            if _git_push_live(n, label):
                 _last_git_push = now
                 _last_catalog_count = n
+                if listed_n >= 0:
+                    _last_listed_count = listed_n
+                if pages_n >= 0:
+                    _last_pages_seen = pages_n
 
     return status
 
@@ -287,18 +331,24 @@ def _git_push_live(pdf_count: int, phase: str) -> bool:
             "data/pdfs/crawl_status.json",
             "web/data/pdfs_catalog.json",
             "web/data/crawl_status.json",
+            "web/data/ministry_document_list.json",
             "web/data/pdfs_coverage.json",
             "android/app/src/main/assets/pdfs_catalog.json",
         ]
         for p in paths:
             if (ROOT / p).exists():
                 _run_git(["add", "-f", p])
+        # Per-ministry master lists (discovery progress)
+        lists_dir = ROOT / "data" / "pdfs" / "ministry_lists"
+        if lists_dir.is_dir():
+            for p in lists_dir.glob("*.json"):
+                _run_git(["add", "-f", str(p.relative_to(ROOT))])
 
         st = _run_git(["diff", "--staged", "--quiet"])
         if st.returncode == 0:
             return False  # nothing staged
 
-        msg = f"chore: live PDF catalog ({pdf_count} pdfs, {phase}) {_now()}"
+        msg = f"chore: live crawl progress ({pdf_count} catalog pdfs, {phase}) {_now()}"
         cr = _run_git(["commit", "-m", msg], env=env)
         if cr.returncode != 0:
             print(
@@ -315,7 +365,10 @@ def _git_push_live(pdf_count: int, phase: str) -> bool:
             else:
                 pr = _run_git(["push", "origin", "HEAD:main"], env=env)
             if pr.returncode == 0:
-                print(f"[live-publish] pushed catalog ({pdf_count} PDFs)", flush=True)
+                print(
+                    f"[live-publish] pushed progress ({pdf_count} catalog PDFs, {phase})",
+                    flush=True,
+                )
                 return True
             last_err = (pr.stderr or pr.stdout or "")[:500]
             print(f"[live-publish] push attempt {attempt} failed: {last_err}", flush=True)

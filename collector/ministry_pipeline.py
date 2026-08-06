@@ -566,11 +566,11 @@ class MinistryPipeline:
                     f"  [progress] pages={self.pages_seen} docs_listed={len(self.docs)} "
                     f"queue={qsize} methods={self.discovery_methods}"
                 )
-                self.save_list(phase="discovering")
                 self.publish_status(
                     "discovering",
                     f"discovering {self.root}: pages={self.pages_seen} listed={len(self.docs)}",
                 )
+
 
             r, err = self.fetch(url)
             if err or r is None:
@@ -613,6 +613,12 @@ class MinistryPipeline:
             f"sitemaps={len(self.sitemaps_used)}"
         )
         self.save_list(phase="listed", extra_stats=stats)
+        # Force a public push of the full master list when discovery ends
+        self.publish_status(
+            "listed",
+            f"listed {len(self.docs)} documents on {self.root} (pages={self.pages_seen})",
+            force_git=True,
+        )
         return stats
 
     # ---------- download ----------
@@ -691,10 +697,10 @@ class MinistryPipeline:
                 self.log(
                     f"  [download] {i}/{total} ok={ok} scanned={scanned} failed={fail}"
                 )
-                self.save_list(phase="downloading")
                 self.publish_status(
-                    phase="downloading",
-                    message=f"downloading {i}/{total} for {self.label}",
+                    "downloading",
+                    f"downloading {i}/{total} for {self.label} "
+                    f"(ok={ok} scanned={scanned} fail={fail})",
                 )
         self.merge_into_manifest()
         self.save_list(phase="complete")
@@ -808,11 +814,25 @@ class MinistryPipeline:
             json.dumps(web_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
 
-    def publish_status(self, phase: str, message: str) -> None:
+    def publish_status(self, phase: str, message: str, *, force_git: bool = False) -> None:
+        """Write list + crawl_status and push so the public Crawl tab shows listed counts."""
         try:
             from live_publish import publish
 
+            # Always refresh list file before publish so git stages latest discovery
+            self.save_list(phase=phase)
             counts = self.status_counts()
+            ministry_progress = {
+                "label": self.label,
+                "target_url": self.start_url,
+                "counts": counts,
+                "discovery_methods": dict(self.discovery_methods),
+                "pages_visited": self.pages_seen,
+                "sitemaps_used": list(self.sitemaps_used)[:20],
+                "datasources_found": len(self.datasources_found),
+                "list_file": "data/ministry_document_list.json",
+                "updated_at": now_iso(),
+            }
             publish(
                 phase=phase,
                 message=message,
@@ -825,64 +845,42 @@ class MinistryPipeline:
                     "download_failed": counts.get("download_failed", 0),
                     "scanned_pdf": counts.get("scanned_pdf", 0),
                     "to_download": counts.get("to_download", 0),
-                },
-                force_git=False,
-            )
-            # enrich crawl_status with ministry list summary
-            status_path = ROOT / "web" / "data" / "crawl_status.json"
-            if status_path.exists():
-                st = json.loads(status_path.read_text(encoding="utf-8"))
-                st["ministry_document_list"] = {
-                    "label": self.label,
-                    "target_url": self.start_url,
-                    "counts": counts,
-                    "discovery_methods": self.discovery_methods,
                     "pages_visited": self.pages_seen,
-                    "list_file": "data/ministry_document_list.json",
-                    "updated_at": now_iso(),
-                }
-                st["totals"] = st.get("totals") or {}
-                st["totals"]["ministry_listed"] = counts.get("listed_total", 0)
-                st["totals"]["ministry_downloaded"] = counts.get("downloaded", 0)
-                st["totals"]["ministry_failed"] = counts.get("download_failed", 0)
-                st["totals"]["ministry_scanned"] = counts.get("scanned_pdf", 0)
-                st["totals"]["ministry_to_download"] = counts.get("to_download", 0)
-                status_path.write_text(
-                    json.dumps(st, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-                )
-                (ROOT / "data" / "pdfs" / "crawl_status.json").write_text(
-                    status_path.read_text(encoding="utf-8"), encoding="utf-8"
-                )
+                },
+                ministry_progress=ministry_progress,
+                force_git=force_git,
+                min_git_interval_sec=90.0,
+            )
         except Exception as e:
             self.log(f"[publish] {e}")
 
     def run(self) -> dict:
         t0 = time.time()
-        self.publish_status("discovering", f"discovering documents on {self.start_url}")
-        dstats = self.discover()
         self.publish_status(
-            "listed",
-            f"listed {len(self.docs)} documents on {self.root}",
+            "discovering",
+            f"discovering documents on {self.start_url}",
+            force_git=True,
         )
+        dstats = self.discover()
+        # discover() already force-publishes "listed"
         dl_stats = {}
         if self.do_download and self.docs:
-            self.publish_status("downloading", f"downloading {len(self.docs)} listed docs")
+            self.publish_status(
+                "downloading",
+                f"downloading {len(self.docs)} listed docs",
+                force_git=True,
+            )
             dl_stats = self.download_all()
-            try:
-                from live_publish import publish
-
-                publish(
-                    phase="idle",
-                    message=(
-                        f"{self.label}: listed={dl_stats.get('listed')} "
-                        f"downloaded={dl_stats.get('downloaded')} "
-                        f"scanned={dl_stats.get('scanned_pdf')} "
-                        f"failed={dl_stats.get('download_failed')}"
-                    ),
-                    force_git=True,
-                )
-            except Exception as e:
-                self.log(f"[publish final] {e}")
+            self.publish_status(
+                "idle",
+                (
+                    f"{self.label}: listed={dl_stats.get('listed')} "
+                    f"downloaded={dl_stats.get('downloaded')} "
+                    f"scanned={dl_stats.get('scanned_pdf')} "
+                    f"failed={dl_stats.get('download_failed')}"
+                ),
+                force_git=True,
+            )
         elapsed = round(time.time() - t0, 1)
         counts = self.status_counts()
         result = {
