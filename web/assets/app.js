@@ -996,11 +996,47 @@
     ).join("");
   }
 
+  /** Guess source language — MyMemory rejects langpair source "auto". */
+  function detectSourceLang(text) {
+    const s = String(text || "");
+    const letters = s.replace(/\s+/g, "");
+    if (!letters) return "en";
+    const ar = (s.match(/[\u0600-\u06FF]/g) || []).length;
+    const cjk = (s.match(/[\u4e00-\u9fff]/g) || []).length;
+    const dev = (s.match(/[\u0900-\u097F]/g) || []).length;
+    const cyr = (s.match(/[\u0400-\u04FF]/g) || []).length;
+    const lat = (s.match(/[A-Za-z]/g) || []).length;
+    const n = Math.max(ar + cjk + dev + cyr + lat, 1);
+    if (ar / n > 0.25) return "ar";
+    if (cjk / n > 0.25) return "zh-CN";
+    if (dev / n > 0.25) return "hi";
+    if (cyr / n > 0.25) return "ru";
+    return "en";
+  }
+
+  function normalizeMyMemoryLang(code) {
+    const c = String(code || "en").trim();
+    // MyMemory expects codes like en, ar, zh-CN (not "auto")
+    if (c === "auto" || c === "Autodetect" || !c) return "en";
+    if (c.toLowerCase() === "zh" || c === "zh-cn") return "zh-CN";
+    if (c.includes("-")) {
+      const [a, b] = c.split("-");
+      if (a.toLowerCase() === "zh") return "zh-CN";
+      return a.toLowerCase() + "-" + b.toUpperCase();
+    }
+    return c.toLowerCase();
+  }
+
   /** Free MyMemory API (chunked). Best-effort client-side translation. */
   async function translateTextChunks(text, targetLang) {
     const raw = String(text || "").trim();
     if (!raw) return "";
-    const target = String(targetLang || "en").split("-")[0];
+    let target = normalizeMyMemoryLang(targetLang || "en");
+    let source = detectSourceLang(raw);
+    source = normalizeMyMemoryLang(source);
+    // Same language → no-op
+    if (source.split("-")[0] === target.split("-")[0]) return raw;
+
     // MyMemory free tier: keep chunks modest
     const maxLen = 450;
     const chunks = [];
@@ -1017,20 +1053,56 @@
     }
     const out = [];
     for (const chunk of chunks) {
-      const url =
-        "https://api.mymemory.translated.net/get?q=" +
-        encodeURIComponent(chunk) +
-        "&langpair=auto|" +
-        encodeURIComponent(target);
-      const res = await fetch(url);
-      if (!res.ok) throw new Error("Translate HTTP " + res.status);
-      const data = await res.json();
-      const t =
-        (data && data.responseData && data.responseData.translatedText) || "";
-      if (!t || /QUERY LENGTH LIMIT/i.test(t) || /MYMEMORY WARNING/i.test(t)) {
-        throw new Error(t || "Translation failed");
+      const tryPairs = [
+        source + "|" + target,
+        // fallbacks if source guess is wrong
+        "en|" + target,
+        "ar|" + target,
+      ];
+      // dedupe pairs
+      const pairs = [...new Set(tryPairs.filter((p) => {
+        const [a, b] = p.split("|");
+        return a && b && a.split("-")[0] !== b.split("-")[0];
+      }))];
+
+      let translated = "";
+      let lastErr = "";
+      for (const pair of pairs) {
+        const url =
+          "https://api.mymemory.translated.net/get?q=" +
+          encodeURIComponent(chunk) +
+          "&langpair=" +
+          encodeURIComponent(pair);
+        try {
+          const res = await fetch(url);
+          if (!res.ok) {
+            lastErr = "Translate HTTP " + res.status;
+            continue;
+          }
+          const data = await res.json();
+          const t =
+            (data && data.responseData && data.responseData.translatedText) ||
+            "";
+          const status = data && data.responseStatus;
+          if (
+            !t ||
+            /QUERY LENGTH LIMIT/i.test(t) ||
+            /INVALID SOURCE LANGUAGE/i.test(t) ||
+            /IS AN INVALID TARGET LANGUAGE/i.test(t) ||
+            /MYMEMORY WARNING/i.test(t) ||
+            (status && status !== 200 && status !== "200")
+          ) {
+            lastErr = t || "Translation failed (" + pair + ")";
+            continue;
+          }
+          translated = t;
+          break;
+        } catch (e) {
+          lastErr = e.message || String(e);
+        }
       }
-      out.push(t);
+      if (!translated) throw new Error(lastErr || "Translation failed");
+      out.push(translated);
       // polite pause between chunks
       if (chunks.length > 1) await new Promise((r) => setTimeout(r, 200));
     }
