@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-07T04:32:23.460036+00:00",
+  "updated_at": "2026-08-07T04:45:38.076399+00:00",
   "phase": "discovering",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
   "host": "sdaia.gov.sa",
   "counts": {
-    "to_download": 838,
+    "to_download": 840,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 838
+    "listed_total": 840
   },
   "discovery_methods": {
-    "href": 268,
+    "href": 269,
     "playwright_api": 531,
-    "script": 39
+    "script": 40
   },
   "sitemaps_used": [
     "https://sdaia.gov.sa/sitemap.xml",
@@ -41,7 +41,7 @@
     "https://sdaia.gov.sa/ar/DataSources/Tags.aspx",
     "https://sdaia.gov.sa/en/Contact/_vti_bin/owssvr.dll?CS=65001"
   ],
-  "pages_visited": 450,
+  "pages_visited": 475,
   "page_errors_sample": [
     {
       "url": "https://sdaia.gov.sa/Documents/",
@@ -90,6 +90,38 @@
     {
       "url": "https://sdaia.gov.sa/ar/Investment/Pages/LeadingBusinesses.aspx",
       "error": "HTTP 404"
+    },
+    {
+      "url": "https://chats.sdaia.gov.sa/chat-widget/chatbot-widget.min.js",
+      "error": "ConnectionError: HTTPSConnectionPool(host='chats.sdaia.gov.sa', port=443): Max retries exceeded with url: /chat-widget/chatbot-widget.min.js (Caused by NewConnectionError(\"HTTPSConnection(host='chats.sdaia.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://sdaia.gov.sa/_layouts/15/",
+      "error": "WAF rejected"
+    },
+    {
+      "url": "https://sdaia.gov.sa/_vti_bin/listdata.svc/",
+      "error": "WAF rejected"
+    },
+    {
+      "url": "https://sdaia.gov.sa/ndmo/Files/",
+      "error": "WAF rejected"
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/Search/Pages/results.aspx?k=About%20SDAIA",
+      "error": "TooManyRedirects: Exceeded 30 redirects."
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/Search/Pages/results.aspx?k=National%20Information%20Center",
+      "error": "TooManyRedirects: Exceeded 30 redirects."
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/Search/Pages/results.aspx?k=National%20Center%20for%20AI",
+      "error": "TooManyRedirects: Exceeded 30 redirects."
+    },
+    {
+      "url": "https://sdaia.gov.sa/en/Search/Pages/results.aspx?k=National%20Data%20Management%20Office",
+      "error": "TooManyRedirects: Exceeded 30 redirects."
     }
   ],
   "stats": {},
@@ -16010,6 +16042,44 @@
       "host": "dgp.sdaia.gov.sa",
       "discovery_method": "href",
       "discovered_at": "2026-08-07T04:31:12.296394+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-3fceaa0d-bbb6-4ead-9cab-c141c2eca42d-p735I9a",
+      "filename": "ai-principles-EN.pdf",
+      "type": "PDF",
+      "title": "Download the guide in PDF format",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "ministry",
+      "source_page": "https://sdaia.gov.sa/",
+      "host": "dgp.sdaia.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-07T04:42:19.717067+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf",
+      "filename": "ai-principles-EN.pdf",
+      "type": "PDF",
+      "title": "ai-principles-EN.pdf",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "ministry",
+      "source_page": "https://sdaia.gov.sa/",
+      "host": "dgp.sdaia.gov.sa",
+      "discovery_method": "script",
+      "discovered_at": "2026-08-07T04:42:19.731710+00:00",
       "downloaded_at": null,
       "bytes": null,
       "scanned_pdf": false,

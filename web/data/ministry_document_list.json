@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-07T04:32:23.460036+00:00",
+  "updated_at": "2026-08-07T04:45:38.076399+00:00",
   "phase": "discovering",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
   "counts": {
-    "to_download": 838,
+    "to_download": 840,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 838
+    "listed_total": 840
   },
   "discovery_methods": {
-    "href": 268,
+    "href": 269,
     "playwright_api": 531,
-    "script": 39
+    "script": 40
   },
-  "pages_visited": 450,
+  "pages_visited": 475,
   "documents": [
     {
       "filename": "organizationalArrangements.pdf",
@@ -10071,6 +10071,30 @@
       "title": "وثيقة البنود التعاقدية القياسية",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "ai-principles-EN.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-3fceaa0d-bbb6-4ead-9cab-c141c2eca42d-p735I9a",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download the guide in PDF format",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "ai-principles-EN.pdf",
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/3fceaa0d-bbb6-4ead-9cab-c141c2eca42d/ai-principles-EN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "ai-principles-EN.pdf",
+      "bytes": null,
+      "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - SDAIA"
     }
   ],
