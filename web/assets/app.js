@@ -149,6 +149,7 @@
       pdfs: document.getElementById("panelPdfs"),
       crawl: document.getElementById("panelCrawl"),
       ministries: document.getElementById("panelMinistries"),
+      summary: document.getElementById("panelSummary"),
     };
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -865,6 +866,216 @@
     paintDocs("");
   }
 
+  function isSdaiaRow(p) {
+    const j = String((p && p.jurisdiction) || "");
+    const h = String((p && p.host) || "");
+    const u = String((p && (p.url || p.open_url || p.source_page)) || "");
+    return (
+      j.includes("SDAIA") ||
+      h.toLowerCase().includes("sdaia") ||
+      u.toLowerCase().includes("sdaia")
+    );
+  }
+
+  function normalizePdfKey(u) {
+    try {
+      const x = new URL(String(u || "").trim());
+      x.hash = "";
+      // strip common tracking params
+      ["utm_source", "utm_medium", "utm_campaign", "gclid", "fbclid"].forEach((k) =>
+        x.searchParams.delete(k),
+      );
+      return x.href.replace(/\/$/, "").toLowerCase();
+    } catch {
+      return String(u || "")
+        .split("#")[0]
+        .replace(/\/$/, "")
+        .toLowerCase();
+    }
+  }
+
+  /** Merge SDAIA catalog PDFs with Eva extractive summaries for the Summary tab. */
+  function buildSdaiaSummaryRows(pdfs, evaSummaries) {
+    const byUrl = new Map();
+    const byId = new Map();
+    for (const e of evaSummaries || []) {
+      if (!e || !isSdaiaRow(e)) continue;
+      const url = e.open_url || e.url || "";
+      const k = normalizePdfKey(url);
+      if (k) byUrl.set(k, e);
+      if (e.id) byId.set(String(e.id), e);
+    }
+    const rows = [];
+    const seen = new Set();
+    for (const p of pdfs || []) {
+      if (!isSdaiaRow(p)) continue;
+      const url = p.open_url || p.url || "";
+      const k = normalizePdfKey(url);
+      const eva = (k && byUrl.get(k)) || (p.id && byId.get(String(p.id))) || null;
+      const id = String(p.id || (eva && eva.id) || k || rows.length);
+      if (seen.has(id) && !eva) continue;
+      seen.add(id);
+      const summary = eva && eva.summary ? String(eva.summary).trim() : "";
+      const keyPoints = Array.isArray(eva && eva.key_points)
+        ? eva.key_points
+        : typeof (eva && eva.key_points) === "string"
+          ? (() => {
+              try {
+                const parsed = JSON.parse(eva.key_points);
+                return Array.isArray(parsed) ? parsed : [];
+              } catch {
+                return [];
+              }
+            })()
+          : [];
+      rows.push({
+        id,
+        title: p.title || (eva && eva.title) || "Untitled PDF",
+        url,
+        open_url: url,
+        summary,
+        key_points: keyPoints,
+        has_summary: Boolean(summary),
+        method: (eva && eva.method) || "",
+        summarized_at: (eva && eva.summarized_at) || "",
+        jurisdiction: p.jurisdiction || (eva && eva.jurisdiction) || "Saudi Arabia - SDAIA",
+      });
+    }
+    // Eva-only SDAIA rows not in catalog
+    for (const e of evaSummaries || []) {
+      if (!e || !isSdaiaRow(e)) continue;
+      const url = e.open_url || e.url || "";
+      const k = normalizePdfKey(url);
+      const id = String(e.id || k);
+      if (seen.has(id) || (k && [...seen].some(() => false))) {
+        // already added via catalog match on id
+      }
+      if (seen.has(id)) continue;
+      // also skip if URL already in rows
+      if (k && rows.some((r) => normalizePdfKey(r.url) === k)) continue;
+      seen.add(id);
+      const summary = e.summary ? String(e.summary).trim() : "";
+      rows.push({
+        id,
+        title: e.title || "Untitled PDF",
+        url,
+        open_url: url,
+        summary,
+        key_points: Array.isArray(e.key_points) ? e.key_points : [],
+        has_summary: Boolean(summary),
+        method: e.method || "",
+        summarized_at: e.summarized_at || "",
+        jurisdiction: e.jurisdiction || "Saudi Arabia - SDAIA",
+      });
+    }
+    rows.sort((a, b) => {
+      if (a.has_summary !== b.has_summary) return a.has_summary ? -1 : 1;
+      return String(a.title).localeCompare(String(b.title));
+    });
+    return rows;
+  }
+
+  function summaryCardHtml(r) {
+    const link = r.open_url || r.url || "";
+    const hasLink = isHttpUrl(link);
+    const summary = r.summary
+      ? escapeHtml(r.summary)
+      : '<span class="muted">No extractive summary yet for this PDF.</span>';
+    const points = (r.key_points || [])
+      .slice(0, 4)
+      .map((p) => `<li>${escapeHtml(String(p))}</li>`)
+      .join("");
+    const badge = r.has_summary
+      ? `<span class="badge badge-fed">Extracted</span>`
+      : `<span class="badge badge-src">Pending</span>`;
+    const method =
+      r.method || r.summarized_at
+        ? `<p class="meta-line">${escapeHtml(r.method || "summary")}${
+            r.summarized_at ? " · " + escapeHtml(String(r.summarized_at).slice(0, 19)) : ""
+          }</p>`
+        : "";
+    return `
+      <article class="pdf-card" role="listitem">
+        <div class="card-badges">${badge}</div>
+        <h3>${escapeHtml(r.title || "Untitled PDF")}</h3>
+        <p class="field-label">PDF link</p>
+        <p class="url-line">${
+          hasLink
+            ? `<a class="link" href="${escapeAttr(link)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(link, 72))}</a>`
+            : `<span class="muted">—</span>`
+        }</p>
+        <p class="field-label">Summary</p>
+        <p class="summary-line summary-line-full">${summary}</p>
+        ${points ? `<p class="field-label">Key points</p><ul class="summary-points">${points}</ul>` : ""}
+        ${method}
+        ${
+          hasLink
+            ? `<div class="card-actions"><a class="btn primary" href="${escapeAttr(link)}" target="_blank" rel="noopener">Open PDF</a></div>`
+            : ""
+        }
+      </article>`;
+  }
+
+  function initSummaries(pdfs, evaSummaries) {
+    const list = document.getElementById("summaryList");
+    const empty = document.getElementById("summaryEmpty");
+    const countEl = document.getElementById("summaryCount");
+    const search = document.getElementById("summarySearch");
+    const filter = document.getElementById("summaryFilter");
+    if (!list) return;
+
+    const rows = buildSdaiaSummaryRows(pdfs, evaSummaries);
+    const withSum = rows.filter((r) => r.has_summary).length;
+
+    function render() {
+      const q = (search && search.value ? search.value : "").trim().toLowerCase();
+      const mode = (filter && filter.value) || "with";
+      let filtered = rows;
+      if (mode === "with") filtered = filtered.filter((r) => r.has_summary);
+      if (mode === "pending") filtered = filtered.filter((r) => !r.has_summary);
+      if (q) {
+        filtered = filtered.filter((r) => {
+          const blob = (
+            (r.title || "") +
+            " " +
+            (r.summary || "") +
+            " " +
+            (r.url || "") +
+            " " +
+            (r.key_points || []).join(" ")
+          ).toLowerCase();
+          return blob.includes(q);
+        });
+      }
+      if (countEl) {
+        countEl.textContent =
+          filtered.length +
+          " shown · " +
+          withSum +
+          " with summary · " +
+          rows.length +
+          " SDAIA PDFs";
+      }
+      if (!filtered.length) {
+        list.innerHTML = "";
+        if (empty) empty.hidden = false;
+        return;
+      }
+      if (empty) empty.hidden = true;
+      list.innerHTML = filtered.map(summaryCardHtml).join("");
+    }
+
+    let t = null;
+    if (search) {
+      search.addEventListener("input", () => {
+        clearTimeout(t);
+        t = setTimeout(render, 120);
+      });
+    }
+    if (filter) filter.addEventListener("change", render);
+    render();
+  }
+
   function initCrawl() {
     const btn = document.getElementById("crawlRefresh");
     async function refresh() {
@@ -1287,11 +1498,18 @@
     }
 
     // Meta: catalog (PDFs tab) is not the same as discovered master-list count
-    metaBar.textContent = "SDAIA catalog · " + pdfs.length + " PDFs";
+    const withSummaries = evaSummaries.filter((e) => e && String(e.summary || "").trim()).length;
+    metaBar.textContent =
+      "SDAIA catalog · " +
+      pdfs.length +
+      " PDFs · " +
+      withSummaries +
+      " summaries";
 
     initMinistries(ministries, pdfs);
     initEva(evaSummaries, evaMeta, pdfs.length);
     initPdfs(pdfs);
+    initSummaries(pdfs, evaSummaries);
     initCrawl();
   }
 

@@ -44,6 +44,7 @@
     <nav class="tabs" role="tablist" aria-label="Main views">
       <button type="button" class="tab active" role="tab" id="tabMinistries" aria-selected="true" aria-controls="panelMinistries" data-tab="ministries">SDAIA</button>
       <button type="button" class="tab" role="tab" id="tabPdfs" aria-selected="false" aria-controls="panelPdfs" data-tab="pdfs">PDFs</button>
+      <button type="button" class="tab" role="tab" id="tabSummary" aria-selected="false" aria-controls="panelSummary" data-tab="summary">Summary</button>
       <button type="button" class="tab" role="tab" id="tabCrawl" aria-selected="false" aria-controls="panelCrawl" data-tab="crawl">Crawl</button>
     </nav>
 
@@ -100,6 +101,29 @@
       <div id="empty" class="empty" hidden>No PDFs match your filters.</div>
     </section>
 
+    <!-- SDAIA PDF summaries (extracted) -->
+    <section class="panel" id="panelSummary" role="tabpanel" aria-labelledby="tabSummary" aria-label="SDAIA PDF summaries" hidden>
+      <div class="toolbar sticky-toolbar">
+        <label class="sr-only" for="summarySearch">Search summaries</label>
+        <input
+          type="search"
+          id="summarySearch"
+          enterkeyhint="search"
+          autocomplete="off"
+          placeholder="Search PDF title or summary…"
+        />
+        <label class="sr-only" for="summaryFilter">Filter by summary status</label>
+        <select id="summaryFilter" aria-label="Summary status filter">
+          <option value="all">All SDAIA PDFs</option>
+          <option value="with" selected>With extracted summary</option>
+          <option value="pending">Summary pending</option>
+        </select>
+        <span id="summaryCount" class="muted row-count" aria-live="polite"></span>
+      </div>
+      <div id="summaryList" class="pdf-list" role="list"></div>
+      <div id="summaryEmpty" class="empty" hidden>No SDAIA PDF summaries match.</div>
+    </section>
+
     <footer class="foot">
       <span>Open on any phone browser · data from RegIntel collector</span>
       <a href="https://github.com/tmai-tech/regintel" rel="noopener">GitHub</a>
@@ -139,6 +163,6 @@
   </div>
 
   <!-- cache-bust when Eva chat logic changes -->
-  <script src="assets/app.js?v=sdaia3" defer></script>
+  <script src="assets/app.js?v=sdaia4" defer></script>
 </body>
 </html>

@@ -623,6 +623,20 @@ a.link:hover { text-decoration: underline; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.pdf-card .summary-line-full {
+  -webkit-line-clamp: 12;
+  white-space: pre-wrap;
+}
+.summary-points {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+.summary-points li {
+  margin: 0.2rem 0;
+}
 .pdf-card .authority-line {
   margin: 0;
   font-size: 0.92rem;
