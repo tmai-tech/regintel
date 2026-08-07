@@ -1356,9 +1356,7 @@
           <button type="button" class="btn ghost sum-translate-btn" data-card="${escapeAttr(cardId)}">
             Translate
           </button>
-          <button type="button" class="btn ghost sum-restore-btn" data-card="${escapeAttr(cardId)}" ${
-            cached ? "" : "hidden"
-          }>
+          <button type="button" class="btn ghost sum-restore-btn" data-card="${escapeAttr(cardId)}" hidden>
             Original
           </button>
           ${
@@ -1367,11 +1365,7 @@
               : ""
           }
         </div>
-        <p class="meta-line sum-translate-status"${cached ? "" : " hidden"}>${
-          cached
-            ? "Showing English (cached). Use Translate for other languages or Original for source text."
-            : ""
-        }</p>
+        <p class="meta-line sum-translate-status" hidden></p>
         ${
           hasLink
             ? `<div class="card-actions"><a class="btn primary" href="${escapeAttr(link)}" target="_blank" rel="noopener">Open PDF</a></div>`
