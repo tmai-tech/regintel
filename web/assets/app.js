@@ -975,16 +975,86 @@
     return rows;
   }
 
+  const TRANSLATE_LANGS = [
+    { code: "en", label: "English" },
+    { code: "ar", label: "Arabic" },
+    { code: "fr", label: "French" },
+    { code: "es", label: "Spanish" },
+    { code: "de", label: "German" },
+    { code: "hi", label: "Hindi" },
+    { code: "ur", label: "Urdu" },
+    { code: "zh-CN", label: "Chinese (Simplified)" },
+    { code: "tr", label: "Turkish" },
+    { code: "pt", label: "Portuguese" },
+  ];
+
+  function translateLangOptionsHtml(selected) {
+    const sel = selected || "en";
+    return TRANSLATE_LANGS.map(
+      (l) =>
+        `<option value="${escapeAttr(l.code)}"${l.code === sel ? " selected" : ""}>${escapeHtml(l.label)}</option>`,
+    ).join("");
+  }
+
+  /** Free MyMemory API (chunked). Best-effort client-side translation. */
+  async function translateTextChunks(text, targetLang) {
+    const raw = String(text || "").trim();
+    if (!raw) return "";
+    const target = String(targetLang || "en").split("-")[0];
+    // MyMemory free tier: keep chunks modest
+    const maxLen = 450;
+    const chunks = [];
+    let rest = raw;
+    while (rest.length) {
+      if (rest.length <= maxLen) {
+        chunks.push(rest);
+        break;
+      }
+      let cut = rest.lastIndexOf(" ", maxLen);
+      if (cut < maxLen * 0.5) cut = maxLen;
+      chunks.push(rest.slice(0, cut));
+      rest = rest.slice(cut).trimStart();
+    }
+    const out = [];
+    for (const chunk of chunks) {
+      const url =
+        "https://api.mymemory.translated.net/get?q=" +
+        encodeURIComponent(chunk) +
+        "&langpair=auto|" +
+        encodeURIComponent(target);
+      const res = await fetch(url);
+      if (!res.ok) throw new Error("Translate HTTP " + res.status);
+      const data = await res.json();
+      const t =
+        (data && data.responseData && data.responseData.translatedText) || "";
+      if (!t || /QUERY LENGTH LIMIT/i.test(t) || /MYMEMORY WARNING/i.test(t)) {
+        throw new Error(t || "Translation failed");
+      }
+      out.push(t);
+      // polite pause between chunks
+      if (chunks.length > 1) await new Promise((r) => setTimeout(r, 200));
+    }
+    return out.join(" ");
+  }
+
+  function googleTranslatePdfUrl(pdfUrl, targetLang) {
+    const tl = String(targetLang || "en").split("-")[0];
+    return (
+      "https://translate.google.com/translate?sl=auto&tl=" +
+      encodeURIComponent(tl) +
+      "&u=" +
+      encodeURIComponent(pdfUrl)
+    );
+  }
+
   function summaryCardHtml(r) {
     const link = r.open_url || r.url || "";
     const hasLink = isHttpUrl(link);
     const summary = r.summary
       ? escapeHtml(r.summary)
       : '<span class="muted">No extractive summary yet for this PDF.</span>';
-    const points = (r.key_points || [])
-      .slice(0, 4)
-      .map((p) => `<li>${escapeHtml(String(p))}</li>`)
-      .join("");
+    const pointsArr = (r.key_points || []).slice(0, 4).map((p) => String(p));
+    const points = pointsArr.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
     const badge = r.has_summary
       ? `<span class="badge badge-fed">Extracted</span>`
       : `<span class="badge badge-src">Pending</span>`;
@@ -994,26 +1064,202 @@
             r.summarized_at ? " · " + escapeHtml(String(r.summarized_at).slice(0, 19)) : ""
           }</p>`
         : "";
+    const cardId = "sum-" + String(r.id || "").replace(/[^\w-]/g, "_").slice(0, 40);
+    const defaultLang =
+      (typeof localStorage !== "undefined" && localStorage.getItem("regintel_summary_lang")) ||
+      "ar";
     return `
-      <article class="pdf-card" role="listitem">
+      <article class="pdf-card summary-card" role="listitem" id="${escapeAttr(cardId)}"
+        data-orig-title="${escapeAttr(r.title || "Untitled PDF")}"
+        data-orig-summary="${escapeAttr(r.summary || "")}"
+        data-orig-points="${escapeAttr(JSON.stringify(pointsArr))}"
+        data-pdf-url="${escapeAttr(link)}">
         <div class="card-badges">${badge}</div>
-        <h3>${escapeHtml(r.title || "Untitled PDF")}</h3>
+        <h3 class="sum-title">${escapeHtml(r.title || "Untitled PDF")}</h3>
         <p class="field-label">PDF link</p>
         <p class="url-line">${
           hasLink
-            ? `<a class="link" href="${escapeAttr(link)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(link, 72))}</a>`
+            ? `<a class="link sum-pdf-link" href="${escapeAttr(link)}" target="_blank" rel="noopener">${escapeHtml(shortenUrl(link, 72))}</a>`
             : `<span class="muted">—</span>`
         }</p>
         <p class="field-label">Summary</p>
-        <p class="summary-line summary-line-full">${summary}</p>
-        ${points ? `<p class="field-label">Key points</p><ul class="summary-points">${points}</ul>` : ""}
+        <p class="summary-line summary-line-full sum-summary">${summary}</p>
+        ${
+          points
+            ? `<p class="field-label">Key points</p><ul class="summary-points sum-points">${points}</ul>`
+            : `<ul class="summary-points sum-points" hidden></ul>`
+        }
         ${method}
+        <div class="translate-bar">
+          <label class="sr-only" for="${escapeAttr(cardId)}-lang">Translate language</label>
+          <select id="${escapeAttr(cardId)}-lang" class="sum-lang" aria-label="Target language">
+            ${translateLangOptionsHtml(defaultLang)}
+          </select>
+          <button type="button" class="btn ghost sum-translate-btn" data-card="${escapeAttr(cardId)}">
+            Translate
+          </button>
+          <button type="button" class="btn ghost sum-restore-btn" data-card="${escapeAttr(cardId)}" hidden>
+            Original
+          </button>
+          ${
+            hasLink
+              ? `<a class="btn ghost sum-pdf-translate-link" href="${escapeAttr(googleTranslatePdfUrl(link, defaultLang))}" target="_blank" rel="noopener" data-card="${escapeAttr(cardId)}">Translate PDF</a>`
+              : ""
+          }
+        </div>
+        <p class="meta-line sum-translate-status" hidden></p>
         ${
           hasLink
             ? `<div class="card-actions"><a class="btn primary" href="${escapeAttr(link)}" target="_blank" rel="noopener">Open PDF</a></div>`
             : ""
         }
       </article>`;
+  }
+
+  function wireSummaryTranslateButtons(listEl) {
+    if (!listEl) return;
+    listEl.querySelectorAll(".sum-lang").forEach((sel) => {
+      sel.addEventListener("change", () => {
+        try {
+          localStorage.setItem("regintel_summary_lang", sel.value);
+        } catch (_) {
+          /* ignore */
+        }
+        const card = sel.closest(".summary-card");
+        if (!card) return;
+        const pdfUrl = card.getAttribute("data-pdf-url") || "";
+        const a = card.querySelector(".sum-pdf-translate-link");
+        if (a && isHttpUrl(pdfUrl)) {
+          a.href = googleTranslatePdfUrl(pdfUrl, sel.value);
+        }
+      });
+    });
+
+    listEl.querySelectorAll(".sum-translate-btn").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const cardId = btn.getAttribute("data-card");
+        const card = cardId ? document.getElementById(cardId) : btn.closest(".summary-card");
+        if (!card) return;
+        const langSel = card.querySelector(".sum-lang");
+        const status = card.querySelector(".sum-translate-status");
+        const restoreBtn = card.querySelector(".sum-restore-btn");
+        const targetLang = (langSel && langSel.value) || "en";
+        const origTitle = card.getAttribute("data-orig-title") || "";
+        const origSummary = card.getAttribute("data-orig-summary") || "";
+        let origPoints = [];
+        try {
+          origPoints = JSON.parse(card.getAttribute("data-orig-points") || "[]");
+        } catch (_) {
+          origPoints = [];
+        }
+        if (!origSummary && !origTitle) {
+          if (status) {
+            status.hidden = false;
+            status.textContent = "Nothing to translate for this PDF.";
+          }
+          return;
+        }
+        btn.disabled = true;
+        if (status) {
+          status.hidden = false;
+          status.textContent = "Translating title & summary…";
+        }
+        try {
+          try {
+            localStorage.setItem("regintel_summary_lang", targetLang);
+          } catch (_) {
+            /* ignore */
+          }
+          const titleEl = card.querySelector(".sum-title");
+          const sumEl = card.querySelector(".sum-summary");
+          const pointsEl = card.querySelector(".sum-points");
+          if (origTitle) {
+            const t = await translateTextChunks(origTitle, targetLang);
+            if (titleEl) titleEl.textContent = t;
+          }
+          if (origSummary) {
+            const s = await translateTextChunks(origSummary, targetLang);
+            if (sumEl) sumEl.textContent = s;
+          } else if (sumEl) {
+            sumEl.innerHTML =
+              '<span class="muted">No extractive summary yet for this PDF.</span>';
+          }
+          if (pointsEl && origPoints.length) {
+            const translated = [];
+            for (const p of origPoints) {
+              translated.push(await translateTextChunks(p, targetLang));
+            }
+            pointsEl.hidden = false;
+            pointsEl.innerHTML = translated
+              .map((p) => `<li>${escapeHtml(p)}</li>`)
+              .join("");
+          }
+          const pdfLink = card.querySelector(".sum-pdf-translate-link");
+          const pdfUrl = card.getAttribute("data-pdf-url") || "";
+          if (pdfLink && isHttpUrl(pdfUrl)) {
+            pdfLink.href = googleTranslatePdfUrl(pdfUrl, targetLang);
+          }
+          if (restoreBtn) restoreBtn.hidden = false;
+          if (status) {
+            status.textContent =
+              "Translated to " +
+              targetLang +
+              ". Use “Translate PDF” to open the document in Google Translate.";
+          }
+        } catch (e) {
+          if (status) {
+            status.hidden = false;
+            status.textContent =
+              "Translation failed: " + (e.message || String(e)) + ". Try again later.";
+          }
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
+
+    listEl.querySelectorAll(".sum-restore-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const cardId = btn.getAttribute("data-card");
+        const card = cardId ? document.getElementById(cardId) : btn.closest(".summary-card");
+        if (!card) return;
+        const origTitle = card.getAttribute("data-orig-title") || "";
+        const origSummary = card.getAttribute("data-orig-summary") || "";
+        let origPoints = [];
+        try {
+          origPoints = JSON.parse(card.getAttribute("data-orig-points") || "[]");
+        } catch (_) {
+          origPoints = [];
+        }
+        const titleEl = card.querySelector(".sum-title");
+        const sumEl = card.querySelector(".sum-summary");
+        const pointsEl = card.querySelector(".sum-points");
+        const status = card.querySelector(".sum-translate-status");
+        if (titleEl) titleEl.textContent = origTitle;
+        if (sumEl) {
+          if (origSummary) sumEl.textContent = origSummary;
+          else
+            sumEl.innerHTML =
+              '<span class="muted">No extractive summary yet for this PDF.</span>';
+        }
+        if (pointsEl) {
+          if (origPoints.length) {
+            pointsEl.hidden = false;
+            pointsEl.innerHTML = origPoints
+              .map((p) => `<li>${escapeHtml(String(p))}</li>`)
+              .join("");
+          } else {
+            pointsEl.innerHTML = "";
+            pointsEl.hidden = true;
+          }
+        }
+        btn.hidden = true;
+        if (status) {
+          status.hidden = false;
+          status.textContent = "Showing original text.";
+        }
+      });
+    });
   }
 
   function initSummaries(pdfs, evaSummaries) {
@@ -1063,6 +1309,7 @@
       }
       if (empty) empty.hidden = true;
       list.innerHTML = filtered.map(summaryCardHtml).join("");
+      wireSummaryTranslateButtons(list);
     }
 
     let t = null;
@@ -1075,7 +1322,6 @@
     if (filter) filter.addEventListener("change", render);
     render();
   }
-
   function initCrawl() {
     const btn = document.getElementById("crawlRefresh");
     async function refresh() {
