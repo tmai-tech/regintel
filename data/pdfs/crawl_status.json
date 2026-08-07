@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-08-07T07:15:53.965846+00:00",
-  "phase": "downloading",
-  "message": "downloading 850/852 for Saudi Arabia - SDAIA (ok=789 scanned=13 fail=48)",
+  "updated_at": "2026-08-07T07:16:24.764926+00:00",
+  "phase": "idle",
+  "message": "Saudi Arabia - SDAIA: listed=852 downloaded=790 scanned=13 failed=49",
   "run_id": "31146154596",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31146154596",
   "totals": {
-    "pdfs": 338,
+    "pdfs": 860,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 1,
     "ministry_listed": 852,
-    "ministry_downloaded": 789,
-    "ministry_failed": 48,
+    "ministry_downloaded": 790,
+    "ministry_failed": 49,
     "ministry_scanned": 13,
-    "ministry_to_download": 2
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 338
+      "count": 860
     }
   ],
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 338
+      "count": 860
     }
   ],
   "current_source": {
@@ -32,116 +32,116 @@
     "url": "https://sdaia.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 852,
-    "downloaded": 789,
-    "download_failed": 48,
+    "downloaded": 790,
+    "download_failed": 49,
     "scanned_pdf": 13,
-    "to_download": 2,
+    "to_download": 0,
     "pages_visited": 673
   },
   "recent_pdfs": [
     {
-      "title": "البنود+التعاقدية+القياسية.pdf",
+      "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/c940260a-632c-49f2-8a01-fe55087f1007/%D8%A7%D9%84%D8%A8%D9%86%D9%88%D8%AF+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%82%D8%AF%D9%8A%D8%A9+%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-c940260a-632c-49f2-8a01-fe55087f1007-p6Y.wXx",
-      "downloaded_at": "2026-08-05T16:54:37.579867+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:11.090156+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "وثيقة البنود التعاقدية القياسية",
+      "title": "PersonalDataProtectionPolicyEN.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/c940260a-632c-49f2-8a01-fe55087f1007/%D8%A7%D9%84%D8%A8%D9%86%D9%88%D8%AF+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%82%D8%AF%D9%8A%D8%A9+%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-c940260a-632c-49f2-8a01-fe55087f1007-p6Y.wXx",
-      "downloaded_at": "2026-08-05T16:54:33.418126+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/PersonalDataProtectionPolicyEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:09.055592+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "دليل+إعداد+القواعد+المشتركة+الملزمة+لنقل+البيانات+الشخصية.pdf",
+      "title": "DataSharingPolicyEN.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/934a1356-0d6d-4674-a37a-d30729eb88f9/%D8%AF%D9%84%D9%8A%D9%84+%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF+%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF+%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%84%D8%B2%D9%85%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-934a1356-0d6d-4674-a37a-d30729eb88f9-p6ZzFzS",
-      "downloaded_at": "2026-08-05T16:54:29.255426+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/DataSharingPolicyEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:06.294662+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "دليل إعداد القواعد المشتركة الملزمة",
+      "title": "ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/934a1356-0d6d-4674-a37a-d30729eb88f9/%D8%AF%D9%84%D9%8A%D9%84+%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF+%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF+%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%84%D8%B2%D9%85%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-934a1356-0d6d-4674-a37a-d30729eb88f9-p6ZzFzS",
-      "downloaded_at": "2026-08-05T16:54:25.090877+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:02.375563+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "الدليل+الاسترشادي+لسجلات+ا_نشطة+معالجة+البيانات+الشخصية.pdf",
+      "title": "TransferOfPersonalDataOutsideTheKingdomEN.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/19bf0591-65ef-402a-ab65-705e469319cb/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A+%D9%84%D8%B3%D8%AC%D9%84%D8%A7%D8%AA+%D8%A7%D9%94%D9%86%D8%B4%D8%B7%D8%A9+%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-19bf0591-65ef-402a-ab65-705e469319cb-p6ZwbEL",
-      "downloaded_at": "2026-08-05T16:54:20.925582+00:00",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/TransferOfPersonalDataOutsideTheKingdomEN.pdf",
+      "downloaded_at": "2026-08-07T06:40:54.658775+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "الدليل الاسترشادي لسجلات أنشطة معالجة البيانات الشخصية.",
+      "title": "Artathon.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/19bf0591-65ef-402a-ab65-705e469319cb/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A+%D9%84%D8%B3%D8%AC%D9%84%D8%A7%D8%AA+%D8%A7%D9%94%D9%86%D8%B4%D8%B7%D8%A9+%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-19bf0591-65ef-402a-ab65-705e469319cb-p6ZwbEL",
-      "downloaded_at": "2026-08-05T16:54:12.724793+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Initiatives/Documents/Artathon.pdf",
+      "downloaded_at": "2026-08-07T06:39:58.129909+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf",
+      "title": "نشرة الذكاء الاصطناعي 1 يناير 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/016534ff-df3b-4bf4-80d7-d7145f41a926/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-016534ff-df3b-4bf4-80d7-d7145f41a926-p77WQDo",
-      "downloaded_at": "2026-08-05T16:54:04.521066+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 1 يناير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:45.111442+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Standard Contractual Clauses (SCC) For Personal Data Transfer",
+      "title": "نشرة الذكاء الاصطناعي 2 يناير 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/016534ff-df3b-4bf4-80d7-d7145f41a926/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-016534ff-df3b-4bf4-80d7-d7145f41a926-p77WQDo",
-      "downloaded_at": "2026-08-05T16:53:59.147281+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 2 يناير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:35.026057+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Guidelines+for+Binding+Common+Rules+(BCR)+For+Personal+Data+Transfer.pdf",
+      "title": "نشرة الذكاء الاصطناعي 30 يناير 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/1f2c6774-2afe-41b4-b96b-4762c5c71b00/Guidelines+for+Binding+Common+Rules+%28BCR%29+For+Personal+Data+Transfer.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-1f2c6774-2afe-41b4-b96b-4762c5c71b00-p71SQp1",
-      "downloaded_at": "2026-08-05T16:53:53.771666+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 30 يناير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:27.485823+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Binding Common Rules (BCR) For Personal Data Transfer",
+      "title": "نشرة الذكاء الاصطناعي 13 فبراير 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/1f2c6774-2afe-41b4-b96b-4762c5c71b00/Guidelines+for+Binding+Common+Rules+%28BCR%29+For+Personal+Data+Transfer.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1f2c6774-2afe-41b4-b96b-4762c5c71b00-p71SQp1",
-      "downloaded_at": "2026-08-05T16:53:48.332229+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 13 فبراير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:16.049096+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Personal+Data+Processing+Activities+Records+Guideline.pdf",
+      "title": "نشرة الذكاء الاصطناعي 20 فبراير 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/19ec3250-16a6-47c7-8e8c-b8e1d6f86633/Personal+Data+Processing+Activities+Records+Guideline.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-19ec3250-16a6-47c7-8e8c-b8e1d6f86633-p6Zptmw",
-      "downloaded_at": "2026-08-05T16:53:44.168896+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 20 فبراير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:06.967818+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Personal Data Processing Activities Records Guideline",
+      "title": "نشرة الذكاء الاصطناعي 27 فبراير 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/19ec3250-16a6-47c7-8e8c-b8e1d6f86633/Personal+Data+Processing+Activities+Records+Guideline.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-19ec3250-16a6-47c7-8e8c-b8e1d6f86633-p6Zptmw",
-      "downloaded_at": "2026-08-05T16:53:35.969233+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 فبراير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:54.936861+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf",
+      "title": "نشرة الذكاء الاصطناعي 6 مارس 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/016534ff-df3b-4bf4-80d7-d7145f41a926/Standard+Contractual+Clauses+For+Personal+Data+Transfer.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-016534ff-df3b-4bf4-80d7-d7145f41a926-p77ZzL1",
-      "downloaded_at": "2026-08-05T16:53:27.771800+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 6 مارس 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:44.601246+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "The+Rules+Governing+the+National+Register+of+Controllers+Within+the+Kingdom.pdf",
+      "title": "نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/047a4149-ba11-4919-9341-260164125ba5/The+Rules+Governing+the+National+Register+of+Controllers+Within+the+Kingdom.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-047a4149-ba11-4919-9341-260164125ba5-p77GRZx",
-      "downloaded_at": "2026-08-05T16:53:22.397705+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:27.933926+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Rules+Governing+the+Issuance+of+Accreditation+Certificates+for+Controllers+and+Processers.pdf",
+      "title": "نشرة الذكاء الاصطناعي 3 أبريل 2022.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/381e1ec2-9a51-42a9-94ff-18cfb4d46e26/Rules+Governing+the+Issuance+of+Accreditation+Certificates+for+Controllers+and+Processers.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-381e1ec2-9a51-42a9-94ff-18cfb4d46e26-pOKKOzN",
-      "downloaded_at": "2026-08-05T16:53:18.465260+00:00",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 3 أبريل 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:20.341320+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -298,14 +298,14 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-06T19:33:40.248798+00:00",
+  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - SDAIA",
     "target_url": "https://sdaia.gov.sa/",
     "counts": {
-      "to_download": 2,
-      "downloaded": 789,
-      "download_failed": 48,
+      "to_download": 0,
+      "downloaded": 790,
+      "download_failed": 49,
       "scanned_pdf": 13,
       "listed_total": 852
     },
@@ -323,6 +323,6 @@
     ],
     "datasources_found": 17,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-07T07:15:52.459830+00:00"
+    "updated_at": "2026-08-07T07:16:23.154947+00:00"
   }
 }
