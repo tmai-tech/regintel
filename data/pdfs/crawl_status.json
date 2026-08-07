@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-06T19:33:50.837281+00:00",
-  "phase": "idle",
-  "message": "SDAIA-only site · 338 PDFs",
-  "run_id": "31126108024",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31126108024",
+  "updated_at": "2026-08-07T04:03:44.834197+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://sdaia.gov.sa/",
+  "run_id": "31146154596",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31146154596",
   "totals": {
     "pdfs": 338,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 1,
-    "ministry_listed": 315,
-    "ministry_downloaded": 262,
-    "ministry_failed": 48,
-    "ministry_scanned": 5,
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
     "ministry_to_download": 0
   },
   "by_jurisdiction": [
@@ -27,7 +27,17 @@
       "count": 338
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "url": "https://sdaia.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
+  },
   "recent_pdfs": [
     {
       "title": "البنود+التعاقدية+القياسية.pdf",
@@ -294,17 +304,16 @@
     "target_url": "https://sdaia.gov.sa/",
     "counts": {
       "to_download": 0,
-      "downloaded": 262,
-      "download_failed": 48,
-      "scanned_pdf": 5,
-      "listed_total": 315
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "href": 269,
-      "script": 46
-    },
-    "pages_visited": 546,
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-06T19:33:40.501814+00:00"
+    "updated_at": "2026-08-07T04:03:43.255430+00:00"
   }
 }
