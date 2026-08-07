@@ -1564,7 +1564,7 @@
               .join("");
           }
           // Cache English for default Summary display on next visit
-          if (normalizeMyMemoryLang(targetLang).split("-")[0] === "en" && summaryOut) {
+          if (normalizeTranslateLang(targetLang).split("-")[0] === "en" && summaryOut) {
             const cacheKey =
               card.getAttribute("data-en-cache-key") || simpleHash(origSummary);
             writeEnCache(cacheKey, {
