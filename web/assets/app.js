@@ -970,6 +970,10 @@
     }
     rows.sort((a, b) => {
       if (a.has_summary !== b.has_summary) return a.has_summary ? -1 : 1;
+      // Prefer English extracts first so default Summary view is English-forward
+      const aEn = a.summary && detectSourceLang(a.summary) === "en" ? 0 : 1;
+      const bEn = b.summary && detectSourceLang(b.summary) === "en" ? 0 : 1;
+      if (aEn !== bEn) return aEn - bEn;
       return String(a.title).localeCompare(String(b.title));
     });
     return rows;
@@ -1119,14 +1123,67 @@
     );
   }
 
+  /** Stable short hash for translation cache keys. */
+  function simpleHash(str) {
+    let h = 5381;
+    const s = String(str || "");
+    for (let i = 0; i < s.length; i++) h = ((h << 5) + h) ^ s.charCodeAt(i);
+    return (h >>> 0).toString(36);
+  }
+
+  function readEnCache(key) {
+    try {
+      const raw = localStorage.getItem("regintel_en_" + key);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch {
+      return null;
+    }
+  }
+
+  function writeEnCache(key, payload) {
+    try {
+      localStorage.setItem("regintel_en_" + key, JSON.stringify(payload));
+    } catch {
+      /* quota / private mode */
+    }
+  }
+
+  /**
+   * Default UI language for Summary cards: English.
+   * Prefer stored preference when valid; never default to Arabic for primary display.
+   */
+  function preferredSummaryTargetLang() {
+    try {
+      const stored =
+        typeof localStorage !== "undefined"
+          ? localStorage.getItem("regintel_summary_lang")
+          : null;
+      if (stored && TRANSLATE_LANGS.some((l) => l.code === stored)) return stored;
+    } catch {
+      /* ignore */
+    }
+    return "en";
+  }
+
   function summaryCardHtml(r) {
     const link = r.open_url || r.url || "";
     const hasLink = isHttpUrl(link);
-    const summary = r.summary
-      ? escapeHtml(r.summary)
-      : '<span class="muted">No extractive summary yet for this PDF.</span>';
+    const origSummary = r.summary ? String(r.summary) : "";
     const pointsArr = (r.key_points || []).slice(0, 4).map((p) => String(p));
-    const points = pointsArr.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
+    // Prefer cached English display when extract is non-English (default UX = English)
+    const cacheKey = simpleHash(origSummary + "\n" + (r.title || "") + "\n" + pointsArr.join("\n"));
+    const cached = origSummary && detectSourceLang(origSummary) !== "en" ? readEnCache(cacheKey) : null;
+    const displayTitle = (cached && cached.title) || r.title || "Untitled PDF";
+    const displaySummary = (cached && cached.summary) || origSummary;
+    const displayPoints =
+      cached && Array.isArray(cached.points) && cached.points.length
+        ? cached.points
+        : pointsArr;
+    const summary = displaySummary
+      ? escapeHtml(displaySummary)
+      : '<span class="muted">No extractive summary yet for this PDF.</span>';
+    const points = displayPoints.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
     const badge = r.has_summary
       ? `<span class="badge badge-fed">Extracted</span>`
       : `<span class="badge badge-src">Pending</span>`;
@@ -1137,17 +1194,19 @@
           }</p>`
         : "";
     const cardId = "sum-" + String(r.id || "").replace(/[^\w-]/g, "_").slice(0, 40);
-    const defaultLang =
-      (typeof localStorage !== "undefined" && localStorage.getItem("regintel_summary_lang")) ||
-      "ar";
+    const defaultLang = preferredSummaryTargetLang();
+    const needsEn =
+      Boolean(origSummary) && detectSourceLang(origSummary) !== "en" && !cached;
     return `
       <article class="pdf-card summary-card" role="listitem" id="${escapeAttr(cardId)}"
         data-orig-title="${escapeAttr(r.title || "Untitled PDF")}"
-        data-orig-summary="${escapeAttr(r.summary || "")}"
+        data-orig-summary="${escapeAttr(origSummary)}"
         data-orig-points="${escapeAttr(JSON.stringify(pointsArr))}"
+        data-en-cache-key="${escapeAttr(cacheKey)}"
+        data-needs-en="${needsEn ? "1" : "0"}"
         data-pdf-url="${escapeAttr(link)}">
         <div class="card-badges">${badge}</div>
-        <h3 class="sum-title">${escapeHtml(r.title || "Untitled PDF")}</h3>
+        <h3 class="sum-title">${escapeHtml(displayTitle)}</h3>
         <p class="field-label">PDF link</p>
         <p class="url-line">${
           hasLink
@@ -1170,7 +1229,9 @@
           <button type="button" class="btn ghost sum-translate-btn" data-card="${escapeAttr(cardId)}">
             Translate
           </button>
-          <button type="button" class="btn ghost sum-restore-btn" data-card="${escapeAttr(cardId)}" hidden>
+          <button type="button" class="btn ghost sum-restore-btn" data-card="${escapeAttr(cardId)}" ${
+            cached ? "" : "hidden"
+          }>
             Original
           </button>
           ${
@@ -1179,13 +1240,107 @@
               : ""
           }
         </div>
-        <p class="meta-line sum-translate-status" hidden></p>
+        <p class="meta-line sum-translate-status"${cached ? "" : " hidden"}>${
+          cached
+            ? "Showing English (cached). Use Translate for other languages or Original for source text."
+            : ""
+        }</p>
         ${
           hasLink
             ? `<div class="card-actions"><a class="btn primary" href="${escapeAttr(link)}" target="_blank" rel="noopener">Open PDF</a></div>`
             : ""
         }
       </article>`;
+  }
+
+  /**
+   * For Arabic/other non-English extracts, produce English display text
+   * (MyMemory with explicit source lang — never langpair=auto|…).
+   * Limited concurrency + localStorage cache so Summary tab defaults to English.
+   */
+  async function ensureEnglishSummaries(listEl) {
+    if (!listEl) return;
+    const cards = [...listEl.querySelectorAll(".summary-card[data-needs-en='1']")];
+    if (!cards.length) return;
+    // Cap auto-translate work per render to protect free API quota
+    const maxAuto = 12;
+    const queue = cards.slice(0, maxAuto);
+    let idx = 0;
+    const workers = 2;
+
+    async function workOne(card) {
+      const origTitle = card.getAttribute("data-orig-title") || "";
+      const origSummary = card.getAttribute("data-orig-summary") || "";
+      const cacheKey = card.getAttribute("data-en-cache-key") || simpleHash(origSummary);
+      let origPoints = [];
+      try {
+        origPoints = JSON.parse(card.getAttribute("data-orig-points") || "[]");
+      } catch {
+        origPoints = [];
+      }
+      const status = card.querySelector(".sum-translate-status");
+      const restoreBtn = card.querySelector(".sum-restore-btn");
+      if (status) {
+        status.hidden = false;
+        status.textContent = "Preparing English summary…";
+      }
+      try {
+        let titleEn = origTitle;
+        if (origTitle && detectSourceLang(origTitle) !== "en") {
+          titleEn = await translateTextChunks(origTitle, "en");
+        }
+        let summaryEn = origSummary;
+        if (origSummary && detectSourceLang(origSummary) !== "en") {
+          summaryEn = await translateTextChunks(origSummary, "en");
+        }
+        const pointsEn = [];
+        for (const p of origPoints) {
+          if (p && detectSourceLang(p) !== "en") {
+            pointsEn.push(await translateTextChunks(p, "en"));
+          } else {
+            pointsEn.push(p);
+          }
+        }
+        writeEnCache(cacheKey, {
+          title: titleEn,
+          summary: summaryEn,
+          points: pointsEn,
+        });
+        // Only apply if card still in DOM
+        if (!card.isConnected) return;
+        const titleEl = card.querySelector(".sum-title");
+        const sumEl = card.querySelector(".sum-summary");
+        const pointsEl = card.querySelector(".sum-points");
+        if (titleEl) titleEl.textContent = titleEn;
+        if (sumEl) sumEl.textContent = summaryEn;
+        if (pointsEl && pointsEn.length) {
+          pointsEl.hidden = false;
+          pointsEl.innerHTML = pointsEn.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
+        }
+        card.setAttribute("data-needs-en", "0");
+        if (restoreBtn) restoreBtn.hidden = false;
+        if (status) {
+          status.textContent =
+            "Showing English. Use Translate for other languages or Original for source text.";
+        }
+      } catch (e) {
+        if (status) {
+          status.hidden = false;
+          status.textContent =
+            "English auto-translate unavailable: " +
+            (e.message || String(e)) +
+            ". Select English and click Translate.";
+        }
+      }
+    }
+
+    async function worker() {
+      while (idx < queue.length) {
+        const i = idx++;
+        await workOne(queue[i]);
+      }
+    }
+    await Promise.all(Array.from({ length: Math.min(workers, queue.length) }, () => worker()));
   }
 
   function wireSummaryTranslateButtons(listEl) {
@@ -1245,26 +1400,40 @@
           const titleEl = card.querySelector(".sum-title");
           const sumEl = card.querySelector(".sum-summary");
           const pointsEl = card.querySelector(".sum-points");
+          let titleOut = origTitle;
+          let summaryOut = origSummary;
+          let pointsOut = origPoints.slice();
           if (origTitle) {
-            const t = await translateTextChunks(origTitle, targetLang);
-            if (titleEl) titleEl.textContent = t;
+            titleOut = await translateTextChunks(origTitle, targetLang);
+            if (titleEl) titleEl.textContent = titleOut;
           }
           if (origSummary) {
-            const s = await translateTextChunks(origSummary, targetLang);
-            if (sumEl) sumEl.textContent = s;
+            summaryOut = await translateTextChunks(origSummary, targetLang);
+            if (sumEl) sumEl.textContent = summaryOut;
           } else if (sumEl) {
             sumEl.innerHTML =
               '<span class="muted">No extractive summary yet for this PDF.</span>';
           }
           if (pointsEl && origPoints.length) {
-            const translated = [];
+            pointsOut = [];
             for (const p of origPoints) {
-              translated.push(await translateTextChunks(p, targetLang));
+              pointsOut.push(await translateTextChunks(p, targetLang));
             }
             pointsEl.hidden = false;
-            pointsEl.innerHTML = translated
+            pointsEl.innerHTML = pointsOut
               .map((p) => `<li>${escapeHtml(p)}</li>`)
               .join("");
+          }
+          // Cache English for default Summary display on next visit
+          if (normalizeMyMemoryLang(targetLang).split("-")[0] === "en" && summaryOut) {
+            const cacheKey =
+              card.getAttribute("data-en-cache-key") || simpleHash(origSummary);
+            writeEnCache(cacheKey, {
+              title: titleOut,
+              summary: summaryOut,
+              points: pointsOut,
+            });
+            card.setAttribute("data-needs-en", "0");
           }
           const pdfLink = card.querySelector(".sum-pdf-translate-link");
           const pdfUrl = card.getAttribute("data-pdf-url") || "";
@@ -1331,6 +1500,11 @@
           status.textContent = "Showing original text.";
         }
       });
+    });
+
+    // Fire-and-forget English default for non-English extracts (re-wired after each render)
+    ensureEnglishSummaries(listEl).catch(() => {
+      /* non-fatal */
     });
   }
 
