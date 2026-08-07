@@ -1288,10 +1288,7 @@
     }
   }
 
-  /**
-   * Default UI language for Summary cards: English.
-   * Prefer stored preference when valid; never default to Arabic for primary display.
-   */
+  /** Last language chosen on Summary (for select default only — no auto-translate). */
   function preferredSummaryTargetLang() {
     try {
       const stored =
@@ -1310,19 +1307,13 @@
     const hasLink = isHttpUrl(link);
     const origSummary = r.summary ? String(r.summary) : "";
     const pointsArr = (r.key_points || []).slice(0, 4).map((p) => String(p));
-    // Prefer cached English display when extract is non-English (default UX = English)
+    // Show original extract only — translate only when user clicks Translate
     const cacheKey = simpleHash(origSummary + "\n" + (r.title || "") + "\n" + pointsArr.join("\n"));
-    const cached = origSummary && detectSourceLang(origSummary) !== "en" ? readEnCache(cacheKey) : null;
-    const displayTitle = (cached && cached.title) || r.title || "Untitled PDF";
-    const displaySummary = (cached && cached.summary) || origSummary;
-    const displayPoints =
-      cached && Array.isArray(cached.points) && cached.points.length
-        ? cached.points
-        : pointsArr;
-    const summary = displaySummary
-      ? escapeHtml(displaySummary)
+    const displayTitle = r.title || "Untitled PDF";
+    const summary = origSummary
+      ? escapeHtml(origSummary)
       : '<span class="muted">No extractive summary yet for this PDF.</span>';
-    const points = displayPoints.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
+    const points = pointsArr.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
     const badge = r.has_summary
       ? `<span class="badge badge-fed">Extracted</span>`
       : `<span class="badge badge-src">Pending</span>`;
@@ -1334,15 +1325,12 @@
         : "";
     const cardId = "sum-" + String(r.id || "").replace(/[^\w-]/g, "_").slice(0, 40);
     const defaultLang = preferredSummaryTargetLang();
-    const needsEn =
-      Boolean(origSummary) && detectSourceLang(origSummary) !== "en" && !cached;
     return `
       <article class="pdf-card summary-card" role="listitem" id="${escapeAttr(cardId)}"
         data-orig-title="${escapeAttr(r.title || "Untitled PDF")}"
         data-orig-summary="${escapeAttr(origSummary)}"
         data-orig-points="${escapeAttr(JSON.stringify(pointsArr))}"
         data-en-cache-key="${escapeAttr(cacheKey)}"
-        data-needs-en="${needsEn ? "1" : "0"}"
         data-pdf-url="${escapeAttr(link)}">
         <div class="card-badges">${badge}</div>
         <h3 class="sum-title">${escapeHtml(displayTitle)}</h3>
@@ -1390,96 +1378,6 @@
             : ""
         }
       </article>`;
-  }
-
-  /**
-   * For Arabic/other non-English extracts, produce English display text
-   * (MyMemory with explicit source lang — never langpair=auto|…).
-   * Limited concurrency + localStorage cache so Summary tab defaults to English.
-   */
-  async function ensureEnglishSummaries(listEl) {
-    if (!listEl) return;
-    const cards = [...listEl.querySelectorAll(".summary-card[data-needs-en='1']")];
-    if (!cards.length) return;
-    // Cap auto-translate work per render to protect free API quota
-    const maxAuto = 12;
-    const queue = cards.slice(0, maxAuto);
-    let idx = 0;
-    const workers = 2;
-
-    async function workOne(card) {
-      const origTitle = card.getAttribute("data-orig-title") || "";
-      const origSummary = card.getAttribute("data-orig-summary") || "";
-      const cacheKey = card.getAttribute("data-en-cache-key") || simpleHash(origSummary);
-      let origPoints = [];
-      try {
-        origPoints = JSON.parse(card.getAttribute("data-orig-points") || "[]");
-      } catch {
-        origPoints = [];
-      }
-      const status = card.querySelector(".sum-translate-status");
-      const restoreBtn = card.querySelector(".sum-restore-btn");
-      if (status) {
-        status.hidden = false;
-        status.textContent = "Preparing English summary…";
-      }
-      try {
-        let titleEn = origTitle;
-        if (origTitle && detectSourceLang(origTitle) !== "en") {
-          titleEn = await translateTextChunks(origTitle, "en");
-        }
-        let summaryEn = origSummary;
-        if (origSummary && detectSourceLang(origSummary) !== "en") {
-          summaryEn = await translateTextChunks(origSummary, "en");
-        }
-        const pointsEn = [];
-        for (const p of origPoints) {
-          if (p && detectSourceLang(p) !== "en") {
-            pointsEn.push(await translateTextChunks(p, "en"));
-          } else {
-            pointsEn.push(p);
-          }
-        }
-        writeEnCache(cacheKey, {
-          title: titleEn,
-          summary: summaryEn,
-          points: pointsEn,
-        });
-        // Only apply if card still in DOM
-        if (!card.isConnected) return;
-        const titleEl = card.querySelector(".sum-title");
-        const sumEl = card.querySelector(".sum-summary");
-        const pointsEl = card.querySelector(".sum-points");
-        if (titleEl) titleEl.textContent = titleEn;
-        if (sumEl) sumEl.textContent = summaryEn;
-        if (pointsEl && pointsEn.length) {
-          pointsEl.hidden = false;
-          pointsEl.innerHTML = pointsEn.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
-        }
-        card.setAttribute("data-needs-en", "0");
-        if (restoreBtn) restoreBtn.hidden = false;
-        if (status) {
-          status.textContent =
-            "Showing English. Use Translate for other languages or Original for source text.";
-        }
-      } catch (e) {
-        if (status) {
-          status.hidden = false;
-          status.textContent =
-            "English auto-translate unavailable: " +
-            (e.message || String(e)) +
-            ". Select English and click Translate.";
-        }
-      }
-    }
-
-    async function worker() {
-      while (idx < queue.length) {
-        const i = idx++;
-        await workOne(queue[i]);
-      }
-    }
-    await Promise.all(Array.from({ length: Math.min(workers, queue.length) }, () => worker()));
   }
 
   function wireSummaryTranslateButtons(listEl) {
@@ -1641,11 +1539,6 @@
           status.textContent = "Showing original text.";
         }
       });
-    });
-
-    // Fire-and-forget English default for non-English extracts (re-wired after each render)
-    ensureEnglishSummaries(listEl).catch(() => {
-      /* non-fatal */
     });
   }
 
