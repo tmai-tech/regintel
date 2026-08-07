@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T05:01:48.578392+00:00",
+  "updated_at": "2026-08-07T05:05:23.858015+00:00",
   "phase": "discovering",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
@@ -41,7 +41,7 @@
     "https://sdaia.gov.sa/ar/DataSources/Tags.aspx",
     "https://sdaia.gov.sa/en/Contact/_vti_bin/owssvr.dll?CS=65001"
   ],
-  "pages_visited": 575,
+  "pages_visited": 600,
   "page_errors_sample": [
     {
       "url": "https://sdaia.gov.sa/Documents/",

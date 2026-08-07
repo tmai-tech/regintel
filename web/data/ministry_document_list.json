@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T05:01:48.578392+00:00",
+  "updated_at": "2026-08-07T05:05:23.858015+00:00",
   "phase": "discovering",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
@@ -15,7 +15,7 @@
     "playwright_api": 531,
     "script": 46
   },
-  "pages_visited": 575,
+  "pages_visited": 600,
   "documents": [
     {
       "filename": "organizationalArrangements.pdf",
