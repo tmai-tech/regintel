@@ -2,11 +2,16 @@
 """
 Ministry document pipeline — discover full PDF list first, then download.
 
-Flow (matches colleague excel approach):
-  1. DISCOVER: sitemap + SharePoint DataSource feeds + HTML/JSON/script scan
-     → master list with status=to_download
-  2. DOWNLOAD: fetch each listed PDF
-     → status=downloaded | download_failed | scanned_pdf
+Independent of any Excel seed. Mirrors colleague Extraction_Script + ministry_crawler:
+  1. DISCOVER:
+     - site nav API (sdaiaapi) for full page tree
+     - sitemap.xml
+     - SharePoint DataSources / _api when WAF allows
+     - priority BFS (KnowledgeCenter / MediaCenter first)
+     - href + script/JSON harvest (colleague walk_json)
+     - Playwright JS-render fallback for SPA shells (colleague Extraction_Script)
+       with network interception for .pdf URLs
+  2. DOWNLOAD: each listed PDF → downloaded | download_failed | scanned_pdf
 
 Statuses (shown on Crawl tab):
   to_download      — listed, not yet attempted
@@ -159,6 +164,10 @@ class MinistryPipeline:
         self.discovery_methods: dict[str, int] = {}
         self.datasources_found: list[str] = []
         self.sitemaps_used: list[str] = []
+        self._waf_blocks = 0
+        self._playwright = None  # lazy PlaywrightRenderer
+        self._pw_renders = 0
+        self._pw_max_renders = 80  # cap expensive JS renders per run
 
         LISTS_DIR.mkdir(parents=True, exist_ok=True)
         self.list_path = LISTS_DIR / f"{slugify(self.root)}.json"
@@ -172,6 +181,17 @@ class MinistryPipeline:
         if self.delay > 0:
             time.sleep(self.delay)
 
+    @staticmethod
+    def _is_waf_reject(r: requests.Response | None) -> bool:
+        if r is None:
+            return False
+        body = (r.text or "")[:400]
+        return (
+            "Request Rejected" in body
+            or "support ID is" in body
+            or (r.status_code == 200 and len(r.content or b"") < 400 and "<html>" in body.lower() and "rejected" in body.lower())
+        )
+
     def fetch(self, url: str, timeout: float = 40) -> tuple[requests.Response | None, str | None]:
         self.polite()
         last = None
@@ -180,6 +200,11 @@ class MinistryPipeline:
                 r = self.session.get(
                     url, timeout=timeout, allow_redirects=True, verify=self.verify
                 )
+                if self._is_waf_reject(r):
+                    self._waf_blocks += 1
+                    last = "WAF rejected"
+                    time.sleep(2 ** attempt * 1.2)
+                    continue
                 if r.status_code in (403, 429):
                     last = f"HTTP {r.status_code}"
                     time.sleep(2 ** attempt * 1.5)
@@ -193,6 +218,138 @@ class MinistryPipeline:
                 last = f"{type(e).__name__}: {e}"
                 time.sleep(2 ** attempt)
         return None, last or "unreachable"
+
+    def looks_like_spa_shell(self, html: str, url: str) -> bool:
+        """Colleague Extraction_Script heuristic: empty SPA / JS-only library pages."""
+        if not html or len(html) < 2000:
+            return True
+        low = html.lower()
+        if "request rejected" in low:
+            return False
+        a_count = low.count("<a ")
+        # KnowledgeCenter / MediaCenter shells often have almost no document links
+        u = url.lower()
+        library = any(
+            k in u
+            for k in (
+                "knowledgecenter",
+                "ainewsletter",
+                "mediacenter",
+                "researchlibrary",
+                "sdaiapublications",
+                "ai-newsletter",
+            )
+        )
+        if library and a_count < 8 and ".pdf" not in low:
+            return True
+        spa_markers = ('id="root"', 'id="app"', 'id="__next"', "ng-version")
+        if any(m in low for m in spa_markers) and a_count < 5:
+            return True
+        return False
+
+    def playwright_discover(self, url: str) -> list[str]:
+        """JS-render page (colleague Extraction_Script) + capture PDF network URLs."""
+        pages: list[str] = []
+        if self._pw_renders >= self._pw_max_renders:
+            return pages
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            self.log("  [playwright] not installed — skip JS render")
+            return pages
+        self._pw_renders += 1
+        self.log(f"  [playwright] render {url[:100]}")
+        pdf_hits: list[str] = []
+        try:
+            if self._playwright is None:
+                self._playwright = sync_playwright().start()
+            browser = self._playwright.chromium.launch(headless=True)
+            try:
+                context = browser.new_context(user_agent=UA, locale="en-US")
+                page = context.new_page()
+
+                def on_response(res):
+                    try:
+                        u = res.url
+                        ct = (res.headers.get("content-type") or "").lower()
+                        if ".pdf" in u.lower() or "application/pdf" in ct:
+                            pdf_hits.append(u)
+                        # harvest JSON APIs that list files
+                        if any(
+                            k in u
+                            for k in ("_api/", "DataSource", "sdaiaapi", "listdata")
+                        ):
+                            try:
+                                body = res.text()
+                                self.harvest_doc_urls_from_text(body, u, "playwright_api")
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+
+                page.on("response", on_response)
+                try:
+                    page.goto(url, timeout=60000, wait_until="domcontentloaded")
+                    page.wait_for_timeout(3500)
+                    # scroll to trigger lazy lists
+                    for _ in range(4):
+                        page.mouse.wheel(0, 1800)
+                        page.wait_for_timeout(600)
+                    html = page.content()
+                except Exception as e:
+                    self.log(f"  [playwright] goto fail: {e}")
+                    html = ""
+                context.close()
+            finally:
+                browser.close()
+            for u in pdf_hits:
+                self.add_doc(u, "playwright_net")
+            if html:
+                pages = self.extract_from_html(html, url)
+                self.harvest_doc_urls_from_text(html, url, "playwright_html")
+        except Exception as e:
+            self.log(f"  [playwright] error: {e}")
+        return pages
+
+    def discover_nav_api(self) -> None:
+        """SDAIA custom nav API — full page tree (independent of Excel)."""
+        if "sdaia" not in self.root:
+            return
+        for path in (
+            "/sdaiaapi/api/home/geteninternalpagenavdata",
+            "/sdaiaapi/api/home/getinternalpagenavdata",
+        ):
+            url = f"https://{self.root}{path}"
+            r, err = self.fetch(url, timeout=40)
+            if err or r is None:
+                continue
+            try:
+                data = r.json()
+            except Exception:
+                continue
+            n_before = len(getattr(self, "_seed_pages", []))
+            found = 0
+
+            def walk(o):
+                nonlocal found
+                if isinstance(o, dict):
+                    for k, v in o.items():
+                        if k.lower() in ("url", "href", "link", "path") and isinstance(v, str):
+                            if v.startswith("/") or v.startswith("http"):
+                                full = normalize(urljoin(f"https://{self.root}/", v))
+                                if same_site(full, self.root) or "sdaia" in base_host(full):
+                                    self._seed_pages.append(full)
+                                    found += 1
+                                    if looks_like_doc(full):
+                                        self.add_doc(full, "nav_api")
+                        walk(v)
+                elif isinstance(o, list):
+                    for i in o:
+                        walk(i)
+
+            walk(data)
+            self.log(f"  [nav_api] {path} → {found} urls (seeds now {len(self._seed_pages)})")
+
 
     def add_doc(self, url: str, method: str, link_text: str = "") -> None:
         url = normalize(url)
@@ -253,14 +410,30 @@ class MinistryPipeline:
         if "sdaia" in self.root:
             common.extend(
                 [
+                    # KnowledgeCenter / MediaCenter (colleague Excel bulk lives here)
                     "/en/MediaCenter/KnowledgeCenter/",
                     "/ar/MediaCenter/KnowledgeCenter/",
+                    "/en/MediaCenter/KnowledgeCenter/Pages/default.aspx",
+                    "/ar/MediaCenter/KnowledgeCenter/Pages/default.aspx",
+                    "/en/MediaCenter/KnowledgeCenter/Pages/AI-Newsletter.aspx",
+                    "/ar/MediaCenter/KnowledgeCenter/Pages/AI-Newsletter.aspx",
+                    "/en/MediaCenter/KnowledgeCenter/Pages/SDAIAPublications.aspx",
+                    "/ar/MediaCenter/KnowledgeCenter/Pages/SDAIAPublications.aspx",
                     "/en/MediaCenter/KnowledgeCenter/AINewsletter/",
                     "/ar/MediaCenter/KnowledgeCenter/AINewsletter/",
                     "/en/MediaCenter/KnowledgeCenter/ResearchLibrary/",
                     "/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/",
                     "/en/MediaCenter/",
                     "/ar/MediaCenter/",
+                    "/en/MediaCenter/Pages/default.aspx",
+                    "/ar/MediaCenter/Pages/default.aspx",
+                    "/en/MediaCenter/News/Pages/default.aspx",
+                    "/ar/MediaCenter/News/Pages/default.aspx",
+                    "/en/MediaCenter/Events/Pages/default.aspx",
+                    "/ar/MediaCenter/Events/Pages/default.aspx",
+                    "/en/MediaCenter/Initiatives/Pages/default.aspx",
+                    "/ar/MediaCenter/Initiatives/Pages/default.aspx",
+                    # Document libraries
                     "/en/SDAIA/about/Documents/",
                     "/ar/SDAIA/about/Documents/",
                     "/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
@@ -273,10 +446,16 @@ class MinistryPipeline:
                     "/ar/Sectors/Nic/",
                     "/en/Sectors/",
                     "/ar/Sectors/",
+                    "/en/Research/",
+                    "/ar/Research/",
                     "/en/Research/Documents/",
                     "/ar/Research/Documents/",
+                    "/en/Research/Pages/default.aspx",
+                    "/ar/Research/Pages/default.aspx",
                     "/ndmo/Files/",
                     "/Documents/",
+                    "/en/DataSources/Tags.aspx",
+                    "/ar/DataSources/Tags.aspx",
                     "https://dgp.sdaia.gov.sa/",
                 ]
             )
@@ -519,8 +698,13 @@ class MinistryPipeline:
     def discover(self) -> dict:
         self._seed_pages: list[str] = []
         self.log(f"[discover] start {self.start_url} max_pages={self.max_pages}")
+        # Warm session (cookies) — reduces intermittent WAF empties
+        self.fetch(self.start_url, timeout=30)
+        self.discover_nav_api()
         self.discover_sitemaps()
-        self.discover_sharepoint_datasources("", self.start_url)
+        # SharePoint probes (often WAF-blocked on SDAIA; still try after warm)
+        if self._waf_blocks < 15:
+            self.discover_sharepoint_datasources("", self.start_url)
 
         queues: dict[int, deque] = {0: deque(), 1: deque(), 2: deque()}
         queued: set[str] = set()
@@ -529,9 +713,14 @@ class MinistryPipeline:
             u = normalize(u)
             if not u.startswith("http") or u in queued:
                 return
+            h = base_host(u)
             if not same_site(u, self.root):
-                # allow sibling sdaia hosts
-                if not (self.root in base_host(u) or base_host(u).endswith("." + self.root)):
+                # sibling portals e.g. dgp.sdaia.gov.sa
+                if not (
+                    h.endswith(".sdaia.gov.sa")
+                    or h == "sdaia.gov.sa"
+                    or (self.root in h or h.endswith("." + self.root))
+                ):
                     return
             queued.add(u)
             queues[self.page_priority(u)].append(u)
@@ -543,7 +732,7 @@ class MinistryPipeline:
             return None
 
         enq(self.start_url)
-        for p in getattr(self, "_seed_pages", [])[:5000]:
+        for p in getattr(self, "_seed_pages", [])[:8000]:
             enq(p)
         for path in self.deep_seed_paths():
             if path.startswith("http"):
@@ -564,17 +753,27 @@ class MinistryPipeline:
                 qsize = sum(len(q) for q in queues.values())
                 self.log(
                     f"  [progress] pages={self.pages_seen} docs_listed={len(self.docs)} "
-                    f"queue={qsize} methods={self.discovery_methods}"
+                    f"queue={qsize} methods={self.discovery_methods} "
+                    f"pw={self._pw_renders} waf={self._waf_blocks}"
                 )
                 self.publish_status(
                     "discovering",
                     f"discovering {self.root}: pages={self.pages_seen} listed={len(self.docs)}",
                 )
 
+            # Skip known-dead SharePoint REST if WAF keeps rejecting
+            if "/_api/" in url and self._waf_blocks > 20:
+                continue
 
             r, err = self.fetch(url)
+            text = ""
+            ct = ""
             if err or r is None:
                 self.page_errors.append({"url": url, "error": err})
+                # Colleague path: try Playwright when plain HTTP fails on library pages
+                if self.page_priority(url) == 0:
+                    for p in self.playwright_discover(url):
+                        enq(p)
                 continue
             ct = (r.headers.get("Content-Type") or "").lower()
             if looks_like_doc(url) or "pdf" in ct:
@@ -588,8 +787,38 @@ class MinistryPipeline:
             if "xml" in ct or text.lstrip().startswith("<?xml") or "<feed" in text[:200].lower():
                 self.harvest_doc_urls_from_text(text, url, "datasource")
                 continue
+
+            docs_before = len(self.docs)
             for p in self.extract_from_html(text, url):
                 enq(p)
+            # JS-render fallback (colleague Extraction_Script) for SPA / KnowledgeCenter
+            need_pw = self.looks_like_spa_shell(text, url) or (
+                self.page_priority(url) == 0 and len(self.docs) == docs_before
+            )
+            if need_pw:
+                for p in self.playwright_discover(url):
+                    enq(p)
+
+        # Always Playwright-pass remaining high-priority library seeds not fully scraped
+        for seed in list(getattr(self, "_seed_pages", []))[:200]:
+            if self.page_priority(seed) != 0:
+                continue
+            if self._pw_renders >= self._pw_max_renders:
+                break
+            if seed in self.visited_pages and any(
+                k in (self.discovery_methods or {})
+                for k in ("playwright_net", "playwright_html", "playwright_api")
+            ):
+                continue
+            # re-render key library pages once more if few library docs
+            if sum(
+                1
+                for d in self.docs.values()
+                if "knowledge" in (d.get("url") or "").lower()
+                or "mediacenter" in (d.get("url") or "").lower()
+            ) < 100 and self.page_priority(seed) == 0:
+                for p in self.playwright_discover(seed):
+                    enq(p)
 
         stats = {
             "target_url": self.start_url,
@@ -601,19 +830,27 @@ class MinistryPipeline:
             "datasources_found": len(self.datasources_found),
             "discovery_methods": self.discovery_methods,
             "page_errors": len(self.page_errors),
+            "waf_blocks": self._waf_blocks,
+            "playwright_renders": self._pw_renders,
             "hit_page_cap": self.pages_seen >= self.max_pages,
             "discovery_method_detail": (
-                "Sitemap + SharePoint DataSource/_api/search + priority BFS "
-                "(KnowledgeCenter first) + href/script scan"
+                "nav_api + sitemap + SharePoint DataSources + priority BFS "
+                "+ href/script/json + Playwright JS fallback (KnowledgeCenter)"
             ),
         }
         self.log(
             f"[discover] done pages={self.pages_seen} listed={len(self.docs)} "
             f"methods={self.discovery_methods} datasources={len(self.datasources_found)} "
-            f"sitemaps={len(self.sitemaps_used)}"
+            f"sitemaps={len(self.sitemaps_used)} playwright={self._pw_renders} waf={self._waf_blocks}"
         )
+        # shutdown playwright
+        try:
+            if self._playwright is not None:
+                self._playwright.stop()
+                self._playwright = None
+        except Exception:
+            pass
         self.save_list(phase="listed", extra_stats=stats)
-        # Force a public push of the full master list when discovery ends
         self.publish_status(
             "listed",
             f"listed {len(self.docs)} documents on {self.root} (pages={self.pages_seen})",

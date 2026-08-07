@@ -56,6 +56,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pymupdf || true
+          # Colleague Extraction_Script path: JS-render KnowledgeCenter / SPA pages
+          python -m playwright install --with-deps chromium || python -m playwright install chromium || true
 
       - name: Discover list + download
         env:
