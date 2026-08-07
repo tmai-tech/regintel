@@ -1000,7 +1000,7 @@
     ).join("");
   }
 
-  /** Guess source language — MyMemory rejects langpair source "auto". */
+  /** Guess source language (never send "auto" to APIs that reject it). */
   function detectSourceLang(text) {
     const s = String(text || "");
     const letters = s.replace(/\s+/g, "");
@@ -1018,99 +1018,238 @@
     return "en";
   }
 
-  function normalizeMyMemoryLang(code) {
+  function normalizeTranslateLang(code) {
     const c = String(code || "en").trim();
-    // MyMemory expects codes like en, ar, zh-CN (not "auto")
-    if (c === "auto" || c === "Autodetect" || !c) return "en";
-    if (c.toLowerCase() === "zh" || c === "zh-cn") return "zh-CN";
+    if (!c || c === "auto" || c === "Autodetect") return "en";
+    if (c.toLowerCase() === "zh" || c.toLowerCase() === "zh-cn") return "zh-CN";
     if (c.includes("-")) {
       const [a, b] = c.split("-");
       if (a.toLowerCase() === "zh") return "zh-CN";
-      return a.toLowerCase() + "-" + b.toUpperCase();
+      return a.toLowerCase();
     }
     return c.toLowerCase();
   }
 
-  /** Free MyMemory API (chunked). Best-effort client-side translation. */
-  async function translateTextChunks(text, targetLang) {
-    const raw = String(text || "").trim();
-    if (!raw) return "";
-    let target = normalizeMyMemoryLang(targetLang || "en");
-    let source = detectSourceLang(raw);
-    source = normalizeMyMemoryLang(source);
-    // Same language → no-op
-    if (source.split("-")[0] === target.split("-")[0]) return raw;
+  // Session cache + global queue avoid MyMemory/Google 429 spam
+  const _translateCache = new Map();
+  let _translateChain = Promise.resolve();
 
-    // MyMemory free tier: keep chunks modest
-    const maxLen = 450;
+  function translateCacheKey(text, source, target) {
+    return source + ">" + target + ":" + text;
+  }
+
+  function getCachedTranslation(text, source, target) {
+    const k = translateCacheKey(text, source, target);
+    if (_translateCache.has(k)) return _translateCache.get(k);
+    try {
+      const raw = sessionStorage.getItem("regintel_tr_" + hashStr(k));
+      if (raw) {
+        _translateCache.set(k, raw);
+        return raw;
+      }
+    } catch (_) {
+      /* ignore */
+    }
+    return null;
+  }
+
+  function setCachedTranslation(text, source, target, translated) {
+    const k = translateCacheKey(text, source, target);
+    _translateCache.set(k, translated);
+    try {
+      sessionStorage.setItem("regintel_tr_" + hashStr(k), translated);
+    } catch (_) {
+      /* ignore quota */
+    }
+  }
+
+  function hashStr(s) {
+    let h = 0;
+    const str = String(s);
+    for (let i = 0; i < str.length; i++) h = (Math.imul(31, h) + str.charCodeAt(i)) | 0;
+    return (h >>> 0).toString(36);
+  }
+
+  function chunkText(text, maxLen) {
     const chunks = [];
-    let rest = raw;
+    let rest = String(text || "");
     while (rest.length) {
       if (rest.length <= maxLen) {
         chunks.push(rest);
         break;
       }
       let cut = rest.lastIndexOf(" ", maxLen);
-      if (cut < maxLen * 0.5) cut = maxLen;
+      if (cut < maxLen * 0.4) cut = rest.lastIndexOf("\n", maxLen);
+      if (cut < maxLen * 0.4) cut = maxLen;
       chunks.push(rest.slice(0, cut));
       rest = rest.slice(cut).trimStart();
     }
-    const out = [];
-    for (const chunk of chunks) {
-      const tryPairs = [
-        source + "|" + target,
-        // fallbacks if source guess is wrong
-        "en|" + target,
-        "ar|" + target,
-      ];
-      // dedupe pairs
-      const pairs = [...new Set(tryPairs.filter((p) => {
-        const [a, b] = p.split("|");
-        return a && b && a.split("-")[0] !== b.split("-")[0];
-      }))];
+    return chunks;
+  }
 
-      let translated = "";
-      let lastErr = "";
-      for (const pair of pairs) {
-        const url =
-          "https://api.mymemory.translated.net/get?q=" +
-          encodeURIComponent(chunk) +
-          "&langpair=" +
-          encodeURIComponent(pair);
-        try {
-          const res = await fetch(url);
-          if (!res.ok) {
-            lastErr = "Translate HTTP " + res.status;
-            continue;
-          }
-          const data = await res.json();
-          const t =
-            (data && data.responseData && data.responseData.translatedText) ||
-            "";
-          const status = data && data.responseStatus;
-          if (
-            !t ||
-            /QUERY LENGTH LIMIT/i.test(t) ||
-            /INVALID SOURCE LANGUAGE/i.test(t) ||
-            /IS AN INVALID TARGET LANGUAGE/i.test(t) ||
-            /MYMEMORY WARNING/i.test(t) ||
-            (status && status !== 200 && status !== "200")
-          ) {
-            lastErr = t || "Translation failed (" + pair + ")";
-            continue;
-          }
-          translated = t;
-          break;
-        } catch (e) {
-          lastErr = e.message || String(e);
-        }
-      }
-      if (!translated) throw new Error(lastErr || "Translation failed");
-      out.push(translated);
-      // polite pause between chunks
-      if (chunks.length > 1) await new Promise((r) => setTimeout(r, 200));
+  /** Unofficial Google Translate (client=gtx) — no API key; works in browser CORS. */
+  async function translateViaGoogleGtx(chunk, source, target) {
+    const sl = source === "zh-CN" ? "zh-CN" : source;
+    const tl = target === "zh-CN" ? "zh-CN" : target;
+    const url =
+      "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" +
+      encodeURIComponent(sl) +
+      "&tl=" +
+      encodeURIComponent(tl) +
+      "&dt=t&q=" +
+      encodeURIComponent(chunk);
+    const res = await fetch(url);
+    if (res.status === 429) throw new Error("HTTP 429");
+    if (!res.ok) throw new Error("Google translate HTTP " + res.status);
+    const data = await res.json();
+    // data[0] = [[translated, original, ...], ...]
+    if (!Array.isArray(data) || !Array.isArray(data[0])) {
+      throw new Error("Unexpected Google translate response");
     }
-    return out.join(" ");
+    return data[0]
+      .map((row) => (Array.isArray(row) ? row[0] : ""))
+      .join("");
+  }
+
+  /** MyMemory free tier — secondary; often 429 if overused. */
+  async function translateViaMyMemory(chunk, source, target) {
+    const pair = source + "|" + target;
+    const url =
+      "https://api.mymemory.translated.net/get?q=" +
+      encodeURIComponent(chunk) +
+      "&langpair=" +
+      encodeURIComponent(pair);
+    const res = await fetch(url);
+    if (res.status === 429) throw new Error("HTTP 429");
+    if (!res.ok) throw new Error("MyMemory HTTP " + res.status);
+    const data = await res.json();
+    const t =
+      (data && data.responseData && data.responseData.translatedText) || "";
+    const status = data && data.responseStatus;
+    if (
+      !t ||
+      /QUERY LENGTH LIMIT/i.test(t) ||
+      /INVALID SOURCE LANGUAGE/i.test(t) ||
+      /INVALID TARGET LANGUAGE/i.test(t) ||
+      /MYMEMORY WARNING/i.test(t) ||
+      (status && Number(status) !== 200)
+    ) {
+      throw new Error(t || "MyMemory failed");
+    }
+    return t;
+  }
+
+  /** Lingva public mirror (Google-backed). */
+  async function translateViaLingva(chunk, source, target) {
+    const sl = source === "zh-CN" ? "zh" : source;
+    const tl = target === "zh-CN" ? "zh" : target;
+    const hosts = [
+      "https://lingva.ml",
+      "https://lingva.thedaviddelta.com",
+    ];
+    let lastErr = "";
+    for (const host of hosts) {
+      try {
+        const url =
+          host +
+          "/api/v1/" +
+          encodeURIComponent(sl) +
+          "/" +
+          encodeURIComponent(tl) +
+          "/" +
+          encodeURIComponent(chunk);
+        const res = await fetch(url);
+        if (res.status === 429) {
+          lastErr = "HTTP 429";
+          continue;
+        }
+        if (!res.ok) {
+          lastErr = "Lingva HTTP " + res.status;
+          continue;
+        }
+        const data = await res.json();
+        if (data && data.translation) return data.translation;
+        lastErr = "Empty Lingva response";
+      } catch (e) {
+        lastErr = e.message || String(e);
+      }
+    }
+    throw new Error(lastErr || "Lingva failed");
+  }
+
+  async function translateOneChunk(chunk, source, target) {
+    const cached = getCachedTranslation(chunk, source, target);
+    if (cached != null) return cached;
+
+    const engines = [
+      translateViaGoogleGtx,
+      translateViaLingva,
+      translateViaMyMemory,
+    ];
+    let lastErr = "";
+    for (const eng of engines) {
+      try {
+        const t = await eng(chunk, source, target);
+        if (t && String(t).trim()) {
+          setCachedTranslation(chunk, source, target, t);
+          return t;
+        }
+      } catch (e) {
+        lastErr = e.message || String(e);
+        // brief backoff on rate limit before next engine
+        if (/429/.test(lastErr)) await new Promise((r) => setTimeout(r, 400));
+      }
+    }
+    throw new Error(
+      lastErr ||
+        "All free translate services failed (often rate-limited). Wait a minute and retry.",
+    );
+  }
+
+  /**
+   * Translate text to target language. Uses Google gtx first (avoids MyMemory 429),
+   * then Lingva, then MyMemory. Cached + serialized to reduce rate limits.
+   */
+  async function translateTextChunks(text, targetLang) {
+    const raw = String(text || "").trim();
+    if (!raw) return "";
+    const target = normalizeTranslateLang(targetLang || "en");
+    let source = normalizeTranslateLang(detectSourceLang(raw));
+    if (source.split("-")[0] === target.split("-")[0]) return raw;
+
+    const fullCached = getCachedTranslation(raw, source, target);
+    if (fullCached != null) return fullCached;
+
+    // Serialize all card translates so we don't fire 10 requests at once
+    const run = _translateChain.then(async () => {
+      const chunks = chunkText(raw, 900);
+      const out = [];
+      for (let i = 0; i < chunks.length; i++) {
+        // try detected source, then en, then ar
+        const sources = [...new Set([source, "en", "ar"])].filter(
+          (s) => s.split("-")[0] !== target.split("-")[0],
+        );
+        let translated = "";
+        let lastErr = "";
+        for (const sl of sources) {
+          try {
+            translated = await translateOneChunk(chunks[i], sl, target);
+            break;
+          } catch (e) {
+            lastErr = e.message || String(e);
+          }
+        }
+        if (!translated) throw new Error(lastErr || "Translation failed");
+        out.push(translated);
+        if (i < chunks.length - 1) await new Promise((r) => setTimeout(r, 250));
+      }
+      const joined = out.join(" ");
+      setCachedTranslation(raw, source, target, joined);
+      return joined;
+    });
+    // keep chain alive even on failure
+    _translateChain = run.catch(() => {});
+    return run;
   }
 
   function googleTranslatePdfUrl(pdfUrl, targetLang) {
@@ -1450,8 +1589,10 @@
         } catch (e) {
           if (status) {
             status.hidden = false;
-            status.textContent =
-              "Translation failed: " + (e.message || String(e)) + ". Try again later.";
+            const msg = e.message || String(e);
+            status.textContent = /429/.test(msg)
+              ? "Rate limited (too many free translate requests). Wait ~30s and try again — or use “Translate PDF” for the document."
+              : "Translation failed: " + msg + ". Try again, or use “Translate PDF”.";
           }
         } finally {
           btn.disabled = false;
