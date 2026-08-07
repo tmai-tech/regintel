@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-07T04:19:13.176122+00:00",
+  "updated_at": "2026-08-07T04:23:08.345237+00:00",
   "phase": "discovering",
   "target_url": "https://sdaia.gov.sa/",
   "label": "Saudi Arabia - SDAIA",
   "counts": {
-    "to_download": 609,
+    "to_download": 614,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 609
+    "listed_total": 614
   },
   "discovery_methods": {
     "href": 83,
-    "playwright_api": 526
+    "playwright_api": 531
   },
-  "pages_visited": 50,
+  "pages_visited": 75,
   "documents": [
     {
       "filename": "organizationalArrangements.pdf",
@@ -7322,6 +7322,66 @@
       "title": "بيان المركبات",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "TransferOfPersonalDataOutsideTheKingdomEN.pdf",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/TransferOfPersonalDataOutsideTheKingdomEN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "TransferOfPersonalDataOutsideTheKingdomEN.pdf",
+      "bytes": null,
+      "discovery_method": "playwright_api",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
+      "bytes": null,
+      "discovery_method": "playwright_api",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "DataSharingPolicyEN.pdf",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/DataSharingPolicyEN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "DataSharingPolicyEN.pdf",
+      "bytes": null,
+      "discovery_method": "playwright_api",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "PersonalDataProtectionPolicyEN.pdf",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/PersonalDataProtectionPolicyEN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PersonalDataProtectionPolicyEN.pdf",
+      "bytes": null,
+      "discovery_method": "playwright_api",
+      "jurisdiction": "Saudi Arabia - SDAIA"
+    },
+    {
+      "filename": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
+      "bytes": null,
+      "discovery_method": "playwright_api",
       "jurisdiction": "Saudi Arabia - SDAIA"
     }
   ],
