@@ -1,5 +1,2198 @@
 [
   {
+    "id": "0ee67be1c5f84eab",
+    "title": "AIEthicsGuidelines.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIEthicsGuidelines.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIEthicsGuidelines.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIEthicsGuidelines.pdf. addresses, contact numbers, license numbers, records, personal property, bank account and credit card System Lifecycle; to be built in a safe way that respects the privacy of the data collected as well as upholds 1- Following the best practice of responsible data acquisition, handling, classification, and management Protect the privacy of data subjects and their rights with respect to the collection and pro- Data Governance and oversee the implementation practices across the Public Entities.",
+    "key_points": [
+      "addresses, contact numbers, license numbers, records, personal property, bank account and credit card",
+      "System Lifecycle; to be built in a safe way that respects the privacy of the data collected as well as upholds",
+      "1- Following the best practice of responsible data acquisition, handling, classification, and management",
+      "Protect the privacy of data subjects and their rights with respect to the collection and pro-",
+      "Data Governance and oversee the implementation practices across the Public Entities."
+    ],
+    "topics": [
+      "system",
+      "should",
+      "ethics",
+      "systems",
+      "principles",
+      "model"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:46:22.880338+00:00"
+  },
+  {
+    "id": "d85b7865a2197759",
+    "title": "SDAIAPublications15.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications15.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications15.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications15.pdf. Data-Informed Decision-Making )DIDM( 136اتخاذ قرار مستند إلى البيانات Data-Driven Decision-Making )DDDM( 136اتخاذ قرار مبني على البيانات Reasoning and Acting )ReAct( Prompting 196أوامر الاستدلال والتصرف Application Data Management )ADM( 105إدارة بيانات التطبيقات Extract, Transform and Load )ETL( 147استخراج وتحويل وتحميل",
+    "key_points": [
+      "Data-Informed Decision-Making )DIDM( 136اتخاذ قرار مستند إلى البيانات",
+      "Data-Driven Decision-Making )DDDM( 136اتخاذ قرار مبني على البيانات",
+      "Reasoning and Acting )ReAct( Prompting 196أوامر الاستدلال والتصرف",
+      "Application Data Management )ADM( 105إدارة بيانات التطبيقات",
+      "Extract, Transform and Load )ETL( 147استخراج وتحويل وتحميل"
+    ],
+    "topics": [
+      "prompting",
+      "reasoning",
+      "machine",
+      "sampling",
+      "detection",
+      "regression"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:46:15.243683+00:00"
+  },
+  {
+    "id": "72a24b29ae520e1f",
+    "title": "AIInEnergy.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInEnergy.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInEnergy.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIInEnergy.pdf. integrates data from existing building power management systems, actual consumption, and Using historical data and influencing factors to accurately predict demand distribution network operators into grid operations, largely due to insufficient historical data power generation, such as solar and wind, to improving the extraction and production of oil a lack of real-time consumption data, and difficulties in analyzing and interpreting",
+    "key_points": [
+      "integrates data from existing building power management systems, actual consumption, and",
+      "Using historical data and influencing factors to accurately predict demand",
+      "distribution network operators into grid operations, largely due to insufficient historical data",
+      "power generation, such as solar and wind, to improving the extraction and production of oil",
+      "a lack of real-time consumption data, and difficulties in analyzing and interpreting"
+    ],
+    "topics": [
+      "energy",
+      "power",
+      "sector",
+      "cases",
+      "costs",
+      "efficiency"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:46:02.208337+00:00"
+  },
+  {
+    "id": "631591d65d0b2353",
+    "title": "AIInEducation.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInEducation.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInEducation.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIInEducation.pdf. di Data & AI Authority (SDAIA) in this field. to the individual needs of learners, providing real-time assistance, analyzing data to im - needs and skills of students, Including to develop interactive lessons, trans - content, analyzing educational data, assessing student performance, and pro - Brainly Company in Poland observed that students using its interactive ed -",
+    "key_points": [
+      "di Data & AI Authority (SDAIA) in this field.",
+      "to the individual needs of learners, providing real-time assistance, analyzing data to im -",
+      "needs and skills of students, Including to develop interactive lessons, trans -",
+      "content, analyzing educational data, assessing student performance, and pro -",
+      "Brainly Company in Poland observed that students using its interactive ed -"
+    ],
+    "topics": [
+      "students",
+      "education",
+      "student",
+      "learning",
+      "educational",
+      "cases"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:45:49.190422+00:00"
+  },
+  {
+    "id": "f28b565a3ea7cd90",
+    "title": "AIInSecurity.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInSecurity.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInSecurity.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIInSecurity.pdf. By analyzing criminal record data and other risk factors, AI can assess the risk of and the efforts of the Saudi Data & AI Authority (SDAIA) in this crucial sector. enabling security sectors to take proactive measures to prevent potential threats and raise AI can assist in analyzing digital evidence related to cybercrimes by scrutinizing huge individuals and vehicles, detect intruders and suspicious activities, and automatically",
+    "key_points": [
+      "By analyzing criminal record data and other risk factors, AI can assess the risk of",
+      "and the efforts of the Saudi Data & AI Authority (SDAIA) in this crucial sector.",
+      "enabling security sectors to take proactive measures to prevent potential threats and raise",
+      "AI can assist in analyzing digital evidence related to cybercrimes by scrutinizing huge",
+      "individuals and vehicles, detect intruders and suspicious activities, and automatically"
+    ],
+    "topics": [
+      "security",
+      "crime",
+      "traffic",
+      "sector",
+      "cases",
+      "public"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:45:29.570681+00:00"
+  },
+  {
+    "id": "8d6a08af73704ae0",
+    "title": "AIInHealth.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInHealth.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInHealth.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIInHealth.pdf. 2https://www.who.int/ar/news/item/03-03-1445-billions-left-behind-on-the-path-to-universal-health-coverage (WHO) of the United Nations has warned of the serious consequences affecting billions of Analyzing patient data to identify critical cases, thereby assisting in prioritizing The model was trained on data collected from more than 15,000 British patients and Rapidly and effectively analyzing vast amounts of biological and chemical data,",
+    "key_points": [
+      "2https://www.who.int/ar/news/item/03-03-1445-billions-left-behind-on-the-path-to-universal-health-coverage",
+      "(WHO) of the United Nations has warned of the serious consequences affecting billions of",
+      "Analyzing patient data to identify critical cases, thereby assisting in prioritizing",
+      "The model was trained on data collected from more than 15,000 British patients and",
+      "Rapidly and effectively analyzing vast amounts of biological and chemical data,"
+    ],
+    "topics": [
+      "medical",
+      "healthcare",
+      "sector",
+      "diagnosis",
+      "cases",
+      "analyzing"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:45:12.838812+00:00"
+  },
+  {
+    "id": "9cf5245b86e5c15d",
+    "title": "AIInMedia.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInMedia.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AIInMedia.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIInMedia.pdf. With intense competition in the media sector, Netflix faced challenges in attracting new subscribers and reviews initiatives by the Saudi Data & AI Authority (SDAIA) in the sector. Automatically generating news articles and reports based on real-time data, tags, rigid tagging guidelines, and gaps between literal tags and actual reader interests made recom- The New York Times (NYT) relied on user-inputted topics during account creation and article tags to",
+    "key_points": [
+      "With intense competition in the media sector, Netflix faced challenges in attracting new subscribers",
+      "and reviews initiatives by the Saudi Data & AI Authority (SDAIA) in the sector.",
+      "Automatically generating news articles and reports based on real-time data,",
+      "tags, rigid tagging guidelines, and gaps between literal tags and actual reader interests made recom-",
+      "The New York Times (NYT) relied on user-inputted topics during account creation and article tags to"
+    ],
+    "topics": [
+      "media",
+      "content",
+      "sector",
+      "through",
+      "creation",
+      "practical"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:45:10.039883+00:00"
+  },
+  {
+    "id": "33e232495c664e9b",
+    "title": "Innovation-Oasis-0909.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/Innovation-Oasis-0909.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/Innovation-Oasis-0909.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "Innovation-Oasis-0909.pdf. Strategy, Regulations, Ethics & Compliance Gathering and consolidating 500+ billion Arabic words for model training Exhibit 6: GenAI impact on Saudi Arabia GDP (2024-2030, in SAR BN) Pledging $1 billion for the largest GenAI accelerator Computing Capacity Data Foundation Models",
+    "key_points": [
+      "Strategy, Regulations, Ethics & Compliance",
+      "Gathering and consolidating 500+ billion Arabic words for model training",
+      "Exhibit 6: GenAI impact on Saudi Arabia GDP (2024-2030, in SAR BN)",
+      "Pledging $1 billion for the largest GenAI accelerator",
+      "Computing Capacity Data Foundation Models"
+    ],
+    "topics": [
+      "yhiph",
+      "saudi",
+      "arabia",
+      "genai",
+      "pvuhs",
+      "innovation"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:45:04.680378+00:00"
+  },
+  {
+    "id": "7228a6351c79dae0",
+    "title": "GrowthAlgebra.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/GrowthAlgebra.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/GrowthAlgebra.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "GrowthAlgebra.pdf. Note: Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI. Note: Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI. Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI. Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI. Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI.",
+    "key_points": [
+      "Note: Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI.",
+      "Note: Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI.",
+      "Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI.",
+      "Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI.",
+      "Estimates sourced from a computer-based analysis of work tasks’ exposure to impact of generative AI."
+    ],
+    "topics": [
+      "potential",
+      "automation",
+      "generative",
+      "tasks",
+      "impact",
+      "augmentation"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:44:48.535159+00:00"
+  },
+  {
+    "id": "0aba3ab04626779c",
+    "title": "GAIN.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/GAIN.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/GAIN.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "GAIN.pdf. and Chairman of Saudi Data & AI Authority (SDAIA) and practical realities when exploring the potential of AI. prioritizing participation over competition. significant initiatives and programs, as well as signing of over 80 local and international in generative AI, the Third Edition of the Global AI Summit, held from September 10-12,",
+    "key_points": [
+      "and Chairman of Saudi Data & AI Authority (SDAIA)",
+      "and practical realities when exploring the potential of AI.",
+      "prioritizing participation over competition.",
+      "significant initiatives and programs, as well as signing of over 80 local and international",
+      "in generative AI, the Third Edition of the Global AI Summit, held from September 10-12,"
+    ],
+    "topics": [
+      "summit",
+      "global",
+      "overview",
+      "future",
+      "introduction",
+      "third"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:44:40.296429+00:00"
+  },
+  {
+    "id": "19436f057b0de8bc",
+    "title": "SDAIAPublications08.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications08.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications08.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications08.pdf. ) علـــى أنهـــا علـــمData Analyticsتُعـــرّف تحليـــلات البيانـــات يمكـــن تقســـيم تحليـــلات البيانـــات إلـــى أربعـــة أنـــواع بحســـب القـــدرات التحليليـــة والحاجـــة إلـــى مدخـــلات بشـــرية وإمكانيـــة تعزيـــز القـــرار والعالمـــي — بـــإذن اللـــه تعالـــى وتوفيقـــه — فـــي تكريـــس التقنيـــات الحديثـــة لبنـــاء اقتصـــاد متيـــن ورعايـــة حيـــاة كريمـــة لأبنـــاء هـــذا .3هـــذه التقنيـــات والقـــدرات المميـــزة لـــكل واحـــد منهـــا تحـــت إطـــار مجموعـــة مـــن العمليـــات التـــي قـــد تتجـــه للعموميـــة أو التخصصيـــة وفـــي ظـــل الدعـــم اللامحـــدود الـــذي تحظـــى بـــه ســـدايا وغيرهـــا مـــن القطاعـــات فـــي المملكـــة مـــن مـــولاي خـــادم الحرميـــن الشـــريفين",
+    "key_points": [
+      ") علـــى أنهـــا علـــمData Analyticsتُعـــرّف تحليـــلات البيانـــات",
+      "يمكـــن تقســـيم تحليـــلات البيانـــات إلـــى أربعـــة أنـــواع بحســـب القـــدرات التحليليـــة والحاجـــة إلـــى مدخـــلات بشـــرية وإمكانيـــة تعزيـــز القـــرار",
+      "والعالمـــي — بـــإذن اللـــه تعالـــى وتوفيقـــه — فـــي تكريـــس التقنيـــات الحديثـــة لبنـــاء اقتصـــاد متيـــن ورعايـــة حيـــاة كريمـــة لأبنـــاء هـــذا",
+      ".3هـــذه التقنيـــات والقـــدرات المميـــزة لـــكل واحـــد منهـــا تحـــت إطـــار مجموعـــة مـــن العمليـــات التـــي قـــد تتجـــه للعموميـــة أو التخصصيـــة",
+      "وفـــي ظـــل الدعـــم اللامحـــدود الـــذي تحظـــى بـــه ســـدايا وغيرهـــا مـــن القطاعـــات فـــي المملكـــة مـــن مـــولاي خـــادم الحرميـــن الشـــريفين"
+    ],
+    "topics": [
+      "analytics"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:43:49.102665+00:00"
+  },
+  {
+    "id": "916fd40142783e61",
+    "title": "SDAIAPublications07.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications07.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications07.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications07.pdf. https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-modeling-the-impact-of-ai-on-the-world- https://www2.deloitte.com/cn/en/pages/about-deloitte/articles/state-of-ai-in-the- Notes from the AI frontier: Modeling the impact of AI on the world economy. تتســابق كثيــر مــن الــدول المتقدمــة لتســخير الــذكاء الاصطناعــي فــي بنــاء اقتصــادات متينــة تعتمــد علــى البيانــات والتقنيــات الحديثــة تتمثــل أهميــة هــذا المبــدأ فــي الحاجــة إلــى تطويــر أنظمــة ذكاء اصطناعــي واســتخدامها لدعــم مســتقبل مســتدام وتعزيــز الأثــر الإيجابــي",
+    "key_points": [
+      "https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-modeling-the-impact-of-ai-on-the-world-",
+      "https://www2.deloitte.com/cn/en/pages/about-deloitte/articles/state-of-ai-in-the-",
+      "Notes from the AI frontier: Modeling the impact of AI on the world economy.",
+      "تتســابق كثيــر مــن الــدول المتقدمــة لتســخير الــذكاء الاصطناعــي فــي بنــاء اقتصــادات متينــة تعتمــد علــى البيانــات والتقنيــات الحديثــة",
+      "تتمثــل أهميــة هــذا المبــدأ فــي الحاجــة إلــى تطويــر أنظمــة ذكاء اصطناعــي واســتخدامها لدعــم مســتقبل مســتدام وتعزيــز الأثــر الإيجابــي"
+    ],
+    "topics": [
+      "https",
+      "state",
+      "sizing",
+      "prize",
+      "report",
+      "notes"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:43:35.344406+00:00"
+  },
+  {
+    "id": "d490bd72f977f506",
+    "title": "SDAIAPublications13.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications13.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications13.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications13.pdf. ensuring its privacy and compliance with national and international regulations and policies, as data is fundamental for 1 Illustrates various focus areas and the intersection between data strategy and AI strategy, achieving AI Strategy is transformed into an actionable plan that outlines a roadmap, implementation timeline, phased targets, various roles, Benchmarking and comprehensive evaluation of organization operations, activities, and both cognitive and operational capabilities best practices, enable continuous improvement, and update the strategic plan to stay on track and achieve long-term success.",
+    "key_points": [
+      "ensuring its privacy and compliance with national and international regulations and policies, as data is fundamental for",
+      "1 Illustrates various focus areas and the intersection between data strategy and AI strategy, achieving",
+      "AI Strategy is transformed into an actionable plan that outlines a roadmap, implementation timeline, phased targets, various roles,",
+      "Benchmarking and comprehensive evaluation of organization operations, activities, and both cognitive and operational capabilities",
+      "best practices, enable continuous improvement, and update the strategic plan to stay on track and achieve long-term success."
+    ],
+    "topics": [
+      "strategy",
+      "organization",
+      "achieve",
+      "strategic",
+      "using",
+      "business"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:43:20.024221+00:00"
+  },
+  {
+    "id": "936154673ec8b0cb",
+    "title": "AdoptionOfArtificialIntelligenceSystemsGuidleline.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AdoptionOfArtificialIntelligenceSystemsGuidleline.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/AdoptionOfArtificialIntelligenceSystemsGuidleline.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AdoptionOfArtificialIntelligenceSystemsGuidleline.pdf. Organizations often resort to this option when suitable commercial solutions are unavailable, data privacy ϐ Difficulty ensuring data privacy and obtaining intellectual property rights It is important to ensure compliance with data the organization if it does not possess the required data or technical capabilities, or it needs to reduce the time contributes to accelerating system implementation and learning about best practices in the field, in addition",
+    "key_points": [
+      "Organizations often resort to this option when suitable commercial solutions are unavailable, data privacy",
+      "ϐ Difficulty ensuring data privacy and obtaining intellectual property rights",
+      "It is important to ensure compliance with data",
+      "the organization if it does not possess the required data or technical capabilities, or it needs to reduce the time",
+      "contributes to accelerating system implementation and learning about best practices in the field, in addition"
+    ],
+    "topics": [
+      "systems",
+      "organization",
+      "adopting",
+      "system",
+      "adoption",
+      "executives"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:43:00.528574+00:00"
+  },
+  {
+    "id": "9cf73ad7ef96659b",
+    "title": "StateofAIinSaudiArabia.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/StateofAIinSaudiArabia.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/StateofAIinSaudiArabia.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "StateofAIinSaudiArabia.pdf. established the Saudi Data & AI Authority (SDAIA) in 2019 to achieve its National Strategy for Data & & AI Authority (SDAIA) in 2019 to drive the national agenda for data and AI. best practices in the ﬁeld of data centers and for Estishraf platform and National Data Bank for Estishraf platform and National Data Bank",
+    "key_points": [
+      "established the Saudi Data & AI Authority (SDAIA) in 2019 to achieve its National Strategy for Data &",
+      "& AI Authority (SDAIA) in 2019 to drive the national agenda for data and AI.",
+      "best practices in the ﬁeld of data centers and",
+      "for Estishraf platform and National Data Bank",
+      "for Estishraf platform and National Data Bank"
+    ],
+    "topics": [
+      "saudi",
+      "arabia",
+      "sdaia",
+      "global",
+      "government",
+      "innovation"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:42:42.460281+00:00"
+  },
+  {
+    "id": "76f1a98dd8568688",
+    "title": "SDAIAPublications12.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications12.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications12.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications12.pdf. data and regulate its use in a manner that ensures privacy protection and supports eco- President of the Saudi Data and Artificial Intelligence Authority diligently to achieve optimal utilization of the potential of data and artificial intelligence. Data and artificial intelligence are experiencing rapid development and increasing applica- Artificial Intelligence Authority (SDAIA) has launched a set of national policies to govern",
+    "key_points": [
+      "data and regulate its use in a manner that ensures privacy protection and supports eco-",
+      "President of the Saudi Data and Artificial Intelligence Authority",
+      "diligently to achieve optimal utilization of the potential of data and artificial intelligence.",
+      "Data and artificial intelligence are experiencing rapid development and increasing applica-",
+      "Artificial Intelligence Authority (SDAIA) has launched a set of national policies to govern"
+    ],
+    "topics": [
+      "standards",
+      "development",
+      "global",
+      "artificial",
+      "intelligence",
+      "smart"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:42:35.018822+00:00"
+  },
+  {
+    "id": "8819538e5ccd6364",
+    "title": "SDAIAPublications02.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications02.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications02.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications02.pdf. خــادم الحرميــن الشــريفين الملــك ســلمان بــن عبدالعزيــز — حفظــه اللــه ورعــاه — الــذي أفصــح عنــه بقولــه: \"هدفــي الأول أن تكــون بلادنــا نموذجــاً مجــالات البيانــات والــذكاء الاصطناعــي وتبنــي أحــدث التقنيــات لتوفيــر بنيــة تقنيــة رائــدة عــن طريــق الســحابة الحكوميــة ديــم، وإدارة البيانــات وفــي ظــل الدعــم المســتمر مــن مــولاي خــادم الحرميــن الشــريفين وســمو ولــي عهــده الأميــن لتشــجيع مبــادرات التحــول الرقمــي وتبنــي التقنيــات ، فإننــا نتطلــع إلــى تكاتــف الجهــود الوطنيــة فــي الاســتفادة مــن التقنيــات الحديثــة المعتمــدة علــى 2030الحديثــة والســعي إلــى تحقيــق رؤيــة والوصــول إلــى هــدف مــولاي 2030استشــراف التقنيــات الحديثــة المتوقــع انتشــارها فــي الســنوات المقبلــة للإســهام فــي تحقيــق رؤيــة المملكــة",
+    "key_points": [
+      "خــادم الحرميــن الشــريفين الملــك ســلمان بــن عبدالعزيــز — حفظــه اللــه ورعــاه — الــذي أفصــح عنــه بقولــه: \"هدفــي الأول أن تكــون بلادنــا نموذجــاً",
+      "مجــالات البيانــات والــذكاء الاصطناعــي وتبنــي أحــدث التقنيــات لتوفيــر بنيــة تقنيــة رائــدة عــن طريــق الســحابة الحكوميــة ديــم، وإدارة البيانــات",
+      "وفــي ظــل الدعــم المســتمر مــن مــولاي خــادم الحرميــن الشــريفين وســمو ولــي عهــده الأميــن لتشــجيع مبــادرات التحــول الرقمــي وتبنــي التقنيــات",
+      "، فإننــا نتطلــع إلــى تكاتــف الجهــود الوطنيــة فــي الاســتفادة مــن التقنيــات الحديثــة المعتمــدة علــى 2030الحديثــة والســعي إلــى تحقيــق رؤيــة",
+      "والوصــول إلــى هــدف مــولاي 2030استشــراف التقنيــات الحديثــة المتوقــع انتشــارها فــي الســنوات المقبلــة للإســهام فــي تحقيــق رؤيــة المملكــة"
+    ],
+    "topics": [],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:42:28.559854+00:00"
+  },
+  {
+    "id": "034e6576ef81e353",
+    "title": "SDAIAPublications06.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications06.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications06.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications06.pdf. UN Activities on\f\u0003ŪƸƸƸĸĔĖ\u0003ēƻĴƸƸƸŻĴŝĜ\u0003ěǘĔƸƸƸŁĜǙŤ\u0003ŽƸƸƸŤŴİŤē\u0003įĔƸƸƸĩĜǘē\u0003ĳİƸƸƸŁƿŻ \u0018\u0011\u0003 &RZOV\u000f\u0003-\u0011\u000f\u00037 VDPDGRV\u000f\u0003$\u0011\u000f\u00037 DGGHR\u000f\u00030\u0011\u0003 \u0003)ORULGL\u000f\u0003/\u0011\u0003$\u0003'H¿QLWLRQ\u000f\u0003%HQFKPDUN\u0003DQG\u0003'DWDEDVH\u0003RI\u0003$,\u0003IRU\u00036RFLDO\u0003*RRG\u0003,QLWLDWLYHV\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011QDWXUH\u0011FRP\u0012DUWLFOHV\u0012V\u0017\u0015\u0015\u0018\u0019\u0010\u0013\u0015\u0014\u0010\u0013\u0013\u0015\u001c\u0019\u0010\u0013\u0003\u000b\u0015\u0013\u0015\u0014\f\u0011 \u0014\u0011\u0003 %XJKLQ\u000f\u0003-\u0011\u000f\u00036HRQJ\u000f\u0003-\u0011\u000f\u00030DQ\\LND\u000f\u0003-\u0011\u000f\u0003&KXL\u000f\u00030\u0011\u0003 \u0003-RVKL\u000f\u00035\u0011\u00030RGHOLQJ\u0003WKH\u0003*OREDO\u0003(FRQRPLF\u0003,PSDFW\u0003RI\u0003$,\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011PFNLQVH\\\u0011FRP\u0012IHDWXUHG\u0010LQVLJKWV\u0012DUWL¿FLDO\u0010LQWHOOLJHQFH\u0012QRWHV\u0010IURP\u0010\u0003 \u0003 \u0015\u0011\u0003 3Z&¶V\u0003*OREDO\u0003$UWL¿FLDO\u0003,QWHOOLJHQFH\u00036WXG\\\u001d\u00036L]LQJ\u0003WKH\u0003SUL]H\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011SZF\u0011FRP\u0012J[\u0012HQ\u0012LVVXHV\u0012GDWD\u0010DQG\u0010DQDO\\WLFV\u0012SXEOLFDWLRQV\u0012DUWL¿FLDO\u0010LQWHOOLJHQFH\u0010VWXG\\\u0011KWPO\u0003\u000b\u0015\u0013\u0014\u001a\f\u0011 \u0016\u0011\u0003 9LQXHVD\u000f\u00035\u0011\u0003HW\u0003DO\u0011\u00037KH\u00035ROH\u0003RI\u0003$UWL¿FLDO\u0003,QWHOOLJHQFH\u0003LQ\u0003$FKLHYLQJ\u0003WKH\u00036XVWDLQDEOH\u0003'HYHORSPHQW\u0003*RDOV\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011QDWXUH\u0011FRP\u0012DUWLFOHV\u0012V\u0017\u0014\u0017\u0019\u001a\u0010\u0013\u0014\u001c\u0010\u0014\u0017\u0014\u0013\u001b\u0010\\\u0003\u000b\u0015\u0013\u0015\u0013\f\u0011",
+    "key_points": [
+      "UN Activities on\f\u0003ŪƸƸƸĸĔĖ\u0003ēƻĴƸƸƸŻĴŝĜ\u0003ěǘĔƸƸƸŁĜǙŤ\u0003ŽƸƸƸŤŴİŤē\u0003įĔƸƸƸĩĜǘē\u0003ĳİƸƸƸŁƿŻ",
+      "\u0018\u0011\u0003 &RZOV\u000f\u0003-\u0011\u000f\u00037 VDPDGRV\u000f\u0003$\u0011\u000f\u00037 DGGHR\u000f\u00030\u0011\u0003 \u0003)ORULGL\u000f\u0003/\u0011\u0003$\u0003'H¿QLWLRQ\u000f\u0003%HQFKPDUN\u0003DQG\u0003'DWDEDVH\u0003RI\u0003$,\u0003IRU\u00036RFLDO\u0003*RRG\u0003,QLWLDWLYHV\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011QDWXUH\u0011FRP\u0012DUWLFOHV\u0012V\u0017\u0015\u0015\u0018\u0019\u0010\u0013\u0015\u0014\u0010\u0013\u0013\u0015\u001c\u0019\u0010\u0013\u0003\u000b\u0015\u0013\u0015\u0014\f\u0011",
+      "\u0014\u0011\u0003 %XJKLQ\u000f\u0003-\u0011\u000f\u00036HRQJ\u000f\u0003-\u0011\u000f\u00030DQ\\LND\u000f\u0003-\u0011\u000f\u0003&KXL\u000f\u00030\u0011\u0003 \u0003-RVKL\u000f\u00035\u0011\u00030RGHOLQJ\u0003WKH\u0003*OREDO\u0003(FRQRPLF\u0003,PSDFW\u0003RI\u0003$,\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011PFNLQVH\\\u0011FRP\u0012IHDWXUHG\u0010LQVLJKWV\u0012DUWL¿FLDO\u0010LQWHOOLJHQFH\u0012QRWHV\u0010IURP\u0010\u0003 \u0003",
+      "\u0015\u0011\u0003 3Z&¶V\u0003*OREDO\u0003$UWL¿FLDO\u0003,QWHOOLJHQFH\u00036WXG\\\u001d\u00036L]LQJ\u0003WKH\u0003SUL]H\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011SZF\u0011FRP\u0012J[\u0012HQ\u0012LVVXHV\u0012GDWD\u0010DQG\u0010DQDO\\WLFV\u0012SXEOLFDWLRQV\u0012DUWL¿FLDO\u0010LQWHOOLJHQFH\u0010VWXG\\\u0011KWPO\u0003\u000b\u0015\u0013\u0014\u001a\f\u0011",
+      "\u0016\u0011\u0003 9LQXHVD\u000f\u00035\u0011\u0003HW\u0003DO\u0011\u00037KH\u00035ROH\u0003RI\u0003$UWL¿FLDO\u0003,QWHOOLJHQFH\u0003LQ\u0003$FKLHYLQJ\u0003WKH\u00036XVWDLQDEOH\u0003'HYHORSPHQW\u0003*RDOV\u0011\u0003KWWSV\u001d\u0012\u0012ZZZ\u0011QDWXUH\u0011FRP\u0012DUWLFOHV\u0012V\u0017\u0014\u0017\u0019\u001a\u0010\u0013\u0014\u001c\u0010\u0014\u0017\u0014\u0013\u001b\u0010\\\u0003\u000b\u0015\u0013\u0015\u0013\f\u0011"
+    ],
+    "topics": [
+      "kwwsv",
+      "qwhooljhqfh",
+      "oredo",
+      "united",
+      "nations",
+      "lqwhooljhqfh"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:42:17.651489+00:00"
+  },
+  {
+    "id": "c54991d7e6c9a83e",
+    "title": "SDAIAPublications10.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications10.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications10.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications10.pdf. تعــد إدارة الأزمــات مــن العلــوم المهمــة والحيويــة التــي تتبناهــا الــدول لمنــع أو )، حيــث كانــت بمثابــة التحــدي الأكبــر لاختبــار جــدوى 19-أثنــاء جائحــة (كوفيــد تقليــل الضــرر الناتــج عــن الأزمــات بــكل صورهــا، وظهــرت أهميتهــا جليًــا فــي مــن خــال إطــار عــام يغطــي أبــرز التجــارب العالميــة خــال إدارة أزمــة جائحــة خــال توفيــر المعلومــات وتحليلهــا ودعــم اتخــاذ القــرار، وتبيــن ذلــك جليًــا",
+    "key_points": [
+      "تعــد إدارة الأزمــات مــن العلــوم المهمــة والحيويــة التــي تتبناهــا الــدول لمنــع أو",
+      ")، حيــث كانــت بمثابــة التحــدي الأكبــر لاختبــار جــدوى 19-أثنــاء جائحــة (كوفيــد",
+      "تقليــل الضــرر الناتــج عــن الأزمــات بــكل صورهــا، وظهــرت أهميتهــا جليًــا فــي",
+      "مــن خــال إطــار عــام يغطــي أبــرز التجــارب العالميــة خــال إدارة أزمــة جائحــة",
+      "خــال توفيــر المعلومــات وتحليلهــا ودعــم اتخــاذ القــرار، وتبيــن ذلــك جليًــا"
+    ],
+    "topics": [
+      "gartner",
+      "universite",
+      "montreal",
+      "pulse"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:41:54.739218+00:00"
+  },
+  {
+    "id": "21a72d019d161f3b",
+    "title": "SDAIAPublications01.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications01.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications01.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications01.pdf. المتحــدة الأمريكيــة وقّــع الرئيــس الأمريكــي قــرارًا تنفيذيًــا مــن شــأنه تعليــق خاصــةً مــع قلــة الــدول التــي تمتلــك أُطــرًا تنظيميــةً للتعامــل مــع التدابيــر العالميــة، بالإضافــة إلــى بنــاء أُطــر عمــل لتبــادل البيانــات بيــن الجهــات الناشــئة التــي لــم تركــز علــى حلــول لمعالجــة آثــار الجائحــة العديــد مــن محوريًــا فــي توفيــر البيانــات الازمــة لتفعيــل تقنيــات الــذكاء الاصطناعــي",
+    "key_points": [
+      "المتحــدة الأمريكيــة وقّــع الرئيــس الأمريكــي قــرارًا تنفيذيًــا مــن شــأنه تعليــق",
+      "خاصــةً مــع قلــة الــدول التــي تمتلــك أُطــرًا تنظيميــةً للتعامــل مــع التدابيــر",
+      "العالميــة، بالإضافــة إلــى بنــاء أُطــر عمــل لتبــادل البيانــات بيــن الجهــات",
+      "الناشــئة التــي لــم تركــز علــى حلــول لمعالجــة آثــار الجائحــة العديــد مــن",
+      "محوريًــا فــي توفيــر البيانــات الازمــة لتفعيــل تقنيــات الــذكاء الاصطناعــي"
+    ],
+    "topics": [
+      "microsoft",
+      "opendemocracy",
+      "google",
+      "palantir",
+      "hipaa"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:41:46.358332+00:00"
+  },
+  {
+    "id": "cc13f9f9ff9ab3e1",
+    "title": "SDAIAPublications04.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications04.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications04.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications04.pdf. availability, data accuracy, data privacy, and the lack of effective cooperation among public In the Kingdom of Saudi Arabia, the Saudi Data & AI Authority (SDAIA) plays an essential President of Saudi Data & AI Authority (SDAIA) scientific references, websites that collect relevant resources, and open tools and datasets. as early warning, predictive models, screening and diagnosis, statistics, contact tracing,",
+    "key_points": [
+      "availability, data accuracy, data privacy, and the lack of effective cooperation among public",
+      "In the Kingdom of Saudi Arabia, the Saudi Data & AI Authority (SDAIA) plays an essential",
+      "President of Saudi Data & AI Authority (SDAIA)",
+      "scientific references, websites that collect relevant resources, and open tools and datasets.",
+      "as early warning, predictive models, screening and diagnosis, statistics, contact tracing,"
+    ],
+    "topics": [
+      "covid",
+      "solutions",
+      "saudi",
+      "report",
+      "challenges",
+      "sectors"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:41:40.524538+00:00"
+  },
+  {
+    "id": "b8925bf7eb406168",
+    "title": "SDAIAPublications03.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications03.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/SDAIAPublications03.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "SDAIAPublications03.pdf. للبيانـات والـذكاء الاصطناعـي (سـدايا) إلا خيـر شـاهد علـى اهتمـام قيادتنـا الرشـيدة بأحـدث التقنيـات التـي تمكـن جميـع القطاعـات العامـة والخاصـة وبفضـل اللـه –سـبحانه وتعالـى– تتميـز المملكـة العربيـة السـعودية ببنيـة تحتيـة وتقنيـة رائـدة علـى مسـتوى العالـم ممـا يؤهلهـا لتكـون فـي صـدارة العالميـــة فـــي التجهيـــز لتبنيهـــا، إضافـــةً إلى ذكر أبـــرز التحديـــات الحالية التـــي تواجه تبنـــي هذه المركبـــات، والتطـــرق إلى بعض مـن رفـع جودتهـا وتحسـين إنتاجيتهـا لبنـاء اقتصـاد متيـن ومسـتدام وتوفيـر بيئـة خصبـة لرفاهيـة المواطنيـن وتعزيز وسـائل الراحة والأمـان في جميع ولذلـك ركـزت الإسـتراتيجية الوطنيـة للبيانـات والـذكاء الاصطناعـي (نُسـدي) علـى هـذا القطـاع ضمـن القطاعـات ذات الأولويـة القصـوى لتمكينه عن",
+    "key_points": [
+      "للبيانـات والـذكاء الاصطناعـي (سـدايا) إلا خيـر شـاهد علـى اهتمـام قيادتنـا الرشـيدة بأحـدث التقنيـات التـي تمكـن جميـع القطاعـات العامـة والخاصـة",
+      "وبفضـل اللـه –سـبحانه وتعالـى– تتميـز المملكـة العربيـة السـعودية ببنيـة تحتيـة وتقنيـة رائـدة علـى مسـتوى العالـم ممـا يؤهلهـا لتكـون فـي صـدارة",
+      "العالميـــة فـــي التجهيـــز لتبنيهـــا، إضافـــةً إلى ذكر أبـــرز التحديـــات الحالية التـــي تواجه تبنـــي هذه المركبـــات، والتطـــرق إلى بعض",
+      "مـن رفـع جودتهـا وتحسـين إنتاجيتهـا لبنـاء اقتصـاد متيـن ومسـتدام وتوفيـر بيئـة خصبـة لرفاهيـة المواطنيـن وتعزيز وسـائل الراحة والأمـان في جميع",
+      "ولذلـك ركـزت الإسـتراتيجية الوطنيـة للبيانـات والـذكاء الاصطناعـي (نُسـدي) علـى هـذا القطـاع ضمـن القطاعـات ذات الأولويـة القصـوى لتمكينه عن"
+    ],
+    "topics": [
+      "international"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:41:17.589494+00:00"
+  },
+  {
+    "id": "9357bac9474e30ee",
+    "title": "AINewsletter16July2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter16July2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter16July2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter16July2026.pdf. reviewing scientific literature, generating hypotheses, analyzing data, writing hostile actors and extremist groups, while enhancing AI safety and security at with a globally beneficial impact and outlining a new roadmap toward a more وﻳﺄﺗﻲ ﻫﺬا اﻟﻤﺨﺘﱪ اﻣﺘﺪادًا ﻟﺘﻌﺎون ﺑﺤﱻ ﺳﺎﺑﻖ ﺑﲔ اﻟﺠﺎﻧﺒﲔ، ﻣﻊ ﺗﻮﺳّﻊ ﻓﻲ اﻟﱰﻛﲒ ﻟﻴﺸﻤﻞ ﺗﻄﻮﻳﺮ (، ﻳﻬﺪف إﱃ MIT-IBM Computing Research Lab( اﻷﻣﺮﻳﻜﻴﺔ ﻣﺨﺘﱪاً ﺑﺤﺜﻴﺎً ﺟﺪﻳﺪاً ﺑﺎﺳﻢ IBM)",
+    "key_points": [
+      "reviewing scientific literature, generating hypotheses, analyzing data, writing",
+      "hostile actors and extremist groups, while enhancing AI safety and security at",
+      "with a globally beneficial impact and outlining a new roadmap toward a more",
+      "وﻳﺄﺗﻲ ﻫﺬا اﻟﻤﺨﺘﱪ اﻣﺘﺪادًا ﻟﺘﻌﺎون ﺑﺤﱻ ﺳﺎﺑﻖ ﺑﲔ اﻟﺠﺎﻧﺒﲔ، ﻣﻊ ﺗﻮﺳّﻊ ﻓﻲ اﻟﱰﻛﲒ ﻟﻴﺸﻤﻞ ﺗﻄﻮﻳﺮ",
+      "(، ﻳﻬﺪف إﱃ MIT-IBM Computing Research Lab( اﻷﻣﺮﻳﻜﻴﺔ ﻣﺨﺘﱪاً ﺑﺤﺜﻴﺎً ﺟﺪﻳﺪاً ﺑﺎﺳﻢ IBM)"
+    ],
+    "topics": [
+      "source",
+      "researchers",
+      "artificial",
+      "intelligence",
+      "security",
+      "development"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:41:13.846213+00:00"
+  },
+  {
+    "id": "44e839809cf60057",
+    "title": "AINewsletter09July2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter09July2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter09July2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter09July2026.pdf. more compliant when interacting with individuals in positions of authority. increasing risks, including misinformation, cyberattacks, biological threats, and the interactions may lead to emotional dependency and social isolation, particularly Company, backed by a $2.5 billion investment (approximately SAR 9.4 billion) to tactile sensor that changes color in response to pressure, enabling robots to",
+    "key_points": [
+      "more compliant when interacting with individuals in positions of authority.",
+      "increasing risks, including misinformation, cyberattacks, biological threats, and the",
+      "interactions may lead to emotional dependency and social isolation, particularly",
+      "Company, backed by a $2.5 billion investment (approximately SAR 9.4 billion) to",
+      "tactile sensor that changes color in response to pressure, enabling robots to"
+    ],
+    "topics": [
+      "intelligence",
+      "source",
+      "researchers",
+      "artificial",
+      "development",
+      "security"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:58.679560+00:00"
+  },
+  {
+    "id": "7ab0623f4e8badcd",
+    "title": "AINewsletter02July2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter02July2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter02July2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter02July2026.pdf. that shifting part of the electricity consumption of AI data centers to off-peak greater flexibility in scheduling data center workloads, along with regulatory Researchers Propose Solutions to Reduce Energy Consumption in AI Data Centers photonic device that integrates light sensing, signal processing, and data within its data center campus in Mount Pleasant, Wisconsin, following the",
+    "key_points": [
+      "that shifting part of the electricity consumption of AI data centers to off-peak",
+      "greater flexibility in scheduling data center workloads, along with regulatory",
+      "Researchers Propose Solutions to Reduce Energy Consumption in AI Data Centers",
+      "photonic device that integrates light sensing, signal processing, and data",
+      "within its data center campus in Mount Pleasant, Wisconsin, following the"
+    ],
+    "topics": [
+      "source",
+      "researchers",
+      "energy",
+      "efficiency",
+      "government",
+      "developed"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:48.811142+00:00"
+  },
+  {
+    "id": "60c42b8ef307000d",
+    "title": "AINewsletter25June2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter25June2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter25June2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter25June2026.pdf. of AI agents within enterprises, including solutions for cybersecurity, data capabilities by allocating £1.1 billion (approximately 5.5 billion Saudi Riyals) to support The United States Is Giving AI Data Centers Faster Priority for Connecting to Power Grids enabling authorities to take proactive measures to protect residents and improve service intelligence-based system to analyze social housing data and predict potential safety",
+    "key_points": [
+      "of AI agents within enterprises, including solutions for cybersecurity, data",
+      "capabilities by allocating £1.1 billion (approximately 5.5 billion Saudi Riyals) to support",
+      "The United States Is Giving AI Data Centers Faster Priority for Connecting to Power Grids",
+      "enabling authorities to take proactive measures to protect residents and improve service",
+      "intelligence-based system to analyze social housing data and predict potential safety"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "source",
+      "click",
+      "companies",
+      "services"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:36.338050+00:00"
+  },
+  {
+    "id": "36606ee211b3252f",
+    "title": "AINewsletter11Jun2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter11Jun2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter11Jun2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter11Jun2026.pdf. way for the adoption of smaller, more efficient AI models for data analysis and scientific them from cyber threats, and emphasizing the use of these technologies in accordance development of more advanced AI agents by improving performance, accelerating data textual descriptions, numerical data, and training questions that help the models researchers from the MIT-IBM Research Computing Laboratory, developed a database",
+    "key_points": [
+      "way for the adoption of smaller, more efficient AI models for data analysis and scientific",
+      "them from cyber threats, and emphasizing the use of these technologies in accordance",
+      "development of more advanced AI agents by improving performance, accelerating data",
+      "textual descriptions, numerical data, and training questions that help the models",
+      "researchers from the MIT-IBM Research Computing Laboratory, developed a database"
+    ],
+    "topics": [
+      "intelligence",
+      "artificial",
+      "models",
+      "researchers",
+      "source",
+      "development"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:31.785573+00:00"
+  },
+  {
+    "id": "f41c28328395366b",
+    "title": "AINewsletter04Jun2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter04Jun2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter04Jun2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter04Jun2026.pdf. The Bank of Italy announced it is in contact with global artificial intelligence (AI) Bank of Italy Discusses Cyber Risks to Banks with AI Companies Researchers Reveal That Users Prefer Chatbots with Characteristics Similar to Themselves cybersecurity capabilities have raised concerns among officials and global leaders about model, which was designed to enhance cybersecurity but could also be used to facilitate",
+    "key_points": [
+      "The Bank of Italy announced it is in contact with global artificial intelligence (AI)",
+      "Bank of Italy Discusses Cyber Risks to Banks with AI Companies",
+      "Researchers Reveal That Users Prefer Chatbots with Characteristics Similar to Themselves",
+      "cybersecurity capabilities have raised concerns among officials and global leaders about",
+      "model, which was designed to enhance cybersecurity but could also be used to facilitate"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "researchers",
+      "source",
+      "click",
+      "company"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:27.803679+00:00"
+  },
+  {
+    "id": "6167c71c86694050",
+    "title": "AINewsletter25May2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter25May2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter25May2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter25May2026.pdf. the AI models by analyzing massive amounts of data and chemical reactions to predict Researchers Develop a Sound System That Enhances Human Interaction with Artificial Intelligence employment patterns by analyzing historical data related to jobs and the skills required make interaction with artificial intelligence (AI) systems more realistic and closer to the AI systems appear more interactive and natural in their communication with",
+    "key_points": [
+      "the AI models by analyzing massive amounts of data and chemical reactions to predict",
+      "Researchers Develop a Sound System That Enhances Human Interaction with Artificial Intelligence",
+      "employment patterns by analyzing historical data related to jobs and the skills required",
+      "make interaction with artificial intelligence (AI) systems more realistic and closer to",
+      "the AI systems appear more interactive and natural in their communication with"
+    ],
+    "topics": [
+      "intelligence",
+      "artificial",
+      "researchers",
+      "models",
+      "source",
+      "click"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:23.569532+00:00"
+  },
+  {
+    "id": "37a9a362323c4f93",
+    "title": "AINewsletter21May2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter21May2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter21May2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter21May2026.pdf. resilience of the European banking sector against future cyber threats, particularly given and financial institutions to take proactive steps to mitigate the cyber risks associated The European Central Bank Warns Banks of AI-Powered Cyberattacks The British Government Is Calling on Financial Institutions to Strengthen Cybersecurity to Counter allows users to directly link their bank accounts and financial institutions to analyze",
+    "key_points": [
+      "resilience of the European banking sector against future cyber threats, particularly given",
+      "and financial institutions to take proactive steps to mitigate the cyber risks associated",
+      "The European Central Bank Warns Banks of AI-Powered Cyberattacks",
+      "The British Government Is Calling on Financial Institutions to Strengthen Cybersecurity to Counter",
+      "allows users to directly link their bank accounts and financial institutions to analyze"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "researchers",
+      "source",
+      "click",
+      "financial"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:18.619827+00:00"
+  },
+  {
+    "id": "140b1c7201334789",
+    "title": "AINewsletter14May2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter14May2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter14May2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter14May2026.pdf. Study Reveals Limited Impact of Artificial Intelligence on Cybercrime It revealed that the impact of AI on cyberattacks remains limited OpenAI, an American company, has made its latest models, including the GPT-5.5-Cyber model, movement data and past accident records to create interpretive rules that help air traffic systems and cybersecurity policies in parallel with the advancement of AI technologies.",
+    "key_points": [
+      "Study Reveals Limited Impact of Artificial Intelligence on Cybercrime",
+      "It revealed that the impact of AI on cyberattacks remains limited",
+      "OpenAI, an American company, has made its latest models, including the GPT-5.5-Cyber model,",
+      "movement data and past accident records to create interpretive rules that help air traffic",
+      "systems and cybersecurity policies in parallel with the advancement of AI technologies."
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "source",
+      "click",
+      "companies",
+      "technologies"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:09.268190+00:00"
+  },
+  {
+    "id": "7bcd3c53c4aa18af",
+    "title": "AINewsletter07May2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter07May2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter07May2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter07May2026.pdf. The US Department of Defense Signs an Artificial Intelligence Contract with Google to ask questions about products and get interactive voice answers in real time in method relies on modifying the representation of data within the model instead best practices for evaluating AI models in partnership with its international the adoption of generative AI applications and advanced data analytics.",
+    "key_points": [
+      "The US Department of Defense Signs an Artificial Intelligence Contract with Google",
+      "to ask questions about products and get interactive voice answers in real time in",
+      "method relies on modifying the representation of data within the model instead",
+      "best practices for evaluating AI models in partnership with its international",
+      "the adoption of generative AI applications and advanced data analytics."
+    ],
+    "topics": [
+      "intelligence",
+      "artificial",
+      "source",
+      "models",
+      "companies",
+      "computing"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:40:04.521928+00:00"
+  },
+  {
+    "id": "cd6f191952fb9011",
+    "title": "AINewsletter30Apr2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter30Apr2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter30Apr2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter30Apr2026.pdf. researchers tested these robots in practical experiments, demonstrating their ability Researchers from the University of Cambridge published a study on the impact of trillion operators, while V4 Flash contains 284 billion, showcasing significant The UK government has announced a £500 million (approximately SAR 2.3 billion) to use this tool to support the efficiency of data centers and reduce energy",
+    "key_points": [
+      "researchers tested these robots in practical experiments, demonstrating their ability",
+      "Researchers from the University of Cambridge published a study on the impact of",
+      "trillion operators, while V4 Flash contains 284 billion, showcasing significant",
+      "The UK government has announced a £500 million (approximately SAR 2.3 billion)",
+      "to use this tool to support the efficiency of data centers and reduce energy"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "models",
+      "researchers",
+      "source",
+      "click"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:52.701049+00:00"
+  },
+  {
+    "id": "e57fc117a2879641",
+    "title": "AINewsletter23Apr2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter23Apr2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter23Apr2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter23Apr2026.pdf. researchers, used a quantum computer to extract stable statistical patterns from data, The Bank of England said it is testing the risks that artificial intelligence could pose to the Study Reveals Transfer of Behavioral Traits Between Language Models Despite Data Cleaning artificial intelligence, cybersecurity, and engineering capabilities, aiming to help the high-quality synthetic data that mimics real-world conditions, enabling faster, safer,",
+    "key_points": [
+      "researchers, used a quantum computer to extract stable statistical patterns from data,",
+      "The Bank of England said it is testing the risks that artificial intelligence could pose to the",
+      "Study Reveals Transfer of Behavioral Traits Between Language Models Despite Data Cleaning",
+      "artificial intelligence, cybersecurity, and engineering capabilities, aiming to help the",
+      "high-quality synthetic data that mimics real-world conditions, enabling faster, safer,"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "source",
+      "click",
+      "researchers",
+      "models"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:47.927746+00:00"
+  },
+  {
+    "id": "3378082834e520ea",
+    "title": "AINewsletter16Apr2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter16Apr2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter16Apr2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter16Apr2026.pdf. sharing the results with banks and insurance companies to support their readiness. The US Government Calls on Banks to Test the (Methos) Model to Discover Security Vulnerabilities Financial regulators in the United Kingdom, in cooperation with cybersecurity authorities, developed by Anthropic, with the aim of enhancing banks' capabilities in discovering developed by Anthropic, known as Cloud Mythos Preview, in a proactive step aimed at",
+    "key_points": [
+      "sharing the results with banks and insurance companies to support their readiness.",
+      "The US Government Calls on Banks to Test the (Methos) Model to Discover Security Vulnerabilities",
+      "Financial regulators in the United Kingdom, in cooperation with cybersecurity authorities,",
+      "developed by Anthropic, with the aim of enhancing banks' capabilities in discovering",
+      "developed by Anthropic, known as Cloud Mythos Preview, in a proactive step aimed at"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "models",
+      "researchers",
+      "source",
+      "click"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:41.081499+00:00"
+  },
+  {
+    "id": "4e3e24712d8dead1",
+    "title": "AINewsletter09Apr2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter09Apr2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter09Apr2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter09Apr2026.pdf. regulations also prohibit interaction with minors to protect them from harmful use and China Issues New Regulations to Govern AI-Powered Virtual Characters China has issued draft regulations to govern so-called \"digital humans\" , artificially generated virtual characters, mandating clear labeling indicating that content is AI-generated. characteristic known as internal embodiment, that is, the ability to sense the body's",
+    "key_points": [
+      "regulations also prohibit interaction with minors to protect them from harmful use and",
+      "China Issues New Regulations to Govern AI-Powered Virtual Characters",
+      "China has issued draft regulations to govern so-called \"digital humans\" , artificially generated",
+      "virtual characters, mandating clear labeling indicating that content is AI-generated.",
+      "characteristic known as internal embodiment, that is, the ability to sense the body's"
+    ],
+    "topics": [
+      "intelligence",
+      "researchers",
+      "systems",
+      "source",
+      "artificial",
+      "companies"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:29.936933+00:00"
+  },
+  {
+    "id": "9ec5053c309e3c9c",
+    "title": "AINewsletter02Apr2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter02Apr2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter02Apr2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter02Apr2026.pdf. AI, with the company emphasizing the preservation of the privacy of conversations when have advanced government contracts, to implement measures to reduce harmful content, using new literary texts outside of the training data and with the participation of intelligence tools that support areas such as marketing, customer service, and data California Imposes New Regulations to Govern the Use of Artificial Intelligence",
+    "key_points": [
+      "AI, with the company emphasizing the preservation of the privacy of conversations when",
+      "have advanced government contracts, to implement measures to reduce harmful content,",
+      "using new literary texts outside of the training data and with the participation of",
+      "intelligence tools that support areas such as marketing, customer service, and data",
+      "California Imposes New Regulations to Govern the Use of Artificial Intelligence"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "researchers",
+      "source",
+      "click",
+      "company"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:21.402268+00:00"
+  },
+  {
+    "id": "0588b9917509e792",
+    "title": "AINewsletter18Mar2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter18Mar2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter18Mar2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter18Mar2026.pdf. Google Maps data, such as photos and user interactions within the application, and it deficiencies in understanding social interactions and may misinterpret children's feelings. competition among AI providers and enterprise software vendors to bring AI capabilities exploring the impact of AI tools on the creative process and determining their role in taxi rides through the Uber app, with the aim of enabling users to request Zoox rides",
+    "key_points": [
+      "Google Maps data, such as photos and user interactions within the application, and it",
+      "deficiencies in understanding social interactions and may misinterpret children's feelings.",
+      "competition among AI providers and enterprise software vendors to bring AI capabilities",
+      "exploring the impact of AI tools on the creative process and determining their role in",
+      "taxi rides through the Uber app, with the aim of enabling users to request Zoox rides"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "source",
+      "click",
+      "companies",
+      "company"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:15.765267+00:00"
+  },
+  {
+    "id": "ea5308733163da8b",
+    "title": "AINewsletter12Mar2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter12Mar2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter12Mar2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter12Mar2026.pdf. that the government require disclosure of training data, strengthen protections tactile sensor that gives robots a sense of touch closer to that of human skin. prototypes, and view the generated code through interactions with the Gemini AI to integrate AI across manufacturing and supply chains, expand digital economy problem stems from unlicensed use of creative content and limited transparency",
+    "key_points": [
+      "that the government require disclosure of training data, strengthen protections",
+      "tactile sensor that gives robots a sense of touch closer to that of human skin.",
+      "prototypes, and view the generated code through interactions with the Gemini AI",
+      "to integrate AI across manufacturing and supply chains, expand digital economy",
+      "problem stems from unlicensed use of creative content and limited transparency"
+    ],
+    "topics": [
+      "source",
+      "click",
+      "researchers",
+      "development",
+      "government",
+      "systems"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:07.498387+00:00"
+  },
+  {
+    "id": "970855306ddb76ec",
+    "title": "AINewsletter05Mar2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter05Mar2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter05Mar2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter05Mar2026.pdf. while AI can improve productivity, creators face a “reputational tax,” highlighting finishing each task and asked for permission before taking important actions like unstable states in fractions of a second—far faster than scientists previously financial or legal data, generate analysis, and publish results as websites or model supports resolutions from 512px to 4K, maintains character and object",
+    "key_points": [
+      "while AI can improve productivity, creators face a “reputational tax,” highlighting",
+      "finishing each task and asked for permission before taking important actions like",
+      "unstable states in fractions of a second—far faster than scientists previously",
+      "financial or legal data, generate analysis, and publish results as websites or",
+      "model supports resolutions from 512px to 4K, maintains character and object"
+    ],
+    "topics": [
+      "researchers",
+      "source",
+      "click",
+      "companies",
+      "tools",
+      "google"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:39:03.040585+00:00"
+  },
+  {
+    "id": "42454fcaef0644f1",
+    "title": "AINewsletter26Feb2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter26Feb2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter26Feb2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter26Feb2026.pdf. The aim is to enhance the protection of user data privacy from billion Saudi Riyals) by 2030 to expand the use of artificial intelligence technologies in characterized by its flexibility in performing tasks such as work management and providing secure an initial 100 megawatts of dedicated AI data center capacity in India, as part of Microsoft announced its plan to invest $50 billion (equivalent to approximately 187.5",
+    "key_points": [
+      "The aim is to enhance the protection of user data privacy from",
+      "billion Saudi Riyals) by 2030 to expand the use of artificial intelligence technologies in",
+      "characterized by its flexibility in performing tasks such as work management and providing",
+      "secure an initial 100 megawatts of dedicated AI data center capacity in India, as part of",
+      "Microsoft announced its plan to invest $50 billion (equivalent to approximately 187.5"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "click",
+      "source",
+      "model",
+      "systems"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:56.830096+00:00"
+  },
+  {
+    "id": "159b04df446fd785",
+    "title": "AINewsletter19Feb2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter19Feb2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter19Feb2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter19Feb2026.pdf. reasoning cues, with greater weight given to high-quality data and less impact from weak environmental and infrastructural impact of the rapid expansion of data centers. Trump Administration Proposes Compact to Regulate AI Data Center Impact automatically rerouting data within fractions of a second. finance, and engineering, with plans to accelerate training and improve data selection in the",
+    "key_points": [
+      "reasoning cues, with greater weight given to high-quality data and less impact from weak",
+      "environmental and infrastructural impact of the rapid expansion of data centers.",
+      "Trump Administration Proposes Compact to Regulate AI Data Center Impact",
+      "automatically rerouting data within fractions of a second.",
+      "finance, and engineering, with plans to accelerate training and improve data selection in the"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "company",
+      "system",
+      "source",
+      "click"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:51.967396+00:00"
+  },
+  {
+    "id": "302907f9e6fbe930",
+    "title": "AINewsletter12Feb2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter12Feb2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter12Feb2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter12Feb2026.pdf. The New York State House of Representatives Proposes a Bill to Halt Permits for the issuance of permits for new data centers within the state for at least three years. The aim is to give government agencies sufficient time to study the impact of these The researchers tested the system on actual printing operations, and the results the technology through practical experiments involving tasks such as translating",
+    "key_points": [
+      "The New York State House of Representatives Proposes a Bill to Halt Permits for the",
+      "issuance of permits for new data centers within the state for at least three years.",
+      "The aim is to give government agencies sufficient time to study the impact of these",
+      "The researchers tested the system on actual printing operations, and the results",
+      "the technology through practical experiments involving tasks such as translating"
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "click",
+      "source",
+      "company",
+      "announced"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:41.728398+00:00"
+  },
+  {
+    "id": "53e103c613fa413d",
+    "title": "AINewsletter05Feb2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter05Feb2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter05Feb2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter05Feb2026.pdf. Apple Announces a New Security Feature to Enhance User Data Privacy details such as temperatures, reaction times, and the proportions of raw materials used its Azure data centers, with a gradual expansion to other platforms planned for later. completion of the procedures required to convert some approvals into actual purchase of mobile networks to collect users' precise location data, thereby enhancing their",
+    "key_points": [
+      "Apple Announces a New Security Feature to Enhance User Data Privacy",
+      "details such as temperatures, reaction times, and the proportions of raw materials used",
+      "its Azure data centers, with a gradual expansion to other platforms planned for later.",
+      "completion of the procedures required to convert some approvals into actual purchase",
+      "of mobile networks to collect users' precise location data, thereby enhancing their"
+    ],
+    "topics": [
+      "source",
+      "artificial",
+      "intelligence",
+      "company",
+      "model",
+      "announced"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:37.275138+00:00"
+  },
+  {
+    "id": "191dff4bec5ac4c4",
+    "title": "AINewsletter29Jan2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter29Jan2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter29Jan2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter29Jan2026.pdf. A Study Warns of the Impact of Signs and Surrounding Text on the Decisions of Self-Driving governments to build more data centers and encourage the use of artificial intelligence impacts, while others view it as a beneficial step in preparing students for the future Survey Reveals Young Employees’ Concerns About the Impact of Artificial Intelligence employees believe artificial intelligence (AI) will impact their daily work tasks.",
+    "key_points": [
+      "A Study Warns of the Impact of Signs and Surrounding Text on the Decisions of Self-Driving",
+      "governments to build more data centers and encourage the use of artificial intelligence",
+      "impacts, while others view it as a beneficial step in preparing students for the future",
+      "Survey Reveals Young Employees’ Concerns About the Impact of Artificial Intelligence",
+      "employees believe artificial intelligence (AI) will impact their daily work tasks."
+    ],
+    "topics": [
+      "artificial",
+      "intelligence",
+      "source",
+      "companies",
+      "company",
+      "university"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:26.673182+00:00"
+  },
+  {
+    "id": "6ba6ddd389f36299",
+    "title": "AINewsletter22Jan2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter22Jan2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter22Jan2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter22Jan2026.pdf. The platform is designed to comply with health data privacy standards in the emphasized that the feature is designed with strict privacy controls, giving users use users' personal data, including email addresses, photos, search history, and interaction with AI tools may become a significant factor in future employment Healthcare to support doctors, insurance companies, and patients, and to speed",
+    "key_points": [
+      "The platform is designed to comply with health data privacy standards in the",
+      "emphasized that the feature is designed with strict privacy controls, giving users",
+      "use users' personal data, including email addresses, photos, search history, and",
+      "interaction with AI tools may become a significant factor in future employment",
+      "Healthcare to support doctors, insurance companies, and patients, and to speed"
+    ],
+    "topics": [
+      "intelligence",
+      "artificial",
+      "source",
+      "company",
+      "companies",
+      "system"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:22.587402+00:00"
+  },
+  {
+    "id": "1bff0985cafd21eb",
+    "title": "AINewsletter15Jan2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter15Jan2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter15Jan2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter15Jan2026.pdf. exceeding $20 billion (approximately 75 billion Saudi riyals) to build a data xAI Invests More Than $20 Billion in Data Centers partner research institutions revealed that AI data centers can help stabilize China’s Ministry of Industry and Information Technology announced a national service aims to organize medical questions and protect user privacy amid the",
+    "key_points": [
+      "exceeding $20 billion (approximately 75 billion Saudi riyals) to build a data",
+      "xAI Invests More Than $20 Billion in Data Centers",
+      "partner research institutions revealed that AI data centers can help stabilize",
+      "China’s Ministry of Industry and Information Technology announced a national",
+      "service aims to organize medical questions and protect user privacy amid the"
+    ],
+    "topics": [
+      "company",
+      "source",
+      "health",
+      "intelligence",
+      "american",
+      "industrial"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:16.883850+00:00"
+  },
+  {
+    "id": "384d26bf20d9e226",
+    "title": "AINewsletter08Jan2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter08Jan2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter08Jan2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter08Jan2026.pdf. on analysis of historical data such as weather conditions and flu infection rates. also clarified that starting in August 2026, data brokers will be able to begin the robots contain integrated computers and sensors that allow them to interact designed to assist users with daily household tasks and interact naturally with California Launches DROP Platform to Empower Residents to Delete Personal Data",
+    "key_points": [
+      "on analysis of historical data such as weather conditions and flu infection rates.",
+      "also clarified that starting in August 2026, data brokers will be able to begin",
+      "the robots contain integrated computers and sensors that allow them to interact",
+      "designed to assist users with daily household tasks and interact naturally with",
+      "California Launches DROP Platform to Empower Residents to Delete Personal Data"
+    ],
+    "topics": [
+      "researchers",
+      "source",
+      "study",
+      "robots",
+      "based",
+      "university"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:10.268821+00:00"
+  },
+  {
+    "id": "49e49f7c2e2c0fce",
+    "title": "AINewsletter01Jan2026.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter01Jan2026.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter01Jan2026.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter01Jan2026.pdf. across the product lifecycle, review algorithms, and protect data and privacy. China’s top cyber regulator issued draft rules to tighten oversight of AI systems more logical behavior than actually occurs, which sometimes led to their losing. to trial self-driving taxis in London in 2026, pending regulatory approval, with major shift in US policy that allowed exports of H200 chips under license, with",
+    "key_points": [
+      "across the product lifecycle, review algorithms, and protect data and privacy.",
+      "China’s top cyber regulator issued draft rules to tighten oversight of AI systems",
+      "more logical behavior than actually occurs, which sometimes led to their losing.",
+      "to trial self-driving taxis in London in 2026, pending regulatory approval, with",
+      "major shift in US policy that allowed exports of H200 chips under license, with"
+    ],
+    "topics": [
+      "researchers",
+      "source",
+      "models",
+      "companies",
+      "systems",
+      "company"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:38:02.426579+00:00"
+  },
+  {
+    "id": "3f098944d1d1d533",
+    "title": "AINewsletter27Nov2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter27Nov2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter27Nov2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter27Nov2025.pdf. criticism from cybersecurity and privacy specialists, who argued that it The European Union has introduced a proposal to ease data privacy European Union Proposes Easing Data Privacy Restrictions restrictions and AI regulations under what is being called the “Digital contract reviews, resolving technical issues, and streamlining various",
+    "key_points": [
+      "criticism from cybersecurity and privacy specialists, who argued that it",
+      "The European Union has introduced a proposal to ease data privacy",
+      "European Union Proposes Easing Data Privacy Restrictions",
+      "restrictions and AI regulations under what is being called the “Digital",
+      "contract reviews, resolving technical issues, and streamlining various"
+    ],
+    "topics": [
+      "click",
+      "model",
+      "study",
+      "source",
+      "researchers",
+      "system"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:37:50.425219+00:00"
+  },
+  {
+    "id": "106674883cacf40d",
+    "title": "AINewsletter20Nov2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter20Nov2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter20Nov2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter20Nov2025.pdf. complex AI tasks to a secure cloud environment, ensuring sensitive data Google Launches New AI Tools to Enable Interactive Project Building on used a “data poisoning” methodology that subtly alters images before allowing devices to use advanced AI features while keeping user data allows brands to legally license AI-generated voices of well-known",
+    "key_points": [
+      "complex AI tasks to a secure cloud environment, ensuring sensitive data",
+      "Google Launches New AI Tools to Enable Interactive Project Building on",
+      "used a “data poisoning” methodology that subtly alters images before",
+      "allowing devices to use advanced AI features while keeping user data",
+      "allows brands to legally license AI-generated voices of well-known"
+    ],
+    "topics": [
+      "source",
+      "click",
+      "google",
+      "models",
+      "companies",
+      "researchers"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:37:39.177302+00:00"
+  },
+  {
+    "id": "5aed53191b637ac4",
+    "title": "AINewsletter13Nov2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter13Nov2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter13Nov2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter13Nov2025.pdf. category of data called neural data and set clear guidelines to protect state-funded data center projects to use only domestically produced AI feasibility of creating AI data centers in space using solar-powered update integrates data from ﬁnancial prediction platforms such as growing prevalence of devices that monitor brain activity or eye",
+    "key_points": [
+      "category of data called neural data and set clear guidelines to protect",
+      "state-funded data center projects to use only domestically produced AI",
+      "feasibility of creating AI data centers in space using solar-powered",
+      "update integrates data from ﬁnancial prediction platforms such as",
+      "growing prevalence of devices that monitor brain activity or eye"
+    ],
+    "topics": [
+      "click",
+      "google",
+      "companies",
+      "model",
+      "government",
+      "standards"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:37:30.384457+00:00"
+  },
+  {
+    "id": "fd9d91ddeabb25bb",
+    "title": "AINewsletter30Oct2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter30Oct2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter30Oct2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter30Oct2025.pdf. Copilot,to predict traffic accidents and analyze the factors associated to save delivery time and improve safety by automatically activating at Baidu Partners with PostBus to Launch Robotaxi Service in Switzerland evaluating accuracy, sourcing, and factual distinction. The study trained and validated the model on data",
+    "key_points": [
+      "Copilot,to predict traffic accidents and analyze the factors associated",
+      "to save delivery time and improve safety by automatically activating at",
+      "Baidu Partners with PostBus to Launch Robotaxi Service in Switzerland",
+      "evaluating accuracy, sourcing, and factual distinction.",
+      "The study trained and validated the model on data"
+    ],
+    "topics": [
+      "click",
+      "source",
+      "study",
+      "companies",
+      "amazon",
+      "creators"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:37:24.478204+00:00"
+  },
+  {
+    "id": "118d47ce216a0f0e",
+    "title": "AINewsletter23Oct2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter23Oct2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter23Oct2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter23Oct2025.pdf. privacy protection while ensuring secure and efficient cross-border data Google Announces $15 Billion Data Center Investment in India challenges related to data governance and local competition. build data and AI centers with a capacity of 1 gigawatt in Visakhapatnam, law seeks to reduce psychological risks associated with interacting with",
+    "key_points": [
+      "privacy protection while ensuring secure and efficient cross-border data",
+      "Google Announces $15 Billion Data Center Investment in India",
+      "challenges related to data governance and local competition.",
+      "build data and AI centers with a capacity of 1 gigawatt in Visakhapatnam,",
+      "law seeks to reduce psychological risks associated with interacting with"
+    ],
+    "topics": [
+      "click",
+      "source",
+      "users",
+      "companies",
+      "model",
+      "feature"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:37:12.812620+00:00"
+  },
+  {
+    "id": "7494907cb8f03ec2",
+    "title": "AINewsletter16Oct2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter16Oct2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter16Oct2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter16Oct2025.pdf. SAR 16.5 billion) during early AI adoption due to compliance issues image data to analyze interactions among factors such as weather, privacy, and control over sensitive business data. an AI tool called SafeTraffic Copilot to identify and predict factors Researchers Develop AI Tool to Identify Factors in Traffic Accidents",
+    "key_points": [
+      "SAR 16.5 billion) during early AI adoption due to compliance issues",
+      "image data to analyze interactions among factors such as weather,",
+      "privacy, and control over sensitive business data.",
+      "an AI tool called SafeTraffic Copilot to identify and predict factors",
+      "Researchers Develop AI Tool to Identify Factors in Traffic Accidents"
+    ],
+    "topics": [
+      "click",
+      "source",
+      "companies",
+      "researchers",
+      "innovation",
+      "system"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:37:03.002150+00:00"
+  },
+  {
+    "id": "d57e4e7a47c1c187",
+    "title": "AINewsletter02Oct2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter02Oct2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter02Oct2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter02Oct2025.pdf. SoftBank, announced plans to build five new AI data centers in the OpenAI, Oracle, and SoftBank Plan to Build Five AI Data Centers billion (equivalent to 1,500 billion Saudi riyals) over the next three years. models from catastrophic risks, such as their use in cyberattacks or the stakeholders to submit their opinions on federal laws, regulations, and",
+    "key_points": [
+      "SoftBank, announced plans to build five new AI data centers in the",
+      "OpenAI, Oracle, and SoftBank Plan to Build Five AI Data Centers",
+      "billion (equivalent to 1,500 billion Saudi riyals) over the next three years.",
+      "models from catastrophic risks, such as their use in cyberattacks or the",
+      "stakeholders to submit their opinions on federal laws, regulations, and"
+    ],
+    "topics": [
+      "click",
+      "source",
+      "artificial",
+      "intelligence",
+      "federal",
+      "major"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:36:49.641865+00:00"
+  },
+  {
+    "id": "18a18caa1b9999bf",
+    "title": "AINewsletter25Sep2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter25Sep2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter25Sep2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter25Sep2025.pdf. an emphasis on innovation, cybersecurity, and privacy protection. a vulnerability in OpenAI’s ChatGPT model that allowed them to extract autonomously, such as research, report writing, and database creation. experts in the Metaculus Cup, a forecasting competition that predicts Researchers at the U.S.-based cybersecurity firm Radware discovered",
+    "key_points": [
+      "an emphasis on innovation, cybersecurity, and privacy protection.",
+      "a vulnerability in OpenAI’s ChatGPT model that allowed them to extract",
+      "autonomously, such as research, report writing, and database creation.",
+      "experts in the Metaculus Cup, a forecasting competition that predicts",
+      "Researchers at the U.S.-based cybersecurity firm Radware discovered"
+    ],
+    "topics": [
+      "click",
+      "source",
+      "companies",
+      "company",
+      "openai",
+      "model"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:36:40.243085+00:00"
+  },
+  {
+    "id": "264eb6a722fe018c",
+    "title": "AINewsletter18Sep2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter18Sep2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter18Sep2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter18Sep2025.pdf. new partnership to build AI data centers worth $300 billion (equivalent treatments based on the cellular characteristics of individual patients. that require processing large sequential data, such as extended texts, also plan to continue building large, high-efficiency data centers to for collecting data from various sources, including sensors, servers,",
+    "key_points": [
+      "new partnership to build AI data centers worth $300 billion (equivalent",
+      "treatments based on the cellular characteristics of individual patients.",
+      "that require processing large sequential data, such as extended texts,",
+      "also plan to continue building large, high-efficiency data centers to",
+      "for collecting data from various sources, including sensors, servers,"
+    ],
+    "topics": [
+      "click",
+      "companies",
+      "source",
+      "researchers",
+      "company",
+      "based"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:36:29.799124+00:00"
+  },
+  {
+    "id": "f4fdbe45c6e3bc89",
+    "title": "AINewsletter11Sep2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter11Sep2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter11Sep2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter11Sep2025.pdf. versions: one with 8 billion parameters and another with 70 billion. tool is trained on decades of laboratory and viral sequence data. to predict chemical reactions with greater accuracy than previous designed to improve interaction between programmers and AI coding in compliance with European copyright laws and the AI Code of",
+    "key_points": [
+      "versions: one with 8 billion parameters and another with 70 billion.",
+      "tool is trained on decades of laboratory and viral sequence data.",
+      "to predict chemical reactions with greater accuracy than previous",
+      "designed to improve interaction between programmers and AI coding",
+      "in compliance with European copyright laws and the AI Code of"
+    ],
+    "topics": [
+      "source",
+      "click",
+      "model",
+      "researchers",
+      "study",
+      "called"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:36:19.407718+00:00"
+  },
+  {
+    "id": "73fc37796c4c9abd",
+    "title": "AINewsletter4Sep2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter4Sep2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter4Sep2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter4Sep2025.pdf. in a sidebar, allowing users to interact with it and perform tasks like real-world data during robot operation instead of relying on currently of real-world training data compared to the abundance of text data competition and wasteful investments in the AI sector nationwide, method ensures privacy at lower cost and higher energy efficiency",
+    "key_points": [
+      "in a sidebar, allowing users to interact with it and perform tasks like",
+      "real-world data during robot operation instead of relying on currently",
+      "of real-world training data compared to the abundance of text data",
+      "competition and wasteful investments in the AI sector nationwide,",
+      "method ensures privacy at lower cost and higher energy efficiency"
+    ],
+    "topics": [
+      "click",
+      "models",
+      "source",
+      "model",
+      "efficiency",
+      "developed"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:36:10.482277+00:00"
+  },
+  {
+    "id": "7d660c467e29e7fe",
+    "title": "AINewsletter28Aug2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter28Aug2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter28Aug2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter28Aug2025.pdf. and extract specific data across documents. home interaction with better contextual understanding and sequential that allows users to upload multiple PDF documents and interact with reader reaction predictions to improve academic writing, citation The update also introduces new practical features like",
+    "key_points": [
+      "and extract specific data across documents.",
+      "home interaction with better contextual understanding and sequential",
+      "that allows users to upload multiple PDF documents and interact with",
+      "reader reaction predictions to improve academic writing, citation",
+      "The update also introduces new practical features like"
+    ],
+    "topics": [
+      "source",
+      "click",
+      "model",
+      "companies",
+      "google",
+      "support"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:59.912928+00:00"
+  },
+  {
+    "id": "9a76a20c4779a6ab",
+    "title": "AINewsletter21Aug2025.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter21Aug2025.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AINewsletter21Aug2025.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AINewsletter21Aug2025.pdf. details and preferences from past conversations, making AI interactions Study Finds Filtering Sensitive Data from AI Training Improves Safety pricing data from hundreds of airlines and presents ranked results by Google Updates Gemini with Personalized Memory and Privacy Features as well as cybercrimes like exploiting vulnerabilities or producing",
+    "key_points": [
+      "details and preferences from past conversations, making AI interactions",
+      "Study Finds Filtering Sensitive Data from AI Training Improves Safety",
+      "pricing data from hundreds of airlines and presents ranked results by",
+      "Google Updates Gemini with Personalized Memory and Privacy Features",
+      "as well as cybercrimes like exploiting vulnerabilities or producing"
+    ],
+    "topics": [
+      "source",
+      "click",
+      "feature",
+      "companies",
+      "google",
+      "without"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:49.257212+00:00"
+  },
+  {
+    "id": "fff621c51942f354",
+    "title": "AI Newsletter 11 September 2022.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AI Newsletter 11 September 2022.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/AINewsletter/AI Newsletter 11 September 2022.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AI Newsletter 11 September 2022.pdf. لــم يتــم إصدارهــا مــن أحــد البنــوك أو ترخيصهــا مــن إدارة الحمايــة الماليــة والابتــكار فــي اختــاف قوانيــن الولايــات التــي تنظــم تطبيقاتهــا ممــا يجعــل الامتثــال لهــا أمــراً صعبــاً. شـــركة (جوجـــل) تتيـــح التســـجيل فـــي قائمـــة الانتظـــار لتجربـــة بـــوت محادثـــة مدعـــوم الباحثــون طريقــة جديــدة لتحويــل البيانــات وتقليــل أبعادهــا مــن دون التأثيــر فــي جودتهــا الأمريكيــة أن لديهــا خططــاً بإتاحــة هــذا النــوع مــن الحاســبات لاســتخدام التجــاري بحلــول",
+    "key_points": [
+      "لــم يتــم إصدارهــا مــن أحــد البنــوك أو ترخيصهــا مــن إدارة الحمايــة الماليــة والابتــكار فــي",
+      "اختــاف قوانيــن الولايــات التــي تنظــم تطبيقاتهــا ممــا يجعــل الامتثــال لهــا أمــراً صعبــاً.",
+      "شـــركة (جوجـــل) تتيـــح التســـجيل فـــي قائمـــة الانتظـــار لتجربـــة بـــوت محادثـــة مدعـــوم",
+      "الباحثــون طريقــة جديــدة لتحويــل البيانــات وتقليــل أبعادهــا مــن دون التأثيــر فــي جودتهــا",
+      "الأمريكيــة أن لديهــا خططــاً بإتاحــة هــذا النــوع مــن الحاســبات لاســتخدام التجــاري بحلــول"
+    ],
+    "topics": [
+      "google",
+      "capgemini",
+      "instagram",
+      "facebook",
+      "tiktok",
+      "university"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:39.651904+00:00"
+  },
+  {
+    "id": "32cd3a830489a933",
+    "title": "ArtathonEn.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/en/MediaCenter/Initiatives/Documents/ArtathonEn.pdf",
+    "open_url": "https://sdaia.gov.sa/en/MediaCenter/Initiatives/Documents/ArtathonEn.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "ArtathonEn.pdf. The competition lasted for three consecutive days that included varied activities such art, before the beginning of the actual Artathon competition and the formation of the Saudi Data and Artiﬁcial Intelligence Authority in the midd le of the An AI hackathon in Riyadh featuring experts in artiﬁcial intelligence, data science, an initiative of the Global AI Summit organized by the Saudi Da ta & AI Authority.",
+    "key_points": [
+      "The competition lasted for three consecutive days that included varied activities such",
+      "art, before the beginning of the actual Artathon competition and the formation of",
+      "the Saudi Data and Artiﬁcial Intelligence Authority in the midd le of the",
+      "An AI hackathon in Riyadh featuring experts in artiﬁcial intelligence, data science,",
+      "an initiative of the Global AI Summit organized by the Saudi Da ta & AI Authority."
+    ],
+    "topics": [
+      "expert",
+      "platform",
+      "artathon",
+      "during",
+      "participants",
+      "mentors"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:36.139722+00:00"
+  },
+  {
+    "id": "4bf46f0224d7eba8",
+    "title": "Rules and Procedures of Government Warehouses",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://www.gca.gov.sa/Lists/CourtSystem/Attachments/2/%d9%82%d9%88%d8%a7%d8%b9%d8%af%20%d9%88%d8%a5%d8%ac%d8%b1%d8%a7%d8%a1%d8%a7%d8%aa%20%d8%a7%d9%84%d9%85%d8%b3%d8%aa%d9%88%d8%af%d8%b9%d8%a7%d8%aa%20%d8%a7%d9%84%d8%ad%d9%83%d9%88%d9%85%d9%8a%d8%a9.pdf",
+    "open_url": "https://www.gca.gov.sa/Lists/CourtSystem/Attachments/2/%d9%82%d9%88%d8%a7%d8%b9%d8%af%20%d9%88%d8%a5%d8%ac%d8%b1%d8%a7%d8%a1%d8%a7%d8%aa%20%d8%a7%d9%84%d9%85%d8%b3%d8%aa%d9%88%d8%af%d8%b9%d8%a7%d8%aa%20%d8%a7%d9%84%d8%ad%d9%83%d9%88%d9%85%d9%8a%d8%a9.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "Rules and Procedures of Government Warehouses. بأنظمتهــا الماليــة والإداريــة فــي نظــام آلــي يســاعدها علــى ســرعة الوصــول إليهــا، تمهيــداً للارتبــاط آليــاً مــع بهــا والعمــل بموجبهــا بــدلاًً مــن القواعــد الســابقة الصــادرة بتعميــم الديــوان المشــار إليــه بعاليــه، إعمــالاًً وتـنـشــــأ لخـدمــــة الوحـــدات الإداريـــة الصـغيـــرة، مـثـــل الملحـــق منهــــا بوحـــدات الأرصــــاد الجــويــــة، أو 1 .عنـــد تعيين، أو نقـــل، أو انتـــهاء خدمـــة أميـــن المسـتـــودع، أو مـأمــــور العـهــــدة بالاًســتقـالـــة، أو بلوغ القواعــد، كمــا أنــه لاً يجــوز بــأي حــال إعــداد أكثــر مــن مذكــرة اســتلام واحــدة بــذات الأصنــاف، أو التعديــل",
+    "key_points": [
+      "بأنظمتهــا الماليــة والإداريــة فــي نظــام آلــي يســاعدها علــى ســرعة الوصــول إليهــا، تمهيــداً للارتبــاط آليــاً مــع",
+      "بهــا والعمــل بموجبهــا بــدلاًً مــن القواعــد الســابقة الصــادرة بتعميــم الديــوان المشــار إليــه بعاليــه، إعمــالاًً",
+      "وتـنـشــــأ لخـدمــــة الوحـــدات الإداريـــة الصـغيـــرة، مـثـــل الملحـــق منهــــا بوحـــدات الأرصــــاد الجــويــــة، أو",
+      "1 .عنـــد تعيين، أو نقـــل، أو انتـــهاء خدمـــة أميـــن المسـتـــودع، أو مـأمــــور العـهــــدة بالاًســتقـالـــة، أو بلوغ",
+      "القواعــد، كمــا أنــه لاً يجــوز بــأي حــال إعــداد أكثــر مــن مذكــرة اســتلام واحــدة بــذات الأصنــاف، أو التعديــل"
+    ],
+    "topics": [],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:22.133364+00:00"
+  },
+  {
+    "id": "8a5a8bde5a78c46b",
+    "title": "AR-AI-BIAS.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AR-AI-BIAS.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AR-AI-BIAS.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AR-AI-BIAS.pdf. وغالباً ما يُعبر هذا التحيز عن وجهات نظر أو تصورات ضمنية لدى مطوري النظام أو في كيفية تفسير البيانات. يشير إلى الانحرافات التي قد تظهر في أداء نماذج الذكاء الاصطناعي نتيجة الاعتماد على بيانات محاكاة أو يحدث عندما لا تمثل البيانات المدخلة لنظام الذكاء الاصطناعي تمثيلاً متوازناً لنطاق كامل السيناريوهات عن طريق جمع البيانات غير العشوائية أو استبعاد مجموعات معينة أو تمثيل زائد لأنواع معينة من البيانات. يشير إلى عدم الدقة في نماذج الذكاء الاصطناعي التي تنتج بالاعتماد على البيانات الناتجة عن المعلومات",
+    "key_points": [
+      "وغالباً ما يُعبر هذا التحيز عن وجهات نظر أو تصورات ضمنية لدى مطوري النظام أو في كيفية تفسير البيانات.",
+      "يشير إلى الانحرافات التي قد تظهر في أداء نماذج الذكاء الاصطناعي نتيجة الاعتماد على بيانات محاكاة أو",
+      "يحدث عندما لا تمثل البيانات المدخلة لنظام الذكاء الاصطناعي تمثيلاً متوازناً لنطاق كامل السيناريوهات",
+      "عن طريق جمع البيانات غير العشوائية أو استبعاد مجموعات معينة أو تمثيل زائد لأنواع معينة من البيانات.",
+      "يشير إلى عدم الدقة في نماذج الذكاء الاصطناعي التي تنتج بالاعتماد على البيانات الناتجة عن المعلومات"
+    ],
+    "topics": [],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:12.188248+00:00"
+  },
+  {
+    "id": "1dab94bfd981bb42",
+    "title": "Data Analysis Labs Booklet-ar.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data Analysis Labs Booklet-ar.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data Analysis Labs Booklet-ar.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "Data Analysis Labs Booklet-ar.pdf. ورﺑﻄﻬـــﺎ ﺑﺎﻻﺣﺘﻴﺎج اﻟﻔﻌﻠﻲ، وأﺳـــﻬﻤﺖ ﻫﺬه اﻟﺘﻘﺎرﻳﺮ ﻓﻲ ﺗﺤﻘﻴﻖ آﺛﺎر ﻣﻠﻤﻮﺳـــﺔ ﻓﻲ اﻟﻤﺠﺎﻻت اﻻﻗﺘﺼﺎدﻳـــﺔ واﻻﺟﺘﻤﺎﻋﻴﺔ، ﻛﺎﻻرﺗﻘﺎء ﺑﻜﻔﺎءة اﻟﻌﻤﻠﻴﺎت ﺗﻨﻮﻋﺖ ﻣﺠﺎﻻت اﻻﺳـــﺘﻔﺎدة ﻣﻦ اﻟﻤﻌﺎﻣﻞ ﻟﺘﺸـــﻤﻞ اﻟﺘﻘﺎرﻳﺮ اﻹﺣﺼﺎﺋﻴﺔ، واﻟﺘﺨﻄﻴﻂ اﻟﻤﻜﺎﻧﻲ، وﺗﺤﻠﻴﻞ ﺳـــﻮق اﻟﻌﻤﻞ، وﺗﺤﺴـــﻴﻦ اﻟﺨﺪﻣﺎت اﻟﺤﻜﻮﻣﻴﺔ ﺗﻌﻤـــﻞ اﻟﻬﻴﺌـــﺔ اﻟﺴـــﻌﻮدﻳﺔ ﻟﻠﺒﻴﺎﻧـــﺎت واﻟـــﺬﻛﺎء اﻻﺻﻄﻨﺎﻋﻲ )ﺳـــﺪاﻳﺎ( ﻋﻠﻰ اﻻرﺗﻘـــﺎء ﺑﺎﻟﻤﻤﻠﻜـــﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺘﺸﻐﻴﻠﻴﺔ وﺗﻌﺰﻳﺰ ﻓﻌﺎﻟﻴﺔ اﻟﺨﻄﻂ اﻟﺘﻨﻤﻮﻳﺔ ودﻋﻢ ﻋﻤﻠﻴﺎت ﺻﻨﺎﻋﺔ اﻟﺴﻴﺎﺳﺎت وﻣﺘﺎﺑﻌﺔ ﺗﺤﻘﻴﻖ اﻷﻫﺪاف اﻻﺳﺘﺮاﺗﻴﺠﻴﺔ اﻟﺘﺎﻟﻴﺔ: اﻟﺴـــﻌﻮدﻳﺔ إﻟـــﻰ اﻟﺮﻳـــﺎدة ﺿﻤﻦ اﻻﻗﺘﺼـــﺎدات اﻟﻘﺎﺋﻤﺔ ﻋﻠـــﻰ اﻟﺒﻴﺎﻧﺎت واﻟـــﺬﻛﺎء اﻻﺻﻄﻨﺎﻋـــﻲ، وﺗﻨﻔﻴﺬ",
+    "key_points": [
+      "ورﺑﻄﻬـــﺎ ﺑﺎﻻﺣﺘﻴﺎج اﻟﻔﻌﻠﻲ، وأﺳـــﻬﻤﺖ ﻫﺬه اﻟﺘﻘﺎرﻳﺮ ﻓﻲ ﺗﺤﻘﻴﻖ آﺛﺎر ﻣﻠﻤﻮﺳـــﺔ ﻓﻲ اﻟﻤﺠﺎﻻت اﻻﻗﺘﺼﺎدﻳـــﺔ واﻻﺟﺘﻤﺎﻋﻴﺔ، ﻛﺎﻻرﺗﻘﺎء ﺑﻜﻔﺎءة اﻟﻌﻤﻠﻴﺎت",
+      "ﺗﻨﻮﻋﺖ ﻣﺠﺎﻻت اﻻﺳـــﺘﻔﺎدة ﻣﻦ اﻟﻤﻌﺎﻣﻞ ﻟﺘﺸـــﻤﻞ اﻟﺘﻘﺎرﻳﺮ اﻹﺣﺼﺎﺋﻴﺔ، واﻟﺘﺨﻄﻴﻂ اﻟﻤﻜﺎﻧﻲ، وﺗﺤﻠﻴﻞ ﺳـــﻮق اﻟﻌﻤﻞ، وﺗﺤﺴـــﻴﻦ اﻟﺨﺪﻣﺎت اﻟﺤﻜﻮﻣﻴﺔ",
+      "ﺗﻌﻤـــﻞ اﻟﻬﻴﺌـــﺔ اﻟﺴـــﻌﻮدﻳﺔ ﻟﻠﺒﻴﺎﻧـــﺎت واﻟـــﺬﻛﺎء اﻻﺻﻄﻨﺎﻋﻲ )ﺳـــﺪاﻳﺎ( ﻋﻠﻰ اﻻرﺗﻘـــﺎء ﺑﺎﻟﻤﻤﻠﻜـــﺔ اﻟﻌﺮﺑﻴﺔ",
+      "اﻟﺘﺸﻐﻴﻠﻴﺔ وﺗﻌﺰﻳﺰ ﻓﻌﺎﻟﻴﺔ اﻟﺨﻄﻂ اﻟﺘﻨﻤﻮﻳﺔ ودﻋﻢ ﻋﻤﻠﻴﺎت ﺻﻨﺎﻋﺔ اﻟﺴﻴﺎﺳﺎت وﻣﺘﺎﺑﻌﺔ ﺗﺤﻘﻴﻖ اﻷﻫﺪاف اﻻﺳﺘﺮاﺗﻴﺠﻴﺔ اﻟﺘﺎﻟﻴﺔ:",
+      "اﻟﺴـــﻌﻮدﻳﺔ إﻟـــﻰ اﻟﺮﻳـــﺎدة ﺿﻤﻦ اﻻﻗﺘﺼـــﺎدات اﻟﻘﺎﺋﻤﺔ ﻋﻠـــﻰ اﻟﺒﻴﺎﻧﺎت واﻟـــﺬﻛﺎء اﻻﺻﻄﻨﺎﻋـــﻲ، وﺗﻨﻔﻴﺬ"
+    ],
+    "topics": [
+      "programming",
+      "power",
+      "tableau",
+      "python",
+      "spark",
+      "dataiku"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:35:08.488073+00:00"
+  },
+  {
+    "id": "f649ef51c66c7a72",
+    "title": "PromptEngineeringDevelopersGuide-ar.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/PromptEngineeringDevelopersGuide-ar.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/PromptEngineeringDevelopersGuide-ar.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "PromptEngineeringDevelopersGuide-ar.pdf. هــذا التحــول فــرق التطويــر مــن بنــاء أنظمــة أكثــر اســتقراراً وكفــاءة بوقــت أقــل وجهــد محــدود، مــع تحســين تجربــة المســتخدم النهائــي بشــكل مســتمر. تشــهد النمــاذج اللغويــة الكبيــرة تطــوراً نوعيــاً جعلهــا فــي صــدارة إنجــازات الــذكاء الاصطناعــي التوليــدي، إذ لــم يعــد دورهــا مقتصــراً علــى معالجــة والتعلّــم مــن البيانــات البرمجيــة، يشــهد المجــال تحــولاً جذريــاً أتــاح للمطوريــن أدوات ذكيــة تعــزز مــن الإنتاجيــة وتفتــح آفاقــاً جديــدة للإبــداع. يســتعرض الدليــل تطبيقــات عمليــة وأمثلــة واقعيــة لهندســة الأوامــر فــي ســياقات تطويــر البرمجيــات، مثــل توليــد الأكــواد البرمجيــة، ودعــم عمليــات بهــذه النمــاذج فــي الســنوات الأخيــرة باعتبارهــا أنظمــة موحــدة ومتعــددة الأغــراض يمكــن توجيههــا مــن خــال أوامــر مكتوبــة بلغــة طبيعيــة لتنفيــذ",
+    "key_points": [
+      "هــذا التحــول فــرق التطويــر مــن بنــاء أنظمــة أكثــر اســتقراراً وكفــاءة بوقــت أقــل وجهــد محــدود، مــع تحســين تجربــة المســتخدم النهائــي بشــكل مســتمر.",
+      "تشــهد النمــاذج اللغويــة الكبيــرة تطــوراً نوعيــاً جعلهــا فــي صــدارة إنجــازات الــذكاء الاصطناعــي التوليــدي، إذ لــم يعــد دورهــا مقتصــراً علــى معالجــة",
+      "والتعلّــم مــن البيانــات البرمجيــة، يشــهد المجــال تحــولاً جذريــاً أتــاح للمطوريــن أدوات ذكيــة تعــزز مــن الإنتاجيــة وتفتــح آفاقــاً جديــدة للإبــداع.",
+      "يســتعرض الدليــل تطبيقــات عمليــة وأمثلــة واقعيــة لهندســة الأوامــر فــي ســياقات تطويــر البرمجيــات، مثــل توليــد الأكــواد البرمجيــة، ودعــم عمليــات",
+      "بهــذه النمــاذج فــي الســنوات الأخيــرة باعتبارهــا أنظمــة موحــدة ومتعــددة الأغــراض يمكــن توجيههــا مــن خــال أوامــر مكتوبــة بلغــة طبيعيــة لتنفيــذ"
+    ],
+    "topics": [
+      "openai",
+      "prompt",
+      "python",
+      "content",
+      "question",
+      "prompts"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:34:58.240466+00:00"
+  },
+  {
+    "id": "57a23c86dfbc4dad",
+    "title": "PromptEngineeringGuideEducation-ar.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/PromptEngineeringGuideEducation-ar.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/PromptEngineeringGuideEducation-ar.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "PromptEngineeringGuideEducation-ar.pdf. مــن إنجــاز عــدد مــن المهــام الروتينيــة وتخفيــف الأعبــاء عــن المعلميــن والإدارات التعليميــة، ممــا يتيــح لهــم التركيــز علــى الأبعــاد الإنســانية فــي العمليــة بنــاء نمــوذج تعليمــي متكامــل يجمــع بيــن الــذكاء البشــري والــذكاء الاصطناعــي فــي بيئــة تعليميــة قائمــة علــى التعــاون والإبــداع والتعلــم المشــترك. فــرع مــن فــروع الــذكاء الاصطناعــي يعتمــد علــى نمــاذج تعلــم عميــق قــادرة علــى تحليــل كميــات كبيــرة مــن البيانــات واســتخلاص الأنمــاط منهــا، ثــم الحالــي، إذ لا تقتصــر علــى الاســتخدام التقنــي لــأدوات، بــل تمتــد لتشــمل فهمــاً نقديــاً وأخلاقيــاً لتوجيــه النمــاذج اللغويــة نحــو أهــداف تعليميــة ) بطريقــة تمكِّــن النمــوذج مــن إنتــاج إجابــات أكثــر دقــة واتســاقاً مــع الهــدف Promptوكيفيــة اســتجابتها للســياق النصــي، مــن خــلال صياغــة الأمــر",
+    "key_points": [
+      "مــن إنجــاز عــدد مــن المهــام الروتينيــة وتخفيــف الأعبــاء عــن المعلميــن والإدارات التعليميــة، ممــا يتيــح لهــم التركيــز علــى الأبعــاد الإنســانية فــي العمليــة",
+      "بنــاء نمــوذج تعليمــي متكامــل يجمــع بيــن الــذكاء البشــري والــذكاء الاصطناعــي فــي بيئــة تعليميــة قائمــة علــى التعــاون والإبــداع والتعلــم المشــترك.",
+      "فــرع مــن فــروع الــذكاء الاصطناعــي يعتمــد علــى نمــاذج تعلــم عميــق قــادرة علــى تحليــل كميــات كبيــرة مــن البيانــات واســتخلاص الأنمــاط منهــا، ثــم",
+      "الحالــي، إذ لا تقتصــر علــى الاســتخدام التقنــي لــأدوات، بــل تمتــد لتشــمل فهمــاً نقديــاً وأخلاقيــاً لتوجيــه النمــاذج اللغويــة نحــو أهــداف تعليميــة",
+      ") بطريقــة تمكِّــن النمــوذج مــن إنتــاج إجابــات أكثــر دقــة واتســاقاً مــع الهــدف Promptوكيفيــة اســتجابتها للســياق النصــي، مــن خــلال صياغــة الأمــر"
+    ],
+    "topics": [
+      "prompting",
+      "prompt",
+      "chain",
+      "thoughts",
+      "openai",
+      "engineering"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:34:48.169741+00:00"
+  },
+  {
+    "id": "e5ee4f309a21d9d0",
+    "title": "TheImpactAlProductivityAr.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/TheImpactAlProductivityAr.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/TheImpactAlProductivityAr.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "TheImpactAlProductivityAr.pdf. ).Total Factor Productivity)، وإنتاجيــة العوامــل الكليــةity يُظهـــر الـــذكاء الاصطناعـــي فاعليـــة واضحـــة فـــي المهـــام الروتينيـــة التـــي تتســـم بالتكـــرار، مثـــل خدمـــة العمـــلاء أو إدارة تشــير الأتمتــة إلــى تولــي الــذكاء الاصطناعــي مهــام كان يؤديهــا البشــر ســابقاً، ممــا يســهم فــي رفــع الإنتاجيــة عبــر زيــادة تشــير إنتاجيــة العوامــل الكليــة إلــى الجــزء مــن الناتــج الــذي لا يمكــن تفســيره بالنمــو فــي المدخــلات التقليديــة كالقــوى تقريبـــاً، عبـــر تســـريع حـــل المشـــكلات وتحســـين %15مراكـــز الدعـــم الفنـــي أدى إلـــى رفـــع إنتاجيـــة الموظفيـــن بنســـبة",
+    "key_points": [
+      ").Total Factor Productivity)، وإنتاجيــة العوامــل الكليــةity",
+      "يُظهـــر الـــذكاء الاصطناعـــي فاعليـــة واضحـــة فـــي المهـــام الروتينيـــة التـــي تتســـم بالتكـــرار، مثـــل خدمـــة العمـــلاء أو إدارة",
+      "تشــير الأتمتــة إلــى تولــي الــذكاء الاصطناعــي مهــام كان يؤديهــا البشــر ســابقاً، ممــا يســهم فــي رفــع الإنتاجيــة عبــر زيــادة",
+      "تشــير إنتاجيــة العوامــل الكليــة إلــى الجــزء مــن الناتــج الــذي لا يمكــن تفســيره بالنمــو فــي المدخــلات التقليديــة كالقــوى",
+      "تقريبـــاً، عبـــر تســـريع حـــل المشـــكلات وتحســـين %15مراكـــز الدعـــم الفنـــي أدى إلـــى رفـــع إنتاجيـــة الموظفيـــن بنســـبة"
+    ],
+    "topics": [
+      "productivity",
+      "capital",
+      "productiv",
+      "labor",
+      "total",
+      "factor"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:34:36.041244+00:00"
+  },
+  {
+    "id": "15d78288cb2dc7be",
+    "title": "VibeCoding-ar.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/VibeCoding-ar.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/VibeCoding-ar.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "VibeCoding-ar.pdf. ﺔﺘﻤﺗأ ﻞﻴﻠﺤﺗ تﺎﻧﺎﻴﺒﻟا صﻼﺨﺘﺳاو ىؤﺮﻟا Automated Data Synthesis)( ماﺪﺨﺘــﺳا تارﺪﻗ ﺔﺠﻟﺎﻌﻤﻟا ﺔﻳﻮﻐﻠﻟا ﻞﻴﻠﺤﺘﻟ تﺎﻴﻤﻛ ﺔﻤﺨــﺿ ﻦﻣ ﻧﺎﻴﺒﻟا تﺎ ﺔﺠﺗﺎﻨﻟا ﻦﻋ تﻼﺑﺎﻘﻤﻟا ﺒﺘــﺳﻻاو تﺎﻧﺎ ﻦﻋ ﻖﻳﺮﻃ ءاﺮﺟإ ﻞﻴﻠﺤﺘﻟا ﻲﻋﻮــــــﺿﻮﻤﻟا ) Thematic Analysis( ﺪﻳﺪﺤﺘﻟ طﺎﻤﻧﻷا ةرﺮﻜﺘﻤﻟا طﺎﻘﻧو ﻢﻟﻷا .ﻢﻫﺎــــــﺴﺗ هﺬﻫ ﺔﺘﻤﺗﻷا ﻲﻓ ﻞﻳﻮﺤﺗ تﺎﻧﺎﻴﺒﻟا مﺎﺨﻟا ﻰﻟإ ىؤر ﺔﻴﻤﻴﻤﺼﺗ ) Insights( ﻦﻜﻤﻳ ءﺎﻨﺒﻟا ﺎﻬﻴﻠﻋ ﻲﻓ ﺔﻠﺣﺮﻣ ﻒﺼﻌﻟا ﻲﻨﻫﺬﻟا . ﻖﻴﻗﺪﺗ ﻞﻜﻴﻬﻟا يﺮﺼﺒﻟا Visual Hierarchy Audit)( ﺺﺤﻓ ﻊﻳزﻮﺗ ﺮــــﺻﺎﻨﻌﻟا ﺎﻬﻧازوأو ﺔﻳﺮــــﺼﺒﻟا ماﺪﺨﺘــــﺳﺎﺑ جذﺎﻤﻧ ﺆﺒﻨﺗ هﺎﺒﺘﻧﻻا يﺮــــﺸﺒﻟا ﺪﻴﻟﻮﺘﻟ ﻂﺋاﺮﺧ ةراﺮﺣ ) Heatmaps( وﻣﺴــــﺎرات اﻟﻤﺸــــﺎﻫﺪة اﻟﻤﺘﻮﻗﻌﺔ ﻋﻠﻰ اﻟﺘﺼــــﻤﻴﻢ، ﻣﺎ ﻳﺴــــﺎﻋﺪ ﻓﻲ ﺿــــﻤﺎن أن ﻋﻴﻦ اﻟﻤﺴــــﺘﺨﺪم ﺗُﻮﺟَّﻪ ﻧﺤﻮ اﻷﻫﺪاف ﺔﻴﺳﺎﺳﻷا ) ﻞﺜﻣ _Call to Action_( ﺎﻤﺑ ﻰﺷﺎﻤﺘﻳ ﻊﻣ طﺎﻤﻧأ ﺢﺴﻤﻟا يﺮﺼﺒﻟا ﺔﻴﻌﻴﺒﻄﻟا . ﺪﻴﻟﻮﺗ تﺎﻧﻮﻜﻣ مﺎﻈﻨﻟا ﻲﻤﻴﻤﺼﺘﻟا ) UI Components Generation( ﺐﻠﻃ ﻢﻴﻤـﺼﺗ تﺎﻧﻮﻜﻣ ،ةدﺪﺤﻣ ﻞﺜﻣ : جذﺎﻤﻧ ﻞﻴﺠـﺴﺗ ،لﻮﺧﺪﻟا تﺎﻗﺎﻄﺑ ،تﺎﺠﺘﻨﻤﻟا وأ ﻢﺋاﻮﻘﻟا ﺔﻴﺒﻧﺎﺠﻟا ﻊﻣ ﺪﻳﺪﺤﺗ ﺔﻓﺎﻛ تﻻﺎﺣ ،ﻞﻋﺎﻔﺘﻟا ﻞﺜﻣ : ﻂـــﺸﻧ ) Active(، روﺮﻣ ﺮـــﺷﺆﻤﻟا ) Hover(، ﻞﻄﻌﻣ ) Disable(. Services include: calling ambulance, pharmacy, book an appointment, comprehensive examination, home care, contact us, medical reports, and sick leaves. تﺎـــﻧﺎـــﻴﺒﻟا ﺔـــﻠﺧﺪـــﻤﻟا )Input Data( ﻖﺋﺎﺛﻮﻟا وأ ﻊﻄﻘﻟا ﺔﻤﻋاﺪﻟا .",
+    "key_points": [
+      "ﺔﺘﻤﺗأ ﻞﻴﻠﺤﺗ تﺎﻧﺎﻴﺒﻟا صﻼﺨﺘﺳاو ىؤﺮﻟا Automated Data Synthesis)( ماﺪﺨﺘــﺳا تارﺪﻗ ﺔﺠﻟﺎﻌﻤﻟا ﺔﻳﻮﻐﻠﻟا ﻞﻴﻠﺤﺘﻟ تﺎﻴﻤﻛ ﺔﻤﺨــﺿ ﻦﻣ ﻧﺎﻴﺒﻟا تﺎ ﺔﺠﺗﺎﻨﻟا ﻦﻋ تﻼﺑﺎﻘﻤﻟا ﺒﺘــﺳﻻاو تﺎﻧﺎ ﻦﻋ ﻖﻳﺮﻃ ءاﺮﺟإ ﻞﻴﻠﺤﺘﻟا ﻲﻋﻮــــــﺿﻮﻤﻟا ) Thematic Analysis( ﺪﻳﺪﺤﺘﻟ طﺎﻤﻧﻷا ةرﺮﻜﺘﻤﻟا طﺎﻘﻧو ﻢﻟﻷا .ﻢﻫﺎــــــﺴﺗ هﺬﻫ ﺔﺘﻤﺗﻷا ﻲﻓ ﻞﻳﻮﺤﺗ تﺎﻧﺎﻴﺒﻟا مﺎﺨﻟا ﻰﻟإ ىؤر ﺔﻴﻤﻴﻤﺼﺗ ) Insights( ﻦﻜﻤﻳ ءﺎﻨﺒﻟا ﺎﻬﻴﻠﻋ ﻲﻓ ﺔﻠﺣﺮﻣ ﻒﺼﻌﻟا ﻲﻨﻫﺬﻟا .",
+      "ﻖﻴﻗﺪﺗ ﻞﻜﻴﻬﻟا يﺮﺼﺒﻟا Visual Hierarchy Audit)( ﺺﺤﻓ ﻊﻳزﻮﺗ ﺮــــﺻﺎﻨﻌﻟا ﺎﻬﻧازوأو ﺔﻳﺮــــﺼﺒﻟا ماﺪﺨﺘــــﺳﺎﺑ جذﺎﻤﻧ ﺆﺒﻨﺗ هﺎﺒﺘﻧﻻا يﺮــــﺸﺒﻟا ﺪﻴﻟﻮﺘﻟ ﻂﺋاﺮﺧ ةراﺮﺣ ) Heatmaps( وﻣﺴــــﺎرات اﻟﻤﺸــــﺎﻫﺪة اﻟﻤﺘﻮﻗﻌﺔ ﻋﻠﻰ اﻟﺘﺼــــﻤﻴﻢ، ﻣﺎ ﻳﺴــــﺎﻋﺪ ﻓﻲ ﺿــــﻤﺎن أن ﻋﻴﻦ اﻟﻤﺴــــﺘﺨﺪم ﺗُﻮﺟَّﻪ ﻧﺤﻮ اﻷﻫﺪاف ﺔﻴﺳﺎﺳﻷا ) ﻞﺜﻣ _Call to Action_( ﺎﻤﺑ ﻰﺷﺎﻤﺘﻳ ﻊﻣ طﺎﻤﻧأ ﺢﺴﻤﻟا يﺮﺼﺒﻟا ﺔﻴﻌﻴﺒﻄﻟا .",
+      "ﺪﻴﻟﻮﺗ تﺎﻧﻮﻜﻣ مﺎﻈﻨﻟا ﻲﻤﻴﻤﺼﺘﻟا ) UI Components Generation( ﺐﻠﻃ ﻢﻴﻤـﺼﺗ تﺎﻧﻮﻜﻣ ،ةدﺪﺤﻣ ﻞﺜﻣ : جذﺎﻤﻧ ﻞﻴﺠـﺴﺗ ،لﻮﺧﺪﻟا تﺎﻗﺎﻄﺑ ،تﺎﺠﺘﻨﻤﻟا وأ ﻢﺋاﻮﻘﻟا ﺔﻴﺒﻧﺎﺠﻟا ﻊﻣ ﺪﻳﺪﺤﺗ ﺔﻓﺎﻛ تﻻﺎﺣ ،ﻞﻋﺎﻔﺘﻟا ﻞﺜﻣ : ﻂـــﺸﻧ ) Active(، روﺮﻣ ﺮـــﺷﺆﻤﻟا ) Hover(، ﻞﻄﻌﻣ ) Disable(.",
+      "Services include: calling ambulance, pharmacy, book an appointment, comprehensive examination, home care, contact us, medical reports, and sick leaves.",
+      "تﺎـــﻧﺎـــﻴﺒﻟا ﺔـــﻠﺧﺪـــﻤﻟا )Input Data( ﻖﺋﺎﺛﻮﻟا وأ ﻊﻄﻘﻟا ﺔﻤﻋاﺪﻟا ."
+    ],
+    "topics": [
+      "agentic",
+      "prompt",
+      "prompting",
+      "design",
+      "amazon",
+      "coding"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:34:02.127395+00:00"
+  },
+  {
+    "id": "2fbc97593406f59f",
+    "title": "ExecutiveSummaryAr.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "ExecutiveSummaryAr.pdf. عــدداً كبيــراً مــن نقــاط اتخــاذ القــرارات، ممــا يجعــل التنبــؤ بســلوك النظــام أو تفســير أســباب الفشــل أو النتائــج النمــاذج إلــى إمكانيــة تأثــر أداء النظــام أو موثوقيتــه أو عدالــة نتائجــه، ومــا قــد يترتــب عليــه مــن آثــار تشــغيلية أو اجتماعيــة أو أنظمــة يُعــد إطــار إدارة مخاطــر الــذكاء الاصطناعــي فــي المملكــة العربيــة الســعودية إطــاراً مرجعيــاً يُعنــى بتوجيــه تبنّــي يركّــز الإطــار بالدرجــة الأولــى علــى الجوانــب التطبيقيــة لإدارة مخاطــر الــذكاء الاصطناعــي داخــل الجهــات، بالقــدر الــذي هــذا النهــج علــى الحــد مــن الآثــار الســلبية المحتملــة وتعظيــم المنافــع المتوقعــة مــن أنظمــة الــذكاء الاصطناعــي، بمــا",
+    "key_points": [
+      "عــدداً كبيــراً مــن نقــاط اتخــاذ القــرارات، ممــا يجعــل التنبــؤ بســلوك النظــام أو تفســير أســباب الفشــل أو النتائــج النمــاذج",
+      "إلــى إمكانيــة تأثــر أداء النظــام أو موثوقيتــه أو عدالــة نتائجــه، ومــا قــد يترتــب عليــه مــن آثــار تشــغيلية أو اجتماعيــة أو",
+      "أنظمــة يُعــد إطــار إدارة مخاطــر الــذكاء الاصطناعــي فــي المملكــة العربيــة الســعودية إطــاراً مرجعيــاً يُعنــى بتوجيــه تبنّــي",
+      "يركّــز الإطــار بالدرجــة الأولــى علــى الجوانــب التطبيقيــة لإدارة مخاطــر الــذكاء الاصطناعــي داخــل الجهــات، بالقــدر الــذي",
+      "هــذا النهــج علــى الحــد مــن الآثــار الســلبية المحتملــة وتعظيــم المنافــع المتوقعــة مــن أنظمــة الــذكاء الاصطناعــي، بمــا"
+    ],
+    "topics": [
+      "monitoring",
+      "review",
+      "identi",
+      "cation",
+      "treatment",
+      "assessment"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:33:40.394002+00:00"
+  },
+  {
+    "id": "408eba82593fe005",
+    "title": "ICANFinalReport.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ICANFinalReport.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ICANFinalReport.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "ICANFinalReport.pdf. ) اتفاقية سّتسهم في تعزيز الشراكات الأكاديُمية الدولية لنقل 27وما شهد من تدشين مبادرات متعددة المجالات وتوقيع م مفهوم التكامل بين 2026 يُنايُر29 إلى28الهيئة السعوديُة للبيانات والذكاء الاصطناعي (سّدايُا) في الفترة من متخصصة في مواضيع رائجة في بناء القدرات، بما يُعكس مكانة المملكة بصفتها مركزاً عالمياً للبيانات والذكاء يُُثني على نتائج المؤتمر الدولي لبناء القدرات في البيانات والذكاء الاصطناعي الذي عُقد في الرياض، #مجلس القرار والخبراء من الجهات الحكومية والجامعات والشركات التقنية العالمية لتعزيز النقاش حول مستقبل بناء",
+    "key_points": [
+      ") اتفاقية سّتسهم في تعزيز الشراكات الأكاديُمية الدولية لنقل 27وما شهد من تدشين مبادرات متعددة المجالات وتوقيع",
+      "م مفهوم التكامل بين 2026 يُنايُر29 إلى28الهيئة السعوديُة للبيانات والذكاء الاصطناعي (سّدايُا) في الفترة من",
+      "متخصصة في مواضيع رائجة في بناء القدرات، بما يُعكس مكانة المملكة بصفتها مركزاً عالمياً للبيانات والذكاء",
+      "يُُثني على نتائج المؤتمر الدولي لبناء القدرات في البيانات والذكاء الاصطناعي الذي عُقد في الرياض، #مجلس",
+      "القرار والخبراء من الجهات الحكومية والجامعات والشركات التقنية العالمية لتعزيز النقاش حول مستقبل بناء"
+    ],
+    "topics": [],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:33:08.650285+00:00"
+  },
+  {
+    "id": "604931d9d6a5d92b",
+    "title": "AIProcurementGovernmentSector-ar.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIProcurementGovernmentSector-ar.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIProcurementGovernmentSector-ar.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AIProcurementGovernmentSector-ar.pdf. يشــهد العالــم اليــوم تســارعاً كبيــراً فــي تبنــي تقنيــات الــذكاء الاصطناعــي فــي القطــاع الحكومــي، لمــا لهــا مــن أثــر مباشــر فــي رفــع تعــد الشــفافية وتفســير القــرارات التــي تتخذهــا الأنظمــة الذكيــة مــن التحديــات البــارزة، حيــث يجــب أن تكــون هــذه الأنظمــة قــادرةً علــى فــي المشــتريات التقنيــة التقليديــة غالبــاً مــا يكــون المنتــج المطلــوب واضــح المعالــم، مثــلاً شــراء برمجيــة جاهــزة، ويتــم التركيــز فــي عنــد توفــر بيانــات جديــدة أو تغيّــر الأنمــاط بمــرور الوقــت)، مــا يعنــي أن عقــد الشــراء يجــب أن يغطــي ترتيبــات الدعــم الفنــي والتطويــر الشــراء قــد يُســهم فــي تســريع وتيــرة تنفيــذ المشــاريع، إلــى جانــب تنميــة كفــاءة الكــوادر الفنيــة وتطويــر قدراتهــا فــي تقييــم حلــول",
+    "key_points": [
+      "يشــهد العالــم اليــوم تســارعاً كبيــراً فــي تبنــي تقنيــات الــذكاء الاصطناعــي فــي القطــاع الحكومــي، لمــا لهــا مــن أثــر مباشــر فــي رفــع",
+      "تعــد الشــفافية وتفســير القــرارات التــي تتخذهــا الأنظمــة الذكيــة مــن التحديــات البــارزة، حيــث يجــب أن تكــون هــذه الأنظمــة قــادرةً علــى",
+      "فــي المشــتريات التقنيــة التقليديــة غالبــاً مــا يكــون المنتــج المطلــوب واضــح المعالــم، مثــلاً شــراء برمجيــة جاهــزة، ويتــم التركيــز فــي",
+      "عنــد توفــر بيانــات جديــدة أو تغيّــر الأنمــاط بمــرور الوقــت)، مــا يعنــي أن عقــد الشــراء يجــب أن يغطــي ترتيبــات الدعــم الفنــي والتطويــر",
+      "الشــراء قــد يُســهم فــي تســريع وتيــرة تنفيــذ المشــاريع، إلــى جانــب تنميــة كفــاءة الكــوادر الفنيــة وتطويــر قدراتهــا فــي تقييــم حلــول"
+    ],
+    "topics": [
+      "allens"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:32:13.010740+00:00"
+  },
+  {
+    "id": "f0372d2ae7299f18",
+    "title": "AnalysisofCurrentStateandFutureProspects.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AnalysisofCurrentStateandFutureProspects.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AnalysisofCurrentStateandFutureProspects.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "AnalysisofCurrentStateandFutureProspects.pdf. النمــاذج اللغويــة العربيــة يُعــد أمــراً بالــغ الأهميــة، إذ إنهــا مــن أكثــر اللغــات انتشــاراً علــى المســتوى العالمــي فقــد وصــل عــدد الناطقيــن بهــا إلــى أكثــر أن تطويــر النمــاذج اللغويــة العربيــة لــم يقتصــر علــى الــدول العربيــة بــل هنــاك عــدد مــن الجهــات العالميــة قــد أبــدت اهتمامــاً فــي تطويــر نمــاذج عربيــة أمــا بالنســبة إلــى آليــات تطويــر النمــاذج العربيــة، وعلــى الرغــم مــن وجــود عــدد مــن النمــاذج التــي بنيــت مــن الصفــر، إلا أن غالبيتهــا قــد طُــورت عبــر الثقافــي واللغــوي، وهــو مــا دعــا كثيــراً مــن الــدول إلــى أن تحــرص علــى تطويــر نمــاذج لغويــة بلغاتهــا الأصيلــة، ومــن هــذا المنطلــق فــإن تعزيــز تطويــر ووفقــاً لنتائــج تقييــم المقيــاس المعيــاري بلســم الصــادر عــن مجمــع الملــك ســلمان العالمــي للغــة العربيــة التــي تقــارن أداء النمــاذج اللغويــة العربيــة",
+    "key_points": [
+      "النمــاذج اللغويــة العربيــة يُعــد أمــراً بالــغ الأهميــة، إذ إنهــا مــن أكثــر اللغــات انتشــاراً علــى المســتوى العالمــي فقــد وصــل عــدد الناطقيــن بهــا إلــى أكثــر",
+      "أن تطويــر النمــاذج اللغويــة العربيــة لــم يقتصــر علــى الــدول العربيــة بــل هنــاك عــدد مــن الجهــات العالميــة قــد أبــدت اهتمامــاً فــي تطويــر نمــاذج عربيــة",
+      "أمــا بالنســبة إلــى آليــات تطويــر النمــاذج العربيــة، وعلــى الرغــم مــن وجــود عــدد مــن النمــاذج التــي بنيــت مــن الصفــر، إلا أن غالبيتهــا قــد طُــورت عبــر",
+      "الثقافــي واللغــوي، وهــو مــا دعــا كثيــراً مــن الــدول إلــى أن تحــرص علــى تطويــر نمــاذج لغويــة بلغاتهــا الأصيلــة، ومــن هــذا المنطلــق فــإن تعزيــز تطويــر",
+      "ووفقــاً لنتائــج تقييــم المقيــاس المعيــاري بلســم الصــادر عــن مجمــع الملــك ســلمان العالمــي للغــة العربيــة التــي تقــارن أداء النمــاذج اللغويــة العربيــة"
+    ],
+    "topics": [
+      "arabic",
+      "allam",
+      "models",
+      "acegpt",
+      "fanar",
+      "jasmin"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:31:10.525362+00:00"
+  },
+  {
+    "id": "928f3a980bd67ec2",
+    "title": "Al-ProductivityTools.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Al-ProductivityTools.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Al-ProductivityTools.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "Al-ProductivityTools.pdf. 1 https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier ويحســن الإنتاجيــة، ويُعــد الــذكاء الاصطناعــي التوليــدي أحــد أبــرز هــذه التقنيــات، ومــن أداة ذكاء اصطناعــي توليــدي لإنشــاء الحمــلات الإعلانيــة وإرســالها عبــر الرســائل النصيــة أداة ذكاء اصطناعــي توليــدي للمســاعدة فــي مهــام كتابــة المحتــوى التســويقي ونشــره عبــر أتمتــة المهــام وخلــق أنمــاط جديــدة لتنفيذهــا، ممــا يعــزز كفــاءة الأعمــال وجودتهــا",
+    "key_points": [
+      "1 https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+      "ويحســن الإنتاجيــة، ويُعــد الــذكاء الاصطناعــي التوليــدي أحــد أبــرز هــذه التقنيــات، ومــن",
+      "أداة ذكاء اصطناعــي توليــدي لإنشــاء الحمــلات الإعلانيــة وإرســالها عبــر الرســائل النصيــة",
+      "أداة ذكاء اصطناعــي توليــدي للمســاعدة فــي مهــام كتابــة المحتــوى التســويقي ونشــره عبــر",
+      "أتمتــة المهــام وخلــق أنمــاط جديــدة لتنفيذهــا، ممــا يعــزز كفــاءة الأعمــال وجودتهــا"
+    ],
+    "topics": [
+      "mckinsey",
+      "https",
+      "capabilities",
+      "digital",
+      "insights",
+      "economic"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:30:49.664814+00:00"
+  },
+  {
+    "id": "5fc469733c807fe0",
+    "title": "Foresight.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Foresight.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Foresight.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "Foresight.pdf. يُعــــد الذكـــــاء العـــام الاصطـــــناعي أحـــد الأنـــواع الثـــــــلاثة الرئيــــــسية للـــذكاء الاصطنــــــاعي، إلـــى جـــانــــب الـــذكاء الضيـــق الاصطــــناعـــــي تحاكــي الجوانــب العقليــة والعاطفيــة التــي تميــز الإنســان، بينمــا يركّــز خبــراء تعلّــم الآلــة علــى قــدرة النظــام علــى التعميــم والتعلّــم الســببي، فــي حيــن المقترحــات تباينــاً واضحــاً فــي الخلفيــات العلميــة والمنهجيــات البحثيــة، إذ ركّــز بعضهــا علــى محــاكاة القــدرات البشــرية، بينمــا اســتند بعضهــا الآخــر إلــى ، كمــا أن اعتمــاد الــذكاء 4أنــه مــن الأنســب فهــم الــذكاء علــى أنــه مفهــوم متعــدد الأبعــاد، بــدلاً مــن اعتبــاره ســمة موحّــدة قابلــة للقيــاس بخــط فاصــل أظهــر تحليــل المشــهد الدولــي تفاوتــاً ملحوظــاً فــي السياســات الوطنيــة؛ إذ يعتمــد الاتحــاد الأوروبــي إطــاراً تنظيميــاً ملزمــاً للتقنيــات الرائــدة، بينمــا",
+    "key_points": [
+      "يُعــــد الذكـــــاء العـــام الاصطـــــناعي أحـــد الأنـــواع الثـــــــلاثة الرئيــــــسية للـــذكاء الاصطنــــــاعي، إلـــى جـــانــــب الـــذكاء الضيـــق الاصطــــناعـــــي",
+      "تحاكــي الجوانــب العقليــة والعاطفيــة التــي تميــز الإنســان، بينمــا يركّــز خبــراء تعلّــم الآلــة علــى قــدرة النظــام علــى التعميــم والتعلّــم الســببي، فــي حيــن",
+      "المقترحــات تباينــاً واضحــاً فــي الخلفيــات العلميــة والمنهجيــات البحثيــة، إذ ركّــز بعضهــا علــى محــاكاة القــدرات البشــرية، بينمــا اســتند بعضهــا الآخــر إلــى",
+      "، كمــا أن اعتمــاد الــذكاء 4أنــه مــن الأنســب فهــم الــذكاء علــى أنــه مفهــوم متعــدد الأبعــاد، بــدلاً مــن اعتبــاره ســمة موحّــدة قابلــة للقيــاس بخــط فاصــل",
+      "أظهــر تحليــل المشــهد الدولــي تفاوتــاً ملحوظــاً فــي السياســات الوطنيــة؛ إذ يعتمــد الاتحــاد الأوروبــي إطــاراً تنظيميــاً ملزمــاً للتقنيــات الرائــدة، بينمــا"
+    ],
+    "topics": [
+      "intelligence",
+      "llmsgenerative",
+      "artificial",
+      "narrow",
+      "ligence"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:28:56.977843+00:00"
+  },
+  {
+    "id": "e71a0a8ee60209b7",
+    "title": "Data-And-AIRadar.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data-And-AIRadar.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data-And-AIRadar.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "Data-And-AIRadar.pdf. Data Analytics: classify data to prioritize it for analysis Data Security: classify data to protect sensitive informa- Data Security: identify sensitive data across systems to Data Standardization: standardizes data formats, units, Data Cleansing: detects and corrects errors, inconsis-",
+    "key_points": [
+      "Data Analytics: classify data to prioritize it for analysis",
+      "Data Security: classify data to protect sensitive informa-",
+      "Data Security: identify sensitive data across systems to",
+      "Data Standardization: standardizes data formats, units,",
+      "Data Cleansing: detects and corrects errors, inconsis-"
+    ],
+    "topics": [
+      "analytics",
+      "model",
+      "learning",
+      "management",
+      "augmented",
+      "language"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:28:42.631959+00:00"
+  },
+  {
+    "id": "d3ccc26a4e525ffb",
+    "title": "PromptEngineering.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/PromptEngineering.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/PromptEngineering.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "PromptEngineering.pdf. ) هــي نمــاذج تعلــم آلــة تــم تدريبهــا علــى كميــات ضخمــة مــن البيانــات، بهــدف فهــم اللغــة البشــرية ومعالجتهــا بكفــاءة LLMsالنمــاذج اللغويــة الكبيــرة هــي المهــام التــي يقــوم بهــا المســتخدم قبــل وأثنــاء وبعــد اســتخدام النمــوذج، بــدءاً مــن تحديــد الغــرض والســياق، مــروراً بتقييــم جــودة الاســتجابات، فــي ظــل التوســع الكبيــر لاســتخدام النمــاذج اللغويــة التوليديــة وتأثيرهــا المتنامــي علــى الإنتاجيــة والاقتصــاد، تبــرز الحاجــة إلــى تبنــي نهــج منظــم تُعــزز النمــاذج اللغويــة الكبيــرة مــن الكفــاءة والســرعة فــي إنجــاز المهــام عبــر مختلــف المجــالات، وفيمــا يلــي أمثلــة علــى تطبيقــات مهنيــة شــائعة هــو نــوع متقــدم أكثــر مــن الأمــر دون أمثلــة أو بمثــال واحــد، حيــث يعتمــد علــى توفيــر عــدة أمثلــة لتعريــف النمــوذج علــى النمــط المرغــوب، ممــا",
+    "key_points": [
+      ") هــي نمــاذج تعلــم آلــة تــم تدريبهــا علــى كميــات ضخمــة مــن البيانــات، بهــدف فهــم اللغــة البشــرية ومعالجتهــا بكفــاءة LLMsالنمــاذج اللغويــة الكبيــرة",
+      "هــي المهــام التــي يقــوم بهــا المســتخدم قبــل وأثنــاء وبعــد اســتخدام النمــوذج، بــدءاً مــن تحديــد الغــرض والســياق، مــروراً بتقييــم جــودة الاســتجابات،",
+      "فــي ظــل التوســع الكبيــر لاســتخدام النمــاذج اللغويــة التوليديــة وتأثيرهــا المتنامــي علــى الإنتاجيــة والاقتصــاد، تبــرز الحاجــة إلــى تبنــي نهــج منظــم",
+      "تُعــزز النمــاذج اللغويــة الكبيــرة مــن الكفــاءة والســرعة فــي إنجــاز المهــام عبــر مختلــف المجــالات، وفيمــا يلــي أمثلــة علــى تطبيقــات مهنيــة شــائعة",
+      "هــو نــوع متقــدم أكثــر مــن الأمــر دون أمثلــة أو بمثــال واحــد، حيــث يعتمــد علــى توفيــر عــدة أمثلــة لتعريــف النمــوذج علــى النمــط المرغــوب، ممــا"
+    ],
+    "topics": [
+      "prompting",
+      "prompt",
+      "engineering",
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:28:34.743259+00:00"
+  },
+  {
+    "id": "5dc56914346cc6e3",
+    "title": "DeepfakeStudy.pdf",
+    "jurisdiction": "Saudi Arabia - SDAIA",
+    "source_kind": "ministry",
+    "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/DeepfakeStudy.pdf",
+    "open_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/DeepfakeStudy.pdf",
+    "source_page": "https://sdaia.gov.sa/",
+    "summary": "DeepfakeStudy.pdf. عالية أو تكلف موارد مالية كبيرة لاستخداماتها السلبية مثل: نشر المعلومات الكاذبة أو المضللة والتأثير على الرأي العام أو تشويه أثارت جدلاً واسعاً على الصعيدين المحلي والدولي، إذ تقوم هذه التقنية على استخدام خوارزميات الذكاء الاصطناعي، لا سيما التعلم تناقش الدراسة ثلاثة أنواع رئيسية للتزييف العميق: التزييف المرئي، الذي يشمل تقنيات تبديل الوجوه وتوليد الوجوه غير الموجودة، والمزيف، وبينما تمثل هذه التقنية قفزة نوعية في مجالات الإعلام والترفيه والتعليم، إلا أنها في الوقت ذاته قد تتسبب في مخاطر طبيعية للغاية، إلا أن تقدم هذه التقنية أثار مخاوف بشأن استخداماتها الضارة، وأدى هذا إلى ظهور أدوات لكشفها مثل: أداة الطبّ",
+    "key_points": [
+      "عالية أو تكلف موارد مالية كبيرة لاستخداماتها السلبية مثل: نشر المعلومات الكاذبة أو المضللة والتأثير على الرأي العام أو تشويه",
+      "أثارت جدلاً واسعاً على الصعيدين المحلي والدولي، إذ تقوم هذه التقنية على استخدام خوارزميات الذكاء الاصطناعي، لا سيما التعلم",
+      "تناقش الدراسة ثلاثة أنواع رئيسية للتزييف العميق: التزييف المرئي، الذي يشمل تقنيات تبديل الوجوه وتوليد الوجوه غير الموجودة،",
+      "والمزيف، وبينما تمثل هذه التقنية قفزة نوعية في مجالات الإعلام والترفيه والتعليم، إلا أنها في الوقت ذاته قد تتسبب في مخاطر",
+      "طبيعية للغاية، إلا أن تقدم هذه التقنية أثار مخاوف بشأن استخداماتها الضارة، وأدى هذا إلى ظهور أدوات لكشفها مثل: أداة الطبّ"
+    ],
+    "topics": [
+      "video",
+      "neural",
+      "deepfake",
+      "voice",
+      "cloning",
+      "rewrite"
+    ],
+    "document_type": "other",
+    "method": "extractive",
+    "summarized_at": "2026-08-08T02:28:28.255636+00:00"
+  },
+  {
     "id": "8c1b71f23a1f3106",
     "title": "AIMarketGovernanceTools.pdf",
     "jurisdiction": "Saudi Arabia - SDAIA",
