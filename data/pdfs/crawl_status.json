@@ -1,33 +1,47 @@
 {
-  "updated_at": "2026-08-07T07:16:35.686555+00:00",
-  "phase": "idle",
-  "message": "SDAIA-only site · 860 PDFs",
-  "run_id": "31146154596",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31146154596",
+  "updated_at": "2026-08-08T10:35:49.825615+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://tga.gov.sa/",
+  "run_id": "31253078203",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31253078203",
   "totals": {
-    "pdfs": 860,
+    "pdfs": 884,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 1,
-    "ministry_listed": 852,
-    "ministry_downloaded": 790,
-    "ministry_failed": 49,
-    "ministry_scanned": 13,
+    "jurisdictions": 2,
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
     "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
       "count": 860
+    },
+    {
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "count": 24
     }
   ],
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 860
+      "count": 884
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - TGA",
+    "url": "https://tga.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
+  },
   "recent_pdfs": [
     {
       "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
@@ -290,22 +304,20 @@
   },
   "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
   "ministry_document_list": {
-    "label": "Saudi Arabia - SDAIA",
-    "target_url": "https://sdaia.gov.sa/",
+    "label": "Saudi Arabia - TGA",
+    "target_url": "https://tga.gov.sa/",
     "counts": {
       "to_download": 0,
-      "downloaded": 790,
-      "download_failed": 49,
-      "scanned_pdf": 13,
-      "listed_total": 852
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "href": 275,
-      "playwright_api": 531,
-      "script": 46
-    },
-    "pages_visited": 673,
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-07T07:16:23.136138+00:00"
+    "updated_at": "2026-08-08T10:35:48.001408+00:00"
   }
 }
