@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:35:48.001002+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-08T12:41:56.350626+00:00",
+  "phase": "listed",
   "target_url": "https://tga.gov.sa/",
   "label": "Saudi Arabia - TGA",
   "host": "tga.gov.sa",
@@ -13,9 +13,73 @@
   },
   "discovery_methods": {},
   "sitemaps_used": [],
-  "datasources_found": [],
-  "pages_visited": 0,
-  "page_errors_sample": [],
+  "datasources_found": [
+    "https://tga.gov.sa/_api/web/lists?$select=Title,Id,ItemCount,BaseTemplate,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
+    "https://tga.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%20Path:tga.gov.sa%27&rowlimit=500&selectproperties=%27Path,Title,Size%27",
+    "https://tga.gov.sa/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
+    "https://tga.gov.sa/_vti_bin/listdata.svc/",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/Documents')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/en')/files?$top=200",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+    "https://tga.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500"
+  ],
+  "pages_visited": 12,
+  "page_errors_sample": [
+    {
+      "url": "https://tga.gov.sa/Documents/",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /Documents/ (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/_api/web/lists?$select=Title,Id,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /_api/web/lists?$select=Title,Id,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200 (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/_api/web/lists?$filter=BaseTemplate eq 101&$top=100",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /_api/web/lists?$filter=BaseTemplate%20eq%20101&$top=100 (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500 (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500 (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/en/default.aspx",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /en/default.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/ar/default.aspx",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /ar/default.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/en/",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /en/ (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/ar/",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /ar/ (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/_layouts/15/",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /_layouts/15/ (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://tga.gov.sa/_vti_bin/listdata.svc/",
+      "error": "ConnectionError: HTTPSConnectionPool(host='tga.gov.sa', port=443): Max retries exceeded with url: /_vti_bin/listdata.svc/ (Caused by NewConnectionError(\"HTTPSConnection(host='tga.gov.sa', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    }
+  ],
   "stats": {},
   "documents": []
 }

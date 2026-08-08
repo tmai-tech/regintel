@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:35:48.001002+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-08T12:41:56.350626+00:00",
+  "phase": "listed",
   "target_url": "https://tga.gov.sa/",
   "label": "Saudi Arabia - TGA",
   "counts": {
@@ -11,7 +11,7 @@
     "listed_total": 0
   },
   "discovery_methods": {},
-  "pages_visited": 0,
+  "pages_visited": 12,
   "documents": [],
   "failed_sample": []
 }

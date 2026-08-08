@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-08T10:35:49.825615+00:00",
-  "phase": "discovering",
-  "message": "discovering documents on https://tga.gov.sa/",
+  "updated_at": "2026-08-08T12:41:58.153383+00:00",
+  "phase": "listed",
+  "message": "listed 0 documents on tga.gov.sa (pages=12)",
   "run_id": "31253078203",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31253078203",
   "totals": {
@@ -40,7 +40,7 @@
     "download_failed": 0,
     "scanned_pdf": 0,
     "to_download": 0,
-    "pages_visited": 0
+    "pages_visited": 12
   },
   "recent_pdfs": [
     {
@@ -314,10 +314,10 @@
       "listed_total": 0
     },
     "discovery_methods": {},
-    "pages_visited": 0,
+    "pages_visited": 12,
     "sitemaps_used": [],
-    "datasources_found": 0,
+    "datasources_found": 14,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T10:35:48.001408+00:00"
+    "updated_at": "2026-08-08T12:41:56.350987+00:00"
   }
 }
