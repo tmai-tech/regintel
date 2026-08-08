@@ -1,14 +1,19 @@
 {
-  "updated_at": "2026-08-08T20:03:47.602433+00:00",
-  "phase": "idle",
-  "message": "relabeled 0 ministry PDFs by host",
+  "updated_at": "2026-08-08T20:03:51.764714+00:00",
+  "phase": "discovering",
+  "message": "Saudi ministries · 884 PDFs · 597 summaries",
   "run_id": "31269184452",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31269184452",
   "totals": {
     "pdfs": 884,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 2
+    "jurisdictions": 2,
+    "ministry_listed": 59,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
+    "ministry_to_download": 59
   },
   "by_jurisdiction": [
     {
@@ -287,5 +292,23 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00"
+  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
+  "ministry_document_list": {
+    "label": "Saudi Arabia - MEWA",
+    "target_url": "https://www.mewa.gov.sa/en/",
+    "counts": {
+      "to_download": 59,
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 59
+    },
+    "discovery_methods": {
+      "datasource": 3,
+      "href": 56
+    },
+    "pages_visited": 50,
+    "list_file": "data/ministry_document_list.json",
+    "updated_at": "2026-08-08T19:16:56.919908+00:00"
+  }
 }
