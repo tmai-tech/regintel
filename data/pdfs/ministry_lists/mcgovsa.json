@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T14:53:52.133115+00:00",
+  "updated_at": "2026-08-08T15:00:19.943499+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
@@ -54,9 +54,10 @@
     "https://mc.gov.sa/ar/guides/CustomerGuide/_vti_bin/spsdisco.aspx",
     "https://mc.gov.sa/ar/Communityparticipation/_vti_bin/spsdisco.aspx",
     "https://mc.gov.sa/ar/About/CVs-Ministry-officials/_vti_bin/spsdisco.aspx",
-    "https://mc.gov.sa/ar/mediacenter/_vti_bin/spsdisco.aspx"
+    "https://mc.gov.sa/ar/mediacenter/_vti_bin/spsdisco.aspx",
+    "https://mc.gov.sa/ar/mediacenter/News/_vti_bin/spsdisco.aspx"
   ],
-  "pages_visited": 25,
+  "pages_visited": 50,
   "page_errors_sample": [],
   "stats": {},
   "documents": [
