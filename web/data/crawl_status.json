@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-08T15:04:52.159498+00:00",
+  "updated_at": "2026-08-08T15:07:14.292143+00:00",
   "phase": "discovering",
-  "message": "discovering mc.gov.sa: pages=150 listed=209",
+  "message": "discovering mc.gov.sa: pages=200 listed=209",
   "run_id": "31260687522",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31260687522",
   "totals": {
@@ -40,7 +40,7 @@
     "download_failed": 0,
     "scanned_pdf": 0,
     "to_download": 209,
-    "pages_visited": 150
+    "pages_visited": 200
   },
   "recent_pdfs": [
     {
@@ -321,7 +321,7 @@
       "href": 172,
       "script": 1
     },
-    "pages_visited": 150,
+    "pages_visited": 200,
     "sitemaps_used": [
       "https://mc.gov.sa/sitemap.xml",
       "https://mc.gov.sa/sitemap_index.xml",
@@ -338,6 +338,6 @@
     ],
     "datasources_found": 22,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T15:04:50.522825+00:00"
+    "updated_at": "2026-08-08T15:07:12.645187+00:00"
   }
 }
