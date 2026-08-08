@@ -30,6 +30,7 @@ import hashlib
 import json
 import os
 import re
+import socket
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -40,6 +41,10 @@ from urllib.parse import urljoin, urlparse, urlunparse, unquote
 
 import requests
 from bs4 import BeautifulSoup
+import urllib3
+import urllib3.util.connection as urllib3_cn
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "collector"))
@@ -52,6 +57,12 @@ MANIFEST_PATH = PDF_ROOT / "manifest.json"
 DOC_EXTS = (".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".csv")
 PDF_ONLY_RE = re.compile(r"\.pdf(\.aspx)?($|\?|#|;)", re.I)
 GETATTACHMENT_RE = re.compile(r"/getattachment/.*\.pdf", re.I)
+# TGA / some Saudi CMS serve real PDFs at opaque file endpoints (no .pdf suffix).
+CMS_FILE_RE = re.compile(
+    r"/(websitefile|sharedfile|downloadfile|getfile|filedownload|download\.ashx)"
+    r"(/|$|\?)",
+    re.I,
+)
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -86,9 +97,48 @@ def same_site(url: str, root: str) -> bool:
 
 def normalize(url: str) -> str:
     p = urlparse(url.strip())
+    scheme = p.scheme or "https"
+    netloc = (p.netloc or "").lower()
+    if scheme == "https" and netloc.endswith(":443"):
+        netloc = netloc[:-4]
+    if scheme == "http" and netloc.endswith(":80"):
+        netloc = netloc[:-3]
     path = re.sub(r"/+", "/", p.path or "/")
     q = re.sub(r"(&?(utm_[^=]+|gclid|fbclid)=[^&]*)", "", p.query).strip("&")
-    return urlunparse((p.scheme or "https", p.netloc.lower(), path, "", q, ""))
+    return urlunparse((scheme, netloc, path, "", q, ""))
+
+
+def flip_www(url: str) -> str:
+    p = urlparse(url)
+    host = (p.hostname or "").lower()
+    if not host:
+        return url
+    if host.startswith("www."):
+        new_host = host[4:]
+    else:
+        new_host = "www." + host
+    netloc = new_host
+    if p.port and p.port not in (80, 443):
+        netloc = f"{new_host}:{p.port}"
+    return urlunparse((p.scheme, netloc, p.path, p.params, p.query, p.fragment))
+
+
+def start_url_candidates(url: str) -> list[str]:
+    u = normalize(url if url.startswith("http") else "https://" + url)
+    p = urlparse(u)
+    host = (p.hostname or "").lower()
+    bare = host.removeprefix("www.")
+    hosts = [host, bare, "www." + bare]
+    out = [u]
+    for h in hosts:
+        for path in ("/", "/en/", "/ar/", "/en", "/ar"):
+            out.append(f"https://{h}{path}")
+    return list(dict.fromkeys(out))
+
+
+def force_ipv4() -> None:
+    """GitHub-hosted runners often fail Saudi .gov.sa AAAA (Errno 101 unreachable)."""
+    urllib3_cn.allowed_gai_family = lambda: socket.AF_INET
 
 
 def looks_like_doc(url: str) -> bool:
@@ -99,6 +149,8 @@ def looks_like_doc(url: str) -> bool:
         return True
     if GETATTACHMENT_RE.search(url) or GETATTACHMENT_RE.search(path):
         return True
+    if CMS_FILE_RE.search(path) or CMS_FILE_RE.search(url):
+        return True
     # SharePoint / WCM often serve PDFs without .pdf in path but with .pdf in query
     if ".pdf" in url.lower() and ("/wps/wcm/" in url.lower() or "getattachment" in url.lower()):
         return True
@@ -107,7 +159,7 @@ def looks_like_doc(url: str) -> bool:
 
 def is_pdf_url(url: str) -> bool:
     u = url.lower()
-    return ".pdf" in u or u.endswith(".pdf.aspx")
+    return ".pdf" in u or u.endswith(".pdf.aspx") or bool(CMS_FILE_RE.search(u))
 
 
 def safe_filename(url: str) -> str:
@@ -154,6 +206,7 @@ class MinistryPipeline:
         self.do_download = download
         self.pdf_only = pdf_only
         self.verify = not insecure
+        force_ipv4()
         self.session = requests.Session()
         self.session.headers.update(HEADERS)
 
@@ -166,8 +219,11 @@ class MinistryPipeline:
         self.sitemaps_used: list[str] = []
         self._waf_blocks = 0
         self._playwright = None  # lazy PlaywrightRenderer
+        self._pw_browser = None
         self._pw_renders = 0
-        self._pw_max_renders = 80  # cap expensive JS renders per run
+        self._pw_max_renders = 80 if "sdaia" in self.root else 25
+        self._site_reachable = True
+        self._consecutive_errors = 0
 
         LISTS_DIR.mkdir(parents=True, exist_ok=True)
         self.list_path = LISTS_DIR / f"{slugify(self.root)}.json"
@@ -195,7 +251,8 @@ class MinistryPipeline:
     def fetch(self, url: str, timeout: float = 40) -> tuple[requests.Response | None, str | None]:
         self.polite()
         last = None
-        for attempt in range(4):
+        tried_alt = False
+        for attempt in range(3):
             try:
                 r = self.session.get(
                     url, timeout=timeout, allow_redirects=True, verify=self.verify
@@ -203,21 +260,66 @@ class MinistryPipeline:
                 if self._is_waf_reject(r):
                     self._waf_blocks += 1
                     last = "WAF rejected"
-                    time.sleep(2 ** attempt * 1.2)
+                    time.sleep(min(2 ** attempt * 1.2, 6))
                     continue
                 if r.status_code in (403, 429):
                     last = f"HTTP {r.status_code}"
-                    time.sleep(2 ** attempt * 1.5)
+                    time.sleep(min(2 ** attempt * 1.5, 8))
                     continue
                 if r.status_code >= 400:
                     last = f"HTTP {r.status_code}"
-                    time.sleep(1.2 * (attempt + 1))
+                    time.sleep(1.0 * (attempt + 1))
                     continue
                 return r, None
+            except requests.exceptions.SSLError as e:
+                last = f"SSLError: {e}"
+                if self.verify:
+                    self.verify = False
+                    self.log(f"  [tls] verify=False after SSLError on {base_host(url)}")
+                    continue
+                time.sleep(1.0 * (attempt + 1))
+            except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+                last = f"{type(e).__name__}: {e}"
+                if not tried_alt:
+                    alt = flip_www(url)
+                    if alt != url:
+                        self.log(f"  [net] retry alt host {alt[:90]}")
+                        url = alt
+                        tried_alt = True
+                        continue
+                time.sleep(min(2 ** attempt, 6))
             except requests.RequestException as e:
                 last = f"{type(e).__name__}: {e}"
-                time.sleep(2 ** attempt)
+                time.sleep(min(2 ** attempt, 6))
         return None, last or "unreachable"
+
+    def resolve_start(self) -> bool:
+        """Pick a reachable homepage (www /apex /en /ar) before burning the BFS budget."""
+        for cand in start_url_candidates(self.start_url):
+            r, err = self.fetch(cand, timeout=20)
+            if r is not None and not err:
+                final = normalize(r.url or cand)
+                # keep a site root, not a random deep redirect
+                p = urlparse(final)
+                path = p.path if p.path in ("/", "/en", "/en/", "/ar", "/ar/") else "/"
+                self.start_url = normalize(f"{p.scheme}://{p.netloc}{path}")
+                self.root = base_host(self.start_url)
+                self._site_reachable = True
+                self.log(f"[start] reachable {self.start_url} (tried {cand})")
+                return True
+        self._site_reachable = False
+        self.log(f"[start] UNREACHABLE {self.start_url} — skip deep discover")
+        return False
+
+    def _looks_sharepoint(self, html: str, headers=None) -> bool:
+        blob = (html or "")[:12000].lower()
+        if any(k in blob for k in ("sharepoint", "_api/web", "_layouts/15", "microsoftsharepoint")):
+            return True
+        if headers:
+            joined = " ".join(f"{k}:{v}" for k, v in headers.items()).lower()
+            if "microsoftsharepoint" in joined or "sprequestguid" in joined:
+                return True
+        return False
 
     def looks_like_spa_shell(self, html: str, url: str) -> bool:
         """Colleague Extraction_Script heuristic: empty SPA / JS-only library pages."""
@@ -263,9 +365,14 @@ class MinistryPipeline:
         try:
             if self._playwright is None:
                 self._playwright = sync_playwright().start()
-            browser = self._playwright.chromium.launch(headless=True)
+            if self._pw_browser is None:
+                self._pw_browser = self._playwright.chromium.launch(
+                    headless=True,
+                    args=["--disable-ipv6", "--ignore-certificate-errors"],
+                )
+            browser = self._pw_browser
             try:
-                context = browser.new_context(user_agent=UA, locale="en-US")
+                context = browser.new_context(user_agent=UA, locale="en-US", ignore_https_errors=True)
                 page = context.new_page()
 
                 def on_response(res):
@@ -289,19 +396,23 @@ class MinistryPipeline:
 
                 page.on("response", on_response)
                 try:
-                    page.goto(url, timeout=60000, wait_until="domcontentloaded")
-                    page.wait_for_timeout(3500)
-                    # scroll to trigger lazy lists
-                    for _ in range(4):
+                    goto_ms = 45000 if "sdaia" in self.root else 25000
+                    page.goto(url, timeout=goto_ms, wait_until="domcontentloaded")
+                    page.wait_for_timeout(1800 if "sdaia" in self.root else 1200)
+                    for _ in range(3 if "sdaia" in self.root else 2):
                         page.mouse.wheel(0, 1800)
-                        page.wait_for_timeout(600)
+                        page.wait_for_timeout(400)
                     html = page.content()
                 except Exception as e:
                     self.log(f"  [playwright] goto fail: {e}")
                     html = ""
                 context.close()
-            finally:
-                browser.close()
+            except Exception:
+                html = ""
+                try:
+                    context.close()
+                except Exception:
+                    pass
             for u in pdf_hits:
                 self.add_doc(u, "playwright_net")
             if html:
@@ -309,6 +420,7 @@ class MinistryPipeline:
                 self.harvest_doc_urls_from_text(html, url, "playwright_html")
         except Exception as e:
             self.log(f"  [playwright] error: {e}")
+            self._pw_browser = None
         return pages
 
     def discover_nav_api(self) -> None:
@@ -362,8 +474,7 @@ class MinistryPipeline:
         # same site or sibling portal (dgp.sdaia.gov.sa under sdaia.gov.sa)
         h = base_host(url)
         r = self.root
-        ok = same_site(url, r) or h.endswith("." + r.split(".", 1)[-1] if r.count(".") >= 2 else r)
-        # tighter: allow *.sdaia.gov.sa when root is sdaia.gov.sa
+        ok = same_site(url, r)
         if r.endswith("sdaia.gov.sa") and h.endswith("sdaia.gov.sa"):
             ok = True
         if not ok:
@@ -459,6 +570,56 @@ class MinistryPipeline:
                     "https://dgp.sdaia.gov.sa/",
                 ]
             )
+        if "tga.gov.sa" in self.root:
+            common.extend(
+                [
+                    "/en/",
+                    "/ar/",
+                    "/en/regulations",
+                    "/ar/regulations",
+                    "/en/legislation",
+                    "/ar/legislation",
+                    "/en/library",
+                    "/ar/library",
+                    "/en/media",
+                    "/ar/media",
+                    "/en/opendata",
+                    "/ar/opendata",
+                ]
+            )
+        if "mc.gov.sa" in self.root:
+            common.extend(
+                [
+                    "/ar/Documents/",
+                    "/en/Documents/",
+                    "/DOC/",
+                    "/ar/mediacenter/",
+                    "/ar/mediacenter/Documents/",
+                    "/ar/eservices/Documents/",
+                    "/ar/DO/",
+                    "/ar/CC/D/",
+                    "/ar/Regulations/",
+                    "/en/Regulations/",
+                    "https://regulations.mc.gov.sa/",
+                ]
+            )
+        if "mewa.gov.sa" in self.root:
+            common.extend(
+                [
+                    "/ar/InformationCenter/DocsCenter/RulesLibrary/",
+                    "/en/InformationCenter/DocsCenter/RulesLibrary/",
+                    "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents/",
+                    "/en/InformationCenter/DocsCenter/RulesLibrary/Docs/",
+                    "/ar/Documents/",
+                    "/en/Documents/",
+                    "/ar/Documents/Mewa/",
+                    "/ar/Ministry/AboutMinistry/Documents/",
+                    "/ar/Ministry/initiatives/SectorStratigy/Reports/",
+                    "/ar/Ministry/Agencies/AgencyForInnovation/Documents/",
+                    "/ar/InformationCenter/",
+                    "/en/InformationCenter/",
+                ]
+            )
         return common
 
     def discover_sitemaps(self) -> None:
@@ -540,6 +701,8 @@ class MinistryPipeline:
             self.add_doc(urljoin(base, m.group(1)), method)
 
     def discover_sharepoint_datasources(self, html: str, page_url: str) -> None:
+        if not getattr(self, "_site_reachable", True):
+            return
         patterns = [
             r'["\']([^"\']*DataSources/[^"\']+\.aspx[^"\']*)["\']',
             r'["\']([^"\']*_vti_bin/[^"\']+)["\']',
@@ -553,22 +716,47 @@ class MinistryPipeline:
                 u = urljoin(page_url, m.group(1).replace("&amp;", "&"))
                 if same_site(u, self.root):
                     found.append(normalize(u))
-        for probe in (
+        probes = [
             f"https://{self.root}/_api/web/lists?$select=Title,Id,ItemCount,BaseTemplate,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
             f"https://{self.root}/_api/search/query?querytext=%27FileExtension:pdf%20Path:{self.root}%27&rowlimit=500&selectproperties=%27Path,Title,Size%27",
             f"https://{self.root}/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
             f"https://{self.root}/_vti_bin/listdata.svc/",
             f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/Documents')/files?$top=500",
             f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en')/files?$top=200",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
-            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
-        ):
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/Documents')/files?$top=500",
+            f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/Documents')/files?$top=500",
+        ]
+        if "sdaia" in self.root:
+            probes.extend(
+                [
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+                ]
+            )
+        if "mewa" in self.root:
+            probes.extend(
+                [
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/InformationCenter/DocsCenter/RulesLibrary/Documents')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/InformationCenter/DocsCenter/RulesLibrary/Docs')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/initiatives/SectorStratigy/Reports')/files?$top=500",
+                ]
+            )
+        if "mc.gov.sa" in self.root:
+            probes.extend(
+                [
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/mediacenter/Documents')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/DOC')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/eservices/Documents')/files?$top=500",
+                ]
+            )
+        for probe in probes:
             found.append(probe)
 
         for ds in list(dict.fromkeys(found))[:120]:
@@ -638,7 +826,7 @@ class MinistryPipeline:
             or "_vti_bin" in html
             or "SharePoint" in html
             or "WebPart" in html
-            or self.pages_seen <= 5
+            or ("sdaia" in self.root and self.pages_seen <= 5)
         ):
             self.discover_sharepoint_datasources(html, page_url)
         for api in re.findall(r'["\'](/_api/[^"\']{2,200})["\']', html)[:40]:
@@ -688,23 +876,48 @@ class MinistryPipeline:
                 "knowledgecenter", "ainewsletter", "researchlibrary",
                 "/documents", "regulations", "policies", "mediacenter",
                 "datasource", "_api/", "newsletter",
+                "ruleslibrary", "docscenter", "websitefile", "sharedfile",
+                "legislation", "/doc/", "infocenter",
             )
         ):
             return 0
-        if any(k in u for k in ("/about", "/sectors", "/research", "eparticipation")):
+        if any(k in u for k in ("/about", "/sectors", "/research", "eparticipation", "informationcenter")):
             return 1
         return 2
 
     def discover(self) -> dict:
         self._seed_pages: list[str] = []
         self.log(f"[discover] start {self.start_url} max_pages={self.max_pages}")
+        reachable = self.resolve_start()
+        if not reachable:
+            self.playwright_discover(self.start_url)
+            if not self.docs:
+                stats = {
+                    "target_url": self.start_url,
+                    "label": self.label,
+                    "pages_visited": self.pages_seen,
+                    "documents_listed": 0,
+                    "page_errors": len(self.page_errors),
+                    "unreachable": True,
+                }
+                self.log("[discover] abort: homepage unreachable")
+                self.save_list(phase="listed", extra_stats=stats)
+                self.publish_status(
+                    "listed",
+                    f"listed 0 documents on {self.root} (unreachable)",
+                    force_git=True,
+                )
+                return stats
         # Warm session (cookies) — reduces intermittent WAF empties
-        self.fetch(self.start_url, timeout=30)
+        home, home_err = self.fetch(self.start_url, timeout=30)
+        home_html = home.text if home is not None and not home_err else ""
         self.discover_nav_api()
         self.discover_sitemaps()
-        # SharePoint probes (often WAF-blocked on SDAIA; still try after warm)
-        if self._waf_blocks < 15:
-            self.discover_sharepoint_datasources("", self.start_url)
+        # SharePoint probes only when the site looks like SharePoint (or SDAIA)
+        if self._site_reachable and self._waf_blocks < 15 and (
+            "sdaia" in self.root or self._looks_sharepoint(home_html, getattr(home, "headers", None))
+        ):
+            self.discover_sharepoint_datasources(home_html, self.start_url)
 
         queues: dict[int, deque] = {0: deque(), 1: deque(), 2: deque()}
         queued: set[str] = set()
@@ -770,11 +983,26 @@ class MinistryPipeline:
             ct = ""
             if err or r is None:
                 self.page_errors.append({"url": url, "error": err})
+                self._consecutive_errors += 1
+                if (
+                    self._consecutive_errors >= 20
+                    and len(self.docs) == 0
+                    and self.pages_seen >= 12
+                ):
+                    self.log("[discover] abort: 0 docs after 12+ consecutive fetch failures")
+                    break
                 # Colleague path: try Playwright when plain HTTP fails on library pages
-                if self.page_priority(url) == 0:
+                # Skip _api (Playwright cannot help) and stop after a run of failures.
+                if (
+                    self.page_priority(url) == 0
+                    and "/_api/" not in url
+                    and "/_vti_bin/" not in url
+                    and self._consecutive_errors < 8
+                ):
                     for p in self.playwright_discover(url):
                         enq(p)
                 continue
+            self._consecutive_errors = 0
             ct = (r.headers.get("Content-Type") or "").lower()
             if looks_like_doc(url) or "pdf" in ct:
                 self.add_doc(url, "direct")
@@ -845,6 +1073,9 @@ class MinistryPipeline:
         )
         # shutdown playwright
         try:
+            if self._pw_browser is not None:
+                self._pw_browser.close()
+                self._pw_browser = None
             if self._playwright is not None:
                 self._playwright.stop()
                 self._playwright = None

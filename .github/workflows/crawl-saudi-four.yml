@@ -65,11 +65,21 @@ jobs:
             echo "========================================"
             echo "=== Crawling $LABEL :: $URL ==="
             echo "========================================"
-            python -u collector/ministry_pipeline.py \
+            set +e
+            # Hard-cap each ministry so TGA/MC/MEWA cannot burn the 12h job.
+            timeout --signal=TERM --kill-after=45s 75m python -u collector/ministry_pipeline.py \
               --url "$URL" \
               --label "$LABEL" \
               --max-pages "${MAX_PAGES:-2000}" \
-              --delay "${DELAY:-0.25}" || echo "::warning::crawl failed for $LABEL (continuing)"
+              --delay "${DELAY:-0.25}" \
+              --insecure
+            rc=$?
+            set -euo pipefail
+            if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
+              echo "::warning::crawl timed out for $LABEL (continuing)"
+            elif [ "$rc" -ne 0 ]; then
+              echo "::warning::crawl failed for $LABEL rc=$rc (continuing)"
+            fi
             python scripts/fix_ministry_jurisdiction_labels.py || true
             python scripts/publish_saudi_ministries.py || true
           }

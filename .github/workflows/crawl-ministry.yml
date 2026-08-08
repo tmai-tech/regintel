@@ -34,7 +34,7 @@ permissions:
 
 concurrency:
   group: crawl-ministry
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   crawl:
@@ -82,6 +82,7 @@ jobs:
             --label "$LABEL" \
             --max-pages "${MAX_PAGES:-2000}" \
             --delay "${DELAY:-0.3}" \
+            --insecure \
             "${EXTRA[@]+"${EXTRA[@]}"}"
           python scripts/fix_ministry_jurisdiction_labels.py || true
           # Public site: SDAIA + TGA + MC + MEWA (no global gazette)
