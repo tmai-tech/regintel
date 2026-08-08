@@ -131,35 +131,61 @@ def answer_with_context(
                 "source_page": c.get("source_page"),
             }
         )
+        passages = c.get("passages") or []
+        pass_txt = ""
+        if passages:
+            bits = []
+            for p in passages[:3]:
+                if isinstance(p, dict):
+                    bits.append(str(p.get("text") or "")[:500])
+                else:
+                    bits.append(str(p)[:500])
+            pass_txt = "\nPassages from PDF:\n- " + "\n- ".join(b for b in bits if b)
         blocks.append(
             f"[{i}] Title: {c.get('title')}\n"
             f"Jurisdiction: {c.get('jurisdiction')}\n"
             f"URL: {c.get('url') or c.get('open_url')}\n"
             f"Summary: {c.get('summary')}\n"
             f"Key points: {'; '.join(c.get('key_points') or [])}"
+            f"{pass_txt}"
         )
 
     client = get_client()
     if client is None:
-        # Offline synthesis
+        # Offline synthesis — ChatGPT-style bullets from key points + passages
         lines = [
-            f"Based on {len(contexts)} PDF summary(ies) in Eva's index:\n",
+            "I searched our PDF library (not the open web) and found these relevant sources:\n",
+            "Answer:",
         ]
-        for c in contexts[:5]:
-            lines.append(f"• {c.get('title')}: {(c.get('summary') or '')[:280]}")
+        for i, c in enumerate(contexts[:6], 1):
+            pts = c.get("key_points") or []
+            if pts:
+                for p in pts[:2]:
+                    lines.append(f"• [{i}] {p}")
+            else:
+                lines.append(f"• [{i}] {(c.get('summary') or '')[:260]}")
+            for p in (c.get("passages") or [])[:1]:
+                t = p.get("text") if isinstance(p, dict) else str(p)
+                if t:
+                    lines.append(f"  “{str(t)[:280]}”")
         lines.append("\nReferences:")
         for cit in citations:
             lines.append(f"[{cit['n']}] {cit.get('title')} — {cit.get('url')}")
+        lines.append(
+            "\nI only use our RegIntel/SDAIA PDF index for answers."
+        )
         return {"answer": "\n".join(lines), "citations": citations, "method": "retrieve_only"}
 
     system = (
-        "You are Eva, RegIntel's regulatory research assistant. "
-        "Answer ONLY from the provided PDF summaries. "
+        "You are Eva, RegIntel's PDF research assistant. "
+        "You work like ChatGPT with browsing, but you ONLY search the provided PDF "
+        "summaries and passages from OUR library (SDAIA / RegIntel corpus). "
+        "Never invent facts from the open web or outside the sources. "
         "If the answer is not in the sources, say you don't know from the indexed PDFs. "
-        "Cite sources inline like [1], [2]. "
+        "Write a clear, direct answer first, then supporting points with citations [1], [2]. "
         "End with a short 'References' list mapping [n] to document title and URL."
     )
-    user = f"Question: {question}\n\nSources:\n\n" + "\n\n---\n\n".join(blocks)
+    user = f"Question: {question}\n\nSources from our PDF library:\n\n" + "\n\n---\n\n".join(blocks)
     answer = chat_text(system, user, temperature=0.2, max_tokens=1400)
     return {"answer": answer, "citations": citations, "method": "llm"}
 

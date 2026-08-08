@@ -1,25 +1,32 @@
 # Eva — PDF research agent
 
-**Eva** reads RegIntel PDFs, stores summaries, and answers questions **with references** to the source documents.
+**Eva** is your **PDF research assistant** (ChatGPT-with-browsing style, but **only our PDF library** — not the open web).
+
+She **searches indexed SDAIA/RegIntel PDFs**, pulls relevant summaries and passages, and answers with **citations + PDF links**.
 
 ## Architecture
 
 ```
+User question (Eva chat)
+        │
+        ▼
+Retrieve top PDFs from eva_summaries (keyword / bilingual score)
+        │
+        ├── optional deep read: extract passages from PDF text
+        ▼
+Synthesize answer + citations (client RAG, or SpaceXAI via eva_server)
+        │
+        ▼
+Show answer + clickable PDF references
+
+Offline batch index:
 PDF catalog / local files / remote open_url
         │
         ▼
-collector/eva_extract.py     → plain text (pypdf)
-        │
-        ▼
-collector/eva_summarize.py   → summary JSON (SpaceXAI if XAI_API_KEY set, else extractive)
-        │
-        ├── data/eva/summaries.jsonl      (full resume store)
-        └── web/data/eva_summaries.json   (site index)
-        │
-        ▼
-collector/eva_agent.py       → retrieve top summaries → answer + citations
-tools/eva_server.py          → optional local API for LLM chat
-Web tab **Eva**              → ask questions in the browser
+collector/eva_extract.py     → plain text
+collector/eva_summarize.py   → summary JSON (XAI_API_KEY → LLM, else extractive)
+        ├── data/eva/summaries.jsonl
+        └── web/data/eva_summaries.json
 ```
 
 ## Setup

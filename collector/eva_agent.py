@@ -51,12 +51,7 @@ STOP = {
 }
 
 
-def tokenize(s: str) -> set[str]:
-    return {
-        t
-        for t in re.findall(r"[a-z0-9]{3,}", (s or "").lower())
-        if t not in STOP
-    }
+# tokenize() redefined below with Arabic support (used by retrieve)
 
 
 def is_meta_question(q: str) -> bool:
@@ -170,49 +165,141 @@ def meta_answer(question: str, corpus: list[dict]) -> dict:
     }
 
 
+def tokenize(s: str) -> set[str]:
+    """Latin + Arabic tokens for bilingual SDAIA corpus."""
+    raw = (s or "").lower()
+    lat = set(re.findall(r"[a-z0-9]{3,}", raw))
+    ar = set(re.findall(r"[\u0600-\u06ff]{2,}", raw))
+    return {t for t in (lat | ar) if t not in STOP}
+
+
 def retrieve(question: str, corpus: list[dict], *, k: int = 8) -> list[dict]:
     q = tokenize(question)
-    if not q:
+    q_raw = (question or "").lower().strip()
+    if not q and len(q_raw) < 2:
         return []
     scored = []
     for doc in corpus:
         title = str(doc.get("title") or "")
+        summary = str(doc.get("summary") or "")
         blob = " ".join(
             [
                 title,
                 str(doc.get("jurisdiction") or ""),
-                str(doc.get("summary") or ""),
+                summary,
                 " ".join(doc.get("key_points") or []),
                 " ".join(doc.get("topics") or []),
             ]
         )
         dt = tokenize(blob)
-        if not dt:
+        if not dt and not title:
             continue
-        score = len(q & dt)
-        score += 3 * len(q & tokenize(title))
+        score = len(q & dt) if q else 0
+        score += 4 * len(q & tokenize(title))
         j = str(doc.get("jurisdiction") or "").lower()
+        title_l = title.lower()
+        summary_l = summary.lower()
         for t in q:
             if t in j:
                 score += 2
-        if score >= 2:
+            if len(t) >= 4 and t in title_l:
+                score += 2
+            if len(t) >= 4 and t in summary_l:
+                score += 1
+        if len(q_raw) >= 6 and q_raw[:40] in title_l:
+            score += 6
+        if score >= 1:
             scored.append((score, doc))
     scored.sort(key=lambda x: -x[0])
     if not scored:
         return []
     best = scored[0][0]
-    return [d for sc, d in scored if sc >= max(2, best * 0.4)][:k]
+    min_keep = max(1, best * 0.35) if best >= 6 else 1
+    return [d for sc, d in scored if sc >= min_keep][:k]
 
 
-def ask(question: str, *, k: int = 8) -> dict:
+def _local_pdf_path(doc: dict) -> Path | None:
+    """Resolve a local PDF path from catalog-ish fields if present on disk."""
+    for key in ("local_path", "path", "filename"):
+        p = doc.get(key)
+        if not p:
+            continue
+        path = Path(p)
+        if not path.is_absolute():
+            path = ROOT / path
+        if path.is_file() and path.suffix.lower() == ".pdf":
+            return path
+        # ministry download layout
+        cand = ROOT / "data" / "pdfs" / path.name
+        if cand.is_file():
+            return cand
+    return None
+
+
+def enrich_with_pdf_passages(question: str, hits: list[dict], *, max_docs: int = 3) -> list[dict]:
+    """Optional deep read: extract passages from local PDF files for top hits."""
+    try:
+        from eva_extract import extract_text  # type: ignore
+    except Exception:
+        return hits
+
+    q = tokenize(question)
+    out: list[dict] = []
+    for i, doc in enumerate(hits):
+        d = dict(doc)
+        d["passages"] = list(doc.get("passages") or [])
+        if i < max_docs:
+            path = _local_pdf_path(doc)
+            if path is not None:
+                try:
+                    text = extract_text(path) or ""
+                except Exception:
+                    text = ""
+                if len(text) > 80:
+                    # sliding windows
+                    step = 500
+                    scored = []
+                    for j in range(0, min(len(text), 80_000), step):
+                        window = text[j : j + 650].strip()
+                        if len(window) < 50:
+                            continue
+                        dt = tokenize(window)
+                        score = len(q & dt)
+                        if score >= 1:
+                            scored.append((score, window[:700]))
+                    scored.sort(key=lambda x: -x[0])
+                    d["passages"] = [
+                        {"text": w, "score": sc} for sc, w in scored[:3]
+                    ]
+        out.append(d)
+    return out
+
+
+def ask(question: str, *, k: int = 8, deep: bool = True) -> dict:
+    """
+    ChatGPT-style Q&A over our PDF library only:
+      search summaries → optional deep PDF passages → LLM/extractive answer + citations.
+    """
     corpus = load_summaries()
+    # Prefer SDAIA when present (site focus)
+    sdaia = [
+        r
+        for r in corpus
+        if "sdaia" in str(r.get("jurisdiction") or "").lower()
+        or "sdaia" in str(r.get("url") or r.get("open_url") or "").lower()
+    ]
+    if sdaia:
+        corpus = sdaia
     if is_meta_question(question):
         return meta_answer(question, corpus)
     hits = retrieve(question, corpus, k=k)
+    if deep and hits:
+        hits = enrich_with_pdf_passages(question, hits, max_docs=3)
     result = answer_with_context(question=question, contexts=hits)
     result["retrieved"] = len(hits)
     result["corpus_size"] = len(corpus)
     result["llm"] = get_client() is not None
+    result["mode"] = "pdf_rag"
     return result
 
 

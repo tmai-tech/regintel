@@ -245,9 +245,11 @@
   ]);
 
   function tokenizeEva(s) {
-    return (String(s || "").toLowerCase().match(/[a-z0-9]{3,}/g) || []).filter(
-      (t) => !EVA_STOP.has(t),
-    );
+    // Latin + Arabic tokens (SDAIA corpus is bilingual)
+    const raw = String(s || "").toLowerCase();
+    const lat = raw.match(/[a-z0-9]{3,}/g) || [];
+    const ar = raw.match(/[\u0600-\u06ff]{2,}/g) || [];
+    return [...lat, ...ar].filter((t) => !EVA_STOP.has(t));
   }
 
   /** Questions about Eva herself / indexing status — not about bill content. */
@@ -317,14 +319,14 @@
     if (/^(hi|hello|hey)\b/.test(s) || /who are you|what (can|do) you do|what is eva/.test(s)) {
       return {
         answer:
-          "I’m Eva, RegIntel’s legal research assistant. I read bill and gazette PDFs, keep short summaries, and answer your questions with links to the source PDFs.\n\n" +
-          `Right now I have ${count} SDAIA PDF summary(ies) in my index` +
-          (pdfCatalogCount ? ` (${pdfCatalogCount} SDAIA PDFs in the catalog).` : ".") +
-          "\n\nAsk about SDAIA policies, PDPL, AI ethics, or a document name.",
+          "I’m Eva — RegIntel’s research assistant for **our PDF library**.\n\n" +
+          "Think of ChatGPT with browsing: I don’t invent from the open web; I **search our indexed SDAIA PDFs**, pull relevant summaries and passages, and answer with **citations + PDF links**.\n\n" +
+          `Indexed now: **${count}** summarized PDF(s)` +
+          (pdfCatalogCount ? ` · catalog ~${pdfCatalogCount}` : "") +
+          ".\n\nAsk about PDPL, privacy, AI ethics, data sharing, or a document title.",
         citations: [],
       };
     }
-
     if (/thank/.test(s)) {
       return { answer: "You’re welcome. Ask anytime about a bill, regulation, or jurisdiction.", citations: [] };
     }
@@ -378,87 +380,187 @@
 
   function retrieveEva(question, corpus, k) {
     const tokens = tokenizeEva(question);
-    if (!tokens.length) return [];
+    const qRaw = String(question || "").toLowerCase().trim();
+    if (!tokens.length && qRaw.length < 2) return [];
     const q = new Set(tokens);
     const scored = [];
     for (const doc of corpus) {
       const title = String(doc.title || "");
-      const blob = [
-        title,
-        doc.jurisdiction,
-        doc.summary,
-        ...(doc.key_points || []),
-        ...(doc.topics || []),
-      ]
-        .filter(Boolean)
-        .join(" ");
+      const summary = String(doc.summary || "");
+      const points = (doc.key_points || []).join(" ");
+      const topics = (doc.topics || []).join(" ");
+      const j = String(doc.jurisdiction || "");
+      const blob = [title, j, summary, points, topics].join(" ");
       const dt = new Set(tokenizeEva(blob));
       let score = 0;
       q.forEach((t) => {
         if (dt.has(t)) score += 1;
       });
-      // strong title match
       const titleToks = new Set(tokenizeEva(title));
       q.forEach((t) => {
-        if (titleToks.has(t)) score += 3;
+        if (titleToks.has(t)) score += 4;
       });
-      // jurisdiction phrase
-      const j = String(doc.jurisdiction || "").toLowerCase();
+      // phrase / substring boosts
       tokens.forEach((t) => {
-        if (j.includes(t)) score += 2;
+        if (t.length >= 4 && title.toLowerCase().includes(t)) score += 2;
+        if (t.length >= 4 && summary.toLowerCase().includes(t)) score += 1;
+        if (j.toLowerCase().includes(t)) score += 2;
       });
-      if (score >= 2) scored.push({ score, doc });
+      if (qRaw.length >= 6 && title.toLowerCase().includes(qRaw.slice(0, 40))) {
+        score += 6;
+      }
+      if (score >= 1) scored.push({ score, doc });
     }
     scored.sort((a, b) => b.score - a.score);
-    // drop weak tail: keep only scores close to best
     if (!scored.length) return [];
     const best = scored[0].score;
+    const minKeep = best >= 6 ? Math.max(2, best * 0.35) : 1;
     return scored
-      .filter((x) => x.score >= Math.max(2, best * 0.4))
+      .filter((x) => x.score >= minKeep)
       .slice(0, k)
       .map((x) => x.doc);
   }
 
+  /** Split page text into short passages and rank by query overlap. */
+  function rankPassagesForQuestion(question, pages, maxPassages) {
+    const q = new Set(tokenizeEva(question));
+    if (!q.size || !pages || !pages.length) return [];
+    const scored = [];
+    for (const pg of pages) {
+      const full = String(pg.text || "").trim();
+      if (full.length < 40) continue;
+      // windows ~500 chars
+      const step = 400;
+      for (let i = 0; i < full.length; i += step) {
+        const window = full.slice(i, i + 550).trim();
+        if (window.length < 40) continue;
+        const dt = tokenizeEva(window);
+        let score = 0;
+        q.forEach((t) => {
+          if (dt.includes(t) || window.toLowerCase().includes(t)) score += 1;
+        });
+        if (score >= 1) {
+          scored.push({
+            score,
+            page: pg.page,
+            text: window.length > 700 ? window.slice(0, 697) + "…" : window,
+          });
+        }
+      }
+    }
+    scored.sort((a, b) => b.score - a.score);
+    // dedupe near-identical starts
+    const out = [];
+    const seen = new Set();
+    for (const s of scored) {
+      const key = s.text.slice(0, 80);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(s);
+      if (out.length >= (maxPassages || 4)) break;
+    }
+    return out;
+  }
+
+  /**
+   * ChatGPT-style synthesis over retrieved PDFs + optional deep passages.
+   * Only uses our corpus (summaries + extracted snippets), never the open web.
+   */
   function evaAnswerLocal(question, hits) {
     if (!hits.length) {
       return {
         answer:
-          "I couldn’t find a strong match in my PDF summaries for that question.\n\n" +
+          "I searched our indexed SDAIA PDFs and didn’t find a strong match.\n\n" +
           "Tips:\n" +
-          "• Name a jurisdiction (e.g. Delaware, Manitoba, Saudi, UK)\n" +
-          "• Use a topic (tax, cyber, securities, housing)\n" +
-          "• Or a bill/document title word\n\n" +
-          "Ask “status” if you want to know how many PDFs I’ve indexed so far.",
+          "• Use topic words (privacy, PDPL, AI ethics, data sharing, cybersecurity)\n" +
+          "• Or a document title word (newsletter, guideline, policy)\n" +
+          "• Ask “list the PDFs” or “status” for what I’ve indexed\n\n" +
+          "I only answer from our PDF library — not the open web.",
         citations: [],
       };
     }
+    const citations = hits.map((h, i) => ({
+      n: i + 1,
+      title: h.title,
+      url: h.open_url || h.url,
+      jurisdiction: h.jurisdiction,
+    }));
+
     const lines = [
-      `Here’s what I found in ${hits.length} related PDF summary(ies). I only use summaries I’ve completed — each answer cites the source:`,
+      "I searched our SDAIA PDF library (like ChatGPT browsing, but only our documents) and pulled the most relevant sources.",
       "",
+      "Answer:",
     ];
-    const citations = [];
+
+    // Synthesize from key points first (more answer-like than dump of full summaries)
+    const bullets = [];
     hits.forEach((h, i) => {
       const n = i + 1;
-      citations.push({
-        n,
-        title: h.title,
-        url: h.open_url || h.url,
-        jurisdiction: h.jurisdiction,
-      });
-      lines.push(`[${n}] ${h.title || "Untitled"} (${h.jurisdiction || "—"})`);
-      let sum = (h.summary || "").trim();
-      if (sum.length > 380) sum = sum.slice(0, 377) + "…";
-      lines.push(sum || "(No summary text.)");
-      if (h.key_points && h.key_points.length) {
-        lines.push("Key points: " + h.key_points.slice(0, 3).join("; "));
+      const pts = (h.key_points || []).slice(0, 3);
+      if (pts.length) {
+        pts.forEach((p) => bullets.push(`[${n}] ${String(p).trim()}`));
+      } else {
+        let sum = (h.summary || "").trim();
+        if (sum.length > 320) sum = sum.slice(0, 317) + "…";
+        if (sum) bullets.push(`[${n}] ${sum}`);
       }
-      lines.push("");
+      // deep passages from live PDF extract
+      (h.passages || []).slice(0, 2).forEach((p) => {
+        bullets.push(
+          `[${n} p.${p.page}] “${String(p.text || "").trim()}”`,
+        );
+      });
     });
+    if (bullets.length) {
+      bullets.slice(0, 12).forEach((b) => lines.push("• " + b));
+    } else {
+      lines.push("• See the cited PDF summaries below — I couldn’t extract sharper points.");
+    }
+
+    lines.push("");
+    lines.push("Sources used:");
+    hits.forEach((h, i) => {
+      const n = i + 1;
+      lines.push(`[${n}] ${h.title || "Untitled"} (${h.jurisdiction || "SDAIA"})`);
+      let sum = (h.summary || "").trim();
+      if (sum.length > 280) sum = sum.slice(0, 277) + "…";
+      if (sum) lines.push("    " + sum);
+    });
+    lines.push("");
     lines.push("References (open the PDF):");
     citations.forEach((c) => {
-      lines.push(`[${c.n}] ${c.title}${c.url ? " — " + c.url : ""}`);
+      lines.push(`[${c.n}] ${c.title || "PDF"}${c.url ? " — " + c.url : ""}`);
     });
+    lines.push("");
+    lines.push(
+      "I only use our RegIntel/SDAIA PDF index for answers — I don’t browse the open web.",
+    );
     return { answer: lines.join("\n"), citations };
+  }
+
+  /** Deepen top hits by extracting matching passages from the actual PDFs. */
+  async function enrichHitsFromPdfs(question, hits) {
+    const out = [];
+    for (const h of (hits || []).slice(0, 3)) {
+      const url = h.open_url || h.url || "";
+      const copy = { ...h, passages: [] };
+      if (isHttpUrl(url) && typeof extractPdfTextByPage === "function") {
+        try {
+          const extracted = await extractPdfTextByPage(url, 12);
+          copy.passages = rankPassagesForQuestion(
+            question,
+            extracted.pages || [],
+            3,
+          );
+        } catch (_) {
+          /* CORS / scanned PDF — keep summary-only */
+        }
+      }
+      out.push(copy);
+    }
+    // keep remaining hits without deep extract
+    for (const h of (hits || []).slice(3)) out.push({ ...h, passages: [] });
+    return out;
   }
 
   function initEva(summaries, meta, pdfCatalogCount) {
@@ -476,9 +578,9 @@
     const count = corpus.length;
     const llmHint =
       meta && meta.llm_available
-        ? "LLM index · " + count + " PDFs"
+        ? "PDF RAG · LLM · " + count + " docs"
         : count
-          ? count + " summaries"
+          ? "PDF RAG · " + count + " docs"
           : "indexing…";
     if (metaEl) {
       metaEl.textContent = llmHint;
@@ -496,11 +598,13 @@
           addBubble(
             "bot",
             count
-              ? `Hi, I’m Eva — your legal research assistant.\n\nI’ve summarized ${count} PDF(s) so far` +
+              ? `Hi, I’m Eva — your SDAIA PDF research assistant.\n\n` +
+                  `Like ChatGPT with web browsing, I search a library for answers — but mine is **our RegIntel PDF corpus**, not the open web.\n\n` +
+                  `Indexed: **${count}** summarized PDF(s)` +
                   (pdfCatalogCount
-                    ? ` (catalog has ~${pdfCatalogCount} PDFs; more summaries are added in batches).`
-                    : ".") +
-                  `\n\nAsk a content question (topic / jurisdiction / bill name). For indexing progress, ask “are you reading more PDFs?” or “status”.`
+                    ? ` · catalog ~${pdfCatalogCount} PDFs`
+                    : "") +
+                  `.\n\nAsk about privacy, PDPL, AI ethics, data sharing, or a document name. I’ll pull the relevant PDFs, extract supporting points, and cite links.\n\nAsk “status” or “list the PDFs” anytime.`
               : "Hi, I’m Eva. PDF summaries are still being built. Ask “status” anytime, or a topic once indexing has started.",
           );
         }
@@ -573,6 +677,7 @@
         return;
       }
 
+      // Prefer optional local Eva API (SpaceXAI RAG) when configured
       const apiBase = (
         window.REGINTEL_EVA_API ||
         localStorage.getItem("regintel_eva_api") ||
@@ -583,7 +688,7 @@
           const res = await fetch(apiBase + "/api/eva/ask", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ question: q, k: 8 }),
+            body: JSON.stringify({ question: q, k: 10, deep: true }),
           });
           if (res.ok) {
             const data = await res.json();
@@ -591,11 +696,23 @@
             return;
           }
         } catch {
-          /* fall through */
+          /* fall through to client-side PDF RAG */
         }
       }
-      const hits = retrieveEva(q, corpus, 5);
-      const out = evaAnswerLocal(q, hits);
+
+      // Client-side: search summaries → open top PDFs → extract matching passages → answer + cite
+      typing.textContent = "Eva is searching our PDFs…";
+      const hits = retrieveEva(q, corpus, 8);
+      typing.textContent = hits.length
+        ? "Eva is reading the top matching PDFs…"
+        : "Eva is thinking…";
+      let enriched = hits;
+      try {
+        enriched = await enrichHitsFromPdfs(q, hits);
+      } catch (_) {
+        enriched = hits;
+      }
+      const out = evaAnswerLocal(q, enriched);
       finish(out.answer, out.citations);
     }
 

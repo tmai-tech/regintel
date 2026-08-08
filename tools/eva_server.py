@@ -82,9 +82,10 @@ class Handler(BaseHTTPRequestHandler):
         q = (payload.get("question") or "").strip()
         if not q:
             return self._json(400, {"error": "question required"})
-        k = int(payload.get("k") or 8)
+        k = int(payload.get("k") or 10)
+        deep = payload.get("deep", True)
         try:
-            res = ask(q, k=k)
+            res = ask(q, k=k, deep=bool(deep))
             return self._json(200, res)
         except Exception as e:
             return self._json(500, {"error": str(e)[:400]})
