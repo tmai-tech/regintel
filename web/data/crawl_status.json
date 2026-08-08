@@ -1,14 +1,19 @@
 {
-  "updated_at": "2026-08-08T17:33:39.649543+00:00",
-  "phase": "idle",
-  "message": "relabeled 0 ministry PDFs by host",
+  "updated_at": "2026-08-08T17:33:43.263161+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://mc.gov.sa/",
   "run_id": "31269184452",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31269184452",
   "totals": {
     "pdfs": 884,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 2
+    "jurisdictions": 2,
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -26,7 +31,17 @@
       "count": 884
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - MC",
+    "url": "https://mc.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
+  },
   "recent_pdfs": [
     {
       "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
@@ -287,5 +302,22 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00"
+  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
+  "ministry_document_list": {
+    "label": "Saudi Arabia - MC",
+    "target_url": "https://mc.gov.sa/",
+    "counts": {
+      "to_download": 0,
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 0
+    },
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
+    "list_file": "data/ministry_document_list.json",
+    "updated_at": "2026-08-08T17:33:41.500892+00:00"
+  }
 }

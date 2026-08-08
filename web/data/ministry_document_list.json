@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-08T17:33:34.144349+00:00",
-  "phase": "listed",
-  "target_url": "https://tga.gov.sa/",
-  "label": "Saudi Arabia - TGA",
+  "updated_at": "2026-08-08T17:33:41.500405+00:00",
+  "phase": "discovering",
+  "target_url": "https://mc.gov.sa/",
+  "label": "Saudi Arabia - MC",
   "counts": {
     "to_download": 0,
     "downloaded": 0,
