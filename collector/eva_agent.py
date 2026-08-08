@@ -239,7 +239,7 @@ def _local_pdf_path(doc: dict) -> Path | None:
 def enrich_with_pdf_passages(question: str, hits: list[dict], *, max_docs: int = 3) -> list[dict]:
     """Optional deep read: extract passages from local PDF files for top hits."""
     try:
-        from eva_extract import extract_text  # type: ignore
+        from eva_extract import extract_text_from_path  # type: ignore
     except Exception:
         return hits
 
@@ -252,7 +252,7 @@ def enrich_with_pdf_passages(question: str, hits: list[dict], *, max_docs: int =
             path = _local_pdf_path(doc)
             if path is not None:
                 try:
-                    text = extract_text(path) or ""
+                    text = extract_text_from_path(path) or ""
                 except Exception:
                     text = ""
                 if len(text) > 80:
