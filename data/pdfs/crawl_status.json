@@ -1,19 +1,14 @@
 {
-  "updated_at": "2026-08-08T15:23:12.757889+00:00",
-  "phase": "discovering",
-  "message": "discovering mc.gov.sa: pages=550 listed=209",
+  "updated_at": "2026-08-08T15:23:36.654650+00:00",
+  "phase": "idle",
+  "message": "relabeled 0 ministry PDFs by host",
   "run_id": "31260687522",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31260687522",
   "totals": {
     "pdfs": 884,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 2,
-    "ministry_listed": 209,
-    "ministry_downloaded": 0,
-    "ministry_failed": 0,
-    "ministry_scanned": 0,
-    "ministry_to_download": 209
+    "jurisdictions": 2
   },
   "by_jurisdiction": [
     {
@@ -31,17 +26,7 @@
       "count": 884
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - MC",
-    "url": "https://mc.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 209,
-    "downloaded": 0,
-    "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 209,
-    "pages_visited": 550
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
@@ -302,42 +287,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
-  "ministry_document_list": {
-    "label": "Saudi Arabia - MC",
-    "target_url": "https://mc.gov.sa/",
-    "counts": {
-      "to_download": 209,
-      "downloaded": 0,
-      "download_failed": 0,
-      "scanned_pdf": 0,
-      "listed_total": 209
-    },
-    "discovery_methods": {
-      "sitemap": 1,
-      "datasource": 28,
-      "playwright_api": 6,
-      "playwright_net": 1,
-      "href": 172,
-      "script": 1
-    },
-    "pages_visited": 550,
-    "sitemaps_used": [
-      "https://mc.gov.sa/sitemap.xml",
-      "https://mc.gov.sa/sitemap_index.xml",
-      "https://mc.gov.sa/Sitemap.xml",
-      "https://www.mc.gov.sa/sitemap.xml",
-      "https://mc.gov.sa/en/sitemap.xml",
-      "https://mc.gov.sa/ar/sitemap.xml",
-      "https://mc.gov.sa:443/sitemap0.xml",
-      "https://mc.gov.sa:443/sitemap_mobile0.xml",
-      "https://mc.gov.sa/en/Pages/SiteMap.aspx",
-      "https://mc.gov.sa/en/Pages/SiteMapChart.aspx",
-      "https://mc.gov.sa:443/en/Pages/SiteMap.aspx",
-      "https://mc.gov.sa:443/en/Pages/SiteMapChart.aspx"
-    ],
-    "datasources_found": 22,
-    "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T15:23:11.134427+00:00"
-  }
+  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00"
 }
