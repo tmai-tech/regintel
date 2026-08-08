@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:42:03.781119+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-08T12:54:52.779059+00:00",
+  "phase": "listed",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
   "host": "mc.gov.sa",
@@ -13,9 +13,75 @@
   },
   "discovery_methods": {},
   "sitemaps_used": [],
-  "datasources_found": [],
-  "pages_visited": 0,
-  "page_errors_sample": [],
+  "datasources_found": [
+    "https://mc.gov.sa/_api/web/lists?$select=Title,Id,ItemCount,BaseTemplate,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
+    "https://mc.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%20Path:mc.gov.sa%27&rowlimit=500&selectproperties=%27Path,Title,Size%27",
+    "https://mc.gov.sa/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
+    "https://mc.gov.sa/_vti_bin/listdata.svc/",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/Documents')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/en')/files?$top=200",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/AINewsletter')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/en/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+    "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/MediaCenter/KnowledgeCenter/ResearchLibrary')/files?$top=500",
+    "https://mc.gov.sa/_api/web/&gt;&lt;id&gt;https:/mc.gov.sa/_api/Web/Lists(guid",
+    "https://mc.gov.sa/_api/web/&gt;&lt;m:inline&gt;&lt;entry&gt;&lt;id&gt;https:/mc.gov.sa/_api/Web/Lists(guid"
+  ],
+  "pages_visited": 12,
+  "page_errors_sample": [
+    {
+      "url": "https://mc.gov.sa/Documents/",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /Documents/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/_api/web/lists?$select=Title,Id,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /_api/web/lists?$select=Title,Id,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/_api/web/lists?$filter=BaseTemplate eq 101&$top=100",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /_api/web/lists?$filter=BaseTemplate%20eq%20101&$top=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /_api/search/query?querytext=%27FileType:pdf%27&rowlimit=500 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/en/default.aspx",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /en/default.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/default.aspx",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /ar/default.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/en/",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /en/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /ar/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/_layouts/15/",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /_layouts/15/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "url": "https://mc.gov.sa/_vti_bin/listdata.svc/",
+      "error": "SSLError: HTTPSConnectionPool(host='mc.gov.sa', port=443): Max retries exceeded with url: /_vti_bin/listdata.svc/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    }
+  ],
   "stats": {},
   "documents": []
 }
