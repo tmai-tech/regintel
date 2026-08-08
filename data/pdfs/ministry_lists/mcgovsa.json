@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T15:16:25.263549+00:00",
+  "updated_at": "2026-08-08T15:18:35.510080+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
@@ -57,7 +57,7 @@
     "https://mc.gov.sa/ar/mediacenter/_vti_bin/spsdisco.aspx",
     "https://mc.gov.sa/ar/mediacenter/News/_vti_bin/spsdisco.aspx"
   ],
-  "pages_visited": 400,
+  "pages_visited": 450,
   "page_errors_sample": [],
   "stats": {},
   "documents": [
