@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T15:02:40.494834+00:00",
+  "updated_at": "2026-08-08T15:04:50.514951+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
@@ -18,7 +18,7 @@
     "href": 172,
     "script": 1
   },
-  "pages_visited": 100,
+  "pages_visited": 150,
   "documents": [
     {
       "filename": "User-GuideMC.pdf",
