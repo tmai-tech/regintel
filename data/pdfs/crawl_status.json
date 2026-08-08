@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T15:23:40.044018+00:00",
+  "updated_at": "2026-08-08T15:35:26.455817+00:00",
   "phase": "discovering",
   "message": "discovering documents on https://mewa.gov.sa/",
   "run_id": "31260687522",
@@ -31,17 +31,7 @@
       "count": 884
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "url": "https://mewa.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 0,
-    "downloaded": 0,
-    "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 0
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
@@ -315,9 +305,7 @@
     },
     "discovery_methods": {},
     "pages_visited": 0,
-    "sitemaps_used": [],
-    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T15:23:38.392100+00:00"
+    "updated_at": "2026-08-08T15:23:38.391633+00:00"
   }
 }
