@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-08T17:22:01.577880+00:00",
-  "phase": "discovering",
-  "message": "discovering documents on https://tga.gov.sa/",
+  "updated_at": "2026-08-08T17:33:35.883235+00:00",
+  "phase": "listed",
+  "message": "listed 0 documents on tga.gov.sa (unreachable)",
   "run_id": "31269184452",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31269184452",
   "totals": {
@@ -318,6 +318,6 @@
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T17:21:59.782338+00:00"
+    "updated_at": "2026-08-08T17:33:34.144640+00:00"
   }
 }
