@@ -124,6 +124,20 @@
       <div id="summaryEmpty" class="empty" hidden>No SDAIA PDF summaries match.</div>
     </section>
 
+    <!-- Full PDF text translation modal -->
+    <div class="pdf-xlate-modal" id="pdfXlateModal" hidden>
+      <div class="pdf-xlate-backdrop" id="pdfXlateBackdrop"></div>
+      <div class="pdf-xlate-dialog" role="dialog" aria-modal="true" aria-labelledby="pdfXlateTitle">
+        <header class="pdf-xlate-head">
+          <h2 id="pdfXlateTitle">Translate PDF</h2>
+          <button type="button" class="eva-icon-btn" id="pdfXlateClose" aria-label="Close">✕</button>
+        </header>
+        <p class="meta-line" id="pdfXlateStatus">Idle</p>
+        <div class="pdf-xlate-actions" id="pdfXlateActions" hidden></div>
+        <div class="pdf-xlate-body" id="pdfXlateBody"></div>
+      </div>
+    </div>
+
     <footer class="foot">
       <span>Open on any phone browser · data from RegIntel collector</span>
       <a href="https://github.com/tmai-tech/regintel" rel="noopener">GitHub</a>
@@ -163,6 +177,6 @@
   </div>
 
   <!-- cache-bust when Eva chat logic changes -->
-  <script src="assets/app.js?v=sdaia11" defer></script>
+  <script src="assets/app.js?v=sdaia12" defer></script>
 </body>
 </html>
