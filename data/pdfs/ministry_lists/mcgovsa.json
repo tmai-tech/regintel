@@ -3,6 +3,7 @@
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
+  "host": "mc.gov.sa",
   "counts": {
     "to_download": 0,
     "downloaded": 0,
@@ -11,7 +12,10 @@
     "listed_total": 0
   },
   "discovery_methods": {},
+  "sitemaps_used": [],
+  "datasources_found": [],
   "pages_visited": 0,
-  "documents": [],
-  "failed_sample": []
+  "page_errors_sample": [],
+  "stats": {},
+  "documents": []
 }
