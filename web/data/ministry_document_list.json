@@ -1,69 +1,17 @@
 {
-  "updated_at": "2026-08-08T13:14:34.771597+00:00",
-  "phase": "discovering",
-  "target_url": "https://mewa.gov.sa/",
-  "label": "Saudi Arabia - MEWA",
+  "updated_at": "2026-08-08T14:08:27.872915+00:00",
+  "phase": "listed",
+  "target_url": "https://tga.gov.sa/",
+  "label": "Saudi Arabia - TGA",
   "counts": {
-    "to_download": 4,
+    "to_download": 0,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 4
+    "listed_total": 0
   },
-  "discovery_methods": {
-    "datasource": 2,
-    "href": 2
-  },
-  "pages_visited": 25,
-  "documents": [
-    {
-      "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
-      "url": "https://www.mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
-      "type": "PDF",
-      "status": "to_download",
-      "download_error": null,
-      "scanned_pdf": false,
-      "title": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
-      "bytes": null,
-      "discovery_method": "datasource",
-      "jurisdiction": "Saudi Arabia - MEWA"
-    },
-    {
-      "filename": "agire3.pdf",
-      "url": "https://mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
-      "type": "PDF",
-      "status": "to_download",
-      "download_error": null,
-      "scanned_pdf": false,
-      "title": "agire3.pdf",
-      "bytes": null,
-      "discovery_method": "datasource",
-      "jurisdiction": "Saudi Arabia - MEWA"
-    },
-    {
-      "filename": "agire3.pdf",
-      "url": "https://www.mewa.gov.sa:443/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
-      "type": "PDF",
-      "status": "to_download",
-      "download_error": null,
-      "scanned_pdf": false,
-      "title": "المفكرة الزراعية",
-      "bytes": null,
-      "discovery_method": "href",
-      "jurisdiction": "Saudi Arabia - MEWA"
-    },
-    {
-      "filename": "PoliciesAr.pdf",
-      "url": "https://sdaia.gov.sa/ndmo/Files/PoliciesAr.pdf",
-      "type": "PDF",
-      "status": "to_download",
-      "download_error": null,
-      "scanned_pdf": false,
-      "title": "الهيئة السعودية للبيانات والذكاء الاصطناعي (SDAIA)",
-      "bytes": null,
-      "discovery_method": "href",
-      "jurisdiction": "Saudi Arabia - MEWA"
-    }
-  ],
+  "discovery_methods": {},
+  "pages_visited": 0,
+  "documents": [],
   "failed_sample": []
 }
