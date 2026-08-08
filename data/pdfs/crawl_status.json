@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-08T19:07:19.213793+00:00",
+  "updated_at": "2026-08-08T19:16:58.662690+00:00",
   "phase": "discovering",
-  "message": "discovering mewa.gov.sa: pages=25 listed=3",
+  "message": "discovering mewa.gov.sa: pages=50 listed=59",
   "run_id": "31269184452",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31269184452",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
-    "ministry_listed": 3,
+    "ministry_listed": 59,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 3
+    "ministry_to_download": 59
   },
   "by_jurisdiction": [
     {
@@ -35,12 +35,12 @@
     "jurisdiction": "Saudi Arabia - MEWA",
     "url": "https://www.mewa.gov.sa/en/",
     "source_kind": "ministry_pipeline",
-    "listed": 3,
+    "listed": 59,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 3,
-    "pages_visited": 25
+    "to_download": 59,
+    "pages_visited": 50
   },
   "recent_pdfs": [
     {
@@ -307,16 +307,17 @@
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 3,
+      "to_download": 59,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 3
+      "listed_total": 59
     },
     "discovery_methods": {
-      "datasource": 3
+      "datasource": 3,
+      "href": 56
     },
-    "pages_visited": 25,
+    "pages_visited": 50,
     "sitemaps_used": [
       "https://www.mewa.gov.sa/sitemap.xml",
       "https://www.mewa.gov.sa/Sitemap.xml",
@@ -325,8 +326,8 @@
       "https://www.mewa.gov.sa:443/sitemap0.xml",
       "https://www.mewa.gov.sa:443/sitemap_mobile0.xml"
     ],
-    "datasources_found": 18,
+    "datasources_found": 24,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T19:07:17.488333+00:00"
+    "updated_at": "2026-08-08T19:16:56.921859+00:00"
   }
 }
