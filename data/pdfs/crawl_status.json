@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-08T12:55:02.060269+00:00",
+  "updated_at": "2026-08-08T13:14:36.533272+00:00",
   "phase": "discovering",
-  "message": "discovering documents on https://mewa.gov.sa/",
+  "message": "discovering mewa.gov.sa: pages=25 listed=4",
   "run_id": "31253078203",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31253078203",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
-    "ministry_listed": 0,
+    "ministry_listed": 4,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 4
   },
   "by_jurisdiction": [
     {
@@ -35,12 +35,12 @@
     "jurisdiction": "Saudi Arabia - MEWA",
     "url": "https://mewa.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 0,
+    "listed": 4,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 0
+    "to_download": 4,
+    "pages_visited": 25
   },
   "recent_pdfs": [
     {
@@ -307,17 +307,27 @@
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://mewa.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 4,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 0
+      "listed_total": 4
     },
-    "discovery_methods": {},
-    "pages_visited": 0,
-    "sitemaps_used": [],
-    "datasources_found": 0,
+    "discovery_methods": {
+      "datasource": 2,
+      "href": 2
+    },
+    "pages_visited": 25,
+    "sitemaps_used": [
+      "https://mewa.gov.sa/sitemap.xml",
+      "https://mewa.gov.sa/Sitemap.xml",
+      "https://www.mewa.gov.sa/sitemap.xml",
+      "https://mewa.gov.sa/_layouts/15/sitemap.aspx",
+      "https://www.mewa.gov.sa:443/sitemap0.xml",
+      "https://www.mewa.gov.sa:443/sitemap_mobile0.xml"
+    ],
+    "datasources_found": 19,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T12:55:00.303904+00:00"
+    "updated_at": "2026-08-08T13:14:34.772333+00:00"
   }
 }
