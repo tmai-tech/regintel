@@ -1,0 +1,121 @@
+# Sequential deep crawls: SDAIA, TGA, MC (mc.gov.sa), MEWA — then publish + Eva summarize.
+name: Crawl Saudi four ministries
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: "Max HTML pages per ministry"
+        required: false
+        default: "2000"
+      delay:
+        description: "Seconds between requests"
+        required: false
+        default: "0.25"
+      skip_sdaia:
+        description: "true = skip SDAIA re-crawl (keep existing)"
+        required: false
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl-ministry
+  cancel-in-progress: false
+
+jobs:
+  crawl-all:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pymupdf || true
+          python -m playwright install --with-deps chromium || python -m playwright install chromium || true
+
+      - name: Sequential ministry crawls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          DELAY="${{ github.event.inputs.delay }}"
+          SKIP_SDAIA="${{ github.event.inputs.skip_sdaia }}"
+
+          crawl_one() {
+            local URL="$1"
+            local LABEL="$2"
+            echo "========================================"
+            echo "=== Crawling $LABEL :: $URL ==="
+            echo "========================================"
+            python -u collector/ministry_pipeline.py \
+              --url "$URL" \
+              --label "$LABEL" \
+              --max-pages "${MAX_PAGES:-2000}" \
+              --delay "${DELAY:-0.25}" || echo "::warning::crawl failed for $LABEL (continuing)"
+            python scripts/fix_ministry_jurisdiction_labels.py || true
+            python scripts/publish_saudi_ministries.py || true
+          }
+
+          if [ "$SKIP_SDAIA" != "true" ]; then
+            crawl_one "https://sdaia.gov.sa" "Saudi Arabia - SDAIA"
+          else
+            echo "Skipping SDAIA re-crawl (keeping existing PDFs)"
+          fi
+          crawl_one "https://tga.gov.sa" "Saudi Arabia - TGA"
+          crawl_one "https://mc.gov.sa" "Saudi Arabia - MC"
+          crawl_one "https://mewa.gov.sa" "Saudi Arabia - MEWA"
+
+          # Eva summaries for all allowlisted ministries (batch)
+          if [ -n "${{ secrets.XAI_API_KEY }}" ]; then
+            export XAI_API_KEY="${{ secrets.XAI_API_KEY }}"
+          fi
+          python -u collector/eva_summarize.py --limit 200 --publish-only 2>/dev/null || true
+          # Prefer summarizing missing Saudi PDFs (no jurisdiction filter if flag unsupported)
+          python -u collector/eva_summarize.py --limit 150 || true
+          python scripts/publish_saudi_ministries.py || true
+
+      - name: Commit + push catalog
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python collector/live_publish.py || true
+          python scripts/publish_saudi_ministries.py || true
+          git add -f data/pdfs/manifest.json data/pdfs/ministry_lists \
+            web/data/pdfs_catalog.json web/data/crawl_status.json \
+            web/data/ministry_document_list.json \
+            web/data/saudi_ministries.json web/data/laws_catalog.json \
+            web/data/meta.json web/data/eva_summaries.json web/data/eva_meta.json \
+            android/app/src/main/assets/pdfs_catalog.json \
+            data/pdfs/crawl_status.json data/saudi_ministries.json 2>/dev/null || true
+          REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: Saudi four ministries crawl $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            for i in 1 2 3 4 5; do
+              git fetch "$REPO" main:refs/remotes/origin/main || true
+              git rebase origin/main || true
+              git push "$REPO" HEAD:main && break
+              sleep $((i * 3))
+            done
+          fi

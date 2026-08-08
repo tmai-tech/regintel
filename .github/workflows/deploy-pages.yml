@@ -30,14 +30,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Sync data into web/ (SDAIA-only public site)
+      - name: Sync data into web/ (Saudi ministries public site)
         run: |
           set -euo pipefail
           mkdir -p web/data
           # Do NOT copy root data/*.json over web/data — that reintroduces the
           # global multi-jurisdiction catalog (12k+ PDFs, laws, gazette, etc.).
-          # Public site is SDAIA-only: strip anything non-SDAIA before upload.
-          if [ -f scripts/publish_sdaia_only.py ]; then
+          # Public site: SDAIA + TGA + MC + MEWA only.
+          if [ -f scripts/publish_saudi_ministries.py ]; then
+            python3 scripts/publish_saudi_ministries.py
+          elif [ -f scripts/publish_sdaia_only.py ]; then
             python3 scripts/publish_sdaia_only.py
           fi
           if [ ! -f web/data/pdfs_catalog.json ]; then

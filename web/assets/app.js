@@ -983,15 +983,27 @@
     paintDocs("");
   }
 
-  function isSdaiaRow(p) {
+  /** Public site allowlist: SDAIA + TGA + MC + MEWA (not global gazette). */
+  function isAllowedSaudiMinistryRow(p) {
     const j = String((p && p.jurisdiction) || "");
-    const h = String((p && p.host) || "");
-    const u = String((p && (p.url || p.open_url || p.source_page)) || "");
+    const h = String((p && p.host) || "").toLowerCase();
+    const u = String((p && (p.url || p.open_url || p.source_page)) || "").toLowerCase();
+    const blob = (j + " " + h + " " + u).toLowerCase();
     return (
+      blob.includes("sdaia") ||
+      blob.includes("tga.gov") ||
+      blob.includes("mc.gov") ||
+      blob.includes("mewa.gov") ||
       j.includes("SDAIA") ||
-      h.toLowerCase().includes("sdaia") ||
-      u.toLowerCase().includes("sdaia")
+      j.includes("TGA") ||
+      j.includes("MEWA") ||
+      /Saudi Arabia - MC\b/.test(j) ||
+      /Ministry of Commerce/i.test(j)
     );
+  }
+  // backward-compatible alias used elsewhere
+  function isSdaiaRow(p) {
+    return isAllowedSaudiMinistryRow(p);
   }
 
   function normalizePdfKey(u) {
@@ -2354,19 +2366,11 @@
         );
       }
       if (!Array.isArray(pdfsRes)) throw new Error("PDF catalog is not a list");
-      // Site is SDAIA-only — drop any residual non-SDAIA rows
-      pdfs = pdfsRes.filter((p) => {
-        const j = String(p.jurisdiction || "");
-        const h = String(p.host || "");
-        const u = String(p.url || p.open_url || "");
-        return (
-          j.includes("SDAIA") ||
-          h.toLowerCase().includes("sdaia") ||
-          u.toLowerCase().includes("sdaia")
-        );
-      });
-      ministries = (Array.isArray(minRes) ? minRes : []).filter(
-        (m) => String(m.code || "").toUpperCase() === "SDAIA" || /sdaia/i.test(m.name || ""),
+      // Site allowlist: SDAIA + TGA + MC + MEWA
+      pdfs = pdfsRes.filter((p) => isAllowedSaudiMinistryRow(p));
+      const allowCodes = new Set(["SDAIA", "TGA", "MC", "MEWA"]);
+      ministries = (Array.isArray(minRes) ? minRes : []).filter((m) =>
+        allowCodes.has(String(m.code || "").toUpperCase()),
       );
       if (!ministries.length) {
         ministries = [
@@ -2377,13 +2381,32 @@
             country: "Saudi Arabia",
             authority_type: "Authority",
           },
+          {
+            code: "TGA",
+            name: "Transport General Authority (TGA)",
+            url: "https://tga.gov.sa",
+            country: "Saudi Arabia",
+            authority_type: "Authority",
+          },
+          {
+            code: "MC",
+            name: "Ministry of Commerce (MC)",
+            url: "https://mc.gov.sa",
+            country: "Saudi Arabia",
+            authority_type: "Ministry",
+          },
+          {
+            code: "MEWA",
+            name: "Ministry of Environment, Water and Agriculture (MEWA)",
+            url: "https://mewa.gov.sa",
+            country: "Saudi Arabia",
+            authority_type: "Ministry",
+          },
         ];
       }
-      evaSummaries = (Array.isArray(evaRes) ? evaRes : []).filter((e) => {
-        const j = String(e.jurisdiction || "");
-        const u = String(e.url || e.open_url || e.source_page || "");
-        return j.includes("SDAIA") || u.toLowerCase().includes("sdaia");
-      });
+      evaSummaries = (Array.isArray(evaRes) ? evaRes : []).filter((e) =>
+        isAllowedSaudiMinistryRow(e),
+      );
       evaMeta = evaMetaRes;
     } catch (e) {
       metaBar.textContent = "Error";
@@ -2400,11 +2423,13 @@
     // Meta: catalog (PDFs tab) is not the same as discovered master-list count
     const withSummaries = evaSummaries.filter((e) => e && String(e.summary || "").trim()).length;
     metaBar.textContent =
-      "SDAIA catalog · " +
+      "Saudi ministries · " +
       pdfs.length +
       " PDFs · " +
       withSummaries +
-      " summaries";
+      " summaries · " +
+      ministries.length +
+      " authorities";
 
     initMinistries(ministries, pdfs);
     initEva(evaSummaries, evaMeta, pdfs.length);

@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import sys
 import time
 from collections import Counter
 from datetime import datetime, timezone
@@ -147,17 +148,42 @@ def build_status(
     }
 
 
-def _is_sdaia_row(r: dict) -> bool:
-    j = str(r.get("jurisdiction") or "")
-    h = str(r.get("host") or "")
-    u = str(r.get("url") or r.get("open_url") or "")
-    sp = str(r.get("source_page") or "")
-    return (
-        "SDAIA" in j
-        or "sdaia" in h.lower()
-        or "sdaia" in u.lower()
-        or "sdaia" in sp.lower()
-    )
+def _filter_public_catalog(catalog: list[dict]) -> list[dict]:
+    """Keep only allowlisted Saudi ministries (SDAIA/TGA/MC/MEWA) on the public site."""
+    # REGINTEL_SDAIA_ONLY=1 is legacy; prefer multi-ministry allowlist unless full catalog requested
+    if os.environ.get("REGINTEL_FULL_CATALOG", "0") == "1":
+        return catalog
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from saudi_ministry_allowlist import (  # type: ignore
+            is_allowed_ministry_row,
+            normalize_jurisdiction,
+        )
+    except Exception:
+        # fallback: SDAIA only
+        out = []
+        for r in catalog:
+            blob = (
+                str(r.get("jurisdiction") or "")
+                + str(r.get("host") or "")
+                + str(r.get("url") or "")
+            ).lower()
+            if "sdaia" in blob:
+                r = dict(r)
+                r["jurisdiction"] = "Saudi Arabia - SDAIA"
+                r["source_kind"] = r.get("source_kind") or "ministry"
+                out.append(r)
+        return out
+
+    out = []
+    for r in catalog:
+        if not is_allowed_ministry_row(r):
+            continue
+        r = dict(r)
+        r["jurisdiction"] = normalize_jurisdiction(r)
+        r["source_kind"] = r.get("source_kind") or "ministry"
+        out.append(r)
+    return out
 
 
 def publish(
@@ -172,8 +198,8 @@ def publish(
 ) -> dict:
     """Rebuild catalog + status JSON. Optionally commit/push for live site.
 
-    Public site is SDAIA-only (REGINTEL_SDAIA_ONLY defaults on) so mid-crawl
-    pushes never reintroduce the global multi-jurisdiction catalog.
+    Public site is filtered to Saudi allowlist (SDAIA, TGA, MC, MEWA) so global
+    gazette crawls never reappear. Set REGINTEL_FULL_CATALOG=1 to disable.
 
     During ministry discovery, pass ``ministry_progress`` (counts, pages_visited,
     discovery_methods) so the Crawl tab updates even when catalog PDF count is
@@ -183,31 +209,24 @@ def publish(
 
     manifest = load_manifest()
     catalog = build_catalog_from_manifest(manifest)
-    sdaia_only = os.environ.get("REGINTEL_SDAIA_ONLY", "1") != "0"
-    if sdaia_only:
-        catalog = [r for r in catalog if _is_sdaia_row(r)]
-        for r in catalog:
-            r["jurisdiction"] = "Saudi Arabia - SDAIA"
-            r["source_kind"] = r.get("source_kind") or "ministry"
+    catalog = _filter_public_catalog(catalog)
     status = build_status(
         phase=phase, message=message, current_source=current_source
     )
     # Status totals for the public site reflect published (filtered) catalog
     status["totals"]["pdfs"] = len(catalog)
-    if sdaia_only:
-        status["totals"]["jurisdictions"] = 1 if catalog else 0
-        status["by_jurisdiction"] = (
-            [{"jurisdiction": "Saudi Arabia - SDAIA", "count": len(catalog)}]
-            if catalog
-            else []
-        )
-        status["by_source_kind"] = (
-            [{"source_kind": "ministry", "count": len(catalog)}] if catalog else []
-        )
-        if not message:
-            status["message"] = f"SDAIA-only · {len(catalog)} PDFs"
-        elif "catalog" in message.lower() and "total" in message.lower():
-            status["message"] = f"SDAIA · {len(catalog)} PDFs"
+    by_j = Counter((r.get("jurisdiction") or "Unknown") for r in catalog)
+    status["totals"]["jurisdictions"] = len(by_j)
+    status["by_jurisdiction"] = [
+        {"jurisdiction": j, "count": c} for j, c in by_j.most_common(20)
+    ]
+    status["by_source_kind"] = (
+        [{"source_kind": "ministry", "count": len(catalog)}] if catalog else []
+    )
+    if not message:
+        status["message"] = f"Saudi ministries · {len(catalog)} PDFs"
+    elif "catalog" in message.lower() and "total" in message.lower():
+        status["message"] = f"Saudi ministries · {len(catalog)} PDFs"
 
     # Merge ministry discovery / download progress into crawl_status (public)
     listed = None

@@ -5,5 +5,26 @@
     "url": "https://sdaia.gov.sa",
     "country": "Saudi Arabia",
     "authority_type": "Authority"
+  },
+  {
+    "code": "TGA",
+    "name": "Transport General Authority (TGA)",
+    "url": "https://tga.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "MC",
+    "name": "Ministry of Commerce (MC)",
+    "url": "https://mc.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Ministry"
+  },
+  {
+    "code": "MEWA",
+    "name": "Ministry of Environment, Water and Agriculture (MEWA)",
+    "url": "https://mewa.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Ministry"
   }
 ]

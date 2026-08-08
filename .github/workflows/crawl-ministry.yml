@@ -84,8 +84,8 @@ jobs:
             --delay "${DELAY:-0.3}" \
             "${EXTRA[@]+"${EXTRA[@]}"}"
           python scripts/fix_ministry_jurisdiction_labels.py || true
-          # Public site stays SDAIA-only (no global gazette catalog)
-          python scripts/publish_sdaia_only.py || true
+          # Public site: SDAIA + TGA + MC + MEWA (no global gazette)
+          python scripts/publish_saudi_ministries.py || python scripts/publish_sdaia_only.py || true
           # print counts for summary
           python - <<'PY'
           import json
