@@ -1,11 +1,13 @@
 {
-  "updated_at": "2026-08-08T17:20:29.329079+00:00",
-  "phase": "idle",
-  "message": "Saudi ministries · 884 PDFs · 597 summaries",
+  "updated_at": "2026-08-08T17:22:01.577880+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://tga.gov.sa/",
+  "run_id": "31269184452",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31269184452",
   "totals": {
     "pdfs": 884,
-    "errors": 0,
-    "source_reports": 0,
+    "errors": 22131,
+    "source_reports": 53,
     "jurisdictions": 2,
     "ministry_listed": 0,
     "ministry_downloaded": 0,
@@ -30,16 +32,280 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia (multi)",
-    "url": "https://sdaia.gov.sa",
-    "source_kind": "ministry"
+    "jurisdiction": "Saudi Arabia - TGA",
+    "url": "https://tga.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
   },
-  "recent_pdfs": [],
-  "last_source_reports": [],
-  "stats": {},
+  "recent_pdfs": [
+    {
+      "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:11.090156+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "PersonalDataProtectionPolicyEN.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/PersonalDataProtectionPolicyEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:09.055592+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "DataSharingPolicyEN.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/DataSharingPolicyEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:06.294662+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
+      "downloaded_at": "2026-08-07T06:41:02.375563+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "TransferOfPersonalDataOutsideTheKingdomEN.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/TransferOfPersonalDataOutsideTheKingdomEN.pdf",
+      "downloaded_at": "2026-08-07T06:40:54.658775+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Artathon.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/Initiatives/Documents/Artathon.pdf",
+      "downloaded_at": "2026-08-07T06:39:58.129909+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 1 يناير 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 1 يناير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:45.111442+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 2 يناير 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 2 يناير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:35.026057+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 30 يناير 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 30 يناير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:27.485823+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 13 فبراير 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 13 فبراير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:16.049096+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 20 فبراير 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 20 فبراير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:39:06.967818+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 27 فبراير 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 فبراير 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:54.936861+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 6 مارس 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 6 مارس 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:44.601246+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:27.933926+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نشرة الذكاء الاصطناعي 3 أبريل 2022.pdf",
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 3 أبريل 2022.pdf",
+      "downloaded_at": "2026-08-07T06:38:20.341320+00:00",
+      "source_kind": "ministry"
+    }
+  ],
+  "last_source_reports": [
+    {
+      "jurisdiction": "Saudi Arabia - Nazaha",
+      "source_kind": "ministry",
+      "source_url": "https://nazaha.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://nazaha.gov.sa -> [Errno 101] Network is unreachable"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "source_kind": "ministry",
+      "source_url": "https://www.saip.gov.sa",
+      "pages_crawled": 210,
+      "js_pages": 11,
+      "pdfs_candidates": 73,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa",
+      "pages_crawled": 400,
+      "js_pages": 58,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 150,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en",
+      "pages_crawled": 400,
+      "js_pages": 40,
+      "pdfs_candidates": 328,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 66,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar",
+      "pages_crawled": 400,
+      "js_pages": 58,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ndmo/Files/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://dgp.sdaia.gov.sa/",
+      "pages_crawled": 262,
+      "js_pages": 44,
+      "pdfs_candidates": 102,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": "possible_rate_limit"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/",
+      "pages_crawled": 400,
+      "js_pages": 41,
+      "pdfs_candidates": 328,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/",
+      "pages_crawled": 400,
+      "js_pages": 57,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    }
+  ],
+  "stats": {
+    "sources_visited": 10,
+    "pages_crawled": 2266,
+    "js_pages": 302,
+    "pdfs_discovered": 216,
+    "pdfs_downloaded": 216,
+    "pdfs_skipped_existing": 1257,
+    "pdfs_capped": 0,
+    "pdfs_rejected_junk": 0,
+    "errors": 14
+  },
+  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
   "ministry_document_list": {
-    "label": "Saudi Arabia - MEWA",
-    "target_url": "https://mewa.gov.sa/",
+    "label": "Saudi Arabia - TGA",
+    "target_url": "https://tga.gov.sa/",
     "counts": {
       "to_download": 0,
       "downloaded": 0,
@@ -49,7 +315,9 @@
     },
     "discovery_methods": {},
     "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-08T17:03:29.802739+00:00"
+    "updated_at": "2026-08-08T17:21:59.782338+00:00"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-08T17:03:29.802739+00:00",
+  "updated_at": "2026-08-08T17:21:59.781903+00:00",
   "phase": "discovering",
-  "target_url": "https://mewa.gov.sa/",
-  "label": "Saudi Arabia - MEWA",
+  "target_url": "https://tga.gov.sa/",
+  "label": "Saudi Arabia - TGA",
   "counts": {
     "to_download": 0,
     "downloaded": 0,
