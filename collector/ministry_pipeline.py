@@ -222,9 +222,11 @@ class MinistryPipeline:
         self._playwright = None  # lazy PlaywrightRenderer
         self._pw_browser = None
         self._pw_renders = 0
-        self._pw_max_renders = 80 if "sdaia" in self.root else 25
+        self._pw_max_renders = 80 if "sdaia" in self.root else 40
         self._site_reachable = True
         self._consecutive_errors = 0
+        self._skip_datasource_probes = False
+        self._api_is_html = False
 
         LISTS_DIR.mkdir(parents=True, exist_ok=True)
         self.list_path = LISTS_DIR / f"{slugify(self.root)}.json"
@@ -248,6 +250,16 @@ class MinistryPipeline:
             or "support ID is" in body
             or (r.status_code == 200 and len(r.content or b"") < 400 and "<html>" in body.lower() and "rejected" in body.lower())
         )
+
+    @staticmethod
+    def _looks_like_html(text: str, ct: str = "") -> bool:
+        head = (text or "")[:600].lstrip().lower()
+        ctl = (ct or "").lower()
+        if head[:1] in ("{", "["):
+            return False
+        if "text/html" in ctl and "json" not in ctl:
+            return True
+        return head.startswith("<!doctype html") or head.startswith("<html") or "<head" in head[:300]
 
     def fetch(self, url: str, timeout: float = 40) -> tuple[requests.Response | None, str | None]:
         self.polite()
@@ -542,6 +554,11 @@ class MinistryPipeline:
                     last = f"HTTP {r.status_code}"
                     time.sleep(1.0 * (attempt + 1))
                     continue
+                ct = (r.headers.get("Content-Type") or "")
+                if self._looks_like_html(r.text or "", ct):
+                    self._api_is_html = True
+                    self._skip_datasource_probes = True
+                    return None, "html_not_api"
                 return r, None
             except requests.exceptions.SSLError as e:
                 last = f"SSLError: {e}"
@@ -662,7 +679,10 @@ class MinistryPipeline:
             queries.append(f"FileExtension:pdf Path:https://{host}")
             queries.append(f"FileExtension:pdf Path:{host}")
         seen_q: set[str] = set()
+        html_hosts: set[str] = set()
         for host in self._api_hosts():
+            if host in html_hosts or self._api_is_html:
+                continue
             for qtext in queries:
                 key = f"{host}|{qtext}"
                 if key in seen_q:
@@ -682,6 +702,10 @@ class MinistryPipeline:
                     self.datasources_found.append(url)
                     self.log(f"  [search] {host} q={qtext!r} startrow={start} listed={len(self.docs)}")
                     r, err = self.fetch_json(url, timeout=60)
+                    if err == "html_not_api" or self._api_is_html:
+                        self.log(f"  [search] {host} returned HTML not JSON — skip remaining _api search")
+                        html_hosts.add(host)
+                        break
                     if err or r is None:
                         self.log(f"  [search] fail {err}")
                         empty_pages += 1
@@ -712,6 +736,8 @@ class MinistryPipeline:
                         break
                     if empty_pages >= 2:
                         break
+                if host in html_hosts:
+                    break
         gained = len(self.docs) - listed_before
         self.log(f"[search] done +{gained} listed={len(self.docs)}")
         return gained
@@ -817,6 +843,192 @@ class MinistryPipeline:
         gained = len(self.docs) - listed_before
         self.log(f"[library] done +{gained} listed={len(self.docs)} api_calls={api_calls}")
         return gained
+
+    def discover_library_html_pages(self) -> int:
+        """Harvest PDFs from known library/search HTML pages (RulesLibrary lists Arabic .pdf hrefs)."""
+        before = len(self.docs)
+        paths = [
+            "/ar/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+            "/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+            "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents/Forms/AllItems.aspx",
+            "/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Forms/AllItems.aspx",
+            "/ar/InformationCenter/DocsCenter/Pages/default.aspx",
+            "/en/InformationCenter/DocsCenter/Pages/default.aspx",
+            "/Documents/Forms/AllItems.aspx",
+            "/ar/Documents/Forms/AllItems.aspx",
+            "/en/Documents/Forms/AllItems.aspx",
+            "/ar/Ministry/AboutMinistry/RulesAndConditions/Pages/default.aspx",
+            "/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/Pages/default.aspx",
+            "/_layouts/15/osssearchresults.aspx?k=FileExtension:pdf",
+            "/_layouts/15/osssearchresults.aspx?k=FileType:pdf",
+            "/_layouts/15/searchresults.aspx?k=FileExtension:pdf",
+        ]
+        seen: set[str] = set()
+        for host in self._api_hosts()[:2]:
+            for path in paths:
+                url = f"https://{host}{path}" if path.startswith("/") else path
+                url = normalize(url) if "k=" not in path else url
+                if url in seen:
+                    continue
+                seen.add(url)
+                self.log(f"  [library-html] {url[:130]}")
+                r, err = self.fetch(url, timeout=45)
+                if err or r is None:
+                    continue
+                nu = normalize(r.url or url)
+                self.visited_pages.add(nu)
+                self.pages_seen += 1
+                html = r.text or ""
+                self.extract_from_html(html, nu, probe_api=False)
+                self.harvest_doc_urls_from_text(html, nu, "library_html")
+        self.log(f"[library-html] +{len(self.docs) - before} listed={len(self.docs)}")
+        return len(self.docs) - before
+
+    def playwright_inpage_rest(self) -> int:
+        """Colleague path: SharePoint search/library REST from a real browser session (WAF bypass)."""
+        before = len(self.docs)
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            self.log("  [pw-search] playwright not installed")
+            return 0
+        try:
+            if self._playwright is None:
+                self._playwright = sync_playwright().start()
+            if self._pw_browser is None:
+                self._pw_browser = self._playwright.chromium.launch(
+                    headless=True,
+                    args=["--disable-ipv6", "--ignore-certificate-errors"],
+                )
+            context = self._pw_browser.new_context(
+                user_agent=UA, locale="ar-SA", ignore_https_errors=True
+            )
+            page = context.new_page()
+
+            def on_response(res):
+                try:
+                    u = res.url
+                    ct = (res.headers.get("content-type") or "").lower()
+                    if ".pdf" in u.lower() or "application/pdf" in ct:
+                        self.add_doc(u, "playwright_net")
+                    if any(k in u.lower() for k in ("_api/", "listdata", "inplview", "osssearch")):
+                        try:
+                            body = res.text()
+                            self.harvest_sharepoint_payload(body, u, "pw_search")
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+
+            page.on("response", on_response)
+            warm = self.start_url
+            try:
+                page.goto(warm, timeout=45000, wait_until="domcontentloaded")
+                page.wait_for_timeout(2000)
+            except Exception as e:
+                self.log(f"  [pw-search] warm fail: {e}")
+
+            def inpage_get(url: str) -> dict:
+                try:
+                    return page.evaluate(
+                        """async (url) => {
+                            try {
+                              const r = await fetch(url, {
+                                credentials: 'include',
+                                headers: {
+                                  'Accept': 'application/json;odata=verbose, application/json'
+                                }
+                              });
+                              const t = await r.text();
+                              return {status: r.status, ct: r.headers.get('content-type') || '', text: t};
+                            } catch (e) {
+                              return {status: 0, ct: '', text: String(e)};
+                            }
+                        }""",
+                        url,
+                    ) or {}
+                except Exception as e:
+                    return {"status": 0, "ct": "", "text": str(e)}
+
+            for host in self._api_hosts()[:2]:
+                empty = 0
+                for start in range(0, 5000, 500):
+                    surl = (
+                        f"https://{host}/_api/search/query"
+                        f"?querytext=%27FileExtension:pdf%27&rowlimit=500&startrow={start}"
+                        f"&selectproperties=%27Path,Title,Size,FileExtension,ParentLink%27"
+                        f"&trimduplicates=false"
+                    )
+                    res = inpage_get(surl)
+                    text = str(res.get("text") or "")
+                    status = res.get("status")
+                    self.log(
+                        f"  [pw-search] {host} startrow={start} status={status} "
+                        f"len={len(text)} listed={len(self.docs)}"
+                    )
+                    if status in (401, 403) and start == 0:
+                        break
+                    if self._looks_like_html(text, str(res.get("ct") or "")):
+                        self.log("  [pw-search] in-page _api still HTML — stop host")
+                        break
+                    added = self.harvest_sharepoint_payload(text, surl, "pw_search")
+                    if added == 0:
+                        empty += 1
+                    else:
+                        empty = 0
+                    if empty >= 1 and start > 0:
+                        break
+                    if empty >= 2:
+                        break
+                for rel in (
+                    "/Documents",
+                    "/ar/Documents",
+                    "/en/Documents",
+                    "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents",
+                    "/en/InformationCenter/DocsCenter/RulesLibrary/Docs",
+                    "/ar/InformationCenter/DocsCenter",
+                    "/ar/Documents/Mewa",
+                ):
+                    furl = (
+                        f"https://{host}/_api/web/getfolderbyserverrelativeurl('{rel}')"
+                        f"/files?$select=Name,ServerRelativeUrl&$top=5000"
+                    )
+                    res = inpage_get(furl)
+                    text = str(res.get("text") or "")
+                    if text and not self._looks_like_html(text, str(res.get("ct") or "")):
+                        n = self.harvest_sharepoint_payload(text, furl, "pw_library")
+                        if n:
+                            self.log(f"  [pw-library] {rel} +{n}")
+
+            for path in (
+                "/_layouts/15/osssearchresults.aspx?k=FileExtension:pdf",
+                "/ar/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+                "/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+                "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents/Forms/AllItems.aspx",
+                "/Documents/Forms/AllItems.aspx",
+            ):
+                if self._pw_renders >= self._pw_max_renders:
+                    break
+                url = f"https://{self._api_hosts()[0]}{path}"
+                self._pw_renders += 1
+                try:
+                    page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                    page.wait_for_timeout(3500)
+                    for _ in range(4):
+                        page.mouse.wheel(0, 2400)
+                        page.wait_for_timeout(500)
+                    html = page.content()
+                    self.extract_from_html(html, url, probe_api=False)
+                    self.harvest_doc_urls_from_text(html, url, "pw_library_html")
+                    self.log(f"  [pw-page] listed={len(self.docs)} {url[:100]}")
+                except Exception as e:
+                    self.log(f"  [pw-page] fail {e}")
+            context.close()
+        except Exception as e:
+            self.log(f"  [pw-search] error: {e}")
+            self._pw_browser = None
+        self.log(f"[pw-search] +{len(self.docs) - before} listed={len(self.docs)}")
+        return len(self.docs) - before
 
     def drain_downloads(self, reason: str) -> dict:
         """Download every currently listed PDF immediately (do not wait for HTML BFS)."""
@@ -1026,19 +1238,20 @@ class MinistryPipeline:
             re.I,
         ):
             self.add_doc(m.group(0).replace("&amp;", "&"), method)
+        # quoted paths — allow spaces / Arabic filenames (MEWA RulesLibrary)
         for m in re.finditer(
             r'["\']([^"\']+\.pdf(?:\.aspx)?(?:\?[^"\']*)?)["\']', text, re.I
         ):
             self.add_doc(urljoin(base, m.group(1).replace("&amp;", "&")), method)
         for m in re.finditer(
-            r"(?:href|src|url|FileRef|ServerRelativeUrl|EncodedAbsUrl|Path)\s*[=:]\s*[\"']?([^\s\"'<>]+\.pdf[^\s\"'<>]*)",
+            r"(?:href|src|url|FileRef|ServerRelativeUrl|EncodedAbsUrl|Path)\s*[=:]\s*[\"']([^\"']+\.pdf[^\"']*)[\"']",
             text,
             re.I,
         ):
             path = m.group(1).replace("&amp;", "&")
             self.add_doc(urljoin(base, path) if path.startswith("/") else path, method)
-        for m in re.finditer(r"(/[^\s\"'<>]*?/[^\s\"'<>]*?\.pdf)", text, re.I):
-            self.add_doc(urljoin(base, m.group(1)), method)
+        for m in re.finditer(r'(/[^\"\'<>\n]+?\.pdf)', text, re.I):
+            self.add_doc(urljoin(base, m.group(1).replace("&amp;", "&")), method)
 
     def discover_sharepoint_datasources(self, html: str, page_url: str) -> None:
         if not getattr(self, "_site_reachable", True):
@@ -1147,7 +1360,7 @@ class MinistryPipeline:
                             if r4 and not err4:
                                 self.harvest_sharepoint_payload(r4.text or "", api2, "datasource")
 
-    def extract_from_html(self, html: str, page_url: str) -> list[str]:
+    def extract_from_html(self, html: str, page_url: str, *, probe_api: bool = True) -> list[str]:
         pages = []
         soup = BeautifulSoup(html, "lxml")
         for a in soup.find_all("a", href=True):
@@ -1170,12 +1383,17 @@ class MinistryPipeline:
                         self.add_doc(t, "embed")
         self.harvest_doc_urls_from_text(html, page_url, "script")
         if (
-            "DataSource" in html
-            or "_api/" in html
-            or "_vti_bin" in html
-            or "SharePoint" in html
-            or "WebPart" in html
-            or ("sdaia" in self.root and self.pages_seen <= 5)
+            probe_api
+            and not self._skip_datasource_probes
+            and not self._api_is_html
+            and (
+                "DataSource" in html
+                or "_api/" in html
+                or "_vti_bin" in html
+                or "SharePoint" in html
+                or "WebPart" in html
+                or ("sdaia" in self.root and self.pages_seen <= 5)
+            )
         ):
             self.discover_sharepoint_datasources(html, page_url)
         for api in re.findall(r'["\'](/_api/[^"\']{2,200})["\']', html)[:40]:
@@ -1261,24 +1479,35 @@ class MinistryPipeline:
         home, home_err = self.fetch(self.start_url, timeout=30)
         home_html = home.text if home is not None and not home_err else ""
 
-        # --- library-first (any ministry): search + document libraries, then download ---
+        # --- library-first (any ministry): HTML libraries + in-browser search, then download ---
         self.discover_nav_api()
-        self.discover_sharepoint_search()
-        self.discover_document_libraries()
-        if (
-            len(self.docs) < 50
-            and self._site_reachable
-            and self._waf_blocks < 25
-        ):
-            self.discover_sharepoint_datasources(home_html, self.start_url)
+        self.discover_library_html_pages()
+        if self.do_download and self.docs:
+            self.drain_downloads("after library HTML")
+        self.playwright_inpage_rest()
+        if self.do_download and any(d.get("status") == "to_download" for d in self.docs.values()):
+            self.drain_downloads("after pw search")
+        if len(self.docs) < 50:
+            self.discover_sharepoint_search()
+            self.discover_document_libraries()
+            if (
+                self._site_reachable
+                and self._waf_blocks < 25
+                and not self._api_is_html
+                and not self._skip_datasource_probes
+            ):
+                self.discover_sharepoint_datasources(home_html, self.start_url)
         library_listed = len(self.docs)
-        self.log(f"[library-first] listed={library_listed} methods={self.discovery_methods}")
+        self.log(
+            f"[library-first] listed={library_listed} methods={self.discovery_methods} "
+            f"api_html={self._api_is_html}"
+        )
         self.publish_status(
             "discovering",
             f"library-first {self.root}: listed={library_listed} (search+libraries)",
             force_git=True,
         )
-        if self.do_download and self.docs:
+        if self.do_download and any(d.get("status") == "to_download" for d in self.docs.values()):
             self.drain_downloads("after library-first")
 
         skip_html_bfs = library_listed >= 50
