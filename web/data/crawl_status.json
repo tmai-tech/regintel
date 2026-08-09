@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-09T11:12:12.706461+00:00",
-  "phase": "listed",
-  "message": "listed 112 documents on mewa.gov.sa (library=25 pages=400 skip_bfs=False)",
+  "updated_at": "2026-08-09T11:12:19.209723+00:00",
+  "phase": "downloading",
+  "message": "downloading 112 listed docs",
   "run_id": "31309512706",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31309512706",
   "totals": {
@@ -328,6 +328,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T11:12:11.108154+00:00"
+    "updated_at": "2026-08-09T11:12:17.580716+00:00"
   }
 }
