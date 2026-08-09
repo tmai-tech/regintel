@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-Ministry document pipeline — discover full PDF list first, then download.
+Ministry document pipeline — library-first list + download (any ministry URL).
 
-Independent of any Excel seed. Mirrors colleague Extraction_Script + ministry_crawler:
-  1. DISCOVER:
+Independent of any Excel seed. Colleague path for SharePoint ministries:
+  1. LIBRARY-FIRST DISCOVER (all ministries):
+     - paginated /_api/search FileExtension:pdf (startrow)
+     - document library / Documents / RulesLibrary / DocsCenter folder _api
+     - download as soon as listed
+     - skip sitemap news/org BFS unless libraries returned <50 PDFs
+  2. FALLBACK (only if library listed <50):
      - site nav API (sdaiaapi) for full page tree
-     - sitemap.xml
-     - SharePoint DataSources / _api when WAF allows
-     - priority BFS (KnowledgeCenter / MediaCenter first)
-     - href + script/JSON harvest (colleague walk_json)
-     - Playwright JS-render fallback for SPA shells (colleague Extraction_Script)
-       with network interception for .pdf URLs
-  2. DOWNLOAD: each listed PDF → downloaded | download_failed | scanned_pdf
+     - sitemap.xml + priority BFS
+     - href + script/JSON harvest + Playwright JS-render
+  3. DOWNLOAD: each listed PDF → downloaded | download_failed | scanned_pdf
 
 Statuses (shown on Crawl tab):
   to_download      — listed, not yet attempted
@@ -37,7 +38,7 @@ import xml.etree.ElementTree as ET
 from collections import deque
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, urlunparse, unquote
+from urllib.parse import quote, urljoin, urlparse, urlunparse, unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -502,6 +503,336 @@ class MinistryPipeline:
         }
         self.discovery_methods[method] = self.discovery_methods.get(method, 0) + 1
 
+    # ---------- library-first (any ministry) ----------
+    def _api_hosts(self) -> list[str]:
+        p = urlparse(self.start_url)
+        netloc = (p.hostname or self.root or "").lower()
+        bare = netloc.removeprefix("www.")
+        return list(dict.fromkeys([h for h in (netloc, "www." + bare, bare) if h]))
+
+    def fetch_json(self, url: str, timeout: float = 60) -> tuple[requests.Response | None, str | None]:
+        """GET SharePoint REST / search with JSON Accept (HTML Accept yields WAF/empty)."""
+        self.polite()
+        last = None
+        headers = {
+            "User-Agent": UA,
+            "Accept": "application/json;odata=verbose, application/json;odata=nometadata, application/json",
+            "Accept-Language": "en-US,en;q=0.9,ar;q=0.8",
+        }
+        tried_alt = False
+        for attempt in range(3):
+            try:
+                r = self.session.get(
+                    url,
+                    timeout=timeout,
+                    allow_redirects=True,
+                    verify=self.verify,
+                    headers=headers,
+                )
+                if self._is_waf_reject(r):
+                    self._waf_blocks += 1
+                    last = "WAF rejected"
+                    time.sleep(min(2 ** attempt * 1.2, 6))
+                    continue
+                if r.status_code in (403, 429):
+                    last = f"HTTP {r.status_code}"
+                    time.sleep(min(2 ** attempt * 1.5, 8))
+                    continue
+                if r.status_code >= 400:
+                    last = f"HTTP {r.status_code}"
+                    time.sleep(1.0 * (attempt + 1))
+                    continue
+                return r, None
+            except requests.exceptions.SSLError as e:
+                last = f"SSLError: {e}"
+                if self.verify:
+                    self.verify = False
+                    self.log(f"  [tls] verify=False after SSLError on {base_host(url)}")
+                    continue
+                time.sleep(1.0 * (attempt + 1))
+            except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+                last = f"{type(e).__name__}: {e}"
+                if not tried_alt:
+                    alt = flip_www(url)
+                    if alt != url:
+                        self.log(f"  [net] retry alt host {alt[:90]}")
+                        url = alt
+                        tried_alt = True
+                        continue
+                time.sleep(min(2 ** attempt, 6))
+            except requests.RequestException as e:
+                last = f"{type(e).__name__}: {e}"
+                time.sleep(min(2 ** attempt, 6))
+        return None, last or "unreachable"
+
+    def harvest_sharepoint_payload(self, text: str, base: str, method: str) -> int:
+        """Parse search/list JSON (Path cells, EncodedAbsUrl, FileRef) plus regex fallback."""
+        before = len(self.docs)
+        if not text:
+            return 0
+
+        def walk(o):
+            if isinstance(o, dict):
+                cells = o.get("Cells")
+                if isinstance(cells, dict):
+                    cells = cells.get("results") or cells.get("value")
+                if (
+                    isinstance(cells, list)
+                    and cells
+                    and isinstance(cells[0], dict)
+                    and "Key" in cells[0]
+                ):
+                    kv = {
+                        c.get("Key"): c.get("Value")
+                        for c in cells
+                        if isinstance(c, dict)
+                    }
+                    path = (
+                        kv.get("Path")
+                        or kv.get("OriginalPath")
+                        or kv.get("ParentLink")
+                        or ""
+                    )
+                    title = kv.get("Title") or kv.get("Filename") or ""
+                    ext = str(kv.get("FileExtension") or kv.get("FileType") or "").lower()
+                    if path and (
+                        ".pdf" in str(path).lower()
+                        or ext == "pdf"
+                        or str(kv.get("IsDocument")).lower() in ("true", "1")
+                    ):
+                        self.add_doc(str(path), method, str(title))
+                for k in (
+                    "EncodedAbsUrl",
+                    "Path",
+                    "ServerUrl",
+                    "Url",
+                    "url",
+                    "path",
+                    "FileUrl",
+                ):
+                    v = o.get(k)
+                    if isinstance(v, str) and looks_like_doc(v):
+                        self.add_doc(v, method, str(o.get("Title") or o.get("Name") or ""))
+                rel = o.get("ServerRelativeUrl") or o.get("FileRef") or o.get("FileLeafRef")
+                if isinstance(rel, str) and looks_like_doc(rel):
+                    absu = rel if rel.startswith("http") else urljoin(f"https://{self.root}/", rel.lstrip("/"))
+                    self.add_doc(absu, method, str(o.get("Name") or o.get("FileLeafRef") or o.get("Title") or ""))
+                for v in o.values():
+                    walk(v)
+            elif isinstance(o, list):
+                for item in o:
+                    walk(item)
+
+        try:
+            walk(json.loads(text))
+        except Exception:
+            pass
+        self.harvest_doc_urls_from_text(text, base, method)
+        return len(self.docs) - before
+
+    def is_news_or_org_url(self, url: str) -> bool:
+        u = (url or "").lower()
+        needles = (
+            "/mediacenter/news",
+            "/news/pages",
+            "/news/",
+            "/successstory",
+            "/events/",
+            "/careers",
+            "/contactus",
+            "/contact-us",
+            "/faq",
+            "/orgstructure",
+            "/organizational",
+            "/agencies/agency",
+            "/aboutministry",
+            "/sitemap",
+        )
+        return any(n in u for n in needles)
+
+    def discover_sharepoint_search(self) -> int:
+        """Paginated SharePoint search FileExtension:pdf for any ministry host."""
+        listed_before = len(self.docs)
+        queries = [
+            "FileExtension:pdf",
+            "FileType:pdf",
+            "IsDocument:1 FileType:pdf",
+        ]
+        for host in self._api_hosts():
+            queries.append(f"FileExtension:pdf Path:https://{host}")
+            queries.append(f"FileExtension:pdf Path:{host}")
+        seen_q: set[str] = set()
+        for host in self._api_hosts():
+            for qtext in queries:
+                key = f"{host}|{qtext}"
+                if key in seen_q:
+                    continue
+                seen_q.add(key)
+                empty_pages = 0
+                for start in range(0, 5000, 500):
+                    url = (
+                        f"https://{host}/_api/search/query"
+                        f"?querytext=%27{quote(qtext, safe=':/')}%27"
+                        f"&rowlimit=500&startrow={start}"
+                        f"&selectproperties=%27Path,Title,Size,FileExtension,ParentLink%27"
+                        f"&trimduplicates=false&$format=json"
+                    )
+                    if url in self.datasources_found:
+                        continue
+                    self.datasources_found.append(url)
+                    self.log(f"  [search] {host} q={qtext!r} startrow={start} listed={len(self.docs)}")
+                    r, err = self.fetch_json(url, timeout=60)
+                    if err or r is None:
+                        self.log(f"  [search] fail {err}")
+                        empty_pages += 1
+                        if empty_pages >= 2 or start == 0:
+                            break
+                        continue
+                    text = r.text or ""
+                    added = self.harvest_sharepoint_payload(text, url, "sp_search")
+                    rowcount = 0
+                    try:
+                        data = r.json()
+                        blob = json.dumps(data)
+                        m = re.search(r'"RowCount"\s*:\s*(\d+)', blob)
+                        if m:
+                            rowcount = int(m.group(1))
+                    except Exception:
+                        rowcount = 0
+                    self.log(
+                        f"  [search] startrow={start} added={added} rowcount={rowcount} listed={len(self.docs)}"
+                    )
+                    if added == 0:
+                        empty_pages += 1
+                    else:
+                        empty_pages = 0
+                    if added == 0 and rowcount == 0:
+                        break
+                    if rowcount and rowcount < 500:
+                        break
+                    if empty_pages >= 2:
+                        break
+        gained = len(self.docs) - listed_before
+        self.log(f"[search] done +{gained} listed={len(self.docs)}")
+        return gained
+
+    def discover_document_libraries(self) -> int:
+        """Walk document libraries / Documents / RulesLibrary / DocsCenter via _api."""
+        listed_before = len(self.docs)
+        folders: list[str] = [
+            "/Documents",
+            "/Shared Documents",
+            "/Shared%20Documents",
+            "/Docs",
+            "/Library",
+            "/en/Documents",
+            "/ar/Documents",
+            "/ar/InformationCenter/DocsCenter",
+            "/en/InformationCenter/DocsCenter",
+            "/ar/InformationCenter/DocsCenter/RulesLibrary",
+            "/en/InformationCenter/DocsCenter/RulesLibrary",
+            "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents",
+            "/en/InformationCenter/DocsCenter/RulesLibrary/Docs",
+            "/ar/Documents/Mewa",
+            "/ar/Documents/IT",
+            "/ar/Ministry/AboutMinistry/Documents",
+            "/ar/Ministry/AboutMinistry/RulesAndConditions",
+            "/ar/Ministry/initiatives/SectorStratigy/Reports",
+            "/en/SDAIA/about/Documents",
+            "/ar/SDAIA/about/Documents",
+            "/en/MediaCenter/KnowledgeCenter",
+            "/ar/MediaCenter/KnowledgeCenter",
+            "/en/Research/Documents",
+            "/ar/Research/Documents",
+            "/ar/mediacenter/Documents",
+            "/DOC",
+        ]
+        seen_folders: set[str] = set()
+        api_calls = 0
+        max_api = 80
+
+        def probe_folder(host: str, rel: str, depth: int) -> None:
+            nonlocal api_calls
+            rel = "/" + rel.strip("/").replace("'", "''")
+            key = f"{host}|{rel.lower()}"
+            if key in seen_folders or api_calls >= max_api or depth > 3:
+                return
+            seen_folders.add(key)
+            files_url = (
+                f"https://{host}/_api/web/getfolderbyserverrelativeurl('{rel}')"
+                f"/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
+            )
+            folders_url = (
+                f"https://{host}/_api/web/getfolderbyserverrelativeurl('{rel}')"
+                f"/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200"
+            )
+            items_url = (
+                f"https://{host}/_api/web/getfolderbyserverrelativeurl('{rel}')"
+                f"/files?$top=5000"
+            )
+            for u in (files_url, items_url):
+                if u in self.datasources_found or api_calls >= max_api:
+                    continue
+                self.datasources_found.append(u)
+                api_calls += 1
+                self.log(f"  [library] files {rel} listed={len(self.docs)}")
+                r, err = self.fetch_json(u, timeout=60)
+                if err or r is None:
+                    continue
+                self.harvest_sharepoint_payload(r.text or "", u, "sp_library")
+            if api_calls >= max_api or depth >= 3:
+                return
+            if folders_url in self.datasources_found:
+                return
+            self.datasources_found.append(folders_url)
+            api_calls += 1
+            r, err = self.fetch_json(folders_url, timeout=45)
+            if err or r is None:
+                return
+            text = r.text or ""
+            rels = re.findall(r'"ServerRelativeUrl"\s*:\s*"([^"]+)"', text)
+            for child in rels:
+                cl = child.lower()
+                if any(x in cl for x in ("/_catalogs", "/style library", "/formservertemplates", "/_vti_")):
+                    continue
+                probe_folder(host, child, depth + 1)
+
+        for host in self._api_hosts():
+            lists_url = (
+                f"https://{host}/_api/web/lists"
+                f"?$filter=BaseTemplate eq 101"
+                f"&$select=Title,ItemCount,RootFolder/ServerRelativeUrl"
+                f"&$expand=RootFolder&$top=200&$format=json"
+            )
+            self.log(f"  [library] lists {host}")
+            r, err = self.fetch_json(lists_url, timeout=60)
+            if r is not None and not err:
+                self.datasources_found.append(lists_url)
+                self.harvest_sharepoint_payload(r.text or "", lists_url, "sp_library")
+                for m in re.finditer(r'"ServerRelativeUrl"\s*:\s*"([^"]+)"', r.text or ""):
+                    folders.append(m.group(1))
+            for rel in list(folders):
+                probe_folder(host, rel, 0)
+
+        gained = len(self.docs) - listed_before
+        self.log(f"[library] done +{gained} listed={len(self.docs)} api_calls={api_calls}")
+        return gained
+
+    def drain_downloads(self, reason: str) -> dict:
+        """Download every currently listed PDF immediately (do not wait for HTML BFS)."""
+        if not self.do_download:
+            return {}
+        pending = [r for r in self.docs.values() if r.get("status") == "to_download"]
+        if not pending:
+            return self.status_counts()
+        self.log(f"[download] drain {len(pending)} pending ({reason}) listed={len(self.docs)}")
+        self.publish_status(
+            "downloading",
+            f"downloading {len(pending)} listed docs ({reason})",
+            force_git=True,
+        )
+        return self.download_all(complete=False)
+
     # ---------- discovery ----------
     def deep_seed_paths(self) -> list[str]:
         """High-value library paths (colleague excel: KnowledgeCenter holds most PDFs)."""
@@ -776,16 +1107,16 @@ class MinistryPipeline:
         for probe in probes:
             found.append(probe)
 
-        for ds in list(dict.fromkeys(found))[:120]:
+        for ds in list(dict.fromkeys(found))[:200]:
             if ds in self.datasources_found:
                 continue
             self.datasources_found.append(ds)
             self.log(f"  [datasource] {ds[:130]}")
-            r, err = self.fetch(ds, timeout=60)
+            r, err = self.fetch_json(ds, timeout=60) if "/_api/" in ds or "listdata.svc" in ds else self.fetch(ds, timeout=60)
             if err or r is None:
                 continue
             text = r.text or ""
-            self.harvest_doc_urls_from_text(text, ds, "datasource")
+            self.harvest_sharepoint_payload(text, ds, "datasource")
             for m in re.finditer(r'"ServerRelativeUrl"\s*:\s*"([^"]+)"', text):
                 rel = m.group(1)
                 if any(
@@ -800,11 +1131,11 @@ class MinistryPipeline:
                     api = f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('{rel}')/files?$top=500"
                     if api not in self.datasources_found:
                         self.datasources_found.append(api)
-                        r2, err2 = self.fetch(api, timeout=60)
+                        r2, err2 = self.fetch_json(api, timeout=60)
                         if r2 and not err2:
-                            self.harvest_doc_urls_from_text(r2.text or "", api, "datasource")
+                            self.harvest_sharepoint_payload(r2.text or "", api, "datasource")
                     sub = f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('{rel}')/folders?$top=200"
-                    r3, err3 = self.fetch(sub, timeout=45)
+                    r3, err3 = self.fetch_json(sub, timeout=45)
                     if r3 and not err3:
                         for m2 in re.finditer(r'"ServerRelativeUrl"\s*:\s*"([^"]+)"', r3.text or ""):
                             rel2 = m2.group(1)
@@ -812,9 +1143,9 @@ class MinistryPipeline:
                             if api2 in self.datasources_found:
                                 continue
                             self.datasources_found.append(api2)
-                            r4, err4 = self.fetch(api2, timeout=60)
+                            r4, err4 = self.fetch_json(api2, timeout=60)
                             if r4 and not err4:
-                                self.harvest_doc_urls_from_text(r4.text or "", api2, "datasource")
+                                self.harvest_sharepoint_payload(r4.text or "", api2, "datasource")
 
     def extract_from_html(self, html: str, page_url: str) -> list[str]:
         pages = []
@@ -905,7 +1236,7 @@ class MinistryPipeline:
 
     def discover(self) -> dict:
         self._seed_pages: list[str] = []
-        self.log(f"[discover] start {self.start_url} max_pages={self.max_pages}")
+        self.log(f"[discover] start {self.start_url} max_pages={self.max_pages} (library-first)")
         reachable = self.resolve_start()
         if not reachable:
             self.playwright_discover(self.start_url)
@@ -929,142 +1260,169 @@ class MinistryPipeline:
         # Warm session (cookies) — reduces intermittent WAF empties
         home, home_err = self.fetch(self.start_url, timeout=30)
         home_html = home.text if home is not None and not home_err else ""
+
+        # --- library-first (any ministry): search + document libraries, then download ---
         self.discover_nav_api()
-        self.discover_sitemaps()
-        # SharePoint probes only when the site looks like SharePoint (or SDAIA)
-        if self._site_reachable and self._waf_blocks < 15 and (
-            "sdaia" in self.root or self._looks_sharepoint(home_html, getattr(home, "headers", None))
+        self.discover_sharepoint_search()
+        self.discover_document_libraries()
+        if (
+            len(self.docs) < 50
+            and self._site_reachable
+            and self._waf_blocks < 25
         ):
             self.discover_sharepoint_datasources(home_html, self.start_url)
+        library_listed = len(self.docs)
+        self.log(f"[library-first] listed={library_listed} methods={self.discovery_methods}")
+        self.publish_status(
+            "discovering",
+            f"library-first {self.root}: listed={library_listed} (search+libraries)",
+            force_git=True,
+        )
+        if self.do_download and self.docs:
+            self.drain_downloads("after library-first")
 
-        queues: dict[int, deque] = {0: deque(), 1: deque(), 2: deque()}
-        queued: set[str] = set()
+        skip_html_bfs = library_listed >= 50
+        if skip_html_bfs:
+            self.log(
+                f"[discover] skip sitemap/news/org BFS — library listed {library_listed} >= 50"
+            )
+        else:
+            self.log(
+                f"[discover] library listed {library_listed} < 50 — fallback sitemap + BFS"
+            )
+            self.discover_sitemaps()
 
-        def enq(u: str):
-            u = normalize(u)
-            if not u.startswith("http") or u in queued:
-                return
-            h = base_host(u)
-            if not same_site(u, self.root):
-                # sibling portals e.g. dgp.sdaia.gov.sa
-                if not (
-                    h.endswith(".sdaia.gov.sa")
-                    or h == "sdaia.gov.sa"
-                    or (self.root in h or h.endswith("." + self.root))
-                ):
+            queues: dict[int, deque] = {0: deque(), 1: deque(), 2: deque()}
+            queued: set[str] = set()
+
+            def enq(u: str):
+                u = normalize(u)
+                if not u.startswith("http") or u in queued:
                     return
-            queued.add(u)
-            queues[self.page_priority(u)].append(u)
+                h = base_host(u)
+                if not same_site(u, self.root):
+                    # sibling portals e.g. dgp.sdaia.gov.sa
+                    if not (
+                        h.endswith(".sdaia.gov.sa")
+                        or h == "sdaia.gov.sa"
+                        or (self.root in h or h.endswith("." + self.root))
+                    ):
+                        return
+                queued.add(u)
+                queues[self.page_priority(u)].append(u)
 
-        def pop_next():
-            for prio in (0, 1, 2):
-                if queues[prio]:
-                    return queues[prio].popleft()
-            return None
+            def pop_next():
+                for prio in (0, 1, 2):
+                    if queues[prio]:
+                        return queues[prio].popleft()
+                return None
 
-        enq(self.start_url)
-        for p in getattr(self, "_seed_pages", [])[:8000]:
-            enq(p)
-        for path in self.deep_seed_paths():
-            if path.startswith("http"):
-                enq(path)
-            else:
-                enq(urljoin(self.start_url, path))
-                enq(f"https://{self.root}{path}")
+            enq(self.start_url)
+            for p in getattr(self, "_seed_pages", [])[:8000]:
+                enq(p)
+            for path in self.deep_seed_paths():
+                if path.startswith("http"):
+                    enq(path)
+                else:
+                    enq(urljoin(self.start_url, path))
+                    enq(f"https://{self.root}{path}")
 
-        while self.pages_seen < self.max_pages:
-            url = pop_next()
-            if not url:
-                break
-            if url in self.visited_pages:
-                continue
-            self.visited_pages.add(url)
-            self.pages_seen += 1
-            if self.pages_seen % 25 == 0:
-                qsize = sum(len(q) for q in queues.values())
-                self.log(
-                    f"  [progress] pages={self.pages_seen} docs_listed={len(self.docs)} "
-                    f"queue={qsize} methods={self.discovery_methods} "
-                    f"pw={self._pw_renders} waf={self._waf_blocks}"
-                )
-                self.publish_status(
-                    "discovering",
-                    f"discovering {self.root}: pages={self.pages_seen} listed={len(self.docs)}",
-                )
-
-            # Skip known-dead SharePoint REST if WAF keeps rejecting
-            if "/_api/" in url and self._waf_blocks > 20:
-                continue
-
-            r, err = self.fetch(url)
-            text = ""
-            ct = ""
-            if err or r is None:
-                self.page_errors.append({"url": url, "error": err})
-                self._consecutive_errors += 1
-                if (
-                    self._consecutive_errors >= 20
-                    and len(self.docs) == 0
-                    and self.pages_seen >= 12
-                ):
-                    self.log("[discover] abort: 0 docs after 12+ consecutive fetch failures")
+            while self.pages_seen < self.max_pages:
+                url = pop_next()
+                if not url:
                     break
-                # Colleague path: try Playwright when plain HTTP fails on library pages
-                # Skip _api (Playwright cannot help) and stop after a run of failures.
-                if (
-                    self.page_priority(url) == 0
-                    and "/_api/" not in url
-                    and "/_vti_bin/" not in url
-                    and self._consecutive_errors < 8
-                ):
+                if url in self.visited_pages:
+                    continue
+                self.visited_pages.add(url)
+                self.pages_seen += 1
+                if self.pages_seen % 25 == 0:
+                    qsize = sum(len(q) for q in queues.values())
+                    self.log(
+                        f"  [progress] pages={self.pages_seen} docs_listed={len(self.docs)} "
+                        f"queue={qsize} methods={self.discovery_methods} "
+                        f"pw={self._pw_renders} waf={self._waf_blocks}"
+                    )
+                    self.publish_status(
+                        "discovering",
+                        f"discovering {self.root}: pages={self.pages_seen} listed={len(self.docs)}",
+                    )
+
+                # Skip known-dead SharePoint REST if WAF keeps rejecting
+                if "/_api/" in url and self._waf_blocks > 20:
+                    continue
+
+                r, err = self.fetch(url)
+                text = ""
+                ct = ""
+                if err or r is None:
+                    self.page_errors.append({"url": url, "error": err})
+                    self._consecutive_errors += 1
+                    if (
+                        self._consecutive_errors >= 20
+                        and len(self.docs) == 0
+                        and self.pages_seen >= 12
+                    ):
+                        self.log("[discover] abort: 0 docs after 12+ consecutive fetch failures")
+                        break
+                    # Colleague path: try Playwright when plain HTTP fails on library pages
+                    # Skip _api (Playwright cannot help) and stop after a run of failures.
+                    if (
+                        self.page_priority(url) == 0
+                        and "/_api/" not in url
+                        and "/_vti_bin/" not in url
+                        and self._consecutive_errors < 8
+                    ):
+                        for p in self.playwright_discover(url):
+                            enq(p)
+                    continue
+                self._consecutive_errors = 0
+                ct = (r.headers.get("Content-Type") or "").lower()
+                if looks_like_doc(url) or "pdf" in ct:
+                    self.add_doc(url, "direct")
+                    continue
+                text = r.text or ""
+                if "json" in ct or text.lstrip()[:1] in ("{", "["):
+                    for p in self.extract_from_json(text, url):
+                        enq(p)
+                    continue
+                if "xml" in ct or text.lstrip().startswith("<?xml") or "<feed" in text[:200].lower():
+                    self.harvest_doc_urls_from_text(text, url, "datasource")
+                    continue
+
+                docs_before = len(self.docs)
+                for p in self.extract_from_html(text, url):
+                    enq(p)
+                # JS-render fallback (colleague Extraction_Script) for SPA / KnowledgeCenter
+                need_pw = self.looks_like_spa_shell(text, url) or (
+                    self.page_priority(url) == 0 and len(self.docs) == docs_before
+                )
+                if need_pw:
                     for p in self.playwright_discover(url):
                         enq(p)
-                continue
-            self._consecutive_errors = 0
-            ct = (r.headers.get("Content-Type") or "").lower()
-            if looks_like_doc(url) or "pdf" in ct:
-                self.add_doc(url, "direct")
-                continue
-            text = r.text or ""
-            if "json" in ct or text.lstrip()[:1] in ("{", "["):
-                for p in self.extract_from_json(text, url):
-                    enq(p)
-                continue
-            if "xml" in ct or text.lstrip().startswith("<?xml") or "<feed" in text[:200].lower():
-                self.harvest_doc_urls_from_text(text, url, "datasource")
-                continue
 
-            docs_before = len(self.docs)
-            for p in self.extract_from_html(text, url):
-                enq(p)
-            # JS-render fallback (colleague Extraction_Script) for SPA / KnowledgeCenter
-            need_pw = self.looks_like_spa_shell(text, url) or (
-                self.page_priority(url) == 0 and len(self.docs) == docs_before
-            )
-            if need_pw:
-                for p in self.playwright_discover(url):
-                    enq(p)
+            # Always Playwright-pass remaining high-priority library seeds not fully scraped
+            for seed in list(getattr(self, "_seed_pages", []))[:200]:
+                if self.page_priority(seed) != 0:
+                    continue
+                if self._pw_renders >= self._pw_max_renders:
+                    break
+                if seed in self.visited_pages and any(
+                    k in (self.discovery_methods or {})
+                    for k in ("playwright_net", "playwright_html", "playwright_api")
+                ):
+                    continue
+                # re-render key library pages once more if few library docs
+                if sum(
+                    1
+                    for d in self.docs.values()
+                    if "knowledge" in (d.get("url") or "").lower()
+                    or "mediacenter" in (d.get("url") or "").lower()
+                ) < 100 and self.page_priority(seed) == 0:
+                    for p in self.playwright_discover(seed):
+                        enq(p)
 
-        # Always Playwright-pass remaining high-priority library seeds not fully scraped
-        for seed in list(getattr(self, "_seed_pages", []))[:200]:
-            if self.page_priority(seed) != 0:
-                continue
-            if self._pw_renders >= self._pw_max_renders:
-                break
-            if seed in self.visited_pages and any(
-                k in (self.discovery_methods or {})
-                for k in ("playwright_net", "playwright_html", "playwright_api")
-            ):
-                continue
-            # re-render key library pages once more if few library docs
-            if sum(
-                1
-                for d in self.docs.values()
-                if "knowledge" in (d.get("url") or "").lower()
-                or "mediacenter" in (d.get("url") or "").lower()
-            ) < 100 and self.page_priority(seed) == 0:
-                for p in self.playwright_discover(seed):
-                    enq(p)
+            if self.do_download and self.docs:
+                self.drain_downloads("after fallback BFS")
 
         stats = {
             "target_url": self.start_url,
@@ -1072,6 +1430,8 @@ class MinistryPipeline:
             "pages_visited": self.pages_seen,
             "max_pages_cap": self.max_pages,
             "documents_listed": len(self.docs),
+            "library_listed": library_listed,
+            "skipped_html_bfs": skip_html_bfs,
             "sitemaps_used": self.sitemaps_used,
             "datasources_found": len(self.datasources_found),
             "discovery_methods": self.discovery_methods,
@@ -1080,12 +1440,14 @@ class MinistryPipeline:
             "playwright_renders": self._pw_renders,
             "hit_page_cap": self.pages_seen >= self.max_pages,
             "discovery_method_detail": (
-                "nav_api + sitemap + SharePoint DataSources + priority BFS "
-                "+ href/script/json + Playwright JS fallback (KnowledgeCenter)"
+                "library-first: paginated _api/search FileExtension:pdf + "
+                "Documents/RulesLibrary/DocsCenter folder _api + immediate download; "
+                "sitemap/news/org BFS only if library listed <50"
             ),
         }
         self.log(
             f"[discover] done pages={self.pages_seen} listed={len(self.docs)} "
+            f"library_listed={library_listed} skip_bfs={skip_html_bfs} "
             f"methods={self.discovery_methods} datasources={len(self.datasources_found)} "
             f"sitemaps={len(self.sitemaps_used)} playwright={self._pw_renders} waf={self._waf_blocks}"
         )
@@ -1102,7 +1464,8 @@ class MinistryPipeline:
         self.save_list(phase="listed", extra_stats=stats)
         self.publish_status(
             "listed",
-            f"listed {len(self.docs)} documents on {self.root} (pages={self.pages_seen})",
+            f"listed {len(self.docs)} documents on {self.root} "
+            f"(library={library_listed} pages={self.pages_seen} skip_bfs={skip_html_bfs})",
             force_git=True,
         )
         return stats
@@ -1158,7 +1521,7 @@ class MinistryPipeline:
             rec["scanned_pdf"] = False
         rec["download_error"] = None
 
-    def download_all(self) -> dict:
+    def download_all(self, *, complete: bool = True) -> dict:
         items = list(self.docs.values())
         total = len(items)
         self.log(f"[download] starting {total} documents")
@@ -1189,7 +1552,7 @@ class MinistryPipeline:
                     f"(ok={ok} scanned={scanned} fail={fail})",
                 )
         self.merge_into_manifest()
-        self.save_list(phase="complete")
+        self.save_list(phase="complete" if complete else "downloading")
         return {"downloaded": ok, "scanned_pdf": scanned, "download_failed": fail, "listed": total}
 
     def merge_into_manifest(self) -> None:
