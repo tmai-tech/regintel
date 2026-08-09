@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-09T11:12:19.209723+00:00",
-  "phase": "downloading",
-  "message": "downloading 112 listed docs",
+  "updated_at": "2026-08-09T11:12:23.455884+00:00",
+  "phase": "idle",
+  "message": "Saudi Arabia - MEWA: listed=112 downloaded=88 scanned=24 failed=0",
   "run_id": "31309512706",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31309512706",
   "totals": {
@@ -302,7 +302,7 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-09T11:12:10.828476+00:00",
+  "manifest_generated_at": "2026-08-09T11:12:21.583838+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
@@ -328,6 +328,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T11:12:17.580716+00:00"
+    "updated_at": "2026-08-09T11:12:21.830048+00:00"
   }
 }
