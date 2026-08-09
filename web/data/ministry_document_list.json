@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-08-09T11:08:43.670665+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-09T11:09:51.497106+00:00",
+  "phase": "downloading",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 86,
+    "to_download": 87,
     "downloaded": 14,
     "download_failed": 0,
     "scanned_pdf": 11,
-    "listed_total": 111
+    "listed_total": 112
   },
   "discovery_methods": {
-    "href": 111
+    "href": 111,
+    "script": 1
   },
-  "pages_visited": 325,
+  "pages_visited": 400,
   "documents": [
     {
       "filename": "agire3.pdf",
@@ -1345,6 +1346,18 @@
       "title": "سياسة مشاركة البيانات.",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "دليل الخدمات الالكترونية.pdf",
+      "url": "https://www.mewa.gov.sa/ar/Documents/MEWA%20Case%20Studies%20for%20ESCWA/e-Services/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "دليل الخدمات الالكترونية.pdf",
+      "bytes": null,
+      "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - MEWA"
     }
   ],
