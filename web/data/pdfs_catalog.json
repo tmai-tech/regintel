@@ -1,5 +1,29 @@
 [
   {
+    "id": "3ffef15459d1607f",
+    "title": "المفكرة الزراعية",
+    "filename": "agire3.pdf",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "law_type": "procedural",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "mewa.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://www.mewa.gov.sa/en/",
+    "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+    "open_url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+    "download_url": null,
+    "bytes": 60066371,
+    "sha256": "3ffef15459d1607f",
+    "downloaded_at": "2026-08-09T10:57:53.849279+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_MEWA/ministry/agire3.pdf"
+  },
+  {
     "id": "b0a8c6b9aad4c917",
     "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
     "filename": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",

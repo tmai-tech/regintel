@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T07:16:22.875362+00:00",
+  "generated_at": "2026-08-09T10:58:10.148924+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -174495,6 +174495,20 @@
       "status": "downloaded",
       "scanned_pdf": false,
       "discovery_method": "playwright_api"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "source_kind": "ministry",
+      "source_page": "https://www.mewa.gov.sa/en/",
+      "title": "المفكرة الزراعية",
+      "path": "data/pdfs/Saudi_Arabia_MEWA/ministry/agire3.pdf",
+      "bytes": 60066371,
+      "sha256": "3ffef15459d1607f",
+      "downloaded_at": "2026-08-09T10:57:53.849279+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "href"
     }
   ],
   "discovered": [

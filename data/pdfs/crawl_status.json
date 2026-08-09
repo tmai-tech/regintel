@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-09T10:57:45.946127+00:00",
-  "phase": "downloading",
-  "message": "downloading 25 listed docs (after library HTML)",
+  "updated_at": "2026-08-09T11:00:16.749163+00:00",
+  "phase": "discovering",
+  "message": "library-first mewa.gov.sa: listed=25 (search+libraries)",
   "run_id": "31309512706",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31309512706",
   "totals": {
-    "pdfs": 884,
+    "pdfs": 885,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
     "ministry_listed": 25,
-    "ministry_downloaded": 0,
+    "ministry_downloaded": 14,
     "ministry_failed": 0,
-    "ministry_scanned": 0,
-    "ministry_to_download": 25
+    "ministry_scanned": 11,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -22,13 +22,13 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 24
+      "count": 25
     }
   ],
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 884
+      "count": 885
     }
   ],
   "current_source": {
@@ -36,13 +36,20 @@
     "url": "https://www.mewa.gov.sa/en/",
     "source_kind": "ministry_pipeline",
     "listed": 25,
-    "downloaded": 0,
+    "downloaded": 14,
     "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 25,
+    "scanned_pdf": 11,
+    "to_download": 0,
     "pages_visited": 24
   },
   "recent_pdfs": [
+    {
+      "title": "المفكرة الزراعية",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+      "downloaded_at": "2026-08-09T10:57:53.849279+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
       "jurisdiction": "Saudi Arabia - SDAIA",
@@ -139,13 +146,6 @@
       "jurisdiction": "Saudi Arabia - SDAIA",
       "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
       "downloaded_at": "2026-08-07T06:38:27.933926+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "نشرة الذكاء الاصطناعي 3 أبريل 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 3 أبريل 2022.pdf",
-      "downloaded_at": "2026-08-07T06:38:20.341320+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -302,15 +302,15 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
+  "manifest_generated_at": "2026-08-09T10:58:10.148924+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 25,
-      "downloaded": 0,
+      "to_download": 0,
+      "downloaded": 14,
       "download_failed": 0,
-      "scanned_pdf": 0,
+      "scanned_pdf": 11,
       "listed_total": 25
     },
     "discovery_methods": {
@@ -318,8 +318,8 @@
     },
     "pages_visited": 24,
     "sitemaps_used": [],
-    "datasources_found": 0,
+    "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T10:57:44.342372+00:00"
+    "updated_at": "2026-08-09T11:00:15.099199+00:00"
   }
 }
