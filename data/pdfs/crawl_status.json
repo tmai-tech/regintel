@@ -1,19 +1,14 @@
 {
-  "updated_at": "2026-08-09T11:12:23.455884+00:00",
+  "updated_at": "2026-08-09T11:12:30.017450+00:00",
   "phase": "idle",
-  "message": "Saudi Arabia - MEWA: listed=112 downloaded=88 scanned=24 failed=0",
+  "message": "relabeled 0 ministry PDFs by host",
   "run_id": "31309512706",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31309512706",
   "totals": {
     "pdfs": 972,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 2,
-    "ministry_listed": 112,
-    "ministry_downloaded": 88,
-    "ministry_failed": 0,
-    "ministry_scanned": 24,
-    "ministry_to_download": 0
+    "jurisdictions": 2
   },
   "by_jurisdiction": [
     {
@@ -31,17 +26,7 @@
       "count": 972
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "url": "https://www.mewa.gov.sa/en/",
-    "source_kind": "ministry_pipeline",
-    "listed": 112,
-    "downloaded": 88,
-    "download_failed": 0,
-    "scanned_pdf": 24,
-    "to_download": 0,
-    "pages_visited": 400
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "دليل الخدمات الالكترونية.pdf",
@@ -302,32 +287,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-09T11:12:21.583838+00:00",
-  "ministry_document_list": {
-    "label": "Saudi Arabia - MEWA",
-    "target_url": "https://www.mewa.gov.sa/en/",
-    "counts": {
-      "to_download": 0,
-      "downloaded": 88,
-      "download_failed": 0,
-      "scanned_pdf": 24,
-      "listed_total": 112
-    },
-    "discovery_methods": {
-      "href": 111,
-      "script": 1
-    },
-    "pages_visited": 400,
-    "sitemaps_used": [
-      "https://www.mewa.gov.sa/sitemap.xml",
-      "https://www.mewa.gov.sa/Sitemap.xml",
-      "https://mewa.gov.sa/sitemap.xml",
-      "https://mewa.gov.sa/_layouts/15/sitemap.aspx",
-      "https://www.mewa.gov.sa:443/sitemap0.xml",
-      "https://www.mewa.gov.sa:443/sitemap_mobile0.xml"
-    ],
-    "datasources_found": 81,
-    "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T11:12:21.830048+00:00"
-  }
+  "manifest_generated_at": "2026-08-09T11:12:21.583838+00:00"
 }
