@@ -606,18 +606,27 @@ class MinistryPipeline:
         if "mewa.gov.sa" in self.root:
             common.extend(
                 [
+                    "/ar/InformationCenter/DocsCenter/",
+                    "/en/InformationCenter/DocsCenter/",
                     "/ar/InformationCenter/DocsCenter/RulesLibrary/",
                     "/en/InformationCenter/DocsCenter/RulesLibrary/",
                     "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents/",
                     "/en/InformationCenter/DocsCenter/RulesLibrary/Docs/",
+                    "/ar/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+                    "/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
                     "/ar/Documents/",
                     "/en/Documents/",
                     "/ar/Documents/Mewa/",
+                    "/ar/Documents/IT/",
                     "/ar/Ministry/AboutMinistry/Documents/",
+                    "/ar/Ministry/AboutMinistry/RulesAndConditions/",
+                    "/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/",
+                    "/ar/Ministry/initiatives/SectorStratigy/",
                     "/ar/Ministry/initiatives/SectorStratigy/Reports/",
                     "/ar/Ministry/Agencies/AgencyForInnovation/Documents/",
                     "/ar/InformationCenter/",
                     "/en/InformationCenter/",
+                    "/ar/InformationCenter/AwarenessCenter/",
                 ]
             )
         return common
@@ -742,12 +751,20 @@ class MinistryPipeline:
         if "mewa" in self.root:
             probes.extend(
                 [
-                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/InformationCenter/DocsCenter/RulesLibrary/Documents')/files?$top=500",
-                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/InformationCenter/DocsCenter/RulesLibrary/Docs')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/InformationCenter/DocsCenter/RulesLibrary/Documents')/files?$top=5000",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/en/InformationCenter/DocsCenter/RulesLibrary/Docs')/files?$top=5000",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/InformationCenter/DocsCenter')/folders?$top=200",
                     f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/files?$top=500",
                     f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/initiatives/SectorStratigy/Reports')/files?$top=500",
+                    f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/files?$top=500",
+                    f"https://{self.root}/_api/web/lists?$filter=BaseTemplate eq 101&$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder&$top=200",
                 ]
             )
+            for start in range(0, 2500, 500):
+                probes.append(
+                    f"https://{self.root}/_api/search/query?querytext=%27FileExtension:pdf%27"
+                    f"&rowlimit=500&startrow={start}&selectproperties=%27Path,Title,Size%27"
+                )
         if "mc.gov.sa" in self.root:
             probes.extend(
                 [
@@ -776,7 +793,8 @@ class MinistryPipeline:
                     for x in (
                         "document", "media", "library", "pdf", "file",
                         "knowledge", "research", "publication", "newsletter",
-                        "sdaia", "sector",
+                        "sdaia", "sector", "rules", "docs", "report",
+                        "policy", "information", "mewa",
                     )
                 ):
                     api = f"https://{self.root}/_api/web/getfolderbyserverrelativeurl('{rel}')/files?$top=500"
