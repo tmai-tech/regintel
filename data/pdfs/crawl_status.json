@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-08T20:03:51.764714+00:00",
+  "updated_at": "2026-08-09T09:15:21.390490+00:00",
   "phase": "discovering",
   "message": "Saudi ministries · 884 PDFs · 597 summaries",
-  "run_id": "31269184452",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31269184452",
+  "run_id": "31305428784",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31305428784",
   "totals": {
     "pdfs": 884,
     "errors": 22131,
