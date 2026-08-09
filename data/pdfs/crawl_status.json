@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-09T10:36:50.482928+00:00",
+  "updated_at": "2026-08-09T10:39:25.097514+00:00",
   "phase": "discovering",
-  "message": "discovering mewa.gov.sa: pages=50 listed=59",
-  "run_id": "31305893111",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31305893111",
+  "message": "discovering documents on https://www.mewa.gov.sa/",
+  "run_id": "31308816083",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31308816083",
   "totals": {
     "pdfs": 884,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
-    "ministry_listed": 59,
+    "ministry_listed": 0,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 59
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -31,7 +31,17 @@
       "count": 884
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "url": "https://www.mewa.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
+  },
   "recent_pdfs": [
     {
       "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
@@ -295,20 +305,19 @@
   "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
-    "target_url": "https://www.mewa.gov.sa/en/",
+    "target_url": "https://www.mewa.gov.sa/",
     "counts": {
-      "to_download": 59,
+      "to_download": 0,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 59
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "datasource": 3,
-      "href": 56
-    },
-    "pages_visited": 50,
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T09:58:05.695279+00:00"
+    "updated_at": "2026-08-09T10:39:23.275043+00:00"
   }
 }
