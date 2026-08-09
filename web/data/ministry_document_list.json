@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T11:06:55.513525+00:00",
+  "updated_at": "2026-08-09T11:08:43.670665+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
@@ -13,7 +13,7 @@
   "discovery_methods": {
     "href": 111
   },
-  "pages_visited": 200,
+  "pages_visited": 325,
   "documents": [
     {
       "filename": "agire3.pdf",

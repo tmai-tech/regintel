@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T11:06:55.513525+00:00",
+  "updated_at": "2026-08-09T11:08:43.670665+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
@@ -74,10 +74,14 @@
     "https://www.mewa.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://www.mewa.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 200,
+  "pages_visited": 325,
   "page_errors_sample": [
     {
       "url": "https://www.mewa.gov.sa/_layouts/15/feed.aspx?xsl=1&web=/ar/MediaCenter/News&page=ea8b9cb5-f87b-4fff-8947-f2133bb4bdcb&wp=e791e78d-3a99-4727-af0b-e1fa687594d5&pageurl=/ar/MediaCenter/News/Pages/home.aspx",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://mewa.gov.sa/_layouts/15/feed.aspx?xsl=1&web=/ar/MediaCenter/News&page=ea8b9cb5-f87b-4fff-8947-f2133bb4bdcb&wp=e791e78d-3a99-4727-af0b-e1fa687594d5&pageurl=/ar/MediaCenter/News/Pages/home.aspx",
       "error": "HTTP 404"
     }
   ],

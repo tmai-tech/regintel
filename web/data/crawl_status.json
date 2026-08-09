@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-09T11:06:57.131678+00:00",
+  "updated_at": "2026-08-09T11:08:45.314870+00:00",
   "phase": "discovering",
-  "message": "discovering mewa.gov.sa: pages=200 listed=111",
+  "message": "discovering mewa.gov.sa: pages=325 listed=111",
   "run_id": "31309512706",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31309512706",
   "totals": {
@@ -40,7 +40,7 @@
     "download_failed": 0,
     "scanned_pdf": 11,
     "to_download": 86,
-    "pages_visited": 200
+    "pages_visited": 325
   },
   "recent_pdfs": [
     {
@@ -316,7 +316,7 @@
     "discovery_methods": {
       "href": 111
     },
-    "pages_visited": 200,
+    "pages_visited": 325,
     "sitemaps_used": [
       "https://www.mewa.gov.sa/sitemap.xml",
       "https://www.mewa.gov.sa/Sitemap.xml",
@@ -327,6 +327,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T11:06:55.516818+00:00"
+    "updated_at": "2026-08-09T11:08:43.673767+00:00"
   }
 }
