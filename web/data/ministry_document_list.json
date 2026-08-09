@@ -1,17 +1,56 @@
 {
-  "updated_at": "2026-08-09T09:27:13.310127+00:00",
+  "updated_at": "2026-08-09T09:47:43.995882+00:00",
   "phase": "discovering",
-  "target_url": "https://www.mewa.gov.sa/",
+  "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 0,
+    "to_download": 3,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 0
+    "listed_total": 3
   },
-  "discovery_methods": {},
-  "pages_visited": 0,
-  "documents": [],
+  "discovery_methods": {
+    "datasource": 3
+  },
+  "pages_visited": 25,
+  "documents": [
+    {
+      "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "url": "https://www.mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "bytes": null,
+      "discovery_method": "datasource",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "agire3.pdf",
+      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "agire3.pdf",
+      "bytes": null,
+      "discovery_method": "datasource",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "agire3.pdf",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "agire3.pdf",
+      "bytes": null,
+      "discovery_method": "datasource",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    }
+  ],
   "failed_sample": []
 }

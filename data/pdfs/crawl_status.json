@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-09T09:27:15.167802+00:00",
+  "updated_at": "2026-08-09T09:47:45.826790+00:00",
   "phase": "discovering",
-  "message": "discovering documents on https://www.mewa.gov.sa/",
+  "message": "discovering mewa.gov.sa: pages=25 listed=3",
   "run_id": "31305893111",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31305893111",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
-    "ministry_listed": 0,
+    "ministry_listed": 3,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 3
   },
   "by_jurisdiction": [
     {
@@ -33,14 +33,14 @@
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MEWA",
-    "url": "https://www.mewa.gov.sa/",
+    "url": "https://www.mewa.gov.sa/en/",
     "source_kind": "ministry_pipeline",
-    "listed": 0,
+    "listed": 3,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 0
+    "to_download": 3,
+    "pages_visited": 25
   },
   "recent_pdfs": [
     {
@@ -305,19 +305,28 @@
   "manifest_generated_at": "2026-08-07T07:16:22.875362+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
-    "target_url": "https://www.mewa.gov.sa/",
+    "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 0,
+      "to_download": 3,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 0
+      "listed_total": 3
     },
-    "discovery_methods": {},
-    "pages_visited": 0,
-    "sitemaps_used": [],
-    "datasources_found": 0,
+    "discovery_methods": {
+      "datasource": 3
+    },
+    "pages_visited": 25,
+    "sitemaps_used": [
+      "https://www.mewa.gov.sa/sitemap.xml",
+      "https://www.mewa.gov.sa/Sitemap.xml",
+      "https://mewa.gov.sa/sitemap.xml",
+      "https://mewa.gov.sa/_layouts/15/sitemap.aspx",
+      "https://www.mewa.gov.sa:443/sitemap0.xml",
+      "https://www.mewa.gov.sa:443/sitemap_mobile0.xml"
+    ],
+    "datasources_found": 26,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T09:27:13.310511+00:00"
+    "updated_at": "2026-08-09T09:47:43.996559+00:00"
   }
 }
