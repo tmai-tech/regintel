@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-09T11:11:35.936060+00:00",
-  "phase": "downloading",
-  "message": "downloading 90/112 for Saudi Arabia - MEWA (ok=67 scanned=23 fail=0)",
+  "updated_at": "2026-08-09T11:12:12.706461+00:00",
+  "phase": "listed",
+  "message": "listed 112 documents on mewa.gov.sa (library=25 pages=400 skip_bfs=False)",
   "run_id": "31309512706",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31309512706",
   "totals": {
-    "pdfs": 885,
+    "pdfs": 972,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
     "ministry_listed": 112,
-    "ministry_downloaded": 67,
+    "ministry_downloaded": 88,
     "ministry_failed": 0,
-    "ministry_scanned": 23,
-    "ministry_to_download": 22
+    "ministry_scanned": 24,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -22,13 +22,13 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 25
+      "count": 112
     }
   ],
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 885
+      "count": 972
     }
   ],
   "current_source": {
@@ -36,116 +36,116 @@
     "url": "https://www.mewa.gov.sa/en/",
     "source_kind": "ministry_pipeline",
     "listed": 112,
-    "downloaded": 67,
+    "downloaded": 88,
     "download_failed": 0,
-    "scanned_pdf": 23,
-    "to_download": 22,
+    "scanned_pdf": 24,
+    "to_download": 0,
     "pages_visited": 400
   },
   "recent_pdfs": [
     {
-      "title": "المفكرة الزراعية",
+      "title": "دليل الخدمات الالكترونية.pdf",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://www.mewa.gov.sa/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Documents/agire3.pdf",
-      "downloaded_at": "2026-08-09T10:57:53.849279+00:00",
+      "url": "https://www.mewa.gov.sa/ar/Documents/MEWA%20Case%20Studies%20for%20ESCWA/e-Services/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.pdf",
+      "downloaded_at": "2026-08-09T11:12:08.908290+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/RegulationonPersonalDataTransferoutsideKingdomEN.pdf",
-      "downloaded_at": "2026-08-07T06:41:11.090156+00:00",
+      "title": "سياسة مشاركة البيانات.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20مشاركة%20البيانات.pdf",
+      "downloaded_at": "2026-08-09T11:12:06.342275+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PersonalDataProtectionPolicyEN.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/PersonalDataProtectionPolicyEN.pdf",
-      "downloaded_at": "2026-08-07T06:41:09.055592+00:00",
+      "title": "سياسة حوكمة البيانات.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20حوكمة%20البيانات.pdf",
+      "downloaded_at": "2026-08-09T11:12:04.062800+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "DataSharingPolicyEN.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/DataSharingPolicyEN.pdf",
-      "downloaded_at": "2026-08-07T06:41:06.294662+00:00",
+      "title": "سياسة حماية البيانات الشخصية.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20حماية%20البيانات%20الشخصية.pdf",
+      "downloaded_at": "2026-08-09T11:12:03.439207+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/ChildrenAndIncompetentsDataProtectionPolicyEN.pdf",
-      "downloaded_at": "2026-08-07T06:41:02.375563+00:00",
+      "title": "سياسة حرية المعلومات.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20حرية%20المعلومات.pdf",
+      "downloaded_at": "2026-08-09T11:12:02.815378+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "TransferOfPersonalDataOutsideTheKingdomEN.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/en/SDAIA/about/ArchivesRegulationsAndPolicies/TransferOfPersonalDataOutsideTheKingdomEN.pdf",
-      "downloaded_at": "2026-08-07T06:40:54.658775+00:00",
+      "title": "سياسة جودة البيانات.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20جودة%20البيانات.pdf",
+      "downloaded_at": "2026-08-09T11:12:02.191665+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Artathon.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/Initiatives/Documents/Artathon.pdf",
-      "downloaded_at": "2026-08-07T06:39:58.129909+00:00",
+      "title": "سياسة تصنيف البيانات.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20تصنيف%20البيانات.pdf",
+      "downloaded_at": "2026-08-09T11:12:01.569700+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 1 يناير 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 1 يناير 2022.pdf",
-      "downloaded_at": "2026-08-07T06:39:45.111442+00:00",
+      "title": "سياسة البيانات الوصفية.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20البيانات%20الوصفية.pdf",
+      "downloaded_at": "2026-08-09T11:12:00.940726+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 2 يناير 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 2 يناير 2022.pdf",
-      "downloaded_at": "2026-08-07T06:39:35.026057+00:00",
+      "title": "سياسة البيانات المفتوحة.",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/PublishingImages/Pages/DataManagementOfficePolicies/سياسة%20البيانات%20المفتوحة.pdf",
+      "downloaded_at": "2026-08-09T11:12:00.320098+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 30 يناير 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 30 يناير 2022.pdf",
-      "downloaded_at": "2026-08-07T06:39:27.485823+00:00",
+      "title": "2024 09 29 نموذج طلب موقع استثماري (المستثمر).pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/DocsCenter/MinistryForms/GeneralForms/2024%2009%2029%20%d9%86%d9%85%d9%88%d8%b0%d8%ac%20%d8%b7%d9%84%d8%a8%20%d9%85%d9%88%d9%82%d8%b9%20%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1%d9%8a%20(%d8%a7%d9%84%d9%85%d8%b3%d8%aa%d8%ab%d9%85%d8%b1).pdf",
+      "downloaded_at": "2026-08-09T11:11:59.698854+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 13 فبراير 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 13 فبراير 2022.pdf",
-      "downloaded_at": "2026-08-07T06:39:16.049096+00:00",
+      "title": "AnnualRep_1436_1437.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/DocsCenter/YearlyReport/YearlyReports/AnnualRep_1436_1437.pdf",
+      "downloaded_at": "2026-08-09T11:11:59.042493+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 20 فبراير 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 20 فبراير 2022.pdf",
-      "downloaded_at": "2026-08-07T06:39:06.967818+00:00",
+      "title": "AnnualRep_1436_1437_Water.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/DocsCenter/YearlyReport/YearlyReports/AnnualRep_1436_1437_Water.pdf",
+      "downloaded_at": "2026-08-09T11:11:58.321720+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 27 فبراير 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 فبراير 2022.pdf",
-      "downloaded_at": "2026-08-07T06:38:54.936861+00:00",
+      "title": "AnnualRep_1437_1438.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/DocsCenter/YearlyReport/YearlyReports/AnnualRep_1437_1438.pdf",
+      "downloaded_at": "2026-08-09T11:11:54.843013+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 6 مارس 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 6 مارس 2022.pdf",
-      "downloaded_at": "2026-08-07T06:38:44.601246+00:00",
+      "title": "التقرير السنوي للوزارة لعام 2018م.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/DocsCenter/YearlyReport/YearlyReports/%d8%a7%d9%84%d8%aa%d9%82%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%b3%d9%86%d9%88%d9%8a%20%d9%84%d9%84%d9%88%d8%b2%d8%a7%d8%b1%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202018%d9%85.pdf",
+      "downloaded_at": "2026-08-09T11:11:52.186455+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/AINewsletter/نشرة الذكاء الاصطناعي 27 مارس 2022.pdf",
-      "downloaded_at": "2026-08-07T06:38:27.933926+00:00",
+      "title": "التقرير السنوي للوزارة لعام 2019م.pdf",
+      "jurisdiction": "Saudi Arabia - MEWA",
+      "url": "https://mewa.gov.sa/ar/InformationCenter/DocsCenter/YearlyReport/YearlyReports/%d8%a7%d9%84%d8%aa%d9%82%d8%b1%d9%8a%d8%b1%20%d8%a7%d9%84%d8%b3%d9%86%d9%88%d9%8a%20%d9%84%d9%84%d9%88%d8%b2%d8%a7%d8%b1%d8%a9%20%d9%84%d8%b9%d8%a7%d9%85%202019%d9%85.pdf",
+      "downloaded_at": "2026-08-09T11:11:50.883795+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -302,15 +302,15 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-09T10:58:10.148924+00:00",
+  "manifest_generated_at": "2026-08-09T11:12:10.828476+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 22,
-      "downloaded": 67,
+      "to_download": 0,
+      "downloaded": 88,
       "download_failed": 0,
-      "scanned_pdf": 23,
+      "scanned_pdf": 24,
       "listed_total": 112
     },
     "discovery_methods": {
@@ -328,6 +328,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-09T11:11:34.322748+00:00"
+    "updated_at": "2026-08-09T11:12:11.108154+00:00"
   }
 }
