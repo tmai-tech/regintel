@@ -1,1 +1,471 @@
-[]
+[
+  {
+    "jurisdiction": "Canada Federal",
+    "parliamentary_bills": "https://www.parl.ca/legisinfo",
+    "official_gazette": "https://www.gazette.gc.ca",
+    "legal_databases": "https://laws-lois.justice.gc.ca",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "British Columbia",
+    "parliamentary_bills": "https://www.leg.bc.ca/parliamentary-business/legislation-debates-proceedings/legislation",
+    "official_gazette": "https://www.bclaws.gov.bc.ca/civix/document/id/public/bcgaz1/1",
+    "legal_databases": "https://www.bclaws.gov.bc.ca",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Ontario",
+    "parliamentary_bills": "https://www.ola.org/en/legislative-business/bills",
+    "official_gazette": "https://www.ontario.ca/ontariogazette",
+    "legal_databases": "https://www.ontario.ca/laws",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Manitoba",
+    "parliamentary_bills": "https://www.gov.mb.ca/legislature/business/bills.html",
+    "official_gazette": "https://www.gov.mb.ca/legislature/hansard/gazette.html",
+    "legal_databases": "https://web2.gov.mb.ca/laws/statutes/index.php",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "USA Federal",
+    "parliamentary_bills": "https://www.congress.gov/bill",
+    "official_gazette": "https://www.federalregister.gov;\nhttps://www.ecfr.gov/",
+    "legal_databases": "https://www.govinfo.gov",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "New York",
+    "parliamentary_bills": "https://nyassembly.gov/leg/",
+    "official_gazette": "https://dos.ny.gov/state-register",
+    "legal_databases": "https://www.nysenate.gov/legislation",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Delaware",
+    "parliamentary_bills": "https://legis.delaware.gov/",
+    "official_gazette": "https://regulations.delaware.gov/registers/",
+    "legal_databases": "https://delcode.delaware.gov/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "California",
+    "parliamentary_bills": "https://leginfo.legislature.ca.gov/",
+    "official_gazette": "https://oal.ca.gov/publications/notice_register/",
+    "legal_databases": "https://leginfo.legislature.ca.gov/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "UK",
+    "parliamentary_bills": "https://bills.parliament.uk/",
+    "official_gazette": "https://www.thegazette.co.uk/",
+    "legal_databases": "https://www.legislation.gov.uk/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "European Union",
+    "parliamentary_bills": "https://www.europarl.europa.eu/portal/en",
+    "official_gazette": "https://eur-lex.europa.eu/oj/direct-access.html",
+    "legal_databases": null,
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Luxembourg",
+    "parliamentary_bills": "https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Recherche/ProjetsDeLoi",
+    "official_gazette": "https://legilux.public.lu/",
+    "legal_databases": "https://legilux.public.lu/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "India",
+    "parliamentary_bills": "https://prsindia.org/billtrack",
+    "official_gazette": "https://egazette.nic.in/",
+    "legal_databases": "https://legislative.gov.in/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Australia",
+    "parliamentary_bills": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation",
+    "official_gazette": "https://www.legislation.gov.au/Details/F2017C00286",
+    "legal_databases": "https://www.legislation.gov.au/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Singapore",
+    "parliamentary_bills": "https://www.parliament.gov.sg/bills-introduced",
+    "official_gazette": "https://sso.agc.gov.sg/Act/SL",
+    "legal_databases": "https://sso.agc.gov.sg/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Hong Kong",
+    "parliamentary_bills": "https://www.legco.gov.hk/en/legislation/bills.html",
+    "official_gazette": "https://www.gld.gov.hk/egazette/",
+    "legal_databases": "https://www.elegislation.gov.hk/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "UAE",
+    "parliamentary_bills": null,
+    "official_gazette": "https://www.moj.gov.ae/en/laws-and-legislation/latest-legislations-and-laws.aspx#page=1",
+    "legal_databases": "https://elaws.moj.gov.ae/English.aspx?val=UAE-KaitEL1",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Mexico",
+    "parliamentary_bills": "https://www.senado.gob.mx/64/gaceta_del_senado",
+    "official_gazette": "https://www.dof.gob.mx/",
+    "legal_databases": "https://www.diputados.gob.mx/LeyesBiblio/index.htm",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "China",
+    "parliamentary_bills": "https://www.npc.gov.cn",
+    "official_gazette": "https://www.gov.cn/gongbao",
+    "legal_databases": "https://flk.npc.gov.cn",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Taiwan",
+    "parliamentary_bills": "https://lis.ly.gov.tw",
+    "official_gazette": "https://gazette.nat.gov.tw",
+    "legal_databases": "https://law.moj.gov.tw",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Japan",
+    "parliamentary_bills": "https://www.shugiin.go.jp",
+    "official_gazette": "https://kanpou.npb.go.jp",
+    "legal_databases": "https://elaws.e-gov.go.jp",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "South Korea",
+    "parliamentary_bills": "https://likms.assembly.go.kr/bill",
+    "official_gazette": "https://gwanbo.go.kr",
+    "legal_databases": "https://www.law.go.kr",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "New Zealand",
+    "parliamentary_bills": "https://www.parliament.nz",
+    "official_gazette": "https://gazette.govt.nz",
+    "legal_databases": "https://www.legislation.govt.nz",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Vietnam",
+    "parliamentary_bills": "https://www.quochoi.vn",
+    "official_gazette": "https://congbao.chinhphu.vn",
+    "legal_databases": "https://vbpl.vn",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Thailand",
+    "parliamentary_bills": "https://www.parliament.go.th",
+    "official_gazette": "https://ratchakitcha.soc.go.th",
+    "legal_databases": "https://www.krisdika.go.th",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Philippines",
+    "parliamentary_bills": "https://www.congress.gov.ph",
+    "official_gazette": "https://www.officialgazette.gov.ph",
+    "legal_databases": "https://lawphil.net",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Indonesia",
+    "parliamentary_bills": "https://www.dpr.go.id",
+    "official_gazette": "https://jdih.setneg.go.id",
+    "legal_databases": "https://peraturan.go.id",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Malaysia",
+    "parliamentary_bills": "https://www.parlimen.gov.my",
+    "official_gazette": "https://www.federalgazette.agc.gov.my",
+    "legal_databases": "https://lom.agc.gov.my",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Cayman Islands",
+    "parliamentary_bills": "https://www.parliament.ky",
+    "official_gazette": "https://gazettes.gov.ky",
+    "legal_databases": "https://www.legislation.gov.ky",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Turkey",
+    "parliamentary_bills": "https://www.tbmm.gov.tr",
+    "official_gazette": "https://www.resmigazete.gov.tr",
+    "legal_databases": "https://www.mevzuat.gov.tr",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Israel",
+    "parliamentary_bills": "https://main.knesset.gov.il",
+    "official_gazette": "https://www.gov.il/he/departments/units/reshumot",
+    "legal_databases": "https://www.nevo.co.il",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Saudi Arabia",
+    "parliamentary_bills": "https://shura.gov.sa",
+    "official_gazette": "https://uqn.gov.sa",
+    "legal_databases": "https://laws.boe.gov.sa",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Qatar",
+    "parliamentary_bills": "https://www.shura.qa",
+    "official_gazette": "https://www.almeezan.qa",
+    "legal_databases": "https://www.almeezan.qa",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Egypt",
+    "parliamentary_bills": "https://www.parliament.gov.eg",
+    "official_gazette": null,
+    "legal_databases": null,
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Brazil",
+    "parliamentary_bills": "https://www.camara.leg.br/propostas-legislativas",
+    "official_gazette": "https://www.in.gov.br",
+    "legal_databases": "https://www.planalto.gov.br",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Peru",
+    "parliamentary_bills": "https://www.congreso.gob.pe",
+    "official_gazette": "https://elperuano.pe",
+    "legal_databases": "https://www.gob.pe/normas-legales",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Chile",
+    "parliamentary_bills": "https://www.camara.cl",
+    "official_gazette": "https://www.diariooficial.interior.gob.cl",
+    "legal_databases": "https://www.bcn.cl/leychile",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Colombia",
+    "parliamentary_bills": "https://www.congreso.gov.co",
+    "official_gazette": "https://www.imprenta.gov.co",
+    "legal_databases": "https://www.suin-juriscol.gov.co",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Costa Rica",
+    "parliamentary_bills": "https://www.asamblea.go.cr",
+    "official_gazette": "https://www.imprentanacional.go.cr/gaceta",
+    "legal_databases": "https://www.pgrweb.go.cr/scij",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Austria",
+    "parliamentary_bills": "https://www.parlament.gv.at/",
+    "official_gazette": "https://www.ris.bka.gv.at/Bgbl-Auth/",
+    "legal_databases": "https://www.ris.bka.gv.at/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Belgium",
+    "parliamentary_bills": "https://www.dekamer.be/",
+    "official_gazette": "https://www.ejustice.just.fgov.be/",
+    "legal_databases": "https://www.senate.be/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Bulgaria",
+    "parliamentary_bills": "https://www.parliament.bg/",
+    "official_gazette": "https://dv.parliament.bg/",
+    "legal_databases": "https://www.strategy.bg/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Croatia",
+    "parliamentary_bills": "https://www.sabor.hr/",
+    "official_gazette": "https://narodne-novine.nn.hr/",
+    "legal_databases": null,
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Cyprus",
+    "parliamentary_bills": "https://www.parliament.cy/",
+    "official_gazette": "https://www.olc.gov.cy/",
+    "legal_databases": "https://www.cylaw.org/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Czech Republic",
+    "parliamentary_bills": "https://www.psp.cz/",
+    "official_gazette": "https://aplikace.mvcr.cz/sbirkazakonu/",
+    "legal_databases": "https://www.senat.cz/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Denmark",
+    "parliamentary_bills": "https://www.ft.dk/",
+    "official_gazette": "https://www.lovtidende.dk/",
+    "legal_databases": "https://www.retsinformation.dk/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Estonia",
+    "parliamentary_bills": "https://www.riigikogu.ee/",
+    "official_gazette": "https://www.riigiteataja.ee/",
+    "legal_databases": "https://www.riigiteataja.ee/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Finland",
+    "parliamentary_bills": "https://www.eduskunta.fi/",
+    "official_gazette": "https://www.finlex.fi/",
+    "legal_databases": "https://www.finlex.fi/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "France",
+    "parliamentary_bills": "https://www.assemblee-nationale.fr/",
+    "official_gazette": "https://www.legifrance.gouv.fr/jorf",
+    "legal_databases": "https://www.legifrance.gouv.fr/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Germany",
+    "parliamentary_bills": "https://dip.bundestag.de/",
+    "official_gazette": "https://www.recht.bund.de/bgbl/",
+    "legal_databases": "https://www.gesetze-im-internet.de/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Greece",
+    "parliamentary_bills": "https://www.hellenicparliament.gr/",
+    "official_gazette": "https://www.et.gr/",
+    "legal_databases": null,
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Hungary",
+    "parliamentary_bills": "https://www.parlament.hu/",
+    "official_gazette": "https://magyarkozlony.hu/",
+    "legal_databases": "https://njt.hu/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Iceland",
+    "parliamentary_bills": "https://www.althingi.is/",
+    "official_gazette": "https://www.stjornartidindi.is/",
+    "legal_databases": "https://www.althingi.is/lagasafn/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Ireland",
+    "parliamentary_bills": "https://www.oireachtas.ie/en/bills/",
+    "official_gazette": "https://www.irisoifigiuil.ie/",
+    "legal_databases": "https://www.irishstatutebook.ie/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Italy",
+    "parliamentary_bills": "https://www.senato.it/",
+    "official_gazette": "https://www.gazzettaufficiale.it/",
+    "legal_databases": "https://www.normattiva.it/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Latvia",
+    "parliamentary_bills": "https://www.saeima.lv/",
+    "official_gazette": "https://www.vestnesis.lv/",
+    "legal_databases": "https://likumi.lv/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Lithuania",
+    "parliamentary_bills": "https://www.lrs.lt/",
+    "official_gazette": "https://www.e-tar.lt/",
+    "legal_databases": "https://e-seimas.lrs.lt/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Malta",
+    "parliamentary_bills": "https://www.parlament.mt/",
+    "official_gazette": "https://www.gov.mt/en/Government/DOI/Pages/Government-Gazette.aspx",
+    "legal_databases": "https://legislation.mt/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Netherlands",
+    "parliamentary_bills": "https://www.tweedekamer.nl/",
+    "official_gazette": "https://www.officielebekendmakingen.nl/staatsblad",
+    "legal_databases": "https://wetten.overheid.nl/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Norway",
+    "parliamentary_bills": "https://www.stortinget.no/",
+    "official_gazette": "https://lovdata.no/",
+    "legal_databases": "https://lovdata.no/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Poland",
+    "parliamentary_bills": "https://www.sejm.gov.pl/",
+    "official_gazette": "https://dziennikustaw.gov.pl/",
+    "legal_databases": "https://isap.sejm.gov.pl/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Portugal",
+    "parliamentary_bills": "https://www.parlamento.pt/",
+    "official_gazette": "https://dre.pt/",
+    "legal_databases": "https://dre.pt/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Romania",
+    "parliamentary_bills": "https://www.cdep.ro/pls/proiecte/upl_pck.home",
+    "official_gazette": "https://www.monitoruloficial.ro/",
+    "legal_databases": "https://legislatie.just.ro/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Slovakia",
+    "parliamentary_bills": "https://www.nrsr.sk/",
+    "official_gazette": "https://www.slov-lex.sk/",
+    "legal_databases": "https://www.slov-lex.sk/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Slovenia",
+    "parliamentary_bills": "https://www.dz-rs.si/",
+    "official_gazette": "https://www.uradni-list.si/",
+    "legal_databases": "https://www.pisrs.si/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Spain",
+    "parliamentary_bills": "https://www.congreso.es/proyectos-de-ley",
+    "official_gazette": "https://www.boe.es/",
+    "legal_databases": "https://www.boe.es/legislacion/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Sweden",
+    "parliamentary_bills": "https://www.riksdagen.se/",
+    "official_gazette": "https://www.lagrummet.se/",
+    "legal_databases": "https://www.riksdagen.se/sv/dokument-lagar/",
+    "source_kind": "gazette"
+  },
+  {
+    "jurisdiction": "Switzerland",
+    "parliamentary_bills": "https://www.parlament.ch/",
+    "official_gazette": "https://www.fedlex.admin.ch/",
+    "legal_databases": "https://www.fedlex.admin.ch/",
+    "source_kind": "gazette"
+  }
+]
