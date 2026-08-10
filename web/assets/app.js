@@ -1381,6 +1381,105 @@
     return run;
   }
 
+  /** Pack title/summary/points so one Google gtx call can translate the whole card. */
+  function packCardTranslatePayload(title, summary, points) {
+    let s = "[[T]]\n" + String(title || "") + "\n[[S]]\n" + String(summary || "");
+    (points || []).forEach((p, i) => {
+      s += "\n[[P" + i + "]]\n" + String(p || "");
+    });
+    return s;
+  }
+
+  function unpackCardTranslatePayload(text, nPoints) {
+    const t = String(text || "");
+    const idxS = t.search(/\[\[S\]\]/i);
+    const idxT = t.search(/\[\[T\]\]/i);
+    if (idxS < 0) return null;
+    const titleStart = idxT >= 0 ? idxT + 5 : 0;
+    const title = t.slice(titleStart, idxS).trim();
+    const pAt = [];
+    for (let i = 0; i < nPoints; i++) {
+      const m = t.search(new RegExp("\\[\\[P" + i + "\\]\\]", "i"));
+      pAt.push(m);
+    }
+    const firstP = pAt.find((x) => x >= 0);
+    const summary = t.slice(idxS + 5, firstP >= 0 ? firstP : t.length).trim();
+    const points = [];
+    for (let i = 0; i < nPoints; i++) {
+      if (pAt[i] < 0) {
+        points.push("");
+        continue;
+      }
+      const start = pAt[i] + ("[[P" + i + "]]").length;
+      let end = t.length;
+      for (let j = i + 1; j < nPoints; j++) {
+        if (pAt[j] > pAt[i]) {
+          end = pAt[j];
+          break;
+        }
+      }
+      points.push(t.slice(start, end).trim());
+    }
+    if (!title && !summary && !points.some(Boolean)) return null;
+    return { title, summary, points };
+  }
+
+  /**
+   * One Google call for the whole Summary card. Falls back to per-field
+   * translateTextChunks (Google → Lingva → MyMemory, chunked) on any failure.
+   */
+  async function translateCardFields(title, summary, points, targetLang) {
+    const titleIn = String(title || "");
+    const summaryIn = String(summary || "");
+    const pointsIn = (points || []).map((p) => String(p || ""));
+    const target = normalizeTranslateLang(targetLang || "en");
+    const blob = [titleIn, summaryIn, ...pointsIn].join("\n");
+    const source = normalizeTranslateLang(detectSourceLang(blob || "en"));
+    if (source.split("-")[0] === target.split("-")[0]) {
+      return { title: titleIn, summary: summaryIn, points: pointsIn };
+    }
+
+    const packed = packCardTranslatePayload(titleIn, summaryIn, pointsIn);
+    const cacheKey = "card:" + packed;
+    const cached = getCachedTranslation(cacheKey, source, target);
+    if (cached != null) {
+      const fromCache = unpackCardTranslatePayload(cached, pointsIn.length);
+      if (fromCache) {
+        return {
+          title: fromCache.title || titleIn,
+          summary: fromCache.summary || summaryIn,
+          points: pointsIn.map((p, i) => fromCache.points[i] || p),
+        };
+      }
+    }
+
+    const SINGLE_MAX = 3500;
+    if (packed.length <= SINGLE_MAX) {
+      try {
+        const translated = await translateViaGoogleGtx(packed, source, target);
+        const fields = unpackCardTranslatePayload(translated, pointsIn.length);
+        if (fields && (fields.summary || fields.title || fields.points.some(Boolean))) {
+          setCachedTranslation(cacheKey, source, target, translated);
+          return {
+            title: fields.title || titleIn,
+            summary: fields.summary || summaryIn,
+            points: pointsIn.map((p, i) => fields.points[i] || p),
+          };
+        }
+      } catch (_) {
+        /* fall through to per-field */
+      }
+    }
+
+    const titleOut = titleIn ? await translateTextChunks(titleIn, targetLang) : "";
+    const summaryOut = summaryIn ? await translateTextChunks(summaryIn, targetLang) : "";
+    const pointsOut = [];
+    for (const p of pointsIn) {
+      pointsOut.push(p ? await translateTextChunks(p, targetLang) : "");
+    }
+    return { title: titleOut, summary: summaryOut, points: pointsOut };
+  }
+
   function googleTranslatePdfUrl(pdfUrl, targetLang) {
     // Webpage translator — often fails for binary PDFs; kept as last-resort link
     const tl = normalizeTranslateLang(targetLang || "en");
@@ -1828,25 +1927,23 @@
           const titleEl = card.querySelector(".sum-title");
           const sumEl = card.querySelector(".sum-summary");
           const pointsEl = card.querySelector(".sum-points");
-          let titleOut = origTitle;
-          let summaryOut = origSummary;
-          let pointsOut = origPoints.slice();
-          if (origTitle) {
-            titleOut = await translateTextChunks(origTitle, targetLang);
-            if (titleEl) titleEl.textContent = titleOut;
-          }
-          if (origSummary) {
-            summaryOut = await translateTextChunks(origSummary, targetLang);
-            if (sumEl) sumEl.textContent = summaryOut;
-          } else if (sumEl) {
-            sumEl.innerHTML =
-              '<span class="muted">No extractive summary yet for this PDF.</span>';
+          const translated = await translateCardFields(
+            origTitle,
+            origSummary,
+            origPoints,
+            targetLang,
+          );
+          const titleOut = translated.title;
+          const summaryOut = translated.summary;
+          const pointsOut = translated.points;
+          if (titleEl) titleEl.textContent = titleOut || origTitle;
+          if (sumEl) {
+            if (summaryOut) sumEl.textContent = summaryOut;
+            else
+              sumEl.innerHTML =
+                '<span class="muted">No extractive summary yet for this PDF.</span>';
           }
           if (pointsEl && origPoints.length) {
-            pointsOut = [];
-            for (const p of origPoints) {
-              pointsOut.push(await translateTextChunks(p, targetLang));
-            }
             pointsEl.hidden = false;
             pointsEl.innerHTML = pointsOut
               .map((p) => `<li>${escapeHtml(p)}</li>`)
