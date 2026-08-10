@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-10T12:37:26.159612+00:00",
+  "updated_at": "2026-08-10T12:39:05.432561+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 13,
+    "to_download": 23,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "listed_total": 336
+    "listed_total": 346
   },
   "discovery_methods": {
     "seed_list": 266,
-    "href": 19,
+    "href": 29,
     "script": 51
   },
-  "pages_visited": 300,
+  "pages_visited": 400,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
@@ -4045,6 +4045,126 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "انقر هنا للتحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "supandconguide.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/SharedServicesAgency/topics/SiteAssets/Pages/supandconguide/supandconguide.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "اضغط هنا",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG1e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG1e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG2e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG2e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG3e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG3e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG4e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG4e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG5e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG5e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG6e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG6e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "347_en_DLG7e.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG7e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to review",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "License guide.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyforEconomicAffairsandInvestment/topics/Documents/License%20guide.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "License guide.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "Agriculture Innovation TrendsReport EN.pdf",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyForInnovation/Topics/Documents/Agriculture%20Innovation%20TrendsReport%20EN.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here to view the full report​",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
