@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T12:52:56.391867+00:00",
+  "updated_at": "2026-08-10T12:54:29.146297+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
@@ -47,7 +47,7 @@
     "https://mewa.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500&startrow=1500&selectproperties=%27Path,Title,Size%27",
     "https://mewa.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500&startrow=2000&selectproperties=%27Path,Title,Size%27"
   ],
-  "pages_visited": 1225,
+  "pages_visited": 1300,
   "page_errors_sample": [
     {
       "url": "https://www.mewa.gov.sa/ar/Ministry/Agencies/EnvironmentAgency/Topics/Pages/ُEnviornmetn%20Alert/default.aspx",
@@ -59,6 +59,18 @@
     },
     {
       "url": "https://mewa.gov.sa/_layouts/15/feed.aspx?xsl=1&web=/ar/MediaCenter/News&page=ea8b9cb5-f87b-4fff-8947-f2133bb4bdcb&wp=e791e78d-3a99-4727-af0b-e1fa687594d5&pageurl=/ar/MediaCenter/News/Pages/home.aspx",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/ar/Ministry/AboutMinistry/Sharing/OnlineConsulting/Pages/mailto.info@mewa.gov.sa",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/ar/Ministry/AboutMinistry/Sharing/OnlineConsulting/Pages/mailto.mbalsaghan@mewa.gov.sa",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.mewa.gov.sa/ar/Ministry/AboutMinistry/Sharing/OnlineConsulting/Pages/Ncc_Civil.aspx",
       "error": "HTTP 404"
     }
   ],
