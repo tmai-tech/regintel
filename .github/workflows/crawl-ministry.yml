@@ -76,13 +76,20 @@ jobs:
           if [ "$ONLY" = "true" ]; then
             EXTRA+=(--discover-only)
           fi
-          echo "=== Ministry pipeline: $URL ($LABEL) ==="
+          SEED=""
+          if [ -f found_docs.txt ]; then
+            SEED="found_docs.txt"
+          elif [ -f data/mewa_found_docs.txt ]; then
+            SEED="data/mewa_found_docs.txt"
+          fi
+          echo "=== Ministry pipeline: $URL ($LABEL) seed=${SEED:-none} ==="
           python -u collector/ministry_pipeline.py \
             --url "$URL" \
             --label "$LABEL" \
             --max-pages "${MAX_PAGES:-2000}" \
             --delay "${DELAY:-0.3}" \
             --insecure \
+            ${SEED:+--seed-list "$SEED"} \
             "${EXTRA[@]+"${EXTRA[@]}"}"
           python scripts/fix_ministry_jurisdiction_labels.py || true
           # Public site: SDAIA + TGA + MC + MEWA (no global gazette)

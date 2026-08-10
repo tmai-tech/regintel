@@ -205,8 +205,10 @@ class MinistryPipeline:
         download: bool = True,
         pdf_only: bool = True,
         insecure: bool = False,
+        seed_list: str | None = None,
     ):
         self.start_url = normalize(url if url.startswith("http") else "https://" + url)
+        self.seed_list_path = seed_list
         self.root = base_host(self.start_url)
         self.label = label or f"Ministry - {self.root}"
         self.max_pages = max_pages
@@ -502,6 +504,8 @@ class MinistryPipeline:
             return
         if url in self.docs:
             return
+        if "\\u002f" in url.lower() or "%5cu002f" in url.lower():
+            return
         self.docs[url] = {
             "url": url,
             "filename": safe_filename(url),
@@ -522,6 +526,29 @@ class MinistryPipeline:
             "sha256": None,
         }
         self.discovery_methods[method] = self.discovery_methods.get(method, 0) + 1
+
+    def load_seed_list(self, path: str) -> int:
+        """Ingest colleague found_docs.txt (URL: lines) or a plain URL-per-line file."""
+        p = Path(path)
+        if not p.is_file():
+            self.log(f"[seed] missing {path}")
+            return 0
+        text = p.read_text(encoding="utf-8", errors="replace")
+        urls: list[str] = []
+        for line in text.splitlines():
+            line = line.strip()
+            if line.lower().startswith("url:"):
+                urls.append(line.split(":", 1)[1].strip())
+                continue
+            if line.startswith("http") and looks_like_doc(line):
+                urls.append(line.split()[0])
+        before = len(self.docs)
+        for u in urls:
+            if same_site(u, self.root) or base_host(u).endswith(self.root.removeprefix("www.")):
+                self.add_doc(u, "seed_list")
+        gained = len(self.docs) - before
+        self.log(f"[seed] {p.name}: {len(urls)} urls, +{gained} new listed={len(self.docs)}")
+        return gained
 
     # ---------- library-first (any ministry) ----------
     def _api_hosts(self) -> list[str]:
@@ -898,6 +925,15 @@ class MinistryPipeline:
                 "forms/allitems",
                 "informationcenter/pages",
                 "docscenter/pages",
+                "/agencies/",
+                "/topics/",
+                "employment",
+                "usagereport",
+                "nonprofitsector",
+                "investmentopportunities",
+                "sectorstratigy",
+                "siteassets",
+                "pressreleases",
             )
         )
 
@@ -1283,6 +1319,20 @@ class MinistryPipeline:
                     "/ar/InformationCenter/",
                     "/en/InformationCenter/",
                     "/ar/InformationCenter/AwarenessCenter/",
+                    "/ar/Ministry/Agencies/TheWaterAgency/Topics/",
+                    "/en/Ministry/Agencies/TheWaterAgency/Topics/",
+                    "/ar/Ministry/Agencies/AgencyForInnovation/Topics/",
+                    "/en/Ministry/Agencies/AgencyForInnovation/Topics/",
+                    "/ar/Ministry/Agencies/AgencyofAgriculture/Topics/",
+                    "/en/Ministry/Agencies/AgencyLivestock/Topics/",
+                    "/ar/Ministry/Agencies/EnvironmentAgency/Topics/",
+                    "/ar/Ministry/AboutMinistry/Employment/Pages/",
+                    "/ar/aboutPortal/UsageReport/Pages/default.aspx",
+                    "/ar/Ministry/initiatives/nonprofitsector/Pages/default.aspx",
+                    "/ar/Ministry/InvestmentOpportunities/Pages/default.aspx",
+                    "/ar/Ministry/initiatives/SectorStratigy/Pages/default.aspx",
+                    "/ar/MediaCenter/PressReleases/Pages/home.aspx",
+                    "/environmentalawareness/ar/futuregeneration/Pages/default.aspx",
                 ]
             )
         return common
@@ -1558,6 +1608,9 @@ class MinistryPipeline:
                 "datasource", "_api/", "newsletter",
                 "ruleslibrary", "docscenter", "websitefile", "sharedfile",
                 "legislation", "/doc/", "infocenter",
+                "/agencies/", "/topics/", "employment", "usagereport",
+                "nonprofitsector", "investmentopportunities", "sectorstratigy",
+                "siteassets", "pressreleases", "pressfiles",
             )
         ):
             return 0
@@ -1591,6 +1644,10 @@ class MinistryPipeline:
         # Warm session (cookies) — reduces intermittent WAF empties
         home, home_err = self.fetch(self.start_url, timeout=30)
         home_html = home.text if home is not None and not home_err else ""
+        if self.seed_list_path:
+            self.load_seed_list(self.seed_list_path)
+            if self.do_download and self.docs:
+                self.drain_downloads("after seed list")
 
         # --- library-first (any ministry): HTML libraries + in-browser search, then download ---
         self.discover_nav_api()
@@ -1623,16 +1680,14 @@ class MinistryPipeline:
         if self.do_download and any(d.get("status") == "to_download" for d in self.docs.values()):
             self.drain_downloads("after library-first")
 
-        skip_html_bfs = library_listed >= 50
-        if skip_html_bfs:
-            self.log(
-                f"[discover] skip sitemap/news/org BFS — library listed {library_listed} >= 50"
-            )
-        else:
-            self.log(
-                f"[discover] library listed {library_listed} < 50 — fallback sitemap + BFS"
-            )
-            self.discover_sitemaps()
+        # Always finish with sitemap + BFS (colleague Extraction_Script). MEWA's
+        # 180 missing PDFs lived on agency Topics pages we never visited because
+        # we used to skip BFS after 50 library hrefs.
+        self.log(
+            f"[discover] sitemap + BFS (library listed {library_listed}, max_pages={self.max_pages})"
+        )
+        self.discover_sitemaps()
+        if True:
 
             queues: dict[int, deque] = {0: deque(), 1: deque(), 2: deque()}
             queued: set[str] = set()
@@ -1773,7 +1828,7 @@ class MinistryPipeline:
             "max_pages_cap": self.max_pages,
             "documents_listed": len(self.docs),
             "library_listed": library_listed,
-            "skipped_html_bfs": skip_html_bfs,
+            "skipped_html_bfs": False,
             "sitemaps_used": self.sitemaps_used,
             "datasources_found": len(self.datasources_found),
             "discovery_methods": self.discovery_methods,
@@ -1784,12 +1839,12 @@ class MinistryPipeline:
             "discovery_method_detail": (
                 "library-first: paginated _api/search FileExtension:pdf + "
                 "Documents/RulesLibrary/DocsCenter folder _api + immediate download; "
-                "sitemap/news/org BFS only if library listed <50"
+                "then always sitemap + BFS like colleague Extraction_Script"
             ),
         }
         self.log(
             f"[discover] done pages={self.pages_seen} listed={len(self.docs)} "
-            f"library_listed={library_listed} skip_bfs={skip_html_bfs} "
+            f"library_listed={library_listed} skip_bfs=False "
             f"methods={self.discovery_methods} datasources={len(self.datasources_found)} "
             f"sitemaps={len(self.sitemaps_used)} playwright={self._pw_renders} waf={self._waf_blocks}"
         )
@@ -2100,9 +2155,17 @@ def main():
     ap.add_argument("--download", action="store_true", default=True, help="Download after list")
     ap.add_argument("--no-download", action="store_true")
     ap.add_argument("--insecure", action="store_true")
+    ap.add_argument(
+        "--seed-list",
+        default="",
+        help="Colleague found_docs.txt or URL-per-line file to merge before crawl",
+    )
     args = ap.parse_args()
     download = args.download and not args.no_download and not args.discover_only
     label = args.label or f"Ministry - {base_host(args.url)}"
+    seed = args.seed_list.strip() or None
+    if seed and not Path(seed).is_file():
+        seed = None
     pipe = MinistryPipeline(
         url=args.url,
         label=label,
@@ -2111,6 +2174,7 @@ def main():
         max_file_mb=args.max_file_mb,
         download=download,
         insecure=args.insecure,
+        seed_list=seed,
     )
     pipe.run()
 
