@@ -109,6 +109,14 @@ def normalize(url: str) -> str:
     return urlunparse((scheme, netloc, path, "", q, ""))
 
 
+def canon_doc_url(url: str) -> str:
+    """Collapse www / default-port twins so the same PDF is listed once."""
+    u = normalize(url)
+    p = urlparse(u)
+    host = (p.hostname or "").lower().removeprefix("www.")
+    return urlunparse((p.scheme or "https", host, p.path or "/", "", p.query, ""))
+
+
 def flip_www(url: str) -> str:
     p = urlparse(url)
     host = (p.hostname or "").lower()
@@ -477,7 +485,7 @@ class MinistryPipeline:
 
 
     def add_doc(self, url: str, method: str, link_text: str = "") -> None:
-        url = normalize(url)
+        url = canon_doc_url(url)
         if not url.startswith("http"):
             return
         if self.pdf_only and not is_pdf_url(url):
@@ -844,44 +852,143 @@ class MinistryPipeline:
         self.log(f"[library] done +{gained} listed={len(self.docs)} api_calls={api_calls}")
         return gained
 
+    def is_library_page(self, url: str) -> bool:
+        """Public document hubs only — not news/org pages."""
+        u = (url or "").lower()
+        if looks_like_doc(u):
+            return False
+        if any(
+            x in u
+            for x in (
+                "login.aspx",
+                "authenticate.aspx",
+                "/_vti_bin/",
+                "/style%20library",
+                "/style library",
+                "/_catalogs/",
+                "/_layouts/15/images",
+            )
+        ):
+            return False
+        return any(
+            k in u
+            for k in (
+                "docscenter",
+                "ruleslibrary",
+                "yearlyreport",
+                "ministryforms",
+                "pressfiles",
+                "pressreleases",
+                "awarenesscenter",
+                "rulesandconditions",
+                "ministrypolicies",
+                "shareddata",
+                "/documents",
+                "researchs",
+                "reports",
+                "identityguide",
+                "multimedialibrary",
+                "osssearch",
+                "searchresults",
+                "allitems.aspx",
+                "naama",
+                "sectorstratigy",
+                "environmentalawareness",
+                "generalforms",
+                "forms/allitems",
+                "informationcenter/pages",
+                "docscenter/pages",
+            )
+        )
+
     def discover_library_html_pages(self) -> int:
-        """Harvest PDFs from known library/search HTML pages (RulesLibrary lists Arabic .pdf hrefs)."""
+        """Walk every public library listing page (RulesLibrary, reports, forms, press, shareddata)."""
         before = len(self.docs)
-        paths = [
+        seeds = [
+            "/ar/InformationCenter/Pages/default.aspx",
+            "/en/InformationCenter/Pages/default.aspx",
+            "/ar/InformationCenter/DocsCenter/Pages/home.aspx",
+            "/en/InformationCenter/DocsCenter/Pages/home.aspx",
             "/ar/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
             "/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-            "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents/Forms/AllItems.aspx",
-            "/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Forms/AllItems.aspx",
-            "/ar/InformationCenter/DocsCenter/Pages/default.aspx",
-            "/en/InformationCenter/DocsCenter/Pages/default.aspx",
-            "/Documents/Forms/AllItems.aspx",
-            "/ar/Documents/Forms/AllItems.aspx",
-            "/en/Documents/Forms/AllItems.aspx",
-            "/ar/Ministry/AboutMinistry/RulesAndConditions/Pages/default.aspx",
+            "/ar/InformationCenter/DocsCenter/YearlyReport/Pages/default.aspx",
+            "/en/InformationCenter/DocsCenter/YearlyReport/Pages/default.aspx",
+            "/ar/InformationCenter/DocsCenter/MinistryForms/Pages/default.aspx",
+            "/en/InformationCenter/DocsCenter/MinistryForms/Pages/default.aspx",
+            "/ar/InformationCenter/Researchs/Reports/Pages/default.aspx",
+            "/en/InformationCenter/Researchs/Reports/Pages/default.aspx",
+            "/ar/Ministry/AboutMinistry/RulesAndConditions/Pages/Policy.aspx",
             "/ar/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/Pages/default.aspx",
+            "/en/Ministry/AboutMinistry/RulesAndConditions/Ministrypolicies/Pages/default.aspx",
+            "/ar/MediaCenter/PressReleases/Pages/home.aspx",
+            "/en/MediaCenter/PressReleases/Pages/home.aspx",
+            "/ar/MediaCenter/MultimediaLibrary/Pages/default.aspx",
+            "/ar/MediaCenter/VisualIdentityGuide/Pages/default.aspx",
+            "/ar/InformationCenter/AwarenessCenter/Pages/home.aspx",
+            "/en/InformationCenter/AwarenessCenter/Pages/home.aspx",
+            "/ar/InformationCenter/AwarenessCenter/AgricultureCalendar/Pages/default.aspx",
+            "/ar/Ministry/initiatives/SectorStratigy/Reports/",
+            "/shareddata/Pages/default.aspx",
+            "/shareddata/Naama/Documents/",
+            "/shareddata/General/Pages/default.aspx",
+            "/environmentalawareness/ar/Pages/default.aspx",
             "/_layouts/15/osssearchresults.aspx?k=FileExtension:pdf",
-            "/_layouts/15/osssearchresults.aspx?k=FileType:pdf",
-            "/_layouts/15/searchresults.aspx?k=FileExtension:pdf",
         ]
+        queue: deque[str] = deque()
         seen: set[str] = set()
-        for host in self._api_hosts()[:2]:
-            for path in paths:
-                url = f"https://{host}{path}" if path.startswith("/") else path
-                url = normalize(url) if "k=" not in path else url
-                if url in seen:
+        host0 = self._api_hosts()[0]
+        for path in seeds:
+            if path.startswith("http"):
+                queue.append(path)
+            else:
+                queue.append(f"https://{host0}{path}")
+                if host0.startswith("www."):
+                    queue.append(f"https://{host0[4:]}{path}")
+                else:
+                    queue.append(f"https://www.{host0}{path}")
+
+        max_lib_pages = 160
+        visited = 0
+        while queue and visited < max_lib_pages:
+            url = queue.popleft()
+            url = url if "k=" in url or "PageFirstRow" in url or "paged=" in url.lower() else normalize(url)
+            if url in seen:
+                continue
+            seen.add(url)
+            if not self.is_library_page(url) and visited > 0 and "informationcenter" not in url.lower():
+                # still allow InformationCenter hubs as seeds
+                if "/informationcenter/" not in url.lower() and "/shareddata" not in url.lower():
                     continue
-                seen.add(url)
-                self.log(f"  [library-html] {url[:130]}")
-                r, err = self.fetch(url, timeout=45)
-                if err or r is None:
-                    continue
-                nu = normalize(r.url or url)
-                self.visited_pages.add(nu)
-                self.pages_seen += 1
-                html = r.text or ""
-                self.extract_from_html(html, nu, probe_api=False)
-                self.harvest_doc_urls_from_text(html, nu, "library_html")
-        self.log(f"[library-html] +{len(self.docs) - before} listed={len(self.docs)}")
+            self.log(f"  [library-html] {url[:140]}")
+            r, err = self.fetch(url, timeout=45)
+            if err or r is None:
+                continue
+            final = r.url or url
+            if "login.aspx" in final.lower() or "authenticate.aspx" in final.lower():
+                self.log("  [library-html] login wall — skip")
+                continue
+            nu = normalize(final)
+            self.visited_pages.add(nu)
+            self.pages_seen += 1
+            visited += 1
+            html = r.text or ""
+            extra = self.extract_from_html(html, nu, probe_api=False)
+            self.harvest_doc_urls_from_text(html, nu, "library_html")
+            for p in extra:
+                if self.is_library_page(p) and p not in seen:
+                    queue.append(p)
+            # SharePoint list paging
+            for m in re.finditer(
+                r'href=["\']([^"\']*(?:PageFirstRow|paged=TRUE|PageIndex=|p_ID=)[^"\']*)["\']',
+                html,
+                re.I,
+            ):
+                nxt = normalize(urljoin(nu, m.group(1).replace("&amp;", "&")))
+                if nxt not in seen and same_site(nxt, self.root):
+                    queue.append(nxt)
+        self.log(
+            f"[library-html] pages={visited} +{len(self.docs) - before} listed={len(self.docs)}"
+        )
         return len(self.docs) - before
 
     def playwright_inpage_rest(self) -> int:
@@ -1004,8 +1111,14 @@ class MinistryPipeline:
                 "/_layouts/15/osssearchresults.aspx?k=FileExtension:pdf",
                 "/ar/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
                 "/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-                "/ar/InformationCenter/DocsCenter/RulesLibrary/Documents/Forms/AllItems.aspx",
-                "/Documents/Forms/AllItems.aspx",
+                "/ar/InformationCenter/DocsCenter/YearlyReport/Pages/default.aspx",
+                "/en/InformationCenter/DocsCenter/YearlyReport/Pages/default.aspx",
+                "/ar/InformationCenter/DocsCenter/MinistryForms/Pages/default.aspx",
+                "/ar/InformationCenter/Researchs/Reports/Pages/default.aspx",
+                "/ar/MediaCenter/PressReleases/Pages/home.aspx",
+                "/ar/MediaCenter/MultimediaLibrary/Pages/default.aspx",
+                "/shareddata/Pages/default.aspx",
+                "/ar/InformationCenter/DocsCenter/Pages/home.aspx",
             ):
                 if self._pw_renders >= self._pw_max_renders:
                     break
