@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T13:20:45.851086+00:00",
+  "updated_at": "2026-08-10T13:23:57.786863+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
@@ -15,7 +15,7 @@
     "href": 37,
     "script": 53
   },
-  "pages_visited": 1850,
+  "pages_visited": 1875,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
