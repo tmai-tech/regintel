@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-10T13:35:00.274293+00:00",
+  "updated_at": "2026-08-10T13:36:26.332278+00:00",
   "phase": "downloading",
-  "message": "downloading 330/361 for Saudi Arabia - MEWA (ok=256 scanned=22 fail=52)",
+  "message": "downloading 361/361 for Saudi Arabia - MEWA (ok=283 scanned=25 fail=53)",
   "run_id": "31386976879",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31386976879",
   "totals": {
-    "pdfs": 1188,
+    "pdfs": 1225,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
     "ministry_listed": 361,
-    "ministry_downloaded": 256,
-    "ministry_failed": 52,
-    "ministry_scanned": 22,
-    "ministry_to_download": 31
+    "ministry_downloaded": 283,
+    "ministry_failed": 53,
+    "ministry_scanned": 25,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -22,130 +22,120 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 328
+      "count": 365
     }
   ],
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1188
+      "count": 1225
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "url": "https://www.mewa.gov.sa/en/",
-    "source_kind": "ministry_pipeline",
-    "listed": 361,
-    "downloaded": 256,
-    "download_failed": 52,
-    "scanned_pdf": 22,
-    "to_download": 31,
-    "pages_visited": 2000
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
-      "title": "03 Employees Requirements (1).pdf",
+      "title": "Download PDF",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/PublishingImages/Pages/201115412/03%20Employees%20Requirements%20(1).pdf",
-      "downloaded_at": "2026-08-10T12:20:48.019638+00:00",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/Political_Process _concept_note_draft.pdf",
+      "downloaded_at": "2026-08-10T13:36:22.312249+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "02 Company Requirements (1).pdf",
+      "title": "Download PDF",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/PublishingImages/Pages/201115412/02%20Company%20Requirements%20(1).pdf",
-      "downloaded_at": "2026-08-10T12:20:47.355342+00:00",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/010526_Regional_Process_TOR_11th_World_Water_Forum_Ver.4.pdf",
+      "downloaded_at": "2026-08-10T13:36:19.303197+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "01 Company Registration (1).pdf",
+      "title": "Download PDF",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/PublishingImages/Pages/201115412/01%20Company%20Registration%20(1).pdf",
-      "downloaded_at": "2026-08-10T12:20:46.691945+00:00",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/TOR_Thematic_Framework_TP_11th_Forum_171125.pdf",
+      "downloaded_at": "2026-08-10T13:36:16.067335+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Arabic-تقرير الأمين العام للمؤتمر الإسلامي الخامس للوزراء المسؤولون عن ا....pdf",
+      "title": "Download PDF",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/MinistryIslamicCooperationWaterConference/Documents/Arabic-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%20%D9%84%D9%84%D9%85%D8%A4%D8%AA%D9%85%D8%B1%20%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%20%D9%84%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%88%D9%86%20%D8%B9%D9%86%20%D8%A7....pdf",
-      "downloaded_at": "2026-08-10T12:20:46.015166+00:00",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/Thematic_Framework.pdf",
+      "downloaded_at": "2026-08-10T13:36:15.001563+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "EN-MEWA-Environment_High-resolution for reading.pdf",
+      "title": "Download",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyLivestock/Topics/PublishingImages/Pages/InnovationintheEnvironmentsector/EN-MEWA-Environment_High-resolution%20for%20reading.pdf",
-      "downloaded_at": "2026-08-10T12:20:45.274309+00:00",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/11th World Water Forum Brand GuideLine.pdf",
+      "downloaded_at": "2026-08-10T13:36:13.938961+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "EN-MEWA-Water_High-resolution for reading.pdf",
+      "title": "تحميل الملف",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyLivestock/Topics/PublishingImages/Pages/InnovationintheWatersector/EN-MEWA-Water_High-resolution%20for%20reading.pdf",
-      "downloaded_at": "2026-08-10T12:20:42.933902+00:00",
+      "url": "https://swweek.mewa.gov.sa/media/mediacenter/7ad9d4f0f0ff4316a181ec8524ee028e.pdf",
+      "downloaded_at": "2026-08-10T13:35:54.793876+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "EN-MEWA-Agriculture_High-resolution for reading.pdf",
+      "title": "PDF · 5.4 MB",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyLivestock/Topics/PublishingImages/Pages/InnovationintheAgriclturesector/EN-MEWA-Agriculture_High-resolution%20for%20reading.pdf",
-      "downloaded_at": "2026-08-10T12:20:38.630839+00:00",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/presentation-ar.pdf",
+      "downloaded_at": "2026-08-10T13:35:53.497913+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "applicant-guidelines-en.pdf",
+      "title": "PDF · 5.3 MB",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyForInnovation/Topics/TheDamCompetitionProgram/Documents/applicant-guidelines-en.pdf",
-      "downloaded_at": "2026-08-10T12:20:36.562224+00:00",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/presentation-en.pdf",
+      "downloaded_at": "2026-08-10T13:35:44.394422+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "MEWA-Agriculture-AR_changes_05.09.pdf",
+      "title": "PDF · 0.3 MB",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyForInnovation/Topics/LegislativeExperimentalEnvProgram/Documents/MEWA-Agriculture-AR_changes_05.09.pdf",
-      "downloaded_at": "2026-08-10T12:20:24.872033+00:00",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/brand-pattern.pdf",
+      "downloaded_at": "2026-08-10T13:35:35.595399+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "MEWA-Water-AR_changes_05.16.pdf",
+      "title": "PDF · 0.5 MB",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyForInnovation/Topics/LegislativeExperimentalEnvProgram/Documents/MEWA-Water-AR_changes_05.16.pdf",
-      "downloaded_at": "2026-08-10T12:20:23.069289+00:00",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/icons.pdf",
+      "downloaded_at": "2026-08-10T13:35:34.737855+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "MEWA-Environment-AR_changes_05.09.pdf",
+      "title": "PDF · 0.1 MB",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyForInnovation/Topics/LegislativeExperimentalEnvProgram/Documents/MEWA-Environment-AR_changes_05.09.pdf",
-      "downloaded_at": "2026-08-10T12:20:21.128081+00:00",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/color-palette.pdf",
+      "downloaded_at": "2026-08-10T13:35:31.694690+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "(EN) (L) 20250916_MEWA_RDI and ET Observatory-Wastewater Treatment _ Reuse report_Spreadshe_v24 -FINAL-.pdf",
+      "title": "PDF · 3.3 MB",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyForInnovation/Topics/Documents/%28EN%29%20%28L%29%2020250916_MEWA_RDI%20and%20ET%20Observatory-Wastewater%20Treatment%20%26%20Reuse%20report_Spreadshe_v24%20-FINAL-.pdf",
-      "downloaded_at": "2026-08-10T12:20:16.993076+00:00",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/brand-guidelines.pdf",
+      "downloaded_at": "2026-08-10T13:35:31.235251+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "SLM REPORT-Eng.pdf",
+      "title": "دليل الخدمات الالكترونية.pdf",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyForInnovation/Topics/Documents/SLM%20REPORT-Eng.pdf",
-      "downloaded_at": "2026-08-10T12:20:15.877055+00:00",
+      "url": "https://mewa.gov.sa/ar/Documents/MEWA%20Case%20Studies%20for%20ESCWA/e-Services/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.pdf",
+      "downloaded_at": "2026-08-10T13:35:24.276349+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Invesment Report_En.pdf",
+      "title": "المؤشرات العلمية على فوائد الأغذية العضوية لصحة الإنسان",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyForInnovation/Topics/Documents/Invesment%20Report_En.pdf",
-      "downloaded_at": "2026-08-10T12:20:12.370931+00:00",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyofAgriculture/OrganicCompain/Documents/Untitled-1.pdf",
+      "downloaded_at": "2026-08-10T13:35:21.405071+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "MEWA Report English V3.pdf",
+      "title": "Click here to view the full report​",
       "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyForInnovation/Topics/SiteAssets/Innovation%20Impact%20Report/MEWA%20Report%20English%20V3.pdf",
-      "downloaded_at": "2026-08-10T12:20:08.011494+00:00",
+      "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyForInnovation/Topics/Documents/Agriculture%20Innovation%20TrendsReport%20EN.pdf",
+      "downloaded_at": "2026-08-10T13:35:20.708743+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -302,15 +292,15 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-10T12:30:21.594028+00:00",
+  "manifest_generated_at": "2026-08-10T13:36:24.178818+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 31,
-      "downloaded": 256,
-      "download_failed": 52,
-      "scanned_pdf": 22,
+      "to_download": 0,
+      "downloaded": 283,
+      "download_failed": 53,
+      "scanned_pdf": 25,
       "listed_total": 361
     },
     "discovery_methods": {
@@ -319,16 +309,7 @@
       "script": 53
     },
     "pages_visited": 2000,
-    "sitemaps_used": [
-      "https://www.mewa.gov.sa/sitemap.xml",
-      "https://www.mewa.gov.sa/Sitemap.xml",
-      "https://mewa.gov.sa/sitemap.xml",
-      "https://mewa.gov.sa/_layouts/15/sitemap.aspx",
-      "https://www.mewa.gov.sa:443/sitemap0.xml",
-      "https://www.mewa.gov.sa:443/sitemap_mobile0.xml"
-    ],
-    "datasources_found": 21,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-10T13:34:58.580742+00:00"
+    "updated_at": "2026-08-10T13:36:24.463981+00:00"
   }
 }
