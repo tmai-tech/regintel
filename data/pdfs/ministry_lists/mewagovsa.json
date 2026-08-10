@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T13:23:57.786863+00:00",
+  "updated_at": "2026-08-10T13:26:54.819265+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
@@ -47,7 +47,7 @@
     "https://mewa.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500&startrow=1500&selectproperties=%27Path,Title,Size%27",
     "https://mewa.gov.sa/_api/search/query?querytext=%27FileExtension:pdf%27&rowlimit=500&startrow=2000&selectproperties=%27Path,Title,Size%27"
   ],
-  "pages_visited": 1875,
+  "pages_visited": 1900,
   "page_errors_sample": [
     {
       "url": "https://www.mewa.gov.sa/ar/Ministry/Agencies/EnvironmentAgency/Topics/Pages/ُEnviornmetn%20Alert/default.aspx",
