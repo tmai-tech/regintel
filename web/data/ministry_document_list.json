@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-10T12:49:40.510983+00:00",
+  "updated_at": "2026-08-10T12:51:15.565277+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 24,
+    "to_download": 25,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "listed_total": 347
+    "listed_total": 348
   },
   "discovery_methods": {
     "seed_list": 266,
     "href": 30,
-    "script": 51
+    "script": 52
   },
-  "pages_visited": 1025,
+  "pages_visited": 1125,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
@@ -4179,6 +4179,18 @@
       "title": "المؤشرات العلمية على فوائد الأغذية العضوية لصحة الإنسان",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "دليل الخدمات الالكترونية.pdf",
+      "url": "https://mewa.gov.sa/ar/Documents/MEWA%20Case%20Studies%20for%20ESCWA/e-Services/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "دليل الخدمات الالكترونية.pdf",
+      "bytes": null,
+      "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - MEWA"
     }
   ],
