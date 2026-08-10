@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-10T12:31:48.442008+00:00",
+  "updated_at": "2026-08-10T12:34:02.675177+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 0,
+    "to_download": 1,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "listed_total": 323
+    "listed_total": 324
   },
   "discovery_methods": {
     "seed_list": 266,
-    "href": 6,
+    "href": 7,
     "script": 51
   },
-  "pages_visited": 160,
+  "pages_visited": 175,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
@@ -3891,6 +3891,18 @@
       "title": "u062e_u062f_u0645_u0629 _u0625_u0635_u062f_u0627_u0631 _u0631_u062e_u0635_u0629 _u0645_u0646_u062d_u0644 _u0623_u0641_u0631_u0627_u062f.pdf",
       "bytes": null,
       "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "Waste Management Environment Innovation Trends-En.PDF",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyForInnovation/Topics/SiteAssets/Innovation%20Trends/Waste%20Management%20Environment%20Innovation%20Trends-En.PDF",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "view full report",
+      "bytes": null,
+      "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
     }
   ],

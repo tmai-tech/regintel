@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-10T12:31:50.182555+00:00",
+  "updated_at": "2026-08-10T12:34:04.338767+00:00",
   "phase": "discovering",
-  "message": "library-first mewa.gov.sa: listed=323 (search+libraries)",
+  "message": "discovering mewa.gov.sa: pages=175 listed=324",
   "run_id": "31386976879",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31386976879",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
-    "ministry_listed": 323,
+    "ministry_listed": 324,
     "ministry_downloaded": 249,
     "ministry_failed": 52,
     "ministry_scanned": 22,
-    "ministry_to_download": 0
+    "ministry_to_download": 1
   },
   "by_jurisdiction": [
     {
@@ -35,12 +35,12 @@
     "jurisdiction": "Saudi Arabia - MEWA",
     "url": "https://www.mewa.gov.sa/en/",
     "source_kind": "ministry_pipeline",
-    "listed": 323,
+    "listed": 324,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "to_download": 0,
-    "pages_visited": 160
+    "to_download": 1,
+    "pages_visited": 175
   },
   "recent_pdfs": [
     {
@@ -307,21 +307,28 @@
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 0,
+      "to_download": 1,
       "downloaded": 249,
       "download_failed": 52,
       "scanned_pdf": 22,
-      "listed_total": 323
+      "listed_total": 324
     },
     "discovery_methods": {
       "seed_list": 266,
-      "href": 6,
+      "href": 7,
       "script": 51
     },
-    "pages_visited": 160,
-    "sitemaps_used": [],
-    "datasources_found": 0,
+    "pages_visited": 175,
+    "sitemaps_used": [
+      "https://www.mewa.gov.sa/sitemap.xml",
+      "https://www.mewa.gov.sa/Sitemap.xml",
+      "https://mewa.gov.sa/sitemap.xml",
+      "https://mewa.gov.sa/_layouts/15/sitemap.aspx",
+      "https://www.mewa.gov.sa:443/sitemap0.xml",
+      "https://www.mewa.gov.sa:443/sitemap_mobile0.xml"
+    ],
+    "datasources_found": 21,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-10T12:31:48.465610+00:00"
+    "updated_at": "2026-08-10T12:34:02.685947+00:00"
   }
 }
