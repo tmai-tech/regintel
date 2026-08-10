@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-10T07:07:50.541469+00:00",
-  "phase": "discovering",
-  "message": "discovering documents on https://www.mewa.gov.sa/",
+  "updated_at": "2026-08-10T07:10:22.252831+00:00",
+  "phase": "downloading",
+  "message": "downloading 206 listed docs (after library HTML)",
   "run_id": "31364522470",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31364522470",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 2,
-    "ministry_listed": 0,
+    "ministry_listed": 206,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 206
   },
   "by_jurisdiction": [
     {
@@ -33,14 +33,14 @@
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MEWA",
-    "url": "https://www.mewa.gov.sa/",
+    "url": "https://www.mewa.gov.sa/en/",
     "source_kind": "ministry_pipeline",
-    "listed": 0,
+    "listed": 206,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 0
+    "to_download": 206,
+    "pages_visited": 149
   },
   "recent_pdfs": [
     {
@@ -305,19 +305,22 @@
   "manifest_generated_at": "2026-08-09T11:12:21.583838+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MEWA",
-    "target_url": "https://www.mewa.gov.sa/",
+    "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 0,
+      "to_download": 206,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 0
+      "listed_total": 206
     },
-    "discovery_methods": {},
-    "pages_visited": 0,
+    "discovery_methods": {
+      "href": 104,
+      "script": 102
+    },
+    "pages_visited": 149,
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-10T07:07:48.688286+00:00"
+    "updated_at": "2026-08-10T07:10:20.416812+00:00"
   }
 }
