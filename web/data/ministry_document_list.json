@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-10T13:26:54.819265+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-10T13:28:13.351826+00:00",
+  "phase": "downloading",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 33,
+    "to_download": 38,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "listed_total": 356
+    "listed_total": 361
   },
   "discovery_methods": {
     "seed_list": 266,
-    "href": 37,
+    "href": 42,
     "script": 53
   },
-  "pages_visited": 1900,
+  "pages_visited": 2000,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
@@ -4287,6 +4287,66 @@
       "title": "pdf",
       "bytes": null,
       "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "11th World Water Forum Brand GuideLine.pdf",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/11th World Water Forum Brand GuideLine.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "Thematic_Framework.pdf",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/Thematic_Framework.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download PDF",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "TOR_Thematic_Framework_TP_11th_Forum_171125.pdf",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/TOR_Thematic_Framework_TP_11th_Forum_171125.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download PDF",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "010526_Regional_Process_TOR_11th_World_Water_Forum_Ver.4.pdf",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/010526_Regional_Process_TOR_11th_World_Water_Forum_Ver.4.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download PDF",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "Political_Process _concept_note_draft.pdf",
+      "url": "https://11thworldwaterforum.mewa.gov.sa/Political_Process _concept_note_draft.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Download PDF",
+      "bytes": null,
+      "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
     }
   ],
