@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-10T12:35:43.626910+00:00",
+  "updated_at": "2026-08-10T12:37:26.159612+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 1,
+    "to_download": 13,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "listed_total": 324
+    "listed_total": 336
   },
   "discovery_methods": {
     "seed_list": 266,
-    "href": 7,
+    "href": 19,
     "script": 51
   },
-  "pages_visited": 200,
+  "pages_visited": 300,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
@@ -3901,6 +3901,150 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "view full report",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "27-02-1448.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/15-11-2018-4/27-02-1448.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة أمطار الأثنين ​27-02-1448هـ.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "26-02-1448.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/15-11-2018-4/26-02-1448.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة أمطار الأحد 26-02-1448هـ.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "25-02-1448.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/15-11-2018-4/25-02-1448.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة أمطار السبت 25-02-1448هـ.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "23-02-1448.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/15-11-2018-4/23-02-1448.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة أمطار الخميس ​23-02-1448هـ.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "22-02-1448.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/15-11-2018-4/22-02-1448.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة أمطار الأربعاء ​22-02-1448هـ.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "27-2-1448 هـ.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/13-11-2018-1/27-2-1448%20%d9%87%d9%80.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة السدود ليوم ​27-2-1448هـ.",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "26-2-1448 هـ.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/13-11-2018-1/26-2-1448%20%d9%87%d9%80.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة السدود ليوم 26-2-1448هـ.",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "25-2-1448 هـ.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/13-11-2018-1/25-2-1448%20%d9%87%d9%80.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة السدود ليوم 25-2-1448هـ.",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "24-2-1448 هـ.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/13-11-2018-1/24-2-1448%20%d9%87%d9%80.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة السدود ليوم 24-2-1448هـ.",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "23-2-1448 هـ.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/13-11-2018-1/23-2-1448%20%d9%87%d9%80.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة السدود ليوم ​23-2-1448هـ.",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "22-2-1448.pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/TheWaterAgency/Topics/SiteAssets/Pages/13-11-2018-1/22-2-1448.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نشرة السدود ليوم ​22-2-1448هـ.",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "الملف التعريفي - ا_سبوع البيي_ة 2024 .pdf",
+      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/EnvironmentAgency/Topics/Documents/الملف%20التعريفي%20-%20أسبوع%20البيئة%202024%20.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا للتحميل",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
