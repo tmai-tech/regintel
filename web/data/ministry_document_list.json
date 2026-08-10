@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-10T07:37:20.380906+00:00",
+  "updated_at": "2026-08-10T07:38:54.321990+00:00",
   "phase": "downloading",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 0,
+    "to_download": 1,
     "downloaded": 83,
     "download_failed": 104,
     "scanned_pdf": 19,
-    "listed_total": 206
+    "listed_total": 207
   },
   "discovery_methods": {
-    "href": 104,
+    "href": 105,
     "script": 102
   },
   "pages_visited": 149,
@@ -2485,6 +2485,18 @@
       "scanned_pdf": false,
       "title": "خطة التنمية التاسعة للزراعة.pdf",
       "bytes": 5263463,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "url": "https://mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "هنا",
+      "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
     }
