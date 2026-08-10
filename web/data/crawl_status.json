@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-10T07:52:26.833749+00:00",
+  "updated_at": "2026-08-10T07:54:14.137887+00:00",
   "phase": "downloading",
-  "message": "downloading 207 listed docs",
+  "message": "downloading 100/207 for Saudi Arabia - MEWA (ok=69 scanned=18 fail=13)",
   "run_id": "31364522470",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31364522470",
   "totals": {
@@ -321,6 +321,6 @@
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-10T07:52:25.023993+00:00"
+    "updated_at": "2026-08-10T07:54:12.326210+00:00"
   }
 }
