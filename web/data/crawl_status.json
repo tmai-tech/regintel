@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-10T12:24:57.144038+00:00",
+  "updated_at": "2026-08-10T12:27:29.180248+00:00",
   "phase": "downloading",
-  "message": "downloading 280/323 for Saudi Arabia - MEWA (ok=249 scanned=22 fail=9)",
+  "message": "downloading 300/323 for Saudi Arabia - MEWA (ok=249 scanned=22 fail=29)",
   "run_id": "31386976879",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31386976879",
   "totals": {
@@ -11,9 +11,9 @@
     "jurisdictions": 2,
     "ministry_listed": 323,
     "ministry_downloaded": 249,
-    "ministry_failed": 9,
+    "ministry_failed": 29,
     "ministry_scanned": 22,
-    "ministry_to_download": 43
+    "ministry_to_download": 23
   },
   "by_jurisdiction": [
     {
@@ -37,9 +37,9 @@
     "source_kind": "ministry_pipeline",
     "listed": 323,
     "downloaded": 249,
-    "download_failed": 9,
+    "download_failed": 29,
     "scanned_pdf": 22,
-    "to_download": 43,
+    "to_download": 23,
     "pages_visited": 160
   },
   "recent_pdfs": [
@@ -307,9 +307,9 @@
     "label": "Saudi Arabia - MEWA",
     "target_url": "https://www.mewa.gov.sa/en/",
     "counts": {
-      "to_download": 43,
+      "to_download": 23,
       "downloaded": 249,
-      "download_failed": 9,
+      "download_failed": 29,
       "scanned_pdf": 22,
       "listed_total": 323
     },
@@ -322,6 +322,6 @@
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-10T12:24:55.448206+00:00"
+    "updated_at": "2026-08-10T12:27:27.478797+00:00"
   }
 }
