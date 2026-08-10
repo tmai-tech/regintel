@@ -842,6 +842,10 @@ a.link:hover { text-decoration: underline; }
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 4px;
+  min-width: 0;
+}
+.card-actions .btn {
+  max-width: 100%;
 }
 
 .empty {
