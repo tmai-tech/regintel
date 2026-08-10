@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-10T07:50:51.214949+00:00",
-  "phase": "downloading",
+  "updated_at": "2026-08-10T07:52:13.137206+00:00",
+  "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 1,
-    "downloaded": 83,
-    "download_failed": 104,
+    "to_download": 0,
+    "downloaded": 85,
+    "download_failed": 103,
     "scanned_pdf": 19,
     "listed_total": 207
   },
@@ -2456,11 +2456,11 @@
       "filename": "خطة التنمية الثامنة للمياه والصرف الصحي.pdf",
       "url": "https://mewa.gov.sa/ar/Ministry/initiatives/SectorStratigy/ArchivedReports/%d8%ae%d8%b7%d8%a9%20%d8%a7%d9%84%d8%aa%d9%86%d9%85%d9%8a%d8%a9%20%d8%a7%d9%84%d8%ab%d8%a7%d9%85%d9%86%d8%a9%20%d9%84%d9%84%d9%85%d9%8a%d8%a7%d9%87%20%d9%88%d8%a7%d9%84%d8%b5%d8%b1%d9%81%20%d8%a7%d9%84%d8%b5%d8%ad%d9%8a.pdf",
       "type": "PDF",
-      "status": "download_failed",
-      "download_error": "ReadTimeout: HTTPSConnectionPool(host='www.mewa.gov.sa', port=443): Read timed out. (read timeout=90)",
+      "status": "downloaded",
+      "download_error": null,
       "scanned_pdf": false,
       "title": "خطة التنمية الثامنة للمياه والصرف الصحي.pdf",
-      "bytes": null,
+      "bytes": 3015501,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
     },
@@ -2492,11 +2492,11 @@
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
       "url": "https://mewa.gov.sa/Documents/Using_the_Mewa_API_to_consume_Real_Data.pdf",
       "type": "PDF",
-      "status": "to_download",
+      "status": "downloaded",
       "download_error": null,
       "scanned_pdf": false,
       "title": "هنا",
-      "bytes": null,
+      "bytes": 216651,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MEWA"
     }
