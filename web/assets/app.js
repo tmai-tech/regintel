@@ -1701,7 +1701,10 @@
             r.summarized_at ? " · " + escapeHtml(String(r.summarized_at).slice(0, 19)) : ""
           }</p>`
         : "";
-    const cardId = "sum-" + String(r.id || "").replace(/[^\w-]/g, "_").slice(0, 40);
+    // Must be unique per card: catalog has many duplicate `id`s (www vs apex twins).
+    const cardId =
+      "sum-" +
+      simpleHash(String(r.id || "") + "|" + String(link || r.title || "") + "|" + String(r.summarized_at || ""));
     const defaultLang = preferredSummaryTargetLang();
     return `
       <article class="pdf-card summary-card" role="listitem" id="${escapeAttr(cardId)}"
@@ -1767,10 +1770,7 @@
 
     listEl.querySelectorAll(".sum-pdf-translate-btn").forEach((btn) => {
       btn.addEventListener("click", async () => {
-        const cardId = btn.getAttribute("data-card");
-        const card = cardId
-          ? document.getElementById(cardId)
-          : btn.closest(".summary-card");
+        const card = btn.closest(".summary-card");
         if (!card) return;
         const langSel = card.querySelector(".sum-lang");
         const targetLang = (langSel && langSel.value) || "en";
@@ -1793,8 +1793,7 @@
 
     listEl.querySelectorAll(".sum-translate-btn").forEach((btn) => {
       btn.addEventListener("click", async () => {
-        const cardId = btn.getAttribute("data-card");
-        const card = cardId ? document.getElementById(cardId) : btn.closest(".summary-card");
+        const card = btn.closest(".summary-card");
         if (!card) return;
         const langSel = card.querySelector(".sum-lang");
         const status = card.querySelector(".sum-translate-status");
@@ -1865,10 +1864,17 @@
           }
           if (restoreBtn) restoreBtn.hidden = false;
           if (status) {
-            status.textContent =
-              "Summary translated to " +
-              targetLang +
-              ". Use “Translate PDF” for full document text (opens a viewer).";
+            const unchanged =
+              titleOut === origTitle &&
+              summaryOut === origSummary &&
+              pointsOut.join("\n") === origPoints.join("\n");
+            status.textContent = unchanged
+              ? "Already in " +
+                targetLang +
+                " (or same as original). Pick another language if you expected a change."
+              : "Summary translated to " +
+                targetLang +
+                ". Use “Translate PDF” for full document text (opens a viewer).";
           }
         } catch (e) {
           if (status) {
@@ -1886,8 +1892,7 @@
 
     listEl.querySelectorAll(".sum-restore-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const cardId = btn.getAttribute("data-card");
-        const card = cardId ? document.getElementById(cardId) : btn.closest(".summary-card");
+        const card = btn.closest(".summary-card");
         if (!card) return;
         const origTitle = card.getAttribute("data-orig-title") || "";
         const origSummary = card.getAttribute("data-orig-summary") || "";
