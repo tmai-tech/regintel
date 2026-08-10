@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-10T13:15:14.093774+00:00",
+  "updated_at": "2026-08-10T13:17:12.554817+00:00",
   "phase": "discovering",
   "target_url": "https://www.mewa.gov.sa/en/",
   "label": "Saudi Arabia - MEWA",
   "counts": {
-    "to_download": 25,
+    "to_download": 33,
     "downloaded": 249,
     "download_failed": 52,
     "scanned_pdf": 22,
-    "listed_total": 348
+    "listed_total": 356
   },
   "discovery_methods": {
     "seed_list": 266,
-    "href": 30,
-    "script": 52
+    "href": 37,
+    "script": 53
   },
-  "pages_visited": 1700,
+  "pages_visited": 1775,
   "documents": [
     {
       "filename": "Using_the_Mewa_API_to_consume_Real_Data.pdf",
@@ -4189,6 +4189,102 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "دليل الخدمات الالكترونية.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "brand-guidelines.pdf",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/brand-guidelines.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PDF · 3.3 MB",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "color-palette.pdf",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/color-palette.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PDF · 0.1 MB",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "icons.pdf",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/icons.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PDF · 0.5 MB",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "brand-pattern.pdf",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/brand-pattern.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PDF · 0.3 MB",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "presentation-en.pdf",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/presentation-en.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PDF · 5.3 MB",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "presentation-ar.pdf",
+      "url": "https://swweek.mewa.gov.sa/assets/brand/presentation-ar.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "PDF · 5.4 MB",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "7ad9d4f0f0ff4316a181ec8524ee028e.pdf",
+      "url": "https://swweek.mewa.gov.sa/media/mediacenter/7ad9d4f0f0ff4316a181ec8524ee028e.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل الملف",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MEWA"
+    },
+    {
+      "filename": "pdf",
+      "url": "https://swweek.mewa.gov.sa/*,.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "pdf",
       "bytes": null,
       "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - MEWA"
