@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T16:41:14.309874+00:00",
+  "updated_at": "2026-08-11T16:42:56.409785+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
@@ -18,7 +18,7 @@
     "href": 172,
     "script": 1
   },
-  "pages_visited": 300,
+  "pages_visited": 400,
   "documents": [
     {
       "filename": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
