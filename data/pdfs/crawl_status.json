@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-11T16:27:26.209100+00:00",
+  "updated_at": "2026-08-11T16:35:31.896351+00:00",
   "phase": "discovering",
-  "message": "library-first mc.gov.sa: listed=1 (search+libraries)",
+  "message": "discovering mc.gov.sa: pages=75 listed=61",
   "run_id": "31511618348",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31511618348",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 3,
-    "ministry_listed": 1,
+    "ministry_listed": 61,
     "ministry_downloaded": 1,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 60
   },
   "by_jurisdiction": [
     {
@@ -39,12 +39,12 @@
     "jurisdiction": "Saudi Arabia - MC",
     "url": "https://mc.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 1,
+    "listed": 61,
     "downloaded": 1,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 54
+    "to_download": 60,
+    "pages_visited": 75
   },
   "recent_pdfs": [
     {
@@ -311,19 +311,37 @@
     "label": "Saudi Arabia - MC",
     "target_url": "https://mc.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 60,
       "downloaded": 1,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 1
+      "listed_total": 61
     },
     "discovery_methods": {
-      "pw_search": 1
+      "pw_search": 1,
+      "sitemap": 1,
+      "playwright_api": 5,
+      "playwright_net": 1,
+      "href": 52,
+      "script": 1
     },
-    "pages_visited": 54,
-    "sitemaps_used": [],
+    "pages_visited": 75,
+    "sitemaps_used": [
+      "https://mc.gov.sa/sitemap.xml",
+      "https://mc.gov.sa/sitemap_index.xml",
+      "https://mc.gov.sa/Sitemap.xml",
+      "https://www.mc.gov.sa/sitemap.xml",
+      "https://mc.gov.sa/en/sitemap.xml",
+      "https://mc.gov.sa/ar/sitemap.xml",
+      "https://mc.gov.sa:443/sitemap0.xml",
+      "https://mc.gov.sa:443/sitemap_mobile0.xml",
+      "https://mc.gov.sa/en/Pages/SiteMap.aspx",
+      "https://mc.gov.sa/en/Pages/SiteMapChart.aspx",
+      "https://mc.gov.sa:443/en/Pages/SiteMap.aspx",
+      "https://mc.gov.sa:443/en/Pages/SiteMapChart.aspx"
+    ],
     "datasources_found": 83,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-11T16:27:24.503958+00:00"
+    "updated_at": "2026-08-11T16:35:30.194238+00:00"
   }
 }
