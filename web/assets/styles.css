@@ -925,6 +925,14 @@ a.link:hover { text-decoration: underline; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+.section-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 18px 0 12px;
+}
+.section-row .section-title { margin: 0; }
 .crawl-bar {
   display: flex;
   gap: 10px;
@@ -1086,4 +1094,15 @@ a.link:hover { text-decoration: underline; }
   color: var(--text);
   line-height: 1.4;
   overflow-wrap: anywhere;
+}
+.live-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+}
+.live-checked {
+  font-size: 0.75rem;
+  color: var(--muted);
 }

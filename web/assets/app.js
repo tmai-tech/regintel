@@ -2626,6 +2626,8 @@
     const detailMeta = document.getElementById("detailMeta");
     const progressList = document.getElementById("progressList");
     const progressTitle = document.getElementById("progressTitle");
+    const progressHead = document.getElementById("progressHead");
+    const progressRefresh = document.getElementById("progressRefresh");
     if (!siteList) return;
 
     const sites = collectSites(ministries, pdfs);
@@ -2691,11 +2693,15 @@
     function renderProgress() {
       if (!progressList) return;
       const jobs = active.filter((j) => j && j.code);
+      if (progressHead) progressHead.hidden = jobs.length === 0;
       if (progressTitle) progressTitle.hidden = jobs.length === 0;
       progressList.innerHTML = jobs
         .map((j) => {
           const phase = j.phase || "starting";
-          return `<article class="site-card site-card-live" role="listitem">
+          const checked = j.checkedAt
+            ? "Updated " + new Date(j.checkedAt).toLocaleTimeString()
+            : "Not checked yet";
+          return `<article class="site-card site-card-live" role="listitem" data-live="${escapeAttr(j.code)}">
             <div class="live-top">
               <div>
                 <div class="site-card-name">${escapeHtml(j.code)}</div>
@@ -2709,18 +2715,36 @@
               <div class="live-stat"><strong>${escapeHtml(String(j.downloaded ?? 0))}</strong><span>Downloaded</span></div>
             </div>
             <p class="live-action">${escapeHtml(j.message || "Waiting for crawl worker…")}</p>
+            <div class="live-foot">
+              <span class="live-checked">${escapeHtml(checked)}</span>
+              <button type="button" class="btn ghost live-refresh" data-code="${escapeAttr(j.code)}">Refresh</button>
+            </div>
           </article>`;
         })
         .join("");
+      progressList.querySelectorAll(".live-refresh").forEach((btn) => {
+        btn.addEventListener("click", () => refreshLiveStatus(true));
+      });
     }
 
-    async function refreshLiveStatus() {
+    async function refreshLiveStatus(fromClick) {
+      const nowIso = new Date().toISOString();
+      if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
       try {
         const bust = "t=" + Date.now();
-        const [st, docList] = await Promise.all([
+        const [st, docList, gh] = await Promise.all([
           fetchJson("data/crawl_status.json?" + bust).catch(() => null),
           fetchJson("data/ministry_document_list.json?" + bust).catch(() => null),
+          fetch(
+            "https://api.github.com/repos/tmai-tech/regintel/actions/workflows/crawl-ministry.yml/runs?per_page=5",
+          )
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null),
         ]);
+        const ghRuns = (gh && gh.workflow_runs) || [];
+        const running = ghRuns.find(
+          (r) => r.status === "in_progress" || r.status === "queued" || r.status === "waiting",
+        );
         const cur = (st && st.current_source) || {};
         const counts = (docList && docList.counts) || {};
         const liveUrl = cur.url || (docList && docList.target_url) || "";
@@ -2765,12 +2789,27 @@
           job.listed = listed;
           job.downloaded = downloaded;
           job.url = liveUrl || job.url;
+          job.checkedAt = nowIso;
         } else {
+          active = active.map((j) => {
+            j.checkedAt = nowIso;
+            if (running && (j.phase === "queued" || j.phase === "starting")) {
+              j.phase = running.status === "in_progress" ? "discovering" : "queued";
+              j.message = running.status === "in_progress"
+                ? "Worker is running. Waiting for the first status publish…"
+                : "Job is queued on the worker.";
+            } else if (!running && (j.phase === "queued" || j.phase === "starting")) {
+              j.phase = "queued";
+              j.message =
+                "Not started yet — no crawl worker is running. Click Refresh after a worker picks it up.";
+            }
+            return j;
+          });
           active = active.filter((j) => {
             const same =
               (liveCode && j.code === liveCode) ||
               (liveUrl && hostOf(j.url) === hostOf(liveUrl));
-            if (same && (phase === "idle" || phase === "complete")) return false;
+            if (same && (phase === "idle" || phase === "complete") && !running) return false;
             if (j.phase === "starting" || j.phase === "queued") {
               const age = Date.now() - Date.parse(j.startedAt || "") || 0;
               return age < 2 * 3600 * 1000;
@@ -2780,8 +2819,17 @@
         }
         writeActiveCrawls(active);
         renderProgress();
+        if (fromClick && statusEl) {
+          statusEl.textContent = running
+            ? "Worker is " + running.status + ". Cards updated."
+            : "No worker running right now. Cards updated " +
+              new Date(nowIso).toLocaleTimeString() +
+              ".";
+        }
       } catch (_) {
+        active = active.map((j) => Object.assign(j, { checkedAt: nowIso }));
         renderProgress();
+        if (fromClick && statusEl) statusEl.textContent = "Refresh failed — try again.";
       }
     }
 
@@ -2829,9 +2877,12 @@
       });
     }
 
+    if (progressRefresh) {
+      progressRefresh.addEventListener("click", () => refreshLiveStatus(true));
+    }
     renderProgress();
-    refreshLiveStatus();
-    setInterval(refreshLiveStatus, 8000);
+    refreshLiveStatus(false);
+    setInterval(() => refreshLiveStatus(false), 8000);
 
     const hash = (location.hash || "").replace(/^#/, "");
     const m = /^site=(.+)$/i.exec(hash);

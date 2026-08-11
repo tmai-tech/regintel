@@ -52,7 +52,10 @@
       <div id="siteList" class="site-grid" role="list"></div>
       <div id="siteEmpty" class="empty" hidden>No sites yet. Enter a URL above and start a crawl.</div>
 
-      <h2 class="section-title" id="progressTitle" hidden>Crawl in progress</h2>
+      <div class="section-row" id="progressHead" hidden>
+        <h2 class="section-title" id="progressTitle">Crawl in progress</h2>
+        <button type="button" class="btn ghost" id="progressRefresh">Refresh status</button>
+      </div>
       <div id="progressList" class="site-grid" role="list"></div>
     </section>
 
@@ -118,6 +121,6 @@
     </button>
   </div>
 
-  <script src="assets/app.js?v=home2" defer></script>
+  <script src="assets/app.js?v=home3" defer></script>
 </body>
 </html>
