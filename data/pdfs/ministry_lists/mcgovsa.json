@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T16:51:44.043165+00:00",
+  "updated_at": "2026-08-11T16:53:26.393840+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
@@ -85,7 +85,7 @@
     "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/files?$top=5000",
     "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200"
   ],
-  "pages_visited": 875,
+  "pages_visited": 975,
   "page_errors_sample": [],
   "stats": {},
   "documents": [
