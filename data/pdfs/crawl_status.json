@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-11T16:53:28.079819+00:00",
+  "updated_at": "2026-08-11T16:55:07.177522+00:00",
   "phase": "discovering",
-  "message": "discovering mc.gov.sa: pages=975 listed=181",
+  "message": "discovering mc.gov.sa: pages=1075 listed=182",
   "run_id": "31511618348",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31511618348",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 3,
-    "ministry_listed": 181,
+    "ministry_listed": 182,
     "ministry_downloaded": 1,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 180
+    "ministry_to_download": 181
   },
   "by_jurisdiction": [
     {
@@ -39,12 +39,12 @@
     "jurisdiction": "Saudi Arabia - MC",
     "url": "https://mc.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 181,
+    "listed": 182,
     "downloaded": 1,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 180,
-    "pages_visited": 975
+    "to_download": 181,
+    "pages_visited": 1075
   },
   "recent_pdfs": [
     {
@@ -311,21 +311,21 @@
     "label": "Saudi Arabia - MC",
     "target_url": "https://mc.gov.sa/",
     "counts": {
-      "to_download": 180,
+      "to_download": 181,
       "downloaded": 1,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 181
+      "listed_total": 182
     },
     "discovery_methods": {
       "pw_search": 1,
       "sitemap": 1,
       "playwright_api": 5,
       "playwright_net": 1,
-      "href": 172,
+      "href": 173,
       "script": 1
     },
-    "pages_visited": 975,
+    "pages_visited": 1075,
     "sitemaps_used": [
       "https://mc.gov.sa/sitemap.xml",
       "https://mc.gov.sa/sitemap_index.xml",
@@ -342,6 +342,6 @@
     ],
     "datasources_found": 83,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-11T16:53:26.398491+00:00"
+    "updated_at": "2026-08-11T16:55:05.446731+00:00"
   }
 }
