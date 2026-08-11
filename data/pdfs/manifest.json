@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T13:36:24.178818+00:00",
+  "generated_at": "2026-08-11T16:26:44.596282+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -179269,6 +179269,20 @@
       "status": "downloaded",
       "scanned_pdf": false,
       "discovery_method": "href"
+    },
+    {
+      "url": "https://mc.gov.sa/ar/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_AR.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/",
+      "title": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MC/ministry/Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+      "bytes": 334245,
+      "sha256": "09b79acb73ae7868",
+      "downloaded_at": "2026-08-11T16:26:42.603104+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "pw_search"
     }
   ],
   "discovered": [

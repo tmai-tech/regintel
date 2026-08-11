@@ -1,5 +1,29 @@
 [
   {
+    "id": "09b79acb73ae7868",
+    "title": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+    "filename": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+    "jurisdiction": "Saudi Arabia - MC",
+    "source_kind": "ministry",
+    "law_type": "other",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "mc.gov.sa",
+    "filename_tags": [],
+    "source_page": "https://mc.gov.sa/",
+    "url": "https://mc.gov.sa/ar/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_AR.pdf",
+    "open_url": "https://mc.gov.sa/ar/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_AR.pdf",
+    "download_url": null,
+    "bytes": 334245,
+    "sha256": "09b79acb73ae7868",
+    "downloaded_at": "2026-08-11T16:26:42.603104+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_MC/ministry/Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf"
+  },
+  {
     "id": "2336e36faca52ff9",
     "title": "Download PDF",
     "filename": "Political_Process _concept_note_draft.pdf",
