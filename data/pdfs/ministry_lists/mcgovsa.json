@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-08-11T16:56:50.435980+00:00",
+  "updated_at": "2026-08-11T16:58:36.473521+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
   "host": "mc.gov.sa",
   "counts": {
-    "to_download": 181,
+    "to_download": 183,
     "downloaded": 1,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 182
+    "listed_total": 184
   },
   "discovery_methods": {
     "pw_search": 1,
     "sitemap": 1,
     "playwright_api": 5,
     "playwright_net": 1,
-    "href": 173,
+    "href": 175,
     "script": 1
   },
   "sitemaps_used": [
@@ -85,7 +85,7 @@
     "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/files?$top=5000",
     "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200"
   ],
-  "pages_visited": 1175,
+  "pages_visited": 1275,
   "page_errors_sample": [],
   "stats": {},
   "documents": [
@@ -3542,6 +3542,44 @@
       "host": "mc.gov.sa",
       "discovery_method": "href",
       "discovered_at": "2026-08-11T16:55:03.854659+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://mc.gov.sa/CSP/Documents/مشروع%20نظام%20مكافحة%20التستر.pdf",
+      "filename": "مشروع نظام مكافحة التستر.pdf",
+      "type": "PDF",
+      "title": "اضغط هنا​",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/",
+      "host": "mc.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-11T16:57:54.457593+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://mc.gov.sa/pr/Documents/PRP.pdf",
+      "filename": "PRP.pdf",
+      "type": "PDF",
+      "title": "اضغط هنا",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/",
+      "host": "mc.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-11T16:58:19.037713+00:00",
       "downloaded_at": null,
       "bytes": null,
       "scanned_pdf": false,

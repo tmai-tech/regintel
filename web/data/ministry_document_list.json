@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-08-11T16:56:50.435980+00:00",
+  "updated_at": "2026-08-11T16:58:36.473521+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
   "counts": {
-    "to_download": 181,
+    "to_download": 183,
     "downloaded": 1,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 182
+    "listed_total": 184
   },
   "discovery_methods": {
     "pw_search": 1,
     "sitemap": 1,
     "playwright_api": 5,
     "playwright_net": 1,
-    "href": 173,
+    "href": 175,
     "script": 1
   },
-  "pages_visited": 1175,
+  "pages_visited": 1275,
   "documents": [
     {
       "filename": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
@@ -2195,6 +2195,30 @@
     {
       "filename": "MCI-Guide.pdf",
       "url": "https://mc.gov.sa/Documents/MCI-Guide.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "اضغط هنا",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MC"
+    },
+    {
+      "filename": "مشروع نظام مكافحة التستر.pdf",
+      "url": "https://mc.gov.sa/CSP/Documents/مشروع%20نظام%20مكافحة%20التستر.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "اضغط هنا​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MC"
+    },
+    {
+      "filename": "PRP.pdf",
+      "url": "https://mc.gov.sa/pr/Documents/PRP.pdf",
       "type": "PDF",
       "status": "to_download",
       "download_error": null,
