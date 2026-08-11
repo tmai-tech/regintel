@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0b1220" />
   <meta name="color-scheme" content="dark" />
-  <meta name="description" content="RegIntel — SDAIA (Saudi Data & AI Authority) documents and PDFs. Works on iPhone Safari." />
+  <meta name="description" content="RegIntel — enter a ministry site, crawl its PDFs, read summaries." />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -14,117 +14,68 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icon-180.png" />
-  <title>RegIntel — Saudi ministry documents</title>
+  <title>RegIntel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=overflow3" />
+  <link rel="stylesheet" href="assets/styles.css?v=home1" />
 </head>
 <body>
   <div class="app">
-    <header class="top">
+    <header class="home-head">
       <div class="brand">
         <div class="logo" aria-hidden="true">⚖️</div>
         <div>
           <h1>RegIntel</h1>
-          <p class="subtitle">SDAIA · TGA · MC · MEWA — Saudi ministry documents</p>
+          <p class="subtitle">Deep-crawl a site. Open a card for PDFs, summaries, and translate.</p>
         </div>
       </div>
-      <div class="meta-bar" id="metaBar" role="status">Loading…</div>
     </header>
 
-    <aside class="install-banner" id="installBanner" hidden>
-      <div class="install-banner-text">
-        <strong>iPhone tip</strong>
-        <span>Share → <em>Add to Home Screen</em> for an app-like icon.</span>
-      </div>
-      <button type="button" class="btn ghost" id="dismissInstall" aria-label="Dismiss">Got it</button>
-    </aside>
+    <form class="crawl-bar" id="crawlForm">
+      <label class="sr-only" for="crawlUrl">Site URL to crawl</label>
+      <input
+        type="text"
+        id="crawlUrl"
+        name="url"
+        inputmode="url"
+        autocomplete="url"
+        placeholder="https://sdaia.gov.sa"
+        required
+      />
+      <button type="submit" class="btn primary" id="crawlStart">Start crawl</button>
+    </form>
+    <p class="crawl-status muted" id="crawlStatus" role="status"></p>
 
-    <nav class="tabs" role="tablist" aria-label="Main views">
-      <button type="button" class="tab active" role="tab" id="tabMinistries" aria-selected="true" aria-controls="panelMinistries" data-tab="ministries">Ministries</button>
-      <button type="button" class="tab" role="tab" id="tabPdfs" aria-selected="false" aria-controls="panelPdfs" data-tab="pdfs">PDFs</button>
-      <button type="button" class="tab" role="tab" id="tabSummary" aria-selected="false" aria-controls="panelSummary" data-tab="summary">Summary</button>
-      <button type="button" class="tab" role="tab" id="tabCrawl" aria-selected="false" aria-controls="panelCrawl" data-tab="crawl">Crawl</button>
-    </nav>
-
-    <!-- SDAIA authority -->
-    <section class="panel" id="panelMinistries" role="tabpanel" aria-labelledby="tabMinistries" aria-label="SDAIA">
-      <div class="toolbar sticky-toolbar">
-        <label class="sr-only" for="ministrySearch">Search ministries</label>
-        <input
-          type="search"
-          id="ministrySearch"
-          enterkeyhint="search"
-          autocomplete="off"
-          placeholder="Search ministry / authority name…"
-        />
-        <span id="ministryCount" class="muted row-count" aria-live="polite"></span>
-      </div>
-      <div id="ministryList" class="pdf-list" role="list"></div>
-      <div id="ministryEmpty" class="empty" hidden>No ministries match.</div>
+    <section id="viewHome">
+      <h2 class="section-title">Extracted sites</h2>
+      <div id="siteList" class="site-grid" role="list"></div>
+      <div id="siteEmpty" class="empty" hidden>No sites yet. Enter a URL above and start a crawl.</div>
     </section>
 
-    <!-- Crawl status -->
-    <section class="panel" id="panelCrawl" role="tabpanel" aria-labelledby="tabCrawl" aria-label="Crawl status" hidden>
-      <div class="toolbar sticky-toolbar">
-        <span class="muted" id="crawlUpdated">Loading crawl status…</span>
-        <button type="button" class="btn ghost" id="crawlRefresh">Refresh</button>
+    <section id="viewDetail" hidden>
+      <div class="detail-head">
+        <button type="button" class="btn ghost" id="detailBack">← Sites</button>
+        <div class="detail-title">
+          <h2 id="detailName">Site</h2>
+          <p class="muted" id="detailMeta"></p>
+        </div>
       </div>
-      <div id="crawlBody" class="crawl-panel"></div>
-    </section>
-
-    <!-- PDF catalog (existing) -->
-    <section class="panel" id="panelPdfs" role="tabpanel" aria-labelledby="tabPdfs" aria-label="PDF catalog" hidden>
       <div class="toolbar sticky-toolbar">
-        <label class="sr-only" for="search">Search PDFs</label>
-        <input
-          type="search"
-          id="search"
-          enterkeyhint="search"
-          autocomplete="off"
-          autocorrect="off"
-          spellcheck="false"
-          placeholder="Search title, jurisdiction, law type, link…"
-        />
-        <label class="sr-only" for="filterJ">Filter by jurisdiction / location</label>
-        <select id="filterJ" aria-label="Jurisdiction filter"></select>
-        <label class="sr-only" for="filterLaw">Filter by law type</label>
-        <select id="filterLaw" aria-label="Law type filter"></select>
-        <label class="sr-only" for="filterYear">Filter by year of latest update</label>
-        <select id="filterYear" aria-label="Year filter"></select>
-        <label class="sr-only" for="filterKind">Filter by source kind</label>
-        <select id="filterKind" aria-label="Source kind filter"></select>
-        <span id="rowCount" class="muted row-count" aria-live="polite"></span>
-      </div>
-      <div id="list" class="pdf-list" role="list"></div>
-      <div id="empty" class="empty" hidden>No PDFs match your filters.</div>
-    </section>
-
-    <!-- SDAIA PDF summaries (extracted) -->
-    <section class="panel" id="panelSummary" role="tabpanel" aria-labelledby="tabSummary" aria-label="SDAIA PDF summaries" hidden>
-      <div class="toolbar sticky-toolbar">
-        <label class="sr-only" for="summarySearch">Search summaries</label>
-        <input
-          type="search"
-          id="summarySearch"
-          enterkeyhint="search"
-          autocomplete="off"
-          placeholder="Search PDF title or summary…"
-        />
+        <label class="sr-only" for="summarySearch">Search PDFs</label>
+        <input type="search" id="summarySearch" enterkeyhint="search" autocomplete="off" placeholder="Search title or summary…" />
         <label class="sr-only" for="summaryFilter">Filter by summary status</label>
-        <select id="summaryFilter" aria-label="Summary status filter">
-          <option value="all">All SDAIA PDFs</option>
-          <option value="with" selected>With extracted summary</option>
+        <select id="summaryFilter" aria-label="Summary status">
+          <option value="all">All PDFs</option>
+          <option value="with" selected>With summary</option>
           <option value="pending">Summary pending</option>
         </select>
         <span id="summaryCount" class="muted row-count" aria-live="polite"></span>
       </div>
       <div id="summaryList" class="pdf-list" role="list"></div>
-      <div id="summaryEmpty" class="empty" hidden>No SDAIA PDF summaries match.</div>
+      <div id="summaryEmpty" class="empty" hidden>No PDFs for this site yet.</div>
     </section>
 
-    <!-- Full PDF text translation modal -->
     <div class="pdf-xlate-modal" id="pdfXlateModal" hidden>
       <div class="pdf-xlate-backdrop" id="pdfXlateBackdrop"></div>
       <div class="pdf-xlate-dialog" role="dialog" aria-modal="true" aria-labelledby="pdfXlateTitle">
@@ -137,14 +88,8 @@
         <div class="pdf-xlate-body" id="pdfXlateBody"></div>
       </div>
     </div>
-
-    <footer class="foot">
-      <span>Open on any phone browser · data from RegIntel collector</span>
-      <a href="https://github.com/tmai-tech/regintel" rel="noopener">GitHub</a>
-    </footer>
   </div>
 
-  <!-- Eva floating chat (bottom-right lawyer avatar) -->
   <div class="eva-widget" id="evaWidget">
     <div class="eva-panel" id="evaPanel" hidden>
       <header class="eva-panel-head">
@@ -160,13 +105,7 @@
       <div class="eva-chat" id="evaChat" aria-live="polite"></div>
       <form class="eva-compose" id="evaForm">
         <label class="sr-only" for="evaInput">Message Eva</label>
-        <input
-          type="text"
-          id="evaInput"
-          autocomplete="off"
-          enterkeyhint="send"
-          placeholder="Type your question…"
-        />
+        <input type="text" id="evaInput" autocomplete="off" enterkeyhint="send" placeholder="Type your question…" />
         <button type="submit" class="btn primary" id="evaSend">Send</button>
       </form>
     </div>
@@ -176,7 +115,6 @@
     </button>
   </div>
 
-  <!-- cache-bust when Eva chat logic changes -->
-  <script src="assets/app.js?v=xlate-one1" defer></script>
+  <script src="assets/app.js?v=home1" defer></script>
 </body>
 </html>

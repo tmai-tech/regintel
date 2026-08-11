@@ -1006,6 +1006,22 @@
     return isAllowedSaudiMinistryRow(p);
   }
 
+  function pdfMatchesSite(p, site) {
+    if (!site) return isAllowedSaudiMinistryRow(p);
+    const code = String(site.code || "").toLowerCase();
+    const j = String((p && p.jurisdiction) || "").toLowerCase();
+    const h = hostOf((p && (p.open_url || p.url || p.host)) || "");
+    const mh = hostOf(site.url || "") || String(site.host || "").replace(/^www\./i, "").toLowerCase();
+    if (code && (j.includes("saudi arabia - " + code) || j === code || j.includes(code))) {
+      return true;
+    }
+    if (mh && h && (h === mh || h.endsWith("." + mh) || mh.endsWith("." + h))) return true;
+    if (code && (h.includes(code) || String((p && p.host) || "").toLowerCase().includes(code))) {
+      return true;
+    }
+    return false;
+  }
+
   function normalizePdfKey(u) {
     try {
       const x = new URL(String(u || "").trim());
@@ -1023,12 +1039,13 @@
     }
   }
 
-  /** Merge SDAIA catalog PDFs with Eva extractive summaries for the Summary tab. */
-  function buildSdaiaSummaryRows(pdfs, evaSummaries) {
+  /** Merge catalog PDFs with Eva extractive summaries. Optional site filter. */
+  function buildSdaiaSummaryRows(pdfs, evaSummaries, site) {
+    const pred = (p) => pdfMatchesSite(p, site);
     const byUrl = new Map();
     const byId = new Map();
     for (const e of evaSummaries || []) {
-      if (!e || !isSdaiaRow(e)) continue;
+      if (!e || !pred(e)) continue;
       const url = e.open_url || e.url || "";
       const k = normalizePdfKey(url);
       if (k) byUrl.set(k, e);
@@ -1037,7 +1054,7 @@
     const rows = [];
     const seen = new Set();
     for (const p of pdfs || []) {
-      if (!isSdaiaRow(p)) continue;
+      if (!pred(p)) continue;
       const url = p.open_url || p.url || "";
       const k = normalizePdfKey(url);
       const eva = (k && byUrl.get(k)) || (p.id && byId.get(String(p.id))) || null;
@@ -1072,7 +1089,7 @@
     }
     // Eva-only SDAIA rows not in catalog
     for (const e of evaSummaries || []) {
-      if (!e || !isSdaiaRow(e)) continue;
+      if (!e || !pred(e)) continue;
       const url = e.open_url || e.url || "";
       const k = normalizePdfKey(url);
       const id = String(e.id || k);
@@ -2030,7 +2047,9 @@
     });
   }
 
-  function initSummaries(pdfs, evaSummaries) {
+  const summaryView = { rows: [], withSum: 0, wired: false };
+
+  function initSummaries(pdfs, evaSummaries, site) {
     const list = document.getElementById("summaryList");
     const empty = document.getElementById("summaryEmpty");
     const countEl = document.getElementById("summaryCount");
@@ -2038,10 +2057,12 @@
     const filter = document.getElementById("summaryFilter");
     if (!list) return;
 
-    const rows = buildSdaiaSummaryRows(pdfs, evaSummaries);
-    const withSum = rows.filter((r) => r.has_summary).length;
+    summaryView.rows = buildSdaiaSummaryRows(pdfs, evaSummaries, site);
+    summaryView.withSum = summaryView.rows.filter((r) => r.has_summary).length;
 
     function render() {
+      const rows = summaryView.rows;
+      const withSum = summaryView.withSum;
       const q = (search && search.value ? search.value : "").trim().toLowerCase();
       const mode = (filter && filter.value) || "with";
       let filtered = rows;
@@ -2068,7 +2089,7 @@
           withSum +
           " with summary · " +
           rows.length +
-          " SDAIA PDFs";
+          " PDFs";
       }
       if (!filtered.length) {
         list.innerHTML = "";
@@ -2081,13 +2102,16 @@
     }
 
     let t = null;
-    if (search) {
-      search.addEventListener("input", () => {
-        clearTimeout(t);
-        t = setTimeout(render, 120);
-      });
+    if (!summaryView.wired) {
+      summaryView.wired = true;
+      if (search) {
+        search.addEventListener("input", () => {
+          clearTimeout(t);
+          t = setTimeout(render, 120);
+        });
+      }
+      if (filter) filter.addEventListener("change", render);
     }
-    if (filter) filter.addEventListener("change", render);
     render();
   }
   function initCrawl() {
@@ -2433,86 +2457,257 @@
     render();
   }
 
+  function defaultMinistries() {
+    return [
+      {
+        code: "SDAIA",
+        name: "Saudi Data and Artificial Intelligence Authority (SDAIA)",
+        url: "https://sdaia.gov.sa",
+      },
+      {
+        code: "TGA",
+        name: "Transport General Authority (TGA)",
+        url: "https://tga.gov.sa",
+      },
+      {
+        code: "MC",
+        name: "Ministry of Commerce (MC)",
+        url: "https://mc.gov.sa",
+      },
+      {
+        code: "MEWA",
+        name: "Ministry of Environment, Water and Agriculture (MEWA)",
+        url: "https://mewa.gov.sa",
+      },
+    ];
+  }
+
+  function crawlLabelFromUrl(raw) {
+    const h = hostOf(raw);
+    if (h.includes("sdaia")) return "Saudi Arabia - SDAIA";
+    if (h.includes("mewa")) return "Saudi Arabia - MEWA";
+    if (h.includes("tga.gov")) return "Saudi Arabia - TGA";
+    if (h.includes("mc.gov")) return "Saudi Arabia - MC";
+    return h ? "Ministry - " + h : "Ministry";
+  }
+
+  function collectSites(ministries, pdfs) {
+    const known = (ministries && ministries.length ? ministries : defaultMinistries()).map((m) => ({
+      code: String(m.code || hostOf(m.url) || "SITE").toUpperCase(),
+      name: m.name || m.code || hostOf(m.url),
+      url: m.url || "",
+    }));
+    const byCode = new Map(known.map((s) => [s.code, { ...s, count: 0, summaries: 0 }]));
+    for (const p of pdfs || []) {
+      let hit = known.find((s) => pdfMatchesSite(p, s));
+      if (!hit) {
+        const h = hostOf(p.open_url || p.url || "") || String(p.host || "").replace(/^www\./i, "");
+        if (!h) continue;
+        const code = h.split(".")[0].toUpperCase();
+        if (!byCode.has(code)) {
+          byCode.set(code, { code, name: code, url: "https://" + h, count: 0, summaries: 0 });
+        }
+        hit = byCode.get(code);
+      }
+      const row = byCode.get(hit.code);
+      if (!row) continue;
+      row.count += 1;
+    }
+    return [...byCode.values()].sort((a, b) => b.count - a.count || a.code.localeCompare(b.code));
+  }
+
+  async function dispatchMinistryCrawl(siteUrl) {
+    const url = siteUrl.startsWith("http") ? siteUrl : "https://" + siteUrl;
+    const label = crawlLabelFromUrl(url);
+    const payload = {
+      url,
+      label,
+      max_pages: "2000",
+      delay: "0.25",
+      discover_only: "false",
+    };
+    const apiBase = (
+      window.REGINTEL_CRAWL_API ||
+      window.REGINTEL_EVA_API ||
+      (typeof localStorage !== "undefined" &&
+        (localStorage.getItem("regintel_crawl_api") || localStorage.getItem("regintel_eva_api"))) ||
+      ""
+    ).replace(/\/$/, "");
+    if (apiBase) {
+      const res = await fetch(apiBase + "/api/crawl", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || "Crawl API HTTP " + res.status);
+      return data;
+    }
+    const token =
+      (typeof localStorage !== "undefined" && localStorage.getItem("regintel_gh_token")) || "";
+    if (token) {
+      const res = await fetch(
+        "https://api.github.com/repos/tmai-tech/regintel/actions/workflows/crawl-ministry.yml/dispatches",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: "Bearer " + token,
+            "X-GitHub-Api-Version": "2022-11-28",
+          },
+          body: JSON.stringify({ ref: "main", inputs: payload }),
+        },
+      );
+      if (res.status !== 204 && !res.ok) {
+        const t = await res.text();
+        throw new Error("GitHub dispatch failed: " + (t || res.status));
+      }
+      return { ok: true, via: "github" };
+    }
+    const err = new Error("no-backend");
+    err.workflow =
+      "https://github.com/tmai-tech/regintel/actions/workflows/crawl-ministry.yml";
+    throw err;
+  }
+
+  function initHome(pdfs, ministries, evaSummaries) {
+    const home = document.getElementById("viewHome");
+    const detail = document.getElementById("viewDetail");
+    const siteList = document.getElementById("siteList");
+    const siteEmpty = document.getElementById("siteEmpty");
+    const form = document.getElementById("crawlForm");
+    const urlInput = document.getElementById("crawlUrl");
+    const statusEl = document.getElementById("crawlStatus");
+    const back = document.getElementById("detailBack");
+    const detailName = document.getElementById("detailName");
+    const detailMeta = document.getElementById("detailMeta");
+    if (!siteList) return;
+
+    const sites = collectSites(ministries, pdfs);
+
+    function showHome() {
+      if (home) home.hidden = false;
+      if (detail) detail.hidden = true;
+      try {
+        history.replaceState(null, "", location.pathname + location.search);
+      } catch (_) {
+        /* ignore */
+      }
+    }
+
+    function openSite(site) {
+      if (home) home.hidden = true;
+      if (detail) detail.hidden = false;
+      if (detailName) detailName.textContent = site.code || site.name;
+      if (detailMeta) {
+        const withSum = (evaSummaries || []).filter(
+          (e) => pdfMatchesSite(e, site) && String(e.summary || "").trim(),
+        ).length;
+        detailMeta.textContent =
+          site.count +
+          " PDFs · " +
+          withSum +
+          " summaries · " +
+          (site.url || "");
+      }
+      initSummaries(pdfs, evaSummaries, site);
+      try {
+        history.replaceState(null, "", "#site=" + encodeURIComponent(site.code));
+      } catch (_) {
+        /* ignore */
+      }
+    }
+
+    siteList.innerHTML = sites
+      .map((s) => {
+        return `<button type="button" class="site-card" role="listitem" data-code="${escapeAttr(s.code)}">
+          <div>
+            <div class="site-card-name">${escapeHtml(s.code)}</div>
+            <div class="site-card-host">${escapeHtml(s.name || s.url || "")}</div>
+          </div>
+          <div class="site-card-count">
+            <strong>${escapeHtml(String(s.count))}</strong>
+            <span>PDFs</span>
+          </div>
+        </button>`;
+      })
+      .join("");
+    if (siteEmpty) siteEmpty.hidden = sites.some((s) => s.count > 0) || sites.length > 0;
+    siteList.querySelectorAll(".site-card").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const code = btn.getAttribute("data-code");
+        const site = sites.find((s) => s.code === code);
+        if (site) openSite(site);
+      });
+    });
+
+    if (back) back.addEventListener("click", showHome);
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const raw = (urlInput && urlInput.value ? urlInput.value : "").trim();
+        if (!raw) return;
+        if (statusEl) statusEl.textContent = "Starting deep crawl…";
+        try {
+          const data = await dispatchMinistryCrawl(raw);
+          if (statusEl) {
+            statusEl.textContent =
+              "Crawl started for " +
+              raw +
+              (data && data.html_url ? " · " + data.html_url : " · watch GitHub Actions.");
+          }
+        } catch (err) {
+          if (err && err.message === "no-backend") {
+            if (statusEl) {
+              statusEl.innerHTML =
+                "This Pages site cannot start Actions by itself. " +
+                `<a class="link" href="${escapeAttr(err.workflow)}" target="_blank" rel="noopener">Open the crawl workflow</a>` +
+                " and paste the URL, or run Eva API locally (<code>tools/eva_server.py</code>) so Start crawl can dispatch.";
+            }
+            if (err.workflow) window.open(err.workflow, "_blank", "noopener");
+          } else if (statusEl) {
+            statusEl.textContent = "Could not start crawl: " + (err.message || err);
+          }
+        }
+      });
+    }
+
+    const hash = (location.hash || "").replace(/^#/, "");
+    const m = /^site=(.+)$/i.exec(hash);
+    if (m) {
+      const site = sites.find((s) => s.code.toLowerCase() === decodeURIComponent(m[1]).toLowerCase());
+      if (site) openSite(site);
+    }
+  }
+
   async function load() {
-    const metaBar = document.getElementById("metaBar");
-    showInstallBannerIfNeeded();
-    setupTabs();
-
-    let laws = [];
     let pdfs = [];
-
     let ministries = [];
     let evaSummaries = [];
     let evaMeta = null;
+    const statusEl = document.getElementById("crawlStatus");
     try {
-      const [lawsRes, pdfsRes, minRes, evaRes, evaMetaRes] = await Promise.all([
-        fetchJson("data/laws_catalog.json").catch(() => null),
+      const [pdfsRes, minRes, evaRes, evaMetaRes] = await Promise.all([
         fetchJson("data/pdfs_catalog.json"),
         fetchJson("data/saudi_ministries.json").catch(() => []),
         fetchJson("data/eva_summaries.json").catch(() => []),
         fetchJson("data/eva_meta.json").catch(() => null),
       ]);
-      if (Array.isArray(lawsRes) && lawsRes.length) {
-        laws = lawsRes;
-      } else {
-        // Fallback: client-side merge if catalog missing
-        const [u, t, s] = await Promise.all([
-          fetchJson("data/updates.json").catch(() => []),
-          fetchJson("data/tracking.json").catch(() => []),
-          fetchJson("data/primary_sources.json").catch(() => []),
-        ]);
-        laws = legacyBuildLaws(
-          Array.isArray(u) ? u : [],
-          Array.isArray(t) ? t : [],
-          Array.isArray(s) ? s : [],
-        );
-      }
       if (!Array.isArray(pdfsRes)) throw new Error("PDF catalog is not a list");
-      // Site allowlist: SDAIA + TGA + MC + MEWA
       pdfs = pdfsRes.filter((p) => isAllowedSaudiMinistryRow(p));
       const allowCodes = new Set(["SDAIA", "TGA", "MC", "MEWA"]);
       ministries = (Array.isArray(minRes) ? minRes : []).filter((m) =>
         allowCodes.has(String(m.code || "").toUpperCase()),
       );
-      if (!ministries.length) {
-        ministries = [
-          {
-            code: "SDAIA",
-            name: "Saudi Data and Artificial Intelligence Authority (SDAIA)",
-            url: "https://sdaia.gov.sa",
-            country: "Saudi Arabia",
-            authority_type: "Authority",
-          },
-          {
-            code: "TGA",
-            name: "Transport General Authority (TGA)",
-            url: "https://tga.gov.sa",
-            country: "Saudi Arabia",
-            authority_type: "Authority",
-          },
-          {
-            code: "MC",
-            name: "Ministry of Commerce (MC)",
-            url: "https://mc.gov.sa",
-            country: "Saudi Arabia",
-            authority_type: "Ministry",
-          },
-          {
-            code: "MEWA",
-            name: "Ministry of Environment, Water and Agriculture (MEWA)",
-            url: "https://mewa.gov.sa",
-            country: "Saudi Arabia",
-            authority_type: "Ministry",
-          },
-        ];
-      }
+      if (!ministries.length) ministries = defaultMinistries();
       evaSummaries = (Array.isArray(evaRes) ? evaRes : []).filter((e) =>
         isAllowedSaudiMinistryRow(e),
       );
       evaMeta = evaMetaRes;
     } catch (e) {
-      metaBar.textContent = "Error";
-      const host = document.getElementById("ministryList") || document.getElementById("list");
+      if (statusEl) statusEl.textContent = "Failed to load catalog: " + (e.message || e);
+      const host = document.getElementById("siteList");
       if (host) {
         host.innerHTML =
           '<div class="error-state">Failed to load data.<br/>' +
@@ -2522,22 +2717,8 @@
       return;
     }
 
-    // Meta: catalog (PDFs tab) is not the same as discovered master-list count
-    const withSummaries = evaSummaries.filter((e) => e && String(e.summary || "").trim()).length;
-    metaBar.textContent =
-      "Saudi ministries · " +
-      pdfs.length +
-      " PDFs · " +
-      withSummaries +
-      " summaries · " +
-      ministries.length +
-      " authorities";
-
-    initMinistries(ministries, pdfs);
+    initHome(pdfs, ministries, evaSummaries);
     initEva(evaSummaries, evaMeta, pdfs.length);
-    initPdfs(pdfs);
-    initSummaries(pdfs, evaSummaries);
-    initCrawl();
   }
 
 

@@ -9,11 +9,14 @@ Endpoints:
   GET  /health
   GET  /api/eva/meta
   POST /api/eva/ask  {"question":"...","k":8}
+  POST /api/crawl    {"url":"https://…","label":"Saudi Arabia - MEWA"}
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
+import subprocess
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -71,6 +74,58 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         path = urlparse(self.path).path
+        if path == "/api/crawl":
+            n = int(self.headers.get("Content-Length") or 0)
+            raw = self.rfile.read(n) if n else b"{}"
+            try:
+                payload = json.loads(raw.decode("utf-8"))
+            except json.JSONDecodeError:
+                return self._json(400, {"error": "invalid json"})
+            url = (payload.get("url") or "").strip()
+            if not url.startswith("http"):
+                return self._json(400, {"error": "url required (https://…)"})
+            label = (payload.get("label") or "").strip()
+            max_pages = str(payload.get("max_pages") or "2000")
+            delay = str(payload.get("delay") or "0.25")
+            repo = os.environ.get("REGINTEL_GH_REPO") or "tmai-tech/regintel"
+            cmd = [
+                "gh",
+                "workflow",
+                "run",
+                "crawl-ministry.yml",
+                "--repo",
+                repo,
+                "-f",
+                f"url={url}",
+                "-f",
+                f"label={label}",
+                "-f",
+                f"max_pages={max_pages}",
+                "-f",
+                f"delay={delay}",
+                "-f",
+                "discover_only=false",
+            ]
+            try:
+                proc = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+            except FileNotFoundError:
+                return self._json(500, {"error": "gh CLI not installed"})
+            except Exception as e:
+                return self._json(500, {"error": str(e)[:300]})
+            if proc.returncode != 0:
+                return self._json(
+                    500,
+                    {"error": (proc.stderr or proc.stdout or "gh workflow run failed")[:500]},
+                )
+            return self._json(
+                200,
+                {
+                    "ok": True,
+                    "url": url,
+                    "label": label,
+                    "html_url": f"https://github.com/{repo}/actions/workflows/crawl-ministry.yml",
+                },
+            )
         if path != "/api/eva/ask":
             return self._json(404, {"error": "not found"})
         n = int(self.headers.get("Content-Length") or 0)

@@ -914,3 +914,119 @@ a.link:hover { text-decoration: underline; }
   }
   .install-banner { display: none !important; }
 }
+
+/* —— Clean home: URL bar + site cards + detail —— */
+.home-head { margin-bottom: 18px; }
+.section-title {
+  margin: 8px 0 12px;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.crawl-bar {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  margin-bottom: 8px;
+}
+.crawl-bar input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: var(--tap);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  padding: 12px 14px;
+  font: 0.95rem var(--font);
+}
+.crawl-bar input:focus {
+  outline: 2px solid rgba(91, 140, 255, 0.55);
+  border-color: #3a5288;
+}
+.crawl-bar .btn.primary {
+  flex: 0 0 auto;
+  min-width: 8.5rem;
+}
+.crawl-status {
+  min-height: 1.3em;
+  margin: 0 0 20px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.site-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 560px) {
+  .site-grid { grid-template-columns: 1fr 1fr; }
+}
+.site-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  width: 100%;
+  min-width: 0;
+  box-shadow: var(--shadow);
+}
+.site-card:hover {
+  border-color: #3a5288;
+  background: var(--row-hover);
+}
+.site-card:focus-visible {
+  outline: 2px solid rgba(91, 140, 255, 0.55);
+  outline-offset: 2px;
+}
+.site-card-name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.site-card-host {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  overflow-wrap: anywhere;
+}
+.site-card-count {
+  flex-shrink: 0;
+  text-align: right;
+}
+.site-card-count strong {
+  display: block;
+  font-size: 1.55rem;
+  font-family: var(--mono);
+  color: var(--accent2);
+  line-height: 1.1;
+}
+.site-card-count span {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.detail-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.detail-title { min-width: 0; flex: 1; }
+.detail-title h2 {
+  margin: 0;
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  overflow-wrap: anywhere;
+}
+.detail-title .muted { margin: 4px 0 0; }
