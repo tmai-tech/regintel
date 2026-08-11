@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-08-11T17:05:54.933832+00:00",
+  "updated_at": "2026-08-11T17:07:45.992097+00:00",
   "phase": "discovering",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
   "host": "mc.gov.sa",
   "counts": {
-    "to_download": 187,
+    "to_download": 189,
     "downloaded": 1,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 188
+    "listed_total": 190
   },
   "discovery_methods": {
     "pw_search": 1,
     "sitemap": 1,
     "playwright_api": 5,
     "playwright_net": 1,
-    "href": 179,
+    "href": 181,
     "script": 1
   },
   "sitemaps_used": [
@@ -85,7 +85,7 @@
     "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/files?$top=5000",
     "https://mc.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Documents/Mewa')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200"
   ],
-  "pages_visited": 1650,
+  "pages_visited": 1750,
   "page_errors_sample": [],
   "stats": {},
   "documents": [
@@ -3656,6 +3656,44 @@
       "host": "mc.gov.sa",
       "discovery_method": "href",
       "discovered_at": "2026-08-11T16:59:26.721298+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://mc.gov.sa/DOC/PCP.pdf",
+      "filename": "PCP.pdf",
+      "type": "PDF",
+      "title": "اضغط هنا",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/",
+      "host": "mc.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-11T17:06:06.441071+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://mc.gov.sa/D/RCC.pdf",
+      "filename": "RCC.pdf",
+      "type": "PDF",
+      "title": "RCC.pdf",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/",
+      "host": "mc.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-11T17:07:07.789870+00:00",
       "downloaded_at": null,
       "bytes": null,
       "scanned_pdf": false,
