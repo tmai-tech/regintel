@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-11T17:37:12.422476+00:00",
+  "updated_at": "2026-08-11T17:37:35.896302+00:00",
   "phase": "downloading",
-  "message": "downloading 180/190 for Saudi Arabia - MC (ok=177 scanned=0 fail=3)",
+  "message": "downloading 190/190 for Saudi Arabia - MC (ok=182 scanned=1 fail=7)",
   "run_id": "31511618348",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31511618348",
   "totals": {
-    "pdfs": 1226,
+    "pdfs": 1408,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 3,
     "ministry_listed": 190,
-    "ministry_downloaded": 177,
-    "ministry_failed": 3,
-    "ministry_scanned": 0,
-    "ministry_to_download": 10
+    "ministry_downloaded": 182,
+    "ministry_failed": 7,
+    "ministry_scanned": 1,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -26,130 +26,120 @@
     },
     {
       "jurisdiction": "Saudi Arabia - MC",
-      "count": 1
+      "count": 183
     }
   ],
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1226
+      "count": 1408
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - MC",
-    "url": "https://mc.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 190,
-    "downloaded": 177,
-    "download_failed": 3,
-    "scanned_pdf": 0,
-    "to_download": 10,
-    "pages_visited": 2000
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
-      "title": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+      "title": "RCC.pdf",
       "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_AR.pdf",
-      "downloaded_at": "2026-08-11T16:26:42.603104+00:00",
+      "url": "https://mc.gov.sa/D/RCC.pdf",
+      "downloaded_at": "2026-08-11T17:37:31.882643+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download PDF",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://11thworldwaterforum.mewa.gov.sa/Political_Process _concept_note_draft.pdf",
-      "downloaded_at": "2026-08-10T13:36:22.312249+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/DOC/PCP.pdf",
+      "downloaded_at": "2026-08-11T17:37:29.870897+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download PDF",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://11thworldwaterforum.mewa.gov.sa/010526_Regional_Process_TOR_11th_World_Water_Forum_Ver.4.pdf",
-      "downloaded_at": "2026-08-10T13:36:19.303197+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ERECS/Documents/ERECS.pdf",
+      "downloaded_at": "2026-08-11T17:37:24.159415+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download PDF",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://11thworldwaterforum.mewa.gov.sa/TOR_Thematic_Framework_TP_11th_Forum_171125.pdf",
-      "downloaded_at": "2026-08-10T13:36:16.067335+00:00",
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/pr/Documents/PRP.pdf",
+      "downloaded_at": "2026-08-11T17:37:22.303365+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download PDF",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://11thworldwaterforum.mewa.gov.sa/Thematic_Framework.pdf",
-      "downloaded_at": "2026-08-10T13:36:15.001563+00:00",
+      "title": "اضغط هنا​",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/CSP/Documents/مشروع%20نظام%20مكافحة%20التستر.pdf",
+      "downloaded_at": "2026-08-11T17:37:20.494367+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Download",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://11thworldwaterforum.mewa.gov.sa/11th World Water Forum Brand GuideLine.pdf",
-      "downloaded_at": "2026-08-10T13:36:13.938961+00:00",
+      "title": "2.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/2.pdf",
+      "downloaded_at": "2026-08-11T17:37:17.875455+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "تحميل الملف",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/media/mediacenter/7ad9d4f0f0ff4316a181ec8524ee028e.pdf",
-      "downloaded_at": "2026-08-10T13:35:54.793876+00:00",
+      "title": "100.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/100.pdf",
+      "downloaded_at": "2026-08-11T17:37:10.728854+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF · 5.4 MB",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/assets/brand/presentation-ar.pdf",
-      "downloaded_at": "2026-08-10T13:35:53.497913+00:00",
+      "title": "99.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/99.pdf",
+      "downloaded_at": "2026-08-11T17:37:07.174260+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF · 5.3 MB",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/assets/brand/presentation-en.pdf",
-      "downloaded_at": "2026-08-10T13:35:44.394422+00:00",
+      "title": "98.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/98.pdf",
+      "downloaded_at": "2026-08-11T17:37:05.871917+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF · 0.3 MB",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/assets/brand/brand-pattern.pdf",
-      "downloaded_at": "2026-08-10T13:35:35.595399+00:00",
+      "title": "97.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/97.pdf",
+      "downloaded_at": "2026-08-11T17:37:03.585480+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF · 0.5 MB",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/assets/brand/icons.pdf",
-      "downloaded_at": "2026-08-10T13:35:34.737855+00:00",
+      "title": "96.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/96.pdf",
+      "downloaded_at": "2026-08-11T17:37:01.207190+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF · 0.1 MB",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/assets/brand/color-palette.pdf",
-      "downloaded_at": "2026-08-10T13:35:31.694690+00:00",
+      "title": "95.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/95.pdf",
+      "downloaded_at": "2026-08-11T17:36:58.993096+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "PDF · 3.3 MB",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://swweek.mewa.gov.sa/assets/brand/brand-guidelines.pdf",
-      "downloaded_at": "2026-08-10T13:35:31.235251+00:00",
+      "title": "94.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/94.pdf",
+      "downloaded_at": "2026-08-11T17:36:57.689279+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "دليل الخدمات الالكترونية.pdf",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Documents/MEWA%20Case%20Studies%20for%20ESCWA/e-Services/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-10T13:35:24.276349+00:00",
+      "title": "93.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/93.pdf",
+      "downloaded_at": "2026-08-11T17:36:55.232405+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "المؤشرات العلمية على فوائد الأغذية العضوية لصحة الإنسان",
-      "jurisdiction": "Saudi Arabia - MEWA",
-      "url": "https://mewa.gov.sa/ar/Ministry/Agencies/AgencyofAgriculture/OrganicCompain/Documents/Untitled-1.pdf",
-      "downloaded_at": "2026-08-10T13:35:21.405071+00:00",
+      "title": "92.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/92.pdf",
+      "downloaded_at": "2026-08-11T17:36:53.032154+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -306,15 +296,15 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-11T16:26:44.596282+00:00",
+  "manifest_generated_at": "2026-08-11T17:37:33.724508+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MC",
     "target_url": "https://mc.gov.sa/",
     "counts": {
-      "to_download": 10,
-      "downloaded": 177,
-      "download_failed": 3,
-      "scanned_pdf": 0,
+      "to_download": 0,
+      "downloaded": 182,
+      "download_failed": 7,
+      "scanned_pdf": 1,
       "listed_total": 190
     },
     "discovery_methods": {
@@ -326,22 +316,7 @@
       "script": 1
     },
     "pages_visited": 2000,
-    "sitemaps_used": [
-      "https://mc.gov.sa/sitemap.xml",
-      "https://mc.gov.sa/sitemap_index.xml",
-      "https://mc.gov.sa/Sitemap.xml",
-      "https://www.mc.gov.sa/sitemap.xml",
-      "https://mc.gov.sa/en/sitemap.xml",
-      "https://mc.gov.sa/ar/sitemap.xml",
-      "https://mc.gov.sa:443/sitemap0.xml",
-      "https://mc.gov.sa:443/sitemap_mobile0.xml",
-      "https://mc.gov.sa/en/Pages/SiteMap.aspx",
-      "https://mc.gov.sa/en/Pages/SiteMapChart.aspx",
-      "https://mc.gov.sa:443/en/Pages/SiteMap.aspx",
-      "https://mc.gov.sa:443/en/Pages/SiteMapChart.aspx"
-    ],
-    "datasources_found": 83,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-11T17:37:10.744138+00:00"
+    "updated_at": "2026-08-11T17:37:34.020789+00:00"
   }
 }
