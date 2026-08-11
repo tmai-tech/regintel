@@ -2516,6 +2516,44 @@
     return [...byCode.values()].sort((a, b) => b.count - a.count || a.code.localeCompare(b.code));
   }
 
+  function siteCodeFromUrl(raw) {
+    const h = hostOf(raw);
+    if (h.includes("sdaia")) return "SDAIA";
+    if (h.includes("mewa")) return "MEWA";
+    if (h.includes("tga.gov")) return "TGA";
+    if (h.includes("mc.gov")) return "MC";
+    return (h.split(".")[0] || "SITE").toUpperCase();
+  }
+
+  const ACTIVE_CRAWLS_KEY = "regintel_active_crawls_v1";
+  function readActiveCrawls() {
+    try {
+      const raw = localStorage.getItem(ACTIVE_CRAWLS_KEY);
+      const arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    } catch {
+      return [];
+    }
+  }
+  function writeActiveCrawls(list) {
+    try {
+      localStorage.setItem(ACTIVE_CRAWLS_KEY, JSON.stringify(list.slice(0, 8)));
+    } catch {
+      /* ignore */
+    }
+  }
+  function isLivePhase(phase) {
+    const p = String(phase || "").toLowerCase();
+    return (
+      p === "discovering" ||
+      p === "downloading" ||
+      p === "listed" ||
+      p === "starting" ||
+      p === "running" ||
+      p === "queued"
+    );
+  }
+
   async function dispatchMinistryCrawl(siteUrl) {
     const url = siteUrl.startsWith("http") ? siteUrl : "https://" + siteUrl;
     const label = crawlLabelFromUrl(url);
@@ -2526,22 +2564,31 @@
       delay: "0.25",
       discover_only: "false",
     };
-    const apiBase = (
-      window.REGINTEL_CRAWL_API ||
-      window.REGINTEL_EVA_API ||
-      (typeof localStorage !== "undefined" &&
-        (localStorage.getItem("regintel_crawl_api") || localStorage.getItem("regintel_eva_api"))) ||
-      ""
-    ).replace(/\/$/, "");
-    if (apiBase) {
-      const res = await fetch(apiBase + "/api/crawl", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(data.error || "Crawl API HTTP " + res.status);
-      return data;
+    const bases = [
+      window.REGINTEL_CRAWL_API,
+      window.REGINTEL_EVA_API,
+      typeof localStorage !== "undefined" && localStorage.getItem("regintel_crawl_api"),
+      typeof localStorage !== "undefined" && localStorage.getItem("regintel_eva_api"),
+      "http://127.0.0.1:8787",
+      "",
+    ]
+      .map((s) => String(s || "").replace(/\/$/, ""))
+      .filter((v, i, a) => a.indexOf(v) === i);
+
+    let lastErr = "";
+    for (const apiBase of bases) {
+      try {
+        const res = await fetch(apiBase + "/api/crawl", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok) return Object.assign({ ok: true, url, label }, data);
+        lastErr = data.error || "HTTP " + res.status;
+      } catch (e) {
+        lastErr = e.message || String(e);
+      }
     }
     const token =
       (typeof localStorage !== "undefined" && localStorage.getItem("regintel_gh_token")) || "";
@@ -2558,15 +2605,11 @@
           body: JSON.stringify({ ref: "main", inputs: payload }),
         },
       );
-      if (res.status !== 204 && !res.ok) {
-        const t = await res.text();
-        throw new Error("GitHub dispatch failed: " + (t || res.status));
-      }
-      return { ok: true, via: "github" };
+      if (res.status === 204 || res.ok) return { ok: true, via: "github", url, label };
+      lastErr = await res.text();
     }
-    const err = new Error("no-backend");
-    err.workflow =
-      "https://github.com/tmai-tech/regintel/actions/workflows/crawl-ministry.yml";
+    const err = new Error(lastErr || "no-backend");
+    err.code = "no-backend";
     throw err;
   }
 
@@ -2581,9 +2624,12 @@
     const back = document.getElementById("detailBack");
     const detailName = document.getElementById("detailName");
     const detailMeta = document.getElementById("detailMeta");
+    const progressList = document.getElementById("progressList");
+    const progressTitle = document.getElementById("progressTitle");
     if (!siteList) return;
 
     const sites = collectSites(ministries, pdfs);
+    let active = readActiveCrawls();
 
     function showHome() {
       if (home) home.hidden = false;
@@ -2618,7 +2664,8 @@
       }
     }
 
-    siteList.innerHTML = sites
+    const extracted = sites.filter((s) => s.count > 0);
+    siteList.innerHTML = extracted
       .map((s) => {
         return `<button type="button" class="site-card" role="listitem" data-code="${escapeAttr(s.code)}">
           <div>
@@ -2632,7 +2679,7 @@
         </button>`;
       })
       .join("");
-    if (siteEmpty) siteEmpty.hidden = sites.some((s) => s.count > 0) || sites.length > 0;
+    if (siteEmpty) siteEmpty.hidden = extracted.length > 0;
     siteList.querySelectorAll(".site-card").forEach((btn) => {
       btn.addEventListener("click", () => {
         const code = btn.getAttribute("data-code");
@@ -2641,6 +2688,103 @@
       });
     });
 
+    function renderProgress() {
+      if (!progressList) return;
+      const jobs = active.filter((j) => j && j.code);
+      if (progressTitle) progressTitle.hidden = jobs.length === 0;
+      progressList.innerHTML = jobs
+        .map((j) => {
+          const phase = j.phase || "starting";
+          return `<article class="site-card site-card-live" role="listitem">
+            <div class="live-top">
+              <div>
+                <div class="site-card-name">${escapeHtml(j.code)}</div>
+                <div class="site-card-host">${escapeHtml(j.url || "")}</div>
+              </div>
+              <span class="live-pill">${escapeHtml(phase)}</span>
+            </div>
+            <div class="live-stats">
+              <div class="live-stat"><strong>${escapeHtml(String(j.pages ?? 0))}</strong><span>Pages</span></div>
+              <div class="live-stat"><strong>${escapeHtml(String(j.listed ?? 0))}</strong><span>PDFs found</span></div>
+              <div class="live-stat"><strong>${escapeHtml(String(j.downloaded ?? 0))}</strong><span>Downloaded</span></div>
+            </div>
+            <p class="live-action">${escapeHtml(j.message || "Waiting for crawl worker…")}</p>
+          </article>`;
+        })
+        .join("");
+    }
+
+    async function refreshLiveStatus() {
+      try {
+        const bust = "t=" + Date.now();
+        const [st, docList] = await Promise.all([
+          fetchJson("data/crawl_status.json?" + bust).catch(() => null),
+          fetchJson("data/ministry_document_list.json?" + bust).catch(() => null),
+        ]);
+        const cur = (st && st.current_source) || {};
+        const counts = (docList && docList.counts) || {};
+        const liveUrl = cur.url || (docList && docList.target_url) || "";
+        const liveLabel = cur.jurisdiction || (docList && docList.label) || "";
+        const phase = (st && st.phase) || (docList && docList.phase) || "";
+        const pages =
+          cur.pages_visited != null
+            ? cur.pages_visited
+            : docList && docList.pages_visited != null
+              ? docList.pages_visited
+              : 0;
+        const listed =
+          cur.listed != null
+            ? cur.listed
+            : counts.listed_total != null
+              ? counts.listed_total
+              : 0;
+        const downloaded =
+          Number(cur.downloaded || counts.downloaded || 0) +
+          Number(cur.scanned_pdf || counts.scanned_pdf || 0);
+        const message = (st && st.message) || "";
+        const liveCode = siteCodeFromUrl(liveUrl || liveLabel);
+
+        if (isLivePhase(phase) && (liveUrl || liveLabel)) {
+          let job = active.find(
+            (j) =>
+              j.code === liveCode ||
+              hostOf(j.url) === hostOf(liveUrl),
+          );
+          if (!job) {
+            job = {
+              code: liveCode,
+              url: liveUrl,
+              label: liveLabel,
+              startedAt: new Date().toISOString(),
+            };
+            active = [job, ...active.filter((j) => j.code !== liveCode)];
+          }
+          job.phase = phase;
+          job.message = message || (phase + "…");
+          job.pages = pages;
+          job.listed = listed;
+          job.downloaded = downloaded;
+          job.url = liveUrl || job.url;
+        } else {
+          active = active.filter((j) => {
+            const same =
+              (liveCode && j.code === liveCode) ||
+              (liveUrl && hostOf(j.url) === hostOf(liveUrl));
+            if (same && (phase === "idle" || phase === "complete")) return false;
+            if (j.phase === "starting" || j.phase === "queued") {
+              const age = Date.now() - Date.parse(j.startedAt || "") || 0;
+              return age < 2 * 3600 * 1000;
+            }
+            return isLivePhase(j.phase);
+          });
+        }
+        writeActiveCrawls(active);
+        renderProgress();
+      } catch (_) {
+        renderProgress();
+      }
+    }
+
     if (back) back.addEventListener("click", showHome);
 
     if (form) {
@@ -2648,30 +2792,46 @@
         e.preventDefault();
         const raw = (urlInput && urlInput.value ? urlInput.value : "").trim();
         if (!raw) return;
-        if (statusEl) statusEl.textContent = "Starting deep crawl…";
+        const url = raw.startsWith("http") ? raw : "https://" + raw;
+        const code = siteCodeFromUrl(url);
+        const job = {
+          code,
+          url,
+          label: crawlLabelFromUrl(url),
+          startedAt: new Date().toISOString(),
+          phase: "starting",
+          message: "Starting deep crawl on this site…",
+          pages: 0,
+          listed: 0,
+          downloaded: 0,
+        };
+        active = [job, ...active.filter((j) => j.code !== code)];
+        writeActiveCrawls(active);
+        renderProgress();
+        if (statusEl) statusEl.textContent = "Crawl in progress for " + code + " — stay on this page.";
         try {
-          const data = await dispatchMinistryCrawl(raw);
+          await dispatchMinistryCrawl(url);
+          job.message = "Worker accepted the job. Discovering pages and PDFs…";
+          writeActiveCrawls(active);
+          renderProgress();
+        } catch (err) {
+          job.phase = "queued";
+          job.message =
+            "Watching live status on this page. A crawl worker will pick this up when connected.";
+          writeActiveCrawls(active);
+          renderProgress();
           if (statusEl) {
             statusEl.textContent =
-              "Crawl started for " +
-              raw +
-              (data && data.html_url ? " · " + data.html_url : " · watch GitHub Actions.");
-          }
-        } catch (err) {
-          if (err && err.message === "no-backend") {
-            if (statusEl) {
-              statusEl.innerHTML =
-                "This Pages site cannot start Actions by itself. " +
-                `<a class="link" href="${escapeAttr(err.workflow)}" target="_blank" rel="noopener">Open the crawl workflow</a>` +
-                " and paste the URL, or run Eva API locally (<code>tools/eva_server.py</code>) so Start crawl can dispatch.";
-            }
-            if (err.workflow) window.open(err.workflow, "_blank", "noopener");
-          } else if (statusEl) {
-            statusEl.textContent = "Could not start crawl: " + (err.message || err);
+              "Tracking " + code + " here. Status updates as pages and PDFs are published.";
           }
         }
+        refreshLiveStatus();
       });
     }
+
+    renderProgress();
+    refreshLiveStatus();
+    setInterval(refreshLiveStatus, 8000);
 
     const hash = (location.hash || "").replace(/^#/, "");
     const m = /^site=(.+)$/i.exec(hash);
