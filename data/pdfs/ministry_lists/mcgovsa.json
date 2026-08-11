@@ -1,21 +1,43 @@
 {
-  "updated_at": "2026-08-11T16:18:47.293205+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-11T16:26:33.944625+00:00",
+  "phase": "downloading",
   "target_url": "https://mc.gov.sa/",
   "label": "Saudi Arabia - MC",
   "host": "mc.gov.sa",
   "counts": {
-    "to_download": 0,
+    "to_download": 1,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 0
+    "listed_total": 1
   },
-  "discovery_methods": {},
+  "discovery_methods": {
+    "pw_search": 1
+  },
   "sitemaps_used": [],
   "datasources_found": [],
-  "pages_visited": 0,
+  "pages_visited": 54,
   "page_errors_sample": [],
   "stats": {},
-  "documents": []
+  "documents": [
+    {
+      "url": "https://mc.gov.sa/ar/guides/Documents/Summary%20of%20the%20ML-TF%20DPMS%20Sectorial%20Risk%20Assessment_AR.pdf",
+      "filename": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+      "type": "PDF",
+      "title": "Summary of the ML-TF DPMS Sectorial Risk Assessment_AR.pdf",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MC",
+      "source_kind": "ministry",
+      "source_page": "https://mc.gov.sa/",
+      "host": "mc.gov.sa",
+      "discovery_method": "pw_search",
+      "discovered_at": "2026-08-11T16:24:33.238341+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    }
+  ]
 }
