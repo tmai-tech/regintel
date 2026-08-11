@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-11T14:00:26.608106+00:00",
-  "phase": "listed",
-  "message": "Saudi ministries · 1225 PDFs · 879 summaries",
-  "run_id": "31498015159",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31498015159",
+  "updated_at": "2026-08-11T16:18:49.024573+00:00",
+  "phase": "discovering",
+  "message": "discovering documents on https://mc.gov.sa/",
+  "run_id": "31511618348",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31511618348",
   "totals": {
     "pdfs": 1225,
     "errors": 22131,
@@ -31,7 +31,17 @@
       "count": 1225
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - MC",
+    "url": "https://mc.gov.sa/",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
+  },
   "recent_pdfs": [
     {
       "title": "Download PDF",
@@ -294,8 +304,8 @@
   },
   "manifest_generated_at": "2026-08-10T13:36:24.178818+00:00",
   "ministry_document_list": {
-    "label": "Saudi Arabia - TGA",
-    "target_url": "https://tga.gov.sa/",
+    "label": "Saudi Arabia - MC",
+    "target_url": "https://mc.gov.sa/",
     "counts": {
       "to_download": 0,
       "downloaded": 0,
@@ -305,7 +315,9 @@
     },
     "discovery_methods": {},
     "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-11T14:00:15.219641+00:00"
+    "updated_at": "2026-08-11T16:18:47.293622+00:00"
   }
 }
