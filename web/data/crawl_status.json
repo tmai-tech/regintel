@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-11T17:35:25.476101+00:00",
+  "updated_at": "2026-08-11T17:37:12.422476+00:00",
   "phase": "downloading",
-  "message": "downloading 130/190 for Saudi Arabia - MC (ok=127 scanned=0 fail=3)",
+  "message": "downloading 180/190 for Saudi Arabia - MC (ok=177 scanned=0 fail=3)",
   "run_id": "31511618348",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31511618348",
   "totals": {
@@ -10,10 +10,10 @@
     "source_reports": 53,
     "jurisdictions": 3,
     "ministry_listed": 190,
-    "ministry_downloaded": 127,
+    "ministry_downloaded": 177,
     "ministry_failed": 3,
     "ministry_scanned": 0,
-    "ministry_to_download": 60
+    "ministry_to_download": 10
   },
   "by_jurisdiction": [
     {
@@ -40,10 +40,10 @@
     "url": "https://mc.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 190,
-    "downloaded": 127,
+    "downloaded": 177,
     "download_failed": 3,
     "scanned_pdf": 0,
-    "to_download": 60,
+    "to_download": 10,
     "pages_visited": 2000
   },
   "recent_pdfs": [
@@ -311,8 +311,8 @@
     "label": "Saudi Arabia - MC",
     "target_url": "https://mc.gov.sa/",
     "counts": {
-      "to_download": 60,
-      "downloaded": 127,
+      "to_download": 10,
+      "downloaded": 177,
       "download_failed": 3,
       "scanned_pdf": 0,
       "listed_total": 190
@@ -342,6 +342,6 @@
     ],
     "datasources_found": 83,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-11T17:35:23.832389+00:00"
+    "updated_at": "2026-08-11T17:37:10.744138+00:00"
   }
 }
