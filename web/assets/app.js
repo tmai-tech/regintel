@@ -2707,7 +2707,7 @@
                 <div class="site-card-name">${escapeHtml(j.code)}</div>
                 <div class="site-card-host">${escapeHtml(j.url || "")}</div>
               </div>
-              <span class="live-pill">${escapeHtml(phase)}</span>
+              <span class="live-pill${phase === "stopped" ? " stopped" : ""}">${escapeHtml(phase)}</span>
             </div>
             <div class="live-stats">
               <div class="live-stat"><strong>${escapeHtml(String(j.pages ?? 0))}</strong><span>Pages</span></div>
@@ -2717,13 +2717,24 @@
             <p class="live-action">${escapeHtml(j.message || "Waiting for crawl worker…")}</p>
             <div class="live-foot">
               <span class="live-checked">${escapeHtml(checked)}</span>
-              <button type="button" class="btn ghost live-refresh" data-code="${escapeAttr(j.code)}">Refresh</button>
+              <span>
+                <button type="button" class="btn ghost live-refresh" data-code="${escapeAttr(j.code)}">Refresh</button>
+                <button type="button" class="btn ghost live-dismiss" data-code="${escapeAttr(j.code)}">Dismiss</button>
+              </span>
             </div>
           </article>`;
         })
         .join("");
       progressList.querySelectorAll(".live-refresh").forEach((btn) => {
         btn.addEventListener("click", () => refreshLiveStatus(true));
+      });
+      progressList.querySelectorAll(".live-dismiss").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const code = btn.getAttribute("data-code");
+          active = active.filter((j) => j.code !== code);
+          writeActiveCrawls(active);
+          renderProgress();
+        });
       });
     }
 
@@ -2732,8 +2743,14 @@
       if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
       try {
         const bust = "t=" + Date.now();
-        const [st, docList, gh] = await Promise.all([
+        const [stPage, stRaw, docList, gh] = await Promise.all([
           fetchJson("data/crawl_status.json?" + bust).catch(() => null),
+          fetch(
+            "https://raw.githubusercontent.com/tmai-tech/regintel/main/web/data/crawl_status.json?" +
+              bust,
+          )
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null),
           fetchJson("data/ministry_document_list.json?" + bust).catch(() => null),
           fetch(
             "https://api.github.com/repos/tmai-tech/regintel/actions/workflows/crawl-ministry.yml/runs?per_page=5",
@@ -2741,6 +2758,12 @@
             .then((r) => (r.ok ? r.json() : null))
             .catch(() => null),
         ]);
+        const st =
+          stRaw &&
+          (!stPage ||
+            Date.parse(stRaw.updated_at || 0) >= Date.parse(stPage.updated_at || 0))
+            ? stRaw
+            : stPage;
         const ghRuns = (gh && gh.workflow_runs) || [];
         const running = ghRuns.find(
           (r) => r.status === "in_progress" || r.status === "queued" || r.status === "waiting",
@@ -2768,55 +2791,76 @@
         const message = (st && st.message) || "";
         const liveCode = siteCodeFromUrl(liveUrl || liveLabel);
 
+        const liveIsThis = (j) =>
+          (liveCode && j.code === liveCode) ||
+          (liveUrl && hostOf(j.url) === hostOf(liveUrl));
+
+        active = active.map((j) => {
+          j.checkedAt = nowIso;
+          if (liveIsThis(j)) {
+            if (isLivePhase(phase)) {
+              j.phase = phase;
+              j.message = message || phase + "…";
+              j.pages = pages;
+              j.listed = listed;
+              j.downloaded = downloaded;
+              j.url = liveUrl || j.url;
+            } else {
+              j.phase = "stopped";
+              j.message =
+                listed || downloaded
+                  ? "Crawl finished · " + (message || (listed + " PDFs"))
+                  : "Crawl stopped. No PDFs found.";
+              j.pages = pages;
+              j.listed = listed;
+              j.downloaded = downloaded;
+            }
+            return j;
+          }
+          // A different site is on the worker — do not keep this card as discovering
+          if (isLivePhase(j.phase) && j.phase !== "queued" && j.phase !== "starting") {
+            if (isLivePhase(phase) && liveCode && liveCode !== j.code) {
+              j.phase = "stopped";
+              j.message = "Stopped. Worker moved on to " + liveCode + ".";
+            } else if (!running) {
+              j.phase = "stopped";
+              j.message =
+                (j.listed || 0) > 0
+                  ? "Crawl finished."
+                  : "Crawl stopped. No PDFs found.";
+            }
+          }
+          return j;
+        });
+
         if (isLivePhase(phase) && (liveUrl || liveLabel)) {
-          let job = active.find(
-            (j) =>
-              j.code === liveCode ||
-              hostOf(j.url) === hostOf(liveUrl),
-          );
-          if (!job) {
-            job = {
+          if (!active.some(liveIsThis)) {
+            active.unshift({
               code: liveCode,
               url: liveUrl,
               label: liveLabel,
               startedAt: new Date().toISOString(),
-            };
-            active = [job, ...active.filter((j) => j.code !== liveCode)];
+              checkedAt: nowIso,
+              phase,
+              message: message || phase + "…",
+              pages,
+              listed,
+              downloaded,
+            });
           }
-          job.phase = phase;
-          job.message = message || (phase + "…");
-          job.pages = pages;
-          job.listed = listed;
-          job.downloaded = downloaded;
-          job.url = liveUrl || job.url;
-          job.checkedAt = nowIso;
-        } else {
-          active = active.map((j) => {
-            j.checkedAt = nowIso;
-            if (running && (j.phase === "queued" || j.phase === "starting")) {
-              j.phase = running.status === "in_progress" ? "discovering" : "queued";
-              j.message = running.status === "in_progress"
-                ? "Worker is running. Waiting for the first status publish…"
-                : "Job is queued on the worker.";
-            } else if (!running && (j.phase === "queued" || j.phase === "starting")) {
-              j.phase = "queued";
-              j.message =
-                "Not started yet — no crawl worker is running. Click Refresh after a worker picks it up.";
-            }
-            return j;
-          });
-          active = active.filter((j) => {
-            const same =
-              (liveCode && j.code === liveCode) ||
-              (liveUrl && hostOf(j.url) === hostOf(liveUrl));
-            if (same && (phase === "idle" || phase === "complete") && !running) return false;
-            if (j.phase === "starting" || j.phase === "queued") {
-              const age = Date.now() - Date.parse(j.startedAt || "") || 0;
-              return age < 2 * 3600 * 1000;
-            }
-            return isLivePhase(j.phase);
-          });
         }
+
+        active = active.filter((j) => {
+          if (j.phase === "stopped") {
+            const age = Date.now() - Date.parse(j.checkedAt || j.startedAt || "") || 0;
+            return age < 30 * 60 * 1000;
+          }
+          if (j.phase === "starting" || j.phase === "queued") {
+            const age = Date.now() - Date.parse(j.startedAt || "") || 0;
+            return age < 2 * 3600 * 1000;
+          }
+          return isLivePhase(j.phase);
+        });
         writeActiveCrawls(active);
         renderProgress();
         if (fromClick && statusEl) {
