@@ -1,20 +1,10 @@
 {
-  "generated_at": "2026-08-11T06:44:44.973199+00:00",
+  "generated_at": "2026-08-11T14:00:25.080641+00:00",
+  "site_scope": "Saudi ministries (SDAIA, TGA, MC, MEWA)",
   "counts": {
-    "primary_sources": 1330,
-    "tracking_records": 114,
-    "gazette_sources": 67,
-    "secondary_sources": 68,
-    "detailed_plan_rows": 85,
-    "updates": 467,
-    "laws": 1877
+    "pdfs": 1225,
+    "jurisdictions": 2,
+    "authorities": 4
   },
-  "last_collector_run": "2026-08-11T06:44:45.397381+00:00",
-  "last_collector_stats": {
-    "sources_attempted": 50,
-    "ok": 29,
-    "fail": 21,
-    "new_updates": 8,
-    "total_updates": 467
-  }
+  "message": "Saudi ministries · 1225 PDFs · 4 authorities"
 }
