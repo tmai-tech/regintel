@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T16:11:27.418673+00:00",
+  "updated_at": "2026-08-14T16:14:28.994823+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
-    "to_download": 297,
+    "to_download": 306,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 297
+    "listed_total": 306
   },
   "discovery_methods": {
-    "href": 296,
-    "script": 1
+    "href": 304,
+    "script": 2
   },
-  "pages_visited": 1450,
+  "pages_visited": 1500,
   "documents": [
     {
       "filename": "القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
@@ -3578,6 +3578,114 @@
       "title": "https://momah.gov.sa/sites/default/files/2025-05/ashtratat%20tqdym%20mntjat%20altbgh.pdf",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "ضوابط التمديد المبكر للعقود الا_يجارية.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-07/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%85%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D8%A8%D9%83%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D9%95%D9%8A%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "دليل المستخدم لخدمة التجديد المبكر للعقود الإيجارية - المستثمر.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-07/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85%20%D9%84%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D8%A8%D9%83%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D8%A7%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AB%D9%85%D8%B1.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf - نسخة.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81%20%D8%A8%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D8%AB%D8%A9.pdf%20-%20%D9%86%D8%B3%D8%AE%D8%A9.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "ضوابط تا_جير العقارات البلدية لغرض ا_قامة ا_نشطة ا_و فعاليات.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%A7%D9%94%D8%AC%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D9%84%D8%BA%D8%B1%D8%B6%20%D8%A7%D9%95%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%94%D9%86%D8%B4%D8%B7%D8%A9%20%D8%A7%D9%94%D9%88%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "ضوابط المنافسة العلنية المفتوحة - النسخة النهاي_ية قرار وزاري V4.0.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9%20-%20%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D9%94%D9%8A%D8%A9%20%D9%82%D8%B1%D8%A7%D8%B1%20%D9%88%D8%B2%D8%A7%D8%B1%D9%8A%20V4.0.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "ضوابط التعاقد مع بيوت الخبرة المتخصصة_.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%82%D8%AF%20%D9%85%D8%B9%20%D8%A8%D9%8A%D9%88%D8%AA%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D8%AE%D8%B5%D8%B5%D8%A9_.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "ضوابط استثمار الا_راضي.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A7%D9%94%D8%B1%D8%A7%D8%B6%D9%8A.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "التعليمات التنفيذية للاي_حة التصرف بالعقارات البلدية - قرار وزاري_.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%EF%BF%BD%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81%20%D8%A8%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20-%20%D9%82%D8%B1%D8%A7%D8%B1%20%D9%88%D8%B2%D8%A7%D8%B1%D9%8A_.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81%20%D8%A8%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D8%AB%D8%A9.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf",
+      "bytes": null,
+      "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - MOMAH"
     }
   ],
