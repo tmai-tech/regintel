@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T16:43:20.651685+00:00",
+  "updated_at": "2026-08-14T16:52:51.414691+00:00",
   "phase": "downloading",
-  "message": "downloading 5 listed docs (after library HTML)",
+  "message": "downloading 5/5 for Saudi Arabia - ZATCA (ok=4 scanned=1 fail=0)",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
@@ -10,10 +10,10 @@
     "source_reports": 53,
     "jurisdictions": 13,
     "ministry_listed": 5,
-    "ministry_downloaded": 0,
+    "ministry_downloaded": 4,
     "ministry_failed": 0,
-    "ministry_scanned": 0,
-    "ministry_to_download": 5
+    "ministry_scanned": 1,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -80,10 +80,10 @@
     "url": "https://zatca.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 5,
-    "downloaded": 0,
+    "downloaded": 4,
     "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 5,
+    "scanned_pdf": 1,
+    "to_download": 0,
     "pages_visited": 60
   },
   "recent_pdfs": [
@@ -351,10 +351,10 @@
     "label": "Saudi Arabia - ZATCA",
     "target_url": "https://zatca.gov.sa/",
     "counts": {
-      "to_download": 5,
-      "downloaded": 0,
+      "to_download": 0,
+      "downloaded": 4,
       "download_failed": 0,
-      "scanned_pdf": 0,
+      "scanned_pdf": 1,
       "listed_total": 5
     },
     "discovery_methods": {
@@ -364,6 +364,6 @@
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T16:43:18.704904+00:00"
+    "updated_at": "2026-08-14T16:52:49.503248+00:00"
   }
 }
