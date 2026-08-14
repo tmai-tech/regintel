@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-14T15:14:23.357618+00:00",
+  "updated_at": "2026-08-14T15:22:53.816158+00:00",
   "phase": "discovering",
-  "message": "discovering momah.gov.sa: pages=450 listed=289",
-  "run_id": "31810874600",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31810874600",
+  "message": "library-first momah.gov.sa: listed=0 (search+libraries)",
+  "run_id": "31813473024",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
     "pdfs": 1656,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 289,
+    "ministry_listed": 0,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 289
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -75,7 +75,17 @@
       "count": 1656
     }
   ],
-  "current_source": null,
+  "current_source": {
+    "jurisdiction": "Saudi Arabia - MOMAH",
+    "url": "https://momah.gov.sa/ar",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 33
+  },
   "recent_pdfs": [
     {
       "title": "RCC.pdf",
@@ -341,18 +351,17 @@
     "label": "Saudi Arabia - MOMAH",
     "target_url": "https://momah.gov.sa/ar",
     "counts": {
-      "to_download": 289,
+      "to_download": 0,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 289
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "href": 288,
-      "script": 1
-    },
-    "pages_visited": 450,
+    "discovery_methods": {},
+    "pages_visited": 33,
+    "sitemaps_used": [],
+    "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T15:13:47.324419+00:00"
+    "updated_at": "2026-08-14T15:22:51.869303+00:00"
   }
 }

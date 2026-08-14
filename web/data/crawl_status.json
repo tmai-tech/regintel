@@ -1,17 +1,19 @@
 {
-  "updated_at": "2026-08-14T15:14:28.127441+00:00",
-  "phase": "idle",
-  "message": "Saudi ministries · 1656 PDFs · 1319 summaries",
+  "updated_at": "2026-08-14T15:22:53.816158+00:00",
+  "phase": "discovering",
+  "message": "library-first momah.gov.sa: listed=0 (search+libraries)",
+  "run_id": "31813473024",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
     "pdfs": 1656,
-    "errors": 0,
-    "source_reports": 0,
+    "errors": 22131,
+    "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 289,
+    "ministry_listed": 0,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 289
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -74,29 +76,292 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia (multi)",
-    "url": "https://sdaia.gov.sa",
-    "source_kind": "ministry"
+    "jurisdiction": "Saudi Arabia - MOMAH",
+    "url": "https://momah.gov.sa/ar",
+    "source_kind": "ministry_pipeline",
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 33
   },
-  "recent_pdfs": [],
-  "last_source_reports": [],
-  "stats": {},
+  "recent_pdfs": [
+    {
+      "title": "RCC.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/D/RCC.pdf",
+      "downloaded_at": "2026-08-11T17:37:31.882643+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/DOC/PCP.pdf",
+      "downloaded_at": "2026-08-11T17:37:29.870897+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ERECS/Documents/ERECS.pdf",
+      "downloaded_at": "2026-08-11T17:37:24.159415+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "اضغط هنا",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/pr/Documents/PRP.pdf",
+      "downloaded_at": "2026-08-11T17:37:22.303365+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "اضغط هنا​",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/CSP/Documents/مشروع%20نظام%20مكافحة%20التستر.pdf",
+      "downloaded_at": "2026-08-11T17:37:20.494367+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "2.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/2.pdf",
+      "downloaded_at": "2026-08-11T17:37:17.875455+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "100.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/100.pdf",
+      "downloaded_at": "2026-08-11T17:37:10.728854+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "99.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/99.pdf",
+      "downloaded_at": "2026-08-11T17:37:07.174260+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "98.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/98.pdf",
+      "downloaded_at": "2026-08-11T17:37:05.871917+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "97.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/97.pdf",
+      "downloaded_at": "2026-08-11T17:37:03.585480+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "96.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/96.pdf",
+      "downloaded_at": "2026-08-11T17:37:01.207190+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "95.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/95.pdf",
+      "downloaded_at": "2026-08-11T17:36:58.993096+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "94.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/94.pdf",
+      "downloaded_at": "2026-08-11T17:36:57.689279+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "93.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/93.pdf",
+      "downloaded_at": "2026-08-11T17:36:55.232405+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "92.pdf",
+      "jurisdiction": "Saudi Arabia - MC",
+      "url": "https://mc.gov.sa/ar/mediacenter/esv/92.pdf",
+      "downloaded_at": "2026-08-11T17:36:53.032154+00:00",
+      "source_kind": "ministry"
+    }
+  ],
+  "last_source_reports": [
+    {
+      "jurisdiction": "Saudi Arabia - Nazaha",
+      "source_kind": "ministry",
+      "source_url": "https://nazaha.gov.sa",
+      "pages_crawled": 1,
+      "js_pages": 0,
+      "pdfs_candidates": 0,
+      "pdfs_downloaded": 0,
+      "error": "[1] ERROR https://nazaha.gov.sa -> [Errno 101] Network is unreachable"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SAIP",
+      "source_kind": "ministry",
+      "source_url": "https://www.saip.gov.sa",
+      "pages_crawled": 210,
+      "js_pages": 11,
+      "pdfs_candidates": 73,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa",
+      "pages_crawled": 400,
+      "js_pages": 58,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 150,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en",
+      "pages_crawled": 400,
+      "js_pages": 40,
+      "pdfs_candidates": 328,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 66,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar",
+      "pages_crawled": 400,
+      "js_pages": 58,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/Documents/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ndmo/Files/",
+      "pages_crawled": 1,
+      "js_pages": 1,
+      "pdfs_candidates": 0,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://dgp.sdaia.gov.sa/",
+      "pages_crawled": 262,
+      "js_pages": 44,
+      "pdfs_candidates": 102,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": "possible_rate_limit"
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/",
+      "pages_crawled": 400,
+      "js_pages": 41,
+      "pdfs_candidates": 328,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    },
+    {
+      "jurisdiction": "Saudi Arabia - SDAIA",
+      "source_kind": "site",
+      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/",
+      "pages_crawled": 400,
+      "js_pages": 57,
+      "pdfs_candidates": 243,
+      "pdfs_regulatory": 0,
+      "pdfs_rejected_junk": 0,
+      "pdfs_downloaded": 0,
+      "error": null
+    }
+  ],
+  "stats": {
+    "sources_visited": 10,
+    "pages_crawled": 2266,
+    "js_pages": 302,
+    "pdfs_discovered": 216,
+    "pdfs_downloaded": 216,
+    "pdfs_skipped_existing": 1257,
+    "pdfs_capped": 0,
+    "pdfs_rejected_junk": 0,
+    "errors": 14
+  },
+  "manifest_generated_at": "2026-08-11T17:37:33.724508+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MOMAH",
     "target_url": "https://momah.gov.sa/ar",
     "counts": {
-      "to_download": 289,
+      "to_download": 0,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 289
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "href": 288,
-      "script": 1
-    },
-    "pages_visited": 450,
+    "discovery_methods": {},
+    "pages_visited": 33,
+    "sitemaps_used": [],
+    "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T15:13:47.324419+00:00"
+    "updated_at": "2026-08-14T15:22:51.869303+00:00"
   }
 }
