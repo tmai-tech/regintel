@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T17:15:58.976920+00:00",
+  "updated_at": "2026-08-14T17:17:48.088574+00:00",
   "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
   "counts": {
-    "to_download": 10,
+    "to_download": 19,
     "downloaded": 16,
     "download_failed": 6,
     "scanned_pdf": 1,
-    "listed_total": 33
+    "listed_total": 42
   },
   "discovery_methods": {
-    "href": 28,
+    "href": 37,
     "script": 5
   },
-  "pages_visited": 100,
+  "pages_visited": 150,
   "documents": [
     {
       "filename": "ZATCA-REPORT_2021.pdf",
@@ -408,6 +408,114 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "Kuwait Convention",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned Furniture_ Equipment_ and Vehicles at Al-Khadra Customs Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20Furniture,%20Equipment,%20and%20Vehicles%20at%20Al-Khadra%20Customs%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Statement of Returned Furniture, Equipment, and Vehicles at Al-Khadra Customs Port",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Furniture_ Equipment_ and Vehicles at Halat Ammar Customs Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Furniture,%20Equipment,%20and%20Vehicles%20at%20Halat%20Ammar%20Customs%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Statement of Furniture, Equipment, and Vehicles at Halat Ammar Customs Port​​​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "VAT-Refund-for-Donors-Regulations.pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/VAT-Refund-for-Donors-Regulations.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "here​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "AlabEn.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/AlabEn.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Decleration of Alb Port Customs",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "DamamAirEn.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/DamamAirEn.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Decleration of King Fahad Causeway",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "JeddahSeaPort1.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/JeddahSeaPort1.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Jeddah Islamic Port",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Yunbu1.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Yunbu1.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Yanbu Port",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Rabigh1.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Rabigh1.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "King Abdullah Port in Rabigh",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Jazan1.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Jazan1.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Jazan Port",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"
