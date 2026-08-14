@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-14T15:54:19.579508+00:00",
+  "updated_at": "2026-08-14T15:56:26.276552+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "host": "momah.gov.sa",
   "counts": {
-    "to_download": 289,
+    "to_download": 290,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 289
+    "listed_total": 290
   },
   "discovery_methods": {
-    "href": 288,
+    "href": 289,
     "script": 1
   },
   "sitemaps_used": [
@@ -76,7 +76,7 @@
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 975,
+  "pages_visited": 1025,
   "page_errors_sample": [
     {
       "url": "https://momah.gov.sa/ar/eparticipation/platform",
@@ -5574,6 +5574,25 @@
       "host": "momah.gov.sa",
       "discovery_method": "href",
       "discovered_at": "2026-08-14T15:30:06.122651+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2024-09/report-2023.pdf",
+      "filename": "report-2023.pdf",
+      "type": "PDF",
+      "title": "تقارير الأداء السنوية - 2023",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar",
+      "host": "momah.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-14T15:55:04.025121+00:00",
       "downloaded_at": null,
       "bytes": null,
       "scanned_pdf": false,

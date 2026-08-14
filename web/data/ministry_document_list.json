@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T15:54:19.579508+00:00",
+  "updated_at": "2026-08-14T15:56:26.276552+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
-    "to_download": 289,
+    "to_download": 290,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 289
+    "listed_total": 290
   },
   "discovery_methods": {
-    "href": 288,
+    "href": 289,
     "script": 1
   },
-  "pages_visited": 975,
+  "pages_visited": 1025,
   "documents": [
     {
       "filename": "القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
@@ -3480,6 +3480,18 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "Show",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "report-2023.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2024-09/report-2023.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تقارير الأداء السنوية - 2023",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MOMAH"
