@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T17:08:13.345320+00:00",
+  "updated_at": "2026-08-14T17:10:42.383932+00:00",
   "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
   "counts": {
-    "to_download": 0,
+    "to_download": 10,
     "downloaded": 16,
     "download_failed": 6,
     "scanned_pdf": 1,
-    "listed_total": 23
+    "listed_total": 33
   },
   "discovery_methods": {
-    "href": 18,
+    "href": 28,
     "script": 5
   },
-  "pages_visited": 60,
+  "pages_visited": 75,
   "documents": [
     {
       "filename": "ZATCA-REPORT_2021.pdf",
@@ -288,6 +288,126 @@
       "download_error": "not a PDF (ct=text/html; charset=utf-8, magic=b'\\r\\n\\r\\n<!DO')",
       "scanned_pdf": false,
       "title": "معجم الزكاة والضريبة والجمارك",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "EmptyQuater_Aug2025.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/EmptyQuater_Aug2025.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "جمرك منفذ الربع الخالي​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Aldurrah_Aug2025.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Aldurrah_Aug2025.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "جمرك منفذ الدرة",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Wadiah_Aug2025.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Wadiah_Aug2025.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "جمرك منفذ الوديعة​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Khafji_Aug2025.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Khafji_Aug2025.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "جمرك منفذ الخفجي",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Abaha_Aug2025.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Abaha_Aug2025.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "جمرك مطار أبها",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Taif_Aug2025.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Taif_Aug2025.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "جمرك مطار الطائف​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Croatia.pdf",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Agreements/Documents/Croatia.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Croatia Convention",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "كرواتيا - عربي.pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/كرواتيا%20-%20عربي.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "اتفاقية كرواتيا​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "قطر.pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/قطر.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Qatar Convention",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "الكويت.pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/الكويت.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Kuwait Convention",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"

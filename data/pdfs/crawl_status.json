@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T17:08:15.245981+00:00",
+  "updated_at": "2026-08-14T17:10:44.334371+00:00",
   "phase": "discovering",
-  "message": "library-first zatca.gov.sa: listed=23 (search+libraries)",
+  "message": "discovering zatca.gov.sa: pages=75 listed=33",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 23,
+    "ministry_listed": 33,
     "ministry_downloaded": 16,
     "ministry_failed": 6,
     "ministry_scanned": 1,
-    "ministry_to_download": 0
+    "ministry_to_download": 10
   },
   "by_jurisdiction": [
     {
@@ -79,12 +79,12 @@
     "jurisdiction": "Saudi Arabia - ZATCA",
     "url": "https://zatca.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 23,
+    "listed": 33,
     "downloaded": 16,
     "download_failed": 6,
     "scanned_pdf": 1,
-    "to_download": 0,
-    "pages_visited": 60
+    "to_download": 10,
+    "pages_visited": 75
   },
   "recent_pdfs": [
     {
@@ -351,20 +351,34 @@
     "label": "Saudi Arabia - ZATCA",
     "target_url": "https://zatca.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 10,
       "downloaded": 16,
       "download_failed": 6,
       "scanned_pdf": 1,
-      "listed_total": 23
+      "listed_total": 33
     },
     "discovery_methods": {
-      "href": 18,
+      "href": 28,
       "script": 5
     },
-    "pages_visited": 60,
-    "sitemaps_used": [],
+    "pages_visited": 75,
+    "sitemaps_used": [
+      "https://zatca.gov.sa/sitemap.xml",
+      "https://zatca.gov.sa/sitemap_index.xml",
+      "https://zatca.gov.sa/Sitemap.xml",
+      "https://www.zatca.gov.sa/sitemap.xml",
+      "https://zatca.gov.sa/_layouts/15/sitemap.aspx",
+      "https://zatca.gov.sa/en/sitemap.xml",
+      "https://zatca.gov.sa/ar/sitemap.xml",
+      "https://zatca.gov.sa:443/sitemap0.xml",
+      "https://zatca.gov.sa:443/sitemap_mobile0.xml",
+      "https://zatca.gov.sa:443/en/PortalServices/Pages/SiteMap.aspx",
+      "https://zatca.gov.sa:443/ar/PortalServices/Pages/SiteMap.aspx",
+      "https://zatca.gov.sa/en/PortalServices/Pages/SiteMap.aspx",
+      "https://zatca.gov.sa/ar/PortalServices/Pages/SiteMap.aspx"
+    ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T17:08:13.347030+00:00"
+    "updated_at": "2026-08-14T17:10:42.385403+00:00"
   }
 }
