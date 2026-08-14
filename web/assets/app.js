@@ -2846,21 +2846,23 @@
       const toDownload = j.to_download;
       const phase = j.phase || "";
       const updated = j.updated_at || j.checkedAt || "";
-      const staleLive = isLivePhase(phase) && ageMs(updated) > 25 * 60 * 1000;
-      const finished =
-        staleLive || crawlLooksFinished(phase, listed, downloaded, toDownload, j.message);
+      // Long crawls often go 30–90+ min between status writes. Do not treat
+      // a quiet file as finished — that emptied the board while jobs ran.
+      const finished = crawlLooksFinished(phase, listed, downloaded, toDownload, j.message);
+      let message = j.message || phase + "…";
+      if (!finished && updated && ageMs(updated) > 15 * 60 * 1000) {
+        message = (message ? message + " · " : "") + "Last publish " + new Date(updated).toLocaleTimeString();
+      }
       return {
         code: j.code,
         url: j.url || "",
         label: j.label || j.code,
-        phase: finished ? "stopped" : phase,
+        phase: finished ? "stopped" : phase || "running",
         message: finished
           ? listed || downloaded
             ? "Crawl finished · " + listed + " PDFs found, " + downloaded + " downloaded."
-            : staleLive
-              ? "No recent update from the crawl worker."
-              : j.message || "Crawl stopped."
-          : j.message || phase + "…",
+            : j.message || "Crawl stopped."
+          : message,
         pages: j.pages || 0,
         listed,
         downloaded,
@@ -2896,8 +2898,21 @@
           byCode.set(row.code, normalizeSharedJob(row, nowIso));
         }
         const fallback = jobFromStatus(st);
-        if (fallback && !byCode.has(fallback.code)) {
-          byCode.set(fallback.code, normalizeSharedJob(fallback, nowIso));
+        if (fallback && fallback.code) {
+          const existing = byCode.get(fallback.code);
+          const newer =
+            !existing ||
+            Date.parse(fallback.updated_at || 0) >= Date.parse(existing.updated_at || 0);
+          const richer =
+            existing &&
+            (Number(fallback.listed || 0) > Number(existing.listed || 0) ||
+              Number(fallback.pages || 0) > Number(existing.pages || 0));
+          if (!existing || newer || richer) {
+            byCode.set(
+              fallback.code,
+              normalizeSharedJob(Object.assign({}, existing || {}, fallback), nowIso),
+            );
+          }
         }
 
         const locals = readLocalStarts().filter((j) => {
@@ -2915,8 +2930,10 @@
         }
 
         active = [...byCode.values()].filter((j) => {
-          if (j.phase === "stopped") return ageMs(j.updated_at || j.checkedAt) < 30 * 60 * 1000;
-          return isLivePhase(j.phase);
+          const stamp = j.updated_at || j.startedAt || j.checkedAt;
+          if (isLivePhase(j.phase)) return ageMs(stamp) < 4 * 3600 * 1000;
+          if (j.phase === "stopped") return ageMs(stamp) < 30 * 60 * 1000;
+          return false;
         });
         active.sort((a, b) => {
           const la = isLivePhase(a.phase) ? 0 : 1;

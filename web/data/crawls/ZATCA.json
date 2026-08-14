@@ -3,11 +3,11 @@
   "url": "https://zatca.gov.sa",
   "label": "Saudi Arabia - ZATCA",
   "phase": "discovering",
-  "message": "Sheet crawl in progress on zatca.gov.sa",
-  "pages": 0,
-  "listed": 0,
-  "downloaded": 0,
-  "to_download": 0,
-  "updated_at": "2026-08-14T17:22:45Z",
+  "message": "discovering zatca.gov.sa: pages=300 listed=84",
+  "pages": 300,
+  "listed": 84,
+  "downloaded": 17,
+  "to_download": 61,
+  "updated_at": "2026-08-14T17:54:30Z",
   "run_id": "31813473024"
 }
