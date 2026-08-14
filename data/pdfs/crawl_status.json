@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-14T16:57:38.414792+00:00",
-  "phase": "downloading",
-  "message": "downloading 20/23 for Saudi Arabia - ZATCA (ok=14 scanned=1 fail=5)",
+  "updated_at": "2026-08-14T17:08:15.245981+00:00",
+  "phase": "discovering",
+  "message": "library-first zatca.gov.sa: listed=23 (search+libraries)",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
-    "pdfs": 1661,
+    "pdfs": 1672,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
     "ministry_listed": 23,
-    "ministry_downloaded": 14,
-    "ministry_failed": 5,
+    "ministry_downloaded": 16,
+    "ministry_failed": 6,
     "ministry_scanned": 1,
-    "ministry_to_download": 3
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -38,7 +38,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "count": 26
+      "count": 37
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -72,7 +72,7 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1661
+      "count": 1672
     }
   ],
   "current_source": {
@@ -80,13 +80,90 @@
     "url": "https://zatca.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 23,
-    "downloaded": 14,
-    "download_failed": 5,
+    "downloaded": 16,
+    "download_failed": 6,
     "scanned_pdf": 1,
-    "to_download": 3,
+    "to_download": 0,
     "pages_visited": 60
   },
   "recent_pdfs": [
+    {
+      "title": "معجم الزكاة والضريبة والجمارك",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Publications/Documents/ZATCA-Glossary.pdf",
+      "downloaded_at": "2026-08-14T16:58:27.769734+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at Al-Raqai Port",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Al-Raqai Port.pdf",
+      "downloaded_at": "2026-08-14T16:55:07.245842+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at Al-Dammam",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Al-Dammam.pdf",
+      "downloaded_at": "2026-08-14T16:55:05.031815+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at Al-Ahsa",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Al-Ahsa.pdf",
+      "downloaded_at": "2026-08-14T16:55:02.770238+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at the Genearl Administration",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at the Genearl Administration.pdf",
+      "downloaded_at": "2026-08-14T16:55:00.558541+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at Prince Sultan Bin Abdulaziz Airport in Tabuk",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Prince Sultan Bin Abdulaziz Airport in Tabuk.pdf",
+      "downloaded_at": "2026-08-14T16:54:58.088167+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at Jeddah",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Jeddah.pdf",
+      "downloaded_at": "2026-08-14T16:54:53.865341+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Returned at Jadidat Arar",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Jadidat Arar.pdf",
+      "downloaded_at": "2026-08-14T16:54:51.398129+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Statement-of-Scrap-Furniture-and-Equipment-At-AlBatha-Port",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Statement-of-Scrap-Furniture-and-Equipment-At-AlBatha-Port.pdf",
+      "downloaded_at": "2026-08-14T16:54:48.915558+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "Statement-of-Vehicles-and-Furniture-At-Prince-AbdulMohsen-Ai…",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Statement-of-Vehicles-and-Furniture-At-Prince-AbdulMohsen-AirPort.pdf",
+      "downloaded_at": "2026-08-14T16:54:44.383799+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "نموذج التعهد",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/Documents/نموذج التعهد.pdf",
+      "downloaded_at": "2026-08-14T16:54:39.238806+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "التقرير السنوي 2025م",
       "jurisdiction": "Saudi Arabia - ZATCA",
@@ -113,83 +190,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2022.pdf",
       "downloaded_at": "2026-08-14T16:46:55.606693+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "التقرير السنوي 2021م​",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA-REPORT_2021.pdf",
-      "downloaded_at": "2026-08-14T16:44:49.328411+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "RCC.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/D/RCC.pdf",
-      "downloaded_at": "2026-08-11T17:37:31.882643+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/DOC/PCP.pdf",
-      "downloaded_at": "2026-08-11T17:37:29.870897+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ERECS/Documents/ERECS.pdf",
-      "downloaded_at": "2026-08-11T17:37:24.159415+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/pr/Documents/PRP.pdf",
-      "downloaded_at": "2026-08-11T17:37:22.303365+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "اضغط هنا​",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/CSP/Documents/مشروع%20نظام%20مكافحة%20التستر.pdf",
-      "downloaded_at": "2026-08-11T17:37:20.494367+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "2.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/2.pdf",
-      "downloaded_at": "2026-08-11T17:37:17.875455+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "100.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/100.pdf",
-      "downloaded_at": "2026-08-11T17:37:10.728854+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "99.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/99.pdf",
-      "downloaded_at": "2026-08-11T17:37:07.174260+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "98.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/98.pdf",
-      "downloaded_at": "2026-08-11T17:37:05.871917+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "97.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/97.pdf",
-      "downloaded_at": "2026-08-11T17:37:03.585480+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -346,14 +346,14 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-14T16:52:53.138526+00:00",
+  "manifest_generated_at": "2026-08-14T16:58:31.025453+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - ZATCA",
     "target_url": "https://zatca.gov.sa/",
     "counts": {
-      "to_download": 3,
-      "downloaded": 14,
-      "download_failed": 5,
+      "to_download": 0,
+      "downloaded": 16,
+      "download_failed": 6,
       "scanned_pdf": 1,
       "listed_total": 23
     },
@@ -363,8 +363,8 @@
     },
     "pages_visited": 60,
     "sitemaps_used": [],
-    "datasources_found": 0,
+    "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T16:57:36.490267+00:00"
+    "updated_at": "2026-08-14T17:08:13.347030+00:00"
   }
 }

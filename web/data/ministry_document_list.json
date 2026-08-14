@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-14T16:57:36.488443+00:00",
-  "phase": "downloading",
+  "updated_at": "2026-08-14T17:08:13.345320+00:00",
+  "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
   "counts": {
-    "to_download": 3,
-    "downloaded": 14,
-    "download_failed": 5,
+    "to_download": 0,
+    "downloaded": 16,
+    "download_failed": 6,
     "scanned_pdf": 1,
     "listed_total": 23
   },
@@ -260,11 +260,11 @@
       "filename": "ZATCA-App-Guideline.pdf",
       "url": "https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/ZATCA-App-Guideline.pdf",
       "type": "PDF",
-      "status": "to_download",
+      "status": "downloaded",
       "download_error": null,
       "scanned_pdf": false,
       "title": "دليل الخدمات الإلكترونية",
-      "bytes": null,
+      "bytes": 6841049,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"
     },
@@ -272,11 +272,11 @@
       "filename": "ZATCA-Glossary.pdf",
       "url": "https://zatca.gov.sa/ar/MediaCenter/Publications/Documents/ZATCA-Glossary.pdf",
       "type": "PDF",
-      "status": "to_download",
+      "status": "downloaded",
       "download_error": null,
       "scanned_pdf": false,
       "title": "معجم الزكاة والضريبة والجمارك",
-      "bytes": null,
+      "bytes": 17842106,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"
     },
@@ -284,8 +284,8 @@
       "filename": "معجم الزكاة والضريبة والجمارك.pdf",
       "url": "https://zatca.gov.sa/ar/MediaCenter/Publications/Documents/%D9%85%D8%B9%D8%AC%D9%85%20%D8%A7%D9%84%D8%B2%D9%83%D8%A7%D8%A9%20%D9%88%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B1%D9%83.pdf",
       "type": "PDF",
-      "status": "to_download",
-      "download_error": null,
+      "status": "download_failed",
+      "download_error": "not a PDF (ct=text/html; charset=utf-8, magic=b'\\r\\n\\r\\n<!DO')",
       "scanned_pdf": false,
       "title": "معجم الزكاة والضريبة والجمارك",
       "bytes": null,
@@ -352,6 +352,18 @@
       "title": "Returned at Al-Raqai Port.pdf",
       "bytes": null,
       "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "معجم الزكاة والضريبة والجمارك.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Publications/Documents/%D9%85%D8%B9%D8%AC%D9%85%20%D8%A7%D9%84%D8%B2%D9%83%D8%A7%D8%A9%20%D9%88%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B1%D9%83.pdf",
+      "type": "PDF",
+      "status": "download_failed",
+      "download_error": "not a PDF (ct=text/html; charset=utf-8, magic=b'\\r\\n\\r\\n<!DO')",
+      "scanned_pdf": false,
+      "title": "معجم الزكاة والضريبة والجمارك",
+      "bytes": null,
+      "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"
     }
   ]
