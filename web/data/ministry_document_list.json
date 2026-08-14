@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T17:19:28.836275+00:00",
+  "updated_at": "2026-08-14T17:21:12.544838+00:00",
   "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
   "counts": {
-    "to_download": 49,
+    "to_download": 57,
     "downloaded": 16,
     "download_failed": 6,
     "scanned_pdf": 1,
-    "listed_total": 72
+    "listed_total": 80
   },
   "discovery_methods": {
-    "href": 67,
+    "href": 75,
     "script": 5
   },
-  "pages_visited": 200,
+  "pages_visited": 250,
   "documents": [
     {
       "filename": "ZATCA-REPORT_2021.pdf",
@@ -876,6 +876,102 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "The Royal Decree​​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned Furniture at HQ.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20Furniture%20at%20HQ.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "HQ",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned at Al-Adid Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Al-Adid%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Al-Adid Customs",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned at Alb Customs Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Alb%20Customs%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Alb Customs",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned at Alkhadra Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Alkhadra%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Alkhadra Customs",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned - Neom Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20-%20Neom%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Neom Port Customs",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned at Jazan Port Customs.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jazan%20Port%20Customs.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Jazan Port Customs",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Statement of Returned at Jeddah Islamic Port.pdf",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jeddah%20Islamic%20Port.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Jeddah Islamic Port Customs  ​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "KSA_MORC_Agreement(AR).pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSA%26MORC_Agreement(AR).pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "الاتفاقية باللغة العربية",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"
