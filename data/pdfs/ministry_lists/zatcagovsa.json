@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T17:10:42.383932+00:00",
+  "updated_at": "2026-08-14T17:15:58.976920+00:00",
   "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
@@ -82,7 +82,7 @@
     "https://zatca.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://zatca.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 75,
+  "pages_visited": 100,
   "page_errors_sample": [],
   "stats": {},
   "documents": [

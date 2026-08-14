@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T17:10:44.334371+00:00",
+  "updated_at": "2026-08-14T17:16:00.876439+00:00",
   "phase": "discovering",
-  "message": "discovering zatca.gov.sa: pages=75 listed=33",
+  "message": "discovering zatca.gov.sa: pages=100 listed=33",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
@@ -84,7 +84,7 @@
     "download_failed": 6,
     "scanned_pdf": 1,
     "to_download": 10,
-    "pages_visited": 75
+    "pages_visited": 100
   },
   "recent_pdfs": [
     {
@@ -361,7 +361,7 @@
       "href": 28,
       "script": 5
     },
-    "pages_visited": 75,
+    "pages_visited": 100,
     "sitemaps_used": [
       "https://zatca.gov.sa/sitemap.xml",
       "https://zatca.gov.sa/sitemap_index.xml",
@@ -379,6 +379,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T17:10:42.385403+00:00"
+    "updated_at": "2026-08-14T17:15:58.978356+00:00"
   }
 }

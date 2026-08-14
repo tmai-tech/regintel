@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T17:10:42.383932+00:00",
+  "updated_at": "2026-08-14T17:15:58.976920+00:00",
   "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
@@ -14,7 +14,7 @@
     "href": 28,
     "script": 5
   },
-  "pages_visited": 75,
+  "pages_visited": 100,
   "documents": [
     {
       "filename": "ZATCA-REPORT_2021.pdf",
