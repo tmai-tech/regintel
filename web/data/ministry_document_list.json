@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T15:57:56.901492+00:00",
+  "updated_at": "2026-08-14T15:59:48.981889+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
-    "to_download": 290,
+    "to_download": 293,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 290
+    "listed_total": 293
   },
   "discovery_methods": {
-    "href": 289,
+    "href": 292,
     "script": 1
   },
-  "pages_visited": 1075,
+  "pages_visited": 1150,
   "documents": [
     {
       "filename": "القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
@@ -3492,6 +3492,42 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "تقارير الأداء السنوية - 2023",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "dlyl almstkhdm lkhdmt mtab_t halt nql wtjhyz almwty - almstfyd.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2025-08/dlyl%20almstkhdm%20lkhdmt%20mtab%60t%20halt%20nql%20wtjhyz%20almwty%20-%20almstfyd.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "dlyl almstkhdm lkhdmat alrkhs alhrfyt - almstfyd_4.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2025-08/dlyl%20almstkhdm%20lkhdmat%20alrkhs%20alhrfyt%20-%20almstfyd_4.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "dlyl almstkhdm lkhdmt alast_lam _n mqdmy khdmat nql wtjhyz almwty (aljhat alkhyryt) - almstfyd_0.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2025-08/dlyl%20almstkhdm%20lkhdmt%20alast%60lam%20%60n%20mqdmy%20khdmat%20nql%20wtjhyz%20almwty%20%28aljhat%20alkhyryt%29%20-%20almstfyd_0.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MOMAH"
