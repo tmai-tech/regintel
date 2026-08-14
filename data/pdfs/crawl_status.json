@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T15:13:48.573443+00:00",
+  "updated_at": "2026-08-14T15:14:23.357618+00:00",
   "phase": "discovering",
   "message": "discovering momah.gov.sa: pages=450 listed=289",
   "run_id": "31810874600",
@@ -75,17 +75,7 @@
       "count": 1656
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - MOMAH",
-    "url": "https://momah.gov.sa/ar",
-    "source_kind": "ministry_pipeline",
-    "listed": 289,
-    "downloaded": 0,
-    "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 289,
-    "pages_visited": 450
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "RCC.pdf",
@@ -362,17 +352,7 @@
       "script": 1
     },
     "pages_visited": 450,
-    "sitemaps_used": [
-      "https://momah.gov.sa/sitemap.xml",
-      "https://momah.gov.sa/sitemap_index.xml",
-      "https://momah.gov.sa/Sitemap.xml",
-      "https://www.momah.gov.sa/sitemap.xml",
-      "https://momah.gov.sa/_layouts/15/sitemap.aspx",
-      "https://momah.gov.sa/en/sitemap.xml",
-      "https://momah.gov.sa/ar/sitemap.xml"
-    ],
-    "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T15:13:47.329397+00:00"
+    "updated_at": "2026-08-14T15:13:47.324419+00:00"
   }
 }
