@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T15:03:19.524237+00:00",
+  "updated_at": "2026-08-14T15:05:18.925913+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
-    "to_download": 283,
+    "to_download": 286,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 283
+    "listed_total": 286
   },
   "discovery_methods": {
-    "href": 282,
+    "href": 285,
     "script": 1
   },
-  "pages_visited": 275,
+  "pages_visited": 325,
   "documents": [
     {
       "filename": "القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
@@ -3408,6 +3408,42 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "Show",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "a_tmad alashtrtat albldyt llwrsh almhnyt.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2024-12/a%60tmad%20alashtrtat%20albldyt%20llwrsh%20almhnyt.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "عرض",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "alashtratat albldyt lmrakz khdmat alnql.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2025-07/alashtratat%20albldyt%20lmrakz%20khdmat%20alnql.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "عرض",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "aldlyl alfny lmzlat alsyarat dakhl hd almlkyt .pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2025-07/aldlyl%20alfny%20lmzlat%20alsyarat%20dakhl%20hd%20almlkyt%20.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "عرض",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MOMAH"
