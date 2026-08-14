@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-14T16:52:51.414691+00:00",
+  "updated_at": "2026-08-14T16:54:28.730633+00:00",
   "phase": "downloading",
-  "message": "downloading 5/5 for Saudi Arabia - ZATCA (ok=4 scanned=1 fail=0)",
+  "message": "downloading 18 listed docs (after pw search)",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
-    "pdfs": 1656,
+    "pdfs": 1661,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 5,
+    "ministry_listed": 23,
     "ministry_downloaded": 4,
     "ministry_failed": 0,
     "ministry_scanned": 1,
-    "ministry_to_download": 0
+    "ministry_to_download": 18
   },
   "by_jurisdiction": [
     {
@@ -38,7 +38,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "count": 21
+      "count": 26
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -72,21 +72,56 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1656
+      "count": 1661
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - ZATCA",
     "url": "https://zatca.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 5,
+    "listed": 23,
     "downloaded": 4,
     "download_failed": 0,
     "scanned_pdf": 1,
-    "to_download": 0,
+    "to_download": 18,
     "pages_visited": 60
   },
   "recent_pdfs": [
+    {
+      "title": "التقرير السنوي 2025م",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA%20report%202025.pdf",
+      "downloaded_at": "2026-08-14T16:52:49.488235+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "التقرير السنوي 2024م",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2024.pdf",
+      "downloaded_at": "2026-08-14T16:51:52.149418+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "التقرير السنوي 2023م​​",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_report_2023(2).pdf",
+      "downloaded_at": "2026-08-14T16:50:06.355181+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "التقرير السنوي 2022م",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2022.pdf",
+      "downloaded_at": "2026-08-14T16:46:55.606693+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "التقرير السنوي 2021م​",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA-REPORT_2021.pdf",
+      "downloaded_at": "2026-08-14T16:44:49.328411+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "RCC.pdf",
       "jurisdiction": "Saudi Arabia - MC",
@@ -155,41 +190,6 @@
       "jurisdiction": "Saudi Arabia - MC",
       "url": "https://mc.gov.sa/ar/mediacenter/esv/97.pdf",
       "downloaded_at": "2026-08-11T17:37:03.585480+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "96.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/96.pdf",
-      "downloaded_at": "2026-08-11T17:37:01.207190+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "95.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/95.pdf",
-      "downloaded_at": "2026-08-11T17:36:58.993096+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "94.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/94.pdf",
-      "downloaded_at": "2026-08-11T17:36:57.689279+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "93.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/93.pdf",
-      "downloaded_at": "2026-08-11T17:36:55.232405+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "92.pdf",
-      "jurisdiction": "Saudi Arabia - MC",
-      "url": "https://mc.gov.sa/ar/mediacenter/esv/92.pdf",
-      "downloaded_at": "2026-08-11T17:36:53.032154+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -346,24 +346,25 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-11T17:37:33.724508+00:00",
+  "manifest_generated_at": "2026-08-14T16:52:53.138526+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - ZATCA",
     "target_url": "https://zatca.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 18,
       "downloaded": 4,
       "download_failed": 0,
       "scanned_pdf": 1,
-      "listed_total": 5
+      "listed_total": 23
     },
     "discovery_methods": {
-      "href": 5
+      "href": 18,
+      "script": 5
     },
     "pages_visited": 60,
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T16:52:49.503248+00:00"
+    "updated_at": "2026-08-14T16:54:26.750748+00:00"
   }
 }

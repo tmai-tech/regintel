@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T17:37:33.724508+00:00",
+  "generated_at": "2026-08-14T16:52:53.138526+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -181828,6 +181828,76 @@
       "bytes": 680543,
       "sha256": "2d29765ab8652c63",
       "downloaded_at": "2026-08-11T17:37:31.882643+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "href"
+    },
+    {
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA-REPORT_2021.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "source_kind": "ministry",
+      "source_page": "https://zatca.gov.sa/",
+      "title": "التقرير السنوي 2021م​",
+      "path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/ZATCA-REPORT_2021.pdf",
+      "bytes": 22408025,
+      "sha256": "82a74ece4a41a757",
+      "downloaded_at": "2026-08-14T16:44:49.328411+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "href"
+    },
+    {
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2022.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "source_kind": "ministry",
+      "source_page": "https://zatca.gov.sa/",
+      "title": "التقرير السنوي 2022م",
+      "path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/ZATCA_REPORT_2022.pdf",
+      "bytes": 92973818,
+      "sha256": "cb1e5af8408e0b57",
+      "downloaded_at": "2026-08-14T16:46:55.606693+00:00",
+      "status": "scanned_pdf",
+      "scanned_pdf": true,
+      "discovery_method": "href"
+    },
+    {
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_report_2023(2).pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "source_kind": "ministry",
+      "source_page": "https://zatca.gov.sa/",
+      "title": "التقرير السنوي 2023م​​",
+      "path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/ZATCA_report_2023(2).pdf",
+      "bytes": 75655238,
+      "sha256": "ef8d6eb989942b29",
+      "downloaded_at": "2026-08-14T16:50:06.355181+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "href"
+    },
+    {
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2024.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "source_kind": "ministry",
+      "source_page": "https://zatca.gov.sa/",
+      "title": "التقرير السنوي 2024م",
+      "path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/ZATCA_REPORT_2024.pdf",
+      "bytes": 31104328,
+      "sha256": "07f4cb003e47215d",
+      "downloaded_at": "2026-08-14T16:51:52.149418+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "href"
+    },
+    {
+      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA%20report%202025.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "source_kind": "ministry",
+      "source_page": "https://zatca.gov.sa/",
+      "title": "التقرير السنوي 2025م",
+      "path": "data/pdfs/Saudi_Arabia_ZATCA/ministry/ZATCA report 2025.pdf",
+      "bytes": 18431955,
+      "sha256": "283062b3b001f77e",
+      "downloaded_at": "2026-08-14T16:52:49.488235+00:00",
       "status": "downloaded",
       "scanned_pdf": false,
       "discovery_method": "href"
