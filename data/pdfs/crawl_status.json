@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T16:30:53.323083+00:00",
-  "phase": "discovering",
-  "message": "discovering momah.gov.sa: pages=2000 listed=308",
+  "updated_at": "2026-08-14T16:30:59.491151+00:00",
+  "phase": "downloading",
+  "message": "downloading 308 listed docs (after fallback BFS)",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
@@ -373,6 +373,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T16:30:51.395255+00:00"
+    "updated_at": "2026-08-14T16:30:57.583293+00:00"
   }
 }
