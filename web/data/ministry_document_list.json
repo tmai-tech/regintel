@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T16:17:55.727763+00:00",
+  "updated_at": "2026-08-14T16:20:11.036150+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
-    "to_download": 307,
+    "to_download": 308,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 307
+    "listed_total": 308
   },
   "discovery_methods": {
     "href": 305,
-    "script": 2
+    "script": 3
   },
-  "pages_visited": 1600,
+  "pages_visited": 1675,
   "documents": [
     {
       "filename": "القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
@@ -3698,6 +3698,18 @@
       "title": "تحميل",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "ganizational_structure.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2024-04/ganizational_structure.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "ganizational_structure.pdf",
+      "bytes": null,
+      "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - MOMAH"
     }
   ],

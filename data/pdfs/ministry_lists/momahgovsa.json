@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-14T16:17:55.727763+00:00",
+  "updated_at": "2026-08-14T16:20:11.036150+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "host": "momah.gov.sa",
   "counts": {
-    "to_download": 307,
+    "to_download": 308,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 307
+    "listed_total": 308
   },
   "discovery_methods": {
     "href": 305,
-    "script": 2
+    "script": 3
   },
   "sitemaps_used": [
     "https://momah.gov.sa/sitemap.xml",
@@ -76,7 +76,7 @@
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 1600,
+  "pages_visited": 1675,
   "page_errors_sample": [
     {
       "url": "https://momah.gov.sa/ar/eparticipation/platform",
@@ -5920,6 +5920,25 @@
       "host": "momah.gov.sa",
       "discovery_method": "href",
       "discovered_at": "2026-08-14T16:17:23.314907+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2024-04/ganizational_structure.pdf",
+      "filename": "ganizational_structure.pdf",
+      "type": "PDF",
+      "title": "ganizational_structure.pdf",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar",
+      "host": "momah.gov.sa",
+      "discovery_method": "script",
+      "discovered_at": "2026-08-14T16:18:00.365221+00:00",
       "downloaded_at": null,
       "bytes": null,
       "scanned_pdf": false,
