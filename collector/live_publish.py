@@ -25,8 +25,13 @@ MANIFEST = ROOT / "data" / "pdfs" / "manifest.json"
 WEB_DATA = ROOT / "web" / "data"
 WEB_CATALOG = WEB_DATA / "pdfs_catalog.json"
 WEB_STATUS = WEB_DATA / "crawl_status.json"
+WEB_CRAWLS_DIR = WEB_DATA / "crawls"
+WEB_ACTIVE = WEB_DATA / "active_crawls.json"
 LOCAL_STATUS = ROOT / "data" / "pdfs" / "crawl_status.json"
 ASSETS_CATALOG = ROOT / "android" / "app" / "src" / "main" / "assets" / "pdfs_catalog.json"
+
+# UI treats these as finished so devices do not keep an old "in progress" card.
+_DONE_PHASES = frozenset({"idle", "complete", "stopped", "listed", "manual"})
 
 # throttle git pushes
 _last_git_push = 0.0
@@ -37,6 +42,131 @@ _last_pages_seen = -1
 
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def ministry_code_from(url: str = "", label: str = "") -> str:
+    """Stable site code so every device keys the same job (MOMAH, MC, …)."""
+    blob = f"{label} {url}".lower()
+    pairs = (
+        ("sdaia", "SDAIA"),
+        ("dgp.sdaia", "SDAIA"),
+        ("mewa", "MEWA"),
+        ("tga.gov", "TGA"),
+        ("mc.gov", "MC"),
+        ("momah", "MOMAH"),
+        ("mof.gov", "MOF"),
+        ("nca.gov", "NCA"),
+        ("socpa", "SOCPA"),
+        ("moi.gov", "MOI"),
+        ("nazaha", "NAZAHA"),
+        ("sama.gov", "SAMA"),
+        ("rulebook.sama", "SAMA"),
+        ("moj.gov", "MOJ"),
+        ("gac.gov", "GAC"),
+        ("cst.gov", "CST"),
+        ("cma.org", "CMA"),
+        ("saudiexchange", "TADAWUL"),
+        ("tadawul", "TADAWUL"),
+        ("gosi.gov", "GOSI"),
+        ("saso.gov", "SASO"),
+        ("saip.gov", "SAIP"),
+        ("zatca", "ZATCA"),
+        ("ia.gov", "IA"),
+    )
+    for needle, code in pairs:
+        if needle in blob:
+            return code
+    lab = (label or "").strip()
+    if " - " in lab:
+        tail = lab.rsplit(" - ", 1)[-1].strip().upper()
+        if tail == "NAZAHA":
+            return "NAZAHA"
+        if tail == "TADAWUL":
+            return "TADAWUL"
+        if tail and tail.replace(" ", "").isalnum() and len(tail) <= 12:
+            return tail
+    return ""
+
+
+def _ui_phase(phase: str) -> str:
+    p = str(phase or "").lower()
+    if p in _DONE_PHASES:
+        return "stopped" if p in {"idle", "complete", "stopped", "manual"} else p
+    return p or "running"
+
+
+def job_snapshot(
+    status: dict,
+    current_source: dict | None = None,
+    ministry_progress: dict | None = None,
+) -> dict | None:
+    cur = current_source or status.get("current_source") or {}
+    prog = ministry_progress or status.get("ministry_document_list") or {}
+    counts = prog.get("counts") or {}
+    url = cur.get("url") or prog.get("target_url") or ""
+    label = cur.get("jurisdiction") or prog.get("label") or ""
+    code = ministry_code_from(url, label)
+    if not code:
+        return None
+    listed = cur.get("listed")
+    if listed is None:
+        listed = counts.get("listed_total", 0)
+    downloaded = int(cur.get("downloaded") or counts.get("downloaded") or 0) + int(
+        cur.get("scanned_pdf") or counts.get("scanned_pdf") or 0
+    )
+    to_download = cur.get("to_download")
+    if to_download is None:
+        to_download = counts.get("to_download")
+    pages = cur.get("pages_visited")
+    if pages is None:
+        pages = prog.get("pages_visited") or 0
+    phase = _ui_phase(status.get("phase") or "")
+    return {
+        "code": code,
+        "url": url,
+        "label": label,
+        "phase": phase,
+        "message": status.get("message") or "",
+        "pages": pages or 0,
+        "listed": listed or 0,
+        "downloaded": downloaded,
+        "to_download": to_download if to_download is not None else 0,
+        "updated_at": status.get("updated_at") or _now(),
+        "run_id": status.get("run_id"),
+    }
+
+
+def write_active_crawls(job: dict | None = None) -> dict:
+    """Per-site files + merged index. Parallel jobs only overwrite their own code."""
+    WEB_CRAWLS_DIR.mkdir(parents=True, exist_ok=True)
+    if job and job.get("code"):
+        path = WEB_CRAWLS_DIR / f"{job['code']}.json"
+        path.write_text(
+            json.dumps(job, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+
+    jobs: list[dict] = []
+    for path in sorted(WEB_CRAWLS_DIR.glob("*.json")):
+        try:
+            row = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        if not isinstance(row, dict) or not row.get("code"):
+            continue
+        jobs.append(row)
+
+    live = {"discovering", "downloading", "starting", "running", "queued"}
+    jobs.sort(
+        key=lambda j: (
+            0 if str(j.get("phase") or "") in live else 1,
+            str(j.get("code") or ""),
+        )
+    )
+    payload = {"updated_at": _now(), "jobs": jobs}
+    WEB_ACTIVE.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    return payload
 
 
 def load_manifest() -> dict:
@@ -261,6 +391,7 @@ def publish(
     LOCAL_STATUS.write_text(
         json.dumps(status, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    write_active_crawls(job_snapshot(status, current_source, ministry_progress))
     if ASSETS_CATALOG.parent.is_dir():
         ASSETS_CATALOG.write_text(
             json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -336,6 +467,14 @@ def _git_push_live(pdf_count: int, phase: str) -> bool:
         )
 
         remote = _git_remote_with_token()
+        # Snapshot this job before rebase so another site cannot overwrite it.
+        our_job = None
+        try:
+            st = json.loads(WEB_STATUS.read_text(encoding="utf-8"))
+            our_job = job_snapshot(st)
+        except Exception:
+            our_job = None
+
         # Always fetch latest main before commit to reduce non-fast-forward
         if remote:
             fr = _run_git(["fetch", remote, "main:refs/remotes/origin/main"], env=env)
@@ -345,15 +484,22 @@ def _git_push_live(pdf_count: int, phase: str) -> bool:
         else:
             _run_git(["pull", "--rebase", "origin", "main"], env=env)
 
+        # Rebase may have brought other sites' crawl files; restore ours, rebuild index.
+        write_active_crawls(our_job)
+
         paths = [
             "data/pdfs/manifest.json",
             "data/pdfs/crawl_status.json",
             "web/data/pdfs_catalog.json",
             "web/data/crawl_status.json",
+            "web/data/active_crawls.json",
             "web/data/ministry_document_list.json",
             "web/data/pdfs_coverage.json",
             "android/app/src/main/assets/pdfs_catalog.json",
         ]
+        if WEB_CRAWLS_DIR.is_dir():
+            for p in WEB_CRAWLS_DIR.glob("*.json"):
+                paths.append(str(p.relative_to(ROOT)))
         for p in paths:
             if (ROOT / p).exists():
                 _run_git(["add", "-f", p])

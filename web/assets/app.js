@@ -2556,22 +2556,34 @@
     return (h.split(".")[0] || "SITE").toUpperCase();
   }
 
-  const ACTIVE_CRAWLS_KEY = "regintel_active_crawls_v1";
-  function readActiveCrawls() {
+  // Only the "I just clicked Start" overlay lives in this browser.
+  // Shared jobs come from web/data/active_crawls.json so every device matches.
+  const LOCAL_START_KEY = "regintel_local_starts_v2";
+  function readLocalStarts() {
     try {
-      const raw = localStorage.getItem(ACTIVE_CRAWLS_KEY);
+      const raw = localStorage.getItem(LOCAL_START_KEY);
       const arr = raw ? JSON.parse(raw) : [];
       return Array.isArray(arr) ? arr : [];
     } catch {
       return [];
     }
   }
-  function writeActiveCrawls(list) {
+  function writeLocalStarts(list) {
     try {
-      localStorage.setItem(ACTIVE_CRAWLS_KEY, JSON.stringify(list.slice(0, 8)));
+      localStorage.setItem(LOCAL_START_KEY, JSON.stringify(list.slice(0, 8)));
     } catch {
       /* ignore */
     }
+  }
+  function ageMs(iso) {
+    const t = Date.parse(iso || "");
+    return Number.isFinite(t) ? Date.now() - t : Infinity;
+  }
+  function pickNewerStatus(a, b) {
+    const ta = Date.parse((a && a.updated_at) || 0) || 0;
+    const tb = Date.parse((b && b.updated_at) || 0) || 0;
+    if (ta === 0 && tb === 0) return a || b || null;
+    return ta >= tb ? a : b;
   }
   function isLivePhase(phase) {
     const p = String(phase || "").toLowerCase();
@@ -2677,7 +2689,14 @@
     if (!siteList) return;
 
     const sites = collectSites(ministries, pdfs);
-    let active = readActiveCrawls();
+    let active = readLocalStarts().filter((j) => {
+      return (
+        j &&
+        j.code &&
+        (j.phase === "starting" || j.phase === "queued") &&
+        ageMs(j.startedAt) < 10 * 60 * 1000
+      );
+    });
 
     function showHome() {
       if (home) home.hidden = false;
@@ -2778,10 +2797,77 @@
         btn.addEventListener("click", () => {
           const code = btn.getAttribute("data-code");
           active = active.filter((j) => j.code !== code);
-          writeActiveCrawls(active);
+          writeLocalStarts(active.filter((j) => j.phase === "starting" || j.phase === "queued"));
           renderProgress();
         });
       });
+    }
+
+    function jobFromStatus(st) {
+      if (!st) return null;
+      const cur = st.current_source || {};
+      const prog = st.ministry_document_list || {};
+      const counts = prog.counts || {};
+      const url = cur.url || prog.target_url || "";
+      const label = cur.jurisdiction || prog.label || "";
+      const code = siteCodeFromUrl(url || label);
+      if (!code) return null;
+      const listed = cur.listed != null ? cur.listed : counts.listed_total || 0;
+      const downloaded =
+        Number(cur.downloaded || counts.downloaded || 0) +
+        Number(cur.scanned_pdf || counts.scanned_pdf || 0);
+      const toDownload = cur.to_download != null ? cur.to_download : counts.to_download;
+      const pages =
+        cur.pages_visited != null
+          ? cur.pages_visited
+          : prog.pages_visited != null
+            ? prog.pages_visited
+            : 0;
+      const phase = st.phase || prog.phase || "";
+      const finished = crawlLooksFinished(phase, listed, downloaded, toDownload, st.message);
+      return {
+        code,
+        url,
+        label,
+        phase: finished ? "stopped" : phase || "running",
+        message: st.message || phase || "",
+        pages,
+        listed,
+        downloaded,
+        to_download: toDownload,
+        updated_at: st.updated_at,
+        checkedAt: st.updated_at,
+      };
+    }
+
+    function normalizeSharedJob(j, nowIso) {
+      const listed = Number(j.listed || 0);
+      const downloaded = Number(j.downloaded || 0);
+      const toDownload = j.to_download;
+      const phase = j.phase || "";
+      const updated = j.updated_at || j.checkedAt || "";
+      const staleLive = isLivePhase(phase) && ageMs(updated) > 25 * 60 * 1000;
+      const finished =
+        staleLive || crawlLooksFinished(phase, listed, downloaded, toDownload, j.message);
+      return {
+        code: j.code,
+        url: j.url || "",
+        label: j.label || j.code,
+        phase: finished ? "stopped" : phase,
+        message: finished
+          ? listed || downloaded
+            ? "Crawl finished · " + listed + " PDFs found, " + downloaded + " downloaded."
+            : staleLive
+              ? "No recent update from the crawl worker."
+              : j.message || "Crawl stopped."
+          : j.message || phase + "…",
+        pages: j.pages || 0,
+        listed,
+        downloaded,
+        startedAt: j.startedAt || updated,
+        checkedAt: nowIso,
+        updated_at: updated,
+      };
     }
 
     async function refreshLiveStatus(fromClick) {
@@ -2789,134 +2875,69 @@
       if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
       try {
         const bust = "t=" + Date.now();
-        const [stPage, stRaw, docList, gh] = await Promise.all([
-          fetchJson("data/crawl_status.json?" + bust).catch(() => null),
-          fetch(
-            "https://raw.githubusercontent.com/tmai-tech/regintel/main/web/data/crawl_status.json?" +
-              bust,
-          )
+        const rawBase = "https://raw.githubusercontent.com/tmai-tech/regintel/main/";
+        const [sharedPage, sharedRaw, stPage, stRaw] = await Promise.all([
+          fetchJson("data/active_crawls.json?" + bust).catch(() => null),
+          fetch(rawBase + "web/data/active_crawls.json?" + bust)
             .then((r) => (r.ok ? r.json() : null))
             .catch(() => null),
-          fetchJson("data/ministry_document_list.json?" + bust).catch(() => null),
-          fetch(
-            "https://api.github.com/repos/tmai-tech/regintel/actions/workflows/crawl-ministry.yml/runs?per_page=5",
-          )
+          fetchJson("data/crawl_status.json?" + bust).catch(() => null),
+          fetch(rawBase + "web/data/crawl_status.json?" + bust)
             .then((r) => (r.ok ? r.json() : null))
             .catch(() => null),
         ]);
-        const st =
-          stRaw &&
-          (!stPage ||
-            Date.parse(stRaw.updated_at || 0) >= Date.parse(stPage.updated_at || 0))
-            ? stRaw
-            : stPage;
-        const ghRuns = (gh && gh.workflow_runs) || [];
-        const running = ghRuns.find(
-          (r) => r.status === "in_progress" || r.status === "queued" || r.status === "waiting",
-        );
-        const cur = (st && st.current_source) || {};
-        const counts = (docList && docList.counts) || {};
-        const liveUrl = cur.url || (docList && docList.target_url) || "";
-        const liveLabel = cur.jurisdiction || (docList && docList.label) || "";
-        const phase = (st && st.phase) || (docList && docList.phase) || "";
-        const pages =
-          cur.pages_visited != null
-            ? cur.pages_visited
-            : docList && docList.pages_visited != null
-              ? docList.pages_visited
-              : 0;
-        const listed =
-          cur.listed != null
-            ? cur.listed
-            : counts.listed_total != null
-              ? counts.listed_total
-              : 0;
-        const downloaded =
-          Number(cur.downloaded || counts.downloaded || 0) +
-          Number(cur.scanned_pdf || counts.scanned_pdf || 0);
-        const toDownload = cur.to_download != null ? cur.to_download : counts.to_download;
-        const message = (st && st.message) || "";
-        const liveCode = siteCodeFromUrl(liveUrl || liveLabel);
-        const finished =
-          !running ||
-          crawlLooksFinished(phase, listed, downloaded, toDownload, message);
+        const shared = pickNewerStatus(sharedRaw, sharedPage);
+        const st = pickNewerStatus(stRaw, stPage);
 
-        const liveIsThis = (j) =>
-          (liveCode && j.code === liveCode) ||
-          (liveUrl && hostOf(j.url) === hostOf(liveUrl));
+        const byCode = new Map();
+        const serverJobs = (shared && Array.isArray(shared.jobs) && shared.jobs) || [];
+        for (const row of serverJobs) {
+          if (!row || !row.code) continue;
+          byCode.set(row.code, normalizeSharedJob(row, nowIso));
+        }
+        const fallback = jobFromStatus(st);
+        if (fallback && !byCode.has(fallback.code)) {
+          byCode.set(fallback.code, normalizeSharedJob(fallback, nowIso));
+        }
 
-        active = active.map((j) => {
-          j.checkedAt = nowIso;
-          const doneHere =
-            finished ||
-            (liveIsThis(j) && crawlLooksFinished(phase, listed, downloaded, toDownload, message));
-          if (liveIsThis(j)) {
-            j.pages = pages;
-            j.listed = listed;
-            j.downloaded = downloaded;
-            j.url = liveUrl || j.url;
-            if (doneHere) {
-              j.phase = "stopped";
-              j.message =
-                listed || downloaded
-                  ? "Crawl finished · " +
-                    listed +
-                    " PDFs found, " +
-                    downloaded +
-                    " downloaded."
-                  : "Crawl stopped. No PDFs found.";
-            } else if (isLivePhase(phase)) {
-              j.phase = phase;
-              j.message = message || phase + "…";
-            }
-            return j;
-          }
-          if (doneHere || (!running && isLivePhase(j.phase) && j.phase !== "queued" && j.phase !== "starting")) {
-            j.phase = "stopped";
-            j.message =
-              (j.listed || 0) > 0
-                ? "Crawl finished · " + j.listed + " PDFs found."
-                : "Crawl stopped.";
-          }
-          return j;
+        const locals = readLocalStarts().filter((j) => {
+          return (
+            j &&
+            j.code &&
+            (j.phase === "starting" || j.phase === "queued") &&
+            ageMs(j.startedAt) < 10 * 60 * 1000
+          );
         });
-
-        if (!finished && isLivePhase(phase) && (liveUrl || liveLabel)) {
-          if (!active.some(liveIsThis)) {
-            active.unshift({
-              code: liveCode,
-              url: liveUrl,
-              label: liveLabel,
-              startedAt: new Date().toISOString(),
-              checkedAt: nowIso,
-              phase,
-              message: message || phase + "…",
-              pages,
-              listed,
-              downloaded,
-            });
+        for (const j of locals) {
+          if (!byCode.has(j.code)) {
+            byCode.set(j.code, Object.assign({}, j, { checkedAt: nowIso }));
           }
         }
 
-        active = active.filter((j) => {
-          if (j.phase === "stopped") {
-            const age = Date.now() - Date.parse(j.checkedAt || j.startedAt || "") || 0;
-            return age < 30 * 60 * 1000;
-          }
-          if (j.phase === "starting" || j.phase === "queued") {
-            const age = Date.now() - Date.parse(j.startedAt || "") || 0;
-            return age < 2 * 3600 * 1000;
-          }
+        active = [...byCode.values()].filter((j) => {
+          if (j.phase === "stopped") return ageMs(j.updated_at || j.checkedAt) < 30 * 60 * 1000;
           return isLivePhase(j.phase);
         });
-        writeActiveCrawls(active);
+        active.sort((a, b) => {
+          const la = isLivePhase(a.phase) ? 0 : 1;
+          const lb = isLivePhase(b.phase) ? 0 : 1;
+          return la - lb || String(a.code).localeCompare(String(b.code));
+        });
+        writeLocalStarts(
+          locals.filter((j) => {
+            const srv = byCode.get(j.code);
+            return !srv || srv.phase === "starting" || srv.phase === "queued";
+          }),
+        );
         renderProgress();
         if (fromClick && statusEl) {
-          statusEl.textContent = running
-            ? "Worker is " + running.status + ". Cards updated."
-            : "No worker running right now. Cards updated " +
-              new Date(nowIso).toLocaleTimeString() +
-              ".";
+          const liveN = active.filter((j) => isLivePhase(j.phase)).length;
+          statusEl.textContent =
+            liveN > 0
+              ? liveN + " crawl" + (liveN === 1 ? "" : "s") + " in progress. Same status on every device."
+              : "No crawl in progress. Cards updated " +
+                new Date(nowIso).toLocaleTimeString() +
+                ".";
         }
       } catch (_) {
         active = active.map((j) => Object.assign(j, { checkedAt: nowIso }));
@@ -2946,19 +2967,19 @@
           downloaded: 0,
         };
         active = [job, ...active.filter((j) => j.code !== code)];
-        writeActiveCrawls(active);
+        writeLocalStarts(active.filter((j) => j.phase === "starting" || j.phase === "queued"));
         renderProgress();
         if (statusEl) statusEl.textContent = "Crawl in progress for " + code + " — stay on this page.";
         try {
           await dispatchMinistryCrawl(url);
           job.message = "Worker accepted the job. Discovering pages and PDFs…";
-          writeActiveCrawls(active);
+          writeLocalStarts(active.filter((j) => j.phase === "starting" || j.phase === "queued"));
           renderProgress();
         } catch (err) {
           job.phase = "queued";
           job.message =
             "Watching live status on this page. A crawl worker will pick this up when connected.";
-          writeActiveCrawls(active);
+          writeLocalStarts(active.filter((j) => j.phase === "starting" || j.phase === "queued"));
           renderProgress();
           if (statusEl) {
             statusEl.textContent =
