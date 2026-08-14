@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T17:21:14.440288+00:00",
+  "updated_at": "2026-08-14T17:22:52.932144+00:00",
   "phase": "discovering",
-  "message": "discovering zatca.gov.sa: pages=250 listed=80",
+  "message": "discovering zatca.gov.sa: pages=300 listed=84",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 80,
+    "ministry_listed": 84,
     "ministry_downloaded": 16,
     "ministry_failed": 6,
     "ministry_scanned": 1,
-    "ministry_to_download": 57
+    "ministry_to_download": 61
   },
   "by_jurisdiction": [
     {
@@ -79,12 +79,12 @@
     "jurisdiction": "Saudi Arabia - ZATCA",
     "url": "https://zatca.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 80,
+    "listed": 84,
     "downloaded": 16,
     "download_failed": 6,
     "scanned_pdf": 1,
-    "to_download": 57,
-    "pages_visited": 250
+    "to_download": 61,
+    "pages_visited": 300
   },
   "recent_pdfs": [
     {
@@ -351,17 +351,17 @@
     "label": "Saudi Arabia - ZATCA",
     "target_url": "https://zatca.gov.sa/",
     "counts": {
-      "to_download": 57,
+      "to_download": 61,
       "downloaded": 16,
       "download_failed": 6,
       "scanned_pdf": 1,
-      "listed_total": 80
+      "listed_total": 84
     },
     "discovery_methods": {
-      "href": 75,
+      "href": 79,
       "script": 5
     },
-    "pages_visited": 250,
+    "pages_visited": 300,
     "sitemaps_used": [
       "https://zatca.gov.sa/sitemap.xml",
       "https://zatca.gov.sa/sitemap_index.xml",
@@ -379,6 +379,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T17:21:12.547558+00:00"
+    "updated_at": "2026-08-14T17:22:51.049747+00:00"
   }
 }

@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T17:21:12.544838+00:00",
+  "updated_at": "2026-08-14T17:22:51.047109+00:00",
   "phase": "discovering",
   "target_url": "https://zatca.gov.sa/",
   "label": "Saudi Arabia - ZATCA",
   "counts": {
-    "to_download": 57,
+    "to_download": 61,
     "downloaded": 16,
     "download_failed": 6,
     "scanned_pdf": 1,
-    "listed_total": 80
+    "listed_total": 84
   },
   "discovery_methods": {
-    "href": 75,
+    "href": 79,
     "script": 5
   },
-  "pages_visited": 250,
+  "pages_visited": 300,
   "documents": [
     {
       "filename": "ZATCA-REPORT_2021.pdf",
@@ -972,6 +972,54 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "الاتفاقية باللغة العربية",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "The Fees Rules on Customs Services.pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/The%20Fees%20Rules%20on%20Customs%20Services.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "اضغط هنا​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Tool Rett.pdf",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Tool%20Rett.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "click here​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Khafji22.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Khafji22.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "بيان المركبات الرجيع بمنفذ جمرك الخفجي​​​​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - ZATCA"
+    },
+    {
+      "filename": "Salwa11.pdf",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Salwa11.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "بيان المركبات والسكراب والأجهزة الرجيع بمنفذ جمرك سلوى",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - ZATCA"
