@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T15:51:57.823105+00:00",
+  "updated_at": "2026-08-14T15:54:21.496349+00:00",
   "phase": "discovering",
-  "message": "discovering momah.gov.sa: pages=925 listed=289",
+  "message": "discovering momah.gov.sa: pages=975 listed=289",
   "run_id": "31813473024",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
   "totals": {
@@ -84,7 +84,7 @@
     "download_failed": 0,
     "scanned_pdf": 0,
     "to_download": 289,
-    "pages_visited": 925
+    "pages_visited": 975
   },
   "recent_pdfs": [
     {
@@ -361,7 +361,7 @@
       "href": 288,
       "script": 1
     },
-    "pages_visited": 925,
+    "pages_visited": 975,
     "sitemaps_used": [
       "https://momah.gov.sa/sitemap.xml",
       "https://momah.gov.sa/sitemap_index.xml",
@@ -373,6 +373,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T15:51:55.913497+00:00"
+    "updated_at": "2026-08-14T15:54:19.586344+00:00"
   }
 }
