@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T16:14:28.994823+00:00",
+  "updated_at": "2026-08-14T16:16:18.350499+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
@@ -76,7 +76,7 @@
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 1500,
+  "pages_visited": 1525,
   "page_errors_sample": [
     {
       "url": "https://momah.gov.sa/ar/eparticipation/platform",
