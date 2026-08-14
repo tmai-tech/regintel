@@ -2547,11 +2547,26 @@
     return (
       p === "discovering" ||
       p === "downloading" ||
-      p === "listed" ||
       p === "starting" ||
       p === "running" ||
       p === "queued"
     );
+  }
+
+  function crawlLooksFinished(phase, listed, downloaded, toDownload, message) {
+    const p = String(phase || "").toLowerCase();
+    if (p === "idle" || p === "complete" || p === "stopped" || p === "listed") return true;
+    const rem = Number(toDownload);
+    const found = Number(listed) || 0;
+    const saved = Number(downloaded) || 0;
+    if (
+      (p === "downloading" || p === "listed") &&
+      rem === 0 &&
+      (found > 0 || saved > 0 || /ok=\d+/.test(String(message || "")))
+    ) {
+      return true;
+    }
+    return false;
   }
 
   async function dispatchMinistryCrawl(siteUrl) {
@@ -2788,8 +2803,12 @@
         const downloaded =
           Number(cur.downloaded || counts.downloaded || 0) +
           Number(cur.scanned_pdf || counts.scanned_pdf || 0);
+        const toDownload = cur.to_download != null ? cur.to_download : counts.to_download;
         const message = (st && st.message) || "";
         const liveCode = siteCodeFromUrl(liveUrl || liveLabel);
+        const finished =
+          !running ||
+          crawlLooksFinished(phase, listed, downloaded, toDownload, message);
 
         const liveIsThis = (j) =>
           (liveCode && j.code === liveCode) ||
@@ -2797,43 +2816,41 @@
 
         active = active.map((j) => {
           j.checkedAt = nowIso;
+          const doneHere =
+            finished ||
+            (liveIsThis(j) && crawlLooksFinished(phase, listed, downloaded, toDownload, message));
           if (liveIsThis(j)) {
-            if (isLivePhase(phase)) {
-              j.phase = phase;
-              j.message = message || phase + "…";
-              j.pages = pages;
-              j.listed = listed;
-              j.downloaded = downloaded;
-              j.url = liveUrl || j.url;
-            } else {
+            j.pages = pages;
+            j.listed = listed;
+            j.downloaded = downloaded;
+            j.url = liveUrl || j.url;
+            if (doneHere) {
               j.phase = "stopped";
               j.message =
                 listed || downloaded
-                  ? "Crawl finished · " + (message || (listed + " PDFs"))
+                  ? "Crawl finished · " +
+                    listed +
+                    " PDFs found, " +
+                    downloaded +
+                    " downloaded."
                   : "Crawl stopped. No PDFs found.";
-              j.pages = pages;
-              j.listed = listed;
-              j.downloaded = downloaded;
+            } else if (isLivePhase(phase)) {
+              j.phase = phase;
+              j.message = message || phase + "…";
             }
             return j;
           }
-          // A different site is on the worker — do not keep this card as discovering
-          if (isLivePhase(j.phase) && j.phase !== "queued" && j.phase !== "starting") {
-            if (isLivePhase(phase) && liveCode && liveCode !== j.code) {
-              j.phase = "stopped";
-              j.message = "Stopped. Worker moved on to " + liveCode + ".";
-            } else if (!running) {
-              j.phase = "stopped";
-              j.message =
-                (j.listed || 0) > 0
-                  ? "Crawl finished."
-                  : "Crawl stopped. No PDFs found.";
-            }
+          if (doneHere || (!running && isLivePhase(j.phase) && j.phase !== "queued" && j.phase !== "starting")) {
+            j.phase = "stopped";
+            j.message =
+              (j.listed || 0) > 0
+                ? "Crawl finished · " + j.listed + " PDFs found."
+                : "Crawl stopped.";
           }
           return j;
         });
 
-        if (isLivePhase(phase) && (liveUrl || liveLabel)) {
+        if (!finished && isLivePhase(phase) && (liveUrl || liveLabel)) {
           if (!active.some(liveIsThis)) {
             active.unshift({
               code: liveCode,
