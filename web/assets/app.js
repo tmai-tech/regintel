@@ -983,23 +983,20 @@
     paintDocs("");
   }
 
-  /** Public site allowlist: SDAIA + TGA + MC + MEWA (not global gazette). */
+  /** Public site: original Saudi sheet + SDAIA/TGA/MC/MEWA (not global gazette). */
   function isAllowedSaudiMinistryRow(p) {
     const j = String((p && p.jurisdiction) || "");
     const h = String((p && p.host) || "").toLowerCase();
     const u = String((p && (p.url || p.open_url || p.source_page)) || "").toLowerCase();
     const blob = (j + " " + h + " " + u).toLowerCase();
-    return (
-      blob.includes("sdaia") ||
-      blob.includes("tga.gov") ||
-      blob.includes("mc.gov") ||
-      blob.includes("mewa.gov") ||
-      j.includes("SDAIA") ||
-      j.includes("TGA") ||
-      j.includes("MEWA") ||
-      /Saudi Arabia - MC\b/.test(j) ||
-      /Ministry of Commerce/i.test(j)
-    );
+    const hosts = [
+      "sdaia.gov", "tga.gov", "mc.gov", "mewa.gov", "momah.gov", "mof.gov",
+      "nca.gov", "ia.gov.sa", "socpa.org", "moi.gov", "nazaha.gov", "sama.gov",
+      "moj.gov", "gac.gov", "cst.gov", "cma.org", "saudiexchange", "gosi.gov",
+      "saso.gov", "saip.gov", "zatca.gov",
+    ];
+    if (hosts.some((x) => blob.includes(x))) return true;
+    return /Saudi Arabia - /i.test(j) || /Ministry of Commerce/i.test(j);
   }
   // backward-compatible alias used elsewhere
   function isSdaiaRow(p) {
@@ -2488,6 +2485,23 @@
     if (h.includes("mewa")) return "Saudi Arabia - MEWA";
     if (h.includes("tga.gov")) return "Saudi Arabia - TGA";
     if (h.includes("mc.gov")) return "Saudi Arabia - MC";
+    if (h.includes("momah")) return "Saudi Arabia - MOMAH";
+    if (h.includes("mof.gov")) return "Saudi Arabia - MOF";
+    if (h.includes("nca.gov")) return "Saudi Arabia - NCA";
+    if (h === "ia.gov.sa" || h.endsWith(".ia.gov.sa")) return "Saudi Arabia - IA";
+    if (h.includes("socpa")) return "Saudi Arabia - SOCPA";
+    if (h.includes("moi.gov")) return "Saudi Arabia - MOI";
+    if (h.includes("nazaha")) return "Saudi Arabia - Nazaha";
+    if (h.includes("sama.gov")) return "Saudi Arabia - SAMA";
+    if (h.includes("moj.gov")) return "Saudi Arabia - MOJ";
+    if (h.includes("gac.gov")) return "Saudi Arabia - GAC";
+    if (h.includes("cst.gov")) return "Saudi Arabia - CST";
+    if (h.includes("cma.org")) return "Saudi Arabia - CMA";
+    if (h.includes("saudiexchange")) return "Saudi Arabia - Tadawul";
+    if (h.includes("gosi.gov")) return "Saudi Arabia - GOSI";
+    if (h.includes("saso.gov")) return "Saudi Arabia - SASO";
+    if (h.includes("saip.gov")) return "Saudi Arabia - SAIP";
+    if (h.includes("zatca")) return "Saudi Arabia - ZATCA";
     return h ? "Ministry - " + h : "Ministry";
   }
 
@@ -2522,6 +2536,23 @@
     if (h.includes("mewa")) return "MEWA";
     if (h.includes("tga.gov")) return "TGA";
     if (h.includes("mc.gov")) return "MC";
+    if (h.includes("momah")) return "MOMAH";
+    if (h.includes("mof.gov")) return "MOF";
+    if (h.includes("nca.gov")) return "NCA";
+    if (h === "ia.gov.sa" || h.endsWith(".ia.gov.sa")) return "IA";
+    if (h.includes("socpa")) return "SOCPA";
+    if (h.includes("moi.gov")) return "MOI";
+    if (h.includes("nazaha")) return "NAZAHA";
+    if (h.includes("sama.gov")) return "SAMA";
+    if (h.includes("moj.gov")) return "MOJ";
+    if (h.includes("gac.gov")) return "GAC";
+    if (h.includes("cst.gov")) return "CST";
+    if (h.includes("cma.org")) return "CMA";
+    if (h.includes("saudiexchange")) return "TADAWUL";
+    if (h.includes("gosi.gov")) return "GOSI";
+    if (h.includes("saso.gov")) return "SASO";
+    if (h.includes("saip.gov")) return "SAIP";
+    if (h.includes("zatca")) return "ZATCA";
     return (h.split(".")[0] || "SITE").toUpperCase();
   }
 
@@ -2968,11 +2999,7 @@
       ]);
       if (!Array.isArray(pdfsRes)) throw new Error("PDF catalog is not a list");
       pdfs = pdfsRes.filter((p) => isAllowedSaudiMinistryRow(p));
-      const allowCodes = new Set(["SDAIA", "TGA", "MC", "MEWA"]);
-      ministries = (Array.isArray(minRes) ? minRes : []).filter((m) =>
-        allowCodes.has(String(m.code || "").toUpperCase()),
-      );
-      if (!ministries.length) ministries = defaultMinistries();
+      ministries = Array.isArray(minRes) && minRes.length ? minRes : defaultMinistries();
       evaSummaries = (Array.isArray(evaRes) ? evaRes : []).filter((e) =>
         isAllowedSaudiMinistryRow(e),
       );

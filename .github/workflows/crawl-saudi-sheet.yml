@@ -1,0 +1,132 @@
+# Sequential deep crawls for every remaining site on data/saudi_ministries_links.txt
+# Skips SDAIA / MEWA / MC (already extracted) and TGA (no public PDFs).
+name: Crawl Saudi sheet
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: "Max HTML pages per site"
+        required: false
+        default: "2000"
+      delay:
+        description: "Seconds between requests"
+        required: false
+        default: "0.25"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl-ministry
+  cancel-in-progress: false
+
+jobs:
+  crawl-sheet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pymupdf || true
+          python -m playwright install --with-deps chromium || python -m playwright install chromium || true
+
+      - name: Sequential sheet crawls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REGINTEL_LIVE_GIT_PUSH: "1"
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          MAX_PAGES="${{ github.event.inputs.max_pages }}"
+          DELAY="${{ github.event.inputs.delay }}"
+
+          crawl_one() {
+            local URL="$1"
+            local LABEL="$2"
+            echo "========================================"
+            echo "=== Crawling $LABEL :: $URL ==="
+            echo "========================================"
+            set +e
+            timeout --signal=TERM --kill-after=45s 40m python -u collector/ministry_pipeline.py \
+              --url "$URL" \
+              --label "$LABEL" \
+              --max-pages "${MAX_PAGES:-2000}" \
+              --delay "${DELAY:-0.25}" \
+              --insecure
+            rc=$?
+            set -euo pipefail
+            if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
+              echo "::warning::timed out $LABEL (continuing)"
+            elif [ "$rc" -ne 0 ]; then
+              echo "::warning::failed $LABEL rc=$rc (continuing)"
+            fi
+            python scripts/fix_ministry_jurisdiction_labels.py || true
+            python scripts/publish_saudi_ministries.py || true
+          }
+
+          crawl_one "https://momah.gov.sa" "Saudi Arabia - MOMAH"
+          crawl_one "https://www.mof.gov.sa" "Saudi Arabia - MOF"
+          crawl_one "https://nca.gov.sa" "Saudi Arabia - NCA"
+          crawl_one "https://ia.gov.sa" "Saudi Arabia - IA"
+          crawl_one "https://socpa.org.sa" "Saudi Arabia - SOCPA"
+          crawl_one "https://www.moi.gov.sa" "Saudi Arabia - MOI"
+          crawl_one "https://nazaha.gov.sa" "Saudi Arabia - Nazaha"
+          crawl_one "https://rulebook.sama.gov.sa/en" "Saudi Arabia - SAMA"
+          crawl_one "https://www.moj.gov.sa" "Saudi Arabia - MOJ"
+          crawl_one "https://gac.gov.sa" "Saudi Arabia - GAC"
+          crawl_one "https://www.cst.gov.sa" "Saudi Arabia - CST"
+          crawl_one "https://cma.org.sa" "Saudi Arabia - CMA"
+          crawl_one "https://www.saudiexchange.sa" "Saudi Arabia - Tadawul"
+          crawl_one "https://www.gosi.gov.sa" "Saudi Arabia - GOSI"
+          crawl_one "https://www.saso.gov.sa" "Saudi Arabia - SASO"
+          crawl_one "https://www.saip.gov.sa" "Saudi Arabia - SAIP"
+          crawl_one "https://zatca.gov.sa" "Saudi Arabia - ZATCA"
+
+          if [ -n "${{ secrets.XAI_API_KEY }}" ]; then
+            export XAI_API_KEY="${{ secrets.XAI_API_KEY }}"
+          fi
+          python -u collector/eva_summarize.py --limit 200 || true
+          python scripts/publish_saudi_ministries.py || true
+
+      - name: Commit + push catalog
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python collector/live_publish.py || true
+          python scripts/publish_saudi_ministries.py || true
+          git add -f data/pdfs/manifest.json data/pdfs/ministry_lists \
+            web/data/pdfs_catalog.json web/data/crawl_status.json \
+            web/data/ministry_document_list.json \
+            web/data/saudi_ministries.json web/data/laws_catalog.json \
+            web/data/meta.json web/data/eva_summaries.json web/data/eva_meta.json \
+            android/app/src/main/assets/pdfs_catalog.json \
+            data/pdfs/crawl_status.json data/saudi_ministries.json 2>/dev/null || true
+          REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: Saudi sheet crawl $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            for i in 1 2 3 4 5; do
+              git fetch "$REPO" main:refs/remotes/origin/main || true
+              git rebase origin/main || true
+              git push "$REPO" HEAD:main && break
+              sleep $((i * 3))
+            done
+          fi
