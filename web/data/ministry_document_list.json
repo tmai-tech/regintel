@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T14:44:30.580815+00:00",
+  "updated_at": "2026-08-14T14:51:51.508958+00:00",
   "phase": "discovering",
-  "target_url": "https://momah.gov.sa/",
+  "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
     "to_download": 0,
@@ -11,7 +11,7 @@
     "listed_total": 0
   },
   "discovery_methods": {},
-  "pages_visited": 0,
+  "pages_visited": 33,
   "documents": [],
   "failed_sample": []
 }
