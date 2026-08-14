@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-14T16:16:18.350499+00:00",
+  "updated_at": "2026-08-14T16:17:55.727763+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "counts": {
-    "to_download": 306,
+    "to_download": 307,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 306
+    "listed_total": 307
   },
   "discovery_methods": {
-    "href": 304,
+    "href": 305,
     "script": 2
   },
-  "pages_visited": 1525,
+  "pages_visited": 1600,
   "documents": [
     {
       "filename": "القرار الوزاري لدليل الرقابة على التقسيم المخالف للوحدات السكنية.pdf",
@@ -3686,6 +3686,18 @@
       "title": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf",
       "bytes": null,
       "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - MOMAH"
+    },
+    {
+      "filename": "dlyl almstkhdm lkhdmt tba_t shhadt dfn - almstfyd_0.pdf",
+      "url": "https://momah.gov.sa/sites/default/files/2025-08/dlyl%20almstkhdm%20lkhdmt%20tba%60t%20shhadt%20dfn%20-%20almstfyd_0.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "تحميل",
+      "bytes": null,
+      "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - MOMAH"
     }
   ],

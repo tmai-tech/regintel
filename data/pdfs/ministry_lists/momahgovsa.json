@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-14T16:16:18.350499+00:00",
+  "updated_at": "2026-08-14T16:17:55.727763+00:00",
   "phase": "discovering",
   "target_url": "https://momah.gov.sa/ar",
   "label": "Saudi Arabia - MOMAH",
   "host": "momah.gov.sa",
   "counts": {
-    "to_download": 306,
+    "to_download": 307,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 306
+    "listed_total": 307
   },
   "discovery_methods": {
-    "href": 304,
+    "href": 305,
     "script": 2
   },
   "sitemaps_used": [
@@ -76,7 +76,7 @@
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://momah.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 1525,
+  "pages_visited": 1600,
   "page_errors_sample": [
     {
       "url": "https://momah.gov.sa/ar/eparticipation/platform",
@@ -5901,6 +5901,25 @@
       "host": "furas.momah.gov.sa",
       "discovery_method": "script",
       "discovered_at": "2026-08-14T16:13:01.982890+00:00",
+      "downloaded_at": null,
+      "bytes": null,
+      "scanned_pdf": false,
+      "local_path": null,
+      "sha256": null
+    },
+    {
+      "url": "https://momah.gov.sa/sites/default/files/2025-08/dlyl%20almstkhdm%20lkhdmt%20tba%60t%20shhadt%20dfn%20-%20almstfyd_0.pdf",
+      "filename": "dlyl almstkhdm lkhdmt tba_t shhadt dfn - almstfyd_0.pdf",
+      "type": "PDF",
+      "title": "تحميل",
+      "status": "to_download",
+      "download_error": null,
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "source_kind": "ministry",
+      "source_page": "https://momah.gov.sa/ar",
+      "host": "momah.gov.sa",
+      "discovery_method": "href",
+      "discovered_at": "2026-08-14T16:17:23.314907+00:00",
       "downloaded_at": null,
       "bytes": null,
       "scanned_pdf": false,
