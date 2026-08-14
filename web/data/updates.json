@@ -1,7 +1,7 @@
 [
   {
-    "id": "36eab62341ba0348",
-    "discovered_at": "2026-08-13T07:09:18.037112+00:00",
+    "id": "044b6d1b9d8c70c0",
+    "discovered_at": "2026-08-14T07:05:53.104090+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,36 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "86aa33592fecab3b",
+    "discovered_at": "2026-08-14T07:05:53.104090+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Bank of Canada",
+    "law_area": "Capital",
+    "topical_relevance": "Derivatives, Public & OTC Market",
+    "title": "CIMPA and CDS announce the start of the trial period for the fail fee framework for Government of Canada securities transactions",
+    "link": "https://www.bankofcanada.ca/2026/08/cimpa-and-cds-announce-the-start-of-the-trial-period-for-the-fail-fee-framework-for-government-of-canada-securities-transactions/",
+    "source_url": "https://www.bankofcanada.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "83446e1662d08e7a",
+    "discovered_at": "2026-08-14T07:05:53.104090+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -70,21 +100,6 @@
     "title": "Statement from Minister Hajdu and Secretary of State Gainey on International Youth Day 2026",
     "link": "https://www.canada.ca/en/employment-social-development/news/2026/08/statement-from-minister-hajdu-and-secretary-of-state-gainey-on-international-youth-day-2026.html",
     "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "b8d4d77e67b22795",
-    "discovered_at": "2026-08-13T07:09:18.037112+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
