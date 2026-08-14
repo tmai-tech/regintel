@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T15:05:20.169328+00:00",
+  "updated_at": "2026-08-14T15:07:21.295324+00:00",
   "phase": "discovering",
-  "message": "discovering momah.gov.sa: pages=325 listed=286",
+  "message": "discovering momah.gov.sa: pages=375 listed=289",
   "run_id": "31810874600",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31810874600",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 286,
+    "ministry_listed": 289,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 286
+    "ministry_to_download": 289
   },
   "by_jurisdiction": [
     {
@@ -79,12 +79,12 @@
     "jurisdiction": "Saudi Arabia - MOMAH",
     "url": "https://momah.gov.sa/ar",
     "source_kind": "ministry_pipeline",
-    "listed": 286,
+    "listed": 289,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 286,
-    "pages_visited": 325
+    "to_download": 289,
+    "pages_visited": 375
   },
   "recent_pdfs": [
     {
@@ -351,17 +351,17 @@
     "label": "Saudi Arabia - MOMAH",
     "target_url": "https://momah.gov.sa/ar",
     "counts": {
-      "to_download": 286,
+      "to_download": 289,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 286
+      "listed_total": 289
     },
     "discovery_methods": {
-      "href": 285,
+      "href": 288,
       "script": 1
     },
-    "pages_visited": 325,
+    "pages_visited": 375,
     "sitemaps_used": [
       "https://momah.gov.sa/sitemap.xml",
       "https://momah.gov.sa/sitemap_index.xml",
@@ -373,6 +373,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T15:05:18.932461+00:00"
+    "updated_at": "2026-08-14T15:07:19.952504+00:00"
   }
 }
