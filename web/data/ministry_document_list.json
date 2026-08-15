@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-08-15T14:58:05.272430+00:00",
-  "phase": "discovering",
+  "updated_at": "2026-08-15T15:00:26.847810+00:00",
+  "phase": "downloading",
   "target_url": "https://www.gosi.gov.sa/",
   "label": "Saudi Arabia - GOSI",
   "counts": {
-    "to_download": 18,
+    "to_download": 26,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 18
+    "listed_total": 26
   },
   "discovery_methods": {
-    "href": 18
+    "href": 22,
+    "script": 4
   },
-  "pages_visited": 800,
+  "pages_visited": 843,
   "documents": [
     {
       "filename": "vaolition rules en.pdf",
@@ -229,6 +230,102 @@
       "title": "مجموعات البيانات المفتوحة",
       "bytes": null,
       "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "MaternityCompensation.pdf",
+      "url": "https://awareness.gosi.gov.sa/pdf/MaternityCompensation.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "MaternityCompensation.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "MaternityCompensation.pdf",
+      "url": "https://awareness.gosi.gov.sa/MaternityCompensation.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "MaternityCompensation.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "journeyInformation4.pdf",
+      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation4.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "journeyInformation4.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "journeyInformation4.pdf",
+      "url": "https://awareness.gosi.gov.sa/journeyInformation4.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "journeyInformation4.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Contributions.pdf",
+      "url": "https://awareness.gosi.gov.sa/pdf/Contributions.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Contributions.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "journeyInformation3.pdf",
+      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "journeyInformation3.pdf",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Contributions.pdf",
+      "url": "https://awareness.gosi.gov.sa/Contributions.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Contributions.pdf",
+      "bytes": null,
+      "discovery_method": "script",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "journeyInformation3.pdf",
+      "url": "https://awareness.gosi.gov.sa/journeyInformation3.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "journeyInformation3.pdf",
+      "bytes": null,
+      "discovery_method": "script",
       "jurisdiction": "Saudi Arabia - GOSI"
     }
   ],

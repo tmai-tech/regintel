@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-15T14:58:07.034636+00:00",
-  "phase": "discovering",
-  "message": "discovering gosi.gov.sa: pages=800 listed=18",
+  "updated_at": "2026-08-15T15:00:28.631386+00:00",
+  "phase": "downloading",
+  "message": "downloading 26 listed docs (after fallback BFS)",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 18,
+    "ministry_listed": 26,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 18
+    "ministry_to_download": 26
   },
   "by_jurisdiction": [
     {
@@ -79,12 +79,12 @@
     "jurisdiction": "Saudi Arabia - GOSI",
     "url": "https://www.gosi.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 18,
+    "listed": 26,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 18,
-    "pages_visited": 800
+    "to_download": 26,
+    "pages_visited": 843
   },
   "recent_pdfs": [
     {
@@ -351,16 +351,17 @@
     "label": "Saudi Arabia - GOSI",
     "target_url": "https://www.gosi.gov.sa/",
     "counts": {
-      "to_download": 18,
+      "to_download": 26,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 18
+      "listed_total": 26
     },
     "discovery_methods": {
-      "href": 18
+      "href": 22,
+      "script": 4
     },
-    "pages_visited": 800,
+    "pages_visited": 843,
     "sitemaps_used": [
       "https://www.gosi.gov.sa/sitemap.xml",
       "https://www.gosi.gov.sa/sitemap_index.xml",
@@ -374,6 +375,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-15T14:58:05.273696+00:00"
+    "updated_at": "2026-08-15T15:00:26.849110+00:00"
   }
 }

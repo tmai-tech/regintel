@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:58:07.317942+00:00",
+  "updated_at": "2026-08-15T15:00:28.893439+00:00",
   "jobs": [
     {
       "code": "CST",
@@ -18,13 +18,13 @@
       "code": "GOSI",
       "url": "https://www.gosi.gov.sa/",
       "label": "Saudi Arabia - GOSI",
-      "phase": "discovering",
-      "message": "discovering gosi.gov.sa: pages=800 listed=18",
-      "pages": 800,
-      "listed": 18,
+      "phase": "downloading",
+      "message": "downloading 26 listed docs (after fallback BFS)",
+      "pages": 843,
+      "listed": 26,
       "downloaded": 0,
-      "to_download": 18,
-      "updated_at": "2026-08-15T14:58:07.034636+00:00",
+      "to_download": 26,
+      "updated_at": "2026-08-15T15:00:28.631386+00:00",
       "run_id": "31888709019"
     },
     {
