@@ -2075,7 +2075,8 @@
     });
   }
 
-  const summaryView = { rows: [], withSum: 0, wired: false };
+  const summaryView = { rows: [], withSum: 0, wired: false, shown: 30 };
+  const SUMMARY_PAGE = 30;
 
   function initSummaries(pdfs, evaSummaries, site) {
     const list = document.getElementById("summaryList");
@@ -2083,12 +2084,16 @@
     const countEl = document.getElementById("summaryCount");
     const search = document.getElementById("summarySearch");
     const filter = document.getElementById("summaryFilter");
+    const moreWrap = document.getElementById("summaryMoreWrap");
+    const moreBtn = document.getElementById("summaryMore");
     if (!list) return;
 
     summaryView.rows = buildSdaiaSummaryRows(pdfs, evaSummaries, site);
     summaryView.withSum = summaryView.rows.filter((r) => r.has_summary).length;
+    summaryView.shown = SUMMARY_PAGE;
 
-    function render() {
+    function render(resetPage) {
+      if (resetPage) summaryView.shown = SUMMARY_PAGE;
       const rows = summaryView.rows;
       const withSum = summaryView.withSum;
       const q = (search && search.value ? search.value : "").trim().toLowerCase();
@@ -2110,9 +2115,12 @@
           return blob.includes(q);
         });
       }
+      const slice = filtered.slice(0, summaryView.shown);
       if (countEl) {
         countEl.textContent =
-          filtered.length +
+          (filtered.length > slice.length
+            ? slice.length + " of " + filtered.length
+            : String(filtered.length)) +
           " shown · " +
           withSum +
           " with summary · " +
@@ -2122,11 +2130,17 @@
       if (!filtered.length) {
         list.innerHTML = "";
         if (empty) empty.hidden = false;
+        if (moreWrap) moreWrap.hidden = true;
         return;
       }
       if (empty) empty.hidden = true;
-      list.innerHTML = filtered.map(summaryCardHtml).join("");
+      list.innerHTML = slice.map(summaryCardHtml).join("");
       wireSummaryTranslateButtons(list);
+      if (moreWrap && moreBtn) {
+        const left = filtered.length - slice.length;
+        moreWrap.hidden = left <= 0;
+        moreBtn.textContent = left > 0 ? "Load more · " + left + " left" : "Load more";
+      }
     }
 
     let t = null;
@@ -2135,12 +2149,18 @@
       if (search) {
         search.addEventListener("input", () => {
           clearTimeout(t);
-          t = setTimeout(render, 120);
+          t = setTimeout(() => render(true), 120);
         });
       }
-      if (filter) filter.addEventListener("change", render);
+      if (filter) filter.addEventListener("change", () => render(true));
+      if (moreBtn) {
+        moreBtn.addEventListener("click", () => {
+          summaryView.shown += SUMMARY_PAGE;
+          render(false);
+        });
+      }
     }
-    render();
+    render(true);
   }
   function initCrawl() {
     const btn = document.getElementById("crawlRefresh");

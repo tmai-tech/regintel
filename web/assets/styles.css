@@ -629,6 +629,11 @@ a.link:hover { text-decoration: underline; }
   gap: 12px;
   min-width: 0;
 }
+.summary-more {
+  display: flex;
+  justify-content: center;
+  padding: 4px 12px 20px;
+}
 .pdf-card {
   background: var(--bg2);
   border: 1px solid var(--border);
