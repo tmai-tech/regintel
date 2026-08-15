@@ -1003,21 +1003,24 @@
     return isAllowedSaudiMinistryRow(p);
   }
 
+  function siteCodeFromLabel(jurisdiction) {
+    const j = String(jurisdiction || "").trim();
+    const m = /^Saudi Arabia\s*[-–—]\s*([A-Za-z0-9]+)\s*$/i.exec(j);
+    if (!m) return "";
+    return m[1].toUpperCase();
+  }
+
+  function siteCodeForPdf(p) {
+    const fromLabel = siteCodeFromLabel(p && p.jurisdiction);
+    if (fromLabel) return fromLabel;
+    return siteCodeFromUrl((p && (p.open_url || p.url || p.host)) || "");
+  }
+
   function pdfMatchesSite(p, site) {
     if (!site) return isAllowedSaudiMinistryRow(p);
-    const code = String(site.code || "").toLowerCase();
-    const j = String((p && p.jurisdiction) || "").toLowerCase().trim();
-    const h = hostOf((p && (p.open_url || p.url || p.host)) || "");
-    const mh = hostOf(site.url || "") || String(site.host || "").replace(/^www\./i, "").toLowerCase();
-    // Strict label only — j.includes("ia") matches "Arabia" and stole CMA/ZATCA/etc.
-    if (code) {
-      const label = "saudi arabia - " + code;
-      if (j === label || j.startsWith(label + " ") || j === code || j.endsWith(" - " + code)) {
-        return true;
-      }
-    }
-    if (mh && h && (h === mh || h.endsWith("." + mh))) return true;
-    return false;
+    const want = String(site.code || "").toUpperCase();
+    if (!want) return false;
+    return siteCodeForPdf(p) === want;
   }
 
   function normalizePdfKey(u) {
@@ -2514,19 +2517,19 @@
     }));
     const byCode = new Map(known.map((s) => [s.code, { ...s, count: 0, summaries: 0 }]));
     for (const p of pdfs || []) {
-      let hit = known.find((s) => pdfMatchesSite(p, s));
-      if (!hit) {
+      const code = siteCodeForPdf(p);
+      if (!code) continue;
+      if (!byCode.has(code)) {
         const h = hostOf(p.open_url || p.url || "") || String(p.host || "").replace(/^www\./i, "");
-        if (!h) continue;
-        const code = h.split(".")[0].toUpperCase();
-        if (!byCode.has(code)) {
-          byCode.set(code, { code, name: code, url: "https://" + h, count: 0, summaries: 0 });
-        }
-        hit = byCode.get(code);
+        byCode.set(code, {
+          code,
+          name: code,
+          url: h ? "https://" + h : "",
+          count: 0,
+          summaries: 0,
+        });
       }
-      const row = byCode.get(hit.code);
-      if (!row) continue;
-      row.count += 1;
+      byCode.get(code).count += 1;
     }
     return [...byCode.values()].sort((a, b) => b.count - a.count || a.code.localeCompare(b.code));
   }

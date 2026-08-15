@@ -140,7 +140,7 @@ def normalize_jurisdiction(p: dict) -> str:
         return "Saudi Arabia - GAC"
     if "cst.gov" in bl:
         return "Saudi Arabia - CST"
-    if "cma.org" in bl:
+    if "cma.org" in bl or "cma.gov" in bl:
         return "Saudi Arabia - CMA"
     if "saudiexchange" in bl or "tadawul" in bl:
         return "Saudi Arabia - Tadawul"
