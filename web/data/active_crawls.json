@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:37:56.170131+00:00",
+  "updated_at": "2026-08-15T14:37:59.582198+00:00",
   "jobs": [
     {
       "code": "CST",
@@ -175,12 +175,12 @@
       "url": "https://www.saudiexchange.sa/",
       "label": "Saudi Arabia - Tadawul",
       "phase": "listed",
-      "message": "listed 0 documents on saudiexchange.sa (unreachable)",
+      "message": "Saudi ministries · 1672 PDFs · 1523 summaries",
       "pages": 0,
       "listed": 0,
       "downloaded": 0,
       "to_download": 0,
-      "updated_at": "2026-08-15T14:37:52.262897+00:00",
+      "updated_at": "2026-08-15T14:37:59.347370+00:00",
       "run_id": "31888709019"
     }
   ]
