@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-14T17:22:52.932144+00:00",
+  "updated_at": "2026-08-15T14:01:04.412115+00:00",
   "phase": "discovering",
-  "message": "discovering zatca.gov.sa: pages=300 listed=84",
-  "run_id": "31813473024",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31813473024",
+  "message": "discovering documents on https://www.moi.gov.sa/",
+  "run_id": "31888709019",
+  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
     "pdfs": 1672,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 84,
-    "ministry_downloaded": 16,
-    "ministry_failed": 6,
-    "ministry_scanned": 1,
-    "ministry_to_download": 61
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -76,15 +76,15 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - ZATCA",
-    "url": "https://zatca.gov.sa/",
+    "jurisdiction": "Saudi Arabia - MOI",
+    "url": "https://www.moi.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 84,
-    "downloaded": 16,
-    "download_failed": 6,
-    "scanned_pdf": 1,
-    "to_download": 61,
-    "pages_visited": 300
+    "listed": 0,
+    "downloaded": 0,
+    "download_failed": 0,
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 0
   },
   "recent_pdfs": [
     {
@@ -348,37 +348,20 @@
   },
   "manifest_generated_at": "2026-08-14T16:58:31.025453+00:00",
   "ministry_document_list": {
-    "label": "Saudi Arabia - ZATCA",
-    "target_url": "https://zatca.gov.sa/",
+    "label": "Saudi Arabia - MOI",
+    "target_url": "https://www.moi.gov.sa/",
     "counts": {
-      "to_download": 61,
-      "downloaded": 16,
-      "download_failed": 6,
-      "scanned_pdf": 1,
-      "listed_total": 84
+      "to_download": 0,
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "href": 79,
-      "script": 5
-    },
-    "pages_visited": 300,
-    "sitemaps_used": [
-      "https://zatca.gov.sa/sitemap.xml",
-      "https://zatca.gov.sa/sitemap_index.xml",
-      "https://zatca.gov.sa/Sitemap.xml",
-      "https://www.zatca.gov.sa/sitemap.xml",
-      "https://zatca.gov.sa/_layouts/15/sitemap.aspx",
-      "https://zatca.gov.sa/en/sitemap.xml",
-      "https://zatca.gov.sa/ar/sitemap.xml",
-      "https://zatca.gov.sa:443/sitemap0.xml",
-      "https://zatca.gov.sa:443/sitemap_mobile0.xml",
-      "https://zatca.gov.sa:443/en/PortalServices/Pages/SiteMap.aspx",
-      "https://zatca.gov.sa:443/ar/PortalServices/Pages/SiteMap.aspx",
-      "https://zatca.gov.sa/en/PortalServices/Pages/SiteMap.aspx",
-      "https://zatca.gov.sa/ar/PortalServices/Pages/SiteMap.aspx"
-    ],
-    "datasources_found": 81,
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "sitemaps_used": [],
+    "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-14T17:22:51.049747+00:00"
+    "updated_at": "2026-08-15T14:01:02.457098+00:00"
   }
 }
