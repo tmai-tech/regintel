@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:01:22.125651+00:00",
+  "updated_at": "2026-08-15T14:12:04.007390+00:00",
   "jobs": [
     {
       "code": "MOI",
@@ -19,12 +19,12 @@
       "url": "https://zatca.gov.sa/",
       "label": "Saudi Arabia - ZATCA",
       "phase": "downloading",
-      "message": "downloading 71 listed docs (after seed list)",
+      "message": "downloading 10/71 for Saudi Arabia - ZATCA (ok=8 scanned=1 fail=1)",
       "pages": 0,
       "listed": 71,
-      "downloaded": 0,
-      "to_download": 71,
-      "updated_at": "2026-08-15T14:01:21.696139+00:00",
+      "downloaded": 9,
+      "to_download": 61,
+      "updated_at": "2026-08-15T14:12:03.529897+00:00",
       "run_id": "31888709019"
     },
     {
