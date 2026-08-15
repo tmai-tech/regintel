@@ -7,11 +7,11 @@
     "authority_type": "Authority"
   },
   {
-    "code": "TGA",
-    "name": "Transport General Authority (TGA)",
-    "url": "https://tga.gov.sa",
+    "code": "MEWA",
+    "name": "Ministry of Environment, Water and Agriculture (MEWA)",
+    "url": "https://mewa.gov.sa",
     "country": "Saudi Arabia",
-    "authority_type": "Authority"
+    "authority_type": "Ministry"
   },
   {
     "code": "MC",
@@ -21,10 +21,129 @@
     "authority_type": "Ministry"
   },
   {
-    "code": "MEWA",
-    "name": "Ministry of Environment, Water and Agriculture (MEWA)",
-    "url": "https://mewa.gov.sa",
+    "code": "TGA",
+    "name": "Transport General Authority (TGA)",
+    "url": "https://tga.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "MOMAH",
+    "name": "Ministry of Municipalities and Housing (MOMAH)",
+    "url": "https://momah.gov.sa",
     "country": "Saudi Arabia",
     "authority_type": "Ministry"
+  },
+  {
+    "code": "MOF",
+    "name": "Ministry of Finance (MOF)",
+    "url": "https://www.mof.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Ministry"
+  },
+  {
+    "code": "NCA",
+    "name": "National Cybersecurity Authority (NCA)",
+    "url": "https://nca.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "IA",
+    "name": "Insurance Authority (IA)",
+    "url": "https://ia.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "SOCPA",
+    "name": "Saudi Organization for Chartered and Professional Accountants (SOCPA)",
+    "url": "https://socpa.org.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "MOI",
+    "name": "Ministry of Interior (MOI)",
+    "url": "https://www.moi.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Ministry"
+  },
+  {
+    "code": "NAZAHA",
+    "name": "Oversight and Anti-Corruption Authority (Nazaha)",
+    "url": "https://nazaha.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "SAMA",
+    "name": "Saudi Central Bank (SAMA)",
+    "url": "https://rulebook.sama.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "MOJ",
+    "name": "Ministry of Justice (MOJ)",
+    "url": "https://www.moj.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Ministry"
+  },
+  {
+    "code": "GAC",
+    "name": "General Authority of Civil Aviation (GAC)",
+    "url": "https://gac.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "CST",
+    "name": "Communications, Space and Technology Commission (CST)",
+    "url": "https://www.cst.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "CMA",
+    "name": "Capital Market Authority (CMA)",
+    "url": "https://cma.org.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "TADAWUL",
+    "name": "Saudi Exchange (Tadawul)",
+    "url": "https://www.saudiexchange.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Exchange"
+  },
+  {
+    "code": "GOSI",
+    "name": "General Organization for Social Insurance (GOSI)",
+    "url": "https://www.gosi.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "SASO",
+    "name": "Saudi Standards, Metrology and Quality Organization (SASO)",
+    "url": "https://www.saso.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "SAIP",
+    "name": "Saudi Authority for Intellectual Property (SAIP)",
+    "url": "https://www.saip.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
+  },
+  {
+    "code": "ZATCA",
+    "name": "Zakat, Tax and Customs Authority (ZATCA)",
+    "url": "https://zatca.gov.sa",
+    "country": "Saudi Arabia",
+    "authority_type": "Authority"
   }
 ]

@@ -8478,7 +8478,25 @@
     "alert_status": "new"
   },
   {
-    "id": "044b6d1b9d8c70c0",
+    "id": "432f50cbe948431d",
+    "name": "Minister Hajdu launches the Advanced Manufacturing Workforce Alliance",
+    "summary": "Topics: Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Employment and Social Development Canada · Awaiting analyst review",
+    "country": "Canada",
+    "level": "Federal",
+    "level_detail": "Federal",
+    "law_area": "Enterprise",
+    "topic": "Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management",
+    "link": "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-hajdu-launches-the-advanced-manufacturing-workforce-alliance.html",
+    "authority": "Employment and Social Development Canada",
+    "authority_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
+    "region": "North America",
+    "date": "2026-08-15T06:17:56.959060+00:00",
+    "source": "collector",
+    "relevancy": "Pending",
+    "alert_status": "new"
+  },
+  {
+    "id": "5cbfa250bbba5fd2",
     "name": "Page content changed — Canadian Securities Administrators (CSA)",
     "summary": "Topics: Take Private/ Over Rules, Shareholder Rights, Crypto/ Digital Assets, Merger Control (+7 more) · Law area: Private, Capital · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Securities Administrators (CSA) · Awaiting analyst review",
     "country": "Canada",
@@ -8490,13 +8508,13 @@
     "authority": "Canadian Securities Administrators (CSA)",
     "authority_url": "https://www.securities-administrators.ca/",
     "region": "North America",
-    "date": "2026-08-14T07:05:53.104090+00:00",
+    "date": "2026-08-15T06:17:56.959060+00:00",
     "source": "collector",
     "relevancy": "Pending",
     "alert_status": "new"
   },
   {
-    "id": "83446e1662d08e7a",
+    "id": "73a2a30089714d17",
     "name": "Page content changed — Canadian Securities Administrators (CSA)",
     "summary": "Topics: Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Securities Administrators (CSA) · Awaiting analyst review",
     "country": "Canada",
@@ -8508,7 +8526,7 @@
     "authority": "Canadian Securities Administrators (CSA)",
     "authority_url": "https://www.securities-administrators.ca/news/",
     "region": "North America",
-    "date": "2026-08-14T07:05:53.104090+00:00",
+    "date": "2026-08-15T06:17:56.959060+00:00",
     "source": "collector",
     "relevancy": "Pending",
     "alert_status": "new"
