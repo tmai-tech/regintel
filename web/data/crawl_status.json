@@ -1,19 +1,14 @@
 {
-  "updated_at": "2026-08-15T17:42:25.366014+00:00",
-  "phase": "downloading",
-  "message": "downloading 10/20 for Saudi Arabia - SASO (ok=1 scanned=8 fail=1)",
+  "updated_at": "2026-08-15T17:46:02.199569+00:00",
+  "phase": "idle",
+  "message": "relabeled 0 ministry PDFs by host",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
     "pdfs": 1694,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 13,
-    "ministry_listed": 20,
-    "ministry_downloaded": 1,
-    "ministry_failed": 1,
-    "ministry_scanned": 8,
-    "ministry_to_download": 10
+    "jurisdictions": 13
   },
   "by_jurisdiction": [
     {
@@ -75,17 +70,7 @@
       "count": 1694
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - SASO",
-    "url": "https://www.saso.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 20,
-    "downloaded": 1,
-    "download_failed": 1,
-    "scanned_pdf": 8,
-    "to_download": 10,
-    "pages_visited": 10
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
       "title": "journeyInformation3.pdf",
@@ -346,24 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-15T15:02:02.185835+00:00",
-  "ministry_document_list": {
-    "label": "Saudi Arabia - SASO",
-    "target_url": "https://www.saso.gov.sa/",
-    "counts": {
-      "to_download": 10,
-      "downloaded": 1,
-      "download_failed": 1,
-      "scanned_pdf": 8,
-      "listed_total": 20
-    },
-    "discovery_methods": {
-      "href": 20
-    },
-    "pages_visited": 10,
-    "sitemaps_used": [],
-    "datasources_found": 0,
-    "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-15T17:42:23.390568+00:00"
-  }
+  "manifest_generated_at": "2026-08-15T15:02:02.185835+00:00"
 }
