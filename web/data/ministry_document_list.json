@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-15T14:37:50.361417+00:00",
-  "phase": "listed",
-  "target_url": "https://www.saudiexchange.sa/",
-  "label": "Saudi Arabia - Tadawul",
+  "updated_at": "2026-08-15T14:45:08.338712+00:00",
+  "phase": "discovering",
+  "target_url": "https://www.gosi.gov.sa/",
+  "label": "Saudi Arabia - GOSI",
   "counts": {
     "to_download": 0,
     "downloaded": 0,
@@ -11,7 +11,7 @@
     "listed_total": 0
   },
   "discovery_methods": {},
-  "pages_visited": 0,
+  "pages_visited": 56,
   "documents": [],
   "failed_sample": []
 }
