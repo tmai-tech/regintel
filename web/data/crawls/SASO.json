@@ -3,11 +3,11 @@
   "url": "https://www.saso.gov.sa/",
   "label": "Saudi Arabia - SASO",
   "phase": "downloading",
-  "message": "downloading 20 listed docs (after library HTML)",
+  "message": "downloading 10/20 for Saudi Arabia - SASO (ok=1 scanned=8 fail=1)",
   "pages": 10,
   "listed": 20,
-  "downloaded": 0,
-  "to_download": 20,
-  "updated_at": "2026-08-15T15:13:36.136586+00:00",
+  "downloaded": 9,
+  "to_download": 10,
+  "updated_at": "2026-08-15T17:42:25.366014+00:00",
   "run_id": "31888709019"
 }
