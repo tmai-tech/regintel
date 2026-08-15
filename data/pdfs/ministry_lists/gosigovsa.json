@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:53:27.488366+00:00",
+  "updated_at": "2026-08-15T14:56:15.711811+00:00",
   "phase": "discovering",
   "target_url": "https://www.gosi.gov.sa/",
   "label": "Saudi Arabia - GOSI",
@@ -77,8 +77,85 @@
     "https://www.gosi.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/Documents')/folders?$select=Name,ServerRelativeUrl,ItemCount&$top=200",
     "https://www.gosi.gov.sa/_api/web/getfolderbyserverrelativeurl('/ar/Ministry/AboutMinistry/RulesAndConditions')/files?$select=Name,ServerRelativeUrl,LinkingUri,LinkingUrl&$top=5000"
   ],
-  "pages_visited": 650,
-  "page_errors_sample": [],
+  "pages_visited": 700,
+  "page_errors_sample": [
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/SocialInsurance/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FSocialInsurance%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/Civil/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FCivil%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/Military/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FMilitary%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/BenefitExchange/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FBenefitExchange%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/Saned/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FSaned%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/InsuranceProtection/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FInsuranceProtection%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/RequiredDocuments/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FRequiredDocuments%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/Terminologies/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FTerminologies%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/Books/_layouts/15/Authenticate.aspx?Source=%2FSystemsAndRegulations%2FBooks%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/News/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FNews%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/Events/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FEvents%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/InitiativesAndPartnerships/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FInitiativesAndPartnerships%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/InsuranceCulture/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FInsuranceCulture%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/GosiMagazine/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FGosiMagazine%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/MediaReleases/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FMediaReleases%2FPages%2Fdefault%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/MediaCenter/_layouts/15/Authenticate.aspx?Source=%2FMediaCenter%2FPages%2FGosiIdentity%2Easpx",
+      "error": "HTTP 401"
+    },
+    {
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Pages/BoardOfDirectors.aspx",
+      "error": "WAF rejected"
+    }
+  ],
   "stats": {},
   "documents": [
     {
