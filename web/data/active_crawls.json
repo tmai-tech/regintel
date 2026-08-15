@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:50:17.218369+00:00",
+  "updated_at": "2026-08-15T14:51:49.313878+00:00",
   "jobs": [
     {
       "code": "CST",
@@ -19,12 +19,12 @@
       "url": "https://www.gosi.gov.sa/",
       "label": "Saudi Arabia - GOSI",
       "phase": "discovering",
-      "message": "discovering gosi.gov.sa: pages=325 listed=9",
-      "pages": 325,
+      "message": "discovering gosi.gov.sa: pages=475 listed=9",
+      "pages": 475,
       "listed": 9,
       "downloaded": 0,
       "to_download": 9,
-      "updated_at": "2026-08-15T14:50:16.929667+00:00",
+      "updated_at": "2026-08-15T14:51:49.049226+00:00",
       "run_id": "31888709019"
     },
     {
