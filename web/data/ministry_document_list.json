@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-15T14:56:15.711811+00:00",
+  "updated_at": "2026-08-15T14:58:05.272430+00:00",
   "phase": "discovering",
   "target_url": "https://www.gosi.gov.sa/",
   "label": "Saudi Arabia - GOSI",
   "counts": {
-    "to_download": 9,
+    "to_download": 18,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 9
+    "listed_total": 18
   },
   "discovery_methods": {
-    "href": 9
+    "href": 18
   },
-  "pages_visited": 700,
+  "pages_visited": 800,
   "documents": [
     {
       "filename": "vaolition rules en.pdf",
@@ -119,6 +119,114 @@
       "download_error": null,
       "scanned_pdf": false,
       "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "الخارطة الاستراتيجية.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/الخارطة%20الاستراتيجية.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Strategy2019.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2019.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا​",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Strategy2018.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2018.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Strategy2017.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2017.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Strategy2016.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2016.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "الركائز الاستراتيجية أثناء فترة الدمج.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/الركائز%20الاستراتيجية%20أثناء%20فترة%20الدمج.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "انقر هنا",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Support initiative results.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Support%20initiative%20results.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "نتائج المبادرة",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "OpenDataUsageGuidelines.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "استخدام البيانات المفتوحة",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "publishingopendatasets.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/StatisticsAndData/OpenedData/Documents/publishingopendatasets.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "مجموعات البيانات المفتوحة",
       "bytes": null,
       "discovery_method": "href",
       "jurisdiction": "Saudi Arabia - GOSI"
