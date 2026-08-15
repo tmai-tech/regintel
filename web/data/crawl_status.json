@@ -1,14 +1,19 @@
 {
-  "updated_at": "2026-08-15T14:32:04.316781+00:00",
-  "phase": "idle",
-  "message": "relabeled 0 ministry PDFs by host",
+  "updated_at": "2026-08-15T14:32:07.781595+00:00",
+  "phase": "listed",
+  "message": "Saudi ministries · 1672 PDFs · 1523 summaries",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
     "pdfs": 1672,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 13
+    "jurisdictions": 13,
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
+    "ministry_failed": 0,
+    "ministry_scanned": 0,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -331,5 +336,20 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-14T16:58:31.025453+00:00"
+  "manifest_generated_at": "2026-08-14T16:58:31.025453+00:00",
+  "ministry_document_list": {
+    "label": "Saudi Arabia - GAC",
+    "target_url": "https://gac.gov.sa/",
+    "counts": {
+      "to_download": 0,
+      "downloaded": 0,
+      "download_failed": 0,
+      "scanned_pdf": 0,
+      "listed_total": 0
+    },
+    "discovery_methods": {},
+    "pages_visited": 0,
+    "list_file": "data/ministry_document_list.json",
+    "updated_at": "2026-08-15T14:31:59.272995+00:00"
+  }
 }
