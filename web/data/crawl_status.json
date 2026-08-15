@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-15T14:45:10.169865+00:00",
+  "updated_at": "2026-08-15T14:47:11.220096+00:00",
   "phase": "discovering",
-  "message": "library-first gosi.gov.sa: listed=0 (search+libraries)",
+  "message": "discovering gosi.gov.sa: pages=75 listed=9",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 0,
+    "ministry_listed": 9,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 9
   },
   "by_jurisdiction": [
     {
@@ -79,12 +79,12 @@
     "jurisdiction": "Saudi Arabia - GOSI",
     "url": "https://www.gosi.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 0,
+    "listed": 9,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 56
+    "to_download": 9,
+    "pages_visited": 75
   },
   "recent_pdfs": [
     {
@@ -351,17 +351,29 @@
     "label": "Saudi Arabia - GOSI",
     "target_url": "https://www.gosi.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 9,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 0
+      "listed_total": 9
     },
-    "discovery_methods": {},
-    "pages_visited": 56,
-    "sitemaps_used": [],
+    "discovery_methods": {
+      "href": 9
+    },
+    "pages_visited": 75,
+    "sitemaps_used": [
+      "https://www.gosi.gov.sa/sitemap.xml",
+      "https://www.gosi.gov.sa/sitemap_index.xml",
+      "https://www.gosi.gov.sa/Sitemap.xml",
+      "https://gosi.gov.sa/sitemap.xml",
+      "https://gosi.gov.sa/sitemap_index.xml",
+      "https://gosi.gov.sa/_layouts/15/sitemap.aspx",
+      "https://gosi.gov.sa/en/sitemap.xml",
+      "https://gosi.gov.sa/ar/sitemap.xml",
+      "https://www.gosi.gov.sa/assets/sitemap.xml"
+    ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-15T14:45:08.339396+00:00"
+    "updated_at": "2026-08-15T14:47:09.497480+00:00"
   }
 }

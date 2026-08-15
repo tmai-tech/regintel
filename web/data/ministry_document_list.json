@@ -1,17 +1,128 @@
 {
-  "updated_at": "2026-08-15T14:45:08.338712+00:00",
+  "updated_at": "2026-08-15T14:47:09.496527+00:00",
   "phase": "discovering",
   "target_url": "https://www.gosi.gov.sa/",
   "label": "Saudi Arabia - GOSI",
   "counts": {
-    "to_download": 0,
+    "to_download": 9,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 0
+    "listed_total": 9
   },
-  "discovery_methods": {},
-  "pages_visited": 56,
-  "documents": [],
+  "discovery_methods": {
+    "href": 9
+  },
+  "pages_visited": 75,
+  "documents": [
+    {
+      "filename": "vaolition rules en.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/SocialInsurance/Documents/vaolition%20rules%20en.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Press Here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "OccupationalHazardsInsurancePolicyforSaudis1445....pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/SocialInsurance/Documents/OccupationalHazardsInsurancePolicyforSaudis1445....pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "OccupationalHazardsInsurancePolicyforNon-Saudis1445......pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/SocialInsurance/Documents/OccupationalHazardsInsurancePolicyforNon-Saudis1445......pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "OccupationalHazardsInsurancePolicyforNon-Saudis1421....pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/SocialInsurance/Documents/OccupationalHazardsInsurancePolicyforNon-Saudis1421....pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "OccupationalHazardsInsurancePolicyforSaudis1421....pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/SocialInsurance/Documents/OccupationalHazardsInsurancePolicyforSaudis1421....pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "OSH.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/SocialInsurance/Documents/OSH.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Press H ere",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Form133.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/RequiredDocuments/Documents/Form133.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click h ere",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "Form129.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/RequiredDocuments/Documents/Form129.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    },
+    {
+      "filename": "form2.pdf",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/RequiredDocuments/Documents/form2.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Click here",
+      "bytes": null,
+      "discovery_method": "href",
+      "jurisdiction": "Saudi Arabia - GOSI"
+    }
+  ],
   "failed_sample": []
 }
