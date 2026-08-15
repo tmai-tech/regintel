@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:32:08.204046+00:00",
+  "updated_at": "2026-08-15T14:37:52.506010+00:00",
   "jobs": [
     {
       "code": "CST",
@@ -132,19 +132,6 @@
       "run_id": "31888709019"
     },
     {
-      "code": "TADAWUL",
-      "url": "https://www.saudiexchange.sa",
-      "label": "Saudi Arabia - Tadawul",
-      "phase": "queued",
-      "message": "Waiting for a runner (8 crawls at a time)",
-      "pages": 0,
-      "listed": 0,
-      "downloaded": 0,
-      "to_download": 0,
-      "updated_at": "2026-08-15T14:18:30Z",
-      "run_id": "31888709019"
-    },
-    {
       "code": "ZATCA",
       "url": "https://zatca.gov.sa/",
       "label": "Saudi Arabia - ZATCA",
@@ -181,6 +168,19 @@
       "downloaded": 0,
       "to_download": 0,
       "updated_at": "2026-08-15T14:12:42.951004+00:00",
+      "run_id": "31888709019"
+    },
+    {
+      "code": "TADAWUL",
+      "url": "https://www.saudiexchange.sa/",
+      "label": "Saudi Arabia - Tadawul",
+      "phase": "listed",
+      "message": "listed 0 documents on saudiexchange.sa (unreachable)",
+      "pages": 0,
+      "listed": 0,
+      "downloaded": 0,
+      "to_download": 0,
+      "updated_at": "2026-08-15T14:37:52.262897+00:00",
       "run_id": "31888709019"
     }
   ]

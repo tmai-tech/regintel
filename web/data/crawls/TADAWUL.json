@@ -1,13 +1,13 @@
 {
   "code": "TADAWUL",
-  "url": "https://www.saudiexchange.sa",
+  "url": "https://www.saudiexchange.sa/",
   "label": "Saudi Arabia - Tadawul",
-  "phase": "queued",
-  "message": "Waiting for a runner (8 crawls at a time)",
+  "phase": "listed",
+  "message": "listed 0 documents on saudiexchange.sa (unreachable)",
   "pages": 0,
   "listed": 0,
   "downloaded": 0,
   "to_download": 0,
-  "updated_at": "2026-08-15T14:18:30Z",
+  "updated_at": "2026-08-15T14:37:52.262897+00:00",
   "run_id": "31888709019"
 }
