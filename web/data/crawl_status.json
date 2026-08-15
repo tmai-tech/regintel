@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-15T15:00:28.631386+00:00",
+  "updated_at": "2026-08-15T15:02:00.659068+00:00",
   "phase": "downloading",
-  "message": "downloading 26 listed docs (after fallback BFS)",
+  "message": "downloading 26/26 for Saudi Arabia - GOSI (ok=22 scanned=0 fail=4)",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
@@ -10,10 +10,10 @@
     "source_reports": 53,
     "jurisdictions": 13,
     "ministry_listed": 26,
-    "ministry_downloaded": 0,
-    "ministry_failed": 0,
+    "ministry_downloaded": 22,
+    "ministry_failed": 4,
     "ministry_scanned": 0,
-    "ministry_to_download": 26
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -80,10 +80,10 @@
     "url": "https://www.gosi.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 26,
-    "downloaded": 0,
-    "download_failed": 0,
+    "downloaded": 22,
+    "download_failed": 4,
     "scanned_pdf": 0,
-    "to_download": 26,
+    "to_download": 0,
     "pages_visited": 843
   },
   "recent_pdfs": [
@@ -351,9 +351,9 @@
     "label": "Saudi Arabia - GOSI",
     "target_url": "https://www.gosi.gov.sa/",
     "counts": {
-      "to_download": 26,
-      "downloaded": 0,
-      "download_failed": 0,
+      "to_download": 0,
+      "downloaded": 22,
+      "download_failed": 4,
       "scanned_pdf": 0,
       "listed_total": 26
     },
@@ -375,6 +375,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-15T15:00:26.849110+00:00"
+    "updated_at": "2026-08-15T15:01:58.921933+00:00"
   }
 }

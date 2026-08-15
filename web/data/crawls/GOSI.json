@@ -3,11 +3,11 @@
   "url": "https://www.gosi.gov.sa/",
   "label": "Saudi Arabia - GOSI",
   "phase": "downloading",
-  "message": "downloading 26 listed docs (after fallback BFS)",
+  "message": "downloading 26/26 for Saudi Arabia - GOSI (ok=22 scanned=0 fail=4)",
   "pages": 843,
   "listed": 26,
-  "downloaded": 0,
-  "to_download": 26,
-  "updated_at": "2026-08-15T15:00:28.631386+00:00",
+  "downloaded": 22,
+  "to_download": 0,
+  "updated_at": "2026-08-15T15:02:00.659068+00:00",
   "run_id": "31888709019"
 }
