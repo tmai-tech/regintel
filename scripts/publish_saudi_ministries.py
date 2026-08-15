@@ -143,11 +143,7 @@ def main() -> None:
         },
         "by_jurisdiction": [{"jurisdiction": j, "count": c} for j, c in by_j.most_common()],
         "by_source_kind": [{"source_kind": "ministry", "count": len(kept)}],
-        "current_source": {
-            "jurisdiction": "Saudi Arabia (multi)",
-            "url": "https://sdaia.gov.sa",
-            "source_kind": "ministry",
-        },
+        "current_source": None,
         "recent_pdfs": [],
         "last_source_reports": [],
         "stats": {},

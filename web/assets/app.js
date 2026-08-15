@@ -2824,11 +2824,17 @@
 
     function jobFromStatus(st) {
       if (!st) return null;
+      const phaseRaw = String(st.phase || "").toLowerCase();
+      // Catalog publishes are idle and are not a live crawl.
+      if (phaseRaw === "idle" || phaseRaw === "manual" || phaseRaw === "complete") {
+        return null;
+      }
       const cur = st.current_source || {};
       const prog = st.ministry_document_list || {};
       const counts = prog.counts || {};
       const url = cur.url || prog.target_url || "";
       const label = cur.jurisdiction || prog.label || "";
+      if (/multi/i.test(String(label))) return null;
       const code = siteCodeFromUrl(url || label);
       if (!code) return null;
       const listed = cur.listed != null ? cur.listed : counts.listed_total || 0;
@@ -2940,9 +2946,7 @@
 
         active = [...byCode.values()].filter((j) => {
           const stamp = j.updated_at || j.startedAt || j.checkedAt;
-          if (isLivePhase(j.phase)) return ageMs(stamp) < 4 * 3600 * 1000;
-          if (j.phase === "stopped") return ageMs(stamp) < 30 * 60 * 1000;
-          return false;
+          return isLivePhase(j.phase) && ageMs(stamp) < 4 * 3600 * 1000;
         });
         active.sort((a, b) => {
           const la = isLivePhase(a.phase) ? 0 : 1;

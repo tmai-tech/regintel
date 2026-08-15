@@ -2,12 +2,12 @@
   "code": "ZATCA",
   "url": "https://zatca.gov.sa",
   "label": "Saudi Arabia - ZATCA",
-  "phase": "discovering",
-  "message": "discovering zatca.gov.sa: pages=300 listed=84",
+  "phase": "stopped",
+  "message": "Sheet crawl finished (timed out). Last publish: 300 pages, 84 listed.",
   "pages": 300,
   "listed": 84,
   "downloaded": 17,
   "to_download": 61,
-  "updated_at": "2026-08-14T17:54:30Z",
+  "updated_at": "2026-08-14T18:24:12Z",
   "run_id": "31813473024"
 }
