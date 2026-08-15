@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T14:48:41.871066+00:00",
+  "updated_at": "2026-08-15T14:50:15.164864+00:00",
   "phase": "discovering",
   "target_url": "https://www.gosi.gov.sa/",
   "label": "Saudi Arabia - GOSI",
@@ -13,7 +13,7 @@
   "discovery_methods": {
     "href": 9
   },
-  "pages_visited": 175,
+  "pages_visited": 325,
   "documents": [
     {
       "filename": "vaolition rules en.pdf",
