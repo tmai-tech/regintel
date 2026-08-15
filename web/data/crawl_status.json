@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-15T14:51:49.049226+00:00",
+  "updated_at": "2026-08-15T14:53:29.243988+00:00",
   "phase": "discovering",
-  "message": "discovering gosi.gov.sa: pages=475 listed=9",
+  "message": "discovering gosi.gov.sa: pages=650 listed=9",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
@@ -84,7 +84,7 @@
     "download_failed": 0,
     "scanned_pdf": 0,
     "to_download": 9,
-    "pages_visited": 475
+    "pages_visited": 650
   },
   "recent_pdfs": [
     {
@@ -360,7 +360,7 @@
     "discovery_methods": {
       "href": 9
     },
-    "pages_visited": 475,
+    "pages_visited": 650,
     "sitemaps_used": [
       "https://www.gosi.gov.sa/sitemap.xml",
       "https://www.gosi.gov.sa/sitemap_index.xml",
@@ -374,6 +374,6 @@
     ],
     "datasources_found": 81,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-15T14:51:47.300853+00:00"
+    "updated_at": "2026-08-15T14:53:27.489462+00:00"
   }
 }
