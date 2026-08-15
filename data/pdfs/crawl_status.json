@@ -1,19 +1,14 @@
 {
-  "updated_at": "2026-08-15T15:02:00.659068+00:00",
-  "phase": "downloading",
-  "message": "downloading 26/26 for Saudi Arabia - GOSI (ok=22 scanned=0 fail=4)",
+  "updated_at": "2026-08-15T15:02:04.983283+00:00",
+  "phase": "idle",
+  "message": "relabeled 0 ministry PDFs by host",
   "run_id": "31888709019",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/31888709019",
   "totals": {
-    "pdfs": 1672,
+    "pdfs": 1694,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 13,
-    "ministry_listed": 26,
-    "ministry_downloaded": 22,
-    "ministry_failed": 4,
-    "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "jurisdictions": 13
   },
   "by_jurisdiction": [
     {
@@ -41,6 +36,10 @@
       "count": 37
     },
     {
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "count": 32
+    },
+    {
       "jurisdiction": "Saudi Arabia - MOMAH",
       "count": 17
     },
@@ -51,10 +50,6 @@
     {
       "jurisdiction": "Saudi Arabia - MOF",
       "count": 12
-    },
-    {
-      "jurisdiction": "Saudi Arabia - GOSI",
-      "count": 10
     },
     {
       "jurisdiction": "Saudi Arabia - IA",
@@ -72,124 +67,114 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1672
+      "count": 1694
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - GOSI",
-    "url": "https://www.gosi.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 26,
-    "downloaded": 22,
-    "download_failed": 4,
-    "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 843
-  },
+  "current_source": null,
   "recent_pdfs": [
     {
-      "title": "معجم الزكاة والضريبة والجمارك",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Publications/Documents/ZATCA-Glossary.pdf",
-      "downloaded_at": "2026-08-14T16:58:27.769734+00:00",
+      "title": "journeyInformation3.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation3.pdf",
+      "downloaded_at": "2026-08-15T15:01:45.560123+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at Al-Raqai Port",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Al-Raqai Port.pdf",
-      "downloaded_at": "2026-08-14T16:55:07.245842+00:00",
+      "title": "Contributions.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/Contributions.pdf",
+      "downloaded_at": "2026-08-15T15:01:45.282330+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at Al-Dammam",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Al-Dammam.pdf",
-      "downloaded_at": "2026-08-14T16:55:05.031815+00:00",
+      "title": "journeyInformation4.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/journeyInformation4.pdf",
+      "downloaded_at": "2026-08-15T15:01:37.366630+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at Al-Ahsa",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Al-Ahsa.pdf",
-      "downloaded_at": "2026-08-14T16:55:02.770238+00:00",
+      "title": "MaternityCompensation.pdf",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://awareness.gosi.gov.sa/pdf/MaternityCompensation.pdf",
+      "downloaded_at": "2026-08-15T15:01:28.652539+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at the Genearl Administration",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at the Genearl Administration.pdf",
-      "downloaded_at": "2026-08-14T16:55:00.558541+00:00",
+      "title": "مجموعات البيانات المفتوحة",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/StatisticsAndData/OpenedData/Documents/publishingopendatasets.pdf",
+      "downloaded_at": "2026-08-15T15:01:27.477200+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at Prince Sultan Bin Abdulaziz Airport in Tabuk",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Prince Sultan Bin Abdulaziz Airport in Tabuk.pdf",
-      "downloaded_at": "2026-08-14T16:54:58.088167+00:00",
+      "title": "استخدام البيانات المفتوحة",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/StatisticsAndData/OpenedData/Documents/OpenDataUsageGuidelines.pdf",
+      "downloaded_at": "2026-08-15T15:01:26.958233+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at Jeddah",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Jeddah.pdf",
-      "downloaded_at": "2026-08-14T16:54:53.865341+00:00",
+      "title": "نتائج المبادرة",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Support%20initiative%20results.pdf",
+      "downloaded_at": "2026-08-15T15:01:25.341143+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Returned at Jadidat Arar",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Returned at Jadidat Arar.pdf",
-      "downloaded_at": "2026-08-14T16:54:51.398129+00:00",
+      "title": "انقر هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/الركائز%20الاستراتيجية%20أثناء%20فترة%20الدمج.pdf",
+      "downloaded_at": "2026-08-15T15:01:23.690891+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Statement-of-Scrap-Furniture-and-Equipment-At-AlBatha-Port",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Statement-of-Scrap-Furniture-and-Equipment-At-AlBatha-Port.pdf",
-      "downloaded_at": "2026-08-14T16:54:48.915558+00:00",
+      "title": "انقر هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2016.pdf",
+      "downloaded_at": "2026-08-15T15:01:22.881759+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "Statement-of-Vehicles-and-Furniture-At-Prince-AbdulMohsen-Ai…",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Statement-of-Vehicles-and-Furniture-At-Prince-AbdulMohsen-AirPort.pdf",
-      "downloaded_at": "2026-08-14T16:54:44.383799+00:00",
+      "title": "انقر هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2017.pdf",
+      "downloaded_at": "2026-08-15T15:01:22.056425+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "نموذج التعهد",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/Documents/نموذج التعهد.pdf",
-      "downloaded_at": "2026-08-14T16:54:39.238806+00:00",
+      "title": "انقر هنا",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2018.pdf",
+      "downloaded_at": "2026-08-15T15:01:21.246709+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "التقرير السنوي 2025م",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA%20report%202025.pdf",
-      "downloaded_at": "2026-08-14T16:52:49.488235+00:00",
+      "title": "انقر هنا​",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/Strategy2019.pdf",
+      "downloaded_at": "2026-08-15T15:01:20.547216+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "التقرير السنوي 2024م",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2024.pdf",
-      "downloaded_at": "2026-08-14T16:51:52.149418+00:00",
+      "title": "انقر هنا​",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Documents/الخارطة%20الاستراتيجية.pdf",
+      "downloaded_at": "2026-08-15T15:01:17.161369+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "التقرير السنوي 2023م​​",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_report_2023(2).pdf",
-      "downloaded_at": "2026-08-14T16:50:06.355181+00:00",
+      "title": "Click here",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/RequiredDocuments/Documents/form2.pdf",
+      "downloaded_at": "2026-08-15T15:01:16.460306+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "التقرير السنوي 2022م",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/HelpCenter/Documents/ZATCA_REPORT_2022.pdf",
-      "downloaded_at": "2026-08-14T16:46:55.606693+00:00",
+      "title": "Click here",
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "url": "https://cmsgosi.gosi.gov.sa/sites/en/SystemsAndRegulations/RequiredDocuments/Documents/Form129.pdf",
+      "downloaded_at": "2026-08-15T15:01:14.954443+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -346,35 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-14T16:58:31.025453+00:00",
-  "ministry_document_list": {
-    "label": "Saudi Arabia - GOSI",
-    "target_url": "https://www.gosi.gov.sa/",
-    "counts": {
-      "to_download": 0,
-      "downloaded": 22,
-      "download_failed": 4,
-      "scanned_pdf": 0,
-      "listed_total": 26
-    },
-    "discovery_methods": {
-      "href": 22,
-      "script": 4
-    },
-    "pages_visited": 843,
-    "sitemaps_used": [
-      "https://www.gosi.gov.sa/sitemap.xml",
-      "https://www.gosi.gov.sa/sitemap_index.xml",
-      "https://www.gosi.gov.sa/Sitemap.xml",
-      "https://gosi.gov.sa/sitemap.xml",
-      "https://gosi.gov.sa/sitemap_index.xml",
-      "https://gosi.gov.sa/_layouts/15/sitemap.aspx",
-      "https://gosi.gov.sa/en/sitemap.xml",
-      "https://gosi.gov.sa/ar/sitemap.xml",
-      "https://www.gosi.gov.sa/assets/sitemap.xml"
-    ],
-    "datasources_found": 81,
-    "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-15T15:01:58.921933+00:00"
-  }
+  "manifest_generated_at": "2026-08-15T15:02:02.185835+00:00"
 }
