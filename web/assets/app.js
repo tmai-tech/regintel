@@ -2579,12 +2579,6 @@
     const t = Date.parse(iso || "");
     return Number.isFinite(t) ? Date.now() - t : Infinity;
   }
-  function pickNewerStatus(a, b) {
-    const ta = Date.parse((a && a.updated_at) || 0) || 0;
-    const tb = Date.parse((b && b.updated_at) || 0) || 0;
-    if (ta === 0 && tb === 0) return a || b || null;
-    return ta >= tb ? a : b;
-  }
   function isLivePhase(phase) {
     const p = String(phase || "").toLowerCase();
     return (
@@ -2876,20 +2870,10 @@
       const nowIso = new Date().toISOString();
       if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
       try {
-        const bust = "t=" + Date.now();
-        const rawBase = "https://raw.githubusercontent.com/tmai-tech/regintel/main/";
-        const [sharedPage, sharedRaw, stPage, stRaw] = await Promise.all([
-          fetchJson("data/active_crawls.json?" + bust).catch(() => null),
-          fetch(rawBase + "web/data/active_crawls.json?" + bust)
-            .then((r) => (r.ok ? r.json() : null))
-            .catch(() => null),
-          fetchJson("data/crawl_status.json?" + bust).catch(() => null),
-          fetch(rawBase + "web/data/crawl_status.json?" + bust)
-            .then((r) => (r.ok ? r.json() : null))
-            .catch(() => null),
+        const [shared, st] = await Promise.all([
+          fetchJson("data/active_crawls.json").catch(() => null),
+          fetchJson("data/crawl_status.json").catch(() => null),
         ]);
-        const shared = pickNewerStatus(sharedRaw, sharedPage);
-        const st = pickNewerStatus(stRaw, stPage);
 
         const byCode = new Map();
         const serverJobs = (shared && Array.isArray(shared.jobs) && shared.jobs) || [];
@@ -3000,7 +2984,7 @@
           renderProgress();
           if (statusEl) {
             statusEl.textContent =
-              "Tracking " + code + " here. Status updates as pages and PDFs are published.";
+              "Tracking " + code + " here. Click Refresh status to check the worker.";
           }
         }
         refreshLiveStatus();
@@ -3012,7 +2996,6 @@
     }
     renderProgress();
     refreshLiveStatus(false);
-    setInterval(() => refreshLiveStatus(false), 8000);
 
     const hash = (location.hash || "").replace(/^#/, "");
     const m = /^site=(.+)$/i.exec(hash);
