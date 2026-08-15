@@ -17,6 +17,33 @@
     return typeof u === "string" && /^https?:\/\//i.test(u.trim());
   }
 
+  function parseCrawlUrl(raw) {
+    const s = String(raw || "").trim();
+    if (!s) return { ok: false, error: "Enter a site URL." };
+    const withScheme = /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(s) ? s : "https://" + s;
+    let url;
+    try {
+      url = new URL(withScheme);
+    } catch {
+      return { ok: false, error: "That is not a valid URL. Example: https://sdaia.gov.sa" };
+    }
+    if (url.protocol !== "http:" && url.protocol !== "https:") {
+      return { ok: false, error: "Use an http:// or https:// site URL." };
+    }
+    const host = (url.hostname || "").replace(/\.$/, "").toLowerCase();
+    if (!host || host === "localhost") {
+      return { ok: false, error: "URL must include a site hostname." };
+    }
+    const ipv4 = /^(?:\d{1,3}\.){3}\d{1,3}$/.test(host);
+    if (!ipv4 && !host.includes(".")) {
+      return { ok: false, error: "Enter a full site URL, e.g. sdaia.gov.sa" };
+    }
+    if (/[\s<>]/.test(url.href)) {
+      return { ok: false, error: "That is not a valid URL." };
+    }
+    return { ok: true, url: url.href };
+  }
+
   function shortenUrl(u, max = 56) {
     if (!u || u === "—") return u || "—";
     try {
@@ -2947,12 +2974,44 @@
 
     if (back) back.addEventListener("click", showHome);
 
+    if (urlInput) {
+      urlInput.addEventListener("input", () => {
+        try {
+          urlInput.setCustomValidity("");
+        } catch (_) {
+          /* ignore */
+        }
+        urlInput.removeAttribute("aria-invalid");
+      });
+    }
+
     if (form) {
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const raw = (urlInput && urlInput.value ? urlInput.value : "").trim();
-        if (!raw) return;
-        const url = raw.startsWith("http") ? raw : "https://" + raw;
+        const parsed = parseCrawlUrl(raw);
+        if (!parsed.ok) {
+          if (urlInput) {
+            urlInput.setAttribute("aria-invalid", "true");
+            try {
+              urlInput.setCustomValidity(parsed.error);
+              urlInput.reportValidity();
+            } catch (_) {
+              /* ignore */
+            }
+          }
+          if (statusEl) statusEl.textContent = parsed.error;
+          return;
+        }
+        if (urlInput) {
+          urlInput.setAttribute("aria-invalid", "false");
+          try {
+            urlInput.setCustomValidity("");
+          } catch (_) {
+            /* ignore */
+          }
+        }
+        const url = parsed.url;
         const code = siteCodeFromUrl(url);
         const job = {
           code,
