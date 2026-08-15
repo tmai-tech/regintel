@@ -1006,16 +1006,17 @@
   function pdfMatchesSite(p, site) {
     if (!site) return isAllowedSaudiMinistryRow(p);
     const code = String(site.code || "").toLowerCase();
-    const j = String((p && p.jurisdiction) || "").toLowerCase();
+    const j = String((p && p.jurisdiction) || "").toLowerCase().trim();
     const h = hostOf((p && (p.open_url || p.url || p.host)) || "");
     const mh = hostOf(site.url || "") || String(site.host || "").replace(/^www\./i, "").toLowerCase();
-    if (code && (j.includes("saudi arabia - " + code) || j === code || j.includes(code))) {
-      return true;
+    // Strict label only — j.includes("ia") matches "Arabia" and stole CMA/ZATCA/etc.
+    if (code) {
+      const label = "saudi arabia - " + code;
+      if (j === label || j.startsWith(label + " ") || j === code || j.endsWith(" - " + code)) {
+        return true;
+      }
     }
-    if (mh && h && (h === mh || h.endsWith("." + mh) || mh.endsWith("." + h))) return true;
-    if (code && (h.includes(code) || String((p && p.host) || "").toLowerCase().includes(code))) {
-      return true;
-    }
+    if (mh && h && (h === mh || h.endsWith("." + mh))) return true;
     return false;
   }
 
