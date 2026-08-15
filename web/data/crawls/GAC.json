@@ -1,13 +1,13 @@
 {
   "code": "GAC",
-  "url": "https://gac.gov.sa",
+  "url": "https://gac.gov.sa/",
   "label": "Saudi Arabia - GAC",
-  "phase": "queued",
-  "message": "Waiting for a runner (8 crawls at a time)",
+  "phase": "listed",
+  "message": "listed 0 documents on gac.gov.sa (unreachable)",
   "pages": 0,
   "listed": 0,
   "downloaded": 0,
   "to_download": 0,
-  "updated_at": "2026-08-15T14:18:30Z",
+  "updated_at": "2026-08-15T14:32:00.657831+00:00",
   "run_id": "31888709019"
 }
