@@ -2776,17 +2776,11 @@
             <p class="live-action">${escapeHtml(j.message || "Waiting for crawl worker…")}</p>
             <div class="live-foot">
               <span class="live-checked">${escapeHtml(checked)}</span>
-              <span>
-                <button type="button" class="btn ghost live-refresh" data-code="${escapeAttr(j.code)}">Refresh</button>
-                <button type="button" class="btn ghost live-dismiss" data-code="${escapeAttr(j.code)}">Dismiss</button>
-              </span>
+              <button type="button" class="btn ghost live-dismiss" data-code="${escapeAttr(j.code)}">Dismiss</button>
             </div>
           </article>`;
         })
         .join("");
-      progressList.querySelectorAll(".live-refresh").forEach((btn) => {
-        btn.addEventListener("click", () => refreshLiveStatus(true));
-      });
       progressList.querySelectorAll(".live-dismiss").forEach((btn) => {
         btn.addEventListener("click", () => {
           const code = btn.getAttribute("data-code");
