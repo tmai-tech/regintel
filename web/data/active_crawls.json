@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T15:02:05.319979+00:00",
+  "updated_at": "2026-08-15T15:02:13.125218+00:00",
   "jobs": [
     {
       "code": "CST",
@@ -12,19 +12,6 @@
       "downloaded": 0,
       "to_download": 0,
       "updated_at": "2026-08-15T14:18:30Z",
-      "run_id": "31888709019"
-    },
-    {
-      "code": "GOSI",
-      "url": "https://www.gosi.gov.sa/",
-      "label": "Saudi Arabia - GOSI",
-      "phase": "downloading",
-      "message": "downloading 26/26 for Saudi Arabia - GOSI (ok=22 scanned=0 fail=4)",
-      "pages": 843,
-      "listed": 26,
-      "downloaded": 22,
-      "to_download": 0,
-      "updated_at": "2026-08-15T15:02:00.659068+00:00",
       "run_id": "31888709019"
     },
     {
@@ -155,6 +142,19 @@
       "downloaded": 0,
       "to_download": 0,
       "updated_at": "2026-08-15T14:32:07.781595+00:00",
+      "run_id": "31888709019"
+    },
+    {
+      "code": "GOSI",
+      "url": "https://www.gosi.gov.sa/",
+      "label": "Saudi Arabia - GOSI",
+      "phase": "listed",
+      "message": "Saudi ministries · 1694 PDFs · 1523 summaries",
+      "pages": 843,
+      "listed": 26,
+      "downloaded": 22,
+      "to_download": 0,
+      "updated_at": "2026-08-15T15:02:12.848661+00:00",
       "run_id": "31888709019"
     },
     {
