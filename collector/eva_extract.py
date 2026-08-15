@@ -139,10 +139,32 @@ def extract_text_from_url(
     headers = {"User-Agent": DEFAULT_UA, "Accept": "application/pdf,*/*"}
     if referer:
         headers["Referer"] = referer
-    with httpx.Client(timeout=timeout, follow_redirects=True, headers=headers) as client:
-        r = client.get(url)
-        r.raise_for_status()
-        data = r.content
+    last_err: Exception | None = None
+    data = b""
+    for verify in (True, False):
+        try:
+            with httpx.Client(
+                timeout=timeout,
+                follow_redirects=True,
+                headers=headers,
+                verify=verify,
+            ) as client:
+                r = client.get(url)
+                r.raise_for_status()
+                data = r.content
+            last_err = None
+            break
+        except Exception as e:
+            last_err = e
+            if verify and (
+                "CERTIFICATE" in str(e).upper()
+                or "SSL" in str(e).upper()
+                or "TLS" in str(e).upper()
+            ):
+                continue
+            raise
+    if last_err is not None:
+        raise last_err
     if not data.startswith(b"%PDF"):
         raise ValueError(f"URL did not return a PDF: {urlparse(url).netloc}")
     return extract_text_from_bytes(data, max_pages=max_pages, max_chars=max_chars)
