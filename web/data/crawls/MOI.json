@@ -2,12 +2,12 @@
   "code": "MOI",
   "url": "https://www.moi.gov.sa/",
   "label": "Saudi Arabia - MOI",
-  "phase": "discovering",
-  "message": "discovering documents on https://www.moi.gov.sa/",
+  "phase": "listed",
+  "message": "listed 0 documents on moi.gov.sa (unreachable)",
   "pages": 0,
   "listed": 0,
   "downloaded": 0,
   "to_download": 0,
-  "updated_at": "2026-08-15T14:01:04.412115+00:00",
+  "updated_at": "2026-08-15T14:12:42.951004+00:00",
   "run_id": "31888709019"
 }

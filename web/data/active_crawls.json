@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-08-15T14:12:04.007390+00:00",
+  "updated_at": "2026-08-15T14:12:48.817630+00:00",
   "jobs": [
-    {
-      "code": "MOI",
-      "url": "https://www.moi.gov.sa/",
-      "label": "Saudi Arabia - MOI",
-      "phase": "discovering",
-      "message": "discovering documents on https://www.moi.gov.sa/",
-      "pages": 0,
-      "listed": 0,
-      "downloaded": 0,
-      "to_download": 0,
-      "updated_at": "2026-08-15T14:01:04.412115+00:00",
-      "run_id": "31888709019"
-    },
     {
       "code": "ZATCA",
       "url": "https://zatca.gov.sa/",
@@ -25,6 +12,19 @@
       "downloaded": 9,
       "to_download": 61,
       "updated_at": "2026-08-15T14:12:03.529897+00:00",
+      "run_id": "31888709019"
+    },
+    {
+      "code": "MOI",
+      "url": "https://www.moi.gov.sa/",
+      "label": "Saudi Arabia - MOI",
+      "phase": "listed",
+      "message": "listed 0 documents on moi.gov.sa (unreachable)",
+      "pages": 0,
+      "listed": 0,
+      "downloaded": 0,
+      "to_download": 0,
+      "updated_at": "2026-08-15T14:12:42.951004+00:00",
       "run_id": "31888709019"
     },
     {
