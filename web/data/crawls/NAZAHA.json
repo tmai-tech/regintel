@@ -1,7 +1,7 @@
 {
-  "code": "SAIP",
-  "url": "https://www.saip.gov.sa",
-  "label": "Saudi Arabia - SAIP",
+  "code": "NAZAHA",
+  "url": "https://nazaha.gov.sa",
+  "label": "Saudi Arabia - Nazaha",
   "phase": "discovering",
   "message": "Finish crawl running",
   "pages": 0,

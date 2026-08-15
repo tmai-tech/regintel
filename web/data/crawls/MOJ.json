@@ -1,7 +1,7 @@
 {
-  "code": "SAIP",
-  "url": "https://www.saip.gov.sa",
-  "label": "Saudi Arabia - SAIP",
+  "code": "MOJ",
+  "url": "https://www.moj.gov.sa",
+  "label": "Saudi Arabia - MOJ",
   "phase": "discovering",
   "message": "Finish crawl running",
   "pages": 0,
