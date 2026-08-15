@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "collector"))
 sys.path.insert(0, str(ROOT))
 
-from eva_extract import extract_for_record  # type: ignore
+from eva_extract import extract_for_record, looks_like_glyph_dump  # type: ignore
 from eva_llm import get_client, summarize_pdf_text  # type: ignore
 
 EVA_DIR = ROOT / "data" / "eva"
@@ -92,6 +92,27 @@ def append_summary(rec: dict) -> None:
         f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
 
+def rewrite_jsonl(all_summaries: dict[str, dict]) -> None:
+    """Replace jsonl with one row per id so reprocess does not leave stale lines."""
+    EVA_DIR.mkdir(parents=True, exist_ok=True)
+    rows = list(all_summaries.values())
+    rows.sort(key=lambda r: r.get("summarized_at") or "")
+    with SUMMARIES_JSONL.open("w", encoding="utf-8") as f:
+        for rec in rows:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+def summary_is_glyph_junk(rec: dict) -> bool:
+    blob = " ".join(
+        [
+            str(rec.get("summary") or ""),
+            " ".join(rec.get("key_points") or []),
+            " ".join(rec.get("topics") or []),
+        ]
+    )
+    return looks_like_glyph_dump(blob)
+
+
 def publish_web(all_summaries: dict[str, dict], *, max_web: int = 5000) -> None:
     """Write compact summaries for the static site (newest first)."""
     rows = list(all_summaries.values())
@@ -136,6 +157,11 @@ def main():
     p.add_argument("--jurisdiction", action="append", dest="jurisdictions", help="Filter (substring)")
     p.add_argument("--only-missing", action="store_true", default=True)
     p.add_argument("--reprocess", action="store_true", help="Re-summarize even if present")
+    p.add_argument(
+        "--fix-glyphs",
+        action="store_true",
+        help="Re-summarize rows whose text is /uniXXXX glyph dumps",
+    )
     p.add_argument("--max-pages", type=int, default=15, help="PDF pages to read per file")
     p.add_argument("--delay", type=float, default=0.4)
     p.add_argument("--publish-only", action="store_true", help="Only rebuild web JSON from jsonl")
@@ -151,15 +177,44 @@ def main():
     print(f"Catalog size: {len(catalog)}; already summarized: {len(existing)}")
     print(f"LLM mode: {'SpaceXAI/xAI' if get_client() else 'extractive (no XAI_API_KEY)'}")
 
+    broken_ids = set()
+    if args.fix_glyphs:
+        broken_ids = {i for i, r in existing.items() if summary_is_glyph_junk(r)}
+        print(f"Glyph-junk summaries to rebuild: {len(broken_ids)}")
+
     juris = [j.lower() for j in (args.jurisdictions or [])]
     todo = []
+    by_id = {}
     for rec in catalog:
+        rid = rec.get("id") or rec.get("sha256")
+        if rid:
+            by_id[rid] = rec
+    # --fix-glyphs: start from existing rows so we still have URL/path if catalog dropped them
+    source_rows = list(catalog)
+    if args.fix_glyphs:
+        extra = []
+        for rid in broken_ids:
+            if rid in by_id:
+                rec = dict(by_id[rid])
+            else:
+                rec = dict(existing[rid])
+            prev = existing.get(rid) or {}
+            rec.setdefault("local_path", prev.get("local_path"))
+            rec.setdefault("path", prev.get("path") or prev.get("local_path"))
+            rec.setdefault("open_url", prev.get("open_url") or prev.get("url"))
+            rec.setdefault("url", prev.get("url") or prev.get("open_url"))
+            extra.append(rec)
+        source_rows = extra
+    for rec in source_rows:
         rid = rec.get("id") or rec.get("sha256")
         if not rid:
             continue
-        if not args.reprocess and rid in existing:
+        if args.fix_glyphs:
+            if rid not in broken_ids:
+                continue
+        elif not args.reprocess and rid in existing:
             continue
-        if juris:
+        if juris and not args.fix_glyphs:
             j = (rec.get("jurisdiction") or "").lower()
             if not any(x in j for x in juris):
                 continue
@@ -177,7 +232,7 @@ def main():
         return (local, saudi)
 
     todo.sort(key=rank)
-    if args.limit:
+    if args.limit and not args.fix_glyphs:
         todo = todo[: args.limit]
 
     print(f"Processing {len(todo)} PDFs…")
@@ -238,6 +293,8 @@ def main():
         if i % 10 == 0:
             publish_web(existing)
 
+    if args.fix_glyphs or args.reprocess:
+        rewrite_jsonl(existing)
     publish_web(existing)
     print(json.dumps({"ok": ok, "fail": fail, "total_summaries": len(existing)}, indent=2))
     print(f"Web index: {WEB_SUMMARIES}")

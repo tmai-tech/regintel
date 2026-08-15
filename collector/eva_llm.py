@@ -61,8 +61,13 @@ def summarize_pdf_text(
     text: str,
 ) -> dict[str, Any]:
     """Return structured summary dict using LLM, or extractive fallback."""
+    try:
+        from eva_extract import clean_extracted_text
+    except ImportError:
+        from collector.eva_extract import clean_extracted_text  # type: ignore
+
     client = get_client()
-    snippet = text[:35_000]
+    snippet = clean_extracted_text(text)[:35_000]
     if not snippet.strip():
         return {
             "summary": "No extractable text (may be scanned/image-only PDF).",
@@ -192,30 +197,60 @@ def answer_with_context(
 
 def extractive_summary(*, title: str, text: str) -> dict[str, Any]:
     """Heuristic summary when no LLM key is available."""
+    try:
+        from eva_extract import clean_extracted_text, looks_like_glyph_dump
+    except ImportError:
+        from collector.eva_extract import clean_extracted_text, looks_like_glyph_dump  # type: ignore
+
+    text = clean_extracted_text(text)
     # Split into sentences-ish
-    chunks = re.split(r"(?<=[.!?])\s+|\n+", text)
-    sents = [c.strip() for c in chunks if 40 <= len(c.strip()) <= 400]
-    # Prefer sentences with legal keywords
+    chunks = re.split(r"(?<=[.!?؟。])\s+|\n+", text)
+    sents = []
+    for c in chunks:
+        s = c.strip()
+        if not (40 <= len(s) <= 400):
+            continue
+        if looks_like_glyph_dump(s):
+            continue
+        if re.fullmatch(r"[.\s\d\-]+", s):
+            continue
+        sents.append(s)
+    # Prefer sentences with legal keywords (EN + AR)
     keywords = (
         "shall", "regulation", "amend", "act", "bill", "article", "section",
         "authority", "ministry", "license", "compliance", "tax", "bank",
         "cyber", "data", "privacy", "insurance", "securities", "competition",
+        "نظام", "لائحة", "قرار", "مادة", "وزارة", "ترخيص", "ضوابط", "تعليمات",
+        "البلدية", "التراخيص",
     )
     scored = []
     for s in sents:
-        score = sum(1 for k in keywords if k in s.lower())
+        sl = s.lower()
+        score = sum(1 for k in keywords if k.lower() in sl or k in s)
         scored.append((score, s))
     scored.sort(key=lambda x: (-x[0], -len(x[1])))
-    top = [s for _, s in scored[:5]] or sents[:3] or [text[:500]]
+    top = [s for _, s in scored[:5]] or sents[:3]
+    if not top:
+        return {
+            "summary": (
+                (title + ". " if title else "")
+                + "Eva could not extract readable text from this PDF "
+                "(custom Arabic font encoding)."
+            ).strip(),
+            "key_points": [],
+            "topics": [],
+            "document_type": "other",
+            "method": "extractive_unreadable",
+        }
     summary = " ".join(top)[:1200]
     if title:
         summary = f"{title}. " + summary
-    # crude topics from frequent words
     words = re.findall(r"[A-Za-z]{5,}", text.lower())
+    ar_words = re.findall(r"[\u0600-\u06FF]{3,}", text)
     stop = {"which", "their", "there", "these", "those", "about", "shall", "under", "would", "could", "between"}
     freq: dict[str, int] = {}
-    for w in words:
-        if w in stop:
+    for w in words + ar_words:
+        if w in stop or w.startswith("uni"):
             continue
         freq[w] = freq.get(w, 0) + 1
     topics = [w for w, _ in sorted(freq.items(), key=lambda x: -x[1])[:6]]
