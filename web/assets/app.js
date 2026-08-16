@@ -2689,6 +2689,51 @@
     );
   }
 
+  const FIRESTORE_PROJECT = "roomcraft-e1312";
+  const FIRESTORE_API_KEY = "AIzaSyA9BxQMgkEI9kVvL70K5ZvkBOvCty5a5ZM";
+
+  function firestoreFieldValue(field) {
+    if (!field || typeof field !== "object") return undefined;
+    if ("stringValue" in field) return field.stringValue;
+    if ("integerValue" in field) return Number(field.integerValue);
+    if ("doubleValue" in field) return Number(field.doubleValue);
+    if ("booleanValue" in field) return Boolean(field.booleanValue);
+    if ("timestampValue" in field) return field.timestampValue;
+    if ("nullValue" in field) return null;
+    return undefined;
+  }
+
+  async function fetchFirestoreCrawls() {
+    const url =
+      "https://firestore.googleapis.com/v1/projects/" +
+      FIRESTORE_PROJECT +
+      "/databases/(default)/documents/regintel_crawls?pageSize=50&key=" +
+      encodeURIComponent(FIRESTORE_API_KEY);
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Firestore HTTP " + res.status);
+    const data = await res.json();
+    const jobs = [];
+    for (const doc of data.documents || []) {
+      const f = doc.fields || {};
+      const code = String(firestoreFieldValue(f.code) || "").toUpperCase();
+      if (!code) continue;
+      jobs.push({
+        code,
+        url: firestoreFieldValue(f.url) || "",
+        label: firestoreFieldValue(f.label) || "Saudi Arabia - " + code,
+        phase: firestoreFieldValue(f.phase) || "running",
+        message: firestoreFieldValue(f.message) || "",
+        pages: firestoreFieldValue(f.pages) || 0,
+        listed: firestoreFieldValue(f.listed) || 0,
+        downloaded: firestoreFieldValue(f.downloaded) || 0,
+        to_download: firestoreFieldValue(f.to_download) || 0,
+        updated_at: firestoreFieldValue(f.updated_at) || "",
+        run_id: firestoreFieldValue(f.run_id) || "",
+      });
+    }
+    return jobs;
+  }
+
   const ACTIONS_SKIP_JOBS = new Set(["summarize", "deploy", "crawl"]);
 
   async function fetchActionsLiveJobs() {
@@ -3031,9 +3076,10 @@
       const nowIso = new Date().toISOString();
       if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
       try {
-        const [shared, st] = await Promise.all([
+        const [shared, st, fsJobs] = await Promise.all([
           fetchJson("data/active_crawls.json").catch(() => null),
           fetchJson("data/crawl_status.json").catch(() => null),
+          fetchFirestoreCrawls().catch(() => null),
         ]);
 
         const byCode = new Map();
@@ -3041,6 +3087,20 @@
         for (const row of serverJobs) {
           if (!row || !row.code) continue;
           byCode.set(row.code, normalizeSharedJob(row, nowIso));
+        }
+        for (const row of fsJobs || []) {
+          if (!row || !row.code) continue;
+          const existing = byCode.get(row.code);
+          const newer =
+            !existing ||
+            Date.parse(row.updated_at || 0) >= Date.parse(existing.updated_at || 0);
+          const richer =
+            existing &&
+            (Number(row.listed || 0) > Number(existing.listed || 0) ||
+              Number(row.pages || 0) > Number(existing.pages || 0));
+          if (!existing || newer || richer) {
+            byCode.set(row.code, normalizeSharedJob(Object.assign({}, existing || {}, row), nowIso));
+          }
         }
         const fallback = jobFromStatus(st);
         if (fallback && fallback.code) {

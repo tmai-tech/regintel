@@ -1,4 +1,13 @@
 {
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionGroup": "regintel_pdfs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "site_code", "order": "ASCENDING" },
+        { "fieldPath": "downloaded_at", "order": "DESCENDING" }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }

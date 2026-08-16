@@ -166,6 +166,13 @@ def write_active_crawls(job: dict | None = None) -> dict:
     WEB_ACTIVE.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    if job and job.get("code"):
+        try:
+            from firestore_live import upsert_crawl_job
+
+            upsert_crawl_job(job)
+        except Exception as e:
+            print(f"[firestore] crawl upsert skipped: {e}", flush=True)
     return payload
 
 

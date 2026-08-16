@@ -11,6 +11,7 @@ import argparse
 import json
 import os
 import re
+import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -246,6 +247,17 @@ def display_title(rec: dict, index: int = 0) -> str:
     return filename or pretty_filename(url) or f"PDF {index + 1}"
 
 
+def _site_code(jurisdiction: str | None, url: str, host: str) -> str:
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from saudi_ministry_allowlist import site_code_for  # type: ignore
+    except Exception:
+        return ""
+    return site_code_for(
+        {"jurisdiction": jurisdiction or "", "url": url or "", "host": host or ""}
+    ) or ""
+
+
 def enrich_record(rec: dict, index: int) -> dict:
     local = ROOT / (rec.get("path") or "")
     size = rec.get("bytes") or (local.stat().st_size if local.is_file() else 0)
@@ -274,6 +286,7 @@ def enrich_record(rec: dict, index: int) -> dict:
         "title": title,
         "filename": filename,
         "jurisdiction": jurisdiction,
+        "site_code": _site_code(jurisdiction, url, host),
         "source_kind": source_kind,
         "law_type": infer_law_type(title, filename, url, source_kind),
         "year": year,

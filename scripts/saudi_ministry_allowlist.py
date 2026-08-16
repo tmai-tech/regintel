@@ -108,6 +108,19 @@ def is_allowed_ministry_row(p: dict) -> bool:
     return False
 
 
+def site_code_for(p: dict) -> str:
+    """Stable site code from a catalog/crawl row (Saudi Arabia - MOMAH → MOMAH)."""
+    j = normalize_jurisdiction(p)
+    if " - " in j:
+        tail = j.rsplit(" - ", 1)[-1].strip().upper()
+        aliases = {"NAZAHA": "NAZAHA", "TADAWUL": "TADAWUL"}
+        if tail in aliases:
+            return aliases[tail]
+        if tail and tail.replace(" ", "").isalnum() and len(tail) <= 12:
+            return tail
+    return ""
+
+
 def normalize_jurisdiction(p: dict) -> str:
     bl = _blob(p).lower()
     if "sdaia" in bl or "dgp.sdaia" in bl:
