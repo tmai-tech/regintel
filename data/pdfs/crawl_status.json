@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T16:52:42.460273+00:00",
+  "updated_at": "2026-08-16T17:21:16.989534+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2052,
+    "pdfs": 2053,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 25
+      "count": 26
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2052
+      "count": 2053
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "r1430",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1430.pdf",
+      "downloaded_at": "2026-08-16T17:14:52.641062+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "r1431",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/The%20Fees%20Rules%20on%20Customs%20Services.pdf",
       "downloaded_at": "2026-08-16T11:23:54.863383+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Statement of Returned at Jeddah Islamic Port.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jeddah%20Islamic%20Port.pdf",
-      "downloaded_at": "2026-08-16T11:23:53.830045+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T16:52:31+00:00"
+  "manifest_generated_at": "2026-08-16T17:21:07+00:00"
 }

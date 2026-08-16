@@ -1,5 +1,30 @@
 [
   {
+    "id": "0c39b7929fa72e0f",
+    "title": "r1430",
+    "filename": "r1430.pdf",
+    "jurisdiction": "Saudi Arabia - SASO",
+    "site_code": "SASO",
+    "source_kind": "ministry",
+    "law_type": "other",
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "saso.gov.sa",
+    "filename_tags": [],
+    "source_page": null,
+    "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1430.pdf",
+    "open_url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1430.pdf",
+    "download_url": null,
+    "bytes": 61290366,
+    "sha256": "0c39b7929fa72e0f",
+    "downloaded_at": "2026-08-16T17:14:52.641062+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_SASO/ministry/r1430.pdf"
+  },
+  {
     "id": "c063127c7de5d2f8",
     "title": "r1431",
     "filename": "r1431.pdf",
