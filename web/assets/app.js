@@ -2872,7 +2872,9 @@
       const parsed = parseCrawlUrl(raw);
       const job = parsed.ok ? liveJobForCode(siteCodeFromUrl(parsed.url)) : null;
       if (job) {
-        startBtn.textContent = job.code + " is already crawling";
+        // This is the job just started (or still live). "Already" is only
+        // for a rejected second Start, not the first successful click.
+        startBtn.textContent = "Crawling " + job.code + "…";
       } else {
         startBtn.textContent = START_LABEL;
       }
