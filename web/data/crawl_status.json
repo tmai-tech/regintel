@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T16:14:44.442274+00:00",
+  "updated_at": "2026-08-16T16:52:42.460273+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2051,
+    "pdfs": 2052,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 24
+      "count": 25
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2051
+      "count": 2052
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "r1431",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1431.pdf",
+      "downloaded_at": "2026-08-16T16:45:54.489823+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "r1432",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jeddah%20Islamic%20Port.pdf",
       "downloaded_at": "2026-08-16T11:23:53.830045+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Statement of Returned at Jazan Port Customs.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jazan%20Port%20Customs.pdf",
-      "downloaded_at": "2026-08-16T11:23:49.824786+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T16:14:35+00:00"
+  "manifest_generated_at": "2026-08-16T16:52:31+00:00"
 }
