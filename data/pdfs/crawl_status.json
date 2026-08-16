@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T10:33:33.855365+00:00",
+  "updated_at": "2026-08-16T14:34:17.580134+00:00",
   "phase": "idle",
-  "message": "catalog recover-so-far: MOMAH listed PDFs merged",
+  "message": "catalog recover-so-far: MOMAH+ZATCA+SASO",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 1800,
+    "pdfs": 2044,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -20,24 +20,24 @@
       "count": 365
     },
     {
-      "jurisdiction": "Saudi Arabia - MC",
-      "count": 183
+      "jurisdiction": "Saudi Arabia - MOMAH",
+      "count": 307
     },
     {
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "count": 123
+      "jurisdiction": "Saudi Arabia - MC",
+      "count": 183
     },
     {
       "jurisdiction": "Saudi Arabia - NCA",
       "count": 104
     },
     {
-      "jurisdiction": "Saudi Arabia - CMA",
-      "count": 50
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "count": 93
     },
     {
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "count": 37
+      "jurisdiction": "Saudi Arabia - CMA",
+      "count": 50
     },
     {
       "jurisdiction": "Saudi Arabia - GOSI",
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 13
+      "count": 17
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,114 +67,114 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1800
+      "count": 2044
     }
   ],
   "current_source": null,
   "recent_pdfs": [
     {
-      "title": "nzam nz_ mlkyt al_qarat llmnf_t al_amt.pdf",
+      "title": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-06/nzam%20nz%60%20mlkyt%20al%60qarat%20llmnf%60t%20al%60amt.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.603834+00:00",
+      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81%20%D8%A8%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D8%AB%D8%A9.pdf",
+      "downloaded_at": "2026-08-16T14:34:06.716301+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "nzam almjals albldyt.pdf",
+      "title": "layht-rswm-tqdym-mntjat-altbgh-.pdf",
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-06/nzam%20almjals%20albldyt.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.580737+00:00",
+      "url": "https://momah.gov.sa/sites/default/files/2023-08/layht-rswm-tqdym-mntjat-altbgh-.pdf",
+      "downloaded_at": "2026-08-16T14:34:06.686769+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "nzam altrq walmbany.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-06/nzam%20altrq%20walmbany.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.556531+00:00",
+      "title": "Salwa11.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Salwa11.pdf",
+      "downloaded_at": "2026-08-16T11:24:44.596009+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "nzam ttbyq kwd albna als_wdy.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-06/nzam%20ttbyq%20kwd%20albna%20als%60wdy.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.532739+00:00",
+      "title": "Khafji22.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Khafji22.pdf",
+      "downloaded_at": "2026-08-16T11:24:40.542692+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "nzam albldyat walqry.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-06/nzam%20albldyat%20walqry.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.509577+00:00",
+      "title": "Tool Rett.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Tool%20Rett.pdf",
+      "downloaded_at": "2026-08-16T11:24:35.696691+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الاصدار +لائحة الاشتراطات الصحية لمحلات اعداد وبيع العصائر.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%D9%84%D9%85%D8%AD%D9%84%D8%A7%D8%AA%20%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B9%D8%B5%D8%A7%D8%A6%D8%B1.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.482439+00:00",
+      "title": "The Fees Rules on Customs Services.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/The%20Fees%20Rules%20on%20Customs%20Services.pdf",
+      "downloaded_at": "2026-08-16T11:23:54.863383+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الاصدار +لائحة الاشتراطات الصحية لمحلات اعداد وتجهيز منتجات البيض.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%D9%84%D9%85%D8%AD%D9%84%D8%A7%D8%AA%20%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF%20%D9%88%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.431008+00:00",
+      "title": "Statement of Returned at Jeddah Islamic Port.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jeddah%20Islamic%20Port.pdf",
+      "downloaded_at": "2026-08-16T11:23:53.830045+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الإصدار + دليل تصميم منشا_ت الطرق.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%86%D8%B4%D8%A7%D9%93%D8%AA%20%D8%A7%D9%84%D8%B7%D8%B1%D9%82.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.378308+00:00",
+      "title": "Statement of Returned at Jazan Port Customs.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Jazan%20Port%20Customs.pdf",
+      "downloaded_at": "2026-08-16T11:23:49.824786+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الإصدار + دليل تقييم طبقات رصف الطرق ومنشا_تها.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B7%D8%A8%D9%82%D8%A7%D8%AA%20%D8%B1%D8%B5%D9%81%20%D8%A7%D9%84%D8%B7%D8%B1%D9%82%20%D9%88%D9%85%D9%86%D8%B4%D8%A7%D9%93%D8%AA%D9%87%D8%A7.pdf",
-      "downloaded_at": "2026-08-16T10:33:24.014154+00:00",
+      "title": "Statement of Returned - Neom Port.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20-%20Neom%20Port.pdf",
+      "downloaded_at": "2026-08-16T11:23:48.512650+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الإصدار + دليل تدقيق تصاميم مشاريع الطرق.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%AF%D9%82%D9%8A%D9%82%20%D8%AA%D8%B5%D8%A7%D9%85%D9%8A%D9%85%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B7%D8%B1%D9%82.pdf",
-      "downloaded_at": "2026-08-16T10:33:23.666290+00:00",
+      "title": "Statement of Returned at Alkhadra Port.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Alkhadra%20Port.pdf",
+      "downloaded_at": "2026-08-16T11:23:43.775319+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الإصدار + دليل تصميم المصاعد والسلالم الكهرباي_ية.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B9%D8%AF%20%D9%88%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D9%8A%D9%94%D9%8A%D8%A9.pdf",
-      "downloaded_at": "2026-08-16T10:33:23.601822+00:00",
+      "title": "Statement of Returned at Alb Customs Port.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Alb%20Customs%20Port.pdf",
+      "downloaded_at": "2026-08-16T11:23:37.077429+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الإصدار + دليل عقود تنفيذ الطرق والحداي_ق.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%B9%D9%82%D9%88%D8%AF%20%D8%AA%D9%86%D9%81%D9%8A%D8%B0%20%D8%A7%D9%84%D8%B7%D8%B1%D9%82%20%D9%88%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D9%8A%D9%94%D9%82.pdf",
-      "downloaded_at": "2026-08-16T10:33:23.539108+00:00",
+      "title": "Statement of Returned at Al-Adid Port.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Al-Adid%20Port.pdf",
+      "downloaded_at": "2026-08-16T11:23:33.340007+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "أداة الاصدار +دليل المستهلك في التعامل مع الأسواق المركزية والمطاعم وما في حكمها.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2022-02/%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%2B%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%A7%D9%82%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85%20%D9%88%D9%85%D8%A7%20%D9%81%D9%8A%20%D8%AD%D9%83%D9%85%D9%87%D8%A7.pdf",
-      "downloaded_at": "2026-08-16T10:33:23.453471+00:00",
+      "title": "Statement of Returned Furniture at HQ.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20Furniture%20at%20HQ.pdf",
+      "downloaded_at": "2026-08-16T11:23:30.016234+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "aldlyl alshaml lla_mal almdnyt llbnyt althtyt.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2024-12/aldlyl%20alshaml%20lla%27%60mal%20almdnyt%20llbnyt%20althtyt.pdf",
-      "downloaded_at": "2026-08-16T10:33:23.385396+00:00",
+      "title": "KSA_MORC_Agreement(AR).pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSA%26MORC_Agreement%28AR%29.pdf",
+      "downloaded_at": "2026-08-16T11:23:26.421655+00:00",
       "source_kind": "ministry"
     },
     {
-      "title": "nhayy dlyl altshghyl walsyant ldwrat almyah al_amt altsmym alm_dl 7-1-2025.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://momah.gov.sa/sites/default/files/2025-01/nhayy%20dlyl%20altshghyl%20walsyant%20ldwrat%20almyah%20al%60amt%20altsmym%20alm%60dl%207-1-2025.pdf",
-      "downloaded_at": "2026-08-16T10:33:23.206155+00:00",
+      "title": "Returned Furniture and Appliances at Madinah Customs.pdf",
+      "jurisdiction": "Saudi Arabia - ZATCA",
+      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Returned%20Furniture%20and%20Appliances%20at%20Madinah%20Customs.pdf",
+      "downloaded_at": "2026-08-16T11:23:22.142266+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T10:33:24.611570+00:00"
+  "manifest_generated_at": "2026-08-16T14:34:10.636098+00:00"
 }
