@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T14:54:00.996503+00:00",
+  "updated_at": "2026-08-16T15:07:14.419222+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2044,
+    "pdfs": 2045,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 17
+      "count": 18
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2044
+      "count": 2045
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "SASO_Annual_Report2020",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report2020.pdf",
+      "downloaded_at": "2026-08-16T15:06:42.903394+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf",
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSA%26MORC_Agreement%28AR%29.pdf",
       "downloaded_at": "2026-08-16T11:23:26.421655+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Returned Furniture and Appliances at Madinah Customs.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Returned%20Furniture%20and%20Appliances%20at%20Madinah%20Customs.pdf",
-      "downloaded_at": "2026-08-16T11:23:22.142266+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T14:34:10.636098+00:00"
+  "manifest_generated_at": "2026-08-16T15:07:04+00:00"
 }
