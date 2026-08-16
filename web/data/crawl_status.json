@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T15:07:14.419222+00:00",
+  "updated_at": "2026-08-16T15:26:18.355806+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2045,
+    "pdfs": 2046,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 18
+      "count": 19
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2045
+      "count": 2046
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "SASO_Annual_Report_2018",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report_2018.pdf",
+      "downloaded_at": "2026-08-16T15:17:27.313581+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "SASO_Annual_Report2020",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20Furniture%20at%20HQ.pdf",
       "downloaded_at": "2026-08-16T11:23:30.016234+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "KSA_MORC_Agreement(AR).pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/KSA%26MORC_Agreement%28AR%29.pdf",
-      "downloaded_at": "2026-08-16T11:23:26.421655+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T15:07:04+00:00"
+  "manifest_generated_at": "2026-08-16T15:26:08+00:00"
 }
