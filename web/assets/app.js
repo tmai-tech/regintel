@@ -2734,68 +2734,6 @@
     return jobs;
   }
 
-  const ACTIONS_SKIP_JOBS = new Set(["summarize", "deploy", "crawl"]);
-
-  async function fetchActionsLiveJobs() {
-    const headers = { Accept: "application/vnd.github+json" };
-    try {
-      const token =
-        typeof localStorage !== "undefined" && localStorage.getItem("regintel_gh_token");
-      if (token) headers.Authorization = "Bearer " + token;
-    } catch (_) {
-      /* ignore */
-    }
-    const runsRes = await fetch(
-      "https://api.github.com/repos/tmai-tech/regintel/actions/runs?per_page=20",
-      { headers },
-    );
-    if (!runsRes.ok) throw new Error("GitHub Actions HTTP " + runsRes.status);
-    const payload = await runsRes.json();
-    const liveRuns = ((payload && payload.workflow_runs) || []).filter((r) => {
-      const st = r.status;
-      if (st !== "in_progress" && st !== "queued" && st !== "waiting") return false;
-      const blob = String(r.name || "") + " " + String(r.path || "");
-      return /crawl/i.test(blob);
-    });
-    const out = [];
-    for (const run of liveRuns.slice(0, 4)) {
-      const jr = await fetch(
-        "https://api.github.com/repos/tmai-tech/regintel/actions/runs/" +
-          run.id +
-          "/jobs?per_page=50",
-        { headers },
-      );
-      if (!jr.ok) continue;
-      const jobs = ((await jr.json()).jobs || []);
-      for (const job of jobs) {
-        if (job.status === "completed") continue;
-        const rawName = String(job.name || "").trim();
-        if (!rawName || ACTIONS_SKIP_JOBS.has(rawName.toLowerCase())) continue;
-        const code = /^[A-Za-z][A-Za-z0-9]{1,11}$/.test(rawName)
-          ? rawName.toUpperCase()
-          : siteCodeFromUrl(rawName);
-        if (!code || code === "SITE") continue;
-        const queued = job.status === "queued" || job.status === "waiting" || run.status === "queued";
-        out.push({
-          code,
-          url: "",
-          label: "Saudi Arabia - " + code,
-          phase: queued ? "queued" : "discovering",
-          message: queued
-            ? "Queued on GitHub Actions"
-            : "Running on GitHub Actions",
-          pages: 0,
-          listed: 0,
-          downloaded: 0,
-          updated_at: job.started_at || run.updated_at || new Date().toISOString(),
-          run_id: String(run.id),
-          from_actions: true,
-        });
-      }
-    }
-    return out;
-  }
-
   function crawlLooksFinished(phase, listed, downloaded, toDownload, message) {
     const p = String(phase || "").toLowerCase();
     if (p === "idle" || p === "complete" || p === "stopped" || p === "listed") return true;
@@ -3076,48 +3014,11 @@
       const nowIso = new Date().toISOString();
       if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
       try {
-        const [shared, st, fsJobs] = await Promise.all([
-          fetchJson("data/active_crawls.json").catch(() => null),
-          fetchJson("data/crawl_status.json").catch(() => null),
-          fetchFirestoreCrawls().catch(() => null),
-        ]);
-
+        const fsJobs = await fetchFirestoreCrawls();
         const byCode = new Map();
-        const serverJobs = (shared && Array.isArray(shared.jobs) && shared.jobs) || [];
-        for (const row of serverJobs) {
-          if (!row || !row.code) continue;
-          byCode.set(row.code, normalizeSharedJob(row, nowIso));
-        }
         for (const row of fsJobs || []) {
           if (!row || !row.code) continue;
-          const existing = byCode.get(row.code);
-          const newer =
-            !existing ||
-            Date.parse(row.updated_at || 0) >= Date.parse(existing.updated_at || 0);
-          const richer =
-            existing &&
-            (Number(row.listed || 0) > Number(existing.listed || 0) ||
-              Number(row.pages || 0) > Number(existing.pages || 0));
-          if (!existing || newer || richer) {
-            byCode.set(row.code, normalizeSharedJob(Object.assign({}, existing || {}, row), nowIso));
-          }
-        }
-        const fallback = jobFromStatus(st);
-        if (fallback && fallback.code) {
-          const existing = byCode.get(fallback.code);
-          const newer =
-            !existing ||
-            Date.parse(fallback.updated_at || 0) >= Date.parse(existing.updated_at || 0);
-          const richer =
-            existing &&
-            (Number(fallback.listed || 0) > Number(existing.listed || 0) ||
-              Number(fallback.pages || 0) > Number(existing.pages || 0));
-          if (!existing || newer || richer) {
-            byCode.set(
-              fallback.code,
-              normalizeSharedJob(Object.assign({}, existing || {}, fallback), nowIso),
-            );
-          }
+          byCode.set(row.code, normalizeSharedJob(row, nowIso));
         }
 
         const locals = readLocalStarts().filter((j) => {
@@ -3131,51 +3032,6 @@
         for (const j of locals) {
           if (!byCode.has(j.code)) {
             byCode.set(j.code, Object.assign({}, j, { checkedAt: nowIso }));
-          }
-        }
-
-        let actionsJobs = [];
-        let actionsOk = false;
-        try {
-          actionsJobs = await fetchActionsLiveJobs();
-          actionsOk = true;
-        } catch (_) {
-          actionsOk = false;
-        }
-        const urlByCode = new Map((sites || []).map((s) => [s.code, s.url]));
-        if (actionsOk) {
-          const running = new Set(actionsJobs.map((j) => j.code));
-          for (const [code, row] of [...byCode.entries()]) {
-            if (
-              isLivePhase(row.phase) &&
-              row.phase !== "starting" &&
-              !running.has(code)
-            ) {
-              byCode.delete(code);
-            }
-          }
-          for (const aj of actionsJobs) {
-            const prev = byCode.get(aj.code) || {};
-            const keepDl = prev.phase === "downloading";
-            byCode.set(
-              aj.code,
-              normalizeSharedJob(
-                {
-                  code: aj.code,
-                  url: prev.url || urlByCode.get(aj.code) || aj.url,
-                  label: prev.label || aj.label,
-                  phase: keepDl ? "downloading" : aj.phase,
-                  message: keepDl && prev.message ? prev.message : aj.message,
-                  pages: prev.pages || 0,
-                  listed: prev.listed || 0,
-                  downloaded: prev.downloaded || 0,
-                  to_download: prev.to_download,
-                  updated_at: nowIso,
-                  run_id: aj.run_id,
-                },
-                nowIso,
-              ),
-            );
           }
         }
 
@@ -3197,13 +3053,10 @@
         renderProgress();
         if (fromClick && statusEl) {
           const liveN = active.filter((j) => isLivePhase(j.phase)).length;
-          statusEl.textContent = actionsOk
-            ? liveN > 0
-              ? liveN + " crawl" + (liveN === 1 ? "" : "s") + " from GitHub Actions."
-              : "No crawl running on GitHub Actions."
-            : liveN > 0
-              ? liveN + " crawl card(s) from last published status (Actions lookup failed)."
-              : "No crawl in progress. Could not reach GitHub Actions.";
+          statusEl.textContent =
+            liveN > 0
+              ? liveN + " crawl" + (liveN === 1 ? "" : "s") + " from Firestore."
+              : "No live crawl in Firestore.";
         }
       } catch (_) {
         active = active.map((j) => Object.assign(j, { checkedAt: nowIso }));
