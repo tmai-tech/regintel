@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T17:21:16.989534+00:00",
+  "updated_at": "2026-08-16T17:40:29.586018+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2053,
+    "pdfs": 2054,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 26
+      "count": 27
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2053
+      "count": 2054
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "r1428",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1428.pdf",
+      "downloaded_at": "2026-08-16T17:39:46.670367+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "r1430",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Tool%20Rett.pdf",
       "downloaded_at": "2026-08-16T11:24:35.696691+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "The Fees Rules on Customs Services.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/The%20Fees%20Rules%20on%20Customs%20Services.pdf",
-      "downloaded_at": "2026-08-16T11:23:54.863383+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T17:21:07+00:00"
+  "manifest_generated_at": "2026-08-16T17:40:18+00:00"
 }
