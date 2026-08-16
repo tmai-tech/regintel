@@ -279,6 +279,7 @@ private fun PdfsTab(pdfs: List<PdfDoc>, onOpenPdf: (PdfDoc) -> Unit) {
                 (
                     q.isEmpty() ||
                         listOf(
+                            row.displayTitle(),
                             row.title,
                             row.filename,
                             row.jurisdiction,
@@ -518,7 +519,7 @@ private fun PdfListItem(doc: PdfDoc, onOpen: () -> Unit) {
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 Text(
-                    text = doc.title ?: doc.filename ?: "PDF",
+                    text = doc.displayTitle(),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold,
                     maxLines = 3,

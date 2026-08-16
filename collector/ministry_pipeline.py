@@ -506,11 +506,23 @@ class MinistryPipeline:
             return
         if "\\u002f" in url.lower() or "%5cu002f" in url.lower():
             return
+        fname = safe_filename(url)
+        raw_title = (link_text or "").strip()
+        if not raw_title or raw_title.lower() in {
+            "embedded-url",
+            "href",
+            "script",
+            "sitemap",
+            "show",
+            "click here",
+            "here",
+        } or raw_title.startswith("اضغط"):
+            raw_title = fname
         self.docs[url] = {
             "url": url,
-            "filename": safe_filename(url),
+            "filename": fname,
             "type": "PDF" if is_pdf_url(url) else "DOC",
-            "title": (link_text or safe_filename(url))[:200],
+            "title": raw_title[:200],
             "status": "to_download",
             "download_error": None,
             "jurisdiction": self.label,

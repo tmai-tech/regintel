@@ -14,7 +14,7 @@ import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "data" / "pdfs" / "manifest.json"
@@ -179,11 +179,84 @@ def filename_signals(filename: str) -> list[str]:
     return tags
 
 
+_PLACEHOLDER_TITLE = re.compile(
+    r"^(embedded[\s_-]?url|clicke?\s*here(?:\s+to\b.*)?|show|here|link|download|"
+    r"view|تنزيل|هنا|اضغط\s*هنا.*)$",
+    re.I | re.U,
+)
+_DISCOVERY_METHODS = frozenset(
+    {
+        "embedded-url",
+        "href",
+        "script",
+        "sitemap",
+        "seed_list",
+        "playwright_net",
+        "nav_api",
+        "json_api",
+        "embed",
+        "direct",
+    }
+)
+
+
+def pretty_filename(name: str) -> str:
+    raw = unquote(str(name or "")).strip()
+    raw = raw.split("?")[0].split("#")[0]
+    raw = raw.rsplit("/", 1)[-1]
+    raw = re.sub(r"(?i)\.pdf$", "", raw)
+    raw = re.sub(
+        r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}[_-]*",
+        "",
+        raw,
+        flags=re.I,
+    )
+    raw = raw.replace("_", " ").replace("-", " ")
+    raw = re.sub(r"\s+", " ", raw).strip(" ._-")
+    return raw
+
+
+def is_placeholder_title(title: str) -> bool:
+    t = re.sub(r"[\s\u200b\u200c\u200d\ufeff]+", " ", str(title or "")).strip()
+    if not t:
+        return True
+    if t.lower() in _DISCOVERY_METHODS:
+        return True
+    if t.lower().startswith("http://") or t.lower().startswith("https://"):
+        return True
+    if _PLACEHOLDER_TITLE.match(t):
+        return True
+    if len(t) < 3:
+        return True
+    return False
+
+
+def display_title(rec: dict, index: int = 0) -> str:
+    filename = rec.get("filename") or ""
+    if not filename:
+        path = rec.get("path") or rec.get("local_path") or ""
+        filename = Path(path).name if path else ""
+    url = rec.get("open_url") or rec.get("url") or rec.get("download_url") or ""
+    raw = rec.get("title") or ""
+    if raw and not is_placeholder_title(raw):
+        return str(raw).strip()
+    for cand in (pretty_filename(filename), pretty_filename(url)):
+        if cand and not is_placeholder_title(cand):
+            return cand
+    return filename or pretty_filename(url) or f"PDF {index + 1}"
+
+
 def enrich_record(rec: dict, index: int) -> dict:
     local = ROOT / (rec.get("path") or "")
     size = rec.get("bytes") or (local.stat().st_size if local.is_file() else 0)
-    filename = local.name if rec.get("path") else (rec.get("title") or f"doc_{index}.pdf")
-    title = rec.get("title") or filename
+    filename = local.name if rec.get("path") else (
+        rec.get("filename") or pretty_filename(rec.get("url") or "") or f"doc_{index}.pdf"
+    )
+    if not str(filename).lower().endswith(".pdf") and rec.get("url"):
+        guessed = Path(unquote(urlparse(rec.get("url") or "").path)).name
+        if guessed:
+            filename = guessed
+    title = display_title({**rec, "filename": filename}, index)
     url = rec.get("url") or ""
     open_url = rec.get("download_url") or url
     jurisdiction = rec.get("jurisdiction")

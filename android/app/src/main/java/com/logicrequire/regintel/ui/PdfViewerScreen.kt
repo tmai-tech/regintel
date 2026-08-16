@@ -159,7 +159,7 @@ fun PdfViewerScreen(
                 title = {
                     Column {
                         Text(
-                            doc.title ?: doc.filename ?: "PDF",
+                            doc.displayTitle(),
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
                         )

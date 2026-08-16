@@ -17,6 +17,54 @@
     return typeof u === "string" && /^https?:\/\//i.test(u.trim());
   }
 
+  function isPlaceholderTitle(title) {
+    const t = String(title || "")
+      .replace(/[\s\u200b\u200c\u200d\ufeff]+/g, " ")
+      .trim();
+    if (t.length < 3) return true;
+    const low = t.toLowerCase();
+    if (
+      /^(embedded[\s_-]?url|href|script|sitemap|seed_list|playwright_net|nav_api|json_api|embed|direct)$/i.test(
+        low,
+      )
+    ) {
+      return true;
+    }
+    if (/^https?:\/\//i.test(t)) return true;
+    if (/^(clicke?\s*here(\s+to\b.*)?|show|here|link|download|view)$/i.test(low)) return true;
+    if (/^(تنزيل|هنا)$/.test(t) || /^اضغط\s*هنا/.test(t)) return true;
+    return false;
+  }
+
+  function prettyFileStem(name) {
+    let raw = String(name || "").trim();
+    if (!raw) return "";
+    raw = raw.split("?")[0].split("#")[0];
+    raw = raw.split("/").pop() || raw;
+    try {
+      raw = decodeURIComponent(raw);
+    } catch (_) {
+      /* keep */
+    }
+    raw = raw.replace(/\.pdf$/i, "");
+    raw = raw.replace(
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}[_-]*/i,
+      "",
+    );
+    raw = raw.replace(/[_-]+/g, " ").replace(/\s+/g, " ").replace(/^[\s._-]+|[\s._-]+$/g, "");
+    return raw;
+  }
+
+  function displayTitleForPdf(r) {
+    const raw = String((r && r.title) || "").trim();
+    if (raw && !isPlaceholderTitle(raw)) return raw;
+    const fromFile = prettyFileStem((r && r.filename) || "");
+    if (fromFile && !isPlaceholderTitle(fromFile)) return fromFile;
+    const fromUrl = prettyFileStem((r && (r.open_url || r.url)) || "");
+    if (fromUrl && !isPlaceholderTitle(fromUrl)) return fromUrl;
+    return fromFile || fromUrl || "PDF";
+  }
+
   function parseCrawlUrl(raw) {
     const s = String(raw || "").trim();
     if (!s) return { ok: false, error: "Enter a site URL." };
@@ -1831,7 +1879,7 @@
     const pointsArr = (r.key_points || []).slice(0, 4).map((p) => String(p));
     // Show original extract only — translate only when user clicks Translate
     const cacheKey = simpleHash(origSummary + "\n" + (r.title || "") + "\n" + pointsArr.join("\n"));
-    const displayTitle = r.title || "Untitled PDF";
+    const displayTitle = displayTitleForPdf(r);
     const summary = origSummary
       ? escapeHtml(origSummary)
       : '<span class="muted">No extractive summary yet for this PDF.</span>';
