@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T15:26:18.355806+00:00",
+  "updated_at": "2026-08-16T15:35:58.366461+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2046,
+    "pdfs": 2047,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 19
+      "count": 20
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2046
+      "count": 2047
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "SASO_Annual_Report_2017",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report_2017.pdf",
+      "downloaded_at": "2026-08-16T15:35:40.797877+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "SASO_Annual_Report_2018",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20at%20Al-Adid%20Port.pdf",
       "downloaded_at": "2026-08-16T11:23:33.340007+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Statement of Returned Furniture at HQ.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/en/MediaCenter/Elan/Documents/Statement%20of%20Returned%20Furniture%20at%20HQ.pdf",
-      "downloaded_at": "2026-08-16T11:23:30.016234+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T15:26:08+00:00"
+  "manifest_generated_at": "2026-08-16T15:35:49+00:00"
 }
