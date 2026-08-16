@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-16T14:34:17.580134+00:00",
+  "updated_at": "2026-08-16T14:54:00.996503+00:00",
   "phase": "idle",
-  "message": "catalog recover-so-far: MOMAH+ZATCA+SASO",
+  "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
