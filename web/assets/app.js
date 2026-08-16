@@ -2824,6 +2824,7 @@
     const progressTitle = document.getElementById("progressTitle");
     const progressHead = document.getElementById("progressHead");
     const progressRefresh = document.getElementById("progressRefresh");
+    const startBtn = document.getElementById("crawlStart");
     if (!siteList) return;
 
     const sites = collectSites(ministries, pdfs);
@@ -2835,6 +2836,88 @@
         ageMs(j.startedAt) < 10 * 60 * 1000
       );
     });
+
+    const REFRESH_COOLDOWN_MS = 25000;
+    const START_LABEL = "Start crawl";
+    let refreshBusy = false;
+    let refreshCooldownUntil = 0;
+    let lastRefreshOkAt = 0;
+    let refreshTimer = null;
+    let startBusy = false;
+
+    function liveJobForCode(code) {
+      return active.find((j) => j && j.code === code && isLivePhase(j.phase)) || null;
+    }
+
+    function catalogCountForCode(code) {
+      const site = sites.find((s) => s.code === code);
+      return site && site.count ? Number(site.count) : 0;
+    }
+
+    function focusLiveCard(code) {
+      const card = progressList && progressList.querySelector('[data-live="' + code + '"]');
+      if (!card) return;
+      card.classList.add("is-focus");
+      try {
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+      } catch (_) {
+        /* ignore */
+      }
+      setTimeout(() => card.classList.remove("is-focus"), 1600);
+    }
+
+    function paintStartButton() {
+      if (!startBtn || startBusy) return;
+      const raw = urlInput && urlInput.value ? urlInput.value.trim() : "";
+      const parsed = parseCrawlUrl(raw);
+      const job = parsed.ok ? liveJobForCode(siteCodeFromUrl(parsed.url)) : null;
+      if (job) {
+        startBtn.textContent = job.code + " is already crawling";
+      } else {
+        startBtn.textContent = START_LABEL;
+      }
+    }
+
+    function refreshRemainMs() {
+      return Math.max(0, refreshCooldownUntil - Date.now());
+    }
+
+    function formatUpdatedAgo() {
+      if (!lastRefreshOkAt) return "Refresh status";
+      const ago = Math.round((Date.now() - lastRefreshOkAt) / 1000);
+      if (ago < 2) return "Updated just now";
+      return "Updated " + ago + "s ago";
+    }
+
+    function paintRefreshButton() {
+      if (!progressRefresh) return;
+      const remain = refreshRemainMs();
+      const blocked = refreshBusy || remain > 0;
+      progressRefresh.disabled = refreshBusy;
+      progressRefresh.setAttribute("aria-disabled", blocked ? "true" : "false");
+      progressRefresh.setAttribute("aria-busy", refreshBusy ? "true" : "false");
+      if (refreshBusy) {
+        progressRefresh.textContent = "Refreshing…";
+      } else if (remain > 0) {
+        progressRefresh.textContent = formatUpdatedAgo();
+      } else {
+        progressRefresh.textContent = "Refresh status";
+      }
+    }
+
+    function armRefreshCooldown() {
+      lastRefreshOkAt = Date.now();
+      refreshCooldownUntil = lastRefreshOkAt + REFRESH_COOLDOWN_MS;
+      if (refreshTimer) clearInterval(refreshTimer);
+      paintRefreshButton();
+      refreshTimer = setInterval(() => {
+        if (refreshRemainMs() <= 0) {
+          clearInterval(refreshTimer);
+          refreshTimer = null;
+        }
+        paintRefreshButton();
+      }, 1000);
+    }
 
     function showHome() {
       if (home) home.hidden = false;
@@ -2933,6 +3016,7 @@
           renderProgress();
         });
       });
+      paintStartButton();
     }
 
     function jobFromStatus(st) {
@@ -3011,8 +3095,28 @@
     }
 
     async function refreshLiveStatus(fromClick) {
+      if (fromClick) {
+        if (refreshBusy) {
+          if (statusEl) statusEl.textContent = "Already refreshing…";
+          return;
+        }
+        const remain = refreshRemainMs();
+        if (remain > 0) {
+          if (statusEl) {
+            statusEl.textContent =
+              formatUpdatedAgo() + ". Try again in " + Math.ceil(remain / 1000) + "s.";
+          }
+          paintRefreshButton();
+          return;
+        }
+      }
+
       const nowIso = new Date().toISOString();
-      if (fromClick && statusEl) statusEl.textContent = "Refreshing crawl status…";
+      if (fromClick) {
+        refreshBusy = true;
+        paintRefreshButton();
+        if (statusEl) statusEl.textContent = "Refreshing crawl status…";
+      }
       try {
         const fsJobs = await fetchFirestoreCrawls();
         const byCode = new Map();
@@ -3051,17 +3155,25 @@
           }),
         );
         renderProgress();
-        if (fromClick && statusEl) {
+        if (fromClick) {
+          armRefreshCooldown();
           const liveN = active.filter((j) => isLivePhase(j.phase)).length;
-          statusEl.textContent =
-            liveN > 0
-              ? liveN + " crawl" + (liveN === 1 ? "" : "s") + " from Firestore."
-              : "No live crawl in Firestore.";
+          if (statusEl) {
+            statusEl.textContent =
+              liveN > 0
+                ? liveN + " crawl" + (liveN === 1 ? "" : "s") + " from Firestore."
+                : "No live crawl in Firestore.";
+          }
         }
       } catch (_) {
         active = active.map((j) => Object.assign(j, { checkedAt: nowIso }));
         renderProgress();
         if (fromClick && statusEl) statusEl.textContent = "Refresh failed — try again.";
+      } finally {
+        if (fromClick) {
+          refreshBusy = false;
+          paintRefreshButton();
+        }
       }
     }
 
@@ -3075,12 +3187,14 @@
           /* ignore */
         }
         urlInput.removeAttribute("aria-invalid");
+        paintStartButton();
       });
     }
 
     if (form) {
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
+        if (startBusy) return;
         const raw = (urlInput && urlInput.value ? urlInput.value : "").trim();
         const parsed = parseCrawlUrl(raw);
         if (!parsed.ok) {
@@ -3106,6 +3220,39 @@
         }
         const url = parsed.url;
         const code = siteCodeFromUrl(url);
+
+        let existing = liveJobForCode(code);
+        if (!existing) {
+          await refreshLiveStatus(false);
+          existing = liveJobForCode(code);
+        }
+        if (existing) {
+          renderProgress();
+          paintStartButton();
+          focusLiveCard(code);
+          if (statusEl) {
+            statusEl.textContent =
+              code + " is already crawling. Not starting another job for this site.";
+          }
+          return;
+        }
+
+        const pdfCount = catalogCountForCode(code);
+        if (pdfCount > 0) {
+          const ok = window.confirm(
+            code +
+              " already has " +
+              pdfCount +
+              " PDF" +
+              (pdfCount === 1 ? "" : "s") +
+              " in the catalog. Crawl again?",
+          );
+          if (!ok) {
+            if (statusEl) statusEl.textContent = "Crawl cancelled.";
+            return;
+          }
+        }
+
         const job = {
           code,
           url,
@@ -3119,6 +3266,11 @@
         };
         active = [job, ...active.filter((j) => j.code !== code)];
         writeLocalStarts(active.filter((j) => j.phase === "starting" || j.phase === "queued"));
+        startBusy = true;
+        if (startBtn) {
+          startBtn.disabled = true;
+          startBtn.textContent = "Starting…";
+        }
         renderProgress();
         if (statusEl) statusEl.textContent = "Crawl in progress for " + code + " — stay on this page.";
         try {
@@ -3134,10 +3286,14 @@
           renderProgress();
           if (statusEl) {
             statusEl.textContent =
-              "Tracking " + code + " here. Click Refresh status to check the worker.";
+              "Tracking " + code + " here. Use Refresh status if you need an update.";
           }
+        } finally {
+          startBusy = false;
+          if (startBtn) startBtn.disabled = false;
+          paintStartButton();
         }
-        refreshLiveStatus();
+        refreshLiveStatus(false);
       });
     }
 
@@ -3145,6 +3301,8 @@
       progressRefresh.addEventListener("click", () => refreshLiveStatus(true));
     }
     renderProgress();
+    paintRefreshButton();
+    paintStartButton();
     refreshLiveStatus(false);
 
     const hash = (location.hash || "").replace(/^#/, "");

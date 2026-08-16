@@ -589,6 +589,16 @@ h1 {
 }
 .btn:hover { background: #2d4a88; }
 .btn:active { transform: scale(0.98); }
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+.btn.primary:disabled,
+.btn.primary[aria-disabled="true"] {
+  filter: grayscale(0.15);
+}
 .btn.ghost {
   background: transparent;
   border-color: var(--border);
@@ -960,8 +970,22 @@ a.link:hover { text-decoration: underline; }
   border-color: #3a5288;
 }
 .crawl-bar .btn.primary {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   min-width: 8.5rem;
+  max-width: 16rem;
+  line-height: 1.2;
+}
+@media (max-width: 560px) {
+  .crawl-bar { flex-wrap: wrap; }
+  .crawl-bar input { flex: 1 1 100%; }
+  .crawl-bar .btn.primary {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
+.site-card-live.is-focus {
+  outline: 2px solid rgba(91, 140, 255, 0.7);
+  border-color: #3a5288;
 }
 .crawl-status {
   min-height: 1.3em;
