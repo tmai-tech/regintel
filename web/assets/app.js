@@ -327,13 +327,110 @@
     return [...lat, ...ar].filter((t) => !EVA_STOP.has(t));
   }
 
+  function buildEvaSiteStats(pdfs, summaries, ministries) {
+    const sites = collectSites(ministries, pdfs || []);
+    const evaBy = {};
+    for (const e of summaries || []) {
+      const code = siteCodeForPdf(e);
+      if (!code) continue;
+      evaBy[code] = (evaBy[code] || 0) + 1;
+    }
+    const byCode = new Map();
+    for (const s of sites) {
+      if (!s.code) continue;
+      byCode.set(s.code, {
+        code: s.code,
+        name: s.name || s.code,
+        catalog: Number(s.count) || 0,
+        eva: evaBy[s.code] || 0,
+      });
+    }
+    for (const [code, n] of Object.entries(evaBy)) {
+      if (!byCode.has(code)) {
+        byCode.set(code, { code, name: code, catalog: 0, eva: n });
+      }
+    }
+    return [...byCode.values()].sort((a, b) => b.catalog - a.catalog || a.code.localeCompare(b.code));
+  }
+
+  function siteCodeFromQuestion(s, knownCodes) {
+    const codes = (knownCodes || []).slice().sort((a, b) => b.length - a.length);
+    for (const code of codes) {
+      if (!code) continue;
+      const re = new RegExp("\\b" + String(code).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+      if (re.test(s)) return String(code).toUpperCase();
+    }
+    return "";
+  }
+
+  function isEvaCountQuestion(s, knownCodes) {
+    const docNoun = /\b(pdfs?|summaries|documents?|files?|docs?)\b/.test(s);
+    const site = siteCodeFromQuestion(s, knownCodes);
+    if (/\bhow many\b/.test(s) && (docNoun || site)) return true;
+    if (
+      /\b(count|number|total)\b/.test(s) &&
+      (docNoun || site) &&
+      /\b(pdfs?|files?|documents?|summaries|have|got)\b/.test(s)
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  function evaSiteCountAnswer(question, siteStats, pdfCatalogCount, corpusCount) {
+    const s = String(question || "").toLowerCase();
+    const stats = Array.isArray(siteStats) ? siteStats : [];
+    const known = stats.map((x) => x.code);
+    const code = siteCodeFromQuestion(s, known);
+    if (code) {
+      const row = stats.find((x) => x.code === code);
+      if (!row || (row.catalog === 0 && row.eva === 0)) {
+        return {
+          answer:
+            "I don’t have " +
+            code +
+            " in the catalog yet.\n\nSites I can count: " +
+            known.join(", ") +
+            ".",
+          citations: [],
+        };
+      }
+      const cat = row.catalog;
+      const eva = row.eva;
+      let line = code + " has **" + cat + "** PDF" + (cat === 1 ? "" : "s") + " in the catalog so far.";
+      if (eva === cat && cat > 0) {
+        line += " Eva has a summary for all of them.";
+      } else {
+        line += " Eva has summaries for **" + eva + "** of them.";
+      }
+      return { answer: line, citations: [] };
+    }
+
+    const withFiles = stats.filter((x) => x.catalog > 0);
+    const lines = [
+      "The catalog has **" +
+        (pdfCatalogCount != null ? pdfCatalogCount : withFiles.reduce((n, x) => n + x.catalog, 0)) +
+        "** PDFs so far. Eva has indexed **" +
+        (corpusCount != null ? corpusCount : stats.reduce((n, x) => n + x.eva, 0)) +
+        "** document" +
+        " summary row(s).",
+      "",
+      "By site:",
+    ];
+    withFiles.forEach((x) => {
+      lines.push("• " + x.code + " — " + x.catalog + " in catalog · " + x.eva + " indexed");
+    });
+    return { answer: lines.join("\n"), citations: [] };
+  }
+
   /** Questions about Eva herself / indexing status — not about bill content. */
-  function isEvaMetaQuestion(q) {
+  function isEvaMetaQuestion(q, knownCodes) {
     const s = String(q || "")
       .toLowerCase()
       .trim()
       .replace(/[’']/g, "'");
     if (!s) return false;
+    if (isEvaCountQuestion(s, knownCodes)) return true;
 
     // short status-like
     if (/^(status|progress|update|hello|hi|hey|thanks|thank you)[\s?!.,]*$/i.test(s)) {
@@ -358,7 +455,7 @@
       return true;
     }
     if (/\b(more|additional)\s+(pdfs?|documents?|files?)\b/.test(s)) return true;
-    if (/\bhow many\b/.test(s) && /\b(pdfs?|summaries|documents?)\b/.test(s)) return true;
+    if (/\bhow many\b/.test(s) && /\b(pdfs?|summaries|documents?|files?|docs?)\b/.test(s)) return true;
     if (/\b(are you|do you)\b/.test(s) && processVerb.test(s)) return true;
     if (/\bhave you (read|finished|done|indexed|extracted)\b/.test(s)) return true;
     // "list/show those 38 pdfs", "give me the list"
@@ -384,12 +481,17 @@
     return patterns.some((re) => re.test(s));
   }
 
-  function evaMetaAnswer(question, corpus, meta, pdfCatalogCount) {
+  function evaMetaAnswer(question, corpus, meta, pdfCatalogCount, siteStats) {
     const count = corpus.length;
     const total = (meta && (meta.total_indexed || meta.count)) || count;
     const updated = meta && meta.updated_at ? new Date(meta.updated_at).toLocaleString() : "—";
     const llm = meta && meta.llm_available;
     const s = String(question || "").toLowerCase();
+    const knownCodes = (siteStats || []).map((x) => x.code);
+
+    if (isEvaCountQuestion(s, knownCodes)) {
+      return evaSiteCountAnswer(question, siteStats, pdfCatalogCount, count);
+    }
 
     if (/^(hi|hello|hey)\b/.test(s) || /who are you|what (can|do) you do|what is eva/.test(s)) {
       return {
@@ -638,7 +740,10 @@
     return out;
   }
 
-  function initEva(summaries, meta, pdfCatalogCount) {
+  function initEva(summaries, meta, pdfs, ministries) {
+    const pdfCatalogCount = Array.isArray(pdfs) ? pdfs.length : Number(pdfs) || 0;
+    const siteStats = buildEvaSiteStats(Array.isArray(pdfs) ? pdfs : [], summaries, ministries);
+    const knownCodes = siteStats.map((x) => x.code);
     const chat = document.getElementById("evaChat");
     const form = document.getElementById("evaForm");
     const input = document.getElementById("evaInput");
@@ -679,7 +784,7 @@
                   (pdfCatalogCount
                     ? ` · catalog ~${pdfCatalogCount} PDFs`
                     : "") +
-                  `.\n\nAsk about privacy, PDPL, AI ethics, data sharing, or a document name. I’ll pull the relevant PDFs, extract supporting points, and cite links.\n\nAsk “status” or “list the PDFs” anytime.`
+                  `.\n\nAsk about privacy, PDPL, AI ethics, data sharing, or a document name. I’ll pull the relevant PDFs, extract supporting points, and cite links.\n\nAsk “how many MOMAH files” or “status” or “list the PDFs” anytime.`
               : "Hi, I’m Eva. PDF summaries are still being built. Ask “status” anytime, or a topic once indexing has started.",
           );
         }
@@ -746,8 +851,8 @@
       };
 
       // Meta questions about Eva / indexing — never fake PDF hits
-      if (isEvaMetaQuestion(q)) {
-        const out = evaMetaAnswer(q, corpus, meta, pdfCatalogCount);
+      if (isEvaMetaQuestion(q, knownCodes)) {
+        const out = evaMetaAnswer(q, corpus, meta, pdfCatalogCount, siteStats);
         finish(out.answer, out.citations);
         return;
       }
@@ -3348,7 +3453,7 @@
     }
 
     initHome(pdfs, ministries, evaSummaries);
-    initEva(evaSummaries, evaMeta, pdfs.length);
+    initEva(evaSummaries, evaMeta, pdfs, ministries);
   }
 
 
