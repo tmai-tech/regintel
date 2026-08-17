@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-17T12:35:36.637791+00:00",
+  "updated_at": "2026-08-17T12:45:35.612217+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2056,
+    "pdfs": 2057,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 29
+      "count": 30
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2056
+      "count": 2057
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "SASO Annual Report 1436-1435",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO%20Annual%20Report%201436-1435.pdf",
+      "downloaded_at": "2026-08-17T12:44:41.215427+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "SASO annual report 2019+1",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - MOMAH",
       "url": "https://momah.gov.sa/sites/default/files/2023-08/layht-rswm-tqdym-mntjat-altbgh-.pdf",
       "downloaded_at": "2026-08-16T14:34:06.686769+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Salwa11.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Salwa11.pdf",
-      "downloaded_at": "2026-08-16T11:24:44.596009+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-17T12:35:22+00:00"
+  "manifest_generated_at": "2026-08-17T12:45:24+00:00"
 }

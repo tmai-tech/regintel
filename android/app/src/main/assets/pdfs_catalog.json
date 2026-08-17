@@ -1,5 +1,30 @@
 [
   {
+    "id": "6be2b6306fe54e96",
+    "title": "SASO Annual Report 1436-1435",
+    "filename": "SASO Annual Report 1436-1435.pdf",
+    "jurisdiction": "Saudi Arabia - SASO",
+    "site_code": "SASO",
+    "source_kind": "ministry",
+    "law_type": "other",
+    "year": 2014,
+    "years": [
+      2014
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "saso.gov.sa",
+    "filename_tags": [],
+    "source_page": null,
+    "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO%20Annual%20Report%201436-1435.pdf",
+    "open_url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO%20Annual%20Report%201436-1435.pdf",
+    "download_url": null,
+    "bytes": 23607865,
+    "sha256": "6be2b6306fe54e96",
+    "downloaded_at": "2026-08-17T12:44:41.215427+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_SASO/ministry/SASO Annual Report 1436-1435.pdf"
+  },
+  {
     "id": "f1696db4edf2276e",
     "title": "SASO annual report 2019+1",
     "filename": "SASO annual report 2019+1.pdf",
