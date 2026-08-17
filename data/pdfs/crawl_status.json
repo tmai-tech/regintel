@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-17T12:06:05.952275+00:00",
+  "updated_at": "2026-08-17T12:35:36.637791+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2055,
+    "pdfs": 2056,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 28
+      "count": 29
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2055
+      "count": 2056
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "SASO annual report 2019+1",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO%20annual%20report%202019+1.pdf",
+      "downloaded_at": "2026-08-17T12:32:43.097097+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "SASO-Report-2021-Spread1",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Salwa11.pdf",
       "downloaded_at": "2026-08-16T11:24:44.596009+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Khafji22.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Khafji22.pdf",
-      "downloaded_at": "2026-08-16T11:24:40.542692+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-17T12:05:54+00:00"
+  "manifest_generated_at": "2026-08-17T12:35:22+00:00"
 }
