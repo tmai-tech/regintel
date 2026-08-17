@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-16T17:40:29.586018+00:00",
+  "updated_at": "2026-08-17T12:06:05.952275+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2054,
+    "pdfs": 2055,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -45,7 +45,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - SASO",
-      "count": 27
+      "count": 28
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2054
+      "count": 2055
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "SASO-Report-2021-Spread1",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO-Report-2021-Spread1.pdf",
+      "downloaded_at": "2026-08-17T12:01:50.910104+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "r1428",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - ZATCA",
       "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Documents/Khafji22.pdf",
       "downloaded_at": "2026-08-16T11:24:40.542692+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "Tool Rett.pdf",
-      "jurisdiction": "Saudi Arabia - ZATCA",
-      "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Tool%20Rett.pdf",
-      "downloaded_at": "2026-08-16T11:24:35.696691+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-16T17:40:18+00:00"
+  "manifest_generated_at": "2026-08-17T12:05:54+00:00"
 }

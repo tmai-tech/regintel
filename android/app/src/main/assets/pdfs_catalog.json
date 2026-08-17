@@ -1,5 +1,30 @@
 [
   {
+    "id": "51631aa59681ca38",
+    "title": "SASO-Report-2021-Spread1",
+    "filename": "SASO-Report-2021-Spread1.pdf",
+    "jurisdiction": "Saudi Arabia - SASO",
+    "site_code": "SASO",
+    "source_kind": "ministry",
+    "law_type": "other",
+    "year": 2021,
+    "years": [
+      2021
+    ],
+    "language": "und",
+    "status": "downloaded",
+    "host": "saso.gov.sa",
+    "filename_tags": [],
+    "source_page": null,
+    "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO-Report-2021-Spread1.pdf",
+    "open_url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO-Report-2021-Spread1.pdf",
+    "download_url": null,
+    "bytes": 190954709,
+    "sha256": "51631aa59681ca38",
+    "downloaded_at": "2026-08-17T12:01:50.910104+00:00",
+    "local_path": "data/pdfs/Saudi_Arabia_SASO/ministry/SASO-Report-2021-Spread1.pdf"
+  },
+  {
     "id": "c582d904be6acc33",
     "title": "r1428",
     "filename": "r1428.pdf",
