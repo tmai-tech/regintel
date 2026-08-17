@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-17T13:24:59.460697+00:00",
+  "updated_at": "2026-08-17T14:52:10.106183+00:00",
   "phase": "idle",
   "message": "periodic recovered catalog snapshot",
   "run_id": null,
   "github_run_url": null,
   "totals": {
-    "pdfs": 2058,
+    "pdfs": 2059,
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13
@@ -40,12 +40,12 @@
       "count": 50
     },
     {
-      "jurisdiction": "Saudi Arabia - GOSI",
+      "jurisdiction": "Saudi Arabia - SASO",
       "count": 32
     },
     {
-      "jurisdiction": "Saudi Arabia - SASO",
-      "count": 31
+      "jurisdiction": "Saudi Arabia - GOSI",
+      "count": 32
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -67,11 +67,18 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2058
+      "count": 2059
     }
   ],
   "current_source": null,
   "recent_pdfs": [
+    {
+      "title": "r1425.pdf",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1425.pdf",
+      "downloaded_at": "2026-08-17T14:50:47.649727+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "report saso Final 2014",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -168,13 +175,6 @@
       "jurisdiction": "Saudi Arabia - SASO",
       "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report2020.pdf",
       "downloaded_at": "2026-08-16T15:06:42.903394+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "لاي_حة التصرف بالعقارات البلدية المحدثة.pdf",
-      "jurisdiction": "Saudi Arabia - MOMAH",
-      "url": "https://furas.momah.gov.sa/sites/default/files/2026-04/%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81%20%D8%A8%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D8%AB%D8%A9.pdf",
-      "downloaded_at": "2026-08-16T14:34:06.716301+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -331,5 +331,5 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-17T13:24:44+00:00"
+  "manifest_generated_at": "2026-08-17T14:51:19.937344+00:00"
 }
