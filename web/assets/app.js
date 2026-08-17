@@ -353,12 +353,31 @@
     return [...byCode.values()].sort((a, b) => b.catalog - a.catalog || a.code.localeCompare(b.code));
   }
 
+  const EVA_COUNT_STOP = new Set([
+    "how", "many", "much", "count", "number", "total", "files", "file", "pdf", "pdfs",
+    "documents", "document", "docs", "doc", "summaries", "summary", "we", "do", "does",
+    "have", "has", "got", "so", "far", "the", "a", "an", "in", "of", "for", "our",
+    "catalog", "index", "indexed", "eva", "site", "sites", "yet", "are", "there",
+    "what", "which", "any", "some", "all", "about", "from", "with", "and", "you",
+  ]);
+
   function siteCodeFromQuestion(s, knownCodes) {
+    const raw = String(s || "");
     const codes = (knownCodes || []).slice().sort((a, b) => b.length - a.length);
     for (const code of codes) {
       if (!code) continue;
       const re = new RegExp("\\b" + String(code).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
-      if (re.test(s)) return String(code).toUpperCase();
+      if (re.test(raw)) return String(code).toUpperCase();
+    }
+    const host = raw.match(/\b((?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+)\b/i);
+    if (host) {
+      const fromHost = siteCodeFromUrl("https://" + host[1].replace(/^www\./i, ""));
+      if (fromHost && fromHost !== "SITE") return fromHost;
+    }
+    const tokens = raw.toUpperCase().match(/\b[A-Z][A-Z0-9]{1,11}\b/g) || [];
+    for (const t of tokens) {
+      if (EVA_COUNT_STOP.has(t.toLowerCase())) continue;
+      return t;
     }
     return "";
   }
