@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T12:45:24+00:00",
+  "generated_at": "2026-08-17T13:24:44+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -187205,6 +187205,19 @@
       "bytes": 23607865,
       "sha256": "6be2b6306fe54e96",
       "downloaded_at": "2026-08-17T12:44:41.215427+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "recover-watch"
+    },
+    {
+      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/report%20saso%20Final%202014.pdf",
+      "jurisdiction": "Saudi Arabia - SASO",
+      "source_kind": "ministry",
+      "title": "report saso Final 2014",
+      "path": "data/pdfs/Saudi_Arabia_SASO/ministry/report saso Final 2014.pdf",
+      "bytes": 61403012,
+      "sha256": "2798b522854fb636",
+      "downloaded_at": "2026-08-17T13:15:37.740937+00:00",
       "status": "downloaded",
       "scanned_pdf": false,
       "discovery_method": "recover-watch"
