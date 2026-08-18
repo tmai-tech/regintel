@@ -1,7 +1,7 @@
 [
   {
-    "id": "47967a1ef1e7a546",
-    "discovered_at": "2026-08-17T06:30:53.711737+00:00",
+    "id": "b69a3f5467007d3b",
+    "discovered_at": "2026-08-18T06:22:28.126736+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,38 @@
     "tracked_by": "collector"
   },
   {
-    "id": "6cac1f2f614f4ff6",
-    "discovered_at": "2026-08-17T06:30:53.711737+00:00",
+    "id": "38a499cbcbd2c4ea",
+    "discovered_at": "2026-08-18T06:22:28.126736+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Bank of Canada",
+    "law_area": "Capital",
+    "topical_relevance": "Derivatives, Public & OTC Market",
+    "title": "Private credit in Canada",
+    "link": "https://www.bankofcanada.ca/2026/08/sparks-at-bank-article-2026-18/",
+    "source_url": "https://www.bankofcanada.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "9270b6fd838f92ec",
+    "discovered_at": "2026-08-18T06:22:28.126736+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Employment and Social Development Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management",
+    "title": "The Government of Canada announces the launch of the Advanced Manufacturing Workforce Alliance",
+    "link": "https://www.canada.ca/en/employment-social-development/news/2026/08/the-government-of-canada-announces-the-launch-of-the-advanced-manufacturing-workforce-alliance.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "8759587d3155c5cb",
+    "discovered_at": "2026-08-18T06:22:28.126736+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
