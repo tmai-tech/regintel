@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T14:15:59.853129+00:00",
+  "updated_at": "2026-08-20T14:19:21.625397+00:00",
   "jobs": [
     {
       "code": "CST",
@@ -45,12 +45,12 @@
       "url": "https://www.moj.gov.sa/",
       "label": "Saudi Arabia - MOJ",
       "phase": "downloading",
-      "message": "downloading 4 listed docs (after seed list)",
-      "pages": 0,
-      "listed": 4,
-      "downloaded": 0,
-      "to_download": 4,
-      "updated_at": "2026-08-20T14:15:59.194693+00:00",
+      "message": "downloading 386 listed docs (after pw search)",
+      "pages": 58,
+      "listed": 390,
+      "downloaded": 4,
+      "to_download": 386,
+      "updated_at": "2026-08-20T14:19:20.309663+00:00",
       "run_id": "32378936273"
     },
     {

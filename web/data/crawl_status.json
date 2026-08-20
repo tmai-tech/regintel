@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-08-20T14:15:59.194693+00:00",
+  "updated_at": "2026-08-20T14:19:20.309663+00:00",
   "phase": "downloading",
-  "message": "downloading 4 listed docs (after seed list)",
+  "message": "downloading 386 listed docs (after pw search)",
   "run_id": "32378936273",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/32378936273",
   "totals": {
-    "pdfs": 2059,
+    "pdfs": 2063,
     "errors": 22131,
     "source_reports": 53,
-    "jurisdictions": 13,
-    "ministry_listed": 4,
-    "ministry_downloaded": 0,
+    "jurisdictions": 14,
+    "ministry_listed": 390,
+    "ministry_downloaded": 4,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 4
+    "ministry_to_download": 386
   },
   "by_jurisdiction": [
     {
@@ -65,6 +65,10 @@
       "count": 9
     },
     {
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "count": 4
+    },
+    {
       "jurisdiction": "British Columbia",
       "count": 2
     }
@@ -72,21 +76,49 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2059
+      "count": 2063
     }
   ],
   "current_source": {
     "jurisdiction": "Saudi Arabia - MOJ",
     "url": "https://www.moj.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 4,
-    "downloaded": 0,
+    "listed": 390,
+    "downloaded": 4,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 4,
-    "pages_visited": 0
+    "to_download": 386,
+    "pages_visited": 58
   },
   "recent_pdfs": [
+    {
+      "title": "Rules of Professional Conduct for Lawyers.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/Rules%20of%20Professional%20Conduct%20for%20Lawyers.pdf",
+      "downloaded_at": "2026-08-20T14:16:15.214483+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "96.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/96.pdf",
+      "downloaded_at": "2026-08-20T14:16:14.239640+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "09.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/09.pdf",
+      "downloaded_at": "2026-08-20T14:16:13.557187+00:00",
+      "source_kind": "ministry"
+    },
+    {
+      "title": "50.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/50.pdf",
+      "downloaded_at": "2026-08-20T14:16:10.186236+00:00",
+      "source_kind": "ministry"
+    },
     {
       "title": "r1425.pdf",
       "jurisdiction": "Saudi Arabia - SASO",
@@ -162,34 +194,6 @@
       "jurisdiction": "Saudi Arabia - SASO",
       "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual__Report_2015-2.pdf",
       "downloaded_at": "2026-08-16T15:48:02.805642+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO_Annual_Report_2016",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report_2016.pdf",
-      "downloaded_at": "2026-08-16T15:39:22.394047+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO_Annual_Report_2017",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report_2017.pdf",
-      "downloaded_at": "2026-08-16T15:35:40.797877+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO_Annual_Report_2018",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report_2018.pdf",
-      "downloaded_at": "2026-08-16T15:17:27.313581+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO_Annual_Report2020",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual_Report2020.pdf",
-      "downloaded_at": "2026-08-16T15:06:42.903394+00:00",
       "source_kind": "ministry"
     }
   ],
@@ -346,24 +350,26 @@
     "pdfs_rejected_junk": 0,
     "errors": 14
   },
-  "manifest_generated_at": "2026-08-17T14:51:19.937344+00:00",
+  "manifest_generated_at": "2026-08-20T14:16:17.999771+00:00",
   "ministry_document_list": {
     "label": "Saudi Arabia - MOJ",
     "target_url": "https://www.moj.gov.sa/",
     "counts": {
-      "to_download": 4,
-      "downloaded": 0,
+      "to_download": 386,
+      "downloaded": 4,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 4
+      "listed_total": 390
     },
     "discovery_methods": {
-      "seed_list": 4
+      "seed_list": 4,
+      "pw_library": 378,
+      "script": 8
     },
-    "pages_visited": 0,
+    "pages_visited": 58,
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-20T14:15:56.758063+00:00"
+    "updated_at": "2026-08-20T14:19:17.715521+00:00"
   }
 }

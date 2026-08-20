@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T14:51:19.937344+00:00",
+  "generated_at": "2026-08-20T14:16:17.999771+00:00",
   "downloads": [
     {
       "url": "https://prsindia.org/files/policy/policy_committee_reports/SCR-Availability_of_Oilseeds_and_Pulses.pdf",
@@ -187232,6 +187232,62 @@
       "bytes": 18124428,
       "sha256": "ad5940fdc3d68ad0",
       "downloaded_at": "2026-08-17T14:50:47.649727+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "seed_list"
+    },
+    {
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/50.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "source_kind": "ministry",
+      "source_page": "https://www.moj.gov.sa/",
+      "title": "50.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOJ/ministry/50.pdf",
+      "bytes": 1065558,
+      "sha256": "10ee032ec069d0c3",
+      "downloaded_at": "2026-08-20T14:16:10.186236+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "seed_list"
+    },
+    {
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/09.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "source_kind": "ministry",
+      "source_page": "https://www.moj.gov.sa/",
+      "title": "09.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOJ/ministry/09.pdf",
+      "bytes": 293079,
+      "sha256": "b6d48814f1a9a8b7",
+      "downloaded_at": "2026-08-20T14:16:13.557187+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "seed_list"
+    },
+    {
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/96.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "source_kind": "ministry",
+      "source_page": "https://www.moj.gov.sa/",
+      "title": "96.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOJ/ministry/96.pdf",
+      "bytes": 140037,
+      "sha256": "1b30cfc6d1a26e18",
+      "downloaded_at": "2026-08-20T14:16:14.239640+00:00",
+      "status": "downloaded",
+      "scanned_pdf": false,
+      "discovery_method": "seed_list"
+    },
+    {
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/Rules%20of%20Professional%20Conduct%20for%20Lawyers.pdf",
+      "jurisdiction": "Saudi Arabia - MOJ",
+      "source_kind": "ministry",
+      "source_page": "https://www.moj.gov.sa/",
+      "title": "Rules of Professional Conduct for Lawyers.pdf",
+      "path": "data/pdfs/Saudi_Arabia_MOJ/ministry/Rules of Professional Conduct for Lawyers.pdf",
+      "bytes": 375419,
+      "sha256": "bfa7cc641cf095c0",
+      "downloaded_at": "2026-08-20T14:16:15.214483+00:00",
       "status": "downloaded",
       "scanned_pdf": false,
       "discovery_method": "seed_list"
