@@ -220,6 +220,7 @@ _PLACEHOLDER_TITLE = re.compile(
     re.I,
 )
 _TOC_LEADER = re.compile(r"\.{4,}\s*\d+\s*$")
+_TOC_ANY = re.compile(r"\.{4,}")
 _FILL_BLANK = re.compile(r"_{4,}|X{6,}")
 _FORM_TITLE_HINT = re.compile(
     r"\b(form|application|registration|questionnaire|declaration of interest|"
@@ -250,12 +251,145 @@ def looks_like_form(title: str, text: str) -> bool:
     return len(_FORM_BODY_HINT.findall(blob)) >= 2
 
 
+def _is_toc_line(s: str) -> bool:
+    """True for table-of-contents rows like 'Meteorological data ....15'."""
+    if not s:
+        return False
+    if _TOC_ANY.search(s) or _TOC_LEADER.search(s):
+        return True
+    if re.search(r"\s\.{3,}\s*\d+\s*$", s):
+        return True
+    # leftover after stripping leaders: short heading + page number
+    if re.search(r"\s+\d{1,3}\s*$", s) and len(s) < 80 and s.count(" ") <= 10:
+        if re.search(r"(contents|preface|acknowledgements|how to |data$)", s, re.I):
+            return True
+    return False
+
+
 def _strip_form_noise(s: str) -> str:
     s = _FILL_BLANK.sub(" ", s)
     s = _TOC_LEADER.sub("", s)
     s = re.sub(r"[.]{5,}", " ", s)
     s = re.sub(r"[ \t]{2,}", " ", s)
     return s.strip(" \t-–—.,")
+
+
+def looks_like_guideline(title: str, text: str, url: str = "") -> bool:
+    blob = f"{title}\n{url}\n{(text or '')[:4000]}"
+    if re.search(r"Desert Locust Guidelines|\bDLG\d", blob, re.I):
+        return True
+    if re.search(r"\bPREFACE\b", text or "") and re.search(r"\bthis guideline is intended\b", text or "", re.I):
+        return True
+    return False
+
+
+def guideline_summary(
+    *,
+    title: str,
+    text: str,
+    jurisdiction: str = "",
+    url: str = "",
+) -> dict[str, Any]:
+    """Preface + what the guideline covers — never TOC dotted leaders."""
+    doc_title = _first_document_title("", text, url)
+    if not doc_title or is_placeholder_title(doc_title) or re.search(r"^347 |DLG", doc_title, re.I):
+        doc_title = "Desert Locust Guidelines"
+
+    # Volume line: "3. Information and forecasting"
+    volume = ""
+    for raw in (text or "").splitlines()[:25]:
+        line = _strip_form_noise(raw)
+        if re.match(r"^\d+\.\s+[A-Za-z].{4,60}$", line) and not _is_toc_line(raw):
+            volume = line
+            break
+    if volume and volume.lower() not in doc_title.lower():
+        display = f"{doc_title}: {volume}"
+    else:
+        display = doc_title
+
+    # Clean contents headings as coverage points
+    covers: list[str] = []
+    for raw in (text or "").splitlines():
+        if _TOC_ANY.search(raw) or _TOC_LEADER.search(raw):
+            heading = _strip_form_noise(raw)
+            heading = re.sub(r"\s+\d{1,3}$", "", heading).strip(" .")
+            if 8 <= len(heading) <= 80 and heading.lower() not in {
+                "contents",
+                "preface",
+                "acknowledgements",
+                "introduction",
+            }:
+                if heading not in covers:
+                    covers.append(heading)
+        if len(covers) >= 6:
+            break
+
+    # First real preface/intro sentences
+    paras: list[str] = []
+    buf = ""
+    for raw in (text or "").splitlines():
+        if _is_toc_line(raw):
+            continue
+        line = _strip_form_noise(raw)
+        if re.match(r"(?i)^(contents|acknowledgements|what are |locust phases)\b", line):
+            if buf:
+                paras.append(buf)
+                buf = ""
+            if len(paras) >= 3:
+                break
+            continue
+        if not line or is_placeholder_title(line):
+            continue
+        if re.search(
+            r"all rights reserved|copyright holders|reproduction and dissemination|"
+            r"designations employed|without written permission",
+            line,
+            re.I,
+        ):
+            continue
+        if re.match(r"(?i)^(preface|introduction|this guideline)\b", line) or buf:
+            if buf and re.search(r"[.!?؟。]$", buf) and len(buf) > 80:
+                paras.append(buf)
+                buf = line
+            else:
+                buf = (buf + " " + line).strip() if buf else line
+        if len(paras) >= 3:
+            break
+    if buf and len(buf) > 60:
+        paras.append(buf)
+
+    intro = " ".join(paras)[:700]
+    intro = re.sub(r"\s+", " ", intro).strip()
+    intro = re.sub(r"(?i)^(iii|iv|vi|preface)\s+", "", intro)
+    if not intro:
+        intro = (
+            "FAO Desert Locust guideline for national and international staff "
+            "involved in locust survey and control."
+        )
+
+    who = "FAO"
+    purpose = ""
+    if volume:
+        topic = re.sub(r"^\d+\.\s*", "", volume).strip()
+        purpose = f"This FAO volume covers {topic} for locust survey and control staff. "
+    summary = f"{display} (FAO / MEWA). {purpose}{intro}"
+    if covers:
+        summary += " It covers: " + "; ".join(covers[:5]) + "."
+
+    points = []
+    if volume:
+        points.append("Volume: " + volume)
+    points.append("Who it is for: locust survey, control, and campaign staff.")
+    points.extend(covers[:5])
+
+    return {
+        "summary": summary[:1600],
+        "key_points": points[:8],
+        "topics": ["desert locust", "guideline", "MEWA", "FAO"],
+        "document_type": "guidance",
+        "method": "extractive_guideline",
+        "display_title": display,
+    }
 
 
 _FIELD_LABELS = {
@@ -525,6 +659,8 @@ def extractive_summary(
     text = clean_extracted_text(text)
     if looks_like_form(title, text):
         return form_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
+    if looks_like_guideline(title, text, url):
+        return guideline_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
 
     # Re-join wrapped lines so mid-sentence line breaks stay one sentence
     joined: list[str] = []
@@ -550,6 +686,8 @@ def extractive_summary(
     chunks = re.split(r"(?<=[.!?؟。])\s+|\n+", unwrapped)
     sents = []
     for c in chunks:
+        if _is_toc_line(c):
+            continue
         s = _strip_form_noise(c)
         if not (40 <= len(s) <= 400):
             continue
@@ -559,7 +697,7 @@ def extractive_summary(
             continue
         if is_placeholder_title(s) or re.match(r"(?i)click here", s):
             continue
-        if s.count(".") > 12:  # leftover TOC row
+        if _is_toc_line(s) or s.count(".") > 8:
             continue
         if re.search(
             r"all rights reserved|copyright holders|reproduction and dissemination|"

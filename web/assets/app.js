@@ -32,7 +32,15 @@
     }
     if (/^https?:\/\//i.test(t)) return true;
     if (/^(clicke?\s*here(\s+to\b.*)?|show|here|link|download|view)$/i.test(low)) return true;
+    if (/^click here to review/i.test(low)) return true;
     if (/^(تنزيل|هنا)$/.test(t) || /^اضغط\s*هنا/.test(t)) return true;
+    return false;
+  }
+
+  function looksLikeCodedFilename(title) {
+    const t = String(title || "").trim();
+    if (/\.pdf$/i.test(t)) return true;
+    if (/^\d+\s+en\s+DLG/i.test(t)) return true;
     return false;
   }
 
@@ -1274,9 +1282,15 @@
               }
             })()
           : [];
+      const catalogTitle = p.title || "";
+      const evaTitle = (eva && eva.title) || "";
+      const title =
+        looksLikeCodedFilename(catalogTitle) && evaTitle && !isPlaceholderTitle(evaTitle)
+          ? evaTitle
+          : catalogTitle || evaTitle || "Untitled PDF";
       rows.push({
         id,
-        title: p.title || (eva && eva.title) || "Untitled PDF",
+        title,
         url,
         open_url: url,
         summary,
