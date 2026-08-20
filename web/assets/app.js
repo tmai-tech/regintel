@@ -1232,20 +1232,31 @@
   }
 
   function normalizePdfKey(u) {
+    return canonicalPdfKey(u);
+  }
+
+  /** Same file even if www vs apex, encoding, or a hash glued on the filename. */
+  function canonicalPdfKey(u) {
+    const raw = String(u || "").trim();
+    if (!raw) return "";
     try {
-      const x = new URL(String(u || "").trim());
-      x.hash = "";
-      // strip common tracking params
-      ["utm_source", "utm_medium", "utm_campaign", "gclid", "fbclid"].forEach((k) =>
-        x.searchParams.delete(k),
-      );
-      return x.href.replace(/\/$/, "").toLowerCase();
+      const x = new URL(raw);
+      const host = x.hostname.replace(/^www\./i, "").toLowerCase();
+      let path = decodeURIComponent(x.pathname || "");
+      path = path.replace(/\/+$/, "");
+      const bits = path.split("/");
+      let file = bits.pop() || "";
+      file = file.replace(/[_\s-]+e?[0-9a-f]{6,10}(?=\.pdf$)/i, "");
+      file = file.toLowerCase();
+      const dir = bits.join("/").toLowerCase();
+      return host + dir + "/" + file;
     } catch {
-      return String(u || "")
-        .split("#")[0]
-        .replace(/\/$/, "")
-        .toLowerCase();
+      return raw.split("#")[0].replace(/\/$/, "").toLowerCase();
     }
+  }
+
+  function titleLooksHashed(title) {
+    return /[_\s-]+e?[0-9a-f]{6,10}(\.pdf)?$/i.test(String(title || "").trim());
   }
 
   /** Merge catalog PDFs with Eva extractive summaries. Optional site filter. */
@@ -1262,14 +1273,17 @@
     }
     const rows = [];
     const seen = new Set();
-    for (const p of pdfs || []) {
-      if (!pred(p)) continue;
+    const sitePdfs = (pdfs || [])
+      .filter(pred)
+      .slice()
+      .sort((a, b) => Number(titleLooksHashed(a.title)) - Number(titleLooksHashed(b.title)));
+    for (const p of sitePdfs) {
       const url = p.open_url || p.url || "";
       const k = normalizePdfKey(url);
       const eva = (k && byUrl.get(k)) || (p.id && byId.get(String(p.id))) || null;
       const id = String(p.id || (eva && eva.id) || k || rows.length);
-      if (seen.has(id) && !eva) continue;
-      seen.add(id);
+      if (k && seen.has("url:" + k)) continue;
+      if (k) seen.add("url:" + k);
       const summary = eva && eva.summary ? String(eva.summary).trim() : "";
       const keyPoints = Array.isArray(eva && eva.key_points)
         ? eva.key_points
@@ -1283,7 +1297,10 @@
               }
             })()
           : [];
-      const catalogTitle = p.title || "";
+      const catalogTitle = String(p.title || "").replace(
+        /[_\s-]+e?[0-9a-f]{6,10}(\.pdf)?$/i,
+        "",
+      );
       const evaTitle = (eva && eva.title) || "";
       const title =
         looksLikeCodedFilename(catalogTitle) && evaTitle && !isPlaceholderTitle(evaTitle)
@@ -1311,10 +1328,9 @@
       if (seen.has(id) || (k && [...seen].some(() => false))) {
         // already added via catalog match on id
       }
-      if (seen.has(id)) continue;
-      // also skip if URL already in rows
-      if (k && rows.some((r) => normalizePdfKey(r.url) === k)) continue;
-      seen.add(id);
+      if ((id && seen.has("id:" + id)) || (k && seen.has("url:" + k))) continue;
+      if (k) seen.add("url:" + k);
+      if (id) seen.add("id:" + id);
       const summary = e.summary ? String(e.summary).trim() : "";
       rows.push({
         id,
@@ -2750,11 +2766,16 @@
       url: m.url || "",
     }));
     const byCode = new Map(known.map((s) => [s.code, { ...s, count: 0, summaries: 0 }]));
+    const seenFile = new Set();
     for (const p of pdfs || []) {
       const code = siteCodeForPdf(p);
       if (!code) continue;
+      const url = p.open_url || p.url || "";
+      const fileKey = canonicalPdfKey(url);
+      if (fileKey && seenFile.has(code + ":" + fileKey)) continue;
+      if (fileKey) seenFile.add(code + ":" + fileKey);
       if (!byCode.has(code)) {
-        const h = hostOf(p.open_url || p.url || "") || String(p.host || "").replace(/^www\./i, "");
+        const h = hostOf(url) || String(p.host || "").replace(/^www\./i, "");
         byCode.set(code, {
           code,
           name: code,

@@ -1,13 +1,11 @@
 {
-  "updated_at": "2026-08-20T14:39:11.845889+00:00",
-  "phase": "discovering",
-  "message": "discovering ia.gov.sa: pages=50 listed=0",
-  "run_id": "32378936273",
-  "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/32378936273",
+  "updated_at": "2026-08-20T16:17:47.680006+00:00",
+  "phase": "idle",
+  "message": "Saudi ministries · 1949 PDFs · 1897 summaries",
   "totals": {
-    "pdfs": 2063,
-    "errors": 22131,
-    "source_reports": 53,
+    "pdfs": 1949,
+    "errors": 0,
+    "source_reports": 0,
     "jurisdictions": 14,
     "ministry_listed": 0,
     "ministry_downloaded": 0,
@@ -18,11 +16,11 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 860
+      "count": 804
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 365
+      "count": 308
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
@@ -38,7 +36,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - ZATCA",
-      "count": 93
+      "count": 92
     },
     {
       "jurisdiction": "Saudi Arabia - CMA",
@@ -76,281 +74,13 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 2063
+      "count": 1949
     }
   ],
-  "current_source": {
-    "jurisdiction": "Saudi Arabia - IA",
-    "url": "https://www.ia.gov.sa/",
-    "source_kind": "ministry_pipeline",
-    "listed": 0,
-    "downloaded": 0,
-    "download_failed": 0,
-    "scanned_pdf": 0,
-    "to_download": 0,
-    "pages_visited": 50
-  },
-  "recent_pdfs": [
-    {
-      "title": "Rules of Professional Conduct for Lawyers.pdf",
-      "jurisdiction": "Saudi Arabia - MOJ",
-      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/Rules%20of%20Professional%20Conduct%20for%20Lawyers.pdf",
-      "downloaded_at": "2026-08-20T14:16:15.214483+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "96.pdf",
-      "jurisdiction": "Saudi Arabia - MOJ",
-      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/96.pdf",
-      "downloaded_at": "2026-08-20T14:16:14.239640+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "09.pdf",
-      "jurisdiction": "Saudi Arabia - MOJ",
-      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/09.pdf",
-      "downloaded_at": "2026-08-20T14:16:13.557187+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "50.pdf",
-      "jurisdiction": "Saudi Arabia - MOJ",
-      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/50.pdf",
-      "downloaded_at": "2026-08-20T14:16:10.186236+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "r1425.pdf",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1425.pdf",
-      "downloaded_at": "2026-08-17T14:50:47.649727+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "report saso Final 2014",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/report%20saso%20Final%202014.pdf",
-      "downloaded_at": "2026-08-17T13:15:37.740937+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO Annual Report 1436-1435",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO%20Annual%20Report%201436-1435.pdf",
-      "downloaded_at": "2026-08-17T12:44:41.215427+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO annual report 2019+1",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO%20annual%20report%202019+1.pdf",
-      "downloaded_at": "2026-08-17T12:32:43.097097+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO-Report-2021-Spread1",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO-Report-2021-Spread1.pdf",
-      "downloaded_at": "2026-08-17T12:01:50.910104+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "r1428",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1428.pdf",
-      "downloaded_at": "2026-08-16T17:39:46.670367+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "r1430",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1430.pdf",
-      "downloaded_at": "2026-08-16T17:14:52.641062+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "r1431",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1431.pdf",
-      "downloaded_at": "2026-08-16T16:45:54.489823+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "r1432",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1432.pdf",
-      "downloaded_at": "2026-08-16T16:05:08.175233+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "r1433",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/r1433.pdf",
-      "downloaded_at": "2026-08-16T15:59:12.689990+00:00",
-      "source_kind": "ministry"
-    },
-    {
-      "title": "SASO_Annual__Report_2015-2",
-      "jurisdiction": "Saudi Arabia - SASO",
-      "url": "https://saso.gov.sa/ar/mediacenter/AnnualReports/SASO_Annual__Report_2015-2.pdf",
-      "downloaded_at": "2026-08-16T15:48:02.805642+00:00",
-      "source_kind": "ministry"
-    }
-  ],
-  "last_source_reports": [
-    {
-      "jurisdiction": "Saudi Arabia - Nazaha",
-      "source_kind": "ministry",
-      "source_url": "https://nazaha.gov.sa",
-      "pages_crawled": 1,
-      "js_pages": 0,
-      "pdfs_candidates": 0,
-      "pdfs_downloaded": 0,
-      "error": "[1] ERROR https://nazaha.gov.sa -> [Errno 101] Network is unreachable"
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SAIP",
-      "source_kind": "ministry",
-      "source_url": "https://www.saip.gov.sa",
-      "pages_crawled": 210,
-      "js_pages": 11,
-      "pdfs_candidates": 73,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa",
-      "pages_crawled": 400,
-      "js_pages": 58,
-      "pdfs_candidates": 243,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 150,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/en",
-      "pages_crawled": 400,
-      "js_pages": 40,
-      "pdfs_candidates": 328,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 66,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/ar",
-      "pages_crawled": 400,
-      "js_pages": 58,
-      "pdfs_candidates": 243,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/Documents/",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/ndmo/Files/",
-      "pages_crawled": 1,
-      "js_pages": 1,
-      "pdfs_candidates": 0,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://dgp.sdaia.gov.sa/",
-      "pages_crawled": 262,
-      "js_pages": 44,
-      "pdfs_candidates": 102,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": "possible_rate_limit"
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/",
-      "pages_crawled": 400,
-      "js_pages": 41,
-      "pdfs_candidates": 328,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    },
-    {
-      "jurisdiction": "Saudi Arabia - SDAIA",
-      "source_kind": "site",
-      "source_url": "https://sdaia.gov.sa/ar/SDAIA/about/",
-      "pages_crawled": 400,
-      "js_pages": 57,
-      "pdfs_candidates": 243,
-      "pdfs_regulatory": 0,
-      "pdfs_rejected_junk": 0,
-      "pdfs_downloaded": 0,
-      "error": null
-    }
-  ],
-  "stats": {
-    "sources_visited": 10,
-    "pages_crawled": 2266,
-    "js_pages": 302,
-    "pdfs_discovered": 216,
-    "pdfs_downloaded": 216,
-    "pdfs_skipped_existing": 1257,
-    "pdfs_capped": 0,
-    "pdfs_rejected_junk": 0,
-    "errors": 14
-  },
-  "manifest_generated_at": "2026-08-20T14:16:17.999771+00:00",
+  "current_source": null,
+  "recent_pdfs": [],
+  "last_source_reports": [],
+  "stats": {},
   "ministry_document_list": {
     "label": "Saudi Arabia - IA",
     "target_url": "https://www.ia.gov.sa/",
@@ -363,11 +93,7 @@
     },
     "discovery_methods": {},
     "pages_visited": 50,
-    "sitemaps_used": [
-      "https://ia.gov.sa/_layouts/15/sitemap.aspx"
-    ],
-    "datasources_found": 94,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-20T14:39:09.171741+00:00"
+    "updated_at": "2026-08-20T14:39:09.171234+00:00"
   }
 }

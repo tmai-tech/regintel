@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import json
 import sys
+import re
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -31,6 +33,52 @@ EMPTY_LIST_FILES = (
     "seen_items.json",
     "pdfs_coverage.json",
 )
+
+
+def canonical_pdf_key(p: dict) -> str:
+    """Same file if www vs apex or a hash was glued onto the filename."""
+    raw = unquote(str(p.get("open_url") or p.get("url") or "").strip())
+    if not raw:
+        return str(p.get("id") or "")
+    try:
+        parts = urlsplit(raw)
+        host = (parts.netloc or "").lower()
+        if host.startswith("www."):
+            host = host[4:]
+        path = unquote(parts.path or "")
+        path = re.sub(r"/+$", "", path)
+        bits = path.split("/")
+        name = bits[-1] if bits else ""
+        name = re.sub(r"[_\s-]+e?[0-9a-f]{6,10}(?=\.pdf$)", "", name, flags=re.I)
+        name = name.lower()
+        parent = "/".join(bits[:-1]).lower()
+        return f"{host}{parent}/{name}"
+    except Exception:
+        return raw.lower()
+
+
+def _prefer_row(a: dict, b: dict) -> dict:
+    def hashed(p: dict) -> int:
+        t = f"{p.get('title') or ''} {p.get('filename') or ''}"
+        return 1 if re.search(r"[_\s-]e?[0-9a-f]{6,10}", t, re.I) else 0
+
+    return a if hashed(a) <= hashed(b) else b
+
+
+def dedupe_pdfs(pdfs: list) -> list:
+    """Collapse www vs apex and hash-suffix clones of the same URL. Keep AR/EN path twins."""
+    by_key: dict[str, dict] = {}
+    order: list[str] = []
+    for p in pdfs:
+        key = canonical_pdf_key(p)
+        if not key:
+            key = f"row-{len(order)}"
+        if key in by_key:
+            by_key[key] = _prefer_row(by_key[key], p)
+            continue
+        by_key[key] = p
+        order.append(key)
+    return [by_key[k] for k in order]
 
 
 def _write(path: Path, obj) -> None:
@@ -58,6 +106,7 @@ def main() -> None:
         p["jurisdiction"] = normalize_jurisdiction(p)
         p["source_kind"] = p.get("source_kind") or "ministry"
         kept.append(p)
+    kept = dedupe_pdfs(kept)
     _write(cat_path, kept)
 
     assets = ROOT / "android" / "app" / "src" / "main" / "assets" / "pdfs_catalog.json"
@@ -111,6 +160,7 @@ def main() -> None:
                     e = dict(e)
                     e["jurisdiction"] = normalize_jurisdiction(e)
                     eva_kept.append(e)
+                eva_kept = dedupe_pdfs(eva_kept)
                 _write(eva_path, eva_kept)
                 eva_n = len(eva_kept)
             else:
