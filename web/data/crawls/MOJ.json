@@ -1,13 +1,13 @@
 {
   "code": "MOJ",
-  "url": "https://www.moj.gov.sa",
+  "url": "https://www.moj.gov.sa/",
   "label": "Saudi Arabia - MOJ",
-  "phase": "discovering",
-  "message": "Finish crawl running",
+  "phase": "downloading",
+  "message": "downloading 4 listed docs (after seed list)",
   "pages": 0,
-  "listed": 0,
+  "listed": 4,
   "downloaded": 0,
-  "to_download": 0,
-  "updated_at": "2026-08-15T14:18:30Z",
-  "run_id": "31888709019"
+  "to_download": 4,
+  "updated_at": "2026-08-20T14:15:59.194693+00:00",
+  "run_id": "32378936273"
 }

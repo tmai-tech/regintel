@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-20T14:15:37.115682+00:00",
-  "phase": "discovering",
-  "message": "discovering documents on https://ia.gov.sa/",
+  "updated_at": "2026-08-20T14:15:59.194693+00:00",
+  "phase": "downloading",
+  "message": "downloading 4 listed docs (after seed list)",
   "run_id": "32378936273",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/32378936273",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 13,
-    "ministry_listed": 0,
+    "ministry_listed": 4,
     "ministry_downloaded": 0,
     "ministry_failed": 0,
     "ministry_scanned": 0,
-    "ministry_to_download": 0
+    "ministry_to_download": 4
   },
   "by_jurisdiction": [
     {
@@ -76,14 +76,14 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - IA",
-    "url": "https://ia.gov.sa/",
+    "jurisdiction": "Saudi Arabia - MOJ",
+    "url": "https://www.moj.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 0,
+    "listed": 4,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "to_download": 0,
+    "to_download": 4,
     "pages_visited": 0
   },
   "recent_pdfs": [
@@ -348,20 +348,22 @@
   },
   "manifest_generated_at": "2026-08-17T14:51:19.937344+00:00",
   "ministry_document_list": {
-    "label": "Saudi Arabia - IA",
-    "target_url": "https://ia.gov.sa/",
+    "label": "Saudi Arabia - MOJ",
+    "target_url": "https://www.moj.gov.sa/",
     "counts": {
-      "to_download": 0,
+      "to_download": 4,
       "downloaded": 0,
       "download_failed": 0,
       "scanned_pdf": 0,
-      "listed_total": 0
+      "listed_total": 4
     },
-    "discovery_methods": {},
+    "discovery_methods": {
+      "seed_list": 4
+    },
     "pages_visited": 0,
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-20T14:15:34.533373+00:00"
+    "updated_at": "2026-08-20T14:15:56.758063+00:00"
   }
 }

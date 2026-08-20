@@ -1,17 +1,68 @@
 {
-  "updated_at": "2026-08-20T14:15:34.532992+00:00",
-  "phase": "discovering",
-  "target_url": "https://ia.gov.sa/",
-  "label": "Saudi Arabia - IA",
+  "updated_at": "2026-08-20T14:15:56.757493+00:00",
+  "phase": "downloading",
+  "target_url": "https://www.moj.gov.sa/",
+  "label": "Saudi Arabia - MOJ",
   "counts": {
-    "to_download": 0,
+    "to_download": 4,
     "downloaded": 0,
     "download_failed": 0,
     "scanned_pdf": 0,
-    "listed_total": 0
+    "listed_total": 4
   },
-  "discovery_methods": {},
+  "discovery_methods": {
+    "seed_list": 4
+  },
   "pages_visited": 0,
-  "documents": [],
+  "documents": [
+    {
+      "filename": "50.pdf",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/50.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "50.pdf",
+      "bytes": null,
+      "discovery_method": "seed_list",
+      "jurisdiction": "Saudi Arabia - MOJ"
+    },
+    {
+      "filename": "09.pdf",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/09.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "09.pdf",
+      "bytes": null,
+      "discovery_method": "seed_list",
+      "jurisdiction": "Saudi Arabia - MOJ"
+    },
+    {
+      "filename": "96.pdf",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/96.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "96.pdf",
+      "bytes": null,
+      "discovery_method": "seed_list",
+      "jurisdiction": "Saudi Arabia - MOJ"
+    },
+    {
+      "filename": "Rules of Professional Conduct for Lawyers.pdf",
+      "url": "https://moj.gov.sa/Documents/Regulations/pdf/En/Rules%20of%20Professional%20Conduct%20for%20Lawyers.pdf",
+      "type": "PDF",
+      "status": "to_download",
+      "download_error": null,
+      "scanned_pdf": false,
+      "title": "Rules of Professional Conduct for Lawyers.pdf",
+      "bytes": null,
+      "discovery_method": "seed_list",
+      "jurisdiction": "Saudi Arabia - MOJ"
+    }
+  ],
   "failed_sample": []
 }
