@@ -3,11 +3,11 @@
   "url": "https://www.moj.gov.sa/",
   "label": "Saudi Arabia - MOJ",
   "phase": "downloading",
-  "message": "downloading 386 listed docs (after pw search)",
+  "message": "downloading 20/390 for Saudi Arabia - MOJ (ok=16 scanned=4 fail=0)",
   "pages": 58,
   "listed": 390,
-  "downloaded": 4,
-  "to_download": 386,
-  "updated_at": "2026-08-20T14:19:20.309663+00:00",
+  "downloaded": 20,
+  "to_download": 370,
+  "updated_at": "2026-08-20T14:21:41.422973+00:00",
   "run_id": "32378936273"
 }
