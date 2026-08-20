@@ -4,539 +4,543 @@
       "https://ised-isde.canada.ca/site/corporations-canada/en/email-notices-subscription",
       "https://ised-isde.canada.ca/site/corporations-canada/en/notices"
     ],
-    "page_hash": "65d9d6bcc1e9a1f3",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "1a07177c9980c970",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "4cd564d77e0f40f3": {
     "urls": [
-      "https://www.canada.ca/en/department-finance/news.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html",
       "https://www.canada.ca/en/department-finance/corporate/laws-regulations.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations.html",
+      "https://www.canada.ca/en/department-finance/news.html",
       "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentfinance&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-07-23&pick=3&format=atom&atomtitle=Department%20of%20Finance%20Canada",
-      "https://www.canada.ca/en/department-finance/programs/consultations.html"
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html"
     ],
-    "page_hash": "88918bf766cf2a0a",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "33ebe0b17e4b75c7",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "124c5dfca7e2a6ba": {
     "urls": [],
-    "page_hash": "568525b67b787757",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "6c277bfb4afced65",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "4fe93aa505d1fadc": {
     "urls": [
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&sort=publishedDate&orderBy=desc&publishedDate>=2015-01-01&pick=1000&format=atom&atomtitle=Global Affairs Canada news",
-      "https://international.canada.ca/en/global-affairs/news",
       "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/sweet-hmk-class-action-suit/notice-settlement-approval-sweet-v-his-majesty-king-federal-court-file-t-982-20.html",
-      "https://international.canada.ca/en/global-affairs/consultations"
+      "https://international.canada.ca/en/global-affairs/consultations",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&sort=publishedDate&orderBy=desc&publishedDate>=2015-01-01&pick=1000&format=atom&atomtitle=Global Affairs Canada news",
+      "https://international.canada.ca/en/global-affairs/news"
     ],
-    "page_hash": "b864963830fc19e0",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "36e4871031b1ff65",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "0b2f34be4eab71ab": {
     "urls": [],
     "page_hash": "c9650ba0f53130ed",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "5ff2d47b8a294f80": {
     "urls": [
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofindustry&sort=publishedDate&orderBy=desc&publishedDate>=2020-08-09&pick=100&format=atom&atomtitle=Canada News Centre - Innovation, Science and Economic Development Canada",
       "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/sweet-hmk-class-action-suit/notice-settlement-approval-sweet-v-his-majesty-king-federal-court-file-t-982-20.html",
       "https://ised-isde.canada.ca/site/ised/en/newsletter-gc-business-insights?utm_campaign=ised-isde-gc-business-insights-24-25&utm_medium=link&utm_source=canada-ca-business-eng&utm_content=en-ised-landing-page",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofindustry&sort=publishedDate&orderBy=desc&publishedDate>=2020-08-09&pick=100&format=atom&atomtitle=Canada News Centre - Innovation, Science and Economic Development Canada",
       "https://www.canada.ca/en/services/business/permits/federallyregulatedindustrysectors/broadcastingtelecommunicationsregulation.html",
       "https://www.canada.ca/en/services/business/permits.html"
     ],
-    "page_hash": "1c857b7cc704253a",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "8fff71a2e9c93052",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "ce45881654ec7201": {
     "urls": [
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentjustice&type=newsreleases,statements,readouts&sort=publishedDate&orderBy=desc&publishedDate>=2019-11-09&pick=100&format=atom&atomtitle=Canada News Centre - Justice Canada, News Releases",
       "https://www.justice.gc.ca/eng/cons/index.html",
-      "https://www.justice.gc.ca/eng/trans/ar-lr/index.html"
+      "https://www.justice.gc.ca/eng/trans/ar-lr/index.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentjustice&type=newsreleases,statements,readouts&sort=publishedDate&orderBy=desc&publishedDate>=2019-11-09&pick=100&format=atom&atomtitle=Canada News Centre - Justice Canada, News Releases"
     ],
     "page_hash": "23ba24be0e1f7f8c",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "944b0397c5d05cab": {
     "urls": [
-      "https://www.publicsafety.gc.ca/cnt/trnsprnc/cts-rgltns/index-en.aspx",
-      "https://www.publicsafety.gc.ca/cnt/trnsprnc/index-en.aspx",
-      "https://www.publicsafety.gc.ca/cnt/nws/nws-rlss/index-en.aspx",
-      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=publicsafetycanada&start=&end=",
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=publicsafetycanada&type=newsreleases,statements&sort=publishedDate&orderBy=desc&pick=3&format=atom&atomtitle=Canada%20News%20Centre%20-%20Public%20Safety%20Canada",
       "https://www.canada.ca/en/public-safety-canada/consultations/stakeholder-survey-initiative-take-action-against-gun-gang-violence.html",
+      "https://www.publicsafety.gc.ca/cnt/trnsprnc/index-en.aspx",
+      "https://www.publicsafety.gc.ca/cnt/trnsprnc/cts-rgltns/index-en.aspx",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=publicsafetycanada&start=&end=",
+      "https://www.publicsafety.gc.ca/cnt/nws/nws-rlss/index-en.aspx",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=publicsafetycanada&type=newsreleases,statements&sort=publishedDate&orderBy=desc&pick=3&format=atom&atomtitle=Canada%20News%20Centre%20-%20Public%20Safety%20Canada",
       "https://www.statcan.gc.ca/en/consultation/2024/flood-awareness"
     ],
-    "page_hash": "e1e4a522f9745031",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "59e3222dd10f1d41",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "7ebfa5b911a7abda": {
     "urls": [
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=canadiansecurityintelligenceservice&sort=publishedDate&orderBy=desc&publishedDate%3E=2019-01-08&format=atom&atomtitle=Canada%20News%20Centre%20-%20Canadian%20Security%20Intelligence%20Service",
-      "https://www.canada.ca/en/security-intelligence-service/news/2025/11/the-canadian-security-intelligence-service-directors-annual-speech.html"
+      "https://www.canada.ca/en/security-intelligence-service/news/2025/11/the-canadian-security-intelligence-service-directors-annual-speech.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=canadiansecurityintelligenceservice&sort=publishedDate&orderBy=desc&publishedDate%3E=2019-01-08&format=atom&atomtitle=Canada%20News%20Centre%20-%20Canadian%20Security%20Intelligence%20Service"
     ],
-    "page_hash": "a24bbe9c63069525",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "6e5f2811c4c3ea88",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "770c677fab3bff47": {
     "urls": [
-      "https://www.canada.ca/en/communications-security/news/2025/11/backgrounder-malicious-cyber-activity-targeting-canadian-critical-infrastructure.html",
       "https://www.canada.ca/en/communications-security/news/2025/11/joint-statement-on-malicious-cyber-activity-targeting-canadian-critical-infrastructure.html",
-      "https://www.canada.ca/en/communications-security/news/2026/06/communications-security-establishment-canada-releases-its-2025-2026-annual-report.html"
+      "https://www.canada.ca/en/communications-security/news/2026/06/communications-security-establishment-canada-releases-its-2025-2026-annual-report.html",
+      "https://www.canada.ca/en/communications-security/news/2025/11/backgrounder-malicious-cyber-activity-targeting-canadian-critical-infrastructure.html"
     ],
-    "page_hash": "15bf3d722be72fe8",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "8b05d09979b79d6b",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "97d0792e51f573af": {
     "urls": [
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=financialconsumeragency&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Financial%20Consumer%20Agency%20of%20Canada",
+      "https://www.canada.ca/en/financial-consumer-agency/news/newsletters/jaspal-matharu.html",
       "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1497361263934&dprtmnt=financialconsumeragency",
-      "https://e1.envoke.com/ext/pages/a858f35bbfd282c5cd16255808da573c",
-      "https://www.canada.ca/en/financial-consumer-agency/news/newsletters/jaspal-matharu.html"
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=financialconsumeragency&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Financial%20Consumer%20Agency%20of%20Canada",
+      "https://e1.envoke.com/ext/pages/a858f35bbfd282c5cd16255808da573c"
     ],
-    "page_hash": "e95e82a8ebdc2816",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "7e7c6e9361417afa",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "dd3c68962646d923": {
     "urls": [
-      "https://www.tps.ca/media-centre/news-releases/66292/",
       "https://fintrac-canafe.canada.ca/act-loi/1-eng",
-      "https://fintrac-canafe.canada.ca/notices-avis/avs/2026-07-15-eng",
+      "https://fintrac-canafe.canada.ca/intel/bulletins/csad-dsac-eng",
       "https://fintrac-canafe.canada.ca/new-neuf/1-eng",
-      "https://www.haltonpolice.ca/news-releases/posts/arrests-made-in-largest-human-trafficking-case-in-hrps-history/",
-      "https://rcmp.ca/en/news/2026/08/4355449",
       "https://www.ottawapolice.ca/en/news/joint-human-trafficking-investigation-leads-to-three-arrests-police-seek-additional-victims.aspx",
-      "https://fintrac-canafe.canada.ca/intel/bulletins/csad-dsac-eng"
+      "https://fintrac-canafe.canada.ca/notices-avis/avs/2026-07-15-eng",
+      "https://rcmp.ca/en/news/2026/08/4355449",
+      "https://www.tps.ca/media-centre/news-releases/66292/",
+      "https://www.haltonpolice.ca/news-releases/posts/arrests-made-in-largest-human-trafficking-case-in-hrps-history/"
     ],
     "page_hash": "5fdc8618ce836651",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "d23031e239233581": {
     "urls": [
-      "https://www.osfi-bsif.gc.ca/index%2ephp/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
       "https://www.osfi-bsif.gc.ca/en/news/independent-review-supports-32nd-actuarial-report-canada-pension-plan",
-      "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
-      "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
-      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
-      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
-      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/news/independent-review-supports-32nd-actuarial-report-canada-pension-plan",
       "https://www.osfi-bsif.gc.ca/en/news/speaking-engagements-0",
-      "https://www.osfi-bsif.gc.ca/index%2ephp/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
-      "https://www.osfi-bsif.gc.ca/en/news?type=5",
       "https://www.osfi-bsif.gc.ca/index%2ephp/en/news/independent-review-supports-32nd-actuarial-report-canada-pension-plan",
-      "https://www.osfi-bsif.gc.ca/en/consultations"
+      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
+      "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
+      "https://www.osfi-bsif.gc.ca/en/consultations",
+      "https://www.osfi-bsif.gc.ca/en/news?type=5",
+      "https://www.osfi-bsif.gc.ca/index%2ephp/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
+      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline",
+      "https://www.osfi-bsif.gc.ca/index%2Ephp/en/news/independent-review-supports-32nd-actuarial-report-canada-pension-plan",
+      "https://www.osfi-bsif.gc.ca/index%2ephp/en/risks/technology-cyber-risk-management/technology-risk-bulletin",
+      "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/regulatory-notice-using-natural-catastrophe-bonds-minimum-capital-test-guideline"
     ],
-    "page_hash": "ff45368731c23760",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "185bf9444452b520",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "3ecf4f4a0a36c8cf": {
     "urls": [
-      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentoftheenvironment&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Environment%20and%20Climate%20Change%20Canada",
       "https://www.canada.ca/en/government/system/digital-government/online-security-privacy/sweet-hmk-class-action-suit/notice-settlement-approval-sweet-v-his-majesty-king-federal-court-file-t-982-20.html",
       "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1670427638856&dprtmnt=departmentoftheenvironment&start=&end=",
-      "https://www.canada.ca/en/public-safety-canada/campaigns/wildfires.html"
+      "https://www.canada.ca/en/public-safety-canada/campaigns/wildfires.html",
+      "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentoftheenvironment&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Environment%20and%20Climate%20Change%20Canada"
     ],
-    "page_hash": "ebe48b7a43b710da",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "e0e1d165b8421c1a",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "21f8563ce2539d6d": {
     "urls": [
+      "https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations/red-tape-progress-report.html",
       "https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations.html",
       "https://www.canada.ca/en/impact-assessment-agency/news/media-room.html",
-      "https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations/red-tape-progress-report.html",
       "https://www.canada.ca/en/impact-assessment-agency/news/2026/07/the-federal-government-announces-major-milestone-for-the-crawford-nickel-project.html",
       "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=impactassessmentagency&sort=publishedDate&orderBy=desc&publishedDate%3E=2020-08-09&pick=100&format=atom&atomtitle=Canada%20News%20Centre%20-%20Impact%20Assessment%20Agency%20of%20Canada"
     ],
-    "page_hash": "533e89449f760588",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "d702bb32f3d0ff42",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "063f830a6d577f9c": {
     "urls": [
-      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/news-nouvelles/index.aspx?lang=eng",
-      "https://www.canada.ca/en/government/system/laws.html",
+      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/listening_tour-tournee_consultations.aspx?lang=eng",
       "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/privacy_statement-enonce_confidentialite.aspx?lang=eng",
+      "https://www.canada.ca/en/government/system/laws.html",
       "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/memoire_loi_s-211_bill_brief.aspx?lang=eng",
-      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/listening_tour-tournee_consultations.aspx?lang=eng"
+      "https://core-ombuds.canada.ca/core_ombuds-ocre_ombuds/news-nouvelles/index.aspx?lang=eng"
     ],
     "page_hash": "efc1b17ca8a77d6d",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "04b02c3edd32e2a3": {
     "urls": [
-      "https://www.bankofcanada.ca/research/research-newsletters/",
-      "https://www.bankofcanada.ca/2026/07/sparks-at-bank-article-2026-17/",
-      "https://www.bankofcanada.ca/2026/07/bank-of-canada-response-to-canadian-labour-congress-president/",
-      "https://www.bankofcanada.ca/feed/?utility=news&post_type[0]=post&post_type[1]=page",
-      "https://www.bankofcanada.ca/2026/07/market-participants-survey-second-quarter-of-2026/",
-      "https://www.bankofcanada.ca/2026/06/bank-canada-begin-publishing-notices-violation-payment-service-providers/",
-      "https://www.bankofcanada.ca/press/media-advisories/",
-      "https://www.bankofcanada.ca/2026/07/fad-press-release-2026-07-15/",
-      "https://www.bankofcanada.ca/press/browse/",
-      "https://www.bankofcanada.ca/2026/07/updates-government-canada-cash-management-bond-buyback-program/",
       "https://www.bankofcanada.ca/feed/?content_type=notices&post_type[0]=post&post_type[1]=page",
-      "https://www.bankofcanada.ca/2026/08/new-goc-general-collateral-basket-strengthens-canadas-repo-market/",
-      "https://www.bankofcanada.ca/press/press-releases/",
-      "https://www.bankofcanada.ca/regulatory-oversight/regulatory-news/?content_type%5B%5D=23000",
-      "https://www.bankofcanada.ca/2026/07/opening-statement-2026-07-15/",
-      "https://www.bankofcanada.ca/2026/07/summary-of-comments-spring-2026-debt-management-strategy-consultations/",
-      "https://www.bankofcanada.ca/feed/?content_type=regulatory-news&post_type[0]=post&post_type[1]=page",
-      "https://www.bankofcanada.ca/2026/08/release-senior-loan-officer-survey-august-21-2026/",
-      "https://www.bankofcanada.ca/2026/08/sparks-at-bank-article-2026-18/",
-      "https://www.bankofcanada.ca/2026/08/cfec-releases-results-of-april-2026-foreign-exchange-volume-survey/",
-      "https://www.bankofcanada.ca/press/upcoming-events/",
-      "https://www.bankofcanada.ca/press/speeches/",
-      "https://www.bankofcanada.ca/2026/07/g7-2026-cross-border-coordination-exercise-cbce/",
-      "https://www.bankofcanada.ca/search/?content_type[]=press-releases",
-      "https://www.bankofcanada.ca/markets/market-notices/?content_type%5B%5D=388",
-      "https://www.bankofcanada.ca/2026/08/cimpa-and-cds-announce-the-start-of-the-trial-period-for-the-fail-fee-framework-for-government-of-canada-securities-transactions/",
-      "https://www.bankofcanada.ca/2026/07/summary-of-governing-council-deliberations-fixed-announcement-date-of-july-15-2026/",
-      "https://www.bankofcanada.ca/2026/07/release-market-participants-survey-july-27-2026/",
-      "https://www.bankofcanada.ca/multimedia/press-conference-monetary-policy-report-july-2026/",
-      "https://www.bankofcanada.ca/press/announcements/",
-      "https://www.bankofcanada.ca/2026/06/change-government-canada-bond-auction-schedule/",
-      "https://www.bankofcanada.ca/press/selected-media-activities/",
+      "https://www.bankofcanada.ca/2026/06/bank-canada-begin-publishing-notices-violation-payment-service-providers/",
       "https://www.bankofcanada.ca/press/contacts/",
-      "https://www.bankofcanada.ca/2026/05/what-is-a-central-bank/"
+      "https://www.bankofcanada.ca/2026/08/cimpa-and-cds-announce-the-start-of-the-trial-period-for-the-fail-fee-framework-for-government-of-canada-securities-transactions/",
+      "https://www.bankofcanada.ca/research/research-newsletters/",
+      "https://www.bankofcanada.ca/2026/07/market-participants-survey-second-quarter-of-2026/",
+      "https://www.bankofcanada.ca/press/press-releases/",
+      "https://www.bankofcanada.ca/2026/07/sparks-at-bank-article-2026-17/",
+      "https://www.bankofcanada.ca/2026/07/fad-press-release-2026-07-15/",
+      "https://www.bankofcanada.ca/feed/?utility=news&post_type[0]=post&post_type[1]=page",
+      "https://www.bankofcanada.ca/markets/market-notices/?content_type%5B%5D=388",
+      "https://www.bankofcanada.ca/press/announcements/",
+      "https://www.bankofcanada.ca/press/speeches/",
+      "https://www.bankofcanada.ca/multimedia/press-conference-monetary-policy-report-july-2026/",
+      "https://www.bankofcanada.ca/2026/05/what-is-a-central-bank/",
+      "https://www.bankofcanada.ca/2026/08/new-goc-general-collateral-basket-strengthens-canadas-repo-market/",
+      "https://www.bankofcanada.ca/2026/07/bank-of-canada-response-to-canadian-labour-congress-president/",
+      "https://www.bankofcanada.ca/2026/07/release-market-participants-survey-july-27-2026/",
+      "https://www.bankofcanada.ca/press/upcoming-events/",
+      "https://www.bankofcanada.ca/regulatory-oversight/regulatory-news/?content_type%5B%5D=23000",
+      "https://www.bankofcanada.ca/2026/07/summary-of-comments-spring-2026-debt-management-strategy-consultations/",
+      "https://www.bankofcanada.ca/search/?content_type[]=press-releases",
+      "https://www.bankofcanada.ca/2026/07/summary-of-governing-council-deliberations-fixed-announcement-date-of-july-15-2026/",
+      "https://www.bankofcanada.ca/press/browse/",
+      "https://www.bankofcanada.ca/2026/06/change-government-canada-bond-auction-schedule/",
+      "https://www.bankofcanada.ca/press/media-advisories/",
+      "https://www.bankofcanada.ca/2026/08/sparks-at-bank-article-2026-18/",
+      "https://www.bankofcanada.ca/2026/07/g7-2026-cross-border-coordination-exercise-cbce/",
+      "https://www.bankofcanada.ca/2026/07/opening-statement-2026-07-15/",
+      "https://www.bankofcanada.ca/2026/08/cfec-releases-results-of-april-2026-foreign-exchange-volume-survey/",
+      "https://www.bankofcanada.ca/2026/08/canada-border-services-agency-and-royal-canadian-mounted-police-win-bank-canada-counterfeit-deterrence-award-2/",
+      "https://www.bankofcanada.ca/2026/08/release-senior-loan-officer-survey-august-21-2026/",
+      "https://www.bankofcanada.ca/press/selected-media-activities/",
+      "https://www.bankofcanada.ca/2026/07/updates-government-canada-cash-management-bond-buyback-program/",
+      "https://www.bankofcanada.ca/feed/?content_type=regulatory-news&post_type[0]=post&post_type[1]=page"
     ],
-    "page_hash": "c386b320f6abda12",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "8648181d65ddda7a",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "62d7530e2402ed95": {
     "urls": [
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/public-consultations",
       "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/notices-licensed-insolvency-trustees",
-      "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._368/index.html",
-      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/directives-and-circulars",
       "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/stakeholder-engagement",
-      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/public-consultations"
+      "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._368/index.html",
+      "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/directives-and-circulars"
     ],
     "page_hash": "7d31f8038a19a85b",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "c37836047d14c14a": {
     "urls": [
-      "https://www.canada.ca/en/news/search/advanced-search.html?sort=descending&allq=&dprtmnt=&declaredtype=&startdate=&enddate=",
       "https://www.pm.gc.ca/en/news",
+      "https://www.canada.ca/en/news/media-contacts.html",
       "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
       "https://www.canada.ca/en/canadian-heritage/corporate/public-consultations/official-languages-consultations-2026.html?utm_campaign=pch-pch-consultationslo-2026-2027&utm_medium=canada-ca&utm_source=canada-homepage&utm_content=web-promos-en-260713",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html",
-      "https://www.canada.ca/en/news/media-contacts.html",
-      "https://www.canada.ca/en/news/subscribe-emails.html"
+      "https://www.canada.ca/en/news/search/advanced-search.html?sort=descending&allq=&dprtmnt=&declaredtype=&startdate=&enddate=",
+      "https://www.canada.ca/en/news/subscribe-emails.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html"
     ],
-    "page_hash": "be572e560a21da3e",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "9d9bc71f1e9e49c2",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "630f01a6672272de": {
     "urls": [
-      "https://www.canada.ca/en/health-canada/programs/consultation-potential-amendments-industrial-hemp-regulations.html",
-      "https://www.cer-rec.gc.ca/en/consultation-engagement/stakeholder-engagement/regulated-industry-engagement/index.html",
-      "https://www.canada.ca/en/library-archives/corporate/about-us/partners/services-consultation-group.html",
-      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
-      "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/list-permitted-food-colours-jagua-genipin-glycine-blue.html",
-      "https://www.canada.ca/en/environment-climate-change/corporate/transparency/consultations/amendments-metal-diamond-mining-effluent-regulations-great-bear-gold-project.html",
-      "https://www.canada.ca/en/health-canada/services/consumer-product-safety/pesticides-pest-management/public/consultations/canada-gazette-regulations-amending-pest-control-products-regulations-exemptions-authorizations.html",
-      "https://natural-resources.canada.ca/energy-sources/renewable-energy/offshore-renewable-energy-regulations-initiative",
-      "https://www.statcan.gc.ca/en/consultation/2025/crdc",
-      "https://www.canada.ca/en/environment-climate-change/corporate/transparency/priorities-management/policies-guidelines/red-tape-reduction-report.html",
-      "https://tc.canada.ca/en/corporate-services/consultations/updating-vancouver-international-airport-zoning-regulations",
-      "https://www.canada.ca/fr/environnement-changement-climatique/services/application-lois-environnementales/reglement-contraventions-consultation-2026.html",
-      "https://www.canada.ca/en/government/system/consultations.html",
-      "https://open.canada.ca/data/en/dataset/7c03f039-3753-4093-af60-74b0f7b2385d",
-      "https://tc.canada.ca/en/corporate-services/consultations/public-consultation-future-billy-bishop-toronto-city-airport",
-      "https://www.statcan.gc.ca/en/consultation/2025/crdc/results-report",
-      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-1/",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultations-on-extending-canadian-journalism-labour-tax-credit-audio-audiovisual-news-organizations.html",
-      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-3/",
-      "https://www.statcan.gc.ca/en/consultation/2025/crdc/2020v2-2026v1-asked-heard",
-      "https://www.canada.ca/en/health-canada/programs/draft-consultation-quality-natural-health-products-guide.html",
-      "https://inspection.canada.ca/en/exporting-food-plants-animals/plant-exports/international-plant-protection",
       "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/public-consultations",
+      "https://www.canada.ca/en/environment-climate-change/corporate/transparency/priorities-management/policies-guidelines/red-tape-reduction-report.html",
+      "https://www.statcan.gc.ca/en/consultation/2025/crdc/2020v2-2026v1-asked-heard",
+      "https://www.statcan.gc.ca/en/consultation/2025/crdc/results-report",
       "https://consultations.tc.canada.ca/en/consultation/let-s-talk-oceans-protection-plan",
-      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/published/html/regdoc3-1-2-v1-1/",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/building-canada-strong-for-all--powered-by-canadas-workers-targeted-second-phase--consultation-document.html",
-      "https://www.canada.ca/en/health-canada/programs/consultation-proposal-amend-childrens-sleepwear-regulations.html",
+      "https://www.canada.ca/fr/environnement-changement-climatique/services/application-lois-environnementales/reglement-contraventions-consultation-2026.html",
+      "https://tc.canada.ca/en/corporate-services/consultations/updating-vancouver-international-airport-zoning-regulations",
       "https://noc.esdc.gc.ca/Home/ParticipateInNOCConsultations",
-      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc3-2-2/",
-      "https://ised-isde.canada.ca/site/ised/en/have-your-say-advancing-ai-transparency-canada",
+      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+      "https://www.canada.ca/en/government/system/consultations.html",
       "https://www.canada.ca/en/canadian-heritage/corporate/public-consultations/official-languages-consultations-2026.html",
+      "https://ised-isde.canada.ca/site/ised/en/have-your-say-advancing-ai-transparency-canada",
+      "https://www.canada.ca/en/health-canada/programs/draft-consultation-quality-natural-health-products-guide.html",
+      "https://www.canada.ca/en/health-canada/programs/consultation-potential-amendments-industrial-hemp-regulations.html",
+      "https://www.canada.ca/en/environment-climate-change/corporate/transparency/consultations/amendments-metal-diamond-mining-effluent-regulations-great-bear-gold-project.html",
+      "https://www.canada.ca/en/health-canada/programs/consultation-proposal-amend-childrens-sleepwear-regulations.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultations-on-extending-canadian-journalism-labour-tax-credit-audio-audiovisual-news-organizations.html",
+      "https://www.canada.ca/en/library-archives/corporate/about-us/partners/services-consultation-group.html",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-1/",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/published/html/regdoc3-1-2-v1-1/",
+      "https://open.canada.ca/data/en/dataset/7c03f039-3753-4093-af60-74b0f7b2385d",
       "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-2/",
-      "https://species-registry.canada.ca/index-en.html"
+      "https://www.statcan.gc.ca/en/consultation/2025/crdc",
+      "https://inspection.canada.ca/en/exporting-food-plants-animals/plant-exports/international-plant-protection",
+      "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/list-permitted-food-colours-jagua-genipin-glycine-blue.html",
+      "https://natural-resources.canada.ca/energy-sources/renewable-energy/offshore-renewable-energy-regulations-initiative",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/building-canada-strong-for-all--powered-by-canadas-workers-targeted-second-phase--consultation-document.html",
+      "https://species-registry.canada.ca/index-en.html",
+      "https://www.cer-rec.gc.ca/en/consultation-engagement/stakeholder-engagement/regulated-industry-engagement/index.html",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc3-2-2/",
+      "https://www.cnsc-ccsn.gc.ca/eng/acts-and-regulations/regulatory-documents/history/regdoc2-12-3/",
+      "https://tc.canada.ca/en/corporate-services/consultations/public-consultation-future-billy-bishop-toronto-city-airport",
+      "https://www.canada.ca/en/health-canada/services/consumer-product-safety/pesticides-pest-management/public/consultations/canada-gazette-regulations-amending-pest-control-products-regulations-exemptions-authorizations.html"
     ],
-    "page_hash": "cd97a4b3ad4ee9a6",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "40f47cd72db04420",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "262d49f8e2a9883d": {
     "urls": [
-      "https://www.canada.ca/en/health-canada/news/2026/07/government-of-canada-to-make-announcement-in-support-of-youth-mental-health-in-nova-scotia.html",
-      "https://www.canada.ca/en/news/media-contacts.html",
-      "https://www.canada.ca/en/health-canada/news/2026/07/statement-from-the-minister-of-health-and-the-minister-of-industry-on-advancing-canadas-pharmaceutical-and-life-sciences-sector.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/health-canada-obtains-permanent-injunction-preventing-canlab-researchs-illegal-sale-of-injectable-peptides-in-canada.html",
       "https://www.canada.ca/en/health-canada/news/2026/08/health-canada-authorizes-vaccine-clinical-trial-for-ebola-disease-caused-by-the-bundibugyo-virus.html",
-      "https://www.canada.ca/en/news/advanced-news-search.html",
-      "https://www.canada.ca/en/health-canada/news/2026/08/government-of-canada-to-make-an-announcement-in-support-of-youth-mental-health-in-the-yukon.html",
-      "https://www.canada.ca/en/health-canada/news/2026/06/canada-approves-first-generic-semaglutide-for-weight-loss.html",
-      "https://www.canada.ca/en/health-canada/news/2026/07/helping-canadians-access-safe-effective-treatments-and-medicines-faster.html",
       "https://www.canada.ca/en/news/subscribe-emails.html",
-      "https://www.canada.ca/en/news/archive-search.html",
-      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
-      "https://www.canada.ca/en/health-canada/news/2026/07/improving-access-to-community-based-mental-health-services-for-nova-scotia-youth.html",
       "https://www.pm.gc.ca/en/news",
-      "https://www.canada.ca/en/health-canada/news/2026/07/government-of-canada-to-make-announcement-in-support-of-youth-mental-health-in-quebec.html",
-      "https://www.canada.ca/en/health-canada/news/2026/06/government-of-canada-approves-new-technology-to-support-farmers-and-a-more-sustainable-use-of-pest-management-products.html",
-      "https://www.canada.ca/en/health-canada/news/2026/06/government-of-canada-invests-over-17-million-to-address-health-impacts-from-climate-change.html",
-      "https://www.canada.ca/en/health-canada/news/2026/07/drugs-and-medical-devices-authorized-april-1-to-june-30-2026.html",
       "https://www.canada.ca/en/health-canada/news/2026/07/canada-and-quebec-build-on-partnership-to-strengthen-youth-mental-health.html",
-      "https://www.canada.ca/en/health-canada/news/2026/07/health-canada-obtains-permanent-injunction-preventing-canlab-researchs-illegal-sale-of-injectable-peptides-in-canada.html"
+      "https://www.canada.ca/en/health-canada/news/2026/08/supporting-the-development-of-integrated-mental-health-services-for-youth-in-yukon.html",
+      "https://www.canada.ca/en/health-canada/news/2026/06/canada-approves-first-generic-semaglutide-for-weight-loss.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/drugs-and-medical-devices-authorized-april-1-to-june-30-2026.html",
+      "https://www.canada.ca/en/health-canada/news/2026/08/government-of-canada-to-make-an-announcement-in-support-of-youth-mental-health-in-the-yukon.html",
+      "https://www.canada.ca/en/health-canada/news/2026/06/government-of-canada-invests-over-17-million-to-address-health-impacts-from-climate-change.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/statement-from-the-minister-of-health-and-the-minister-of-industry-on-advancing-canadas-pharmaceutical-and-life-sciences-sector.html",
+      "https://www.canada.ca/en/news/advanced-news-search.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/improving-access-to-community-based-mental-health-services-for-nova-scotia-youth.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/helping-canadians-access-safe-effective-treatments-and-medicines-faster.html",
+      "https://www.canada.ca/en/news/archive-search.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/government-of-canada-to-make-announcement-in-support-of-youth-mental-health-in-quebec.html",
+      "https://www.canada.ca/en/news/media-contacts.html",
+      "https://www.canada.ca/en/health-canada/news/2026/06/government-of-canada-approves-new-technology-to-support-farmers-and-a-more-sustainable-use-of-pest-management-products.html",
+      "https://www.canada.ca/en/health-canada/news/2026/07/government-of-canada-to-make-announcement-in-support-of-youth-mental-health-in-nova-scotia.html",
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html"
     ],
-    "page_hash": "78aef91ada393770",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "4fcf1f6318d59858",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "d5c2bc434afb45dc": {
     "urls": [
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-152/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-193/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-177/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-101/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2015-97/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-194/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-137/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-269/index.html",
-      "http://lois.justice.gc.ca/eng/regulations/SOR-2016-103/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2013-101/page-1.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-82/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-83/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-66/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-132/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-178/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-97/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-166/index.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2025-88/page-1.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-90-341/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-194/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-86-259/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-169/index.html/",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-165/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-178/index.html",
       "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2020-231/page-1.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2025-88/page-1.html",
+      "http://lois.justice.gc.ca/eng/regulations/SOR-2016-103/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-66/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-152/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-177/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-97/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-193/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-192/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-101/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-169/index.html/",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2015-97/index.html",
       "https://www.canada.ca/en/health-canada/corporate/about-health-canada/legislation-guidelines/acts-regulations.html",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-192/index.html"
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-165/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-132/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2013-101/page-1.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-137/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-90-341/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-82/index.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-83/index.html"
     ],
-    "page_hash": "01a9cb1bab012017",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "2c2364345e16ff30",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "e51e43bc3a11b6d1": {
     "urls": [
-      "https://www.ccohs.ca/topics/legislation/acts",
+      "https://www.ccohs.ca/newsroom/news_releases",
       "https://www.ccohs.ca/newsroom/media_advisories",
-      "https://www.ccohs.ca/newsroom/news_releases"
+      "https://www.ccohs.ca/topics/legislation/acts"
     ],
     "page_hash": "3397a2563faa4bce",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "28453c6a497ee7ce": {
     "urls": [
-      "https://www.ccohs.ca/newsroom/news_releases/2026/0129-video-contest-winner.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025ForumAnnouncement.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/1022-ccohs-and-irsst.html",
-      "https://www.ccohs.ca/newsroom/news_releases/DOM_28April2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/0211-spell-it-out.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/1211-cbradley-winner.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/cbradley-applications.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/forum-announcement.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/0123-mh-toolkit.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/day-of-mourning.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/0504-video-contest-winners.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/breaking-the-cycle-take-action-to-prevent-repetitive-strain-injuries.html",
       "https://www.ccohs.ca/newsroom/news_releases/SafetyHealthWeekDiversity_2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/scholarship-winners-2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/VideoContestWinners-2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/0427-sahw-webinars.html",
-      "https://www.ccohs.ca/newsroom/news_releases/SafetyHealthWeek_2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/0401-dmartin-winner.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/1217-ccohs-icohps-partnership.html",
-      "https://www.ccohs.ca/newsroom/news_releases/scholarship-women2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2026/0422-sahw-launch.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/0227-rsi-take-action.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/DayofMourning_3April2025.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/0211-spell-it-out.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/0504-video-contest-winners.html",
       "https://www.ccohs.ca/newsroom/news_releases/BSP_13Nov2024.html",
-      "https://www.ccohs.ca/newsroom/news_releases/2025/0114.html"
+      "https://www.ccohs.ca/newsroom/news_releases/2026/0129-video-contest-winner.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/0114.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/breaking-the-cycle-take-action-to-prevent-repetitive-strain-injuries.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/forum-announcement.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/0401-dmartin-winner.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/0427-sahw-webinars.html",
+      "https://www.ccohs.ca/newsroom/news_releases/scholarship-women2024.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025ForumAnnouncement.html",
+      "https://www.ccohs.ca/newsroom/news_releases/SafetyHealthWeek_2024.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/0123-mh-toolkit.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/1022-ccohs-and-irsst.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/0422-sahw-launch.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/day-of-mourning.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/1217-ccohs-icohps-partnership.html",
+      "https://www.ccohs.ca/newsroom/news_releases/scholarship-winners-2024.html",
+      "https://www.ccohs.ca/newsroom/news_releases/DOM_28April2024.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/1211-cbradley-winner.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/DayofMourning_3April2025.html",
+      "https://www.ccohs.ca/newsroom/news_releases/VideoContestWinners-2024.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2026/cbradley-applications.html",
+      "https://www.ccohs.ca/newsroom/news_releases/2025/0227-rsi-take-action.html"
     ],
     "page_hash": "599f590d79086a4a",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "fe71149b4e82e829": {
     "urls": [
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/minister-robertson-represents-canada-at-the-united-nations-high-level-political-forum-on-sustainable-development.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/backgrounder-building-a-strong-mobile-and-sustainable-early-childhood-education-workforce.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/secretary-of-state-zerucelli-highlights-additional-funding-to-support-albertas-skilled-trades-workforce.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/parliamentary-secretary-church-to-highlight-the-canada-child-benefits-more-generous-support-for-families.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/statement-from-minister-hajdu-and-secretary-of-state-gainey-on-international-youth-day-2026.html",
-      "https://www.canada.ca/en/news/media-contacts.html",
       "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-gull-masty-to-highlight-investment-supporting-skills-development-and-employment-opportunities-for-indigenous-youth.html",
-      "https://www.canada.ca/en/news/advanced-news-search.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-hajdu-launches-the-advanced-manufacturing-workforce-alliance.html",
       "https://www.canada.ca/en/employment-social-development/news/2026/07/canada-child-benefit-payments-increasing-in-2026-2027.html",
       "https://www.canada.ca/en/employment-social-development/news/2026/08/the-government-of-canada-announces-the-launch-of-the-advanced-manufacturing-workforce-alliance.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-hajdu-launches-the-advanced-manufacturing-workforce-alliance.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/government-of-canada-launches-new-initiative-to-support-early-childhood-educators.html",
-      "https://www.canada.ca/en/news/subscribe-emails.html",
-      "https://www.canada.ca/en/news/archive-search.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/the-canada-child-benefit-payments-increasing-in-2026-2027-nearly-892000-families-in-quebec-benefiting-from-more-generous-payments-starting-this-month.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/government-of-canada-invests-over-15-million-to-help-remove-employment-barriers-for-youth-and-persons-with-disabilities.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/government-of-canada-invests-over-321-million-to-support-employment-and-skills-training-opportunities-for-first-nations-youth-in-treaty-7-territory.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/statement-from-minister-hajdu-and-secretary-of-state-gainey-on-world-youth-skills-day-2026.html",
-      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/08/secretary-of-state-zerucelli-to-announce-additional-funding-for-albertas-skilled-trades-workforce.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/government-of-canada-invests-in-skills-training-for-youth-and-persons-with-disabilities.html",
-      "https://www.pm.gc.ca/en/news",
       "https://www.canada.ca/en/employment-social-development/news/2026/08/government-of-canada-highlights-funding-to-reduce-barriers-to-credential-recognition-in-new-brunswick.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/parliamentary-secretary-koutrakis-to-highlight-the-canada-child-benefits-more-generous-support-for-families.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/minister-robertson-represents-canada-at-the-united-nations-high-level-political-forum-on-sustainable-development.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/government-of-canada-invests-over-321-million-to-support-employment-and-skills-training-opportunities-for-first-nations-youth-in-treaty-7-territory.html",
+      "https://www.canada.ca/en/news/subscribe-emails.html",
+      "https://www.pm.gc.ca/en/news",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/backgrounder-building-a-strong-mobile-and-sustainable-early-childhood-education-workforce.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/government-of-canada-invests-in-skills-training-for-youth-and-persons-with-disabilities.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/government-of-canada-invests-over-15-million-to-help-remove-employment-barriers-for-youth-and-persons-with-disabilities.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/secretary-of-state-zerucelli-to-announce-additional-funding-for-albertas-skilled-trades-workforce.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/secretary-of-state-zerucelli-highlights-additional-funding-to-support-albertas-skilled-trades-workforce.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/the-canada-child-benefit-payments-increasing-in-2026-2027-nearly-892000-families-in-quebec-benefiting-from-more-generous-payments-starting-this-month.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/statement-from-minister-hajdu-and-secretary-of-state-gainey-on-world-youth-skills-day-2026.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/statement-from-minister-hajdu-and-secretary-of-state-gainey-on-international-youth-day-2026.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/parliamentary-secretary-church-to-highlight-the-canada-child-benefits-more-generous-support-for-families.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/government-of-canada-launches-new-initiative-to-support-early-childhood-educators.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/forum-of-labour-market-ministers-met-in-halifax-to-discuss-shared-priorities.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-hajdu-appoints-new-members-to-the-national-advisory-committee-for-canadas-volunteer-awards.html",
+      "https://www.canada.ca/en/news/advanced-news-search.html",
+      "https://www.canada.ca/en/news/archive-search.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-hajdu-invites-organizations-to-apply-for-funding-to-help-persons-with-disabilities-access-benefits.html",
+      "https://www.canada.ca/en/news/media-contacts.html",
       "https://www.canada.ca/en/employment-social-development/news/2026/07/minister-hajdu-and-minister-young-to-meet-with-provincial-and-territorial-labour-market-ministers-in-halifax.html",
-      "https://www.canada.ca/en/employment-social-development/news/2026/07/forum-of-labour-market-ministers-met-in-halifax-to-discuss-shared-priorities.html"
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
+      "https://www.canada.ca/en/employment-social-development/news/2026/07/parliamentary-secretary-koutrakis-to-highlight-the-canada-child-benefits-more-generous-support-for-families.html"
     ],
-    "page_hash": "fae9c5deb192a54f",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "846f1b184b43512b",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "cb7a73a1bf07b7b7": {
     "urls": [
-      "https://www.canada.ca/en/employment-social-development/programs/laws-regulations/labour.html",
-      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/administrative-baseline-burden.html",
-      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/red-tape-reduction-2025.html",
-      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/list-regulations.html",
-      "http://www.gazette.gc.ca/accueil-home-eng.html",
-      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/list-acts.html",
       "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/regulatory-cooperation/learn-about-regulatory-cooperation.html",
       "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/policy-guidance-regulatory-requirements.html",
       "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/forward-regulatory-plan.html",
+      "https://www.canada.ca/en/employment-social-development/programs/laws-regulations/labour/forward-regulatory.html",
+      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/list-acts.html",
+      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/list-regulations.html",
+      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/administrative-baseline-burden.html",
       "https://www.canada.ca/en/employment-social-development/programs/laws-regulations/labour/administrative-burden.html",
-      "https://www.canada.ca/en/employment-social-development/programs/laws-regulations/labour/forward-regulatory.html"
+      "http://www.gazette.gc.ca/accueil-home-eng.html",
+      "https://www.canada.ca/en/employment-social-development/programs/laws-regulations/labour.html",
+      "https://www.canada.ca/en/employment-social-development/corporate/transparency/laws-regulations/red-tape-reduction-2025.html"
     ],
-    "page_hash": "7df1af8e4d31b6e7",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "b222c738018299c8",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "ccbcb6ff1c8f13c1": {
     "urls": [
+      "https://www.cirb-ccri.gc.ca/en/resources/acts-regulations",
       "https://www.cirb-ccri.gc.ca/en/resources/information-circulars",
-      "https://www.cirb-ccri.gc.ca/en/about-us/client-consultation-committee",
-      "https://www.cirb-ccri.gc.ca/en/resources/acts-regulations"
+      "https://www.cirb-ccri.gc.ca/en/about-us/client-consultation-committee"
     ],
     "page_hash": "34e36a4ed5ec991b",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "67c49390acadd87a": {
     "urls": [
-      "https://www.cirb-ccri.gc.ca/en/resources/information-circulars",
+      "https://www.cirb-ccri.gc.ca/en/resources/acts-regulations",
       "https://www.cirb-ccri.gc.ca/en/resources/no-03-canada-labour-relations-board",
-      "https://www.cirb-ccri.gc.ca/en/about-us/client-consultation-committee",
-      "https://www.cirb-ccri.gc.ca/en/resources/acts-regulations"
+      "https://www.cirb-ccri.gc.ca/en/resources/information-circulars",
+      "https://www.cirb-ccri.gc.ca/en/about-us/client-consultation-committee"
     ],
     "page_hash": "66532b37655ca465",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "686c6c965a4c812c": {
     "urls": [
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-176/page-1.html",
-      "https://www.cirb-ccri.gc.ca/en/about-us/client-consultation-committee",
       "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2008-222/",
-      "https://www.cirb-ccri.gc.ca/en/resources/information-circulars",
-      "https://www.cirb-ccri.gc.ca/en/resources/acts-regulations",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-99-191/page-1.html",
       "https://lois-laws.justice.gc.ca/eng/regulations/SOR-2001-520/index.html",
-      "http://www.cirb-ccri.gc.ca/eic/site/047.nsf/vwapj/comparison_chart_for_regulations_2001_and_2012_e.pdf/$FILE/comparison_chart_for_regulations_2001_and_2012_e.pdf"
+      "https://www.cirb-ccri.gc.ca/en/about-us/client-consultation-committee",
+      "http://www.cirb-ccri.gc.ca/eic/site/047.nsf/vwapj/comparison_chart_for_regulations_2001_and_2012_e.pdf/$FILE/comparison_chart_for_regulations_2001_and_2012_e.pdf",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-176/page-1.html",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-99-191/page-1.html",
+      "https://www.cirb-ccri.gc.ca/en/resources/information-circulars",
+      "https://www.cirb-ccri.gc.ca/en/resources/acts-regulations"
     ],
     "page_hash": "6f8d32c278046c9b",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "bb75b6969308d60e": {
     "urls": [
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-265/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-6/index.html",
-      "https://www.priv.gc.ca/en/about-the-opc/what-we-do/consultations/completed-consultations/consultation-on-consent-under-pipeda/",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-8/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-308/index.html",
       "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/pipeda-interpretation-bulletins/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/",
-      "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/legislation/02_06_02b/",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-30/index.html",
       "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-64/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-62/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2008-115/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2003-374/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-399/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-220/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-308/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-6/index.html",
+      "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/legislation/02_06_02b/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-399/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SI-2012-72/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-8/index.html",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-7/index.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-219/index.html"
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-219/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-62/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-30/index.html",
+      "https://www.priv.gc.ca/en/about-the-opc/what-we-do/consultations/completed-consultations/consultation-on-consent-under-pipeda/",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-265/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2003-374/index.html"
     ],
-    "page_hash": "3cbc48bf7726b7c8",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "cc5faaf2de8003ac",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "e8b22a60b1c81c38": {
     "urls": [
-      "https://www.priv.gc.ca/en/opc-actions-and-decisions/submissions-to-consultations/sub_tbs_20260805/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260717/",
       "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d-g7-ageassurance_260626/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260720/",
       "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260709/",
       "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/2026-westjet-cl/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/",
       "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260806/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260720/",
       "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260714/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260713_cp/",
       "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/sp-d_20260720/",
-      "https://www.priv.gc.ca/en/privacy-topics/surveillance/police-and-public-safety/financial-transaction-reporting/gd_cp_pcmltfr/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260713_cp/"
+      "https://www.priv.gc.ca/en/opc-actions-and-decisions/submissions-to-consultations/sub_tbs_20260805/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260717/",
+      "https://www.priv.gc.ca/en/privacy-topics/surveillance/police-and-public-safety/financial-transaction-reporting/gd_cp_pcmltfr/"
     ],
-    "page_hash": "2c9101f6f600ee49",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "96a5bf9039c7defa",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "41044fdbfd8b0184": {
     "urls": [
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260717/",
       "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d-g7-ageassurance_260626/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260709/",
-      "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d_260615/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260806/",
       "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260720/",
-      "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/communique-g7-260626/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260709/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260806/",
+      "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d_260615/",
       "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260714/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/",
+      "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/communique-g7-260626/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260713_cp/",
       "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/sp-d_20260720/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c-g7_260626/",
-      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260713_cp/"
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260717/",
+      "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c-g7_260626/"
     ],
-    "page_hash": "cef0a3bbcf8af01f",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "aa06c894ba24a514",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "6cd12551b659f09a": {
     "urls": [
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=93&subject=All&created=All",
-      "https://www.chrc-ccdp.gc.ca/stay-connected",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=15&subject=All&created=All",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=16&subject=All&created=All",
       "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=92&subject=All&created=All",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=93&subject=All&created=All",
+      "https://www.chrc-ccdp.gc.ca/resources/publications/brief-bill-c-20-build-canada-homes-act-federal-housing-advocate",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=16&subject=All&created=All",
       "https://www.chrc-ccdp.gc.ca/resources/publications/canadian-human-rights-commissions-anti-racism-progress-update",
-      "https://www.chrc-ccdp.gc.ca/resources/publications/brief-bill-c-20-build-canada-homes-act-federal-housing-advocate"
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=15&subject=All&created=All",
+      "https://www.chrc-ccdp.gc.ca/stay-connected"
     ],
-    "page_hash": "492f549a4940d886",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "edd88f0f9196950f",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "de45cb5029ca9df0": {
     "urls": [
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/opening-remarks-chief-commissioner-day-dialogue-canadian-ministers-human-rights",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=93&subject=All&created=All",
-      "https://www.chrc-ccdp.gc.ca/stay-connected",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/strong-and-democratic-canada-depends-human-rights",
       "https://www.chrc-ccdp.gc.ca/resources/archives/newsroom",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=15&subject=All&created=All",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/important-milestone-affirms-human-rights-people-experiencing-homelessness",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/remarks-federal-housing-advocate-forum-ministers-human-rights",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=16&subject=All&created=All",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/building-strong-and-accessible-canada-design",
       "https://www.chrc-ccdp.gc.ca/resources/newsroom/statement-artificial-intelligence-should-benefit-everyone",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/building-canada-strong-means-building-barrier-free",
       "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=92&subject=All&created=All",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/advancing-pay-equity-making-canada-stronger-and-more-inclusive",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/renew-human-rights-based-approach-canadas-housing-strategy-federal-housing",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/important-milestone-affirms-human-rights-people-experiencing-homelessness",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=93&subject=All&created=All",
       "https://www.chrc-ccdp.gc.ca/resources/newsroom/sharing-journey-reconciliation",
-      "https://www.chrc-ccdp.gc.ca/resources/newsroom/renew-human-rights-based-approach-canadas-housing-strategy-federal-housing"
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/strong-and-democratic-canada-depends-human-rights",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=16&subject=All&created=All",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/opening-remarks-chief-commissioner-day-dialogue-canadian-ministers-human-rights",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom?title=&category=15&subject=All&created=All",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/remarks-federal-housing-advocate-forum-ministers-human-rights",
+      "https://www.chrc-ccdp.gc.ca/stay-connected",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/advancing-pay-equity-making-canada-stronger-and-more-inclusive",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/building-canada-strong-means-building-barrier-free",
+      "https://www.chrc-ccdp.gc.ca/resources/newsroom/building-strong-and-accessible-canada-design"
     ],
-    "page_hash": "28acacd36e9c1ba1",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "d8e01f39aa7dbb7f",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "08f167968024164f": {
     "urls": [
@@ -561,263 +565,263 @@
   },
   "e89bc06343606bcf": {
     "urls": [
-      "https://www.publicsafety.gc.ca/cnt/trnsprnc/cts-rgltns/index-en.aspx",
-      "https://www.canada.ca/en/public-safety-canada/consultations/public-consultation-towards-independent-review-preclearance-act-2016.html",
-      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-national-security.html",
-      "https://www.publicsafety.gc.ca/cnt/nws/nws-rlss/index-en.aspx",
-      "http://www.gazette.gc.ca",
-      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-secure-air-travel-regulations.html",
-      "https://www.canada.ca/en/services/policing/parole/consultation-record-suspensions.html",
-      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
-      "https://www.canada.ca/en/services/defence/cybersecurity/consultation-cyber-security.html",
-      "https://www.statcan.gc.ca/en/consultation/2024/flood-awareness",
-      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=publicsafetycanada&start=&end=",
-      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-foreign-influence-transparency.html",
-      "https://www.canada.ca/en/services/defence/nationalsecurity/economic-based-threats-to-national-security.html",
       "https://www.canada.ca/en/public-safety-canada/consultations/stakeholder-survey-initiative-take-action-against-gun-gang-violence.html",
+      "https://www.publicsafety.gc.ca/cnt/trnsprnc/cts-rgltns/index-en.aspx",
+      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-foreign-influence-transparency.html",
+      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-countering-radicalization-violence.html",
       "https://www.canada.ca/en/public-safety-canada/consultations/public-engagement-strengthen-federal-leadership-emergency-management.html",
-      "https://www.canada.ca/en/services/policing/corrections/potential-amendments-corrections-conditional-release-regulations-support-proposed-amendments-bill-c-83.html",
-      "https://www.canada.ca/en/services/policing/police/consultation-countering-online-child-sexual-exploitation.html",
-      "https://www.canada.ca/en/services/policing/emergencies/consultation-governance-framework-psbn.html",
+      "https://www.publicsafety.gc.ca/cnt/nws/nws-rlss/index-en.aspx",
+      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+      "http://www.gazette.gc.ca",
       "https://www.canada.ca/en/services/policing/corrections/ccrso2022.html",
+      "https://www.canada.ca/en/services/policing/corrections/potential-amendments-corrections-conditional-release-regulations-support-proposed-amendments-bill-c-83.html",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=publicsafetycanada&start=&end=",
+      "https://www.canada.ca/en/services/policing/parole/consultation-record-suspensions.html",
+      "https://www.statcan.gc.ca/en/consultation/2024/flood-awareness",
+      "https://www.canada.ca/en/services/policing/emergencies/consultation-governance-framework-psbn.html",
+      "https://www.canada.ca/en/services/defence/nationalsecurity/economic-based-threats-to-national-security.html",
+      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-secure-air-travel-regulations.html",
       "https://www.canada.ca/en/public-safety-canada/consultations/proposed-regulations-amending-firearms-licences-regulations-licence-ineligibility-revocation-protection-orders.html",
-      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-countering-radicalization-violence.html"
+      "https://www.canada.ca/en/services/defence/nationalsecurity/consultation-national-security.html",
+      "https://www.canada.ca/en/public-safety-canada/consultations/public-consultation-towards-independent-review-preclearance-act-2016.html",
+      "https://www.canada.ca/en/services/policing/police/consultation-countering-online-child-sexual-exploitation.html",
+      "https://www.canada.ca/en/services/defence/cybersecurity/consultation-cyber-security.html"
     ],
-    "page_hash": "6a53dad0229204e4",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "74076e617a93f3f5",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "1eb5d4e45463e185": {
     "urls": [
-      "https://ised-isde.canada.ca/site/corporations-canada/en/regulations-related-bill-c-25-coming-force-summer",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/corporations-canada-launches-new-feature-federal-incorporation",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/public-consultations-concerning-executive-compensation-and-well-being-employees-retirees-and",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/important-notice-regarding-upcoming-changes-online-filing-centre",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/corporations-canadas-first-annual-report-diversity-boards-directors-and-senior-management-federal",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/launch-public-consultations-proposed-regulations-related-bill-c-25",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/upcoming-changes-not-profit-corporation-services",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/email-notices-subscription",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/consultation-canada-not-profit-corporations-act",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/proposed-regulations-amending-canada-business-corporations-regulations-2001-register-individuals",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/consultation-proposed-online-option-revival-service",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/upcoming-changes-business-corporation-services",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/release-2025-annual-report",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/public-consultations-concerning-executive-compensation-and-well-being-employees-retirees-and",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/new-corporate-filing-notices",
       "https://ised-isde.canada.ca/site/corporations-canada/en/notices/regulations-related-bill-c-25-come-force",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/consultation-canada-not-profit-corporations-act",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/consultation-proposed-online-option-revival-service",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/corporations-canadas-first-annual-report-diversity-boards-directors-and-senior-management-federal",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/public-consultations-concerning-executive-compensation-and-well-being-employees-retirees-and",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/upcoming-changes-business-corporation-services",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/new-corporate-filing-notices",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/public-consultations-concerning-executive-compensation-and-well-being-employees-retirees-and",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/corporations-canada-launches-new-feature-federal-incorporation",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/upcoming-changes-not-profit-corporation-services",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/important-notice-regarding-upcoming-changes-online-filing-centre",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/email-notices-subscription",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/release-2025-annual-report",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/launch-public-consultations-proposed-regulations-related-bill-c-25",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/corporations-canada-launches-streamlined-naming-service-businesses-and-not-profits",
+      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/proposed-regulations-amending-canada-business-corporations-regulations-2001-register-individuals",
       "https://gazette.gc.ca/rp-pr/p1/2021/2021-03-27/html/reg2-eng.html",
-      "https://ised-isde.canada.ca/site/corporations-canada/en/notices/corporations-canada-launches-streamlined-naming-service-businesses-and-not-profits"
+      "https://ised-isde.canada.ca/site/corporations-canada/en/regulations-related-bill-c-25-coming-force-summer"
     ],
-    "page_hash": "dc15abf82c1801df",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "99729f6e92030add",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "5d0b92aa91d3c9e0": {
     "urls": [
-      "https://www.canada.ca/en/department-finance/news/stay-connected.html",
-      "https://www.canada.ca/en/department-finance/news/news-releases/archives.html",
-      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?typ=newsreleases&dprtmnt=departmentfinance",
-      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?typ=backgrounders&dprtmnt=departmentfinance",
-      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1721141835413&dprtmnt=departmentfinance&start=&end=",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?typ=mediaadvisories&dprtmnt=departmentfinance",
       "https://www.canada.ca/en/department-finance/programs/consultations.html",
-      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?typ=mediaadvisories&dprtmnt=departmentfinance"
+      "https://www.canada.ca/en/department-finance/news/stay-connected.html",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?typ=newsreleases&dprtmnt=departmentfinance",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1721141835413&dprtmnt=departmentfinance&start=&end=",
+      "https://www.canada.ca/en/news/advanced-news-search/news-results.html?typ=backgrounders&dprtmnt=departmentfinance",
+      "https://www.canada.ca/en/department-finance/news/news-releases/archives.html"
     ],
-    "page_hash": "68cc28f01c9fbfea",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "e7b8a98543a78b23",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "97adeab11062d2c7": {
     "urls": [
-      "https://www.canada.ca/en/department-finance/programs/consultations/2025/pre-budget-consultations-2025.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2025/deposit-insurance-review.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2025/consultations-on-potential-trade-measures-to-prevent-diversion-of-steel-products-into-canada.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultation-on-draft-legislative-proposals-to-implement-certain-tax-measures-announced-in-budget-2025-or-earlier.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-proposals-to-strengthen-canadas-financial-sector.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/proposed-acquisition-canadian-western-bank-national-bank-canada.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-qualified-investments-for-tax-advantaged-savings-plans.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultation-on-possibility-introducing-domestic-content-requirement-part-clean-electricity-investment-tax-credit-clean-technology-investment-tax-credit.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-removing-gst-on-student-residences.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultation-on-financial-tools-for-citizen-led-homebuilding-and-for-infill-housing.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-confronting-financialization-housing.html",
       "https://www.letstalkbudget2022.ca/let-s-talk-budget-2022?tool=survey_tool&tool_id=submissions1",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2025/deposit-insurance-review.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2025/electric-vehicle-supply-chain-investment-tax-credit.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2025/consultations-on-potential-trade-measures-to-prevent-diversion-of-steel-products-into-canada.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2025/department-finance-consultation-on-official-development-assistance-2025.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultations-on-extending-canadian-journalism-labour-tax-credit-audio-audiovisual-news-organizations.html",
       "https://www.canada.ca/en/department-finance/programs/consultations/2024/notice-of-intent-to-impose-surtaxes-on-chinese-steel-and-aluminum-in-response-to-unfair-chinese-trade-practices.html",
       "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultations-on-canadas-automotive-remission-framework.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-proposals-to-strengthen-canadas-financial-sector.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultations-on-potential-surtaxes-in-response-to-unfair-chinese-trade-practices-in-critical-manufacturing-sectors.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2022/pre-budget-consultations-2023.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/proposed-acquisition-canadian-western-bank-national-bank-canada.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultations-on-the-taxation-of-vacant-lands.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultations-on-extending-canadian-journalism-labour-tax-credit-audio-audiovisual-news-organizations.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2025/department-finance-consultation-on-official-development-assistance-2025.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-qualified-investments-for-tax-advantaged-savings-plans.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-removing-gst-on-student-residences.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2025/electric-vehicle-supply-chain-investment-tax-credit.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultation-on-financial-tools-for-citizen-led-homebuilding-and-for-infill-housing.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultation-on-draft-legislative-proposals-to-implement-certain-tax-measures-announced-in-budget-2025-or-earlier.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultations-on-potential-policy-responses-to-unfair-chinese-trade-practices-in-electric-vehicles.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2026/consultation-on-possibility-introducing-domestic-content-requirement-part-clean-electricity-investment-tax-credit-clean-technology-investment-tax-credit.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2025/notice-intent-impose-countermeasures-response-united-states-tariffs-on-canadian-goods.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2023/pre-budget-consultations-2024.html",
       "https://www.canada.ca/en/department-finance/programs/consultations/2026/national-anti-fraud-strategy.html",
-      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultation-on-confronting-financialization-housing.html"
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultations-on-potential-policy-responses-to-unfair-chinese-trade-practices-in-electric-vehicles.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2022/pre-budget-consultations-2023.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultations-on-the-taxation-of-vacant-lands.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2024/consultations-on-potential-surtaxes-in-response-to-unfair-chinese-trade-practices-in-critical-manufacturing-sectors.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2025/notice-intent-impose-countermeasures-response-united-states-tariffs-on-canadian-goods.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2025/pre-budget-consultations-2025.html",
+      "https://www.canada.ca/en/department-finance/programs/consultations/2023/pre-budget-consultations-2024.html"
     ],
-    "page_hash": "fd87c166ef1947c5",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "6a223ae593870e1f",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "8facab0197ed2f6c": {
     "urls": [
-      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/draft-legislation.html",
-      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/list-acts-regulations.html",
+      "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/requirements-developing-managing-reviewing-regulations/guidelines-tools/cabinet-directive-regulation.html",
       "https://www.canada.ca/en/department-finance/corporate/laws-regulations/ministerial-orders.html",
       "https://www.canada.ca/en/department-finance/corporate/laws-regulations/regulatory-interpretation-policy-statement.html",
       "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/regulatory-cooperation/learn-about-regulatory-cooperation.html",
-      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/forward-regulatory-plan.html",
-      "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/requirements-developing-managing-reviewing-regulations/guidelines-tools/cabinet-directive-regulation.html",
       "https://www.canada.ca/en/department-finance/corporate/laws-regulations/administrative-burden-baseline.html",
-      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
-      "https://www.canada.ca/en/treasury-board-secretariat/services/federal-regulatory-management.html",
-      "https://gazette.gc.ca/consult/consult-eng.html",
       "https://www.canada.ca/en/department-finance/programs/consultations.html",
-      "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/regulatory-evaluation-results/government-wide-regulatory-plans-reports.html"
+      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/forward-regulatory-plan.html",
+      "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/regulatory-evaluation-results/government-wide-regulatory-plans-reports.html",
+      "https://gazette.gc.ca/consult/consult-eng.html",
+      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/list-acts-regulations.html",
+      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/draft-legislation.html",
+      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+      "https://www.canada.ca/en/treasury-board-secretariat/services/federal-regulatory-management.html"
     ],
-    "page_hash": "b90926e121b68498",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "6c24751ed30046da",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "1c526193d223e400": {
     "urls": [
-      "https://fin.canada.ca/drleg-apl/2024/nwmm-amvm-0624-eng.html",
       "https://www.canada.ca/en/department-finance/news/2022/04/government-of-canada-releases-draft-legislative-proposals-to-address-hybrid-mismatch-arrangement-tax-avoidance-schemes.html",
-      "https://fin.canada.ca/drleg-apl/2025/ita-lir-0525-eng.html",
-      "https://www.canada.ca/en/department-finance/news/2021/03/government-announces-wage-and-rent-subsidy-amounts-to-remain-unchanged-through-to-june.html",
-      "https://www.canada.ca/en/department-finance/news/2023/08/government-consults-canadians-on-budget-2023-measures-to-grow-the-clean-economy-close-tax-loopholes-and-deliver-tax-relief-for-canadians.html",
-      "https://www.canada.ca/en/department-finance/news/2021/05/government-extends-relief-for-registered-pension-plans-and-deferred-salary-leave-plans.html",
-      "https://www.canada.ca/en/department-finance/news/2022/11/government-of-canada-introduces-legislation-to-make-life-more-affordable-and-build-an-economy-that-works-for-everyone.html",
-      "https://www.canada.ca/en/department-finance/news/2022/11/government-consults-canadians-to-advance-key-priorities.html",
-      "https://www.canada.ca/en/department-finance/news/2022/09/government-of-canada-introduces-legislation-to-make-life-more-affordable-for-canadians.html",
       "https://www.canada.ca/en/department-finance/news/2022/04/government-of-canada-introduces-legislation-to-grow-our-economy-and-make-life-more-affordable.html",
-      "https://www.canada.ca/en/department-finance/news/2022/08/government-delivering-on-budget-2022-commitments-to-canadians.html",
-      "https://www.canada.ca/en/department-finance/news/2025/08/government-releases-draft-legislation-for-previously-announced-tax-measures.html",
-      "https://www.canada.ca/en/department-finance/news/2022/02/department-of-finance-consulting-on-draft-tax-proposals.html",
-      "https://fin.canada.ca/drleg-apl/2025/nwmm-amvm-1-1125-eng.html",
-      "https://www.canada.ca/en/department-finance/news/2021/12/integrating-ontarios-carbon-pollution-pricing-system-for-large-industrial-emitters-with-the-federal-fuel-charge.html",
-      "https://fin.canada.ca/drleg-apl/2021/bia-leb-1221-am-eng.html",
-      "https://fin.canada.ca/drleg-apl/2021/bia-leb-1221-eng.html",
-      "https://www.canada.ca/en/department-finance/news/2021/04/budget-2021-a-recovery-plan-for-jobs-growth-and-resilience.html",
-      "https://fin.canada.ca/drleg-apl/2024/nwmm-amvm-0924-eng.html",
       "https://www.canada.ca/en/department-finance/news/2022/03/government-releases-draft-legislative-proposals-to-implement-luxury-tax.html",
       "https://www.canada.ca/en/department-finance/news/2025/01/government-of-canada-releases-draft-legislation-to-extend-2024-charitable-donations-deadline.html",
-      "https://fin.canada.ca/drleg-apl/2025/nwmm-amvm-1125-eng.html",
-      "https://www.canada.ca/en/department-finance/news/2025/06/government-confirms-non-taxability-of-canada-carbon-rebates-for-small-businesses.html",
+      "https://fin.canada.ca/drleg-apl/2024/nwmm-amvm-0924-eng.html",
+      "https://www.canada.ca/en/department-finance/news/2021/05/government-extends-relief-for-registered-pension-plans-and-deferred-salary-leave-plans.html",
+      "https://www.canada.ca/en/department-finance/news/2023/08/government-consults-canadians-on-budget-2023-measures-to-grow-the-clean-economy-close-tax-loopholes-and-deliver-tax-relief-for-canadians.html",
+      "https://www.canada.ca/en/department-finance/news/2022/11/government-of-canada-introduces-legislation-to-make-life-more-affordable-and-build-an-economy-that-works-for-everyone.html",
+      "https://fin.canada.ca/drleg-apl/2021/bia-leb-1221-am-eng.html",
+      "https://www.canada.ca/en/department-finance/news/2022/08/government-delivering-on-budget-2022-commitments-to-canadians.html",
       "https://www.canada.ca/en/department-finance/news/2025/05/government-tables-a-motion-to-bring-down-costs-for-canadians.html",
+      "https://www.canada.ca/en/department-finance/news/2022/11/government-consults-canadians-to-advance-key-priorities.html",
+      "https://fin.canada.ca/drleg-apl/2025/nwmm-amvm-1-1125-eng.html",
+      "https://fin.canada.ca/drleg-apl/2021/bia-leb-1221-eng.html",
+      "https://www.canada.ca/en/department-finance/news/2025/06/government-confirms-non-taxability-of-canada-carbon-rebates-for-small-businesses.html",
+      "https://www.canada.ca/en/department-finance/news/2021/12/integrating-ontarios-carbon-pollution-pricing-system-for-large-industrial-emitters-with-the-federal-fuel-charge.html",
+      "https://www.canada.ca/en/department-finance/news/2025/08/government-releases-draft-legislation-for-previously-announced-tax-measures.html",
+      "https://fin.canada.ca/drleg-apl/2024/nwmm-amvm-0624-eng.html",
+      "https://www.canada.ca/en/department-finance/news/2021/04/budget-2021-a-recovery-plan-for-jobs-growth-and-resilience.html",
+      "https://fin.canada.ca/drleg-apl/2025/nwmm-amvm-1125-eng.html",
+      "https://fin.canada.ca/drleg-apl/2025/ita-lir-0525-eng.html",
+      "https://www.canada.ca/en/department-finance/news/2022/09/government-of-canada-introduces-legislation-to-make-life-more-affordable-for-canadians.html",
+      "https://www.canada.ca/en/department-finance/news/2021/03/government-announces-wage-and-rent-subsidy-amounts-to-remain-unchanged-through-to-june.html",
+      "https://www.canada.ca/en/department-finance/news/2022/02/department-of-finance-consulting-on-draft-tax-proposals.html",
       "https://fin.canada.ca/drleg-apl/2024/nwmm-amvm-1024-eng.html"
     ],
     "page_hash": "48d901ea6e7a7ca0",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "d171cae7993a87d0": {
     "urls": [
-      "https://www.tps.ca/media-centre/news-releases/66292/",
-      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-05-eng",
-      "https://www.tps.ca/media-centre/news-releases/man-arrested-in-child-sexual-abuse-material-invest-25/",
-      "https://rcmp.ca/en/news/2026/04/4352324",
-      "https://www.osc.ca/en/news-events/news/sejean-reid-and-whitney-charles-charged-fraud-and-money-laundering",
-      "https://alert-ab.ca/update-project-cerberus-dismantles-transnational-organized-crime-group/",
-      "https://www.ottawapolice.ca/en/news/joint-human-trafficking-investigation-leads-to-three-arrests-police-seek-additional-victims.aspx",
-      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-07-09-2-eng",
       "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-05-2-eng",
-      "https://www.reginapolice.ca/2026/05/27/one-charged-in-human-trafficking-investigation/",
-      "https://www.peelpolice.ca/news-feed/posts/extortion-task-force-takes-down-international-criminal-group-targeting-south-asian-community/",
-      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-28-eng",
-      "https://www.haltonpolice.ca/news-releases/posts/arrests-made-in-largest-human-trafficking-case-in-hrps-history/",
-      "https://www.sq.gouv.qc.ca/communiques/plus-de-300-000-vapoteuses-illegales-saisies-et-des-comptes-en-banque-totalisant-1-800-000-bloques/",
-      "https://rcmp.ca/en/news/2026/07/4354860",
-      "https://rcmp.ca/en/news/2026/05/4353253",
-      "https://www.sq.gouv.qc.ca/communiques/perquisitions-en-matiere-de-trafic-de-stupefiants-et-de-recyclage-des-produits-de-la-criminalite/",
       "https://fintrac-canafe.canada.ca/new-neuf/nr/2025-12-11-eng",
+      "https://www.ottawapolice.ca/en/news/joint-human-trafficking-investigation-leads-to-three-arrests-police-seek-additional-victims.aspx",
+      "https://www.asc.ca/News-and-Publications/News-Releases/2026/06/15-JSOT-charges-Douglas-John-Vermeeren-under-the-Securities-Act",
+      "https://www.reginapolice.ca/2026/05/27/one-charged-in-human-trafficking-investigation/",
+      "https://www.winnipeg.ca/police/community/news-releases/2026-05-20-interprovincial-drug-investigation-leads-largest-illicit-drug-seizure-manitoba-history-33",
+      "https://rcmp.ca/en/news/2026/04/4352324",
+      "https://www.drps.ca/news/posts/project-fletcher-results-in-eight-arrests-five-suspects-still-sought/",
+      "https://rcmp.ca/en/news/2026/07/4354860",
+      "https://www.haltonpolice.ca/news-releases/posts/arrests-made-in-largest-human-trafficking-case-in-hrps-history/",
+      "https://www.sq.gouv.qc.ca/communiques/perquisitions-en-matiere-de-trafic-de-stupefiants-et-de-recyclage-des-produits-de-la-criminalite/",
+      "https://www.peelpolice.ca/news-feed/posts/extortion-task-force-takes-down-international-criminal-group-targeting-south-asian-community/",
+      "https://www.sq.gouv.qc.ca/communiques/plus-de-300-000-vapoteuses-illegales-saisies-et-des-comptes-en-banque-totalisant-1-800-000-bloques/",
+      "https://www.tps.ca/media-centre/news-releases/man-arrested-in-child-sexual-abuse-material-invest-25/",
+      "https://www.tps.ca/media-centre/news-releases/66292/",
+      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-05-1-eng",
+      "https://rcmp.ca/en/news/2026/05/4352894",
+      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-14-eng",
+      "https://rcmp.ca/en/news/2026/05/4353253",
+      "https://www.osc.ca/en/news-events/news/sejean-reid-and-whitney-charles-charged-fraud-and-money-laundering",
       "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-04-23-eng",
       "https://rcmp.ca/en/news/2026/08/4355449",
-      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-14-eng",
-      "https://www.winnipeg.ca/police/community/news-releases/2026-05-20-interprovincial-drug-investigation-leads-largest-illicit-drug-seizure-manitoba-history-33",
-      "https://rcmp.ca/en/news/2026/05/4352894",
-      "https://www.drps.ca/news/posts/project-fletcher-results-in-eight-arrests-five-suspects-still-sought/",
-      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-05-1-eng",
+      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-05-eng",
+      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-05-28-eng",
       "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-07-09-1-eng",
-      "https://www.asc.ca/News-and-Publications/News-Releases/2026/06/15-JSOT-charges-Douglas-John-Vermeeren-under-the-Securities-Act"
+      "https://alert-ab.ca/update-project-cerberus-dismantles-transnational-organized-crime-group/",
+      "https://fintrac-canafe.canada.ca/new-neuf/nr/2026-07-09-2-eng"
     ],
     "page_hash": "3aabd7bc47a20897",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "f26564910bcc2fe8": {
     "urls": [
-      "http://publications.gc.ca/gazette/archives/p2/2003/2003-11-19/pdf/g2-13724.pdf",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-121",
       "https://fintrac-canafe.canada.ca/guidance-directives/overview-apercu/FINS/1-eng",
-      "https://canadagazette.gc.ca/rp-pr/p2/2025/2025-01-01/html/sor-dors267-eng.html",
-      "http://publications.gc.ca/gazette/archives/p2/2007/2007-06-27/pdf/g2-14113.pdf",
-      "http://publications.gc.ca/gazette/archives/p2/2007/2007-12-26/pdf/g2-14126.pdf",
-      "https://gazette.gc.ca/rp-pr/p2/2019/2019-07-10/html/sor-dors240-eng.html",
-      "https://www.gazette.gc.ca/consult/consult-eng.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-317/index.html",
-      "https://www.gazette.gc.ca/rp-pr/p2/2023/2023-10-11/html/sor-dors193-eng.html",
-      "https://fintrac-canafe.canada.ca/new-neuf/1-eng",
-      "http://publications.gc.ca/gazette/archives/p2/2009/2009-09-30/pdf/g2-14320.pdf",
-      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-195/index.html",
-      "http://publications.gc.ca/gazette/archives/p2/2001/2001-09-12/pdf/g2-13519.pdf",
-      "https://www.gazette.gc.ca/rp-pr/p2/2023/2023-10-11/html/sor-dors194-eng.html",
-      "https://www.gazette.gc.ca/rp-pr/p2/2023/2023-10-11/html/sor-dors195-eng.html",
       "http://publications.gc.ca/gazette/archives/p2/2002/2002-12-04/pdf/g2-13625.pdf",
-      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/list-acts-regulations/proceeds-crime-money-laundering-terrorist-financing-act/guidance.html",
-      "http://publications.gc.ca/gazette/archives/p2/2003/2003-03-25-x/pdf/g2-137x2.pdf",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-184",
-      "https://www.gazette.gc.ca/rp-pr/p2/2025/2025-01-01/html/sor-dors266-eng.html",
-      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-412",
       "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-292",
+      "http://publications.gc.ca/gazette/archives/p2/2009/2009-09-30/pdf/g2-14320.pdf",
       "https://gazette.gc.ca/rp-pr/p2/2020/2020-06-10/html/sor-dors112-eng.html",
-      "http://publications.gc.ca/gazette/archives/p2/2002/2002-05-14-x/pdf/g2-136x7.pdf"
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-317/index.html",
+      "http://publications.gc.ca/gazette/archives/p2/2002/2002-05-14-x/pdf/g2-136x7.pdf",
+      "https://gazette.gc.ca/rp-pr/p2/2019/2019-07-10/html/sor-dors240-eng.html",
+      "https://fintrac-canafe.canada.ca/new-neuf/1-eng",
+      "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-195/index.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-121",
+      "https://www.gazette.gc.ca/rp-pr/p2/2023/2023-10-11/html/sor-dors195-eng.html",
+      "https://www.gazette.gc.ca/consult/consult-eng.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-412",
+      "http://publications.gc.ca/gazette/archives/p2/2003/2003-03-25-x/pdf/g2-137x2.pdf",
+      "http://publications.gc.ca/gazette/archives/p2/2001/2001-09-12/pdf/g2-13519.pdf",
+      "https://canadagazette.gc.ca/rp-pr/p2/2025/2025-01-01/html/sor-dors267-eng.html",
+      "https://www.gazette.gc.ca/rp-pr/p2/2023/2023-10-11/html/sor-dors193-eng.html",
+      "https://www.gazette.gc.ca/rp-pr/p2/2023/2023-10-11/html/sor-dors194-eng.html",
+      "http://publications.gc.ca/gazette/archives/p2/2003/2003-11-19/pdf/g2-13724.pdf",
+      "https://www.canada.ca/en/department-finance/corporate/laws-regulations/list-acts-regulations/proceeds-crime-money-laundering-terrorist-financing-act/guidance.html",
+      "http://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-184",
+      "http://publications.gc.ca/gazette/archives/p2/2007/2007-12-26/pdf/g2-14126.pdf",
+      "https://www.gazette.gc.ca/rp-pr/p2/2025/2025-01-01/html/sor-dors266-eng.html",
+      "http://publications.gc.ca/gazette/archives/p2/2007/2007-06-27/pdf/g2-14113.pdf"
     ],
     "page_hash": "000cdeef2775edb2",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "2154499a79294ba1": {
     "urls": [
+      "https://fintrac-canafe.canada.ca/notices-avis/notices-avis-eng",
       "https://fintrac-canafe.canada.ca/intel/sintel-eng?type=bulletin",
-      "https://fintrac-canafe.canada.ca/publications/ar/2025/1-eng",
-      "https://fintrac-canafe.canada.ca/guidance-directives/overview-apercu/fins/1-eng",
       "https://fintrac-canafe.canada.ca/new-neuf/1-eng",
-      "https://fintrac-canafe.canada.ca/notices-avis/notices-avis-eng"
+      "https://fintrac-canafe.canada.ca/publications/ar/2025/1-eng",
+      "https://fintrac-canafe.canada.ca/guidance-directives/overview-apercu/fins/1-eng"
     ],
     "page_hash": "e1df866b8368e67e",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "17f1f337cf74c6b1": {
     "urls": [
-      "https://www.canada.ca/en/news/media-contacts.html",
-      "https://www.canada.ca/en/department-justice/news/2026/07/minister-fraser-announces-support-and-funding-for-victims-and-survivors-of-human-trafficking.html",
-      "https://www.canada.ca/en/news/advanced-news-search.html",
-      "https://www.canada.ca/en/department-justice/news/2026/08/minister-of-justice-and-attorney-general-of-canada-announces-a-judicial-appointment-in-the-province-of-alberta.html",
-      "https://www.canada.ca/en/department-justice/news/2026/07/human-trafficking-project-descriptions.html",
-      "https://www.canada.ca/en/news/subscribe-emails.html",
-      "https://www.canada.ca/en/department-justice/news/2026/07/minister-of-justice-and-attorney-general-of-canada-announces-a-judicial-appointment-in-the-province-of-nova-scotia.html",
-      "https://www.canada.ca/en/news/archive-search.html",
-      "https://www.canada.ca/en/department-justice/news/2026/07/minister-of-justice-orders-new-trial-in-quebec-case-following-conviction-review.html",
-      "https://www.canada.ca/en/department-justice/news/2026/06/canadas-sweeping-bail-and-sentencing-reforms-to-combat-copper-theft-and-crimes-against-essential-infrastructure-become-law.html",
-      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html",
-      "https://www.canada.ca/en/department-justice/news/2026/07/major-criminal-code-reforms-to-protect-canadians-are-now-law.html",
-      "https://www.canada.ca/en/department-justice/news/2026/06/minister-of-justice-and-attorney-general-fraser-meets-with-halton-regional-police-service-and-halton-region-paramedic-services.html",
-      "https://www.canada.ca/en/department-justice/news/2026/06/minister-fraser-to-hold-press-conference-on-bail-and-sentencing-reforms-to-combat-retail-theft-and-violence-against-transit-workers.html",
-      "https://www.pm.gc.ca/en/news",
-      "https://www.canada.ca/en/department-justice/news/2026/07/minister-fraser-to-hold-press-conference-on-major-criminal-code-reforms-to-protect-canadians-that-are-now-law.html",
       "https://www.canada.ca/en/department-justice/news/2026/07/minister-of-justice-and-attorney-general-of-canada-announces-judicial-appointments-in-the-province-of-ontario.html",
+      "https://www.canada.ca/en/department-justice/news/2026/08/minister-of-justice-and-attorney-general-of-canada-announces-a-judicial-appointment-in-the-province-of-alberta.html",
+      "https://www.canada.ca/en/department-justice/news/2026/06/canadas-sweeping-bail-and-sentencing-reforms-to-combat-copper-theft-and-crimes-against-essential-infrastructure-become-law.html",
+      "https://www.canada.ca/en/department-justice/news/2026/07/major-criminal-code-reforms-to-protect-canadians-are-now-law.html",
+      "https://www.canada.ca/en/news/subscribe-emails.html",
+      "https://www.pm.gc.ca/en/news",
+      "https://www.canada.ca/en/department-justice/news/2026/07/minister-of-justice-and-attorney-general-of-canada-announces-a-judicial-appointment-in-the-province-of-nova-scotia.html",
+      "https://www.canada.ca/en/department-justice/news/2026/06/minister-fraser-to-hold-press-conference-on-bail-and-sentencing-reforms-to-combat-retail-theft-and-violence-against-transit-workers.html",
+      "https://www.canada.ca/en/department-justice/news/2026/07/human-trafficking-project-descriptions.html",
+      "https://www.canada.ca/en/department-justice/news/2026/07/minister-fraser-announces-support-and-funding-for-victims-and-survivors-of-human-trafficking.html",
+      "https://www.canada.ca/en/department-justice/news/2026/07/minister-of-justice-orders-new-trial-in-quebec-case-following-conviction-review.html",
+      "https://www.canada.ca/en/department-justice/news/2026/07/minister-fraser-to-hold-press-conference-on-major-criminal-code-reforms-to-protect-canadians-that-are-now-law.html",
+      "https://www.canada.ca/en/news/advanced-news-search.html",
       "https://www.canada.ca/en/department-justice/news/2026/06/minister-of-justice-meets-with-small-business-owners-in-halifax.html",
+      "https://www.canada.ca/en/department-justice/news/2026/06/canadas-sweeping-bail-and-sentencing-reforms-to-combat-retail-theft-and-violence-against-transit-workers-become-law.html",
+      "https://www.canada.ca/en/news/archive-search.html",
+      "https://www.canada.ca/en/news/media-contacts.html",
       "https://www.canada.ca/en/department-justice/news/2026/08/minister-of-justice-and-attorney-general-of-canada-announces-a-judicial-appointment-in-the-province-of-quebec.html",
-      "https://www.canada.ca/en/department-justice/news/2026/06/canadas-sweeping-bail-and-sentencing-reforms-to-combat-retail-theft-and-violence-against-transit-workers-become-law.html"
+      "https://www.canada.ca/en/department-justice/news/2026/06/minister-of-justice-and-attorney-general-fraser-meets-with-halton-regional-police-service-and-halton-region-paramedic-services.html",
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/20260301000000*/https:/www.canada.ca/en/news.html"
     ],
-    "page_hash": "a4a72d8a8c8f72af",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "50b9f81073b56622",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "b7ad237d01a4fe2d": {
     "urls": [
-      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
       "https://www.justice.gc.ca/eng/cons/calcons/index.html",
+      "https://www.justice.gc.ca/eng/cons/cea-acm.html",
       "https://www.justice.gc.ca/eng/cons/index.html",
-      "https://www.justice.gc.ca/eng/cons/cea-acm.html"
+      "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html"
     ],
     "page_hash": "34e1c239e2018584",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   },
   "308d663ddd2c65a3": {
     "urls": [],
-    "page_hash": "0cfe0fd3e79f16ce",
-    "last_ok": "2026-08-19T06:23:17.549230+00:00"
+    "page_hash": "2377c6bfa2857cdf",
+    "last_ok": "2026-08-20T06:24:31.687657+00:00"
   }
 }
