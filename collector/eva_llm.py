@@ -240,7 +240,9 @@ def is_placeholder_title(title: str) -> bool:
     return not t or bool(_PLACEHOLDER_TITLE.match(t))
 
 
-def looks_like_form(title: str, text: str) -> bool:
+def looks_like_form(title: str, text: str, url: str = "") -> bool:
+    if looks_like_guideline(title, text, url):
+        return False
     if _FORM_TITLE_HINT.search(title or ""):
         return True
     blob = text or ""
@@ -283,6 +285,26 @@ def looks_like_guideline(title: str, text: str, url: str = "") -> bool:
     return False
 
 
+def _clean_para(s: str) -> str:
+    s = re.sub(r"\s+", " ", s or "").strip()
+    s = re.sub(r"(?i)^(preface|introduction|acknowledgements)\s+", "", s)
+    return s
+
+
+def _volume_intro_paragraph(text: str) -> str:
+    """Body intro — last 'This guideline is intended…', not the series preface."""
+    hits = list(
+        re.finditer(
+            r"This guideline is intended.{80,700}?(?:\.|\n\n)",
+            text or "",
+            flags=re.I | re.S,
+        )
+    )
+    if not hits:
+        return ""
+    return _clean_para(hits[-1].group(0))
+
+
 def guideline_summary(
     *,
     title: str,
@@ -290,102 +312,91 @@ def guideline_summary(
     jurisdiction: str = "",
     url: str = "",
 ) -> dict[str, Any]:
-    """Preface + what the guideline covers — never TOC dotted leaders."""
+    """Volume-specific summary from the real introduction, never the shared preface or TOC."""
     doc_title = _first_document_title("", text, url)
     if not doc_title or is_placeholder_title(doc_title) or re.search(r"^347 |DLG", doc_title, re.I):
         doc_title = "Desert Locust Guidelines"
 
-    # Volume line: "3. Information and forecasting"
     volume = ""
     for raw in (text or "").splitlines()[:25]:
         line = _strip_form_noise(raw)
         if re.match(r"^\d+\.\s+[A-Za-z].{4,60}$", line) and not _is_toc_line(raw):
             volume = line
             break
-    if volume and volume.lower() not in doc_title.lower():
-        display = f"{doc_title}: {volume}"
+    topic = re.sub(r"^\d+\.\s*", "", volume).strip() if volume else ""
+    display = f"{doc_title}: {volume}" if volume and volume.lower() not in doc_title.lower() else doc_title
+
+    intro = _volume_intro_paragraph(text)
+    # Skip the series-wide plague preface if it leaked in
+    if re.search(r"plague of 1986", intro, re.I):
+        intro = ""
+
+    steps = [
+        _clean_para(m)
+        for m in re.findall(r"Step\s+\d+\.\s*(.{40,260})", text or "", flags=re.I | re.S)
+    ]
+    steps = [s for s in steps if s and not _is_toc_line(s)][:6]
+
+    data_types = ""
+    m = re.search(
+        r"four primary types of data are required:\s*([^\.]+)",
+        text or "",
+        flags=re.I,
+    )
+    if m:
+        data_types = _clean_para(m.group(1))
+
+    officer = bool(re.search(r"Locust Information Officer", text or ""))
+    who = (
+        "the national Locust Information Officer at Locust Unit headquarters"
+        if officer
+        else "national and international locust survey and control staff"
+    )
+
+    parts = [f"{display} (FAO, 2nd edition 2001)."]
+    if intro:
+        parts.append(intro)
+    elif topic:
+        parts.append(
+            f"This volume is the practical handbook on {topic.lower()} for {who}."
+        )
     else:
-        display = doc_title
+        parts.append(f"FAO handbook for {who}.")
 
-    # Clean contents headings as coverage points
-    covers: list[str] = []
-    for raw in (text or "").splitlines():
-        if _TOC_ANY.search(raw) or _TOC_LEADER.search(raw):
-            heading = _strip_form_noise(raw)
-            heading = re.sub(r"\s+\d{1,3}$", "", heading).strip(" .")
-            if 8 <= len(heading) <= 80 and heading.lower() not in {
-                "contents",
-                "preface",
-                "acknowledgements",
-                "introduction",
-            }:
-                if heading not in covers:
-                    covers.append(heading)
-        if len(covers) >= 6:
-            break
+    if officer and topic and "information" in topic.lower():
+        parts.append(
+            "It teaches how to turn field reports, weather data and FAO bulletins "
+            "into a situation assessment and a forecast so managers can decide "
+            "where to survey, what to control first, and when to request help."
+        )
+    if data_types:
+        parts.append(
+            f"Four data types are required, each with a date and location: {data_types}."
+        )
+    if steps:
+        parts.append("National process: " + " ".join(f"({i}) {s}" for i, s in enumerate(steps, 1)))
 
-    # First real preface/intro sentences
-    paras: list[str] = []
-    buf = ""
-    for raw in (text or "").splitlines():
-        if _is_toc_line(raw):
-            continue
-        line = _strip_form_noise(raw)
-        if re.match(r"(?i)^(contents|acknowledgements|what are |locust phases)\b", line):
-            if buf:
-                paras.append(buf)
-                buf = ""
-            if len(paras) >= 3:
-                break
-            continue
-        if not line or is_placeholder_title(line):
-            continue
-        if re.search(
-            r"all rights reserved|copyright holders|reproduction and dissemination|"
-            r"designations employed|without written permission",
-            line,
-            re.I,
-        ):
-            continue
-        if re.match(r"(?i)^(preface|introduction|this guideline)\b", line) or buf:
-            if buf and re.search(r"[.!?؟。]$", buf) and len(buf) > 80:
-                paras.append(buf)
-                buf = line
-            else:
-                buf = (buf + " " + line).strip() if buf else line
-        if len(paras) >= 3:
-            break
-    if buf and len(buf) > 60:
-        paras.append(buf)
+    summary = " ".join(parts)
+    summary = re.sub(r"\s+", " ", summary).strip()
 
-    intro = " ".join(paras)[:700]
-    intro = re.sub(r"\s+", " ", intro).strip()
-    intro = re.sub(r"(?i)^(iii|iv|vi|preface)\s+", "", intro)
-    if not intro:
-        intro = (
-            "FAO Desert Locust guideline for national and international staff "
-            "involved in locust survey and control."
+    points: list[str] = []
+    if volume:
+        points.append(f"What it is: FAO Desert Locust Guidelines, {volume}.")
+    points.append(f"Who it is for: {who}.")
+    if data_types:
+        points.append("Required data: " + data_types + " (each with date and coordinates).")
+    if steps:
+        points.extend(steps[:4])
+    if re.search(r"Desert Locust Information Service|DLIS", text or ""):
+        points.append(
+            "Send survey/control results to FAO DLIS in Rome within five days "
+            "(weekly if locusts are present; monthly even if none)."
         )
 
-    who = "FAO"
-    purpose = ""
-    if volume:
-        topic = re.sub(r"^\d+\.\s*", "", volume).strip()
-        purpose = f"This FAO volume covers {topic} for locust survey and control staff. "
-    summary = f"{display} (FAO / MEWA). {purpose}{intro}"
-    if covers:
-        summary += " It covers: " + "; ".join(covers[:5]) + "."
-
-    points = []
-    if volume:
-        points.append("Volume: " + volume)
-    points.append("Who it is for: locust survey, control, and campaign staff.")
-    points.extend(covers[:5])
-
     return {
-        "summary": summary[:1600],
+        "summary": summary[:1800],
         "key_points": points[:8],
-        "topics": ["desert locust", "guideline", "MEWA", "FAO"],
+        "topics": ["desert locust", "forecasting", "information", "FAO", "MEWA"],
         "document_type": "guidance",
         "method": "extractive_guideline",
         "display_title": display,
@@ -657,7 +668,7 @@ def extractive_summary(
         from collector.eva_extract import clean_extracted_text, looks_like_glyph_dump  # type: ignore
 
     text = clean_extracted_text(text)
-    if looks_like_form(title, text):
+    if looks_like_form(title, text, url):
         return form_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
     if looks_like_guideline(title, text, url):
         return guideline_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)

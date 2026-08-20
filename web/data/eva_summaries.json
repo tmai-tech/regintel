@@ -1,118 +1,26 @@
 [
   {
-    "id": "450396388f7bc4e4",
-    "title": "Desert Locust Guidelines: 1. Biology and behaviour",
+    "id": "f6498741ad581035",
+    "title": "Desert Locust Guidelines",
     "jurisdiction": "Saudi Arabia - MEWA",
     "source_kind": "ministry",
-    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG1e.pdf",
-    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG1e.pdf",
+    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG7e.pdf",
+    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG7e.pdf",
     "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines: 1. Biology and behaviour (FAO / MEWA). This FAO volume covers Biology and behaviour for locust survey and control staff. The Desert Locust plague of 1986-89 and the subsequent upsurges in the 1990s demonstrate the continuing capacity of this historic pest to threaten agriculture and food security over large parts of Africa, the Near East and southwest Asia. They emphasize the need for a permanent system of well-organized surveys of areas that have recently received rains or been flooded, backed up by control capability to treat hoppers and adults efficiently in an environmentally safe and cost-effective manner The events of 1986-89 showed that, in many instances, the existing strategy of preventive control did not function well, for reasons including the inexperience of the field survey teams and campa",
+    "summary": "Desert Locust Guidelines (FAO, 2nd edition 2001). FAO handbook for national and international locust survey and control staff.",
     "key_points": [
-      "Volume: 1. Biology and behaviour",
-      "Who it is for: locust survey, control, and campaign staff."
+      "Who it is for: national and international locust survey and control staff."
     ],
     "topics": [
       "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
+      "forecasting",
+      "information",
+      "FAO",
+      "MEWA"
     ],
     "document_type": "guidance",
     "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:41:02.497533+00:00"
-  },
-  {
-    "id": "3ecd50598cd5e095",
-    "title": "Desert Locust Guidelines: 2. Survey",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG2e.pdf",
-    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG2e.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines: 2. Survey (FAO / MEWA). This FAO volume covers Survey for locust survey and control staff. The Desert Locust plague of 1986-89 and the subsequent upsurges in the 1990s demonstrate the continuing capacity of this historic pest to threaten agriculture and food security over large parts of Africa, the Near East and southwest Asia. They emphasize the need for a permanent system of well-organized surveys of areas that have recently received rains or been flooded, backed up by control capability to treat hoppers and adults efficiently in an environmentally safe and cost-effective manner The events of 1986-89 showed that, in many instances, the existing strategy of preventive control did not function well, for reasons including the inexperience of the field survey teams and campa",
-    "key_points": [
-      "Volume: 2. Survey",
-      "Who it is for: locust survey, control, and campaign staff."
-    ],
-    "topics": [
-      "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
-    ],
-    "document_type": "guidance",
-    "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:41:01.005787+00:00"
-  },
-  {
-    "id": "ba828713585e669b",
-    "title": "Desert Locust Guidelines: 3. Information and forecasting",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG3e.pdf",
-    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG3e.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines: 3. Information and forecasting (FAO / MEWA). This FAO volume covers Information and forecasting for locust survey and control staff. The Desert Locust plague of 1986-89 and the subsequent upsurges in the 1990s demonstrate the continuing capacity of this historic pest to threaten agriculture and food security over large parts of Africa, the Near East and southwest Asia. They emphasize the need for a permanent system of well-organized surveys of areas that have recently received rains or been flooded, backed up by control capability to treat hoppers and adults efficiently in an environmentally safe and cost-effective manner The events of 1986-89 showed that, in many instances, the existing strategy of preventive control did not function well, for reasons including the inexperience of the field survey teams and campa",
-    "key_points": [
-      "Volume: 3. Information and forecasting",
-      "Who it is for: locust survey, control, and campaign staff."
-    ],
-    "topics": [
-      "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
-    ],
-    "document_type": "guidance",
-    "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:41:00.495072+00:00"
-  },
-  {
-    "id": "d32e57fab2834e15",
-    "title": "Desert Locust Guidelines: 4. Control",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG4e.pdf",
-    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG4e.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines: 4. Control (FAO / MEWA). This FAO volume covers Control for locust survey and control staff. The Desert Locust plague of 1986-89 and the subsequent upsurges in the 1990s demonstrate the continuing capability of this historical pest to threaten agriculture and food security over large parts of Africa, the Near East and southwest Asia. They emphasize the need for a permanent system of well-organized surveys of areas that have recently received rains or been flooded, backed up by control capability to treat hoppers and adults efficiently in an environmentally safe and cost-effective manner The events of 1986-89 showed that, in many instances, the existing strategy of preventive control did not function well, for reasons including the inexperience of the field survey teams and c",
-    "key_points": [
-      "Volume: 4. Control",
-      "Who it is for: locust survey, control, and campaign staff."
-    ],
-    "topics": [
-      "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
-    ],
-    "document_type": "guidance",
-    "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:40:59.144119+00:00"
-  },
-  {
-    "id": "6e24fd99ec860d6d",
-    "title": "Desert Locust Guidelines: 5. Campaign organization and execution",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG5e.pdf",
-    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG5e.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines: 5. Campaign organization and execution (FAO / MEWA). This FAO volume covers Campaign organization and execution for locust survey and control staff. The Desert Locust plague of 1986-89 and the subsequent upsurges in the 1990s demonstrate the continuing capacity of this historic pest to threaten agriculture and food security over large parts of Africa, the Near East and southwest Asia. They emphasize the need for a permanent system of well-organized surveys of areas that have recently received rains or been flooded, backed up by control capability to treat hoppers and adults efficiently in an environmentally safe and cost-effective manner The events of 1986-89 showed that, in many instances, the existing strategy of preventive control did not function well, for reasons including the inexperience of the field survey teams and campa",
-    "key_points": [
-      "Volume: 5. Campaign organization and execution",
-      "Who it is for: locust survey, control, and campaign staff."
-    ],
-    "topics": [
-      "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
-    ],
-    "document_type": "guidance",
-    "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:40:58.484013+00:00"
+    "summarized_at": "2026-08-20T15:44:19.508866+00:00"
   },
   {
     "id": "d606be4a65692ed8",
@@ -122,42 +30,155 @@
     "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG6e.pdf",
     "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG6e.pdf",
     "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines: 6. Safety and environmental (FAO / MEWA). This FAO volume covers Safety and environmental for locust survey and control staff. Safety and environment ii educational or other non-commercial purposes are authorized without any prior written permission this information product for resale or other commercial purposes is prohibited without written Chief, Publishing and Multimedia Service, Information Division, FAO, Viale delle Terme di Caracalla 00100 Rome, Italy or by email to copyright@fao.org FAO 2003 this information product do not imply the expression of any opinion whatsoever on the part of the Food and Agriculture Organization of the United Nations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries iii PRE",
+    "summary": "Desert Locust Guidelines: 6. Safety and environmental (FAO, 2nd edition 2001). This volume is the practical handbook on safety and environmental for national and international locust survey and control staff.",
     "key_points": [
-      "Volume: 6. Safety and environmental",
-      "Who it is for: locust survey, control, and campaign staff."
+      "What it is: FAO Desert Locust Guidelines, 6. Safety and environmental.",
+      "Who it is for: national and international locust survey and control staff."
     ],
     "topics": [
       "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
+      "forecasting",
+      "information",
+      "FAO",
+      "MEWA"
     ],
     "document_type": "guidance",
     "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:40:56.928696+00:00"
+    "summarized_at": "2026-08-20T15:44:19.508866+00:00"
   },
   {
-    "id": "f6498741ad581035",
-    "title": "Desert Locust Guidelines",
+    "id": "6e24fd99ec860d6d",
+    "title": "Desert Locust Guidelines: 5. Campaign organization and execution",
     "jurisdiction": "Saudi Arabia - MEWA",
     "source_kind": "ministry",
-    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG7e.pdf",
-    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG7e.pdf",
+    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG5e.pdf",
+    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG5e.pdf",
     "source_page": "https://www.mewa.gov.sa/en/",
-    "summary": "Desert Locust Guidelines (FAO / MEWA). The Desert Locust plague of 1986-89 and the subsequent upsurges in the 1990s demonstrate the continuing capacity of this historic pest to threaten agriculture and food security over large parts of Africa, the Near East and southwest Asia. They emphasize the need for a permanent system of well-organized surveys of areas that have recently received rains or been flooded, backed up by control capability to treat hoppers and adults efficiently in an environmentally safe and cost-effective manner The events of 1986-89 showed that, in many instances, the existing strategy of preventive control did not function well, for reasons including the inexperience of the field survey teams and campa",
+    "summary": "Desert Locust Guidelines: 5. Campaign organization and execution (FAO, 2nd edition 2001). This guideline is intended for use by those individuals who have the responsibility of organizing a locust control campaign in their country .",
     "key_points": [
-      "Who it is for: locust survey, control, and campaign staff."
+      "What it is: FAO Desert Locust Guidelines, 5. Campaign organization and execution.",
+      "Who it is for: national and international locust survey and control staff.",
+      "Send survey/control results to FAO DLIS in Rome within five days (weekly if locusts are present; monthly even if none)."
     ],
     "topics": [
       "desert locust",
-      "guideline",
-      "MEWA",
-      "FAO"
+      "forecasting",
+      "information",
+      "FAO",
+      "MEWA"
     ],
     "document_type": "guidance",
     "method": "extractive_guideline",
-    "summarized_at": "2026-08-20T14:40:55.779898+00:00"
+    "summarized_at": "2026-08-20T15:44:19.508866+00:00"
+  },
+  {
+    "id": "d32e57fab2834e15",
+    "title": "Desert Locust Guidelines: 4. Control",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG4e.pdf",
+    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG4e.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/",
+    "summary": "Desert Locust Guidelines: 4. Control (FAO, 2nd edition 2001). This guideline is intended mainly for use by field staff involved in Desert Locust control operations, including field officers supervising control operations and pilots and engineers of spray aircraft. National process: (1) Decide whether control is necessary . This will depend on the type of target and where it is – see p. 4-5. Step 2.I f control is necessary, decide upon the scale and timing of the operation required. This will depend on factors such as how big the infestation (2) Choose a control method, i.e. equipment, insecticide and technique. The method will depend on factors such as size of infestation and urgency, but also on what resources are available – see p. 6-33. Step 4. Calibrate the control equipment so that the correct a (3) Ensure that control will be safe to people and the environment – local populations should be informed so that they can move livestock, beehives and people away . Operators should use protective clothing and should identify and avoid sensitive ecological areas. (4) Find and delimit the target, i.e. locate the locusts and mark the boundaries of the infestation – see p. 46-51. Step 7. Check that weather conditions are suitable for the control method – see p. 52-53. Step 8. Carry out the control – see p. 54-69. Step 9. Moni (5) Clean, service and store equipment. Store unused insecticides safely – see p. 80-81. Figure 1. Summary of the control process. Desert Locust Guidelines 4 Control 5 Desert Locust Guidelines Is control necessary? IS CONTROL NECESSARY? What is the control target",
+    "key_points": [
+      "What it is: FAO Desert Locust Guidelines, 4. Control.",
+      "Who it is for: national and international locust survey and control staff.",
+      "Decide whether control is necessary . This will depend on the type of target and where it is – see p. 4-5. Step 2.I f control is necessary, decide upon the scale and timing of the operation required. This will depend on factors such as how big the infestation",
+      "Choose a control method, i.e. equipment, insecticide and technique. The method will depend on factors such as size of infestation and urgency, but also on what resources are available – see p. 6-33. Step 4. Calibrate the control equipment so that the correct a",
+      "Ensure that control will be safe to people and the environment – local populations should be informed so that they can move livestock, beehives and people away . Operators should use protective clothing and should identify and avoid sensitive ecological areas.",
+      "Find and delimit the target, i.e. locate the locusts and mark the boundaries of the infestation – see p. 46-51. Step 7. Check that weather conditions are suitable for the control method – see p. 52-53. Step 8. Carry out the control – see p. 54-69. Step 9. Moni"
+    ],
+    "topics": [
+      "desert locust",
+      "forecasting",
+      "information",
+      "FAO",
+      "MEWA"
+    ],
+    "document_type": "guidance",
+    "method": "extractive_guideline",
+    "summarized_at": "2026-08-20T15:44:19.508866+00:00"
+  },
+  {
+    "id": "3ecd50598cd5e095",
+    "title": "Desert Locust Guidelines: 2. Survey",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG2e.pdf",
+    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG2e.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/",
+    "summary": "Desert Locust Guidelines: 2. Survey (FAO, 2nd edition 2001). This guideline is intended mainly for use by field staff involved in locust survey operations. Some parts will be useful reference material for training new staff and providing refresher training to experienced locust officers. National process: (1) Identify who will make a survey . Usually this will be a Locust Field Officer but it could be a local scout followed up by a Locust Field Officer to confirm findings – see p. 6-7. Step 2. Determine where and when to make the survey . This should be in those pl (2) Decide which type of survey . In a recession, this will usually be assessment – see p. 10-11. Step 4. Decide whether the survey is to be done by ground or by air . Aerial survey is more suitable for identifying areas of green vegetation after rainfall. It will (3) Prepare the vehicles and make sure you have the necessary equipment – see p. 22-23. Step 6. Make a rapid assessment survey unless you know that locusts are present. This is usually done by foot and vehicle transects at survey stops and by interviewing people a (4) Collect the required information and record it on the survey forms – see p. 26-45. Step 8.T ransmit the survey results to the Locust Unit headquarters as quickly as possible – see p. 46-47. Step 9.I fs ignificant populations are found, make a search survey to (5) Based on the survey results, plan the timing and location of the next survey – see p. 8-9. 5 Desert Locust Guidelines Why make surveys? Desert Locust Guidelines 4 Survey Biology and behaviourWhat are locusts? Figure 2. Some of the different decisions that shou",
+    "key_points": [
+      "What it is: FAO Desert Locust Guidelines, 2. Survey.",
+      "Who it is for: national and international locust survey and control staff.",
+      "Identify who will make a survey . Usually this will be a Locust Field Officer but it could be a local scout followed up by a Locust Field Officer to confirm findings – see p. 6-7. Step 2. Determine where and when to make the survey . This should be in those pl",
+      "Decide which type of survey . In a recession, this will usually be assessment – see p. 10-11. Step 4. Decide whether the survey is to be done by ground or by air . Aerial survey is more suitable for identifying areas of green vegetation after rainfall. It will",
+      "Prepare the vehicles and make sure you have the necessary equipment – see p. 22-23. Step 6. Make a rapid assessment survey unless you know that locusts are present. This is usually done by foot and vehicle transects at survey stops and by interviewing people a",
+      "Collect the required information and record it on the survey forms – see p. 26-45. Step 8.T ransmit the survey results to the Locust Unit headquarters as quickly as possible – see p. 46-47. Step 9.I fs ignificant populations are found, make a search survey to"
+    ],
+    "topics": [
+      "desert locust",
+      "forecasting",
+      "information",
+      "FAO",
+      "MEWA"
+    ],
+    "document_type": "guidance",
+    "method": "extractive_guideline",
+    "summarized_at": "2026-08-20T15:44:19.508866+00:00"
+  },
+  {
+    "id": "450396388f7bc4e4",
+    "title": "Desert Locust Guidelines: 1. Biology and behaviour",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG1e.pdf",
+    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG1e.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/",
+    "summary": "Desert Locust Guidelines: 1. Biology and behaviour (FAO, 2nd edition 2001). This guideline is intended mainly for use by field staff involved in locust survey and control operations, including pilots of survey and spray aircraft.",
+    "key_points": [
+      "What it is: FAO Desert Locust Guidelines, 1. Biology and behaviour.",
+      "Who it is for: national and international locust survey and control staff."
+    ],
+    "topics": [
+      "desert locust",
+      "forecasting",
+      "information",
+      "FAO",
+      "MEWA"
+    ],
+    "document_type": "guidance",
+    "method": "extractive_guideline",
+    "summarized_at": "2026-08-20T15:44:19.508866+00:00"
+  },
+  {
+    "id": "ba828713585e669b",
+    "title": "Desert Locust Guidelines: 3. Information and forecasting",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG3e.pdf",
+    "open_url": "https://mewa.gov.sa/en/Ministry/Agencies/AgencyofAgriculture/SiteAssets/347_en_DLG3e.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/",
+    "summary": "FAO Desert Locust Guidelines, volume 3 — Information and forecasting (K. Cressman, 2nd edition, 2001). This is the practical handbook for the national Locust Information Officer: the person at Locust Unit headquarters who receives survey and control reports, meteorological data and FAO bulletins, and turns them into a situation assessment and a forecast.\n\nPurpose: show how to manage locust information so the Unit Head can decide where to survey next, which infestations to treat first, and when to request donor or FAO help. Irregular, late or poor-quality data leads to bad decisions, wasted resources and crop loss.\n\nThe officer must collect four kinds of data, each with a date and GPS location: ecology (habitat, vegetation condition, soil moisture), rainfall (when it actually fell, not when it was reported), locusts (maturity, density, phase, behaviour, area infested) and control (pesticide, hectares treated, efficacy). The most reliable reports are FAO Desert Locust Survey and Control Forms completed by field officers at the site; reports from farmers, travellers or scouts stay unconfirmed until a field officer checks them.\n\nThe national process is: (1) collect and register incoming reports; (2) correct, plot and analyse each one; (3) assess the current situation and forecast breeding and migration; (4) brief the Locust Unit Head to plan operations; (5) send results to FAO’s Desert Locust Information Service (DLIS) in Rome within five days of a survey — weekly while locusts are present, and monthly even if there are none; (6) archive everything for later case studies.\n\nForecasts estimate whether adults will stay, migrate, breed or gregarize, and when hoppers will hatch and fledge. They depend on rainfall, temperature and wind, so they are estimates, not certainties. Gregarious or crop-threatening populations are the first control priority.",
+    "key_points": [
+      "Handbook for the national Locust Information Officer at Locust Unit HQ — not a form and not a field-survey manual.",
+      "Required data (each with date and coordinates): ecology, rainfall, locusts, control.",
+      "Most reliable source: FAO Survey and Control Form from field officers; treat other reports as unconfirmed.",
+      "Six steps: register → correct/plot/analyse → assess & forecast → brief the Unit Head → report to FAO DLIS → archive.",
+      "Send results to FAO DLIS within 5 days (weekly if locusts are present; monthly even if none).",
+      "Forecasts: will adults stay, migrate, breed or gregarize? When will hoppers hatch and fledge?",
+      "Use the forecast to plan surveys (rain, green vegetation, unsurveyed areas) and set control priorities (gregarious first)."
+    ],
+    "topics": [
+      "desert locust",
+      "forecasting",
+      "information officer",
+      "FAO",
+      "MEWA"
+    ],
+    "document_type": "guidance",
+    "method": "document_read",
+    "summarized_at": "2026-08-20T15:43:41.649021+00:00"
   },
   {
     "id": "8bf708dd6a2a5898",
