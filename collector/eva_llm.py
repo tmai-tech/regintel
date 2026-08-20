@@ -673,6 +673,118 @@ def looks_like_regulation(title: str, text: str, url: str = "") -> bool:
     return False
 
 
+def looks_like_brand_guide(title: str, text: str, url: str = "") -> bool:
+    blob = f"{title}\n{url}\n{(text or '')[:2500]}"
+    if re.search(r"brand\s+guideline|visual identity|logo\s*-\s*main logo|color palette", blob, re.I):
+        return True
+    hexes = len(re.findall(r"Hex\s*#?[0-9A-Fa-f]{6}", text or "", flags=re.I))
+    if hexes >= 3 and re.search(r"\blogo\b|\bfont\b", text or "", re.I):
+        return True
+    return False
+
+
+def brand_guide_summary(
+    *,
+    title: str,
+    text: str,
+    jurisdiction: str = "",
+    url: str = "",
+) -> dict[str, Any]:
+    """Visual identity deck: who it is for and what identity rules it sets — not a dump of hex codes."""
+    cover = []
+    for raw in (text or "").splitlines():
+        line = _strip_form_noise(raw)
+        if not line or is_placeholder_title(line):
+            continue
+        if re.match(r"hex\s*#", line, re.I) or line.startswith("Aa"):
+            continue
+        if 3 <= len(line) <= 80:
+            cover.append(line)
+        if len(cover) >= 8:
+            break
+    event = ""
+    for line in cover:
+        if re.search(r"world water forum|forum|riyadh\s+20\d{2}", line, re.I):
+            event = line
+            break
+    display = ""
+    if event and re.search(r"brand", " ".join(cover), re.I):
+        display = re.sub(r"\s+", " ", f"{event} brand guideline").strip()
+        display = re.sub(r"brand guideline brand guideline", "brand guideline", display, flags=re.I)
+    if not display:
+        stem = Path_stem_from_url(url) or title
+        stem = re.sub(r"[_-]+", " ", stem)
+        display = stem if not is_placeholder_title(stem) else "Brand guideline"
+    display = re.sub(r"\s+", " ", display).strip()
+
+    hexes = re.findall(r"#?\s*([0-9A-Fa-f]{6})", text or "")
+    hexes = ["#" + h.upper() for h in hexes if h.lower() not in {"ffffff", "000000"}]
+    # unique preserve order
+    seen = set()
+    palette = []
+    for h in hexes:
+        if h not in seen:
+            seen.add(h)
+            palette.append(h)
+
+    fonts = []
+    for raw in (text or "").splitlines():
+        line = _strip_form_noise(raw)
+        if re.search(r"source sans|gotham|helvetica|arial|noto|din |roboto|inter\b", line, re.I):
+            if line not in fonts and not line.startswith("Aa") and len(line) < 60:
+                fonts.append(line)
+
+    site = ""
+    m = re.search(r"(www\.[A-Za-z0-9.-]+\.[a-z]{2,})", text or "", re.I)
+    if m:
+        site = m.group(1)
+
+    has_logo = bool(re.search(r"main logo|logo\s*-\s*variation|mono\s*color", text or "", re.I))
+    parts = [
+        f"{display}. This is a visual identity / brand guide, not a water-policy or legal text. "
+        "It tells partners, media and designers how to use the official logo, colours and type "
+        "so materials look consistent."
+    ]
+    if event or re.search(r"riyadh", text or "", re.I):
+        parts.append(
+            "It is for the 11th World Water Forum (Riyadh 2027)."
+            if re.search(r"11th|riyadh\s+2027", f"{event} {text}", re.I)
+            else f"Brand: {event}."
+        )
+    bits = []
+    if has_logo:
+        bits.append("logo (main, variation, mono-colour)")
+    if palette:
+        bits.append("colour palette " + ", ".join(palette[:6]))
+    if fonts:
+        bits.append("typefaces " + "; ".join(fonts[:4]))
+    if bits:
+        parts.append("It specifies: " + "; ".join(bits) + ".")
+    if site:
+        parts.append(f"Official site: {site}.")
+
+    points = [
+        "What it is: a brand/identity guide for designers and partners — not a regulation.",
+    ]
+    if has_logo:
+        points.append("Logo: use only the official main, variation and mono-colour versions.")
+    if palette:
+        points.append("Colours: " + ", ".join(palette[:6]))
+    if fonts:
+        points.append("Fonts: " + "; ".join(fonts[:4]))
+    if site:
+        points.append("Website: " + site)
+
+    return {
+        "summary": re.sub(r"\s+", " ", " ".join(parts)).strip()[:1600],
+        "key_points": points[:8],
+        "topics": ["brand", "identity", "World Water Forum"],
+        "document_type": "guidance",
+        "method": "extractive_brand",
+        "display_title": display,
+    }
+
+
 def regulation_summary(
     *,
     title: str,
@@ -832,6 +944,8 @@ def extractive_summary(
     text = clean_extracted_text(text)
     if looks_like_form(title, text, url):
         return form_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
+    if looks_like_brand_guide(title, text, url):
+        return brand_guide_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
     if looks_like_regulation(title, text, url):
         return regulation_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
     if looks_like_guideline(title, text, url):
