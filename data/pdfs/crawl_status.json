@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-20T14:21:41.422973+00:00",
+  "updated_at": "2026-08-20T14:23:27.265493+00:00",
   "phase": "downloading",
-  "message": "downloading 20/390 for Saudi Arabia - MOJ (ok=16 scanned=4 fail=0)",
+  "message": "downloading 30/390 for Saudi Arabia - MOJ (ok=25 scanned=5 fail=0)",
   "run_id": "32378936273",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/32378936273",
   "totals": {
@@ -10,10 +10,10 @@
     "source_reports": 53,
     "jurisdictions": 14,
     "ministry_listed": 390,
-    "ministry_downloaded": 16,
+    "ministry_downloaded": 25,
     "ministry_failed": 0,
-    "ministry_scanned": 4,
-    "ministry_to_download": 370
+    "ministry_scanned": 5,
+    "ministry_to_download": 360
   },
   "by_jurisdiction": [
     {
@@ -84,10 +84,10 @@
     "url": "https://www.moj.gov.sa/",
     "source_kind": "ministry_pipeline",
     "listed": 390,
-    "downloaded": 16,
+    "downloaded": 25,
     "download_failed": 0,
-    "scanned_pdf": 4,
-    "to_download": 370,
+    "scanned_pdf": 5,
+    "to_download": 360,
     "pages_visited": 58
   },
   "recent_pdfs": [
@@ -355,10 +355,10 @@
     "label": "Saudi Arabia - MOJ",
     "target_url": "https://www.moj.gov.sa/",
     "counts": {
-      "to_download": 370,
-      "downloaded": 16,
+      "to_download": 360,
+      "downloaded": 25,
       "download_failed": 0,
-      "scanned_pdf": 4,
+      "scanned_pdf": 5,
       "listed_total": 390
     },
     "discovery_methods": {
@@ -370,6 +370,6 @@
     "sitemaps_used": [],
     "datasources_found": 0,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-20T14:21:38.742872+00:00"
+    "updated_at": "2026-08-20T14:23:24.567405+00:00"
   }
 }
