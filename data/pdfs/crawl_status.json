@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-20T14:26:28.152491+00:00",
-  "phase": "downloading",
-  "message": "downloading 40/390 for Saudi Arabia - MOJ (ok=33 scanned=7 fail=0)",
+  "updated_at": "2026-08-20T14:39:11.845889+00:00",
+  "phase": "discovering",
+  "message": "discovering ia.gov.sa: pages=50 listed=0",
   "run_id": "32378936273",
   "github_run_url": "https://github.com/tmai-tech/regintel/actions/runs/32378936273",
   "totals": {
@@ -9,11 +9,11 @@
     "errors": 22131,
     "source_reports": 53,
     "jurisdictions": 14,
-    "ministry_listed": 390,
-    "ministry_downloaded": 33,
+    "ministry_listed": 0,
+    "ministry_downloaded": 0,
     "ministry_failed": 0,
-    "ministry_scanned": 7,
-    "ministry_to_download": 350
+    "ministry_scanned": 0,
+    "ministry_to_download": 0
   },
   "by_jurisdiction": [
     {
@@ -80,15 +80,15 @@
     }
   ],
   "current_source": {
-    "jurisdiction": "Saudi Arabia - MOJ",
-    "url": "https://www.moj.gov.sa/",
+    "jurisdiction": "Saudi Arabia - IA",
+    "url": "https://www.ia.gov.sa/",
     "source_kind": "ministry_pipeline",
-    "listed": 390,
-    "downloaded": 33,
+    "listed": 0,
+    "downloaded": 0,
     "download_failed": 0,
-    "scanned_pdf": 7,
-    "to_download": 350,
-    "pages_visited": 58
+    "scanned_pdf": 0,
+    "to_download": 0,
+    "pages_visited": 50
   },
   "recent_pdfs": [
     {
@@ -352,24 +352,22 @@
   },
   "manifest_generated_at": "2026-08-20T14:16:17.999771+00:00",
   "ministry_document_list": {
-    "label": "Saudi Arabia - MOJ",
-    "target_url": "https://www.moj.gov.sa/",
+    "label": "Saudi Arabia - IA",
+    "target_url": "https://www.ia.gov.sa/",
     "counts": {
-      "to_download": 350,
-      "downloaded": 33,
+      "to_download": 0,
+      "downloaded": 0,
       "download_failed": 0,
-      "scanned_pdf": 7,
-      "listed_total": 390
+      "scanned_pdf": 0,
+      "listed_total": 0
     },
-    "discovery_methods": {
-      "seed_list": 4,
-      "pw_library": 378,
-      "script": 8
-    },
-    "pages_visited": 58,
-    "sitemaps_used": [],
-    "datasources_found": 0,
+    "discovery_methods": {},
+    "pages_visited": 50,
+    "sitemaps_used": [
+      "https://ia.gov.sa/_layouts/15/sitemap.aspx"
+    ],
+    "datasources_found": 94,
     "list_file": "data/ministry_document_list.json",
-    "updated_at": "2026-08-20T14:26:25.374910+00:00"
+    "updated_at": "2026-08-20T14:39:09.171741+00:00"
   }
 }

@@ -1,13 +1,13 @@
 {
   "code": "IA",
-  "url": "https://ia.gov.sa/",
+  "url": "https://www.ia.gov.sa/",
   "label": "Saudi Arabia - IA",
   "phase": "discovering",
-  "message": "discovering documents on https://ia.gov.sa/",
-  "pages": 0,
+  "message": "discovering ia.gov.sa: pages=50 listed=0",
+  "pages": 50,
   "listed": 0,
   "downloaded": 0,
   "to_download": 0,
-  "updated_at": "2026-08-20T14:15:37.115682+00:00",
+  "updated_at": "2026-08-20T14:39:11.845889+00:00",
   "run_id": "32378936273"
 }
