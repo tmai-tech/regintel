@@ -673,9 +673,24 @@ def looks_like_regulation(title: str, text: str, url: str = "") -> bool:
     return False
 
 
+_ARABIC_RE = re.compile(r"[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]")
+
+
+def _mostly_arabic(s: str) -> bool:
+    letters = [c for c in s if c.isalpha() or _ARABIC_RE.search(c)]
+    if len(letters) < 4:
+        return False
+    ar = sum(1 for c in letters if _ARABIC_RE.search(c))
+    return ar / len(letters) >= 0.4
+
+
 def looks_like_brand_guide(title: str, text: str, url: str = "") -> bool:
     blob = f"{title}\n{url}\n{(text or '')[:2500]}"
-    if re.search(r"brand\s+guideline|visual identity|logo\s*-\s*main logo|color palette", blob, re.I):
+    if re.search(
+        r"brand\s+guideline|visual identity|identity\s+guide|logo\s*-\s*main logo|color palette",
+        blob,
+        re.I,
+    ):
         return True
     hexes = len(re.findall(r"Hex\s*#?[0-9A-Fa-f]{6}", text or "", flags=re.I))
     if hexes >= 3 and re.search(r"\blogo\b|\bfont\b", text or "", re.I):
@@ -694,9 +709,9 @@ def brand_guide_summary(
     cover = []
     for raw in (text or "").splitlines():
         line = _strip_form_noise(raw)
-        if not line or is_placeholder_title(line):
+        if not line or is_placeholder_title(line) or _mostly_arabic(line):
             continue
-        if re.match(r"hex\s*#", line, re.I) or line.startswith("Aa"):
+        if re.match(r"hex\s*#", line, re.I) or line.startswith("Aa") or re.search(r"lorem ipsum", line, re.I):
             continue
         if 3 <= len(line) <= 80:
             cover.append(line)
@@ -704,11 +719,17 @@ def brand_guide_summary(
             break
     event = ""
     for line in cover:
-        if re.search(r"world water forum|forum|riyadh\s+20\d{2}", line, re.I):
+        if re.search(
+            r"world water forum|environment week|enva|riyadh\s+20\d{2}|visual identity",
+            line,
+            re.I,
+        ):
             event = line
             break
     display = ""
-    if event and re.search(r"brand", " ".join(cover), re.I):
+    if re.search(r"environment week", f"{title} {url} {text[:800]}", re.I):
+        display = "Environment Week 2026 visual identity guideline"
+    elif event and re.search(r"brand|identity", " ".join(cover), re.I):
         display = re.sub(r"\s+", " ", f"{event} brand guideline").strip()
         display = re.sub(r"brand guideline brand guideline", "brand guideline", display, flags=re.I)
     if not display:
@@ -730,7 +751,11 @@ def brand_guide_summary(
     fonts = []
     for raw in (text or "").splitlines():
         line = _strip_form_noise(raw)
-        if re.search(r"source sans|gotham|helvetica|arial|noto|din |roboto|inter\b", line, re.I):
+        if re.search(
+            r"source sans|gotham|vazirmatn|helvetica|arial|noto|din |roboto|inter\b",
+            line,
+            re.I,
+        ):
             if line not in fonts and not line.startswith("Aa") and len(line) < 60:
                 fonts.append(line)
 
@@ -745,7 +770,12 @@ def brand_guide_summary(
         "It tells partners, media and designers how to use the official logo, colours and type "
         "so materials look consistent."
     ]
-    if event or re.search(r"riyadh", text or "", re.I):
+    if re.search(r"environment week", f"{title} {text[:1500]}", re.I):
+        parts.append(
+            "It is the official identity guide for Saudi Environment Week 2026 (ENVA), "
+            "a national awareness campaign."
+        )
+    elif event or re.search(r"riyadh", text or "", re.I):
         parts.append(
             "It is for the 11th World Water Forum (Riyadh 2027)."
             if re.search(r"11th|riyadh\s+2027", f"{event} {text}", re.I)
@@ -985,6 +1015,10 @@ def extractive_summary(
         if re.fullmatch(r"[.\s\d\-–—]+", s):
             continue
         if is_placeholder_title(s) or re.match(r"(?i)click here", s):
+            continue
+        if _mostly_arabic(s):
+            continue
+        if re.search(r"lorem ipsum", s, re.I):
             continue
         if _is_toc_line(s) or s.count(".") > 8:
             continue
