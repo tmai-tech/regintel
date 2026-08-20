@@ -26,7 +26,7 @@ sys.path.insert(0, str(ROOT / "collector"))
 sys.path.insert(0, str(ROOT))
 
 from eva_extract import extract_for_record, looks_like_glyph_dump  # type: ignore
-from eva_llm import get_client, summarize_pdf_text  # type: ignore
+from eva_llm import get_client, is_placeholder_title, summarize_pdf_text  # type: ignore
 
 EVA_DIR = ROOT / "data" / "eva"
 SUMMARIES_JSONL = EVA_DIR / "summaries.jsonl"
@@ -113,6 +113,25 @@ def summary_is_glyph_junk(rec: dict) -> bool:
     return looks_like_glyph_dump(blob)
 
 
+def summary_is_weak(rec: dict) -> bool:
+    """True when the stored summary is blanks, TOC dots, or a click-here dump."""
+    import re
+
+    summary = str(rec.get("summary") or "")
+    title = str(rec.get("title") or "")
+    if summary_is_glyph_junk(rec):
+        return True
+    if summary.lower().lstrip().startswith("click here"):
+        return True
+    if summary.count("_") >= 8 or re.search(r"_{5,}", summary):
+        return True
+    if re.search(r"\.{6,}\s*\d+", summary):
+        return True
+    if re.fullmatch(r"[\s\-–—._]+", summary or ""):
+        return True
+    return False
+
+
 def publish_web(all_summaries: dict[str, dict], *, max_web: int = 5000) -> None:
     """Write compact summaries for the static site (newest first)."""
     rows = list(all_summaries.values())
@@ -162,6 +181,11 @@ def main():
         action="store_true",
         help="Re-summarize rows whose text is /uniXXXX glyph dumps",
     )
+    p.add_argument(
+        "--fix-weak",
+        action="store_true",
+        help="Re-summarize form/TOC/click-here junk summaries",
+    )
     p.add_argument("--max-pages", type=int, default=15, help="PDF pages to read per file")
     p.add_argument("--delay", type=float, default=0.4)
     p.add_argument("--publish-only", action="store_true", help="Only rebuild web JSON from jsonl")
@@ -181,6 +205,10 @@ def main():
     if args.fix_glyphs:
         broken_ids = {i for i, r in existing.items() if summary_is_glyph_junk(r)}
         print(f"Glyph-junk summaries to rebuild: {len(broken_ids)}")
+    if args.fix_weak:
+        weak_ids = {i for i, r in existing.items() if summary_is_weak(r)}
+        broken_ids |= weak_ids
+        print(f"Weak (form/TOC/click-here) summaries to rebuild: {len(weak_ids)}")
 
     juris = [j.lower() for j in (args.jurisdictions or [])]
     todo = []
@@ -191,7 +219,7 @@ def main():
             by_id[rid] = rec
     # --fix-glyphs: start from existing rows so we still have URL/path if catalog dropped them
     source_rows = list(catalog)
-    if args.fix_glyphs:
+    if args.fix_glyphs or args.fix_weak:
         extra = []
         for rid in broken_ids:
             if rid in by_id:
@@ -209,12 +237,12 @@ def main():
         rid = rec.get("id") or rec.get("sha256")
         if not rid:
             continue
-        if args.fix_glyphs:
+        if args.fix_glyphs or args.fix_weak:
             if rid not in broken_ids:
                 continue
         elif not args.reprocess and rid in existing:
             continue
-        if juris and not args.fix_glyphs:
+        if juris and not args.fix_glyphs and not args.fix_weak:
             j = (rec.get("jurisdiction") or "").lower()
             if not any(x in j for x in juris):
                 continue
@@ -232,7 +260,7 @@ def main():
         return (local, saudi)
 
     todo.sort(key=rank)
-    if args.limit and not args.fix_glyphs:
+    if args.limit and not args.fix_glyphs and not args.fix_weak:
         todo = todo[: args.limit]
 
     print(f"Processing {len(todo)} PDFs…")
@@ -249,6 +277,9 @@ def main():
                 url=rec.get("open_url") or rec.get("url") or "",
                 text=text,
             )
+            nice_title = s.get("display_title") or title
+            if is_placeholder_title(title) and nice_title:
+                title = nice_title
             out = {
                 "id": rid,
                 "title": title,
@@ -293,7 +324,7 @@ def main():
         if i % 10 == 0:
             publish_web(existing)
 
-    if args.fix_glyphs or args.reprocess:
+    if args.fix_glyphs or args.fix_weak or args.reprocess:
         rewrite_jsonl(existing)
     publish_web(existing)
     print(json.dumps({"ok": ok, "fail": fail, "total_summaries": len(existing)}, indent=2))
