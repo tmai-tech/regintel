@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "collector"))
@@ -64,13 +65,20 @@ def recover_one(code: str, url: str, label: str, list_rel: str, seed_rel: str, h
     if not missing:
         return {"code": code, "missing": 0, "ok": 0, "fail": 0}
 
+    def encode_url(u: str) -> str:
+        parts = urlsplit(u)
+        path = parts.path.replace(" ", "%20")
+        return urlunsplit((parts.scheme, parts.netloc, path, parts.query, parts.fragment))
+
+    encoded = [encode_url(u) for u in missing]
     tmp = ROOT / "data" / f"_recover_{code.lower()}.txt"
-    tmp.write_text("\n".join(missing) + "\n", encoding="utf-8")
+    tmp.write_text("\n".join(encoded) + "\n", encoding="utf-8")
     pipe = MinistryPipeline(
         url=url,
         label=label,
         max_pages=1,
         delay=0.15,
+        max_file_mb=250,
         download=True,
         insecure=True,
         seed_list=str(tmp),

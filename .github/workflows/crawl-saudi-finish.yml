@@ -1,5 +1,6 @@
-# Finish remaining Saudi sites: cut-off crawls + zeros + thin catalogs.
-# Skips SDAIA / MEWA / MC / NCA / CMA (already published in volume).
+# Finish remaining Saudi sites that still have 0 or very few catalog PDFs.
+# Skips volume-complete sites (SDAIA/MEWA/MC/NCA/CMA/MOMAH/ZATCA/SASO/GOSI)
+# and known-dead ones (TGA user-stopped, MOI/Nazaha unreachable).
 name: Crawl Saudi remaining
 
 on:
@@ -23,84 +24,44 @@ jobs:
       max-parallel: 8
       matrix:
         include:
-          - code: MOMAH
-            url: https://momah.gov.sa
-            label: Saudi Arabia - MOMAH
-            max_pages: "3000"
-            seed: data/momah_found_docs.txt
-          - code: ZATCA
-            url: https://zatca.gov.sa
-            label: Saudi Arabia - ZATCA
-            max_pages: "3000"
-            seed: data/zatca_found_docs.txt
           - code: SAIP
             url: https://www.saip.gov.sa
             label: Saudi Arabia - SAIP
             max_pages: "3000"
             seed: ""
-          - code: TGA
-            url: https://tga.gov.sa
-            label: Saudi Arabia - TGA
-            max_pages: "2000"
-            seed: ""
-          - code: MOF
-            url: https://www.mof.gov.sa
-            label: Saudi Arabia - MOF
-            max_pages: "2000"
-            seed: ""
-          - code: IA
-            url: https://ia.gov.sa
-            label: Saudi Arabia - IA
-            max_pages: "2000"
-            seed: ""
-          - code: SOCPA
-            url: https://socpa.org.sa
-            label: Saudi Arabia - SOCPA
-            max_pages: "2000"
-            seed: ""
-          - code: MOI
-            url: https://www.moi.gov.sa
-            label: Saudi Arabia - MOI
-            max_pages: "2000"
-            seed: ""
-          - code: NAZAHA
-            url: https://nazaha.gov.sa
-            label: Saudi Arabia - Nazaha
-            max_pages: "2000"
-            seed: ""
-          - code: SAMA
-            url: https://rulebook.sama.gov.sa/en
-            label: Saudi Arabia - SAMA
-            max_pages: "2000"
+          - code: CST
+            url: https://www.cst.gov.sa/en/regulations
+            label: Saudi Arabia - CST
+            max_pages: "3000"
             seed: ""
           - code: MOJ
-            url: https://www.moj.gov.sa
+            url: https://www.moj.gov.sa/Documents/Regulations/pdf/En/
             label: Saudi Arabia - MOJ
-            max_pages: "2000"
-            seed: ""
+            max_pages: "3000"
+            seed: data/moj_seed_pdfs.txt
           - code: GAC
             url: https://gac.gov.sa
             label: Saudi Arabia - GAC
-            max_pages: "2000"
-            seed: ""
-          - code: CST
-            url: https://www.cst.gov.sa
-            label: Saudi Arabia - CST
-            max_pages: "2000"
+            max_pages: "3000"
             seed: ""
           - code: TADAWUL
             url: https://www.saudiexchange.sa
             label: Saudi Arabia - Tadawul
-            max_pages: "2000"
+            max_pages: "3000"
             seed: ""
-          - code: GOSI
-            url: https://www.gosi.gov.sa
-            label: Saudi Arabia - GOSI
-            max_pages: "2000"
+          - code: SOCPA
+            url: https://socpa.org.sa/Socpa/Professional-standards.aspx?lang=en-us
+            label: Saudi Arabia - SOCPA
+            max_pages: "3000"
             seed: ""
-          - code: SASO
-            url: https://www.saso.gov.sa
-            label: Saudi Arabia - SASO
+          - code: SAMA
+            url: https://rulebook.sama.gov.sa/en
+            label: Saudi Arabia - SAMA
+            max_pages: "3000"
+            seed: ""
+          - code: IA
+            url: https://ia.gov.sa
+            label: Saudi Arabia - IA
             max_pages: "2000"
             seed: ""
     concurrency:
