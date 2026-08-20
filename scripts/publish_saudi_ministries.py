@@ -58,27 +58,43 @@ def canonical_pdf_key(p: dict) -> str:
 
 
 def _prefer_row(a: dict, b: dict) -> dict:
+    """Keep the cleaner English listing when two rows are the same file."""
     def hashed(p: dict) -> int:
         t = f"{p.get('title') or ''} {p.get('filename') or ''}"
         return 1 if re.search(r"[_\s-]e?[0-9a-f]{6,10}", t, re.I) else 0
 
-    return a if hashed(a) <= hashed(b) else b
+    def latin_score(p: dict) -> tuple:
+        t = str(p.get("title") or "")
+        latin = sum(c.isascii() and c.isalpha() for c in t)
+        arabic = sum(1 for c in t if "\u0600" <= c <= "\u06ff")
+        return (hashed(p) == 0, latin > arabic, latin, -arabic)
+
+    return a if latin_score(a) >= latin_score(b) else b
 
 
 def dedupe_pdfs(pdfs: list) -> list:
-    """Collapse www vs apex and hash-suffix clones of the same URL. Keep AR/EN path twins."""
-    by_key: dict[str, dict] = {}
+    """One row per file: www/hash clones and AR/EN copies of the same bytes."""
+    by_token: dict[str, dict] = {}
+    key_to_token: dict[str, str] = {}
     order: list[str] = []
     for p in pdfs:
+        pid = str(p.get("id") or "")
         key = canonical_pdf_key(p)
-        if not key:
-            key = f"row-{len(order)}"
-        if key in by_key:
-            by_key[key] = _prefer_row(by_key[key], p)
+        if pid and pid in by_token:
+            by_token[pid] = _prefer_row(by_token[pid], p)
+            if key:
+                key_to_token[key] = pid
             continue
-        by_key[key] = p
-        order.append(key)
-    return [by_key[k] for k in order]
+        if key and key in key_to_token:
+            keep = key_to_token[key]
+            by_token[keep] = _prefer_row(by_token[keep], p)
+            continue
+        token = pid or key or f"row-{len(order)}"
+        by_token[token] = p
+        if key:
+            key_to_token[key] = token
+        order.append(token)
+    return [by_token[t] for t in order]
 
 
 def _write(path: Path, obj) -> None:

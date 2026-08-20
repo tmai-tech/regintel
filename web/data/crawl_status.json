@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-20T16:17:47.680006+00:00",
+  "updated_at": "2026-08-20T16:23:17.082634+00:00",
   "phase": "idle",
-  "message": "Saudi ministries · 1949 PDFs · 1897 summaries",
+  "message": "Saudi ministries · 1704 PDFs · 1897 summaries",
   "totals": {
-    "pdfs": 1949,
+    "pdfs": 1704,
     "errors": 0,
     "source_reports": 0,
     "jurisdictions": 14,
@@ -16,15 +16,15 @@
   "by_jurisdiction": [
     {
       "jurisdiction": "Saudi Arabia - SDAIA",
-      "count": 804
+      "count": 572
     },
     {
       "jurisdiction": "Saudi Arabia - MEWA",
-      "count": 308
+      "count": 306
     },
     {
       "jurisdiction": "Saudi Arabia - MOMAH",
-      "count": 307
+      "count": 297
     },
     {
       "jurisdiction": "Saudi Arabia - MC",
@@ -48,7 +48,7 @@
     },
     {
       "jurisdiction": "Saudi Arabia - GOSI",
-      "count": 32
+      "count": 31
     },
     {
       "jurisdiction": "Saudi Arabia - MOF",
@@ -74,7 +74,7 @@
   "by_source_kind": [
     {
       "source_kind": "ministry",
-      "count": 1949
+      "count": 1704
     }
   ],
   "current_source": null,

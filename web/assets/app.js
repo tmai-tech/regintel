@@ -1276,13 +1276,21 @@
     const sitePdfs = (pdfs || [])
       .filter(pred)
       .slice()
-      .sort((a, b) => Number(titleLooksHashed(a.title)) - Number(titleLooksHashed(b.title)));
+      .sort((a, b) => {
+        const ah = Number(titleLooksHashed(a.title));
+        const bh = Number(titleLooksHashed(b.title));
+        if (ah !== bh) return ah - bh;
+        const aEn = detectSourceLang(a.title || "") === "en" ? 0 : 1;
+        const bEn = detectSourceLang(b.title || "") === "en" ? 0 : 1;
+        return aEn - bEn;
+      });
     for (const p of sitePdfs) {
       const url = p.open_url || p.url || "";
       const k = normalizePdfKey(url);
       const eva = (k && byUrl.get(k)) || (p.id && byId.get(String(p.id))) || null;
       const id = String(p.id || (eva && eva.id) || k || rows.length);
-      if (k && seen.has("url:" + k)) continue;
+      if ((id && seen.has("id:" + id)) || (k && seen.has("url:" + k))) continue;
+      if (id) seen.add("id:" + id);
       if (k) seen.add("url:" + k);
       const summary = eva && eva.summary ? String(eva.summary).trim() : "";
       const keyPoints = Array.isArray(eva && eva.key_points)
@@ -2767,12 +2775,16 @@
     }));
     const byCode = new Map(known.map((s) => [s.code, { ...s, count: 0, summaries: 0 }]));
     const seenFile = new Set();
+    const seenId = new Set();
     for (const p of pdfs || []) {
       const code = siteCodeForPdf(p);
       if (!code) continue;
       const url = p.open_url || p.url || "";
       const fileKey = canonicalPdfKey(url);
+      const id = p.id ? String(p.id) : "";
+      if (id && seenId.has(code + ":" + id)) continue;
       if (fileKey && seenFile.has(code + ":" + fileKey)) continue;
+      if (id) seenId.add(code + ":" + id);
       if (fileKey) seenFile.add(code + ":" + fileKey);
       if (!byCode.has(code)) {
         const h = hostOf(url) || String(p.host || "").replace(/^www\./i, "");
