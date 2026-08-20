@@ -1,5 +1,309 @@
 [
   {
+    "id": "67e9f092f9b777b3",
+    "title": "Executive Regulation for Logging",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Logging.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Logging.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation for Logging under Saudi Arabia’s Environmental Law (Royal Decree m/165 of 19/11/1441 H). It applies to every person in the Kingdom and is implemented by the National Center for Vegetation Cover and Combating Desertification (NCVC).\n\nPurpose: control cutting, transport, storage, sale and import of local firewood and charcoal so wild trees and shrubs on vegetation-cover land are not taken without a licence. “Logging” here means cutting, transporting, charring, storing or selling wild trees without a license.\n\nYou need an NCVC licence or permit before you import, collect, transport, store, sell, promote, or process firewood or charcoal (including wood from pruning). Apply with a national ID or commercial register, the site, period, quantities and equipment; the Center decides within 15 days and the licence states location, quantities, types and validity. Packaged products must carry type, weight, source, production date and licence number.\n\nIt is prohibited to cut, uproot, strip or trade trees or shrubs on vegetation-cover land without a permit; to use local firewood or charcoal in restaurants, kitchens or bakeries; and to produce local charcoal (carbonization). Fines start at a few thousand riyals per cubic metre or per tree and rise on repeat offences; serious repeat cases can go to court (imprisonment up to 10 years or a fine up to SAR 30 million).",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree m/165 dated 19/11/1441 H.",
+      "Regulator: National Center for Vegetation Cover and Combating Desertification (NCVC).",
+      "Licence needed to import, collect, transport, store, sell or promote firewood/charcoal.",
+      "Apply with ID or commercial register, site, period, quantities and equipment (decision in 15 days).",
+      "Ban: using local firewood/charcoal in restaurants, kitchens and bakeries; producing local charcoal.",
+      "Ban: cutting or trading wild trees/shrubs on vegetation-cover land without a permit.",
+      "Penalties: listed fines (repeat offences escalate); serious repeats can go to court."
+    ],
+    "topics": [
+      "logging",
+      "firewood",
+      "charcoal",
+      "NCVC",
+      "MEWA"
+    ],
+    "document_type": "regulation",
+    "method": "document_read",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "202261ef644b888f",
+    "title": "Executive Regulation For Noise",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Noise.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Noise.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For Noise issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons in residential, commercial, industrial, and environmentally sensitive areas, roadsides, and construction sites. Implemented by Ministry of Environment, Water and Agriculture. It is prohibited to exceed the standards of noise level for residential and commercial areas set forth in table (1), with no prior permit from the Center; exceed the standards of noise level for roadsides set forth in table (2), with no prior permit from the Center; exceed the standards of noise level for industrial zones set forth in table (3), with no prior permit from the Center.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: Ministry of Environment, Water and Agriculture",
+      "Ban: exceed the standards of noise level for residential and commercial areas set forth in table (1), with no prior permit from the Center",
+      "Ban: exceed the standards of noise level for roadsides set forth in table (2), with no prior permit from the Center",
+      "Ban: exceed the standards of noise level for industrial zones set forth in table (3), with no prior permit from the Center"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "9e072951a776346e",
+    "title": "Executive Regulation For Ozone-Depleting Substances and Hydrofluorocarbons",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Ozone-Depleting Substances and Hydrofluorocarbons.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Ozone-Depleting Substances and Hydrofluorocarbons.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For Ozone-Depleting Substances and Hydrofluorocarbons issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons and activities related to ozone-depleting substances and hydrofluorocarbons, in addition to controlled appliances, equipment, and products within the territory of the K. Implemented by Ministry of Environment, Water and Agriculture. It is prohibited to import, export, re-export, use, or store the controlled substances without a prior permit from the Center; import, export, re-export, use, or store the recycled controlled substances without a prior permit from the Center; import, export, re-export, or use the new controlled appliances, equipment, and products without a prior permit from the Center.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: Ministry of Environment, Water and Agriculture",
+      "Ban: import, export, re-export, use, or store the controlled substances without a prior permit from the Center",
+      "Ban: import, export, re-export, use, or store the recycled controlled substances without a prior permit from the Center",
+      "Ban: import, export, re-export, or use the new controlled appliances, equipment, and products without a prior permit from the Center"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "ad1fa2ce7da96cad",
+    "title": "Executive Regulation For Sustainable Management of the Marine and Coastal Environment",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Sustainable Management of the Marine and Coastal Environment.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Sustainable Management of the Marine and Coastal Environment.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For Sustainable Management of the Marine and Coastal Environment issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to the marine and coastal environment within the Kingdom, including the internal waters, the territorial sea, the contiguous zone, the exclusive economic zone, and the continental she. Implemented by National Center for Vegetation Cover and Combating Desertification (NCVC). It is prohibited to dump or dispose waste or liquid substances in the marine and coastal environment; plant mangroves or other coastal plants in the marine and coastal environment without obtaining a license from the National Center for Vegetation Cover and Combating Desertificatio; use marine spear guns to hunt marine animal wildlife species in a manner that violates the controls set by the Center.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: National Center for Vegetation Cover and Combating Desertification (NCVC)",
+      "Ban: dump or dispose waste or liquid substances in the marine and coastal environment",
+      "Ban: plant mangroves or other coastal plants in the marine and coastal environment without obtaining a license from the National Center for Vegetation Cover and Combating Desertificatio",
+      "Ban: use marine spear guns to hunt marine animal wildlife species in a manner that violates the controls set by the Center"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "42bc70d2195a589e",
+    "title": "Executive Regulation For the Prevention and Remediation of Soil Pollution",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Prevention and Remediation of Soil Pollution.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Prevention and Remediation of Soil Pollution.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For the Prevention and Remediation of Soil Pollution issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons in the Kingdom and their activities within the Kingdom’s territory, in order to protect soil from pollution, including the implementation of preventive measures against. Implemented by National Center for Vegetation Cover and Combating Desertification (NCVC). It is prohibited to eng age in any activity or action that may lead, directly or indirectly, to damage or pollute soil, negatively affect its use, or destroy its natural properties; provide incorrect information, data, or records.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: National Center for Vegetation Cover and Combating Desertification (NCVC)",
+      "Ban: eng age in any activity or action that may lead, directly or indirectly, to damage or pollute soil, negatively affect its use, or destroy its natural properties",
+      "Ban: provide incorrect information, data, or records"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "b6c03f376254ec3c",
+    "title": "Executive Regulation For Trade in Wildlife Species, Their Products and Derivatives",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Trade in Wildlife Species, Their Products and Derivatives.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Trade in Wildlife Species, Their Products and Derivatives.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For Trade in Wildlife Species, Their Products and Derivatives issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons within the Kingdom who handle wildlife species listed by the Competent Center and on the Convention lists, in order to regulate trade in wildlife species, their product. Implemented by National Center for Vegetation Cover and Combating Desertification (NCVC). To apply you must submit: (1) The applicant for a license to trade in wildlife species samples must submit an application to the. It is prohibited to trade in wildlife species samples except under a license issued by the Competent Center, only for species obtained from legal sources; sell, gift, or transfer living animal samples for which ownership certificates have been issued when they are outside the Kingdom; trade in Captivity-Bred Species or artificially unless they originate from facilities licensed by the Competent Center for breeding and propagation of wildlife species in captivity.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: National Center for Vegetation Cover and Combating Desertification (NCVC)",
+      "Apply with: (1) The applicant for a license to trade in wildlife species samples must submit an application to the",
+      "Ban: trade in wildlife species samples except under a license issued by the Competent Center, only for species obtained from legal sources",
+      "Ban: sell, gift, or transfer living animal samples for which ownership certificates have been issued when they are outside the Kingdom",
+      "Ban: trade in Captivity-Bred Species or artificially unless they originate from facilities licensed by the Competent Center for breeding and propagation of wildlife species in captivity"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "12205d5e81fb5f1a",
+    "title": "Executive Regulation For Vegetation Cover Development and Combating Desertification",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Vegetation Cover Development and Combating Desertification.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Vegetation Cover Development and Combating Desertification.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For Vegetation Cover Development and Combating Desertification issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons and all vegetation cover lands - including degraded lands – as well as lands and coasts within the territory of the Kingdom of Saudi Arabia, that fall under the Center’. Implemented by National Center for Vegetation Cover and Combating Desertification (NCVC). To apply you must submit: Each applicant for a reforestation or afforestation license must submit an application to the; a. A copy of the national identity card or residency, or the commercial register for a private; Each applicant for a license to restore or level vegetation lands cover must submit an application; a. A copy of the national identity or residency, or the commercial register for a private sector. It is prohibited to perform any activity in forest lands that were subject to fires without a permit from the Center; practice any activity in national parks without a prior permit or license from the Center.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: National Center for Vegetation Cover and Combating Desertification (NCVC)",
+      "Apply with: Each applicant for a reforestation or afforestation license must submit an application to the",
+      "Apply with: a. A copy of the national identity card or residency, or the commercial register for a private",
+      "Apply with: Each applicant for a license to restore or level vegetation lands cover must submit an application",
+      "Ban: perform any activity in forest lands that were subject to fires without a permit from the Center",
+      "Ban: practice any activity in national parks without a prior permit or license from the Center"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "52fe2e5c1250cc1a",
+    "title": "Executive Regulation For Air Quality",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for Air Quality.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for Air Quality.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For Air Quality issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons within the Kingdom’s territory. Implemented by Ministry of Environment, Water and Agriculture. Licensed activities include: Appendix (1) of the executive regulation sets air quality standards for primary; Appendix (2) of the executive regulation sets air quality standards for dangerou. To apply you must submit: (3) Each license applicant must submit an application to the center in accordance with the; full supporting documents of quality assurance measures, data, and technical analyses; (8) The licensee must notify the center of any violations tracked and must provide; (1) All persons must submit a request to the center for an exemption to temporary exceed the.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: Ministry of Environment, Water and Agriculture",
+      "Needs a license/permit: Appendix (1) of the executive regulation sets air quality standards for primary; Appendix (2) of the executive regulation sets air quality standards for dangerou",
+      "Apply with: (3) Each license applicant must submit an application to the center in accordance with the",
+      "Apply with: full supporting documents of quality assurance measures, data, and technical analyses",
+      "Apply with: (8) The licensee must notify the center of any violations tracked and must provide"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "b9ccb0c9a2cc2e9b",
+    "title": "Executive Regulations For the Environmental Rehabilitation of Degraded Sites and Remediation of",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Environmental Rehabilitation of Degraded Sites and Remediation of Polluted Sites.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Environmental Rehabilitation of Degraded Sites and Remediation of Polluted Sites.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulations For the Environmental Rehabilitation of Degraded Sites and Remediation of issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all degraded or polluted sites located within the Kingdom’s territory. Implemented by Ministry of Environment, Water and Agriculture. To apply you must submit: (2) All persons or activities must submit periodic reports to the Center on the progress of environmental; which case the person must submit a new plan; case the person must submit a new plan. Violations carry listed fines (repeat offences escalate) and serious cases can be referred to court.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: Ministry of Environment, Water and Agriculture",
+      "Apply with: (2) All persons or activities must submit periodic reports to the Center on the progress of environmental",
+      "Apply with: which case the person must submit a new plan",
+      "Apply with: case the person must submit a new plan"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "38331146a4f3f7ad",
+    "title": "Implementing Regulations of the Agriculture Law",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Implementing Regulations of the Agriculture Law issued under the Environmental Law. Implemented by Ministry of Environment, Water, and Agriculture.",
+    "key_points": [
+      "Regulator: Ministry of Environment, Water, and Agriculture"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "0660e4fdbc52a7cc",
+    "title": "Executive Regulations For the Protection of Aqueous Media from Pollution",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulations For the Protection of Aqueous Media from Pollution issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all persons and activities related to aqueous media within the territory of the Kingdom of Saudi Arabia, including the territorial sea , the adjacent area, and the special economic. Implemented by Ministry of Environment, Water and Agriculture. Licensed activities include: Waterbodies shall be classified as shown in Table (1); The Center may suggest amendments to this classification and submit them to the. To apply you must submit: water must submit an application to the Center using the template issued by the Center; (3) of this Executive Regulations must submit an application to the Center using the template; (4) The permittee must submit periodic reports to the Center on the progress made in implementing; ground wells, must submit an application to the Center , accompanied by the documents. It is prohibited to practice any of the following activities unless a license or permit is obtained from the Center for this purpose: a.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: Ministry of Environment, Water and Agriculture",
+      "Needs a license/permit: Waterbodies shall be classified as shown in Table (1); The Center may suggest amendments to this classification and submit them to the",
+      "Apply with: water must submit an application to the Center using the template issued by the Center",
+      "Apply with: (3) of this Executive Regulations must submit an application to the Center using the template",
+      "Apply with: (4) The permittee must submit periodic reports to the Center on the progress made in implementing",
+      "Ban: practice any of the following activities unless a license or permit is obtained from the Center for this purpose: a"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
+    "id": "92273eb598cad87e",
+    "title": "Executive Regulation For the Protected Areas",
+    "jurisdiction": "Saudi Arabia - MEWA",
+    "source_kind": "ministry",
+    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Protected Areas.pdf",
+    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Protected Areas.pdf",
+    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+    "summary": "Executive Regulation For the Protected Areas issued under the Environmental Law (Royal Decree (m/165), dated 19/11/1441 Hijri). It applies to all protected areas managed or supervised by the Center within the Kingdom’s territory. Implemented by National Center for Vegetation Cover and Combating Desertification (NCVC). To apply you must submit: The Center shall issue its decision on permit and license applications within ten (10) working days. It is prohibited to do anything that may harm or disturb the natural balance of the protected areas, which is considered in violation of the provisions hereof, particularly the following: (1) Practici. Violations carry listed fines (repeat offences escalate) and serious cases can be referred to court.",
+    "key_points": [
+      "Parent law: Environmental Law — Royal Decree (m/165), dated 19/11/1441 Hijri",
+      "Regulator: National Center for Vegetation Cover and Combating Desertification (NCVC)",
+      "Apply with: The Center shall issue its decision on permit and license applications within ten (10) working days",
+      "Ban: do anything that may harm or disturb the natural balance of the protected areas, which is considered in violation of the provisions hereof, particularly the following: (1) Practici"
+    ],
+    "topics": [
+      "regulation",
+      "MEWA",
+      "environment"
+    ],
+    "document_type": "regulation",
+    "method": "extractive_regulation",
+    "summarized_at": "2026-08-20T15:50:08.840220+00:00"
+  },
+  {
     "id": "f6498741ad581035",
     "title": "Desert Locust Guidelines",
     "jurisdiction": "Saudi Arabia - MEWA",
@@ -235,34 +539,6 @@
     "document_type": "other",
     "method": "extractive",
     "summarized_at": "2026-08-20T14:27:17.429048+00:00"
-  },
-  {
-    "id": "92273eb598cad87e",
-    "title": "Executive Regulation for the Protected Areas",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Protected Areas.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Protected Areas.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "Executive Regulation for the Protected Areas. (3) If the holder does not waive their right as described in Section (2) of this article, and the Center deems that the site is important due to environmental considerations, a report shall be submitted to the Ministry to complete the procedures according to the applicable regulations (3) The Center shall identify the competent authorities in the proposed protected area, provided that it will include the authorities that own lands adjacent to the proposed protected area and the authorities that supervise or operate projects and activities along or within the same, in addition to completing the procedures stipulated in Sections (1) and (2) and Clause (first) of this Article Article (8): Permits and Licenses Related to Private Reservations (1) Every person must obtain a prior license from the Center to establish a private reservation, and the same shall apply to private reservations that existed before the issuance of this regulation Article (10): Violations Apprehension and Penalties Imposition Violations of the provisions of the Executive Regulations shall be apprehended, and the penalties set out in Table (1) shall be imposed in accordance with the Executive Regulations for Appreh",
-    "key_points": [
-      "(3) If the holder does not waive their right as described in Section (2) of this article, and the Center deems that the site is important due to environmental considerations, a report shall be submitted to the Ministry to complete the procedures according to the applicable regulations",
-      "(3) The Center shall identify the competent authorities in the proposed protected area, provided that it will include the authorities that own lands adjacent to the proposed protected area and the authorities that supervise or operate projects and activities along or within the same, in addition to completing the procedures stipulated in Sections (1) and (2) and Clause (first) of this Article",
-      "Article (8): Permits and Licenses Related to Private Reservations (1) Every person must obtain a prior license from the Center to establish a private reservation, and the same shall apply to private reservations that existed before the issuance of this regulation",
-      "Article (10): Violations Apprehension and Penalties Imposition Violations of the provisions of the Executive Regulations shall be apprehended, and the penalties set out in Table (1) shall be imposed in accordance with the Executive Regulations for Apprehension of Violations and Imposition of Penalties of the Environmental Law, considering the following:",
-      "Article (5): Management of Protected Areas (1) The Center shall determine the scopes of protection based on the scientific, technical, and social studies conducted thereby for each protected area and levels of protection for each zone, while setting controls and requirements for activities within each zone"
-    ],
-    "topics": [
-      "protected",
-      "areas",
-      "center",
-      "wildlife",
-      "controls",
-      "species"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-20T14:27:09.383716+00:00"
   },
   {
     "id": "bbf8cb845c306531",
@@ -1141,34 +1417,6 @@
     "document_type": "other",
     "method": "extractive",
     "summarized_at": "2026-08-20T14:22:08.387345+00:00"
-  },
-  {
-    "id": "0660e4fdbc52a7cc",
-    "title": "Executive Regulations for the Protection of Aqueous Media from Pollution",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Aqueous Media from Pollution.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "Executive Regulations for the Protection of Aqueous Media from Pollution. If it is determined, during the investigation, that these violations are caused by the contribution of multiple sources that operate within the limits of the requirements and conditions of their environmental p ermits and licenses, the Center shall take the appropriate measures – in coordination with the supervising authority(s) ( licensor of the activity) – including the following: Article (8) – Licenses and Permits for the Protection of Aqueous Media from Pollution First: General Controls 12 of 34 (1) It is prohibited to practice any of the following activities unless a license or permit is obtained from the Center for this purpose: Fourth: Monitoring and Surveillance (1) The following activities shall implement monitoring, measurements, and surveillance programs on the water that is directly discharged to the environmental media in accordance with the controls and requirements set by the Center, and provide the Center with data and information 11 of 34 on a regular basis: Article (2) – Scope of Application The provisions contained herein shall apply to all persons and activities related to aqueous media within the territory of the Kingdom of Saudi Arabia, including the territori",
-    "key_points": [
-      "If it is determined, during the investigation, that these violations are caused by the contribution of multiple sources that operate within the limits of the requirements and conditions of their environmental p ermits and licenses, the Center shall take the appropriate measures – in coordination with the supervising authority(s) ( licensor of the activity) – including the following:",
-      "Article (8) – Licenses and Permits for the Protection of Aqueous Media from Pollution First: General Controls 12 of 34 (1) It is prohibited to practice any of the following activities unless a license or permit is obtained from the Center for this purpose:",
-      "Fourth: Monitoring and Surveillance (1) The following activities shall implement monitoring, measurements, and surveillance programs on the water that is directly discharged to the environmental media in accordance with the controls and requirements set by the Center, and provide the Center with data and information 11 of 34 on a regular basis:",
-      "Article (2) – Scope of Application The provisions contained herein shall apply to all persons and activities related to aqueous media within the territory of the Kingdom of Saudi Arabia, including the territorial sea , the adjacent area, and the special economic zone of the Kingdom",
-      "(2) All activities that are not mentioned in Clause (1) of this section and that are granted a permit to discharge water into the environmental media, shall perform the necessary measurements and analysis in accordance with the controls and requirements set by the Center"
-    ],
-    "topics": [
-      "water",
-      "environmental",
-      "media",
-      "center",
-      "wastewater",
-      "standards"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-20T14:21:51.767665+00:00"
   },
   {
     "id": "06b5fcee919f682e",
@@ -48268,286 +48516,6 @@
     "document_type": "other",
     "method": "extractive",
     "summarized_at": "2026-08-03T20:12:04.504701+00:00"
-  },
-  {
-    "id": "38331146a4f3f7ad",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Implementing Regulations of The Agriculture Law.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. Operational License: An authorization issued by the Ministry to enable a service provider/agricultural practitioner to operate an agricultural or veterinary facility, or to start actual production or operation; the term of such license shall be determined pursuant to the life span of the activity offered by the project or facility, or at the discretion of the Ministry, as the case may be. Agricultural Services: Services related to the agricultural sector, including extension services; marketing; organizing exhibitions, competitions, and events; certifying the safety of agricultural products and practices; quarantine; prevention and treatment; care and sheltering; transportation; and any other related services specified in the Regulations. Construction License: An authorization issued by the Ministry to enable a service provider/agricultural practitioner to start implementing the activities of an agricultural or veterinary facility and provide necessary equipment for operation, but not start operating the project or veterinary facility. Agricultural Registration: An official document issued by the Ministry that contains data and information related to the agricultural practitioner,",
-    "key_points": [
-      "Operational License: An authorization issued by the Ministry to enable a service provider/agricultural practitioner to operate an agricultural or veterinary facility, or to start actual production or operation; the term of such license shall be determined pursuant to the life span of the activity offered by the project or facility, or at the discretion of the Ministry, as the case may be.",
-      "Agricultural Services: Services related to the agricultural sector, including extension services; marketing; organizing exhibitions, competitions, and events; certifying the safety of agricultural products and practices; quarantine; prevention and treatment; care and sheltering; transportation; and any other related services specified in the Regulations.",
-      "Construction License: An authorization issued by the Ministry to enable a service provider/agricultural practitioner to start implementing the activities of an agricultural or veterinary facility and provide necessary equipment for operation, but not start operating the project or veterinary facility.",
-      "Agricultural Registration: An official document issued by the Ministry that contains data and information related to the agricultural practitioner, the activity or service he engages in, and the location and area of said activity as well as any other relevant data and information.",
-      "Fishing License: An official document issued by the Ministry to any person who intends to work as an investor or artisanal fisherman, angler, sailor or fishing worker, provided that he meets the requirements for issuance thereof; said license shall indicate his category."
-    ],
-    "topics": [
-      "agricultural",
-      "animal",
-      "ministry",
-      "resources",
-      "regulations",
-      "fishing"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:51.402972+00:00"
-  },
-  {
-    "id": "b9ccb0c9a2cc2e9b",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Environmental Rehabilitation of Degraded Sites and Remediation of Polluted Sites.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Environmental Rehabilitation of Degraded Sites and Remediation of Polluted Sites.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. The provisions of this Executive Regulations shall apply to all degraded or polluted sites located within the Violations of the provisions of the Executive Regulations shall be apprehended, and the penalties set out in (2) The penalty for significant violations referred to in clause (1) of this article shall be estimated by a The following terms and expressions – wherever they appear in this Executive Regulations – shall have the Table (1) shall be imposed in accordance with the Executive Regulations for Apprehension of Violations",
-    "key_points": [
-      "The provisions of this Executive Regulations shall apply to all degraded or polluted sites located within the",
-      "Violations of the provisions of the Executive Regulations shall be apprehended, and the penalties set out in",
-      "(2) The penalty for significant violations referred to in clause (1) of this article shall be estimated by a",
-      "The following terms and expressions – wherever they appear in this Executive Regulations – shall have the",
-      "Table (1) shall be imposed in accordance with the Executive Regulations for Apprehension of Violations"
-    ],
-    "topics": [
-      "environmental",
-      "sites",
-      "rehabilitation",
-      "center",
-      "remediation",
-      "polluted"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:44.408281+00:00"
-  },
-  {
-    "id": "52fe2e5c1250cc1a",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for Air Quality.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for Air Quality.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. (5) The activities specified in clause (4) of this section shall comply with the controls and The following terms and expressions - wherever they appear in this executive regulation – shall (7) The licensee must periodically provide the center with the data and digital reports related (6) The center shall issue the license including its validity and any requirements stipulated. (16) Audit operations shall be conducted by a service provider that is licensed by the center.",
-    "key_points": [
-      "(5) The activities specified in clause (4) of this section shall comply with the controls and",
-      "The following terms and expressions - wherever they appear in this executive regulation – shall",
-      "(7) The licensee must periodically provide the center with the data and digital reports related",
-      "(6) The center shall issue the license including its validity and any requirements stipulated.",
-      "(16) Audit operations shall be conducted by a service provider that is licensed by the center."
-    ],
-    "topics": [
-      "center",
-      "quality",
-      "monitoring",
-      "standards",
-      "sources",
-      "point"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:40.419050+00:00"
-  },
-  {
-    "id": "12205d5e81fb5f1a",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Vegetation Cover Development and Combating Desertification.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Vegetation Cover Development and Combating Desertification.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. Article (9): Investment in Vegetation Cover’s Development Activities ..................................... (1) It is prohibited to practice any activity in national parks without a prior permit or license from the Article (10): Permits and Licenses related to Vegetation Cover Lands .................................... (20) Coordinating with Ministry of Tourism on matters related to investments in touristic activities, and (3) All persons must comply with the grazing regulation plan referred to in clause (1) of this article.",
-    "key_points": [
-      "Article (9): Investment in Vegetation Cover’s Development Activities .....................................",
-      "(1) It is prohibited to practice any activity in national parks without a prior permit or license from the",
-      "Article (10): Permits and Licenses related to Vegetation Cover Lands ....................................",
-      "(20) Coordinating with Ministry of Tourism on matters related to investments in touristic activities, and",
-      "(3) All persons must comply with the grazing regulation plan referred to in clause (1) of this article."
-    ],
-    "topics": [
-      "vegetation",
-      "center",
-      "cover",
-      "lands",
-      "environmental",
-      "grazing"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:36.431045+00:00"
-  },
-  {
-    "id": "b6c03f376254ec3c",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Trade in Wildlife Species, Their Products and Derivatives.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Trade in Wildlife Species, Their Products and Derivatives.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. (5) License holders shall create a database and keep records of the numbers and types of samples in (7) License holders shall create a database and keep records for wildlife species ’ samples, and (8) Licenses are declared invalid in case of expiry, amendment, or change in data therein in any (4) The license shall be issued in both Arabic and English, indicating the information and data License holders shall provide the Competent Center with this data and any other requested",
-    "key_points": [
-      "(5) License holders shall create a database and keep records of the numbers and types of samples in",
-      "(7) License holders shall create a database and keep records for wildlife species ’ samples, and",
-      "(8) Licenses are declared invalid in case of expiry, amendment, or change in data therein in any",
-      "(4) The license shall be issued in both Arabic and English, indicating the information and data",
-      "License holders shall provide the Competent Center with this data and any other requested"
-    ],
-    "topics": [
-      "species",
-      "wildlife",
-      "center",
-      "trade",
-      "samples",
-      "competent"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:32.661009+00:00"
-  },
-  {
-    "id": "42bc70d2195a589e",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Prevention and Remediation of Soil Pollution.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Prevention and Remediation of Soil Pollution.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. Violations of the provisions of the Executive Regulations shall be apprehended, and the penalties The following terms and expressions - wherever they appear in this executive regulation – shall Competent Authority: The Ministry or any of the national environmental center s, within their The provisions of these Executive Regulations shall apply to all persons in the Kingdom and set out in Table (1) shall be imposed in accordance with the Executive Regulations for",
-    "key_points": [
-      "Violations of the provisions of the Executive Regulations shall be apprehended, and the penalties",
-      "The following terms and expressions - wherever they appear in this executive regulation – shall",
-      "Competent Authority: The Ministry or any of the national environmental center s, within their",
-      "The provisions of these Executive Regulations shall apply to all persons in the Kingdom and",
-      "set out in Table (1) shall be imposed in accordance with the Executive Regulations for"
-    ],
-    "topics": [
-      "pollution",
-      "environmental",
-      "polluted",
-      "sites",
-      "natural",
-      "article"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:25.373478+00:00"
-  },
-  {
-    "id": "ad1fa2ce7da96cad",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Sustainable Management of the Marine and Coastal Environment.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Sustainable Management of the Marine and Coastal Environment.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. environment in accordance with section (Fourth) of article (4) of this Executive Regulation. Article (6) - Environmental Licenses and Permits for Activities in the Marine and Coastal Article (6) - Environmental Licenses and Permits for Activities in the Marine and (15) Issuing environmental permits and licenses for activities in the marine and coastal environment (6) Issuing environmental permits and licenses for activities in the marine and coastal environment",
-    "key_points": [
-      "environment in accordance with section (Fourth) of article (4) of this Executive Regulation.",
-      "Article (6) - Environmental Licenses and Permits for Activities in the Marine and Coastal",
-      "Article (6) - Environmental Licenses and Permits for Activities in the Marine and",
-      "(15) Issuing environmental permits and licenses for activities in the marine and coastal environment",
-      "(6) Issuing environmental permits and licenses for activities in the marine and coastal environment"
-    ],
-    "topics": [
-      "marine",
-      "wildlife",
-      "environment",
-      "coastal",
-      "species",
-      "environmental"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:21.297739+00:00"
-  },
-  {
-    "id": "9e072951a776346e",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Ozone-Depleting Substances and Hydrofluorocarbons.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Ozone-Depleting Substances and Hydrofluorocarbons.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. The provisions of the Executive Regulations shall apply to all persons and activities related to Article (4) – Provisions on Activities Involving Controlled Substances ................................... Article (6) – General Controls for the Issuance of Licenses and Permits ................................ (8) Issuing licenses and permits pertaining to activities involving controlled substances, appliances, (1) The Center shall set out the requirements and controls for the issuance of licenses and permits in",
-    "key_points": [
-      "The provisions of the Executive Regulations shall apply to all persons and activities related to",
-      "Article (4) – Provisions on Activities Involving Controlled Substances ...................................",
-      "Article (6) – General Controls for the Issuance of Licenses and Permits ................................",
-      "(8) Issuing licenses and permits pertaining to activities involving controlled substances, appliances,",
-      "(1) The Center shall set out the requirements and controls for the issuance of licenses and permits in"
-    ],
-    "topics": [
-      "substances",
-      "controlled",
-      "equipment",
-      "center",
-      "appliances",
-      "products"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:17.536897+00:00"
-  },
-  {
-    "id": "202261ef644b888f",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Noise.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Noise.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. (2) The excess referred to in clause (1) of this article shall be in accordance with the correction The provisions of this Executive Regulation shall apply to all persons in residential, commercial, Violations of provisions of these Executive Regulations shall be reported and penalties set forth The following terms and expressions – wherever they appear in this Executive Regulation – shall standards of noise levels set forth in these Executive Regulations shall submit an application",
-    "key_points": [
-      "(2) The excess referred to in clause (1) of this article shall be in accordance with the correction",
-      "The provisions of this Executive Regulation shall apply to all persons in residential, commercial,",
-      "Violations of provisions of these Executive Regulations shall be reported and penalties set forth",
-      "The following terms and expressions – wherever they appear in this Executive Regulation – shall",
-      "standards of noise levels set forth in these Executive Regulations shall submit an application"
-    ],
-    "topics": [
-      "noise",
-      "center",
-      "level",
-      "levels",
-      "article",
-      "areas"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:13.960096+00:00"
-  },
-  {
-    "id": "67e9f092f9b777b3",
-    "title": "download",
-    "jurisdiction": "Saudi Arabia - MEWA",
-    "source_kind": "ministry",
-    "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Logging.pdf",
-    "open_url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for Logging.pdf",
-    "source_page": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
-    "summary": "download. (2) The license or permit for the activities mentioned in clause (7) of (First of ) this article is Article (4): Licenses and Permits .......................................................................................................... (1) In implementing the law, provisions of clause (1), article (19), t he following activities are The provisions of the Executive Regulation shall apply to all the persons in the Kingdom of Saudi (3) The center shall issue its decision on license or permit applications within a period of (15)",
-    "key_points": [
-      "(2) The license or permit for the activities mentioned in clause (7) of (First of ) this article is",
-      "Article (4): Licenses and Permits ..........................................................................................................",
-      "(1) In implementing the law, provisions of clause (1), article (19), t he following activities are",
-      "The provisions of the Executive Regulation shall apply to all the persons in the Kingdom of Saudi",
-      "(3) The center shall issue its decision on license or permit applications within a period of (15)"
-    ],
-    "topics": [
-      "license",
-      "firewood",
-      "charcoal",
-      "violations",
-      "executive",
-      "regulation"
-    ],
-    "document_type": "other",
-    "method": "extractive",
-    "summarized_at": "2026-08-03T20:11:10.768441+00:00"
   },
   {
     "id": "d9b58d142894f2c3",

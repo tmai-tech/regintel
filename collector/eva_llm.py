@@ -90,8 +90,16 @@ def summarize_pdf_text(
         "underscores, or 'click here'."
         if looks_like_form(title, snippet)
         else (
-            "Write a useful English summary of what the document is and what it "
-            "is for. Ignore table-of-contents dotted leaders and 'click here' link text."
+            "If this is an executive/implementing regulation: state the official name, "
+            "parent law, who it applies to, the regulator, which activities need a "
+            "licence, what documents are required, and the main prohibitions. "
+            "Never paste table-of-contents dotted leaders, article numbers alone, "
+            "or link text such as 'download' or 'click here'."
+            if looks_like_regulation(title, snippet)
+            else (
+                "Write a useful English summary of what the document is and what it "
+                "is for. Ignore table-of-contents dotted leaders and 'click here' link text."
+            )
         )
     )
     system = (
@@ -654,6 +662,160 @@ def Path_stem_from_url(url: str) -> str:
     return name.replace("%20", " ").strip()
 
 
+def looks_like_regulation(title: str, text: str, url: str = "") -> bool:
+    blob = f"{title}\n{url}\n{(text or '')[:3500]}"
+    if re.search(r"Executive Regulation|Implementing Regulation|اللائحة التنفيذية", blob, re.I):
+        return True
+    if re.search(r"Article\s*\(\s*1\s*\)\s*:\s*Definitions", text or "", re.I):
+        return True
+    if re.search(r"Royal Decree|مرسوم ملكي", blob, re.I) and re.search(r"Article\s*\(\s*\d+\s*\)", text or ""):
+        return True
+    return False
+
+
+def regulation_summary(
+    *,
+    title: str,
+    text: str,
+    jurisdiction: str = "",
+    url: str = "",
+) -> dict[str, Any]:
+    """What the regulation is, who it binds, licences, and key bans — never TOC or 'download'."""
+    lines = [_strip_form_noise(x) for x in (text or "").splitlines()]
+    lines = [x for x in lines if x and not _is_toc_line(x)]
+
+    name_bits = []
+    for line in lines[:20]:
+        if re.search(r"note: in the event|discrepancy|arabic original|contents$", line, re.I):
+            continue
+        if re.match(r"article\s*\(|for the environmental law|issued by the royal", line, re.I):
+            break
+        if 3 <= len(line) <= 90 and not re.search(r"https?://|page \d+", line, re.I):
+            name_bits.append(line)
+        if len(name_bits) >= 4:
+            break
+    display = ""
+    if len(name_bits) >= 2 and re.search(r"executive regulation", name_bits[0], re.I):
+        display = re.sub(r"\s+", " ", " ".join(name_bits[:2])).strip()
+    joined_head = " ".join(name_bits)
+    m = re.search(
+        r"(Executive Regulations? for [A-Za-z ,\-]{4,80}|Implementing Regulations? of [A-Za-z ,\-]{6,80})",
+        joined_head,
+        re.I,
+    )
+    if m:
+        display = re.sub(r"\s+", " ", m.group(1)).strip()
+    if not display:
+        stem = Path_stem_from_url(url) or title
+        stem = re.sub(r"_e[0-9a-f]{6,}$", "", stem, flags=re.I)
+        stem = re.sub(r"[_-]+", " ", stem)
+        if not is_placeholder_title(stem) and not stem.lower() in {"download", "تحميل"}:
+            display = stem
+        else:
+            display = " ".join(name_bits[:3]) or "Executive Regulation"
+
+    decree = ""
+    m = re.search(
+        r"Royal Decree\s+(?:No\.?\s*)?(\(?[Mmم]/?\d+\)?[^.\n]{0,40})",
+        text or "",
+        re.I,
+    )
+    if m:
+        decree = "Royal Decree " + re.sub(r"\s+", " ", m.group(1)).strip(" ,.")
+    parent = ""
+    m = re.search(r"for the ([A-Z][A-Za-z ]{6,40}Law)", " ".join(lines[:25]))
+    if m:
+        parent = m.group(1).strip()
+
+    scope = ""
+    m = re.search(
+        r"shall apply to ([^\.]{15,180})",
+        text or "",
+        re.I,
+    )
+    if m:
+        scope = _clean_para(m.group(1))
+
+    authority = _authority_name(jurisdiction, text)
+    if re.search(r"National Center for Vegetation Cover", text or ""):
+        authority = "National Center for Vegetation Cover and Combating Desertification (NCVC)"
+    elif re.search(r"the Center", text or "") and "MEWA" in (jurisdiction or ""):
+        authority = authority or "MEWA / the competent Center"
+
+    # Licensed / regulated activities
+    activities = []
+    block = re.search(
+        r"(?:Activities related to|First:).{0,80}\n((?:\s*\(\d+\)[^\n]+\n?){2,10})",
+        text or "",
+        re.I,
+    )
+    if block:
+        for a in re.findall(r"\(\d+\)\s*([^\n]{6,80})", block.group(1)):
+            a = _strip_form_noise(a)
+            if a and a not in activities:
+                activities.append(a)
+
+    docs = _required_documents(text)
+    if not docs:
+        dblock = re.search(
+            r"Documents Required.{0,80}\n((?:\s*\(\d+\)[^\n]+\n?){2,8})",
+            text or "",
+            re.I,
+        )
+        if dblock:
+            for a in re.findall(r"\(\d+\)\s*([^\n]{8,140})", dblock.group(1)):
+                a = _strip_form_noise(a)
+                if a and "entitled to request" not in a.lower() and not a.lower().startswith("each license"):
+                    docs.append(a)
+
+    bans = []
+    for raw in re.findall(
+        r"it is prohibited to[:\s]+([^\.]{15,180})",
+        text or "",
+        flags=re.I,
+    ):
+        bans.append(_clean_para(raw))
+    if re.search(r"without a (?:prior )?license or permit", text or "", re.I):
+        bans.append("practicing listed activities without a license or permit from the Center")
+
+    parts = [f"{display} issued under the {parent or 'Environmental Law'}" + (f" ({decree})" if decree else "") + "."]
+    if scope:
+        parts.append(f"It applies to {scope}.")
+    if authority:
+        parts.append(f"Implemented by {authority}.")
+    if activities:
+        parts.append("Licensed activities include: " + "; ".join(activities[:7]) + ".")
+    if docs:
+        parts.append("To apply you must submit: " + "; ".join(docs[:4]) + ".")
+    if bans:
+        parts.append("It is prohibited to " + "; ".join(bans[:3]) + ".")
+    if re.search(r"Table\s*\(?\s*1\s*\)?\s*:\s*Violations", text or "", re.I):
+        parts.append(
+            "Violations carry listed fines (repeat offences escalate) and serious cases "
+            "can be referred to court."
+        )
+
+    points = []
+    if parent or decree:
+        points.append("Parent law: " + (parent or "Environmental Law") + (f" — {decree}" if decree else ""))
+    if authority:
+        points.append("Regulator: " + authority)
+    if activities:
+        points.append("Needs a license/permit: " + "; ".join(activities[:5]))
+    if docs:
+        points.extend("Apply with: " + d for d in docs[:3])
+    points.extend("Ban: " + b for b in bans[:3])
+
+    return {
+        "summary": re.sub(r"\s+", " ", " ".join(parts)).strip()[:1800],
+        "key_points": points[:8],
+        "topics": ["regulation", "MEWA", "environment"],
+        "document_type": "regulation",
+        "method": "extractive_regulation",
+        "display_title": display,
+    }
+
+
 def extractive_summary(
     *,
     title: str,
@@ -670,6 +832,8 @@ def extractive_summary(
     text = clean_extracted_text(text)
     if looks_like_form(title, text, url):
         return form_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
+    if looks_like_regulation(title, text, url):
+        return regulation_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
     if looks_like_guideline(title, text, url):
         return guideline_summary(title=title, text=text, jurisdiction=jurisdiction, url=url)
 

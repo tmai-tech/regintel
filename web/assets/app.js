@@ -41,6 +41,7 @@
     const t = String(title || "").trim();
     if (/\.pdf$/i.test(t)) return true;
     if (/^\d+\s+en\s+DLG/i.test(t)) return true;
+    if (/\s+e[0-9a-f]{6,}$/i.test(t)) return true;
     return false;
   }
 
