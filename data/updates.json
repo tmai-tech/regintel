@@ -1,5 +1,20 @@
 [
   {
+    "id": "66e6771e54f4329a",
+    "discovered_at": "2026-08-23T06:21:08.277892+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Employment and Social Development Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management",
+    "title": "Government of Canada announces Peter Ballantyne Cree Nation as an Indigenous Skills and Employment Training Program agreement holder",
+    "link": "https://www.canada.ca/en/employment-social-development/news/2026/08/government-of-canada-announces-peter-ballantyne-cree-nation-as-an-indigenous-skills-and-employment-training-program-agreement-holder.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
     "id": "d77ead08eec53638",
     "discovered_at": "2026-08-22T06:19:34.606800+00:00",
     "country": "Canada - Federal",
