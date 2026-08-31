@@ -1,7 +1,7 @@
 [
   {
-    "id": "8ddc29e127e2d604",
-    "discovered_at": "2026-08-30T10:51:38.169174+00:00",
+    "id": "5860dff450731031",
+    "discovered_at": "2026-08-31T12:02:17.880724+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,21 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "1332f20456f359f8",
+    "discovered_at": "2026-08-31T12:02:17.880724+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -25,21 +40,6 @@
     "title": "Jing Yang joins OSFI as Deputy Superintendent, Risk, Strategy and Policy August 24, 2026",
     "link": "https://www.osfi-bsif.gc.ca/index%2ephp/en/news/jing-yang-joins-osfi-deputy-superintendent-risk-strategy-policy",
     "source_url": "https://www.osfi-bsif.gc.ca/en",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "7332cbc7f297648e",
-    "discovered_at": "2026-08-30T10:51:38.169174+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
