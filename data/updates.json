@@ -1,7 +1,7 @@
 [
   {
-    "id": "d310ba60ce453104",
-    "discovered_at": "2026-09-01T10:41:06.782790+00:00",
+    "id": "4883eb742a73c1cb",
+    "discovered_at": "2026-09-02T10:06:37.736296+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,36 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "507954a2a3f37ad8",
+    "discovered_at": "2026-09-02T10:06:37.736296+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Employment and Social Development Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management",
+    "title": "Minister Hajdu to launch the Energy and Electricity Workforce Alliance",
+    "link": "https://www.canada.ca/en/employment-social-development/news/2026/08/minister-hajdu-to-launch-the-energy-and-electricity-workforce-alliance.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "82346a84b1618fd7",
+    "discovered_at": "2026-09-02T10:06:37.736296+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -70,21 +100,6 @@
     "title": "Joint Ministerial Statement on International Overdose Awareness Day",
     "link": "https://www.canada.ca/en/health-canada/news/2026/08/joint-ministerial-statement-on-international-overdose-awareness-day.html",
     "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1715886804157&dprtmnt=departmentofhealth&start=&end=",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "e7bf40d861886259",
-    "discovered_at": "2026-09-01T10:41:06.782790+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
