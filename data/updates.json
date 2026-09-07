@@ -1,7 +1,7 @@
 [
   {
-    "id": "7f7e251e876f73be",
-    "discovered_at": "2026-09-06T09:50:19.770777+00:00",
+    "id": "8067d649695116d9",
+    "discovered_at": "2026-09-07T10:56:17.690333+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,23 @@
     "tracked_by": "collector"
   },
   {
-    "id": "8a1f50d1092160dc",
-    "discovered_at": "2026-09-06T09:50:19.770777+00:00",
+    "id": "536c424438d07f99",
+    "discovered_at": "2026-09-07T10:56:17.690333+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Employment and Social Development Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management",
+    "title": "Secretary of State McLean to highlight the extension of the federal fuel tax relief for Canadians",
+    "link": "https://www.canada.ca/en/employment-social-development/news/2026/09/secretary-of-state-mclean-to-highlight-the-extension-of-the-federal-fuel-tax-relief-for-canadians.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "38cb21cd21069e99",
+    "discovered_at": "2026-09-07T10:56:17.690333+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
