@@ -1,7 +1,7 @@
 [
   {
-    "id": "8067d649695116d9",
-    "discovered_at": "2026-09-07T10:56:17.690333+00:00",
+    "id": "0ffcc71dadeb4452",
+    "discovered_at": "2026-09-08T10:13:25.857331+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,36 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "11108f789cb01299",
+    "discovered_at": "2026-09-08T10:13:25.857331+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Employment and Social Development Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Environment Health & Safety, Labour and Employment, Modern Slavery, Records Management",
+    "title": "Joint statement by the Minister of Jobs and Families and the Secretary of State (Labour) on Labour Day",
+    "link": "https://www.canada.ca/en/employment-social-development/news/2026/09/joint-statement-by-the-minister-of-jobs-and-families-and-the-secretary-of-state-labour-on-labour-day.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "5e5cbf29f6e7c81a",
+    "discovered_at": "2026-09-08T10:13:25.857331+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -25,21 +55,6 @@
     "title": "Secretary of State McLean to highlight the extension of the federal fuel tax relief for Canadians",
     "link": "https://www.canada.ca/en/employment-social-development/news/2026/09/secretary-of-state-mclean-to-highlight-the-extension-of-the-federal-fuel-tax-relief-for-canadians.html",
     "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "38cb21cd21069e99",
-    "discovered_at": "2026-09-07T10:56:17.690333+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
