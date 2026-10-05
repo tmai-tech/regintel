@@ -1,7 +1,7 @@
 [
   {
-    "id": "118ea05eb06de10f",
-    "discovered_at": "2026-10-04T11:27:46.644403+00:00",
+    "id": "635caee759ebd6ff",
+    "discovered_at": "2026-10-05T12:54:29.146137+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,21 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "9b518a43088b9e82",
+    "discovered_at": "2026-10-05T12:54:29.146137+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -100,21 +115,6 @@
     "title": "Share your thoughts about developing an Indigenous stream of the Broadband Fund",
     "link": "https://crtc.gc.ca/eng/consultation/indg-atch.htm",
     "source_url": "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "0ff3825de85e3ccd",
-    "discovered_at": "2026-10-04T11:27:46.644403+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
