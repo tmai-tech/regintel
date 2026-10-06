@@ -1,7 +1,7 @@
 [
   {
-    "id": "635caee759ebd6ff",
-    "discovered_at": "2026-10-05T12:54:29.146137+00:00",
+    "id": "427b14a05d580b03",
+    "discovered_at": "2026-10-06T12:21:46.346904+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,23 @@
     "tracked_by": "collector"
   },
   {
-    "id": "9b518a43088b9e82",
-    "discovered_at": "2026-10-05T12:54:29.146137+00:00",
+    "id": "700c2ffb6ea3a55b",
+    "discovered_at": "2026-10-06T12:21:46.346904+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Health Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Environment Health & Safety",
+    "title": "Canada and Northwest Territories partner to improve health infrastructure and access to health care for communities",
+    "link": "https://www.canada.ca/en/health-canada/news/2026/10/canada-and-northwest-territories-partner-to-improve-health-infrastructure-and-access-to-health-care-for-communities.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1715886804157&dprtmnt=departmentofhealth&start=&end=",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "c53d0d46f0074183",
+    "discovered_at": "2026-10-06T12:21:46.346904+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
