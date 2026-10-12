@@ -1,7 +1,7 @@
 [
   {
-    "id": "9314f6432a9c1ca9",
-    "discovered_at": "2026-10-11T11:44:30.091341+00:00",
+    "id": "89ad70bd7fbee5ed",
+    "discovered_at": "2026-10-12T13:46:37.590043+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,23 @@
     "tracked_by": "collector"
   },
   {
-    "id": "b27958d9ee43546f",
-    "discovered_at": "2026-10-11T11:44:30.091341+00:00",
+    "id": "8e609e925daa16b3",
+    "discovered_at": "2026-10-12T13:46:37.590043+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Office of the Superintendent of Financial Institutions (OSFI)",
+    "law_area": "Private; Capital",
+    "topical_relevance": "Crypto/ Digital Assets, ESG, Derivatives, Public & OTC Market",
+    "title": "Peter Routledge participates in a fireside chat at Global Risk Institute (GRI) October 9, 2026",
+    "link": "https://www.osfi-bsif.gc.ca/index%2ephp/en/news/peter-routledge-participates-fireside-chat-global-risk-institute-gri",
+    "source_url": "https://www.osfi-bsif.gc.ca/en",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "d0252c7378d03028",
+    "discovered_at": "2026-10-12T13:46:37.590043+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
