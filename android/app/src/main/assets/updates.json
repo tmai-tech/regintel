@@ -1,7 +1,7 @@
 [
   {
-    "id": "93a26accccbb65d3",
-    "discovered_at": "2026-10-14T10:47:06.125557+00:00",
+    "id": "2d8b8b86d3d87838",
+    "discovered_at": "2026-10-15T10:29:48.101060+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,23 @@
     "tracked_by": "collector"
   },
   {
-    "id": "b76e5298f3bca7e6",
-    "discovered_at": "2026-10-14T10:47:06.125557+00:00",
+    "id": "fff520bd12cc6019",
+    "discovered_at": "2026-10-15T10:29:48.101060+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Office of the Privacy Commissioner of Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Labour and Employment, Data Privacy, AI & Cybersecurity, Records Management",
+    "title": "Privacy Commissioner of Canada satisfied with WestJet’s enhanced security measures following cyberattack; closes investigation",
+    "link": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261014/",
+    "source_url": "https://www.priv.gc.ca/en/about-the-opc/publications/?Page=1",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "1f6ab3cdcaab5357",
+    "discovered_at": "2026-10-15T10:29:48.101060+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",

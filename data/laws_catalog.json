@@ -11718,7 +11718,7 @@
     "alert_status": "new"
   },
   {
-    "id": "93a26accccbb65d3",
+    "id": "2d8b8b86d3d87838",
     "name": "Page content changed — Canadian Securities Administrators (CSA)",
     "summary": "Topics: Take Private/ Over Rules, Shareholder Rights, Crypto/ Digital Assets, Merger Control (+7 more) · Law area: Private, Capital · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Securities Administrators (CSA) · Awaiting analyst review",
     "country": "Canada",
@@ -11730,13 +11730,13 @@
     "authority": "Canadian Securities Administrators (CSA)",
     "authority_url": "https://www.securities-administrators.ca/",
     "region": "North America",
-    "date": "2026-10-14T10:47:06.125557+00:00",
+    "date": "2026-10-15T10:29:48.101060+00:00",
     "source": "collector",
     "relevancy": "Pending",
     "alert_status": "new"
   },
   {
-    "id": "b76e5298f3bca7e6",
+    "id": "1f6ab3cdcaab5357",
     "name": "Page content changed — Canadian Securities Administrators (CSA)",
     "summary": "Topics: Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Securities Administrators (CSA) · Awaiting analyst review",
     "country": "Canada",
@@ -11748,7 +11748,25 @@
     "authority": "Canadian Securities Administrators (CSA)",
     "authority_url": "https://www.securities-administrators.ca/news/",
     "region": "North America",
-    "date": "2026-10-14T10:47:06.125557+00:00",
+    "date": "2026-10-15T10:29:48.101060+00:00",
+    "source": "collector",
+    "relevancy": "Pending",
+    "alert_status": "new"
+  },
+  {
+    "id": "fff520bd12cc6019",
+    "name": "Privacy Commissioner of Canada satisfied with WestJet’s enhanced security measures following cyberattack; closes investigation",
+    "summary": "Topics: Labour and Employment, Data Privacy, AI & Cybersecurity, Records Management · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Office of the Privacy Commissioner of Canada · Awaiting analyst review",
+    "country": "Canada",
+    "level": "Federal",
+    "level_detail": "Federal",
+    "law_area": "Enterprise",
+    "topic": "Labour and Employment, Data Privacy, AI & Cybersecurity, Records Management",
+    "link": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261014/",
+    "authority": "Office of the Privacy Commissioner of Canada",
+    "authority_url": "https://www.priv.gc.ca/en/about-the-opc/publications/?Page=1",
+    "region": "North America",
+    "date": "2026-10-15T10:29:48.101060+00:00",
     "source": "collector",
     "relevancy": "Pending",
     "alert_status": "new"
