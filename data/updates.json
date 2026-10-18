@@ -1,7 +1,7 @@
 [
   {
-    "id": "b7584f04ec5d296a",
-    "discovered_at": "2026-10-17T09:51:10.671341+00:00",
+    "id": "cf52434b3e5af970",
+    "discovered_at": "2026-10-18T10:02:20.379871+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,21 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "33008397b20805cf",
+    "discovered_at": "2026-10-18T10:02:20.379871+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -175,21 +190,6 @@
     "title": "The Government of Canada highlights workforce investments and measures to lower energy costs and reduce emissions",
     "link": "https://www.canada.ca/en/employment-social-development/news/2026/10/the-government-of-canada-highlights-workforce-investments-and-measures-to-lower-energy-costs-and-reduce-emissions.html",
     "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1594308968371&dprtmnt=departmentofemploymentandsocialdevelopment&start=&end=",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "fed89d1487aa744b",
-    "discovered_at": "2026-10-17T09:51:10.671341+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
