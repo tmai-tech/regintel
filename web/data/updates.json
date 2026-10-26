@@ -1,7 +1,7 @@
 [
   {
-    "id": "1cd3af63c4734dbe",
-    "discovered_at": "2026-10-25T10:19:10.286942+00:00",
+    "id": "e9415c2c824422b0",
+    "discovered_at": "2026-10-26T11:45:55.842744+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -15,8 +15,23 @@
     "tracked_by": "collector"
   },
   {
-    "id": "817a94af813550d2",
-    "discovered_at": "2026-10-25T10:19:10.286942+00:00",
+    "id": "452e9ae56f517c06",
+    "discovered_at": "2026-10-26T11:45:55.842744+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Office of the Superintendent of Financial Institutions (OSFI)",
+    "law_area": "Private; Capital",
+    "topical_relevance": "Crypto/ Digital Assets, ESG, Derivatives, Public & OTC Market",
+    "title": "OSFI statement on the Financial Stability Board’s Regulatory and Supervisory Modernisation Principles October 20, 2026",
+    "link": "https://www.osfi-bsif.gc.ca/index%2ephp/en/news/osfi-statement-financial-stability-boards-regulatory-supervisory-modernisation-principles",
+    "source_url": "https://www.osfi-bsif.gc.ca/en",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "15c2852d1935356b",
+    "discovered_at": "2026-10-26T11:45:55.842744+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
