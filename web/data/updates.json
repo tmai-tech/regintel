@@ -1,7 +1,7 @@
 [
   {
-    "id": "0948bdd4a861a45b",
-    "discovered_at": "2026-10-31T11:22:16.967297+00:00",
+    "id": "aeed3c2439fe856c",
+    "discovered_at": "2026-11-01T12:12:59.450037+00:00",
     "country": "Canada - Federal",
     "region": "North America",
     "authority": "Canadian Securities Administrators (CSA)",
@@ -10,6 +10,36 @@
     "title": "Page content changed — Canadian Securities Administrators (CSA)",
     "link": "https://www.securities-administrators.ca/",
     "source_url": "https://www.securities-administrators.ca/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "8a221a96b5b1d618",
+    "discovered_at": "2026-11-01T12:12:59.450037+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Securities Administrators (CSA)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
+    "title": "Page content changed — Canadian Securities Administrators (CSA)",
+    "link": "https://www.securities-administrators.ca/news/",
+    "source_url": "https://www.securities-administrators.ca/news/",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "16acd56646793d2e",
+    "discovered_at": "2026-11-01T12:12:59.450037+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Department of Justice Canada",
+    "law_area": "Enterprise",
+    "topical_relevance": "Corporate Disputes & Arbitration, Administrative Law & Statutory Interpretation, Anti-Bribery and Anti-Corruption; Anti-Terrorism, Contract Law",
+    "title": "Minister of Justice and Attorney General of Canada announces judicial appointments in the province of Ontario",
+    "link": "https://www.canada.ca/en/department-justice/news/2026/10/minister-of-justice-and-attorney-general-of-canada-announces-judicial-appointments-in-the-province-of-ontario2.html",
+    "source_url": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?dprtmnt=departmentjustice&start=&end=",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
@@ -40,21 +70,6 @@
     "title": "Annual Risk Outlook 2026–2027",
     "link": "https://www.osfi-bsif.gc.ca/en/about-osfi/reports-publications/annual-risk-outlook-semi-annual-update-fiscal-year-2026-2027",
     "source_url": "https://www.osfi-bsif.gc.ca/en",
-    "relevancy": "Pending",
-    "alert_status": "new",
-    "tracked_by": "collector"
-  },
-  {
-    "id": "f82514c0e6261b01",
-    "discovered_at": "2026-10-31T11:22:16.967297+00:00",
-    "country": "Canada - Federal",
-    "region": "North America",
-    "authority": "Canadian Securities Administrators (CSA)",
-    "law_area": "Enterprise",
-    "topical_relevance": "Corporate Governance, Corporate Disputes & Arbitration, Corporate/Entity Formation Laws/Transparency, Securities Law Class Action",
-    "title": "Page content changed — Canadian Securities Administrators (CSA)",
-    "link": "https://www.securities-administrators.ca/news/",
-    "source_url": "https://www.securities-administrators.ca/news/",
     "relevancy": "Pending",
     "alert_status": "new",
     "tracked_by": "collector"
