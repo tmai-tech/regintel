@@ -14220,6 +14220,24 @@
     "alert_status": "new"
   },
   {
+    "id": "e6e2edbffd208be1",
+    "name": "On the path to a Canada where everyone has a home",
+    "summary": "Topics: Labour and Employment, Modern Slavery · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Canadian Human Rights Commission (CHRC) · Awaiting analyst review",
+    "country": "Canada",
+    "level": "Federal",
+    "level_detail": "Federal",
+    "law_area": "Enterprise",
+    "topic": "Labour and Employment, Modern Slavery",
+    "link": "https://www.chrc-ccdp.gc.ca/resources/newsroom/path-canada-where-everyone-has-home",
+    "authority": "Canadian Human Rights Commission (CHRC)",
+    "authority_url": "https://www.chrc-ccdp.gc.ca/resources/newsroom",
+    "region": "North America",
+    "date": "2026-11-21T13:50:28.938962+00:00",
+    "source": "collector",
+    "relevancy": "Pending",
+    "alert_status": "new"
+  },
+  {
     "id": "9b4ce1db87e663f3",
     "name": "ESMA proposes key reforms to settlement discipline, supporting the transition to T+1",
     "summary": "Topics: Derivatives · Law area: Capital · Jurisdiction: EU (federal) · Issued / tracked under: European Securities and Markets Authority (ESMA)",

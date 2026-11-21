@@ -1,5 +1,20 @@
 [
   {
+    "id": "e6e2edbffd208be1",
+    "discovered_at": "2026-11-21T13:50:28.938962+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Human Rights Commission (CHRC)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Labour and Employment, Modern Slavery",
+    "title": "On the path to a Canada where everyone has a home",
+    "link": "https://www.chrc-ccdp.gc.ca/resources/newsroom/path-canada-where-everyone-has-home",
+    "source_url": "https://www.chrc-ccdp.gc.ca/resources/newsroom",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
     "id": "be490a7e5f854765",
     "discovered_at": "2026-11-20T14:31:54.474340+00:00",
     "country": "Canada - Federal",
