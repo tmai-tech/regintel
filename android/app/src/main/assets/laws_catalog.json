@@ -14472,6 +14472,24 @@
     "alert_status": "new"
   },
   {
+    "id": "ef67a06d63d159de",
+    "name": "What We Heard Report available",
+    "summary": "Topics: All · Law area: Enterprise · Jurisdiction: Canada (federal) · Issued / tracked under: Government of Canada · Awaiting analyst review",
+    "country": "Canada",
+    "level": "Federal",
+    "level_detail": "Federal",
+    "law_area": "Enterprise",
+    "topic": "All",
+    "link": "https://agriculture.canada.ca/en/department/transparency/public-opinion-research-consultations/what-we-heard-report-national-agricultural-soil-health-strategy-regional-engagement-sessions",
+    "authority": "Government of Canada",
+    "authority_url": "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+    "region": "North America",
+    "date": "2026-11-24T16:39:32.165890+00:00",
+    "source": "collector",
+    "relevancy": "Pending",
+    "alert_status": "new"
+  },
+  {
     "id": "9b4ce1db87e663f3",
     "name": "ESMA proposes key reforms to settlement discipline, supporting the transition to T+1",
     "summary": "Topics: Derivatives · Law area: Capital · Jurisdiction: EU (federal) · Issued / tracked under: European Securities and Markets Authority (ESMA)",
