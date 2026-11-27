@@ -1,5 +1,20 @@
 [
   {
+    "id": "4aed292ebed563ef",
+    "discovered_at": "2026-11-27T15:45:14.778246+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)",
+    "law_area": "Private; Capital",
+    "topical_relevance": "Crypto/ Digital Assets, Subs. Shareholding Disclosure",
+    "title": "November 27, 2026 – FINTRAC advisory: Financial transactions related to countries identified by the Financial Action Task Force",
+    "link": "https://fintrac-canafe.canada.ca/notices-avis/avs/2026-11-27-eng",
+    "source_url": "https://fintrac-canafe.canada.ca/intro-eng",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
     "id": "4836cfb1817b8d35",
     "discovered_at": "2026-11-26T15:56:55.778008+00:00",
     "country": "Canada - Federal",
