@@ -1,5 +1,35 @@
 [
   {
+    "id": "a577d0b0d979ee8b",
+    "discovered_at": "2026-11-28T14:41:10.761303+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Office of the Superintendent of Financial Institutions (OSFI)",
+    "law_area": "Private; Capital",
+    "topical_relevance": "Crypto/ Digital Assets, ESG, Derivatives, Public & OTC Market",
+    "title": "InfoPensions – Issue 35 – November 2026 November 27, 2026",
+    "link": "https://www.osfi-bsif.gc.ca/index%2Ephp/en/supervision/pensions/infopensions-newsletters/infopensions-issue-35-november-2026",
+    "source_url": "https://www.osfi-bsif.gc.ca/en",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
+    "id": "c0996f4618b45df8",
+    "discovered_at": "2026-11-28T14:41:10.761303+00:00",
+    "country": "Canada - Federal",
+    "region": "North America",
+    "authority": "Canadian Human Rights Commission (CHRC)",
+    "law_area": "Enterprise",
+    "topical_relevance": "Labour and Employment, Modern Slavery",
+    "title": "Laws in Canada should seek to end discrimination — not promote it",
+    "link": "https://www.chrc-ccdp.gc.ca/resources/newsroom/laws-canada-should-seek-end-discrimination-not-promote-it",
+    "source_url": "https://www.chrc-ccdp.gc.ca/resources/newsroom",
+    "relevancy": "Pending",
+    "alert_status": "new",
+    "tracked_by": "collector"
+  },
+  {
     "id": "4aed292ebed563ef",
     "discovered_at": "2026-11-27T15:45:14.778246+00:00",
     "country": "Canada - Federal",
